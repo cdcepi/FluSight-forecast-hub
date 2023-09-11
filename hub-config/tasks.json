@@ -1,0 +1,277 @@
+{
+    "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v1.0.0/tasks-schema.json",
+    "rounds": [
+        {
+            "round_id_from_variable": true,
+            "round_id": "reference_date",
+            "model_tasks": [
+                {
+                    "task_ids": {
+                        "reference_date": {
+                            "required": null,
+                            "optional": [
+                                "2023-10-14",
+                                "2023-10-21"
+                            ]
+                        },
+                        "target": {
+                            "required": null,
+                            "optional": ["wk flu hosp rate change"]
+                        },
+                        "horizon": {
+                          "required": null,
+                          "optional": [1, 2]
+                        },
+                        "location": {
+                            "required": null,
+                            "optional": [
+                                "US",
+                                "01",
+                                "02",
+                                "04",
+                                "05",
+                                "06",
+                                "08",
+                                "09",
+                                "10",
+                                "11",
+                                "12",
+                                "13",
+                                "15",
+                                "16",
+                                "17",
+                                "18",
+                                "19",
+                                "20",
+                                "21",
+                                "22",
+                                "23",
+                                "24",
+                                "25",
+                                "26",
+                                "27",
+                                "28",
+                                "29",
+                                "30",
+                                "31",
+                                "32",
+                                "33",
+                                "34",
+                                "35",
+                                "36",
+                                "37",
+                                "38",
+                                "39",
+                                "40",
+                                "41",
+                                "42",
+                                "44",
+                                "45",
+                                "46",
+                                "47",
+                                "48",
+                                "49",
+                                "50",
+                                "51",
+                                "53",
+                                "54",
+                                "55",
+                                "56",
+                                "72",
+                                "78"
+                            ]
+                        },
+                        "target_end_date": {
+                          "required": null,
+                          "optional": [
+                            "2023-10-21",
+                            "2023-10-28",
+                            "2023-11-04"
+                          ]
+                        }
+                    },
+                    "output_type": {
+                        "pmf": {
+                            "type_id": {
+                                "required": [
+                                    "large_decrease",
+                                    "decrease",
+                                    "stable",
+                                    "increase",
+                                    "large_increase"
+                                ],
+                                "optional": null
+                            },
+                            "value": {
+                                "type": "double",
+                                "minimum": 0,
+                                "maximum": 1
+                            }
+                        }
+                    },
+                    "target_metadata": [
+                        {
+                            "target_id": "flu hosp rate change",
+                            "target_name": "week ahead weekly influenza hospitalization rate change",
+                            "target_units": "rate per 100,000 population",
+                            "target_keys": {
+                                "target": [
+                                    "wk flu hosp rate change"
+                                ]
+                            },
+                            "target_type": "ordinal",
+                            "description": "This target represents the change in the rate of new hospitalizations per week comparing the week ending on the reference_date to the week ending [horizon] weeks after the reference_date, on target_end_date.",
+                            "is_step_ahead": true,
+                            "time_unit": "week"
+                          }
+                    ]
+                },
+                {
+                    "task_ids": {
+                        "reference_date": {
+                            "required": null,
+                            "optional": [
+                                "2023-10-14",
+                                "2023-10-21"
+                            ]
+                        },
+                        "target": {
+                            "required": null,
+                            "optional": ["wk ahead inc flu hosp"]
+                        },
+                        "horizon": {
+                          "required": [1],
+                          "optional": [2, 3, 4]
+                        },
+                        "location": {
+                            "required": null,
+                            "optional": [
+                                "US",
+                                "01",
+                                "02",
+                                "04",
+                                "05",
+                                "06",
+                                "08",
+                                "09",
+                                "10",
+                                "11",
+                                "12",
+                                "13",
+                                "15",
+                                "16",
+                                "17",
+                                "18",
+                                "19",
+                                "20",
+                                "21",
+                                "22",
+                                "23",
+                                "24",
+                                "25",
+                                "26",
+                                "27",
+                                "28",
+                                "29",
+                                "30",
+                                "31",
+                                "32",
+                                "33",
+                                "34",
+                                "35",
+                                "36",
+                                "37",
+                                "38",
+                                "39",
+                                "40",
+                                "41",
+                                "42",
+                                "44",
+                                "45",
+                                "46",
+                                "47",
+                                "48",
+                                "49",
+                                "50",
+                                "51",
+                                "53",
+                                "54",
+                                "55",
+                                "56",
+                                "72",
+                                "78"
+                            ]
+                        },
+                        "target_end_date": {
+                          "required": null,
+                          "optional": [
+                            "2023-10-28",
+                            "2023-11-04",
+                            "2023-11-11",
+                            "2023-11-18",
+                            "2023-11-25"
+                          ]
+                        }
+                    },
+                    "output_type": {
+                        "quantile": {
+                            "type_id": {
+                                "required": [
+                                    0.010,
+                                    0.025,
+                                    0.050,
+                                    0.100,
+                                    0.150,
+                                    0.200,
+                                    0.250,
+                                    0.300,
+                                    0.350,
+                                    0.400,
+                                    0.450,
+                                    0.500,
+                                    0.550,
+                                    0.600,
+                                    0.650,
+                                    0.700,
+                                    0.750,
+                                    0.800,
+                                    0.850,
+                                    0.900,
+                                    0.950,
+                                    0.975,
+                                    0.990
+                                  ],
+                                "optional": null
+                            },
+                            "value": {
+                                "type": "double",
+                                "minimum": 0
+                            }
+                        }
+                    },
+                    "target_metadata": [
+                        {
+                            "target_id": "inc flu hosp",
+                            "target_name": "incident influenza hospitalizations",
+                            "target_units": "count",
+                            "target_keys": {
+                                "target": [
+                                    "wk ahead inc flu hosp"
+                                ]
+                            },
+                            "target_type": "discrete",
+                            "description": "This target represents the count of new hospitalizations in the week ending on the date [horizon] weeks after the reference_date, on the target_end_date.",
+                            "is_step_ahead": true,
+                            "time_unit": "week"
+                        }
+                    ]
+                }
+            ],
+       "submissions_due": {
+            "relative_to": "reference_date",
+            "start": -6,
+            "end": 2
+        }
+     }
+   ]
+}
