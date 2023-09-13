@@ -102,7 +102,7 @@
                     },
                     "output_type": {
                         "pmf": {
-                            "type_id": {
+                            "output_type_id": {
                                 "required": [
                                     "large_decrease",
                                     "decrease",
@@ -234,7 +234,7 @@
                     },
                     "output_type": {
                         "quantile": {
-                            "type_id": {
+                            "output_type_id": {
                                 "required": [
                                     0.010,
                                     0.025,
