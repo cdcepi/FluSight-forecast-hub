@@ -43,19 +43,17 @@
                     "affiliation": {
                         "type": "string"
                     },
-                    "orcid": {
-                        "type": "string",
-                        "pattern": "^\\d{4}\\-\\d{4}\\-\\d{4}\\-[\\dX]{4}$"
-                    },
                     "email": {
                         "type": "string",
                         "format": "email"
                     },
-                    "twitter": {
-                        "type": "string"
-                    },
-                    "additionalProperties": false
-                }
+                    "orcid": {
+                        "type": "string",
+                        "pattern": "^\\d{4}\\-\\d{4}\\-\\d{4}\\-[\\dX]{4}$"
+                    }
+                },
+                "additionalProperties": false,
+                "required": ["name", "affiliation", "email"]
             }
         },
         "website_url": {
@@ -81,16 +79,8 @@
                 "OGL-3.0"
             ]
         },
-        "include_viz": {
-            "description": "Indicator for whether the model should be included in the Hub’s visualization",
-            "type": "boolean"
-        },
-        "include_ensemble": {
-            "description": "Indicator for whether the model should be included in the Hub’s ensemble",
-            "type": "boolean"
-        },
-        "include_eval": {
-            "description": "Indicator for whether the model should be scored for inclusion in the Hub’s evaluations",
+        "designated_model": {
+            "description": "Team-specified indicator for whether the model should be eligible for inclusion in a Hub ensemble and public visualization. A team may designate up to two models.",
             "type": "boolean"
         },
         "citation": {
@@ -103,31 +93,27 @@
             "type": "string",
             "examples": "National Institutes of General Medical Sciences (R01GM123456). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS."
         },
-        "model_details": {
-            "description": "Structured information about the model",
-            "type": "object",
-            "properties": {
-                "data_inputs": {
-                    "description": "List or description of data inputs used by the model",
-                    "type": "string"
-                },
-                "methods": {
-                    "description": "A brief (200 char.) description of the methods used by this model",
-                    "type": "string",
-                    "maxLength": 200
-                },
-                "methods_long": {
-                    "description": "A full description of the methods used by this model.",
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false,
-            "required": ["data_inputs", "methods"]
+        "data_inputs": {
+            "description": "List or description of data inputs used by the model",
+            "type": "string"
         },
-        "ensemble_of_hub_models": {
-            "description": "Indicator for whether this model is an ensemble of other Hub models",
+        "methods": {
+             "description": "A brief (200 char.) description of the methods used by this model",
+             "type": "string",
+             "maxLength": 200
+         },
+         "methods_long": {
+              "description": "A full description of the methods used by this model.",
+              "type": "string"
+         },
+         "ensemble_of_models": {
+            "description": "Indicator for whether this model is an ensemble of any separate component models",
             "type": "boolean"
-        }
+         },
+         "ensemble_of_hub_models": {
+            "description": "Indicator for whether this model is an ensemble specifically of other models submitted to this Hub",
+            "type": "boolean"
+         }
     },
     "additionalProperties": true,
     "required": [
@@ -138,6 +124,10 @@
         "model_abbr",
         "model_contributors",
         "license",
-        "model_details"
+        "data_inputs",
+        "methods",
+        "methods_long",
+        "ensemble_of_models",
+        "ensemble_of_hub_models"
     ]
 }
