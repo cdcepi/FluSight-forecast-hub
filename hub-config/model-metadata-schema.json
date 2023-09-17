@@ -103,7 +103,7 @@
              "maxLength": 200
          },
          "methods_long": {
-              "description": "A full description of the methods used by this model.",
+              "description": "A full description of the methods used by this model. Among other details, this should include whether spatial correlation is considered and how the model accounts for uncertainty.",
               "type": "string"
          },
          "ensemble_of_models": {
