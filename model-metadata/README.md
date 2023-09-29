@@ -32,9 +32,22 @@ A names, affiliations, and email address is required for each contributor. Indiv
 All email addresses provided will be added to an email distribution list for model contributors.
 
 The syntax of this field should be 
-
-    name1 (affiliation1) <user@address>, name2 (affiliation2) <user2@address2>
-
+```
+model_contributors: [
+  {
+    "name": "Modeler Name 1",
+    "affiliation": "Institution Name 1",
+    "email": "modeler1@example.com",
+    "orcid": "1234-1234-1234-1234"
+  },
+  {
+    "name": "Modeler Name 2",
+    "affiliation": "Institution Name 2",
+    "email": "modeler2@example.com",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+```
 
 
 
