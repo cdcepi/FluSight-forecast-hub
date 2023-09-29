@@ -1,17 +1,25 @@
-# Gold standard data 
+# Target data 
 
-The data-truth folder contains the "gold standard" data that forecasts 
+The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that forecasts 
 are eventually compared to. 
 
 *Table of Contents*
 
 -   [Data sources](#data-sources)
 -   [Hospitalization data](#hospitalization-data)
--   [Accessing gold standard data](#accessing-gold-standard-data)
+-   [Emergency Department data](#ED-data)
+-   [Accessing target data](#accessing-gold-standard-data)
 
 
 Data sources
 ----------------------
+
+Previously collected influenza data from the 2020-21 and the 2022-23 influenza seasons (Fields 33-38) are included in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset. Reporting of the influenza fields 33-35 became mandatory in February 2022, and additional details are provided in the current [hospital reporting guidance and FAQs](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf) . Numbers of reporting hospitals increased after the period that reporting became mandatory in early 2022 but have since stabilized at high levels of compliance.  The number of hospitals reporting these data each day by state are available in the previous_day_admission_influenza_confirmed_coverage variable found in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset.
+
+During the 2021-22 and 2022-23 influenza forecasting seasons, the dataset was updated daily based on data reported through the day prior. Therefore, datasets updated on Monday would include data reported through the immediately preceding Sunday, and this data snapshot would capture influenza hospital admissions that occurred through Saturday (see the data processing section for more information). As of June 11, 2023, the reporting cadence changed to weekly, so that qualifying facilities are required to report daily hospitalizations for the previous week to the National Healthcare Safety Network (NHSN) on each Tuesday, as indicated in the [hospital reporting guidance](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). 
+
+**To be updated:** Preliminary aggregated counts are publicly released on Friday the same week, and official counts on the following Monday. Official counts can be revised in subsequent data updates.
+These data are also available in a facility-level dataset; data values less than 4 are suppressed in the facility-level dataset. Additional historical influenza surveillance data from other surveillance systems are available at https://www.cdc.gov/flu/weekly/fluviewinteractive.htm. These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Additional potential data sources are available in Carnegie Mellon University's Epidata API.
 
 Influenza hospitalization data are taken from the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
 
@@ -43,7 +51,10 @@ Reporting of the influenza fields 33-35 became mandatory in February 2022, and a
 
 These data are also available in a [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u); data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). Additional historical influenza surveillance data from other surveillance systems are available at [https://www.cdc.gov/flu/weekly/fluviewinteractive.htm](https://www.cdc.gov/flu/weekly/fluviewinteractive.htm). These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Additional potential data sources are available in Carnegie Mellon University's [Epidata API](https://delphi.cmu.edu/).
 
+Emergency Department data
+------------
 
+### UPDATE
 
 
 ### Data processing

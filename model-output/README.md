@@ -84,27 +84,17 @@ Note that this repository has been created to facilitate the transition to using
 
 The metadata file will be saved within the model-metdata directory in the Hub's GitHub repository, and should have the following naming convention:
 
-  team-model.yml 
+
+      team-model.yml
 
 Details on the content and formatting of metadata files are provdided in the [model-metadata README](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md).
 Note that returning teams should update the metadata file provided during the 2022-2023- season to document any changes that have been made to their model as well as to match updated content requirements.  
 
-### License (optional)
 
-By default, forecasts are released under a CC-BY 4.0 license. If you
-would like to release your forecasts under a different license, please
-specify a [standard license](../accepted-licenses.csv) in the `license`
-field of your metadata file. Alternatively, if you wish to use a license
-that is not in the list of [standard
-licenses](../accepted-licenses.csv), you may include a
-
-    LICENSE.txt
-
-file in your model directory.
 
 ### Forecasts
 
-Each forecast file within the subdirectory should have the following
+Each forecast file should have the following
 format
 
     YYYY-MM-DD-team-model.csv
@@ -114,117 +104,90 @@ where
 -   `YYYY` is the 4 digit year,
 -   `MM` is the 2 digit month,
 -   `DD` is the 2 digit day,
--   `team` is the teamname, and
+-   `team` is the team name, and
 -   `model` is the name of your model.
 
-The date YYYY-MM-DD is the [`forecast_date`](#forecast_date). For this
-project, the `forecast_date` should always be the Monday of the week the
-submission is due.
+The date YYYY-MM-DD is the [`reference_date`](#reference_date). This should be the Saturday following the submission date.
 
 The `team` and `model` in this file must match the `team` and `model` in
 the directory this file is in. Both `team` and `model` should be less
 than 15 characters, alpha-numeric and underscores only, with no spaces
-or hyphens.
+or hyphens. **Note:** Any categorical rate-trend forecasts should be submitted in the same weekly csv submission file as the hospital admission forecasts.
 
 ## Forecast file format 
 
 The file must be a comma-separated value (csv) file with the following
 columns (in any order):
 
--   `forecast_date`
+-   `reference_date`
 -   `target`
+-   `horizon`
 -   `target_end_date`
 -   `location`
--   `type`
--   `quantile`
+-   `output_type`
+-   `output_type_id`
 -   `value`
 
 No additional columns are allowed.
 
-Each row in the file is either a point or quantile forecast for a
-location on a particular date for a particular target.
+The value in each row of the file is either a quantile or rate-trend prediction for a particular combination of location, date, and horizon.
 
-### `forecast_date` 
+### `reference_date` 
 
-Values in the `forecast_date` column must be a date in the format
+Values in the `reference_date` column must be a date in the ISO format
 
     YYYY-MM-DD
 
-This is the Forecast Date for the submission and will always be a
-Monday (previously also the forecast due date until 1/6/2023). `forecast_date` should correspond and be redundant with the date
-in the filename, and is included here by request from some analysts.
+This is the date from which all forecasts should be considered. This date is the Saturday following the submission Due Date, corresponding to the last day of the epiweek when submissions are made. The `reference_date` should be the same as the date in the filename but is included here to facilitate validation and analysis.
 
 ### `target`
 
 Values in the `target` column must be a character (string) and be one of
 the following specific targets:
 
--   “N wk ahead inc flu hosp” where N is a number between 1 and 4
+-   `wk inc flu hosp` 
+-   `wk flu hosp rate change`
 
-For week-ahead forecasts, we will use the specification of
-epidemiological weeks (EWs) [defined by the US
-CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which
-run Sunday through Saturday. There are standard software packages to
-convert from dates to epidemic weeks and vice versa. E.g.
-[MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and
-[pymmwr](https://pypi.org/project/pymmwr/) and
-[epiweeks](https://pypi.org/project/epiweeks/) for python.
 
-For week-ahead forecasts with `forecast_date` of Monday of EW12, a 1
-week ahead forecast corresponds to EW12 and should have
-`target_end_date` of the Saturday of EW12.
-
-#### N week ahead inc flu hosp
-
-This target is the number of new weekly hospitalizations predicted by
-the model during the week that is N weeks after `forecast_date`.
+### `horizon`
+Values in the `horizon` column indicate the number of weeks between the `reference_date` and the `target_end_date`.  For both influenza hospital admission forecasts and rate change predictions this should be a number between -1 and 3, where for example a `horizon` of 0 indicates that the prediction is a nowcast for the week of submission and a `horizon` of 1 indicates that the prediction is a forecast for the week after submission. 
 
 ### `target_end_date`
 
 Values in the `target_end_date` column must be a date in the format
 
     YYYY-MM-DD
+    
+This is the last date of the forecast target's week. This will be the date of the Saturday at the end of the forecasted week. As a reminder, the `target_end_date` is the end date of the week during which the admissions occur, not the date the admission is reported (see the data processing section for more details). Within each row of the submission file, the `target_end_date` should be equal to the `reference_date` + `horizon`*(7 days).
 
-This is the date for the forecast `target`. For “# wk” targets,
-`target_end_date` will be the Saturday at the end of the forecasted
-week. As a reminder, the `target_end_date` is the end date of the week
-during which the admissions occur, not the date the admission is
-reported (see the data processing section for more details).
 
 ### `location`
 
-Values in the `location` column must be one of the “locations” in
-this [FIPS numeric code file](../data-locations/locations.csv) which
-includes numeric FIPS codes for U.S. states and selected jurisdictions
-(Washington DC, Puerto Rico, and the US Virgin Islands) as well as
-“US” for national forecasts.
+Values in the `location` column must be one of the "locations" in
+this [location information file](../auxiliary-data/locations.csv) which
+includes numeric FIPS codes for U.S. states,  territories, and districts, as well as "US" for national forecasts, included in the FluSight forecasting collaboration.
 
-Please note that when writing FIPS codes, they should be written in as a
-character string to preserve any leading zeroes.
+Please note that when writing FIPS codes, they should be written in as a character string to preserve any leading zeroes.
 
-### `type`
+### `output_type`
 
-Values in the `type` column are either
+Values in the `output_type` column are either
 
--   “point” or
--   “quantile”.
+-   "quantile" or
+-   "pmf".
 
-This value indicates whether that row corresponds to a point forecast or
-a quantile forecast. Point forecasts may be used in visualization while
-quantile forecasts are used in visualization and in ensemble
-construction.
+This value indicates whether that row corresponds to a quantile forecast for incident hospital admissions or the probability mass function (pmf) of a categorical forecast for rate-trend. Quantile forecasts are used in visualizations and to construct the primary FluSight ensemble.
 
-**When point forecasts are not included, the median for every
-location-target pair will be interpreted as the point forecast.**
+### `output_type_id`
+Values in the `output_type_id` column specify identifying information for the output type.
 
-### `quantile`
+#### quantile output
 
-Values in the `quantile` column are either “NA” (if `type` is
-“point”) or a quantile in the format
+When the predictions are quantiles, values in the `output_type_id` column are a quantile probability level in the format
 
     0.###
 
-For quantile forecasts, this value indicates the quantile for the
+ This value indicates the quantile probability level for for the
 `value` in this row.
 
 Teams must provide the following 23 quantiles:
@@ -233,47 +196,47 @@ Teams must provide the following 23 quantiles:
 0.450, 0.500, 0.550, 0.600, 0.650, 0.700, 0.750, 0.800, 0.850, 0.900,
 0.950, 0.975, and 0.990
 
-R: c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99) Python:
-quantiles =
+R: c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99) 
+Python: quantiles =
 np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.050)),
 [0.975,0.99])
 
+#### pmf output
+
+For rate change forecasts, the output_type_id indicates the category that the predicted probability of occurrence should be associated with. Teams should provide the following categories:
+"large_increase", "increase", "stable", "decrease" and "large_decrease". Please see Appendix 1: rate-trend forecast specifications for details on how each category is defined. Note that thresholds between categories differ from those used in the 2022-2023 season and that new threshold values have been added for the one-week ahead rate-trend targets.
+
+
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the
-“point” or “quantile” prediction for this row. For a “point”
-prediction, `value` is simply the value of that point prediction for the
-`target` and `location` associated with that row. For a “quantile”
-prediction, `value` is the inverse of the cumulative distribution
-function for the `target`, `location`, and `quantile` associated with
-that row. For example, the 2.5 and 97.5 quantiles for a given target and
-location should capture 95% of the forecasted values and correspond to
-the 95% Prediction Intervals.
+Values in the `value` column are non-negative numbers indicating the "quantile" or "pmf" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For rate change forecasts, values are required to sum to 1 across all `output_type_ids` for each target and location (as specified in the FILL LINK hubverse documentation).
 
 ## Forecast validation 
 
 To ensure proper data formatting, pull requests for new data in
-`data-forecasts/` will be automatically run.
+`model-output/` will be automatically run.
 
 ### Pull request forecast validation
 
 When a pull request is submitted, the data are validated through [Github
 Actions](https://docs.github.com/en/actions) which runs the tests
 present in [the validations
-repository](https://github.com/cdcepi/Flusight-forecast-validation). The
+repository](https://github.com/UPDATE). The
 intent for these tests are to validate the requirements above. Please
-[let us know](https://github.com/cdcepi/Flusight-forecast-data/issues)
-if you are facing issues while running the tests.
+[let us know](https://github.com/cdcepi/FluSight-forecast-hub/issues) if you are facing issues while running the tests.
 
 
 ## Weekly ensemble build 
 
-Every Wednesday morning, we will generate the ensemble forecast using a
-single valid forecast from each team that submitted in the current week by the Tuesday 11PM ET deadline.
+Every Thursday morning, we will generate the FluSight ensemble influenza hospital admission forecast using a
+single valid forecast from each team that submitted in the current week by the Wednesday 11PM ET deadline.
 
 
 ## Policy on late or updated submissions 
 
-In order to ensure that forecasting is done in real-time, all forecasts
-are required to be submitted to this repository by 11pm ET on Tuesdays
-each week. We do not accept late forecasts.
+In order to ensure that forecasting is done in real-time, all forecasts are required to be submitted to this repository by 11PM ET on Wednesdays each week. We do not accept late forecasts.
+
+## Evaluation criteria
+Forecasts will be evaluated using a variety of metrics, including weighted interval score (WIS) and its components and prediction interval coverage. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
+
+Evaluation will use official data reported from healthdata.gov as reported at the end or following the final forecast date (depending on data availability).
