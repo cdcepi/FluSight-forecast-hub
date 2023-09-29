@@ -1,0 +1,40 @@
+schema_version: "https://github.com/annakrystalli/FluSight-forecast-hub/blob/main/hub-config/model-metadata-schema.json"
+team_name: "UMass-Amherst"
+team_abbr: "UMass"
+model_name: "Ensemble of baseline models with trends"
+model_abbr: "trends_ensemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Nutcha Wattanachit",
+    "affiliation": "UMass Amherst",
+    "email": "nwattanachit@schoolph.umass.edu"
+  },
+  {
+    "name": "Aaron Gerding",
+    "affiliation": "UMass Amherst",
+    "email": "agerding@umass.edu"
+  },
+  {
+    "name": "Nick Reich",
+    "affiliation": "UMass Amherst",
+    "email": "nick@umass.edu"
+  },
+  {
+    "name": "Evan Ray",
+    "affiliation": "UMass Amherst",
+    "email": "elray@umass.edu"
+  }
+]
+website_url: "https://github.com/reichlab/flu-hosp-models-2021-2022"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods: "Equally weighted ensemble of simple time-series baseline models."
+data_inputs: "Daily and weekly incident flu hospitalizations, queried through covidData"
+methods_long: "Equally weighted ensemble of simple time-series baseline models. Each baseline model calculates first differences of incidence in recent weeks. These differences are sampled and then added to the most recently observed incidence. Variations on this method include (a) including the first differences and the negative of these differences to enforce symmetry, resulting in a flat-line forecast, (b) generating predictions by working on the daily scale and then aggregating to weekly predictions, or by working directly with weekly data; (c) varying the number of time-units in the past for computing the first differences (14 or 21 days, or 3 or 4 weeks) to focus on capturing recent trends, and (d) using the original time-series or a variance-stabilizing transformation of it, e.g. square-root. Additionally, the resulting predictive distributions are truncated so that any predicted samples computed to be less than zero are truncated to be zero."
+ensemble_of_models: true
+ensemble_of_hub_models: false
