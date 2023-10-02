@@ -4,10 +4,6 @@
     "description": "This is the schema for model metadata files, please refer to https://github.com/covid19-forecast-hub-europe/covid19-forecast-hub-europe/wiki/Metadata for more information.",
     "type": "object",
     "properties": {
-        "schema_version": {
-            "type": "string",
-            "format": "uri"
-        },
         "team_name": {
             "description": "The name of the team submitting the model",
             "type": "string"
@@ -98,22 +94,22 @@
             "type": "string"
         },
         "methods": {
-             "description": "A brief (200 char.) description of the methods used by this model",
-             "type": "string",
-             "maxLength": 200
-         },
-         "methods_long": {
-              "description": "A full description of the methods used by this model. Among other details, this should include whether spatial correlation is considered and how the model accounts for uncertainty.",
-              "type": "string"
-         },
-         "ensemble_of_models": {
+            "description": "A brief (200 char.) description of the methods used by this model",
+            "type": "string",
+            "maxLength": 200
+        },
+        "methods_long": {
+            "description": "A full description of the methods used by this model. Among other details, this should include whether spatial correlation is considered and how the model accounts for uncertainty.",
+            "type": "string"
+        },
+        "ensemble_of_models": {
             "description": "Indicator for whether this model is an ensemble of any separate component models",
             "type": "boolean"
-         },
-         "ensemble_of_hub_models": {
+        },
+        "ensemble_of_hub_models": {
             "description": "Indicator for whether this model is an ensemble specifically of other models submitted to this Hub",
             "type": "boolean"
-         }
+        }
     },
     "additionalProperties": true,
     "required": [
