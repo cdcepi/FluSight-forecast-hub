@@ -6,11 +6,10 @@ The target-data folder contains the laboratory confirmed influenza hospital admi
 
 -   [Hospitalization data](#hospitalization-data)
 -   [Other data sources](#data-sources)
--   [Accessing target data](#accessing-gold-standard-data)
+-   [Accessing target data](#accessing-target-data)
 
 
 Hospitalization data
-
 ----------------------
 
 ### HealthData.gov Hospitalization Timeseries
@@ -38,7 +37,7 @@ These data are also available in a facility-level dataset; data values less than
 This implies that some values may be repeated. Extra caution should be applied in these cases and in particular for interpreting data for the current day, as hospitals report hospital admissions for the previous day (further detail below).
 
 
-Some of these data are also available programmatically through the [EpiData](https://cmu-delphi.github.io/delphi-epidata/) API. 
+Some of these data are also available programmatically through the [EpiData](https://cmu-delphi.github.io/delphi-epidata/) API. See accessing target (truth) data section below for details.
 
 
 Other data sources
@@ -59,10 +58,10 @@ field which provides the new daily admissions with a confirmed diagnosis of infl
 CDC has been reporting COVID hospital admission data on public facing websites using the dates listed in the date field, rather than shifting the admissions to the previous date to represent the actual date of admission. This season, FluView and FluSight will adopt this practice and no longer shift the dates to account for the actual event date of admission. Influenza hospitalization forecasts should no longer shift the admissions data by one day before aggregating to the weekly epiweek count, and epiweek forecasts this season will include admissions reported Sunday to Saturday. This also aligns with the availability of data from this system now that hospitals are required to report data Sunday to Saturday (capturing admissions that occurred Saturday through Friday) by the following Tuesday. These changes are only for FluSight influenza forecasts, not for COVID forecasts. We will generate a new dataset with the observed target weekly values that no longer shifts the data by one day and will be stored in this subdirectory.
 
 
-For week-ahead forecasts, we will use the specification of
+For each horizon of predictions, we will use the specification of
 epidemiological weeks (EWs) [defined by the US
 CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which
-run Sunday through Saturday. For example, a 1-week-ahead forecast made for the Forecast Due Date of Monday, November 28, 2022, would correspond to EW48, which ends on (i.e., has a `target_end_date` of Saturday, December 3, 2022). A 2-week-ahead forecast made for that date would correspond to EW49 and have a `target_end_date` of Saturday, December 10, 2022. There are standard software packages to convert from dates to epidemic weeks and vice versa (e.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for Python).
+run Sunday through Saturday. As an example, if 17 confirmed influenza hospital admissions were reported in the `previous_day_admission_influenza_confirmed` field in a row where the `date` field was 2023-11-15, then the target dataset would assign those 17 hospital admissions to a date of 2023-11-15. These hospital admissions would then be counted towards the weekly total computed for EW46 in 2023, which runs from 2023-11-12 through 2023-11-18. There are standard software packages to convert from dates to epidemic weeks and vice versa (e.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for Python).
 
 
 ### Additional resources
@@ -72,16 +71,18 @@ data:
 
 -   [data dictionary for the
     dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh)
--   the [official document describing the “guidance for hospital
-    reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
+-   the [official document describing the **guidance for hospital
+    reporting**](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
 
 
-Accessing gold standard data
+Accessing target (truth) data
 ----------
-While we make efforts to create accurate, verified, clean versions of the gold standard data, these should be seen as secondary sources to the original data at the HHS Protect site.
+While we make efforts to create clean versions of the weekly target data, these should be seen as secondary sources to the original data at the HHS Protect site. National hospitalization, i.e., US, data are constructed from these data by summing the data across all 50 states, Washington DC (DC), and Puerto Rico (PR). Note that due to low counts in additional territories, such as the US Virgin Islands (VI) and American Samoa (AS) will not be included.       
+Note that reported data are occasionally revised as data are updated. Please see appendix below for information on accessing archived data versions.
+
 
 ### CSV files
-A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations. A corresponding CSV file is created in `data-truth/truth-Incident Hospitalizations.csv`.
+A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations. A corresponding CSV file is created in `target-data/target-Incident-Hospitalizations.csv`.
 
 
 ### Resources for Accessing Hospitalization Data
@@ -92,10 +93,10 @@ API](https://cmu-delphi.github.io/delphi-epidata/api/README.html).
 The current weekly timeseries of the hospitalization data as well as
 prior versions of the data are available under the ["covidcast"
 endpoint of the
-API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html). In particular, under the ["hhs" data source name](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html), there are flu-related HHS signals:
+API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html). In particular, under the ["hhs" data source name](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html), there are flu-related HHS signals, such as:
 
 - *Confirmed Influenza Admissions per day* `confirmed_addmissions_influenza_1d`
-- *Confirmed Influenza Admissions (smoothed with a 7 day trailing average)* `confirmed_admissions_influenza_1d_7dav`
+
 
 Also under the "covidcast" endpoint, under the ["chng" data source name](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/chng.html), there are signals pertaining to confirmed influenza from outpatient visits:
 
@@ -107,6 +108,84 @@ Other related and potentially helpful endpoints of the Epidata API include:
 - [COVID-19 Hospitalization by Facility](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html)
 - [COVID-19 Hospitalization:  Facility Lookup](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility_lookup.html)
 
-To access these data, teams can utilize the COVIDCast [Rpackage](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/).
+To access these data, teams can utilize the COVIDCast [Rpackage](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/), or the draft Epidata [R package](https://github.com/cmu-delphi/epidatr) or [Python package](https://github.com/cmu-delphi/epidatpy). Basic examples of pulling data with these packages are provided below; *additional related snippets are available [here](https://github.com/cmu-delphi/flusight-helper-snippets)*.
 
+```
+## In R #########################################################################
+ 
+# install.packages("remotes")
+# remotes::install_github("cmu-delphi/epidatr")
+# remotes::install_github("cmu-delphi/covidcast", subdir="R-packages/covidcast")
 
+library(magrittr) # for `%>%`
+
+# Fetch daily HHS hospitalization count data for all states and territories for
+# April 2022 using `epidatr`, a draft new client package for accessing the
+# Delphi Epidata API:
+april = epidatr::covidcast(
+  "hhs", "confirmed_admissions_influenza_1d",
+  "state", "day",
+  geo_values = "*",
+  time_values = epidatr::epirange(20220401, 20220430)
+) %>%
+  epidatr::fetch()
+
+# Fetch these measurements as they were reported on May 10, rather than the
+# current version:
+april_as_of_may10 =
+  epidatr::covidcast(
+	"hhs", "confirmed_admissions_influenza_1d",
+	"state", "day",
+	"*",
+	epidatr::epirange(20220401, 20220430),
+	as_of = 20220510
+  ) %>%
+  epidatr::fetch()
+
+# Fetch the first data set using the older `covidcast` package:
+april_with_covidcast = covidcast::covidcast_signal(
+  "hhs", "confirmed_admissions_influenza_1d",
+  as.Date("2022-04-01"), as.Date("2022-04-30"),
+  "state", "*"
+)
+
+```
+
+```
+## In Python #########################################################################
+ 
+# pip install -e "git+https://github.com/cmu-delphi/epidatpy.git#egg=epidatpy"
+# pip install covidcast
+ 
+import datetime
+ 
+import pandas as pd
+ 
+import epidatpy.request
+import covidcast
+ 
+# Fetch daily HHS hospitalization count data for all states and territories for
+# April 2022 using `epidatpy`, a draft new client package for accessing the
+# Delphi Epidata API:
+cce = epidatpy.request.CovidcastEpidata()
+april = cce[("hhs", "confirmed_admissions_influenza_1d")].call(
+   	"state", "*",
+   	epidatpy.request.EpiRange(20220401, 20220430)
+).df()
+ 
+# Fetch these measurements as they were reported on May 10, rather than the
+# current version:
+april_as_of_may10 = cce[("hhs", "confirmed_admissions_influenza_1d")].call(
+   	"state", "*",
+   	epidatpy.request.EpiRange(20220401, 20220430),
+   	as_of = 20220510
+).df()
+ 
+# Fetch the first data set using the older `covidcast` package:
+april_with_covidcast = covidcast.signal(
+  "hhs", "confirmed_admissions_influenza_1d",
+  datetime.date(2022, 4, 1), datetime.date(2022, 4, 30),
+  "state", "*"
+)
+ 
+```
