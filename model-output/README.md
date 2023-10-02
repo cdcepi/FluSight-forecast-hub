@@ -4,7 +4,7 @@ This folder contains a set of subdirectories, one for each model, that contains 
 
 # Data submission instructions
 
-All forecasts should be submitted directly to the [target-data/](./)
+All forecasts should be submitted directly to the [model-output/](./)
 folder. Data in this directory should be added to the repository through
 a pull request so that automatic data validation checks are run.
 
