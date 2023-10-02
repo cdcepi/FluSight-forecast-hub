@@ -1,4 +1,3 @@
-schema_version: "https://github.com/annakrystalli/FluSight-forecast-hub/blob/main/hub-config/model-metadata-schema.json"
 team_name: "UMass-Amherst"
 team_abbr: "UMass"
 model_name: "Ensemble of baseline models with trends"
