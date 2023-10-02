@@ -214,17 +214,50 @@ Values in the `value` column are non-negative numbers indicating the "quantile" 
 ## Forecast validation 
 
 To ensure proper data formatting, pull requests for new data in
-`model-output/` will be automatically run.
+`model-output/` will be automatically run. Optionally, you may also run these validations locally.
 
 ### Pull request forecast validation
 
 When a pull request is submitted, the data are validated through [Github
 Actions](https://docs.github.com/en/actions) which runs the tests
-present in [the validations
-repository](https://github.com/UPDATE). The
+present in [the hubValidations
+package](https://github.com/Infectious-Disease-Modeling-Hubs/hubValidations). The
 intent for these tests are to validate the requirements above. Please
 [let us know](https://github.com/cdcepi/FluSight-forecast-hub/issues) if you are facing issues while running the tests.
 
+### Local forecast validation
+
+Optionally, you may validate a forecast file locally before submitting it to the hub in a pull request. Note that this is not required, since the validations will also run on the pull request. To run the validations locally, follow these steps:
+
+1. Create a fork of the `FluSight-forecast-hub` repository and then clone the fork to your computer.
+2. Create a draft of the model submission file for your model and place it in the `model-output/<your model id>` folder of this clone.
+3. Install the hubValidations package for R by running the following command from within an R session:
+``` r
+remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
+```
+4. Validate your draft forecast submission file by running the following command in an R session:
+``` r
+library(hubValidations)
+hubValidations::validate_submission(
+    hub_path="<path to your clone of the hub repository>",
+    file_path="<path to your file, relative to the model-output folder>")
+```
+
+For example, if your working directory is the root of the hub repository, you can use a command similar to the following:
+``` r
+library(hubValidations)
+hubValidations::validate_submission(
+    hub_path=".",
+    file_path="UMass-trends_ensemble/2023-10-07-UMass-trends_ensemble.csv")
+```
+
+If all is well, you should see output similar to the following:
+```
+✔ .: All hub config files are valid.
+...
+```
+
+If there are any errors, you will see a message describing the problem.
 
 ## Weekly ensemble build 
 
