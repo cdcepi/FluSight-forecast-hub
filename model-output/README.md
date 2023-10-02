@@ -228,8 +228,7 @@ intent for these tests are to validate the requirements above. Please
 
 ## Weekly ensemble build 
 
-Every Thursday morning, we will generate the FluSight ensemble influenza hospital admission forecast using a
-single valid forecast from each team that submitted in the current week by the Wednesday 11PM ET deadline.
+Every Thursday morning, we will generate a FluSight ensemble influenza hospital admission forecast using valid forecast submissions in the current week by the Wednesday 11PM ET deadline. Some or all participant forecasts may be combined into an ensemble forecast to be published in real-time along with the participant forecasts. In addition, some or all forecasts may be displayed alongside the output of a baseline model for comparison.
 
 
 ## Policy on late or updated submissions 
@@ -240,3 +239,56 @@ In order to ensure that forecasting is done in real-time, all forecasts are requ
 Forecasts will be evaluated using a variety of metrics, including weighted interval score (WIS) and its components and prediction interval coverage. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
 
 Evaluation will use official data reported from healthdata.gov as reported at the end or following the final forecast date (depending on data availability).
+
+# Rate-trend forecast specifications
+In order to mitigate the impact of reporting revisions and noise inherent in small counts, all week pairs with a difference of fewer than 10 hospital admissions will be classified as having a "stable" trend. 
+
+
+**For one-week ahead rate trends (horizon = -1):**
+
+*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
+
+*Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 2/100k.
+
+*Large increase:* positive forecasted rate changes that do not qualify as stable and for which the forecasted rate change is larger than or equal to 2/100k.
+
+*Decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is less than 2/100k.
+
+*Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 2/100k.
+
+**For two-week ahead rate trends (horizon = 0):**
+
+*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
+
+*Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 3/100k.
+
+*Large increase:* positive forecasted rate changes that do not qualify as stable and for which the forecasted rate change is larger than or equal to 3/100k.
+
+*Decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is less than 3/100k.
+
+*Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 3/100k.
+
+**For three-week ahead rate trends (horizon = 1):**
+
+*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 2/100k OR the corresponding magnitude of the count change is less than 10.
+
+*Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 4/100k.
+
+*Large increase:* positive forecasted rate changes that do not qualify as stable and for which the forecasted rate change is larger than or equal to 4/100k.
+
+*Decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is less than 4/100k.
+
+*Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 4/100k.
+
+**For four-week and five-week ahead rate trends (horizon = 2 or 3, respectively):**
+
+*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 2.5/100k OR the corresponding magnitude of the count change is less than 10.
+
+*Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 5/100k.
+
+*Large increase:* positive forecasted rate changes that do not qualify as stable and for which the forecasted rate change is larger than or equal to 5/100k.
+
+*Decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is less than 5/100k.
+
+*Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 5/100k.
+
