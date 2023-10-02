@@ -43,7 +43,7 @@ Some of these data are also available programmatically through the [EpiData](htt
 Other data sources
 ------------
 
-Influenza hospitalization admissiong data is also available in a [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u); data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). 
+Influenza hospitalization admissions data is also available in a [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u); data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). 
 
 Percent of Emergency Department visits with a specified pathogen (COVID, Flu, RSV) out of all emergency department visits in a given epiweek are reported by the CDC National Syndromic Surveillance Program (NSSP) and provided in the [2023 Respiratory Virus Response - NSSP Emergency Department Visits dataset](https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm).  
 
@@ -52,11 +52,10 @@ Additional historical influenza surveillance data from other surveillance system
 
 ### Data processing
 
-The hospitalization tareet data is computed based on the `previous_day_admission_influenza_confirmed`
+The hospitalization target data is computed based on the `previous_day_admission_influenza_confirmed`
 field which provides the new daily admissions with a confirmed diagnosis of influenza.
 
 CDC has been reporting COVID hospital admission data on public facing websites using the dates listed in the date field, rather than shifting the admissions to the previous date to represent the actual date of admission. This season, FluView and FluSight will adopt this practice and no longer shift the dates to account for the actual event date of admission. Influenza hospitalization forecasts should no longer shift the admissions data by one day before aggregating to the weekly epiweek count, and epiweek forecasts this season will include admissions reported Sunday to Saturday. This also aligns with the availability of data from this system now that hospitals are required to report data Sunday to Saturday (capturing admissions that occurred Saturday through Friday) by the following Tuesday. These changes are only for FluSight influenza forecasts, not for COVID forecasts. We will generate a new dataset with the observed target weekly values that no longer shifts the data by one day and will be stored in this subdirectory.
-
 
 For each horizon of predictions, we will use the specification of
 epidemiological weeks (EWs) [defined by the US
