@@ -53,7 +53,7 @@ model_contributors: [
 
 ### license
 
-One of [licenses](https://github.com/reichlab/covid19-forecast-hub/blob/master/code/validation/accepted-licenses.csv).
+One of the [accepted licenses](https://github.com/cdcepi/FluSight-forecast-hub/blob/673e983fee54f3a21448071ac46a9f78d27dd164/hub-config/model-metadata-schema.json#L69-L75).
 
 We encourage teams to submit as a "cc-by-4.0" to allow the broadest possible uses
 including private vaccine production (which would be excluded by the "cc-by-nc-4.0" license). 
