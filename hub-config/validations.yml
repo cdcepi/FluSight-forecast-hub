@@ -4,11 +4,11 @@ default:
         fn: "opt_check_tbl_horizon_timediff"
         pkg: "hubValidations"
         args:
-          t0_colname: "forecast_date"
+          t0_colname: "reference_date"
           t1_colname: "target_end_date"
       counts_lt_popn:
         fn: "opt_check_tbl_counts_lt_popn"
         pkg: "hubValidations"
         args:
-          targets: "!expr list(target = 'wk ahead inc flu hosp')"
+          targets: !expr list(target = 'wk inc flu hosp')
           popn_file_path: "auxiliary-data/locations.csv"
