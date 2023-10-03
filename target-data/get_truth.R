@@ -1,0 +1,55 @@
+## Fetch FluSight Truth Data 
+
+fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
+  require(dplyr)
+  require(lubridate)
+  require(RSocrata)
+  
+  health_data = RSocrata::read.socrata(url = "https://healthdata.gov/resource/g62h-syeh.json") %>% 
+    dplyr::filter(date >= as.Date("2022-02-02"))
+  
+  recent_data = health_data %>% filter(date >= as.Date("2022-02-02")) %>% 
+    dplyr::filter(!state %in% c("VI", "AS")) %>% 
+    dplyr::select(state, date, previous_day_admission_influenza_confirmed) %>% 
+    dplyr::rename("value" = "previous_day_admission_influenza_confirmed") %>% 
+    dplyr::mutate(date = as.Date(date), 
+                  value = as.numeric(value),
+                  epiweek = lubridate::epiweek(date), 
+                  epiyear = lubridate::epiyear(date))
+  
+  us_data = recent_data %>% dplyr::group_by(date, epiweek, epiyear) %>% 
+    dplyr::summarise(value = sum(value, na.rm = na.rm)) %>% 
+    dplyr::mutate(state = "US") %>% 
+    dplyr::ungroup()
+  
+  full_data = rbind(recent_data, us_data) %>% 
+    dplyr::left_join(., locations, by = join_by("state" == "abbreviation"))
+  
+  weeklydat = full_data %>% 
+    dplyr::group_by(state,epiweek,epiyear, location, location_name, population) %>% 
+    dplyr::summarise(value = sum(value, na.rm = na.rm), date = max(date), num_days = n()) %>% 
+    dplyr::ungroup() %>% 
+    dplyr::filter(num_days == 7L) %>% 
+    dplyr::select(-num_days, -epiweek, -epiyear) %>% 
+    dplyr::mutate(weekly_rate = (value*100000)/population )
+  
+  if(temporal_resolution == "weekly"){
+    final_dat = weeklydat %>% 
+      select(date, location, location_name, value, weekly_rate) %>% 
+      arrange(date)
+  } else{
+    final_dat = full_data 
+  }
+  return(final_dat)
+  
+}
+library(dplyr)
+library(lubridate)
+library(RSocrata)
+locations <- read.csv("https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% 
+  select(1:4)
+
+truth_dat <- fetch_flu()
+
+write.csv(truth_dat, file = "./target-data/truth-Incident Hospitalizations.csv", row.names = FALSE)
+write.csv(truth_dat, file = paste0("./target-data/truth-Incident Hospitalizations_", lubridate::today(),".csv"), row.names = FALSE)
