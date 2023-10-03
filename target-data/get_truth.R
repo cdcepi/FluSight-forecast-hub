@@ -36,7 +36,7 @@ fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   if(temporal_resolution == "weekly"){
     final_dat = weeklydat %>% 
       select(date, location, location_name, value, weekly_rate) %>% 
-      arrange(date)
+      arrange(desc(date))
   } else{
     final_dat = full_data 
   }
@@ -49,7 +49,7 @@ library(RSocrata)
 locations <- read.csv("https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% 
   select(1:4)
 
-truth_dat <- fetch_flu()
+truth_dat <- fetch_flu(temporal_resolution = "weekly")
 
-write.csv(truth_dat, file = "./target-data/truth-Incident Hospitalizations.csv", row.names = FALSE)
+write.csv(truth_dat, file = "./target-data/truth-Incident Hospitalizations.csv", row.names = FALSE, append = FALSE)
 write.csv(truth_dat, file = paste0("./target-data/truth-Incident Hospitalizations_", lubridate::today(),".csv"), row.names = FALSE)
