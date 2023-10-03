@@ -1,4 +1,4 @@
-## Fetch FluSight Truth Data 
+## Fetch FluSight target Data 
 
 fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   require(dplyr)
@@ -49,7 +49,7 @@ library(RSocrata)
 locations <- read.csv("https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% 
   select(1:4)
 
-truth_dat <- fetch_flu(temporal_resolution = "weekly")
+target_dat <- fetch_flu(temporal_resolution = "weekly")
 
-write.csv(truth_dat, file = "./target-data/truth-Incident Hospitalizations.csv", row.names = FALSE, append = FALSE)
-write.csv(truth_dat, file = paste0("./target-data/truth-Incident Hospitalizations_", lubridate::today(),".csv"), row.names = FALSE)
+write.csv(target_dat, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
+write.csv(target_dat, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_", max(target_dat$date),".csv"), row.names = FALSE)
