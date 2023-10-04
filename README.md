@@ -1,5 +1,5 @@
 # FluSight 2023-2024
-This repository is designed to collect forecast data for the 2023-2024 FluSight collaborative exercise run by the US CDC. This project collects forecasts for weekly new hospitalizations due to confirmed influenza.
+This repository is designed to collect forecast data for the 2023-2024 FluSight collaborative exercise run by the US CDC. This project collects forecasts for weekly new hospitalizations due to confirmed influenza. Anyone interested in using these data for additional research or publications is requested to contact flusight@cdc.gov for information regarding attribution of the source forecasts.'
 
 ## Nowcasts and Forecasts of Confirmed Influenza Hospitalizations Admissions During the 2023-2024 Influenza Season
 
