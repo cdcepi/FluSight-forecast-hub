@@ -1,0 +1,37 @@
+name: Update truth data
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Update target data'
+        required: false
+  schedule:
+    - cron: "30 17 * * 3"
+
+jobs:
+  update_truth_data:
+    if: github.repository_owner == 'cdcepi'
+    runs-on: macOS-latest
+    steps:    
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with: 
+          fetch-depth: 0
+      - name: Setup R 
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install dependencies
+        run: |
+          install.packages(c("dplyr", "lubridate", "RSocrata"))
+        shell: Rscript {0}
+      - name: Generate truth csv files
+        run:  Rscript target-data/get_target_data.R
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with: 
+          add: 'target-data'
+          message: "Update target data"
+          default_author: github_actions
+          push: true
+
