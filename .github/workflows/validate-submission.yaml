@@ -7,6 +7,7 @@ on:
     paths:
       - 'model-output/**'
       - 'model-metadata/*'
+      - '!**README**'
 
 jobs:
   validate-submission:
