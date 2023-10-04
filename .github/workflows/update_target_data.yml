@@ -1,4 +1,4 @@
-name: Update truth data
+name: Update target data
 on:
   workflow_dispatch:
     inputs:
