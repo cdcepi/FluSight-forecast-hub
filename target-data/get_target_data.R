@@ -1,4 +1,16 @@
-## Fetch FluSight target Data 
+#' Fetch FluSight target Data 
+#' Obtain influenza signal at daily or weekly scale
+#'
+#' @param as_of Date or string in format "YYYY-MM-DD" specifying the date which
+#'   the data was available on or before. If `NULL`, the default returns the
+#'   most recent available data.
+#' @param temporal_resolution "daily" or "weekly"
+#' @param na.rm boolean indicating whether NA values should be dropped when
+#'   aggregating state-level values and calculating weekly totals. Defaults to
+#'   `FALSE`
+#'
+#' @return data frame of flu incidence with columns date, location,
+#'   location_name, value, weekly_ratee
 
 fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   require(dplyr)
