@@ -44,8 +44,8 @@ fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   
   if(temporal_resolution == "weekly"){
     final_dat = weeklydat %>% 
-      select(date, location, location_name, value, weekly_rate) %>% 
-      arrange(desc(date))
+      dplyr::select(date, location, location_name, value, weekly_rate) %>% 
+      dplyr::arrange(desc(date))
   } else{
     final_dat = full_data 
   }
@@ -55,10 +55,11 @@ fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
 library(dplyr)
 library(lubridate)
 library(RSocrata)
-locations <- read.csv("https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% 
+library(readr)
+locations <- read_csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% 
   select(1:4)
 
-target_dat <- fetch_flu(temporal_resolution = "weekly")
+target_data <- fetch_flu(temporal_resolution = "weekly")
 
-write.csv(target_dat, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
-write.csv(target_dat, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_", max(target_dat$date),".csv"), row.names = FALSE)
+readr::write_csv(target_data, file = "./target-data/target-hospital-admissions.csv")
+readr::write_csv(target_data, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_", max(target_data$date),".csv"))
