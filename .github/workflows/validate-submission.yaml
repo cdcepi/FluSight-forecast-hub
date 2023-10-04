@@ -7,6 +7,7 @@ on:
     paths:
       - 'model-output/**'
       - 'model-metadata/*'
+      - '!**README**'
 
 jobs:
   validate-submission:
@@ -43,5 +44,6 @@ jobs:
               pr_number = Sys.getenv("PR_NUMBER"),
               skip_submit_window_check = FALSE
           )
+          print(v)
           hubValidations::check_for_errors(v)
         shell: Rscript {0}
