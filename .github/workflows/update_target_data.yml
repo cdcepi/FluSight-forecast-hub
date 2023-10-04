@@ -23,9 +23,9 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages(c("dplyr", "lubridate", "RSocrata"))
+          install.packages(c("dplyr", "lubridate","readr", "RSocrata"))
         shell: Rscript {0}
-      - name: Generate truth csv files
+      - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
