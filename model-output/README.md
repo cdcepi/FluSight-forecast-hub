@@ -112,7 +112,7 @@ The date YYYY-MM-DD is the [`reference_date`](#reference_date). This should be t
 The `team` and `model` in this file must match the `team` and `model` in
 the directory this file is in. Both `team` and `model` should be less
 than 15 characters, alpha-numeric and underscores only, with no spaces
-or hyphens. **Note:** Any categorical rate-trend forecasts should be submitted in the same weekly csv submission file as the hospital admission forecasts.
+or hyphens. **Note:** Any categorical rate-trend forecasts should be submitted in the same weekly csv submission file as the hospital admission forecasts. 
 
 ## Forecast file format 
 
@@ -130,7 +130,7 @@ columns (in any order):
 
 No additional columns are allowed.
 
-The value in each row of the file is either a quantile or rate-trend prediction for a particular combination of location, date, and horizon.
+The value in each row of the file is either a quantile or rate-trend prediction for a particular combination of location, date, and horizon. Please see Tables 1 and 2 below for examples based on sample dates. 
 
 ### `reference_date` 
 
@@ -138,7 +138,7 @@ Values in the `reference_date` column must be a date in the ISO format
 
     YYYY-MM-DD
 
-This is the date from which all forecasts should be considered. This date is the Saturday following the submission Due Date, corresponding to the last day of the epiweek when submissions are made. The `reference_date` should be the same as the date in the filename but is included here to facilitate validation and analysis.
+This is the date from which all forecasts should be considered. This date is the Saturday following the submission Due Date, corresponding to the last day of the epiweek when submissions are made. The `reference_date` should be the same as the date in the filename but is included here to facilitate validation and analysis. 
 
 ### `target`
 
@@ -210,6 +210,37 @@ For rate change forecasts, the output_type_id indicates the category that the pr
 ### `value`
 
 Values in the `value` column are non-negative numbers indicating the "quantile" or "pmf" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For rate change forecasts, values are required to sum to 1 across all `output_type_ids` for each target and location (as specified in the FILL LINK hubverse documentation).
+
+### Example tables
+
+**Table 1:** the reference date, target end dates, and the dates
+included in the predicted EW for an example of the weekly hospital
+admissions target with a reference date of Saturday, November 18, 2023.
+
+| reference_date | horizon | target_end_date | target EW | target EW dates covered  |
+|:---------------|:--------|:----------------|:----------|:-------------------------|
+| 2023-11-18     | -1      | 2023-11-11      | 45        | 2023-11-05 to 2023-11-11 |
+| 2023-11-18     | 0       | 2023-11-18      | 46        | 2023-11-12 to 2023-11-18 |
+| 2023-11-18     | 1       | 2023-11-25      | 47        | 2023-11-19 to 2023-11-25 |
+| 2023-11-18     | 2       | 2023-12-02      | 48        | 2023-11-26 to 2023-12-02 |
+| 2023-11-18     | 3       | 2023-12-09      | 49        | 2023-12-03 to 2023-12-09 |
+
+
+**Table 2:** the reference date, target end dates, and the dates
+included in the predicted EW for an example of the rate trend target
+with a reference date of Saturday, November 18 2023. The rate trend
+target describes differences in the hospitalization rate between the
+baseline EW (two weeks prior to the EW of the reference date) and the
+target EW.
+
+| reference_date | horizon | target_end_date | target EW | target EW dates covered  | baseline EW | baseline EW dates covered |
+|:---------------|:--------|:----------------|:----------|:-------------------------|:------------|:--------------------------|
+| 2023-11-18     | -1      | 2023-11-11      | 45        | 2023-11-05 to 2023-11-11 | 44          | 2023-10-29 to 2023-11-04  |
+| 2023-11-18     | 0       | 2023-11-18      | 46        | 2023-11-12 to 2023-11-18 | 44          | 2023-10-29 to 2023-11-04  |
+| 2023-11-18     | 1       | 2023-11-25      | 47        | 2023-11-19 to 2023-11-25 | 44          | 2023-10-29 to 2023-11-04  |
+| 2023-11-18     | 2       | 2023-12-02      | 48        | 2023-11-26 to 2023-12-02 | 44          | 2023-10-29 to 2023-11-04  |
+| 2023-11-18     | 3       | 2023-12-09      | 49        | 2023-12-03 to 2023-12-09 | 44          | 2023-10-29 to 2023-11-04  |
+
 
 ## Forecast validation 
 
