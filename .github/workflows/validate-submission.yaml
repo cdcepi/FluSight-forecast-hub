@@ -44,6 +44,5 @@ jobs:
               pr_number = Sys.getenv("PR_NUMBER"),
               skip_submit_window_check = FALSE
           )
-          print(v)
-          hubValidations::check_for_errors(v)
+          hubValidations::check_for_errors(v, verbose = TRUE)
         shell: Rscript {0}
