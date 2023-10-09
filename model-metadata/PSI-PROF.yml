@@ -1,0 +1,34 @@
+team_name: "Predictive Science Inc"
+team_abbr: "PSI"
+model_name: "Package for Respiratory Disease Open-source Forecasting"
+model_abbr: "PROF"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Michal Ben-Nun",
+    "affiliation": "Predictive Science Inc",
+    "email": "mbennun@predsci.com"
+  },
+  {
+    "name": "James Turtle",
+    "affiliation": "Predictive Science Inc",
+    "email": "jturtle@predsci.com"
+  },
+  {
+    "name": "Pete Riley",
+    "affiliation": "Predictive Science Inc",
+    "email": "pete@predsci.com"
+  }
+]
+website_url: "https://www.predsci.com/usa-flu-hosp/"
+license: "mit"
+citation: "https://doi.org/10.1371/journal.pcbi.1007013, https://doi.org/10.1371/journal.pcbi.1009230"
+team_funding: "funding"
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods: "A stochastic/deterministic, SIR model that stratifies by disease severity and includes compartments for hospitalizations. Parameter posteriors are inferred using an MCMC procedure."
+data_inputs: "Daily and weekly incident flu hospitalizations from the HHS COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries. US Census population estimates."
+methods_long: "The PROF routines perform a deterministic fit of our compartmental SIR model to daily hospitalization incidence profiles.  The transmission-rate coefficient (beta) is a time-dependent function of 2, 3, or 4 arc-tangents.  All three cases (2, 3, and 4 segments) are fit to the data and a human reviewer chooses the most appropriate result. This is followed by stochastic simulations through the forecast time-window using the inferred parameter distributions. The 'I' compartments are divided by disease severity into Mild (non-clinical) and Clinical.  A portion of clinical cases will proceed to the hospitalization compartment. The model fit is inferred by MCMC procedure, run forward at a daily cadence, and then aggregated to weekly incidence to produce the forecasts.  Where there is little-to-no epi signal in the data, a statistical persistence model is substituted for the mechanistic model.  This model is equivalent to the previous model 'PSI-DICE', but in an updated computational framework (https://github.com/predsci/PROF)."
+ensemble_of_models: false
+ensemble_of_hub_models: false
