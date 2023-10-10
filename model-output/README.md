@@ -75,7 +75,7 @@ where
 Both team and model should be less than 15 characters and not include
 hyphens or other special characters, with the exception of "\_".
 
-The `model` should be unique from any other model in the project.
+The combination of `team` and `model` should be unique from any other model in the project.
 
 Note that this repository has been created to facilitate the transition to using Hubverse formatting. If similar methods are being used for forecasting models that were submitted for the 2021-2022 or 2022-2023 seasons in the [Flusight-forecast-data](https://github.com/cdcepi/Flusight-forecast-data), please feel free to use the same naming convention for your team.  
 
