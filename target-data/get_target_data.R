@@ -7,7 +7,7 @@
 #'   `TRUE`
 #'
 #' @return data frame of flu incidence with columns date, location,
-#'   location_name, value, weekly_ratee
+#'   location_name, value, weekly_rate
 
 fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   require(dplyr)
@@ -68,7 +68,8 @@ locations <- readr::read_csv(file = "https://raw.githubusercontent.com/cdcepi/Fl
   
 target_data <- fetch_flu(temporal_resolution = "weekly")
 
-date_max <- max(target_data$date)
+archive_data <- paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_",max(target_data$date) ,".csv")
 
 readr::write_csv(target_data, file = "./target-data/target-hospital-admissions.csv", append = FALSE)
-readr::write_csv(target_data, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_",date_max ,".csv"))
+readr::write_csv(target_data, file = archive_data)
+
