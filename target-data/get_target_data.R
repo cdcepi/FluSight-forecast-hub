@@ -64,8 +64,11 @@ library(RSocrata)
 library(readr)
 locations <- readr::read_csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv", col_select= 1:4)
 
+#setwd("C:/Users/nqr2/Desktop/Github/FluSight-forecast-hub")
   
 target_data <- fetch_flu(temporal_resolution = "weekly")
 
+date_max <- max(target_data$date)
+
 readr::write_csv(target_data, file = "./target-data/target-hospital-admissions.csv", append = FALSE)
-readr::write_csv(target_data, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_", max(target_data$date),".csv"))
+readr::write_csv(target_data, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_",date_max ,".csv"))
