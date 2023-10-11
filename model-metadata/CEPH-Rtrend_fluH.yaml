@@ -1,7 +1,7 @@
 team_name: "CEPH Lab at Indiana University"
 team_abbr: "CEPH"
 model_name: "Rtrend FluH"
-model_abbr: "Rtrent_fluH"
+model_abbr: "Rtrend_fluH"
 model_contributors: [
   {
     "name": "Marco Ajelli",
