@@ -1,0 +1,25 @@
+team_name: Srivastava Group
+model_name: RandomForest
+model_abbr: SGroup-RandomForest
+model_contributors: [
+  {
+    "name": "Ajitesh Srivastava",
+    "affiliation": "University of Southern California",
+    "email": "ajiteshs@usc.edu",
+    "orcid": "1234-1234-1234-1234"
+  },
+  {
+    "name": " Majd Al Aawar",
+    "affiliation": "University of Southern California",
+    "email": "malaawar@usc.edu",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+license: mit
+designated_model: true
+data_inputs: HHS, FluSurv-NET
+methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.
+methods_long: Random Forest is an ensemble of the individual predictors generated from a variation of the SIkJalpha compartmental model, where each predictor corresponds to a certain set of hyperparameters, as well as some HHS data, as well as historical FluSurv-NET data.
+ensemble_of_models: true
+ensemble_of_hub_models: false
+
