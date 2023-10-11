@@ -26,7 +26,7 @@ license: "CC-BY-4.0"
 designated_model: true
 data_inputs: "Flu hospitalizations from HHS, Google's symptom search data, and CDC's ILI data."
 methods: "Deep neural network model with conformal predictions."
-methods_long: "Deep neural network model with conformal predictions. The neural network architecture is a sequence-to-sequence model based on recurrent units and self-attention modules. It is trained in a multi-task setting where each region is considered a task. The uncertainty quantification is conducted post hoc with conformal predictions that utilize a neural network to adapt to distribution shifts. Spatial correlation is not considered."
+methods_long: "Deep neural network model with conformal predictions. The neural network architecture is a sequence-to-sequence model based on recurrent units and self-attention modules. It is trained in a multi-task setting where each region is considered a task. The uncertainty quantification is conducted post hoc with conformal predictions that follows adaptive conformal inference to adapt to distribution shifts. Spatial correlation is not considered."
 citation: "Rodriguez, A., Tabassum, A., Cui, J., Xie, J., Ho, J., Agarwal, P., Adhikari, B. and Prakash, B.A., 2021, May. Deepcovid: An operational deep learning-driven framework for explainable real-time covid-19 forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 15393-15400). https://ojs.aaai.org/index.php/AAAI/article/view/17808"
 ensemble_of_models: false
 ensemble_of_hub_models: false
