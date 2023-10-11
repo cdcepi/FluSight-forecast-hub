@@ -1,7 +1,7 @@
-team_name: "University of Virginia, Biocomplexity Institute"
-team_abbr: "UVA"
+team_name: "UVAFluX-Ensemble"
+team_abbr: "UVAFluX"
 model_name: "Ensemble of statistical and deep learning models"
-model_abbr: "UVAFluX-Ensemble"
+model_abbr: "Ensemble"
 model_version: "1.0"
 model_contributors: [
   {
@@ -23,22 +23,22 @@ model_contributors: [
     "name": "Bryan Lewis",
     "affiliation": "UVA",
     "email": "bl4zc@virginia.edu"
-  }
+  },
   {
     "name": "Madhav Marathe",
     "affiliation": "UVA",
     "email": "marathe@virginia.edu"
-  }
+  },
   {
     "name": "Srinivasan Venkatramanan",
     "affiliation": "UVA",
     "email": "srini@virginia.edu"
-  }
+  },
   {
     "name": "Lacey Critchley",
     "affiliation": "UVA",
     "email": "lcritchley@virginia.edu"
-  }
+  },
   {
     "name": "Brian Klahn",
     "affiliation": "UVA",
