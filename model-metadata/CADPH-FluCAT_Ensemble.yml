@@ -1,0 +1,32 @@
+team_name: "California Department of Public Health"
+team_abbr: "CADPH"
+model_name: "FluCAT Ensemble"
+model_abbr: "FluCAT_Ensemble"
+model_contributors: [
+  {
+    "name": "Lauren White",
+    "affiliation": "California Department of Public Health",
+    "email": "lauren.white@cdph.ca.gov"
+  },
+  {
+    "name": "Erin Murray",
+    "affiliation": "California Department of Public Health",
+    "email": "erin.murray@cdph.ca.gov"
+  },
+  {
+    "name": "Tomas M. Leon",
+    "affiliation": "California Department of Public Health",
+    "email": "tomas.leon@cdph.ca.gov"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Daily incident flu hospitalizations (NHSN), clinical lab surveillance data, Change healthcare claims data (accessed via covidcast)"
+methods: "Ensemble of time series forecasts approaches including ARIMA, Holt's, damped Holt's and neural networks"
+methods_long: "An ensemble of several time series forecasts including; (1) autoregressive integrated moving average (ARIMA), which uses a weighted linear sum of recent past observations or lags, (2) exponential smoothing (ETS), which uses weighted averages of past observations, with the weights decaying exponentially as the observations get older, and (3) neural networks using the forecast package in R."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+model_version: "1.1"
+website_url: "https://calcat.covid19.ca.gov/cacovidmodels/"
+team_funding: "The views and opinions expressed by the authors are their own and do not necessarily represent the views and opinions of the California Department of Public Health or the California Health and Human Services Agency."
+
