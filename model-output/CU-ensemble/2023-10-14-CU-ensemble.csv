@@ -114,811 +114,811 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2023-10-14,wk inc flu hosp,3,2023-11-04,US,quantile,0.95,2317.03
 2023-10-14,wk inc flu hosp,3,2023-11-04,US,quantile,0.975,2417.251
 2023-10-14,wk inc flu hosp,3,2023-11-04,US,quantile,0.99,2533.308
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.01,1.23
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.025,2.82
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.05,4.88
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.1,8.23
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.15,11.55
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.2,14.27
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.25,16.84
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.3,19.37
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.35,22.37
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.4,24.1
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.45,26.66
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.5,28.75
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.55,31.73
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.6,34.6
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.65,37.29
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.7,39.5
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.75,42.11
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.8,45.85
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.85,50.6
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.9,55.399
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.95,62.16
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.975,70.739
-2023-10-14,wk inc flu hosp,-1,2023-10-07,1,quantile,0.99,76.95
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.01,0.66
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.025,0.774
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.05,1.067
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.1,2.675
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.15,4.766
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.2,6.466
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.25,9.162
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.3,13.25
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.35,16.834
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.4,20.048
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.45,24.114
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.5,27.383
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.55,31.068
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.6,36.275
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.65,41.471
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.7,46.282
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.75,52.183
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.8,56.695
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.85,64.534
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.9,71.91
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.95,83.589
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.975,93.951
-2023-10-14,wk inc flu hosp,0,2023-10-14,1,quantile,0.99,107.411
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.01,12.46
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.025,13.127
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.05,13.531
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.1,14.427
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.15,15.567
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.2,16.307
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.25,16.807
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.3,17.858
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.35,18.372
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.4,18.876
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.45,19.462
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.5,19.925
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.55,20.57
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.6,21.196
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.65,21.871
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.7,22.334
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.75,23.043
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.8,24.272
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.85,25.934
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.9,27.519
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.95,31.272
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.975,35.89
-2023-10-14,wk inc flu hosp,1,2023-10-21,1,quantile,0.99,46.0
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.01,12.609
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.025,13.304
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.05,14.045
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.1,15.274
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.15,16.63
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.2,17.445
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.25,18.458
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.3,19.193
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.35,19.619
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.4,20.169
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.45,20.783
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.5,21.236
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.55,21.649
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.6,22.369
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.65,23.077
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.7,23.627
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.75,24.369
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.8,25.542
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.85,27.695
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.9,29.313
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.95,34.745
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.975,42.641
-2023-10-14,wk inc flu hosp,2,2023-10-28,1,quantile,0.99,61.326
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.01,13.155
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.025,13.741
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.05,14.713
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.1,15.42
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.15,16.282
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.2,16.819
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.25,17.547
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.3,18.045
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.35,18.667
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.4,19.164
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.45,19.849
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.5,20.467
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.55,20.91
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.6,21.39
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.65,22.145
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.7,22.876
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.75,23.463
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.8,24.658
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.85,26.278
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.9,27.891
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.95,33.496
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.975,43.799
-2023-10-14,wk inc flu hosp,3,2023-11-04,1,quantile,0.99,88.565
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.01,0.515
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.025,1.04
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.05,1.61
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.1,2.435
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.15,3.215
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.2,3.915
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.25,4.415
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.3,5.03
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.35,5.515
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.4,6.07
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.45,6.625
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.5,7.13
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.55,7.71
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.6,8.28
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.65,8.965
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.7,9.625
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.75,10.42
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.8,11.23
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.85,12.24
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.9,13.445
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.95,15.31
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.975,16.72
-2023-10-14,wk inc flu hosp,-1,2023-10-07,2,quantile,0.99,18.415
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.025,0.0
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.05,1.115
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.1,4.08
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.15,4.251
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.2,4.427
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.25,4.546
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.3,4.65
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.35,4.73
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.4,4.899
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.45,6.053
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.5,7.318
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.55,8.31
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.6,9.075
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.65,9.403
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.7,9.594
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.75,9.789
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.8,10.064
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.85,10.33
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.9,12.196
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.95,18.175
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.975,21.436
-2023-10-14,wk inc flu hosp,0,2023-10-14,2,quantile,0.99,22.956
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.025,0.0
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.05,0.004
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.1,0.013
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.15,0.783
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.2,1.999
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.25,4.639
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.3,6.051
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.35,7.545
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.4,9.441
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.45,10.138
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.5,11.033
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.55,11.485
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.6,11.785
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.65,12.079
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.7,12.629
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.75,14.475
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.8,16.031
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.85,18.591
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.9,19.668
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.95,25.332
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.975,41.192
-2023-10-14,wk inc flu hosp,1,2023-10-21,2,quantile,0.99,51.621
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.025,1.526
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.05,2.978
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.1,4.035
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.15,5.283
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.2,6.461
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.25,8.466
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.3,11.018
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.35,11.915
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.4,12.758
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.45,14.563
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.5,15.65
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.55,16.14
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.6,16.755
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.65,17.278
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.7,17.845
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.75,18.659
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.8,22.366
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.85,23.9
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.9,27.197
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.95,32.743
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.975,43.17
-2023-10-14,wk inc flu hosp,2,2023-10-28,2,quantile,0.99,61.588
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.01,3.528
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.025,3.867
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.05,5.358
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.1,7.08
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.15,9.547
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.2,10.894
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.25,12.144
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.3,14.913
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.35,16.383
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.4,17.6
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.45,19.433
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.5,20.652
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.55,21.601
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.6,22.422
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.65,23.068
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.7,23.749
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.75,24.717
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.8,29.354
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.85,32.397
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.9,37.067
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.95,46.92
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.975,61.552
-2023-10-14,wk inc flu hosp,3,2023-11-04,2,quantile,0.99,71.473
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.01,17.568
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.025,18.577
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.05,19.844
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.1,20.578
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.15,21.126
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.2,21.61
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.25,22.209
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.3,22.723
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.35,23.347
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.4,23.812
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.45,24.361
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.5,24.893
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.55,25.406
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.6,25.844
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.65,26.415
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.7,27.23
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.75,27.717
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.8,28.535
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.85,29.359
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.9,30.662
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.95,32.334
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.975,35.134
-2023-10-14,wk inc flu hosp,-1,2023-10-07,4,quantile,0.99,39.711
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.01,20.612
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.025,21.786
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.05,23.335
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.1,24.455
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.15,25.367
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.2,26.091
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.25,27.588
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.3,29.142
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.35,30.061
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.4,31.157
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.45,32.172
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.5,33.279
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.55,34.114
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.6,35.58
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.65,36.903
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.7,38.133
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.75,39.553
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.8,42.254
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.85,44.869
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.9,49.057
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.95,53.378
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.975,63.837
-2023-10-14,wk inc flu hosp,0,2023-10-14,4,quantile,0.99,87.529
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.01,14.762
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.025,15.863
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.05,16.949
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.1,18.105
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.15,18.826
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.2,23.826
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.25,33.827
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.3,40.553
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.35,43.074
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.4,45.312
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.45,47.446
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.5,50.016
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.55,52.376
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.6,56.12
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.65,61.562
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.7,64.98
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.75,67.738
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.8,72.128
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.85,85.078
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.9,100.364
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.95,115.617
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.975,138.302
-2023-10-14,wk inc flu hosp,1,2023-10-21,4,quantile,0.99,193.562
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.01,30.49
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.025,32.316
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.05,34.62
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.1,37.398
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.15,39.425
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.2,41.712
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.25,43.895
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.3,46.265
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.35,48.513
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.4,50.131
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.45,53.283
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.5,56.236
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.55,58.304
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.6,61.348
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.65,64.654
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.7,68.457
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.75,71.252
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.8,74.523
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.85,83.031
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.9,93.555
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.95,108.429
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.975,169.66
-2023-10-14,wk inc flu hosp,2,2023-10-28,4,quantile,0.99,372.725
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.01,35.838
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.025,37.946
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.05,40.761
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.1,44.745
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.15,47.729
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.2,50.823
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.25,53.715
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.3,56.782
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.35,60.377
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.4,62.84
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.45,67.097
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.5,71.673
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.55,75.162
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.6,79.189
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.65,84.086
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.7,89.345
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.75,94.199
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.8,100.286
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.85,111.097
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.9,127.07
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.95,165.807
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.975,274.523
-2023-10-14,wk inc flu hosp,3,2023-11-04,4,quantile,0.99,825.664
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.01,7.744
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.025,7.885
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.05,8.053
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.1,8.287
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.15,8.401
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.2,8.517
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.25,8.667
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.3,8.776
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.35,8.874
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.4,8.973
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.45,9.042
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.5,9.126
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.55,9.24
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.6,9.338
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.65,9.428
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.7,9.535
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.75,9.672
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.8,9.791
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.85,9.926
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.9,10.116
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.95,10.516
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.975,10.732
-2023-10-14,wk inc flu hosp,-1,2023-10-07,5,quantile,0.99,11.198
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.01,7.871
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.025,8.076
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.05,8.212
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.1,8.543
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.15,8.71
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.2,8.858
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.25,9.055
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.3,9.178
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.35,9.294
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.4,9.41
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.45,9.55
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.5,9.636
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.55,9.79
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.6,9.893
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.65,10.036
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.7,10.181
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.75,10.396
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.8,10.616
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.85,10.811
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.9,11.018
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.95,11.494
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.975,11.917
-2023-10-14,wk inc flu hosp,0,2023-10-14,5,quantile,0.99,12.587
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.01,7.958
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.025,8.162
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.05,8.317
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.1,8.693
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.15,8.913
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.2,9.123
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.25,9.314
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.3,9.496
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.35,9.631
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.4,9.77
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.45,9.942
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.5,10.076
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.55,10.203
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.6,10.392
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.65,10.567
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.7,10.831
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.75,11.081
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.8,11.364
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.85,11.593
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.9,11.868
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.95,12.609
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.975,13.287
-2023-10-14,wk inc flu hosp,1,2023-10-21,5,quantile,0.99,14.116
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.01,7.765
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.025,7.953
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.05,8.166
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.1,8.567
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.15,8.836
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.2,9.086
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.25,9.336
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.3,9.462
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.35,9.621
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.4,9.803
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.45,9.991
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.5,10.218
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.55,10.37
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.6,10.522
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.65,10.73
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.7,11.027
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.75,11.368
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.8,11.642
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.85,12.05
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.9,12.505
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.95,13.091
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.975,14.243
-2023-10-14,wk inc flu hosp,2,2023-10-28,5,quantile,0.99,15.111
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.01,7.418
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.025,7.636
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.05,7.929
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.1,8.321
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.15,8.691
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.2,8.894
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.25,9.172
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.3,9.322
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.35,9.489
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.4,9.668
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.45,9.911
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.5,10.139
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.55,10.352
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.6,10.533
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.65,10.8
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.7,11.077
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.75,11.411
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.8,11.83
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.85,12.264
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.9,12.943
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.95,13.902
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.975,15.282
-2023-10-14,wk inc flu hosp,3,2023-11-04,5,quantile,0.99,16.54
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.01,36.501
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.025,38.105
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.05,39.827
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.1,42.232
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.15,43.661
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.2,45.401
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.25,46.616
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.3,47.506
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.35,48.317
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.4,48.885
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.45,49.388
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.5,49.906
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.55,50.189
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.6,50.454
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.65,51.019
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.7,51.524
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.75,52.006
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.8,53.024
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.85,54.081
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.9,55.502
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.95,57.034
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.975,58.39
-2023-10-14,wk inc flu hosp,-1,2023-10-07,6,quantile,0.99,60.411
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.01,35.999
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.025,38.216
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.05,40.312
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.1,42.761
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.15,44.636
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.2,46.886
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.25,48.065
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.3,49.056
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.35,49.601
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.4,50.233
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.45,50.927
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.5,51.452
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.55,51.998
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.6,52.503
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.65,53.16
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.7,53.944
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.75,54.805
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.8,56.634
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.85,58.521
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.9,61.649
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.95,65.668
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.975,68.304
-2023-10-14,wk inc flu hosp,0,2023-10-14,6,quantile,0.99,71.11
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.01,34.603
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.025,37.842
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.05,39.545
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.1,42.799
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.15,44.699
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.2,47.476
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.25,48.851
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.3,49.689
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.35,50.436
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.4,50.871
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.45,51.831
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.5,52.334
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.55,53.324
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.6,54.203
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.65,54.969
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.7,56.109
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.75,57.205
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.8,59.315
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.85,63.092
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.9,68.755
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.95,76.186
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.975,81.449
-2023-10-14,wk inc flu hosp,1,2023-10-21,6,quantile,0.99,86.441
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.01,32.923
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.025,36.659
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.05,38.978
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.1,42.117
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.15,44.833
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.2,47.409
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.25,48.753
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.3,49.731
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.35,50.543
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.4,51.337
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.45,52.085
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.5,53.133
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.55,53.954
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.6,55.347
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.65,56.612
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.7,57.973
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.75,59.44
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.8,62.55
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.85,67.533
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.9,76.627
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.95,86.978
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.975,97.658
-2023-10-14,wk inc flu hosp,2,2023-10-28,6,quantile,0.99,107.85
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.01,30.384
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.025,34.635
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.05,37.465
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.1,40.138
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.15,43.178
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.2,45.069
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.25,46.69
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.3,47.65
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.35,48.901
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.4,49.722
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.45,50.928
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.5,51.99
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.55,53.416
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.6,54.913
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.65,56.469
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.7,57.997
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.75,60.178
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.8,64.188
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.85,70.173
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.9,81.894
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.95,97.579
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.975,114.157
-2023-10-14,wk inc flu hosp,3,2023-11-04,6,quantile,0.99,135.421
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.025,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.05,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.1,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.15,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.2,0.886
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.25,2.055
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.3,3.016
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.35,3.711
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.4,4.459
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.45,5.415
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.5,8.485
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.55,11.781
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.6,12.753
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.65,13.429
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.7,16.39
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.75,19.804
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.8,22.679
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.85,23.911
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.9,25.881
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.95,34.239
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.975,55.207
-2023-10-14,wk inc flu hosp,-1,2023-10-07,8,quantile,0.99,73.004
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.01,4.38
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.025,5.577
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.05,6.562
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.1,7.249
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.15,8.357
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.2,10.042
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.25,10.526
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.3,10.835
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.35,11.119
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.4,11.361
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.45,12.376
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.5,13.85
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.55,14.791
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.6,15.642
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.65,16.644
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.7,17.873
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.75,18.236
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.8,20.684
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.85,21.449
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.9,22.389
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.95,26.378
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.975,31.357
-2023-10-14,wk inc flu hosp,0,2023-10-14,8,quantile,0.99,36.115
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.01,3.657
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.025,4.867
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.05,5.726
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.1,7.091
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.15,9.704
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.2,11.146
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.25,11.69
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.3,12.118
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.35,12.526
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.4,12.922
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.45,13.799
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.5,15.52
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.55,16.811
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.6,18.062
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.65,19.732
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.7,21.388
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.75,22.309
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.8,23.831
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.85,25.394
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.9,27.104
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.95,34.09
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.975,40.443
-2023-10-14,wk inc flu hosp,1,2023-10-21,8,quantile,0.99,45.44
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.025,0.0
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.05,0.0
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.1,3.651
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.15,7.452
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.2,13.555
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.25,18.185
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.3,20.829
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.35,25.114
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.4,29.554
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.45,33.189
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.5,35.803
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.55,41.122
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.6,44.663
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.65,49.091
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.7,54.284
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.75,56.903
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.8,59.337
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.85,62.253
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.9,73.53
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.95,85.005
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.975,122.993
-2023-10-14,wk inc flu hosp,2,2023-10-28,8,quantile,0.99,133.562
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.01,7.775
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.025,11.219
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.05,14.107
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.1,16.671
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.15,21.236
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.2,22.976
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.25,24.431
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.3,25.789
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.35,26.514
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.4,27.42
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.45,28.839
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.5,29.862
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.55,30.484
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.6,32.626
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.65,34.615
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.7,36.098
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.75,37.879
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.8,40.591
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.85,44.156
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.9,49.405
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.95,67.219
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.975,87.287
-2023-10-14,wk inc flu hosp,3,2023-11-04,8,quantile,0.99,108.732
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.01,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.025,0.0
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.05,0.001
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.1,0.001
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.15,0.002
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.2,0.002
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.25,3.18
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.3,3.62
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.35,4.116
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.4,4.46
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.45,6.261
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.5,8.806
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.55,10.079
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.6,10.866
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.65,11.449
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.7,11.983
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.75,12.415
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.8,13.397
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.85,19.143
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.9,20.344
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.95,24.879
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.975,31.639
-2023-10-14,wk inc flu hosp,-1,2023-10-07,9,quantile,0.99,35.069
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.01,0.504
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.025,0.536
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.05,0.545
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.1,0.566
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.15,0.582
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.2,0.618
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.25,0.853
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.3,2.54
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.35,5.136
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.4,8.633
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.45,10.298
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.5,12.324
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.55,15.807
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.6,20.474
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.65,21.655
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.7,23.0
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.75,24.033
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.8,25.362
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.85,26.353
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.9,35.796
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.95,42.923
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.975,90.244
-2023-10-14,wk inc flu hosp,0,2023-10-14,9,quantile,0.99,116.23
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.01,1.168
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.025,1.249
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.05,1.283
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.1,4.312
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.15,6.343
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.2,7.936
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.25,9.572
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.3,11.526
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.35,13.737
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.4,16.519
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.45,19.392
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.5,21.276
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.55,25.282
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.6,27.534
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.65,28.907
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.7,30.129
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.75,31.553
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.8,33.806
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.85,36.398
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.9,44.918
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.95,54.989
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.975,82.715
-2023-10-14,wk inc flu hosp,1,2023-10-21,9,quantile,0.99,109.781
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.01,4.459
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.025,4.788
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.05,4.967
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.1,5.372
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.15,5.637
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.2,5.806
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.25,5.977
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.3,6.087
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.35,6.213
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.4,6.336
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.45,6.459
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.5,6.604
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.55,6.806
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.6,6.885
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.65,6.986
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.7,7.146
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.75,7.344
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.8,7.549
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.85,7.813
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.9,8.324
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.95,9.158
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.975,10.964
-2023-10-14,wk inc flu hosp,2,2023-10-28,9,quantile,0.99,16.469
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.01,1.777
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.025,5.855
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.05,10.567
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.1,23.682
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.15,26.735
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.2,29.286
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.25,32.99
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.3,35.872
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.35,38.4
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.4,41.696
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.45,45.211
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.5,48.084
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.55,50.512
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.6,52.089
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.65,54.201
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.7,56.177
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.75,57.493
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.8,59.188
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.85,73.805
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.9,89.651
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.95,101.277
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.975,109.482
-2023-10-14,wk inc flu hosp,3,2023-11-04,9,quantile,0.99,121.086
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.01,1.23
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.025,2.82
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.05,4.88
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.1,8.23
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.15,11.55
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.2,14.27
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.25,16.84
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.3,19.37
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.35,22.37
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.4,24.1
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.45,26.66
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.5,28.75
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.55,31.73
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.6,34.6
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.65,37.29
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.7,39.5
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.75,42.11
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.8,45.85
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.85,50.6
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.9,55.399
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.95,62.16
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.975,70.739
+2023-10-14,wk inc flu hosp,-1,2023-10-07,01,quantile,0.99,76.95
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.01,0.66
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.025,0.774
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.05,1.067
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.1,2.675
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.15,4.766
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.2,6.466
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.25,9.162
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.3,13.25
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.35,16.834
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.4,20.048
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.45,24.114
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.5,27.383
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.55,31.068
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.6,36.275
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.65,41.471
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.7,46.282
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.75,52.183
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.8,56.695
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.85,64.534
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.9,71.91
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.95,83.589
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.975,93.951
+2023-10-14,wk inc flu hosp,0,2023-10-14,01,quantile,0.99,107.411
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.01,12.46
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.025,13.127
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.05,13.531
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.1,14.427
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.15,15.567
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.2,16.307
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.25,16.807
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.3,17.858
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.35,18.372
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.4,18.876
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.45,19.462
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.5,19.925
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.55,20.57
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.6,21.196
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.65,21.871
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.7,22.334
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.75,23.043
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.8,24.272
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.85,25.934
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.9,27.519
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.95,31.272
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.975,35.89
+2023-10-14,wk inc flu hosp,1,2023-10-21,01,quantile,0.99,46.0
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.01,12.609
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.025,13.304
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.05,14.045
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.1,15.274
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.15,16.63
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.2,17.445
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.25,18.458
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.3,19.193
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.35,19.619
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.4,20.169
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.45,20.783
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.5,21.236
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.55,21.649
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.6,22.369
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.65,23.077
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.7,23.627
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.75,24.369
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.8,25.542
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.85,27.695
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.9,29.313
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.95,34.745
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.975,42.641
+2023-10-14,wk inc flu hosp,2,2023-10-28,01,quantile,0.99,61.326
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.01,13.155
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.025,13.741
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.05,14.713
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.1,15.42
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.15,16.282
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.2,16.819
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.25,17.547
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.3,18.045
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.35,18.667
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.4,19.164
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.45,19.849
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.5,20.467
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.55,20.91
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.6,21.39
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.65,22.145
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.7,22.876
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.75,23.463
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.8,24.658
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.85,26.278
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.9,27.891
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.95,33.496
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.975,43.799
+2023-10-14,wk inc flu hosp,3,2023-11-04,01,quantile,0.99,88.565
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.01,0.515
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.025,1.04
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.05,1.61
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.1,2.435
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.15,3.215
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.2,3.915
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.25,4.415
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.3,5.03
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.35,5.515
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.4,6.07
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.45,6.625
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.5,7.13
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.55,7.71
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.6,8.28
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.65,8.965
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.7,9.625
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.75,10.42
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.8,11.23
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.85,12.24
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.9,13.445
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.95,15.31
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.975,16.72
+2023-10-14,wk inc flu hosp,-1,2023-10-07,02,quantile,0.99,18.415
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.025,0.0
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.05,1.115
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.1,4.08
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.15,4.251
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.2,4.427
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.25,4.546
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.3,4.65
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.35,4.73
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.4,4.899
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.45,6.053
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.5,7.318
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.55,8.31
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.6,9.075
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.65,9.403
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.7,9.594
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.75,9.789
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.8,10.064
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.85,10.33
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.9,12.196
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.95,18.175
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.975,21.436
+2023-10-14,wk inc flu hosp,0,2023-10-14,02,quantile,0.99,22.956
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.025,0.0
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.05,0.004
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.1,0.013
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.15,0.783
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.2,1.999
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.25,4.639
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.3,6.051
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.35,7.545
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.4,9.441
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.45,10.138
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.5,11.033
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.55,11.485
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.6,11.785
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.65,12.079
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.7,12.629
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.75,14.475
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.8,16.031
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.85,18.591
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.9,19.668
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.95,25.332
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.975,41.192
+2023-10-14,wk inc flu hosp,1,2023-10-21,02,quantile,0.99,51.621
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.025,1.526
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.05,2.978
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.1,4.035
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.15,5.283
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.2,6.461
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.25,8.466
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.3,11.018
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.35,11.915
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.4,12.758
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.45,14.563
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.5,15.65
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.55,16.14
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.6,16.755
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.65,17.278
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.7,17.845
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.75,18.659
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.8,22.366
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.85,23.9
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.9,27.197
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.95,32.743
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.975,43.17
+2023-10-14,wk inc flu hosp,2,2023-10-28,02,quantile,0.99,61.588
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.01,3.528
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.025,3.867
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.05,5.358
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.1,7.08
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.15,9.547
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.2,10.894
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.25,12.144
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.3,14.913
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.35,16.383
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.4,17.6
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.45,19.433
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.5,20.652
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.55,21.601
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.6,22.422
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.65,23.068
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.7,23.749
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.75,24.717
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.8,29.354
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.85,32.397
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.9,37.067
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.95,46.92
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.975,61.552
+2023-10-14,wk inc flu hosp,3,2023-11-04,02,quantile,0.99,71.473
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.01,17.568
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.025,18.577
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.05,19.844
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.1,20.578
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.15,21.126
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.2,21.61
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.25,22.209
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.3,22.723
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.35,23.347
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.4,23.812
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.45,24.361
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.5,24.893
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.55,25.406
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.6,25.844
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.65,26.415
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.7,27.23
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.75,27.717
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.8,28.535
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.85,29.359
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.9,30.662
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.95,32.334
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.975,35.134
+2023-10-14,wk inc flu hosp,-1,2023-10-07,04,quantile,0.99,39.711
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.01,20.612
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.025,21.786
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.05,23.335
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.1,24.455
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.15,25.367
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.2,26.091
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.25,27.588
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.3,29.142
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.35,30.061
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.4,31.157
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.45,32.172
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.5,33.279
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.55,34.114
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.6,35.58
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.65,36.903
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.7,38.133
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.75,39.553
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.8,42.254
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.85,44.869
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.9,49.057
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.95,53.378
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.975,63.837
+2023-10-14,wk inc flu hosp,0,2023-10-14,04,quantile,0.99,87.529
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.01,14.762
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.025,15.863
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.05,16.949
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.1,18.105
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.15,18.826
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.2,23.826
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.25,33.827
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.3,40.553
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.35,43.074
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.4,45.312
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.45,47.446
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.5,50.016
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.55,52.376
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.6,56.12
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.65,61.562
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.7,64.98
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.75,67.738
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.8,72.128
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.85,85.078
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.9,100.364
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.95,115.617
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.975,138.302
+2023-10-14,wk inc flu hosp,1,2023-10-21,04,quantile,0.99,193.562
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.01,30.49
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.025,32.316
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.05,34.62
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.1,37.398
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.15,39.425
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.2,41.712
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.25,43.895
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.3,46.265
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.35,48.513
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.4,50.131
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.45,53.283
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.5,56.236
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.55,58.304
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.6,61.348
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.65,64.654
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.7,68.457
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.75,71.252
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.8,74.523
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.85,83.031
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.9,93.555
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.95,108.429
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.975,169.66
+2023-10-14,wk inc flu hosp,2,2023-10-28,04,quantile,0.99,372.725
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.01,35.838
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.025,37.946
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.05,40.761
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.1,44.745
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.15,47.729
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.2,50.823
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.25,53.715
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.3,56.782
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.35,60.377
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.4,62.84
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.45,67.097
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.5,71.673
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.55,75.162
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.6,79.189
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.65,84.086
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.7,89.345
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.75,94.199
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.8,100.286
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.85,111.097
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.9,127.07
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.95,165.807
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.975,274.523
+2023-10-14,wk inc flu hosp,3,2023-11-04,04,quantile,0.99,825.664
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.01,7.744
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.025,7.885
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.05,8.053
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.1,8.287
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.15,8.401
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.2,8.517
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.25,8.667
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.3,8.776
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.35,8.874
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.4,8.973
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.45,9.042
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.5,9.126
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.55,9.24
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.6,9.338
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.65,9.428
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.7,9.535
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.75,9.672
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.8,9.791
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.85,9.926
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.9,10.116
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.95,10.516
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.975,10.732
+2023-10-14,wk inc flu hosp,-1,2023-10-07,05,quantile,0.99,11.198
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.01,7.871
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.025,8.076
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.05,8.212
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.1,8.543
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.15,8.71
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.2,8.858
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.25,9.055
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.3,9.178
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.35,9.294
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.4,9.41
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.45,9.55
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.5,9.636
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.55,9.79
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.6,9.893
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.65,10.036
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.7,10.181
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.75,10.396
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.8,10.616
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.85,10.811
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.9,11.018
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.95,11.494
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.975,11.917
+2023-10-14,wk inc flu hosp,0,2023-10-14,05,quantile,0.99,12.587
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.01,7.958
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.025,8.162
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.05,8.317
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.1,8.693
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.15,8.913
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.2,9.123
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.25,9.314
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.3,9.496
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.35,9.631
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.4,9.77
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.45,9.942
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.5,10.076
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.55,10.203
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.6,10.392
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.65,10.567
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.7,10.831
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.75,11.081
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.8,11.364
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.85,11.593
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.9,11.868
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.95,12.609
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.975,13.287
+2023-10-14,wk inc flu hosp,1,2023-10-21,05,quantile,0.99,14.116
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.01,7.765
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.025,7.953
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.05,8.166
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.1,8.567
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.15,8.836
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.2,9.086
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.25,9.336
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.3,9.462
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.35,9.621
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.4,9.803
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.45,9.991
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.5,10.218
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.55,10.37
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.6,10.522
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.65,10.73
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.7,11.027
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.75,11.368
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.8,11.642
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.85,12.05
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.9,12.505
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.95,13.091
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.975,14.243
+2023-10-14,wk inc flu hosp,2,2023-10-28,05,quantile,0.99,15.111
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.01,7.418
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.025,7.636
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.05,7.929
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.1,8.321
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.15,8.691
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.2,8.894
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.25,9.172
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.3,9.322
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.35,9.489
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.4,9.668
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.45,9.911
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.5,10.139
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.55,10.352
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.6,10.533
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.65,10.8
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.7,11.077
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.75,11.411
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.8,11.83
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.85,12.264
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.9,12.943
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.95,13.902
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.975,15.282
+2023-10-14,wk inc flu hosp,3,2023-11-04,05,quantile,0.99,16.54
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.01,36.501
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.025,38.105
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.05,39.827
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.1,42.232
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.15,43.661
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.2,45.401
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.25,46.616
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.3,47.506
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.35,48.317
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.4,48.885
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.45,49.388
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.5,49.906
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.55,50.189
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.6,50.454
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.65,51.019
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.7,51.524
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.75,52.006
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.8,53.024
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.85,54.081
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.9,55.502
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.95,57.034
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.975,58.39
+2023-10-14,wk inc flu hosp,-1,2023-10-07,06,quantile,0.99,60.411
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.01,35.999
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.025,38.216
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.05,40.312
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.1,42.761
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.15,44.636
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.2,46.886
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.25,48.065
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.3,49.056
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.35,49.601
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.4,50.233
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.45,50.927
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.5,51.452
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.55,51.998
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.6,52.503
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.65,53.16
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.7,53.944
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.75,54.805
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.8,56.634
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.85,58.521
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.9,61.649
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.95,65.668
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.975,68.304
+2023-10-14,wk inc flu hosp,0,2023-10-14,06,quantile,0.99,71.11
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.01,34.603
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.025,37.842
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.05,39.545
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.1,42.799
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.15,44.699
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.2,47.476
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.25,48.851
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.3,49.689
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.35,50.436
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.4,50.871
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.45,51.831
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.5,52.334
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.55,53.324
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.6,54.203
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.65,54.969
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.7,56.109
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.75,57.205
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.8,59.315
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.85,63.092
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.9,68.755
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.95,76.186
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.975,81.449
+2023-10-14,wk inc flu hosp,1,2023-10-21,06,quantile,0.99,86.441
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.01,32.923
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.025,36.659
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.05,38.978
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.1,42.117
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.15,44.833
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.2,47.409
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.25,48.753
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.3,49.731
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.35,50.543
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.4,51.337
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.45,52.085
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.5,53.133
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.55,53.954
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.6,55.347
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.65,56.612
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.7,57.973
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.75,59.44
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.8,62.55
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.85,67.533
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.9,76.627
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.95,86.978
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.975,97.658
+2023-10-14,wk inc flu hosp,2,2023-10-28,06,quantile,0.99,107.85
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.01,30.384
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.025,34.635
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.05,37.465
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.1,40.138
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.15,43.178
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.2,45.069
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.25,46.69
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.3,47.65
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.35,48.901
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.4,49.722
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.45,50.928
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.5,51.99
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.55,53.416
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.6,54.913
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.65,56.469
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.7,57.997
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.75,60.178
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.8,64.188
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.85,70.173
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.9,81.894
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.95,97.579
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.975,114.157
+2023-10-14,wk inc flu hosp,3,2023-11-04,06,quantile,0.99,135.421
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.025,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.05,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.1,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.15,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.2,0.886
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.25,2.055
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.3,3.016
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.35,3.711
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.4,4.459
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.45,5.415
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.5,8.485
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.55,11.781
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.6,12.753
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.65,13.429
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.7,16.39
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.75,19.804
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.8,22.679
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.85,23.911
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.9,25.881
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.95,34.239
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.975,55.207
+2023-10-14,wk inc flu hosp,-1,2023-10-07,08,quantile,0.99,73.004
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.01,4.38
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.025,5.577
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.05,6.562
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.1,7.249
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.15,8.357
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.2,10.042
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.25,10.526
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.3,10.835
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.35,11.119
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.4,11.361
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.45,12.376
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.5,13.85
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.55,14.791
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.6,15.642
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.65,16.644
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.7,17.873
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.75,18.236
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.8,20.684
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.85,21.449
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.9,22.389
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.95,26.378
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.975,31.357
+2023-10-14,wk inc flu hosp,0,2023-10-14,08,quantile,0.99,36.115
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.01,3.657
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.025,4.867
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.05,5.726
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.1,7.091
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.15,9.704
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.2,11.146
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.25,11.69
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.3,12.118
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.35,12.526
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.4,12.922
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.45,13.799
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.5,15.52
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.55,16.811
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.6,18.062
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.65,19.732
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.7,21.388
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.75,22.309
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.8,23.831
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.85,25.394
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.9,27.104
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.95,34.09
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.975,40.443
+2023-10-14,wk inc flu hosp,1,2023-10-21,08,quantile,0.99,45.44
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.025,0.0
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.05,0.0
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.1,3.651
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.15,7.452
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.2,13.555
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.25,18.185
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.3,20.829
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.35,25.114
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.4,29.554
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.45,33.189
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.5,35.803
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.55,41.122
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.6,44.663
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.65,49.091
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.7,54.284
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.75,56.903
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.8,59.337
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.85,62.253
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.9,73.53
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.95,85.005
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.975,122.993
+2023-10-14,wk inc flu hosp,2,2023-10-28,08,quantile,0.99,133.562
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.01,7.775
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.025,11.219
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.05,14.107
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.1,16.671
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.15,21.236
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.2,22.976
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.25,24.431
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.3,25.789
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.35,26.514
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.4,27.42
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.45,28.839
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.5,29.862
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.55,30.484
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.6,32.626
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.65,34.615
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.7,36.098
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.75,37.879
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.8,40.591
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.85,44.156
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.9,49.405
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.95,67.219
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.975,87.287
+2023-10-14,wk inc flu hosp,3,2023-11-04,08,quantile,0.99,108.732
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.01,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.025,0.0
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.05,0.001
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.1,0.001
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.15,0.002
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.2,0.002
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.25,3.18
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.3,3.62
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.35,4.116
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.4,4.46
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.45,6.261
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.5,8.806
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.55,10.079
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.6,10.866
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.65,11.449
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.7,11.983
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.75,12.415
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.8,13.397
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.85,19.143
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.9,20.344
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.95,24.879
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.975,31.639
+2023-10-14,wk inc flu hosp,-1,2023-10-07,09,quantile,0.99,35.069
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.01,0.504
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.025,0.536
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.05,0.545
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.1,0.566
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.15,0.582
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.2,0.618
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.25,0.853
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.3,2.54
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.35,5.136
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.4,8.633
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.45,10.298
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.5,12.324
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.55,15.807
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.6,20.474
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.65,21.655
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.7,23.0
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.75,24.033
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.8,25.362
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.85,26.353
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.9,35.796
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.95,42.923
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.975,90.244
+2023-10-14,wk inc flu hosp,0,2023-10-14,09,quantile,0.99,116.23
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.01,1.168
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.025,1.249
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.05,1.283
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.1,4.312
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.15,6.343
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.2,7.936
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.25,9.572
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.3,11.526
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.35,13.737
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.4,16.519
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.45,19.392
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.5,21.276
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.55,25.282
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.6,27.534
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.65,28.907
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.7,30.129
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.75,31.553
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.8,33.806
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.85,36.398
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.9,44.918
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.95,54.989
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.975,82.715
+2023-10-14,wk inc flu hosp,1,2023-10-21,09,quantile,0.99,109.781
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.01,4.459
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.025,4.788
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.05,4.967
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.1,5.372
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.15,5.637
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.2,5.806
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.25,5.977
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.3,6.087
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.35,6.213
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.4,6.336
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.45,6.459
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.5,6.604
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.55,6.806
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.6,6.885
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.65,6.986
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.7,7.146
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.75,7.344
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.8,7.549
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.85,7.813
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.9,8.324
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.95,9.158
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.975,10.964
+2023-10-14,wk inc flu hosp,2,2023-10-28,09,quantile,0.99,16.469
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.01,1.777
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.025,5.855
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.05,10.567
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.1,23.682
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.15,26.735
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.2,29.286
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.25,32.99
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.3,35.872
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.35,38.4
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.4,41.696
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.45,45.211
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.5,48.084
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.55,50.512
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.6,52.089
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.65,54.201
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.7,56.177
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.75,57.493
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.8,59.188
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.85,73.805
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.9,89.651
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.95,101.277
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.975,109.482
+2023-10-14,wk inc flu hosp,3,2023-11-04,09,quantile,0.99,121.086
 2023-10-14,wk inc flu hosp,-1,2023-10-07,10,quantile,0.01,0.001
 2023-10-14,wk inc flu hosp,-1,2023-10-07,10,quantile,0.025,0.001
 2023-10-14,wk inc flu hosp,-1,2023-10-07,10,quantile,0.05,0.001
@@ -6119,181 +6119,181 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2023-10-14,wk flu hosp rate change,3,2023-11-04,US,pmf,large_increase,0.02
 2023-10-14,wk flu hosp rate change,3,2023-11-04,US,pmf,decrease,0.0
 2023-10-14,wk flu hosp rate change,3,2023-11-04,US,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,1,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,1,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,1,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,1,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,1,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,1,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,1,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,1,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,1,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,1,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,1,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,1,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,1,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,1,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,1,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,1,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,1,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,1,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,1,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,1,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,1,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,1,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,1,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,1,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,1,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,2,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,2,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,2,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,2,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,2,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,2,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,2,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,2,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,2,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,2,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,2,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,2,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,2,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,2,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,2,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,2,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,2,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,2,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,2,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,2,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,2,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,2,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,2,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,2,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,2,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,4,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,4,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,4,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,4,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,4,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,4,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,4,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,4,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,4,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,4,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,4,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,4,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,4,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,4,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,4,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,4,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,4,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,4,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,4,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,4,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,4,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,4,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,4,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,4,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,4,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,5,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,5,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,5,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,5,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,5,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,5,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,5,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,5,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,5,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,5,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,5,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,5,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,5,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,5,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,5,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,5,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,5,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,5,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,5,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,5,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,5,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,5,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,5,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,5,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,5,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,6,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,6,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,6,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,6,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,6,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,6,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,6,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,6,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,6,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,6,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,6,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,6,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,6,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,6,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,6,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,6,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,6,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,6,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,6,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,6,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,6,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,6,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,6,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,6,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,6,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,8,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,8,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,8,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,8,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,8,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,8,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,8,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,8,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,8,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,8,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,8,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,8,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,8,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,8,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,8,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,8,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,8,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,8,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,8,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,8,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,8,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,8,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,8,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,8,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,8,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,9,pmf,stable,0.949
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,9,pmf,increase,0.033
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,9,pmf,large_increase,0.013
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,9,pmf,decrease,0.004
-2023-10-14,wk flu hosp rate change,-1,2023-10-07,9,pmf,large_decrease,0.001
-2023-10-14,wk flu hosp rate change,0,2023-10-14,9,pmf,stable,0.927
-2023-10-14,wk flu hosp rate change,0,2023-10-14,9,pmf,increase,0.058
-2023-10-14,wk flu hosp rate change,0,2023-10-14,9,pmf,large_increase,0.009
-2023-10-14,wk flu hosp rate change,0,2023-10-14,9,pmf,decrease,0.006
-2023-10-14,wk flu hosp rate change,0,2023-10-14,9,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,1,2023-10-21,9,pmf,stable,0.965
-2023-10-14,wk flu hosp rate change,1,2023-10-21,9,pmf,increase,0.024
-2023-10-14,wk flu hosp rate change,1,2023-10-21,9,pmf,large_increase,0.01
-2023-10-14,wk flu hosp rate change,1,2023-10-21,9,pmf,decrease,0.001
-2023-10-14,wk flu hosp rate change,1,2023-10-21,9,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,9,pmf,stable,0.957
-2023-10-14,wk flu hosp rate change,2,2023-10-28,9,pmf,increase,0.031
-2023-10-14,wk flu hosp rate change,2,2023-10-28,9,pmf,large_increase,0.012
-2023-10-14,wk flu hosp rate change,2,2023-10-28,9,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,2,2023-10-28,9,pmf,large_decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,9,pmf,stable,0.924
-2023-10-14,wk flu hosp rate change,3,2023-11-04,9,pmf,increase,0.056
-2023-10-14,wk flu hosp rate change,3,2023-11-04,9,pmf,large_increase,0.02
-2023-10-14,wk flu hosp rate change,3,2023-11-04,9,pmf,decrease,0.0
-2023-10-14,wk flu hosp rate change,3,2023-11-04,9,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,01,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,01,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,01,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,01,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,01,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,01,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,01,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,01,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,01,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,01,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,01,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,01,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,01,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,01,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,01,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,01,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,01,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,01,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,01,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,01,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,01,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,01,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,01,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,01,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,01,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,02,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,02,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,02,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,02,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,02,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,02,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,02,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,02,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,02,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,02,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,02,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,02,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,02,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,02,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,02,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,02,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,02,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,02,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,02,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,02,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,02,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,02,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,02,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,02,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,02,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,04,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,04,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,04,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,04,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,04,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,04,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,04,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,04,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,04,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,04,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,04,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,04,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,04,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,04,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,04,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,04,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,04,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,04,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,04,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,04,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,04,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,04,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,04,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,04,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,04,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,05,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,05,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,05,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,05,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,05,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,05,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,05,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,05,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,05,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,05,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,05,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,05,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,05,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,05,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,05,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,05,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,05,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,05,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,05,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,05,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,05,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,05,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,05,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,05,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,05,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,06,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,06,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,06,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,06,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,06,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,06,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,06,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,06,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,06,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,06,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,06,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,06,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,06,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,06,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,06,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,06,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,06,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,06,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,06,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,06,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,06,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,06,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,06,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,06,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,06,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,08,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,08,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,08,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,08,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,08,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,08,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,08,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,08,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,08,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,08,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,08,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,08,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,08,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,08,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,08,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,08,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,08,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,08,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,08,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,08,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,08,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,08,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,08,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,08,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,08,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,09,pmf,stable,0.949
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,09,pmf,increase,0.033
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,09,pmf,large_increase,0.013
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,09,pmf,decrease,0.004
+2023-10-14,wk flu hosp rate change,-1,2023-10-07,09,pmf,large_decrease,0.001
+2023-10-14,wk flu hosp rate change,0,2023-10-14,09,pmf,stable,0.927
+2023-10-14,wk flu hosp rate change,0,2023-10-14,09,pmf,increase,0.058
+2023-10-14,wk flu hosp rate change,0,2023-10-14,09,pmf,large_increase,0.009
+2023-10-14,wk flu hosp rate change,0,2023-10-14,09,pmf,decrease,0.006
+2023-10-14,wk flu hosp rate change,0,2023-10-14,09,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,1,2023-10-21,09,pmf,stable,0.965
+2023-10-14,wk flu hosp rate change,1,2023-10-21,09,pmf,increase,0.024
+2023-10-14,wk flu hosp rate change,1,2023-10-21,09,pmf,large_increase,0.01
+2023-10-14,wk flu hosp rate change,1,2023-10-21,09,pmf,decrease,0.001
+2023-10-14,wk flu hosp rate change,1,2023-10-21,09,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,09,pmf,stable,0.957
+2023-10-14,wk flu hosp rate change,2,2023-10-28,09,pmf,increase,0.031
+2023-10-14,wk flu hosp rate change,2,2023-10-28,09,pmf,large_increase,0.012
+2023-10-14,wk flu hosp rate change,2,2023-10-28,09,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,2,2023-10-28,09,pmf,large_decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,09,pmf,stable,0.924
+2023-10-14,wk flu hosp rate change,3,2023-11-04,09,pmf,increase,0.056
+2023-10-14,wk flu hosp rate change,3,2023-11-04,09,pmf,large_increase,0.02
+2023-10-14,wk flu hosp rate change,3,2023-11-04,09,pmf,decrease,0.0
+2023-10-14,wk flu hosp rate change,3,2023-11-04,09,pmf,large_decrease,0.0
 2023-10-14,wk flu hosp rate change,-1,2023-10-07,10,pmf,stable,0.949
 2023-10-14,wk flu hosp rate change,-1,2023-10-07,10,pmf,increase,0.033
 2023-10-14,wk flu hosp rate change,-1,2023-10-07,10,pmf,large_increase,0.013
