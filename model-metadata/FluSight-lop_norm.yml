@@ -1,0 +1,42 @@
+team_name: "FluSight-lop_norm"
+team_abbr: "FluSight"
+model_name: "Linear opinion pool ensemble of FluSight forecast submissions"
+model_abbr: "lop_norm"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Li Shandross",
+    "affiliation": "University of Massachusetts Amherst",
+    "email": "lshandross@umass.edu"
+  },
+    {
+    "name": "Evan Ray",
+    "affiliation": "University of Massachusetts Amherst",
+    "email": "elray@umass.edu"
+  },
+  {
+    "name": "Alexander Webber",
+    "affiliation": "CDC",
+    "email": "rpe5@cdc.gov"
+  },
+  {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+    {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  }
+]
+website_url: "https://github.com/Infectious-Disease-Modeling-Hubs/hubEnsembles"
+license: "CC-BY-4.0"
+include_viz: true
+include_ensemble: false
+include_eval: true
+methods: "Linear opinion pool based ensemble of quantile forecasts submissions."
+data_inputs: "Weekly incident flu hospitalizations from HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries."
+methods_long: "The Hubverse package hubEnsembles is used to generate the FluSight-lop_norm forecast. A linear opinion pool of quantile outputs is used for all eligible quantile-based forecasts."
+ensemble_of_models: true
+ensemble_of_hub_models: true
