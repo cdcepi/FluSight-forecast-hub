@@ -42,7 +42,7 @@ model_contributors: [
     },
 ]
 website_url: "https://www.mobs-lab.org/"
-license: "CC BY-SA 4.0"
+license: "cc-by-4.0"
 designated_model: true
 citation: "https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf"
 team_funding: "We acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137."
