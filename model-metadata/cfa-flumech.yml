@@ -1,4 +1,4 @@
-team_name: "Centre for Forecasting and Outbreak Analytics (CFA/CDC); SEIR model team"
+team_name: "Center for Forecasting and Outbreak Analytics (CFA/CDC); SEIR model team"
 team_abbr: "cfa"
 model_name: "flu-mechanistic"
 model_abbr: "flumech"
