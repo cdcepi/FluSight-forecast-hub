@@ -27,4 +27,4 @@ methods_long: The mechanistic model is a stochastic SEIR model, with a sequentia
 ensemble_of_models: true
 ensemble_of_hub_models: false
 team_funding: none
-citation: Geir Storvik, Alfonso Diz-Lois Palomares, Solveig Engebretsen, et al. (2023) A sequential Monte Carlo approach to estimate a time varying reproduction number in infectious disease models: the COVID-19 case., Journal of the Royal Statistical Society Series A: Statistics in Society, 2023; https://doi.org/10.1093/jrsssa/qnad043; O'Hara-Wild M, Hyndman R, Wang E (2022). _fable: Forecasting Models for Tidy Time Series_. R package version 0.3.2.
+citation: "Geir Storvik, Alfonso Diz-Lois Palomares, Solveig Engebretsen, et al. (2023) A sequential Monte Carlo approach to estimate a time varying reproduction number in infectious disease models: the COVID-19 case., Journal of the Royal Statistical Society Series A: Statistics in Society, 2023; https://doi.org/10.1093/jrsssa/qnad043; O'Hara-Wild M, Hyndman R, Wang E (2022). _fable: Forecasting Models for Tidy Time Series_. R package version 0.3.2."
