@@ -1,7 +1,7 @@
 team_name: "MOBS Lab at Northeastern University"
 team_abbr: "MOBS"
-model_name: "GLEAM_FLUH"
-model_abbr: "MOBS-GLEAM_FLUH"
+model_name: "GLEAM Flu Forecasting Model"
+model_abbr: "GLEAM_FLUH"
 model_version: "1.0"
 model_contributors: [
   {
@@ -42,7 +42,7 @@ model_contributors: [
     },
 ]
 website_url: "https://www.mobs-lab.org/"
-license: "cc-by-4.0"
+license: "CC-BY_SA-4.0"
 designated_model: true
 citation: "https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf"
 team_funding: "We acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137."
