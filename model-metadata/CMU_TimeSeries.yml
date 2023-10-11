@@ -3,48 +3,49 @@ team_abbr: "CMU_TimeSeries"
 model_name: "AR ensemble with auxiliary data"
 model_abbr: "cmu_ensemble"
 model_version: "1.0"
-model_contributors: [
-  {
-    "name": "Logan Brooks",
-    "affiliation": "UC Berkeley",
-    "email": "lcbrooks@berkeley.edu"
-  },
-  {
-    "name": "Dmitry Shemetov",
-    "affiliation": "Carnegie Mellon University",
-    "email": "dshemeto@andrew.cmu.edu"
-  },
-  {
-    "name": "Nat DeFries",
-    "affiliation": "Carnegie Mellon University",
-    "email": "ndefries@andrew.cmu.edu"
-  },
-  {
-    "name": "Addison Hu",
-    "affiliation": "Carnegie Mellon University",
-    "email": "addison@stat.cmu.edu"
-  },
-  {
-    "name": "David Weber",
-    "affiliation": "Carnegie Mellon University",
-    "email": "davidweb@andrew.cmu.edu"
-  },
-  {
-    "name": "Daniel McDonald",
-    "affiliation": "University of British Columbia",
-    "email": "daniel@stat.ubc.ca"
-  },
-  {
-    "name": "Ryan Tibshirani",
-    "affiliation": "UC Berkeley",
-    "email": "ryantibs@berkeley.edu"
-  }
-]
+model_contributors:
+    [
+        {
+            "name": "Logan Brooks",
+            "affiliation": "UC Berkeley",
+            "email": "lcbrooks@berkeley.edu",
+        },
+        {
+            "name": "Dmitry Shemetov",
+            "affiliation": "Carnegie Mellon University",
+            "email": "dshemeto@andrew.cmu.edu",
+        },
+        {
+            "name": "Nat DeFries",
+            "affiliation": "Carnegie Mellon University",
+            "email": "ndefries@andrew.cmu.edu",
+        },
+        {
+            "name": "Addison Hu",
+            "affiliation": "Carnegie Mellon University",
+            "email": "addison@stat.cmu.edu",
+        },
+        {
+            "name": "David Weber",
+            "affiliation": "Carnegie Mellon University",
+            "email": "davidweb@andrew.cmu.edu",
+        },
+        {
+            "name": "Daniel McDonald",
+            "affiliation": "University of British Columbia",
+            "email": "daniel@stat.ubc.ca",
+        },
+        {
+            "name": "Ryan Tibshirani",
+            "affiliation": "UC Berkeley",
+            "email": "ryantibs@berkeley.edu",
+        },
+    ]
 website_url: "https://github.com/cmu-delphi/flu-hosp-forecast/"
 repo_url: "https://github.com/cmu-delphi/flu-hosp-forecast/"
 license: "CC-BY-4.0"
 designated_model: true
-team_funding: "CDC Center of Excellence"
+team_funding: "Centers for Disease Control and Prevention Awards: U011P001121, 75D30123C15907, NU38FT000005"
 include_viz: true
 include_ensemble: true
 include_eval: true
