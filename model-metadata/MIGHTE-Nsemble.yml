@@ -7,14 +7,17 @@ model_contributors: [
   {
     "name": "Austin Meyer",
     "affiliation": "Northeastern University",
+    "email": "austin.g.meyer@gmail.com"
   },
   {
     "name": "Leonardo Clemente",
     "affiliation": "Northeastern University",
+    "email": "c.clementelopez@northeastern.edu"
   },
   {
     "name": "Fred Lu",
     "affiliation": "Northeastern University",
+    "email": "fredlu1618@gmail.com"
   },
   {
     "name": "Mauricio Santillana",
