@@ -1,0 +1,29 @@
+team_name: "ISU_NiemiLab"
+team_abbr: "ISU_NiemiLab"
+model_name: "Nonlinear ASG hierarchical model with discrepancy"
+model_abbr: "ASG"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Spencer Wadsworth",
+    "affiliation": "Iowa State",
+    "email": "sgw96@iastate.edu"
+  },
+  {
+    "name": "Jarad Niemi",
+    "affiliation": "Iowa State",
+    "email": "niemi@iastate.edu"
+  }
+]
+website_url:
+license: "cc-by-4.0"
+citation:
+team_funding:
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods:
+data_inputs:
+methods_long:
+ensemble_of_models: false
+ensemble_of_hub_models: false
