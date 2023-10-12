@@ -16,7 +16,7 @@ model_contributors: [
   }
 ]
 website_url: "https://www.jarad.me/"
-license: "cc-by-4.0"
+license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
 include_viz: true
