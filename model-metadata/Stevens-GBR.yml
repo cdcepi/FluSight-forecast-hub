@@ -5,15 +5,15 @@ model_abbr: "GBR"
 model_version: "1.0"
 model_contributors: [
   {
-    "name": "Nikhil Muralidhar",
-    "affiliation": "Stevens Institute of Technology",
-    "email": "nmurali1@stevens.edu"
-  },
-  {
     "name": "Aditya Brahme",
     "affiliation": "Stevens Institute of Technology",
     "email": "abrahme@stevens.edu"
-  }`
+  },
+  {
+    "name": "Nikhil Muralidhar",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "nmurali1@stevens.edu"
+  }
 ]
 
 license: "CC-BY-4.0"
