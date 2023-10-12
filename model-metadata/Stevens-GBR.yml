@@ -15,7 +15,7 @@ model_contributors: [
     "email": "nmurali1@stevens.edu"
   }
 ]
-
+website_url:""
 license: "CC-BY-4.0"
 designated_model: false
 methods: "An ensemble of basic tree models with equal weighting is used to create a robust and powerful tree-based model."
