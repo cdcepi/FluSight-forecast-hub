@@ -1,0 +1,39 @@
+team_name: "MIGHTE"
+team_abbr: "MIGHTE"
+model_name: "Time series ensemble"
+model_abbr: "Nsemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Austin Meyer",
+    "affiliation": "Northeastern University",
+    "email": "austin.g.meyer@gmail.com"
+  },
+  {
+    "name": "Leonardo Clemente",
+    "affiliation": "Northeastern University",
+    "email": "c.clementelopez@northeastern.edu"
+  },
+  {
+    "name": "Fred Lu",
+    "affiliation": "Northeastern University",
+    "email": "fredlu1618@gmail.com"
+  },
+  {
+    "name": "Mauricio Santillana",
+    "affiliation": "Northeastern University",
+    "email": "m.santillana@northeastern.edu"
+  }
+]
+website_url: "https://github.com/MIGHTE-lab/"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods: "Weighted ensemble of SOTA time-series models especially lightGBM"
+data_inputs: "Weekly incident flu hospitalizations, Google Trends"
+methods_long: "Weighted ensemble of SOTA time-series models, including lightGBM with hyperparameters tuned to the previous season, ARIMA, vector auto-regression, and ARGO."
+ensemble_of_models: true
+ensemble_of_hub_models: false
