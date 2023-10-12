@@ -1,0 +1,56 @@
+team_name: "MOBS Lab at Northeastern University"
+team_abbr: "MOBS"
+model_name: "GLEAM Flu Forecasting Model"
+model_abbr: "GLEAM_FLUH"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Alessandro Vespignani",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "alexves@gmail.com"
+  },
+  {
+    "name": "Matteo Chinazzi",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "m.chinazzi@northeastern.edu"
+  },
+  {
+    "name": "Jessica T. Davis",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "jes.davis@northeastern.edu"
+  },
+  {
+    "name": "Kunpeng Mu",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "mu.k@northeastern.edu"
+  },
+
+  {
+    "name": "Clara Bay",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "bay.c@northeastern.edu"
+  },
+    {
+      "name": "Guillaume St-Onge",
+      "affiliation": "MOBS Lab, Northeastern University",
+      "email": "g.st-onge@northeastern.edu"
+    },
+    {
+      "name": "Remy LeWinter",
+      "affiliation": "MOBS Lab, Northeastern University",
+      "email": "lewinter.r@northeastern.edu"
+    },
+]
+website_url: "https://www.mobs-lab.org/"
+license: "CC-BY_SA-4.0"
+designated_model: true
+citation: "https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf"
+team_funding: "We acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137."
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods: "Metapopulation, age structured SLIR model."
+data_inputs: "Weekly incident flu hospitalizations, queried through HHS"
+methods_long: "The GLEAM framework is based on a metapopulation approach in which the US is divided into geographical subpopulations. Human mobility between subpopulations is represented on a network.  This mobility data layer identifies the numbers of individuals traveling from one sub-population to  another. The mobility network is made up of different kinds of mobility processes from short-range commuting between nearby subpopulations to flights. To model short-range mobility  such as commuting or car travel, we rely on databases collected from the Offices of Statistics of 30  countries on five continents. Superimposed on the US population and mobility layers is an compartmental epidemic model that defines the infection and population dynamics. "
+ensemble_of_models: false
+ensemble_of_hub_models: false
