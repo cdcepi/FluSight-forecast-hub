@@ -10,7 +10,7 @@ model_contributors: [
     "email": "mcandrew@lehigh.edu"
   }
 ]
-website_url: ""
+website_url: "https://github.com/computationalUncertaintyLab"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "CSTE/CDC"
