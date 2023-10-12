@@ -15,7 +15,7 @@ model_contributors: [
     "email": "niemi@iastate.edu"
   }
 ]
-website_url:
+website_url: "none"
 license: "cc-by-4.0"
 citation: "citation"
 team_funding: "funding"
