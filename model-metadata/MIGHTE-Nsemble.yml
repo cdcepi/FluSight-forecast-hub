@@ -34,6 +34,6 @@ include_ensemble: true
 include_eval: true
 methods: "Weighted ensemble of SOTA time-series models especially lightGBM"
 data_inputs: "Weekly incident flu hospitalizations, Google Trends"
-methods_long: "Weighted ensemble of SOTA time-series models, including lightGBM with hyperparameters tuned to the previous season, vector auto-regression, and ARGO."
+methods_long: "Weighted ensemble of SOTA time-series models, including lightGBM with hyperparameters tuned to the previous season, ARIMA, vector auto-regression, and ARGO."
 ensemble_of_models: true
 ensemble_of_hub_models: false
