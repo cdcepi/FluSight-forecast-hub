@@ -1,14 +1,4 @@
 "reference_date","horizon","target","target_end_date","location","output_type","output_type_id","value"
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","01","pmf","large_increase",0.00596153846153846
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","01","pmf","stable",0.994038461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","01","pmf","large_increase",0.0101923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","01","pmf","stable",0.989807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","01","pmf","large_increase",0.0159615384615385
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","01","pmf","stable",0.984038461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","01","pmf","large_increase",0.0278846153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","01","pmf","stable",0.972115384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","01","pmf","large_increase",0.0461538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","01","pmf","stable",0.953846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","01","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","01","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","01","quantile","0.05",1.6465875
@@ -124,16 +114,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","01","quantile","0.95",32.228065
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","01","quantile","0.975",37.25609
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","01","quantile","0.99",46.198469
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","02","pmf","large_increase",0.00288461538461538
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","02","pmf","stable",0.997115384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","02","pmf","large_increase",0.0257692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","02","pmf","stable",0.974230769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","02","pmf","large_increase",0.0907692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","02","pmf","stable",0.909230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","02","pmf","large_increase",0.163461538461538
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","02","pmf","stable",0.836538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","02","pmf","large_increase",0.2425
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","02","pmf","stable",0.7575
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","02","quantile","0.01",1.4487793
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","02","quantile","0.025",2.46205075
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","02","quantile","0.05",3.2715175
@@ -249,16 +229,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","02","quantile","0.95",28.127145
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","02","quantile","0.975",34.0000275
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","02","quantile","0.99",45.335211
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","04","pmf","large_increase",0.00634615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","04","pmf","stable",0.993653846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","04","pmf","large_increase",0.0259615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","04","pmf","stable",0.974038461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","04","pmf","large_increase",0.0530769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","04","pmf","stable",0.946923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","04","pmf","large_increase",0.0907692307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","04","pmf","stable",0.909230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","04","pmf","large_increase",0.132884615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","04","pmf","stable",0.867115384615385
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","04","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","04","quantile","0.025",1.596154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","04","quantile","0.05",3.880565
@@ -374,16 +344,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","04","quantile","0.95",44.559715
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","04","quantile","0.975",55.4433475
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","04","quantile","0.99",70.999757
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","05","pmf","large_increase",0.000576923076923077
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","05","pmf","stable",0.999423076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","05","pmf","large_increase",0.000961538461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","05","pmf","stable",0.999038461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","05","pmf","large_increase",0.00153846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","05","pmf","stable",0.998461538461539
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","05","pmf","large_increase",0.00346153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","05","pmf","stable",0.996538461538461
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","05","pmf","large_increase",0.00884615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","05","pmf","stable",0.991153846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","05","quantile","0.01",0.36721077
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","05","quantile","0.025",1.70406775
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","05","quantile","0.05",2.850713
@@ -499,16 +459,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","05","quantile","0.95",12.971115
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","05","quantile","0.975",15.1441525
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","05","quantile","0.99",18.815029
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","06","pmf","large_increase",0.0611538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","06","pmf","stable",0.938846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","06","pmf","large_increase",0.104230769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","06","pmf","stable",0.895769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","06","pmf","large_increase",0.177884615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","06","pmf","stable",0.822115384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","06","pmf","large_increase",0.266153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","06","pmf","stable",0.733846153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","06","pmf","large_increase",0.383461538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","06","pmf","stable",0.616538461538462
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","06","quantile","0.01",29.194703
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","06","quantile","0.025",32.29247
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","06","quantile","0.05",34.807265
@@ -624,16 +574,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","06","quantile","0.95",76.031515
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","06","quantile","0.975",86.5571349999997
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","06","quantile","0.99",115.56891
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","08","pmf","large_increase",0.0375
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","08","pmf","stable",0.9625
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","08","pmf","large_increase",0.0551923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","08","pmf","stable",0.944807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","08","pmf","large_increase",0.0867307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","08","pmf","stable",0.913269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","08","pmf","large_increase",0.114230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","08","pmf","stable",0.885769230769231
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","08","pmf","large_increase",0.157307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","08","pmf","stable",0.842692307692308
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","08","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","08","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","08","quantile","0.05",1.4615455
@@ -749,16 +689,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","08","quantile","0.95",54.1374850000001
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","08","quantile","0.975",86.8212274999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","08","quantile","0.99",126.68011
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","09","pmf","large_increase",0.100384615384615
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","09","pmf","stable",0.899615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","09","pmf","large_increase",0.165
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","09","pmf","stable",0.835
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","09","pmf","large_increase",0.226730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","09","pmf","stable",0.773269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","09","pmf","large_increase",0.349230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","09","pmf","stable",0.650769230769231
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","09","pmf","large_increase",0.425961538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","09","pmf","stable",0.574038461538461
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","09","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","09","quantile","0.025",0.5097027
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","09","quantile","0.05",2.332119
@@ -874,14 +804,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","09","quantile","0.95",39.84636
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","09","quantile","0.975",49.76914
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","09","quantile","0.99",67.6918640000003
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","10","pmf","stable",1
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","10","pmf","stable",1
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","10","pmf","large_increase",0.00134615384615385
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","10","pmf","stable",0.998653846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","10","pmf","large_increase",0.00384615384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","10","pmf","stable",0.996153846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","10","pmf","large_increase",0.00692307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","10","pmf","stable",0.993076923076923
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","10","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","10","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","10","quantile","0.05",0
@@ -997,16 +919,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","10","quantile","0.95",1.968443
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","10","quantile","0.975",3.51491574999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","10","quantile","0.99",7.67499940000004
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","11","pmf","large_increase",0.000192344681669552
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","11","pmf","stable",0.99980765531833
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","11","pmf","large_increase",0.000577034045008655
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","11","pmf","stable",0.999422965954991
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","11","pmf","large_increase",0.00115406809001731
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","11","pmf","stable",0.998845931909983
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","11","pmf","large_increase",0.00115406809001731
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","11","pmf","stable",0.998845931909983
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","11","pmf","large_increase",0.00153875745335641
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","11","pmf","stable",0.998461242546644
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","11","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","11","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","11","quantile","0.05",0
@@ -1122,16 +1034,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","11","quantile","0.95",2.53449
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","11","quantile","0.975",3.128
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","11","quantile","0.99",4.33835859999999
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","12","pmf","large_increase",0.00653846153846154
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","12","pmf","stable",0.993461538461539
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","12","pmf","large_increase",0.00730769230769231
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","12","pmf","stable",0.992692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","12","pmf","large_increase",0.0163461538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","12","pmf","stable",0.983653846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","12","pmf","large_increase",0.0382692307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","12","pmf","stable",0.961730769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","12","pmf","large_increase",0.0461538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","12","pmf","stable",0.953846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","12","quantile","0.01",124.41841
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","12","quantile","0.025",129.443825
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","12","quantile","0.05",133.33195
@@ -1247,16 +1149,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","12","quantile","0.95",186.2121
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","12","quantile","0.975",196.316475
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","12","quantile","0.99",214.81083
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","13","pmf","large_increase",0.00884615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","13","pmf","stable",0.991153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","13","pmf","large_increase",0.0209615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","13","pmf","stable",0.979038461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","13","pmf","large_increase",0.0328846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","13","pmf","stable",0.967115384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","13","pmf","large_increase",0.0913461538461538
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","13","pmf","stable",0.908653846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","13","pmf","large_increase",0.151153846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","13","pmf","stable",0.848846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","13","quantile","0.01",14.354533
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","13","quantile","0.025",17.0126225
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","13","quantile","0.05",19.31006
@@ -1372,16 +1264,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","13","quantile","0.95",55.16292
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","13","quantile","0.975",62.535195
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","13","quantile","0.99",74.2519150000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","15","pmf","large_increase",0.000384615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","15","pmf","stable",0.999615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","15","pmf","large_increase",0.000192307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","15","pmf","stable",0.999807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","15","pmf","large_increase",0.000961538461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","15","pmf","stable",0.999038461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","15","pmf","large_increase",0.00192307692307692
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","15","pmf","stable",0.998076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","15","pmf","large_increase",0.00384615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","15","pmf","stable",0.996153846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","15","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","15","quantile","0.025",0.888618825
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","15","quantile","0.05",1.873184
@@ -1497,16 +1379,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","15","quantile","0.95",13.385425
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","15","quantile","0.975",15.1358475
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","15","quantile","0.99",17.392429
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","16","pmf","large_increase",0.0025
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","16","pmf","stable",0.9975
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","16","pmf","large_increase",0.00442307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","16","pmf","stable",0.995576923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","16","pmf","large_increase",0.00865384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","16","pmf","stable",0.991346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","16","pmf","large_increase",0.0207692307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","16","pmf","stable",0.979230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","16","pmf","large_increase",0.0386538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","16","pmf","stable",0.961346153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","16","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","16","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","16","quantile","0.05",0
@@ -1622,16 +1494,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","16","quantile","0.95",9.990288
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","16","quantile","0.975",15.862605
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","16","quantile","0.99",32.72266
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","17","pmf","large_increase",0.015
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","17","pmf","stable",0.985
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","17","pmf","large_increase",0.0301923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","17","pmf","stable",0.969807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","17","pmf","large_increase",0.0511538461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","17","pmf","stable",0.948846153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","17","pmf","large_increase",0.0834615384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","17","pmf","stable",0.916538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","17","pmf","large_increase",0.134615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","17","pmf","stable",0.865384615384615
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","17","quantile","0.01",4.2290219
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","17","quantile","0.025",6.270653
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","17","quantile","0.05",7.970727
@@ -1747,16 +1609,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","17","quantile","0.95",32.056625
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","17","quantile","0.975",36.27511
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","17","quantile","0.99",42.591836
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","18","pmf","large_increase",0.0146153846153846
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","18","pmf","stable",0.985384615384615
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","18","pmf","large_increase",0.0311538461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","18","pmf","stable",0.968846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","18","pmf","large_increase",0.0555769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","18","pmf","stable",0.944423076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","18","pmf","large_increase",0.0836538461538461
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","18","pmf","stable",0.916346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","18","pmf","large_increase",0.127884615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","18","pmf","stable",0.872115384615385
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","18","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","18","quantile","0.025",0.5084582
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","18","quantile","0.05",2.4347495
@@ -1872,16 +1724,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","18","quantile","0.95",45.1746500000001
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","18","quantile","0.975",75.9980075
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","18","quantile","0.99",143.2658
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","19","pmf","large_increase",0.00230769230769231
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","19","pmf","stable",0.997692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","19","pmf","large_increase",0.00538461538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","19","pmf","stable",0.994615384615385
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","19","pmf","large_increase",0.0121153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","19","pmf","stable",0.987884615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","19","pmf","large_increase",0.0236538461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","19","pmf","stable",0.976346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","19","pmf","large_increase",0.0378846153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","19","pmf","stable",0.962115384615385
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","19","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","19","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","19","quantile","0.05",0
@@ -1997,16 +1839,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","19","quantile","0.95",11.10602
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","19","quantile","0.975",17.4779025
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","19","quantile","0.99",28.380129
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","20","pmf","large_increase",0.125192307692308
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","20","pmf","stable",0.874807692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","20","pmf","large_increase",0.175192307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","20","pmf","stable",0.824807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","20","pmf","large_increase",0.189807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","20","pmf","stable",0.810192307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","20","pmf","large_increase",0.216346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","20","pmf","stable",0.783653846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","20","pmf","large_increase",0.251346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","20","pmf","stable",0.748653846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","20","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","20","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","20","quantile","0.05",0.7029511
@@ -2122,16 +1954,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","20","quantile","0.95",33.8958300000001
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","20","quantile","0.975",46.3380749999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","20","quantile","0.99",77.3262300000003
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","21","pmf","large_increase",0.0361538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","21","pmf","stable",0.963846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","21","pmf","large_increase",0.0469230769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","21","pmf","stable",0.953076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","21","pmf","large_increase",0.0896153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","21","pmf","stable",0.910384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","21","pmf","large_increase",0.145576923076923
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","21","pmf","stable",0.854423076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","21","pmf","large_increase",0.196538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","21","pmf","stable",0.803461538461538
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","21","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","21","quantile","0.025",1.0250675
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","21","quantile","0.05",3.331198
@@ -2247,16 +2069,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","21","quantile","0.95",37.943575
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","21","quantile","0.975",48.5899725
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","21","quantile","0.99",72.5995120000003
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","22","pmf","large_increase",0.0136538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","22","pmf","stable",0.986346153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","22","pmf","large_increase",0.0196153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","22","pmf","stable",0.980384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","22","pmf","large_increase",0.0267307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","22","pmf","stable",0.973269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","22","pmf","large_increase",0.0461538461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","22","pmf","stable",0.953846153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","22","pmf","large_increase",0.0559615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","22","pmf","stable",0.944038461538461
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","22","quantile","0.01",3.4471226
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","22","quantile","0.025",5.3613585
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","22","quantile","0.05",6.931847
@@ -2372,16 +2184,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","22","quantile","0.95",26.53643
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","22","quantile","0.975",29.2768375
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","22","quantile","0.99",33.1205050000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","23","pmf","large_increase",0.000961538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","23","pmf","stable",0.999038461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","23","pmf","large_increase",0.00288461538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","23","pmf","stable",0.997115384615385
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","23","pmf","large_increase",0.00403846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","23","pmf","stable",0.995961538461538
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","23","pmf","large_increase",0.00596153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","23","pmf","stable",0.994038461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","23","pmf","large_increase",0.00865384615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","23","pmf","stable",0.991346153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","23","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","23","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","23","quantile","0.05",0
@@ -2497,16 +2299,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","23","quantile","0.95",3.244841
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","23","quantile","0.975",4.69606749999998
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","23","quantile","0.99",9.12683030000008
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","24","pmf","large_increase",0.000769230769230769
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","24","pmf","stable",0.999230769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","24","pmf","large_increase",0.00192307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","24","pmf","stable",0.998076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","24","pmf","large_increase",0.00576923076923077
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","24","pmf","stable",0.994230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","24","pmf","large_increase",0.0123076923076923
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","24","pmf","stable",0.987692307692308
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","24","pmf","large_increase",0.0186538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","24","pmf","stable",0.981346153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","24","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","24","quantile","0.025",0.171736625
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","24","quantile","0.05",1.0288785
@@ -2622,16 +2414,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","24","quantile","0.95",9.96178400000001
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","24","quantile","0.975",12.7619625
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","24","quantile","0.99",18.4571190000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","25","pmf","large_increase",0.0178846153846154
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","25","pmf","stable",0.982115384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","25","pmf","large_increase",0.0442307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","25","pmf","stable",0.955769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","25","pmf","large_increase",0.0592307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","25","pmf","stable",0.940769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","25","pmf","large_increase",0.0715384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","25","pmf","stable",0.928461538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","25","pmf","large_increase",0.0861538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","25","pmf","stable",0.913846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","25","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","25","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","25","quantile","0.05",1.96948
@@ -2747,16 +2529,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","25","quantile","0.95",31.422815
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","25","quantile","0.975",42.9538324999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","25","quantile","0.99",67.612059
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","26","pmf","large_increase",0.0375
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","26","pmf","stable",0.9625
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","26","pmf","large_increase",0.0488461538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","26","pmf","stable",0.951153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","26","pmf","large_increase",0.0648076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","26","pmf","stable",0.935192307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","26","pmf","large_increase",0.0786538461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","26","pmf","stable",0.921346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","26","pmf","large_increase",0.0963461538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","26","pmf","stable",0.903653846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","26","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","26","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","26","quantile","0.05",0.93187465
@@ -2872,16 +2644,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","26","quantile","0.95",26.03613
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","26","quantile","0.975",30.5108975
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","26","quantile","0.99",37.5502950000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","27","pmf","large_increase",0.0325
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","27","pmf","stable",0.9675
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","27","pmf","large_increase",0.045
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","27","pmf","stable",0.955
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","27","pmf","large_increase",0.0561538461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","27","pmf","stable",0.943846153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","27","pmf","large_increase",0.0721153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","27","pmf","stable",0.927884615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","27","pmf","large_increase",0.0940384615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","27","pmf","stable",0.905961538461538
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","27","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","27","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","27","quantile","0.05",0
@@ -2997,16 +2759,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","27","quantile","0.95",18.79378
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","27","quantile","0.975",29.902325
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","27","quantile","0.99",56.8638500000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","28","pmf","large_increase",0.554615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","28","pmf","stable",0.445384615384615
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","28","pmf","large_increase",0.654615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","28","pmf","stable",0.345384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","28","pmf","large_increase",0.790192307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","28","pmf","stable",0.209807692307692
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","28","pmf","large_increase",0.877692307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","28","pmf","stable",0.122307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","28","pmf","large_increase",0.863653846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","28","pmf","stable",0.136346153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","28","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","28","quantile","0.025",0.67510795
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","28","quantile","0.05",7.305147
@@ -3122,16 +2874,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","28","quantile","0.95",106.43645
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","28","quantile","0.975",127.4298
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","28","quantile","0.99",159.89089
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","29","pmf","large_increase",0.0390384615384615
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","29","pmf","stable",0.960961538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","29","pmf","large_increase",0.0346153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","29","pmf","stable",0.965384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","29","pmf","large_increase",0.0440384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","29","pmf","stable",0.955961538461538
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","29","pmf","large_increase",0.0544230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","29","pmf","stable",0.945576923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","29","pmf","large_increase",0.0655769230769231
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","29","pmf","stable",0.934423076923077
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","29","quantile","0.01",0.51517207
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","29","quantile","0.025",2.357819
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","29","quantile","0.05",4.0521185
@@ -3247,16 +2989,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","29","quantile","0.95",23.655445
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","29","quantile","0.975",28.3143725
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","29","quantile","0.99",39.2292270000002
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","30","pmf","large_increase",0.00211538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","30","pmf","stable",0.997884615384615
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","30","pmf","large_increase",0.0121153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","30","pmf","stable",0.987884615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","30","pmf","large_increase",0.0382692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","30","pmf","stable",0.961730769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","30","pmf","large_increase",0.0801923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","30","pmf","stable",0.919807692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","30","pmf","large_increase",0.138076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","30","pmf","stable",0.861923076923077
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","30","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","30","quantile","0.025",0.2329412
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","30","quantile","0.05",0.79662295
@@ -3372,16 +3104,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","30","quantile","0.95",27.758645
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","30","quantile","0.975",42.9130499999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","30","quantile","0.99",125.01198
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","31","pmf","large_increase",0.0136538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","31","pmf","stable",0.986346153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","31","pmf","large_increase",0.0163461538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","31","pmf","stable",0.983653846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","31","pmf","large_increase",0.0213461538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","31","pmf","stable",0.978653846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","31","pmf","large_increase",0.0219230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","31","pmf","stable",0.978076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","31","pmf","large_increase",0.0276923076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","31","pmf","stable",0.972307692307692
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","31","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","31","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","31","quantile","0.05",0
@@ -3497,16 +3219,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","31","quantile","0.95",8.9093305
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","31","quantile","0.975",11.368005
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","31","quantile","0.99",15.89839
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","32","pmf","large_increase",0.0161538461538462
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","32","pmf","stable",0.983846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","32","pmf","large_increase",0.0192307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","32","pmf","stable",0.980769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","32","pmf","large_increase",0.0255769230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","32","pmf","stable",0.974423076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","32","pmf","large_increase",0.0307692307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","32","pmf","stable",0.969230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","32","pmf","large_increase",0.0344230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","32","pmf","stable",0.965576923076923
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","32","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","32","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","32","quantile","0.05",0
@@ -3622,16 +3334,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","32","quantile","0.95",15.103545
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","32","quantile","0.975",19.3828175
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","32","quantile","0.99",28.145541
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","33","pmf","large_increase",0.0182692307692308
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","33","pmf","stable",0.981730769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","33","pmf","large_increase",0.0261538461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","33","pmf","stable",0.973846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","33","pmf","large_increase",0.0567307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","33","pmf","stable",0.943269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","33","pmf","large_increase",0.0890384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","33","pmf","stable",0.910961538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","33","pmf","large_increase",0.130961538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","33","pmf","stable",0.869038461538462
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","33","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","33","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","33","quantile","0.05",0
@@ -3747,16 +3449,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","33","quantile","0.95",19.260375
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","33","quantile","0.975",27.2684275
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","33","quantile","0.99",42.7854200000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","34","pmf","large_increase",0.38
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","34","pmf","stable",0.62
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","34","pmf","large_increase",0.458653846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","34","pmf","stable",0.541346153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","34","pmf","large_increase",0.514230769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","34","pmf","stable",0.485769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","34","pmf","large_increase",0.570384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","34","pmf","stable",0.429615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","34","pmf","large_increase",0.600961538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","34","pmf","stable",0.399038461538462
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","34","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","34","quantile","0.025",1.64622775
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","34","quantile","0.05",5.203752
@@ -3872,16 +3564,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","34","quantile","0.95",56.98526
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","34","quantile","0.975",71.6385975
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","34","quantile","0.99",96.2464490000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","35","pmf","large_increase",0.00769230769230769
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","35","pmf","stable",0.992307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","35","pmf","large_increase",0.00807692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","35","pmf","stable",0.991923076923077
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","35","pmf","large_increase",0.0136538461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","35","pmf","stable",0.986346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","35","pmf","large_increase",0.0280769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","35","pmf","stable",0.971923076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","35","pmf","large_increase",0.0467307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","35","pmf","stable",0.953269230769231
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","35","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","35","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","35","quantile","0.05",0
@@ -3997,16 +3679,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","35","quantile","0.95",15.527995
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","35","quantile","0.975",19.3112475
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","35","quantile","0.99",27.5267090000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","36","pmf","large_increase",0.00942307692307692
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","36","pmf","stable",0.990576923076923
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","36","pmf","large_increase",0.0311538461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","36","pmf","stable",0.968846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","36","pmf","large_increase",0.0440384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","36","pmf","stable",0.955961538461538
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","36","pmf","large_increase",0.0736538461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","36","pmf","stable",0.926346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","36","pmf","large_increase",0.115576923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","36","pmf","stable",0.884423076923077
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","36","quantile","0.01",1.01159227
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","36","quantile","0.025",5.10550625
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","36","quantile","0.05",8.855936
@@ -4122,16 +3794,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","36","quantile","0.95",80.791565
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","36","quantile","0.975",106.79445
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","36","quantile","0.99",172.758230000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","37","pmf","large_increase",0.0117307692307692
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","37","pmf","stable",0.988269230769231
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","37","pmf","large_increase",0.0175
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","37","pmf","stable",0.9825
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","37","pmf","large_increase",0.0207692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","37","pmf","stable",0.979230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","37","pmf","large_increase",0.0346153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","37","pmf","stable",0.965384615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","37","pmf","large_increase",0.0492307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","37","pmf","stable",0.950769230769231
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","37","quantile","0.01",0.5482017
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","37","quantile","0.025",2.537684
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","37","quantile","0.05",4.6272355
@@ -4247,16 +3909,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","37","quantile","0.95",23.94153
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","37","quantile","0.975",27.0972675
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","37","quantile","0.99",33.391964
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","38","pmf","large_increase",0.000769230769230769
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","38","pmf","stable",0.999230769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","38","pmf","large_increase",0.00192307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","38","pmf","stable",0.998076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","38","pmf","large_increase",0.00153846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","38","pmf","stable",0.998461538461539
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","38","pmf","large_increase",0.00480769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","38","pmf","stable",0.995192307692308
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","38","pmf","large_increase",0.00557692307692308
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","38","pmf","stable",0.994423076923077
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","38","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","38","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","38","quantile","0.05",0
@@ -4372,16 +4024,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","38","quantile","0.95",6.3905575
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","38","quantile","0.975",8.44630749999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","38","quantile","0.99",10.922264
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","39","pmf","large_increase",0.00615384615384615
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","39","pmf","stable",0.993846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","39","pmf","large_increase",0.0103846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","39","pmf","stable",0.989615384615385
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","39","pmf","large_increase",0.0146153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","39","pmf","stable",0.985384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","39","pmf","large_increase",0.0340384615384615
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","39","pmf","stable",0.965961538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","39","pmf","large_increase",0.05
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","39","pmf","stable",0.95
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","39","quantile","0.01",1.9228923
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","39","quantile","0.025",3.9010655
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","39","quantile","0.05",5.4776505
@@ -4497,16 +4139,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","39","quantile","0.95",24.99858
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","39","quantile","0.975",29.445615
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","39","quantile","0.99",39.9391920000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","40","pmf","large_increase",0.0198076923076923
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","40","pmf","stable",0.980192307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","40","pmf","large_increase",0.0576923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","40","pmf","stable",0.942307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","40","pmf","large_increase",0.0875
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","40","pmf","stable",0.9125
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","40","pmf","large_increase",0.14
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","40","pmf","stable",0.86
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","40","pmf","large_increase",0.189038461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","40","pmf","stable",0.810961538461539
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","40","quantile","0.01",5.4123058
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","40","quantile","0.025",8.072669
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","40","quantile","0.05",10.704345
@@ -4622,16 +4254,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","40","quantile","0.95",51.125785
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","40","quantile","0.975",61.0422449999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","40","quantile","0.99",74.8110160000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","41","pmf","large_increase",0.00115384615384615
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","41","pmf","stable",0.998846153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","41","pmf","large_increase",0.0101923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","41","pmf","stable",0.989807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","41","pmf","large_increase",0.0438461538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","41","pmf","stable",0.956153846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","41","pmf","large_increase",0.0986538461538461
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","41","pmf","stable",0.901346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","41","pmf","large_increase",0.169038461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","41","pmf","stable",0.830961538461538
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","41","quantile","0.01",1.5799418
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","41","quantile","0.025",2.483355
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","41","quantile","0.05",3.2220885
@@ -4747,16 +4369,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","41","quantile","0.95",26.62991
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","41","quantile","0.975",36.31376
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","41","quantile","0.99",61.4810460000003
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","42","pmf","large_increase",0.0209615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","42","pmf","stable",0.979038461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","42","pmf","large_increase",0.0638461538461538
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","42","pmf","stable",0.936153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","42","pmf","large_increase",0.119807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","42","pmf","stable",0.880192307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","42","pmf","large_increase",0.221923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","42","pmf","stable",0.778076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","42","pmf","large_increase",0.293846153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","42","pmf","stable",0.706153846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","42","quantile","0.01",36.077094
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","42","quantile","0.025",38.8716575
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","42","quantile","0.05",41.040495
@@ -4872,16 +4484,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","42","quantile","0.95",95.647925
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","42","quantile","0.975",106.8812
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","42","quantile","0.99",126.80381
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","72","pmf","large_increase",0.183653846153846
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","72","pmf","stable",0.816346153846154
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","72","pmf","large_increase",0.2975
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","72","pmf","stable",0.7025
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","72","pmf","large_increase",0.401730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","72","pmf","stable",0.598269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","72","pmf","large_increase",0.495769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","72","pmf","stable",0.504230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","72","pmf","large_increase",0.533461538461538
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","72","pmf","stable",0.466538461538462
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","72","quantile","0.01",40.442131
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","72","quantile","0.025",47.5142875
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","72","quantile","0.05",53.58751
@@ -4997,16 +4599,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","72","quantile","0.95",233.65745
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","72","quantile","0.975",282.37575
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","72","quantile","0.99",347.81408
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","44","pmf","large_increase",0.000384615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","44","pmf","stable",0.999615384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","44","pmf","large_increase",0.00230769230769231
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","44","pmf","stable",0.997692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","44","pmf","large_increase",0.00596153846153846
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","44","pmf","stable",0.994038461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","44","pmf","large_increase",0.0130769230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","44","pmf","stable",0.986923076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","44","pmf","large_increase",0.0244230769230769
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","44","pmf","stable",0.975576923076923
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","44","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","44","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","44","quantile","0.05",0
@@ -5122,16 +4714,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","44","quantile","0.95",6.341609
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","44","quantile","0.975",9.67618975
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","44","quantile","0.99",15.5516880000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","45","pmf","large_increase",0.175961538461538
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","45","pmf","stable",0.824038461538461
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","45","pmf","large_increase",0.275
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","45","pmf","stable",0.725
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","45","pmf","large_increase",0.406730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","45","pmf","stable",0.593269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","45","pmf","large_increase",0.536346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","45","pmf","stable",0.463653846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","45","pmf","large_increase",0.621346153846154
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","45","pmf","stable",0.378653846153846
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","45","quantile","0.01",5.0559372
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","45","quantile","0.025",9.2463465
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","45","quantile","0.05",12.531425
@@ -5247,16 +4829,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","45","quantile","0.95",98.70468
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","45","quantile","0.975",124.40165
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","45","quantile","0.99",165.43558
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","46","pmf","large_increase",0.000192307692307692
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","46","pmf","stable",0.999807692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","46","pmf","large_increase",0.00115384615384615
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","46","pmf","stable",0.998846153846154
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","46","pmf","large_increase",0.00365384615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","46","pmf","stable",0.996346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","46","pmf","large_increase",0.00769230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","46","pmf","stable",0.992307692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","46","pmf","large_increase",0.0111538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","46","pmf","stable",0.988846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","46","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","46","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","46","quantile","0.05",0
@@ -5372,16 +4944,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","46","quantile","0.95",5.6191545
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","46","quantile","0.975",7.97817649999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","46","quantile","0.99",12.860918
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","47","pmf","large_increase",0.0723076923076923
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","47","pmf","stable",0.927692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","47","pmf","large_increase",0.126730769230769
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","47","pmf","stable",0.873269230769231
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","47","pmf","large_increase",0.186730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","47","pmf","stable",0.813269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","47","pmf","large_increase",0.279615384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","47","pmf","stable",0.720384615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","47","pmf","large_increase",0.354038461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","47","pmf","stable",0.645961538461538
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","47","quantile","0.01",12.19621
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","47","quantile","0.025",16.56373
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","47","quantile","0.05",19.703245
@@ -5497,16 +5059,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","47","quantile","0.95",184.30565
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","47","quantile","0.975",260.429075
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","47","quantile","0.99",370.542690000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","48","pmf","large_increase",0.0359615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","48","pmf","stable",0.964038461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","48","pmf","large_increase",0.0351923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","48","pmf","stable",0.964807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","48","pmf","large_increase",0.0467307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","48","pmf","stable",0.953269230769231
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","48","pmf","large_increase",0.0584615384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","48","pmf","stable",0.941538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","48","pmf","large_increase",0.0686538461538461
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","48","pmf","stable",0.931346153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","48","quantile","0.01",106.61046
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","48","quantile","0.025",110.4944
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","48","quantile","0.05",113.7368
@@ -5622,16 +5174,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","48","quantile","0.95",146.19825
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","48","quantile","0.975",150.159925
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","48","quantile","0.99",156.30616
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","US","pmf","large_increase",0.222307692307692
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","US","pmf","stable",0.777692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","US","pmf","large_increase",0.433269230769231
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","US","pmf","stable",0.566730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","US","pmf","large_increase",0.670961538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","US","pmf","stable",0.329038461538462
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","US","pmf","large_increase",0.821923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","US","pmf","stable",0.178076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","US","pmf","large_increase",0.899615384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","US","pmf","stable",0.100384615384615
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","US","quantile","0.01",823.40344
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","US","quantile","0.025",867.7255
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","US","quantile","0.05",902.3706
@@ -5747,16 +5289,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","US","quantile","0.95",1925.656
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","US","quantile","0.975",2166.86625
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","US","quantile","0.99",2713.8058
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","49","pmf","large_increase",0.0109615384615385
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","49","pmf","stable",0.989038461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","49","pmf","large_increase",0.0232692307692308
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","49","pmf","stable",0.976730769230769
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","49","pmf","large_increase",0.0413461538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","49","pmf","stable",0.958653846153846
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","49","pmf","large_increase",0.0701923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","49","pmf","stable",0.929807692307692
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","49","pmf","large_increase",0.0961538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","49","pmf","stable",0.903846153846154
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","49","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","49","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","49","quantile","0.05",0.18654865
@@ -5872,16 +5404,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","49","quantile","0.95",20.40134
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","49","quantile","0.975",33.3524949999998
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","49","quantile","0.99",64.1922300000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","50","pmf","large_increase",0.000576923076923077
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","50","pmf","stable",0.999423076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","50","pmf","large_increase",0.000961538461538462
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","50","pmf","stable",0.999038461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","50","pmf","large_increase",0.0025
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","50","pmf","stable",0.9975
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","50","pmf","large_increase",0.00442307692307692
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","50","pmf","stable",0.995576923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","50","pmf","large_increase",0.00576923076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","50","pmf","stable",0.994230769230769
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","50","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","50","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","50","quantile","0.05",0
@@ -5997,16 +5519,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","50","quantile","0.95",3.3411335
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","50","quantile","0.975",4.68937649999999
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","50","quantile","0.99",7.52149380000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","51","pmf","large_increase",0.02
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","51","pmf","stable",0.98
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","51","pmf","large_increase",0.0421153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","51","pmf","stable",0.957884615384615
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","51","pmf","large_increase",0.0736538461538462
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","51","pmf","stable",0.926346153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","51","pmf","large_increase",0.118846153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","51","pmf","stable",0.881153846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","51","pmf","large_increase",0.176923076923077
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","51","pmf","stable",0.823076923076923
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","51","quantile","0.01",20.842694
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","51","quantile","0.025",25.3188
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","51","quantile","0.05",28.863765
@@ -6122,16 +5634,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","51","quantile","0.95",97.184115
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","51","quantile","0.975",121.13905
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","51","quantile","0.99",163.06841
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","53","pmf","large_increase",0.328846153846154
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","53","pmf","stable",0.671153846153846
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","53","pmf","large_increase",0.551923076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","53","pmf","stable",0.448076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","53","pmf","large_increase",0.659807692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","53","pmf","stable",0.340192307692308
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","53","pmf","large_increase",0.746923076923077
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","53","pmf","stable",0.253076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","53","pmf","large_increase",0.847884615384615
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","53","pmf","stable",0.152115384615385
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","53","quantile","0.01",22.418981
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","53","quantile","0.025",26.8658625
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","53","quantile","0.05",31.01845
@@ -6247,16 +5749,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","53","quantile","0.95",168.43935
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","53","quantile","0.975",205.2468
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","53","quantile","0.99",287.862690000001
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","54","pmf","large_increase",0.00557692307692308
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","54","pmf","stable",0.994423076923077
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","54","pmf","large_increase",0.00692307692307692
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","54","pmf","stable",0.993076923076923
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","54","pmf","large_increase",0.00788461538461538
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","54","pmf","stable",0.992115384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","54","pmf","large_increase",0.00884615384615385
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","54","pmf","stable",0.991153846153846
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","54","pmf","large_increase",0.00711538461538462
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","54","pmf","stable",0.992884615384615
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","54","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","54","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","54","quantile","0.05",0
@@ -6372,16 +5864,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","54","quantile","0.95",12.03146
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","54","quantile","0.975",13.8977225
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","54","quantile","0.99",15.975698
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","55","pmf","large_increase",0.00288461538461538
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","55","pmf","stable",0.997115384615385
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","55","pmf","large_increase",0.00730769230769231
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","55","pmf","stable",0.992692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","55","pmf","large_increase",0.0157692307692308
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","55","pmf","stable",0.984230769230769
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","55","pmf","large_increase",0.0328846153846154
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","55","pmf","stable",0.967115384615385
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","55","pmf","large_increase",0.0573076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","55","pmf","stable",0.942692307692308
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","55","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","55","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","55","quantile","0.05",0
@@ -6497,13 +5979,6 @@
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","55","quantile","0.95",19.7939
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","55","quantile","0.975",24.5898475
 "2023-10-14",3,"wk inc flu hosp","2023-11-04","55","quantile","0.99",33.230827
-"2023-10-14",-1,"wk flu hosp rate change","2023-10-07","56","pmf","stable",1
-"2023-10-14",0,"wk flu hosp rate change","2023-10-14","56","pmf","stable",1
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","56","pmf","large_increase",0.000192307692307692
-"2023-10-14",1,"wk flu hosp rate change","2023-10-21","56","pmf","stable",0.999807692307692
-"2023-10-14",2,"wk flu hosp rate change","2023-10-28","56","pmf","stable",1
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","56","pmf","large_increase",0.00173076923076923
-"2023-10-14",3,"wk flu hosp rate change","2023-11-04","56","pmf","stable",0.998269230769231
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","56","quantile","0.01",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","56","quantile","0.025",0
 "2023-10-14",-1,"wk inc flu hosp","2023-10-07","56","quantile","0.05",0
