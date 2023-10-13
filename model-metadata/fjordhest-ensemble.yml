@@ -1,0 +1,30 @@
+team_name: Fjordhest
+team_abbr: fjordhest
+model_name: fjordhest-ensemble
+model_abbr: ensemble
+model_contributors: [
+{
+"name": "Sasi Kandula",
+"affiliation": "Norwegian Institute of Public Health",
+"email": "sasikiran.kandula@fhi.no"
+},
+{
+"name": "Alfonso Diz-Lois Palomares",
+"affiliation": "Norwegian Institute of Public Health; University of Oslo",
+"email": "Alfonso.Diz-LoisPalomares@fhi.no"
+},
+{
+"name": "Birgitte De Blasio",
+"affiliation": "Norwegian Institute of Public Health; University of Oslo",
+"email": "Birgitte.Freiesleben.DeBlasio@fhi.no"
+}
+]
+license: CC-BY_SA-4.0
+designated_model: true
+data_inputs: US Department of Health and Human Services, COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries
+methods: An equal weighted ensemble of 3 component models - a compartmental model, an ETS model, and a baseline model of random walk with drift.
+methods_long: The mechanistic model is a stochastic SEIR model, with a sequential Monte Carlo based inference. Exponential trend smoothing model and random walk models use implementations available in the fable R package. The model estimates are solely the responsibility of the contributors and do not represent, nor are endorsed by, the Norwegian Institute of Public Health.
+ensemble_of_models: true
+ensemble_of_hub_models: false
+team_funding: none
+citation: "Geir Storvik, Alfonso Diz-Lois Palomares, Solveig Engebretsen, et al. (2023) A sequential Monte Carlo approach to estimate a time varying reproduction number in infectious disease models: the COVID-19 case., Journal of the Royal Statistical Society Series A: Statistics in Society, 2023; https://doi.org/10.1093/jrsssa/qnad043; O'Hara-Wild M, Hyndman R, Wang E (2022). _fable: Forecasting Models for Tidy Time Series_. R package version 0.3.2."

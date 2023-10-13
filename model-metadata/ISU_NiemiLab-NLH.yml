@@ -1,0 +1,29 @@
+team_name: "ISU_NiemiLab"
+team_abbr: "ISU_NiemiLab"
+model_name: "Nonlinear ASG hierarchical model with discrepancy"
+model_abbr: "NLH"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Spencer Wadsworth",
+    "affiliation": "Iowa State",
+    "email": "sgw96@iastate.edu"
+  },
+  {
+    "name": "Jarad Niemi",
+    "affiliation": "Iowa State",
+    "email": "niemi@iastate.edu"
+  }
+]
+website_url: "https://jarad.me/"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+include_viz: true
+include_ensemble: true
+include_eval: true
+methods: "A nonlinear hierarchical model of ILI data which is then mapped linearly to hospitalizations"
+data_inputs: "weekly incident flu hospitalizations from HHS, and weekly ILI data"
+methods_long: "nonlinear model"
+ensemble_of_models: false
+ensemble_of_hub_models: false
