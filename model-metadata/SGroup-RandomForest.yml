@@ -1,4 +1,5 @@
 team_name: Srivastava Group
+team_abbr: SGroup
 model_name: RandomForest
 model_abbr: SGroup-RandomForest
 model_contributors: [
