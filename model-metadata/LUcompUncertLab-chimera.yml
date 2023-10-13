@@ -1,7 +1,7 @@
 team_name: "LUcompUncertLab"
-team_abbr: "Lehigh"
-model_name: "Chimera"
-model_abbr: "Chimera"
+team_abbr: "LUcompUncertLab"
+model_name: "chimera"
+model_abbr: "chimera"
 model_version: "1.0"
 model_contributors: [
   {
