@@ -24,9 +24,7 @@ website_url: "https://github.com/signaturescience/fiphde"
 license: "CC-BY-4.0"
 citation: ""
 team_funding: "CSTE subaward"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "Ensemble of time series models."
 data_inputs: "Weekly incident flu hospitalizations by state retrieved from HHS Protect API."
 methods_long: "Time series ensemble with equal weights for each component. The ensemble includes models that are fit independently for each location every week. The component models include different classes of time series models, some of which have automated parameter selection (e.g., ARIMA). Models are first combined before generating an ensemble forecast, as opposed to generating individual forecasts for each model and then combining forecasts. Forecasted values are rounded to the nearest integer and truncated at zero to align with hospitalization count target. All forecasts are reviewed for plausibility by a human prior to submission."

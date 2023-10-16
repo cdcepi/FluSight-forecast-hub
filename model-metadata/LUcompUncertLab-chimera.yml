@@ -14,9 +14,7 @@ website_url: "https://github.com/computationalUncertaintyLab"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "CSTE/CDC"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "SEIRH model trained on pct positive,HHS hosps,Human judgment"
 data_inputs: "Daily flu hospitalizations,Daily percent positive cases,metaculus human judgment forecasts"
 methods_long: "to include"

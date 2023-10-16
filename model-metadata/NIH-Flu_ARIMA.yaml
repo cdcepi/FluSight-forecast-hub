@@ -19,9 +19,7 @@ website_url: "https://github.com/midas-network/flu-scenario-modeling-hub/tree/ma
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "not applicable"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "Seasonal ARIMA model with exogenous covariates for cumulative vaccination coverage, seasonal vaccine effectiveness, weekly A/H3N2 circulation, and influenza transmissibility."
 data_inputs: "Forecasts use HHS influenza hospitalization data, CDC FluSurv-NET hospitalization rates, syndromic and virologic surveillance data from CDC FluView, vaccination coverage estimates from the National Center for Immunization and Respiratory Diseases, and seasonal vaccine effectiveness estimates from published observational studies and the CDC."
 methods_long: "We use dynamic regression models with ARIMA errors and exogenous covariates for seasonal cumulative vaccination coverage, seasonal vaccine effectiveness, weekly A/H3N2 circulation, and weekly influenza transmission rates. We used 6 years of historical data on influenza hospitalizations (incidence, epidemic size, and timing), influenza-like illness rates, influenza A subtype circulation, weekly Rt, and vaccine coverage and effectiveness to calibrate our model. To estimate weekly Rt, we fit semi-mechanistic Bayesian epidemiological models to observed ILI x % positive rates during each season, assuming a case ascertainment rate of 0.3."

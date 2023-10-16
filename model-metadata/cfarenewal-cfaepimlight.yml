@@ -11,6 +11,7 @@ model_contributors: [
   }  
 ]
 license: "CC-BY-4.0"
+designated_model: true
 methods: "Simple renewal model fit to daily incidence data using the Epidemia package"
 data_inputs: "Daily incident flu hospitalizations via HealthData.gov"
 methods_long: "Semi-mechanistic renewal equation model with day-of-week observation effects and a simple population size adjustment. R(t) extrapolation via a weekly random walk. Model developed and fit using the Epidemia package for R and Stan; see documentation: https://imperialcollegelondon.github.io/epidemia/articles/model-description.html"
