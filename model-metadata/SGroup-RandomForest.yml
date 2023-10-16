@@ -1,6 +1,7 @@
 team_name: Srivastava Group
-model_name: RandomForest
-model_abbr: SGroup-RandomForest
+team_abbr: SGroup
+model_name: SGroup-RandomForest 
+model_abbr: SGroup_RF
 model_contributors: [
   {
     "name": "Ajitesh Srivastava",
