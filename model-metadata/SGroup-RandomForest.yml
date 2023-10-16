@@ -15,7 +15,7 @@ model_contributors: [
     "orcid": "1234-1234-1234-1234"
   }
 ]
-license: "mit"
+license: "CC-BY-4.0"
 designated_model: true
 data_inputs: HHS, FluSurv-NET
 methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.
