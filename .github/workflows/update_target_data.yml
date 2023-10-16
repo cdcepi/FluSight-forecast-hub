@@ -6,7 +6,7 @@ on:
         description: 'Update target data'
         required: false
   schedule:
-    - cron: "30 22 * * 5"
+    - cron: "30 22 * * 3"
 
 jobs:
   update_truth_data:
