@@ -49,9 +49,7 @@ website_url: "https://biocomplexity.virginia.edu/institute/divisions/network-sys
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "An ensemble of multiple statistical and deep learning models."
 data_inputs: "Daily and weekly incident flu hospitalizations from HHS"
 methods_long: "This is a US national and state-level multi-method model

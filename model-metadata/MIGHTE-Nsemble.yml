@@ -29,9 +29,7 @@ website_url: "https://github.com/MIGHTE-lab/"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "Weighted ensemble of SOTA time-series models especially lightGBM"
 data_inputs: "Weekly incident flu hospitalizations, Google Trends"
 methods_long: "Weighted ensemble of SOTA time-series models, including lightGBM with hyperparameters tuned to the previous season, ARIMA, vector auto-regression, and ARGO."

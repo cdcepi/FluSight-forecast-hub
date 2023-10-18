@@ -19,9 +19,7 @@ website_url: "https://sanghani.cs.vt.edu/"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "An ensemble of deep learning models as well as traditonal statistical methods."
 data_inputs: "Daily and weekly incident flu hospitalizations from HHS, Air Quality Index from EPA, Demographic data"
 methods_long: "This ensemble forecasts US national- and state-level influenza hospitalizations.  Included models focus
