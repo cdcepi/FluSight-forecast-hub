@@ -192,13 +192,13 @@ When the predictions are quantiles, values in the `output_type_id` column are a 
 
 Teams must provide the following 23 quantiles:
 
-0.010, 0.025, 0.050, 0.100, 0.150, 0.200, 0.250, 0.300, 0.350, 0.400,
-0.450, 0.500, 0.550, 0.600, 0.650, 0.700, 0.750, 0.800, 0.850, 0.900,
-0.950, 0.975, and 0.990
+0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4,
+0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9,
+0.95, 0.975, and 0.99
 
 R: c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99) 
 Python: quantiles =
-np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.050)),
+np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.05)),
 [0.975,0.99])
 
 #### pmf output
