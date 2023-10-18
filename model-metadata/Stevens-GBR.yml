@@ -10,6 +10,11 @@ model_contributors: [
     "email": "abrahme@stevens.edu"
   },
   {
+    "name": "Rutvik Raut",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "rraut@stevens.edu"
+  }
+  {
     "name": "Nikhil Muralidhar",
     "affiliation": "Stevens Institute of Technology",
     "email": "nmurali1@stevens.edu"
