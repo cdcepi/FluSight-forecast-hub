@@ -1,0 +1,57 @@
+team_name: "Los Alamos National Lab and Northern Arizona University"
+team_abbr: "LosAlamos_NAU"
+model_name: "Compartmental Model with Bayesian Inference"
+model_abbr: "CModel_Flu"
+model_version: "2.0"
+model_contributors: [
+        {
+            "name": "Ye Chen",
+            "affiliation": "Northern Arizona University",
+            "email": "Ye.Chen@nau.edu",
+        },
+        {
+            "name": "Richard Posner",
+            "affiliation": "Northern Arizona University",
+            "email": "Richard.Posner@nau.edu",
+        },
+        {
+            "name": "Jaechoul Lee",
+            "affiliation": "Northern Arizona University",
+            "email": "Jaechoul.Lee@nau.edu",
+        },
+        {
+            "name": "Joseph R Mihaljevic",
+            "affiliation": "Northern Arizona University",
+            "email": "Joseph.Mihaljevic@nau.edu",
+        },        
+        {
+            "name": "Avery Drennan",
+            "affiliation": "Northern Arizona University",
+            "email": "aad473@nau.edu",
+        },
+        {
+            "name": "William Scott Hlavacek",
+            "affiliation": "Los Alamos National Lab",
+            "email": "hlavacek@lanl.gov",
+        },
+        {
+            "name": "Yen Ting Lin",
+            "affiliation": "Los Alamos National Lab",
+            "email": "yentingl@lanl.gov",
+        },
+        {
+            "name": "Abhishek Mallela",
+            "affiliation": "Los Alamos National Lab",
+            "email": "abhishek.mallela@gmail.com",
+        }
+    ]
+website_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
+repo_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
+license: "CC-BY-4.0"
+designated_model: true
+include_ensemble: false
+methods: "A compartmental model with Bayesian inference, uncertainty quantification and calibration."
+data_inputs: "State level daily hospitalization data from HealthData.gov."
+methods_long: "We employed a compartmental model that features a time-dependent transmission rate as the base model. Using Bayesian inference, we parametrize the transmission rate from hospitalization data. Subsequent steps involved uncertainty quantification and model calibration."
+ensemble_of_models: false
+ensemble_of_hub_models: false
