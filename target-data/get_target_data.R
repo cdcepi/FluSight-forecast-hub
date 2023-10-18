@@ -70,6 +70,6 @@ target_data <- fetch_flu(temporal_resolution = "weekly")
 
 archive_data <- sprintf("./auxiliary-data/target-data-archive/target-hospital-admissions_%s.csv", max(target_data$date))
 
-readr::write_csv(target_data, file = "./target-data/target-hospital-admissions.csv", append = FALSE)
-readr::write_csv(target_data, file = archive_data)
+write.csv(target_data, file = "./target-data/target-hospital-admissions.csv")
+write.csv(target_data, file = archive_data, row.names = FALSE)
 
