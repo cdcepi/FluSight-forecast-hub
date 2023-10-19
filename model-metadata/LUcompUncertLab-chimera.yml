@@ -14,9 +14,6 @@ website_url: "https://github.com/computationalUncertaintyLab"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "CSTE/CDC"
-include_viz: true
-include_ensemble: true
-include_eval: true
 methods: "KM27 model trained on pct positive,HHS hosps,Human judgment"
 data_inputs: "Daily flu hospitalizations,Daily percent positive cases,metaculus human judgment forecasts"
 methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet complete.
