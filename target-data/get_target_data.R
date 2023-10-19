@@ -7,7 +7,7 @@
 #'   `TRUE`
 #'
 #' @return data frame of flu incidence with columns date, location,
-#'   location_name, value, weekly_ratee
+#'   location_name, value, weekly_rate
 
 fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
   require(dplyr)
@@ -64,8 +64,12 @@ library(RSocrata)
 library(readr)
 locations <- readr::read_csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv", col_select= 1:4)
 
+#setwd("C:/Users/nqr2/Desktop/Github/FluSight-forecast-hub")
   
 target_data <- fetch_flu(temporal_resolution = "weekly")
 
-readr::write_csv(target_data, file = "./target-data/target-hospital-admissions.csv", append = FALSE)
-readr::write_csv(target_data, file = paste0("./auxiliary-data/target-data-archive/target-hospital-admissions_", max(target_data$date),".csv"))
+archive_data <- sprintf("./auxiliary-data/target-data-archive/target-hospital-admissions_%s.csv", max(target_data$date))
+
+write.csv(target_data, file = "./target-data/target-hospital-admissions.csv")
+write.csv(target_data, file = archive_data, row.names = FALSE)
+
