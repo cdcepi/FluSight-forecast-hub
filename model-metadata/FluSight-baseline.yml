@@ -1,0 +1,55 @@
+team_name: "FluSight-baseline"
+team_abbr: "FluSight"
+model_name: "Baseline model using reported weekly admissions"
+model_abbr: "baseline"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Daniel McDonald",
+    "affiliation": "University of British Columbia",
+    "email": "daniel@stat.ubc.ca"
+  },
+  {
+    "name": "Logan Brooks",
+    "affiliation": "UC Berkeley",
+    "email": "lcbrooks@berkeley.edu"
+  },
+  {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+  {
+    "name": "Alexander Webber",
+    "affiliation": "CDC",
+    "email": "rpe5@cdc.gov"
+  },
+  {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Simple time-series baseline model predicting forward the most recent week of reported laboratory confirmed influenza hospital admissions."
+data_inputs: "Weekly incident flu hospitalizations from HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries."
+methods_long: "The median prediction at all future horizons
+  is the most recent observed weekly incidence.  To get a distribution around
+  the median, we look at how much incidence has changed from week to week in
+  the past, and we allow for the possibility that similar changes will occur
+  again in the future.
+
+  In more technical detail, forecasts of incidence are generated through the
+  following procedure: for each location, 1) Calculate first differences of
+  incidence; 2) Collect all first differences and their negatives; 3) For each
+  time step, i) Sample first differences in incidence and add to the most recent
+  observed incidence; ii) Enforce that the median of the predictive distribution
+  for incidence is equal to the most recent observed incidence; iii) truncate
+  the predictive distribution for incidence at 0.
+
+  Reimplementation of the 2022-23 baseline model contributed to by Evan L. Ray,
+  Nutcha Wattanachit, and Ryan Tibshirani."
+ensemble_of_models: false
+ensemble_of_hub_models: false
