@@ -101,6 +101,8 @@ Also under the "covidcast" endpoint, under the ["chng" data source name](https:/
 - *Confirmed Influenza from Doctor's Visits* `smoothed_outpatient_flu`
 - *Confirmed Influenza from Doctors'Visits (with weekday adjustment)* `smoothed_adj_outpatient_flu`
 
+**Note:** the covidcast "hhs" data source does shift dates so that time_values reflect date of admissions, not the date after admissions. FluSight forecasting teams using covidcast should plan to account for this difference from the FluSight target definition (e.g., by reversing this shift) while preparing forecast submissions.
+
 Other related and potentially helpful endpoints of the Epidata API include:
 - [COVID-19 Hospitalization by State](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html)
 - [COVID-19 Hospitalization by Facility](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html)
