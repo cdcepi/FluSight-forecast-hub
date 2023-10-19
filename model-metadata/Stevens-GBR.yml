@@ -22,7 +22,7 @@ model_contributors: [
 ]
 website_url: "https://sites.google.com/view/nikhil-muralidhar"
 license: "CC-BY-4.0"
-designated_model: false
+designated_model: true
 methods: "An ensemble of basic tree models with equal weighting is used to create a robust and powerful tree-based model."
 data_inputs: "State-aggregated data weekly incident flu hospitalizations, queried through covidData"
 methods_long: "This model generates forecasts for state-level weekly influenza hospitalizations. The model comprises an ensemble of tree-based regression models based employing the gradient boosting learning paradigm."
