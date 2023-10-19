@@ -61,8 +61,8 @@ fetch_flu <- function(temporal_resolution = "weekly", na.rm = TRUE){
 library(dplyr)
 library(lubridate)
 library(RSocrata)
-library(readr)
-locations <- readr::read_csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv", col_select= 1:4)
+
+locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
 #setwd("C:/Users/nqr2/Desktop/Github/FluSight-forecast-hub")
   
