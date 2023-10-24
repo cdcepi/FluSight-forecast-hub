@@ -14,9 +14,12 @@ website_url: "https://github.com/computationalUncertaintyLab"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "CSTE/CDC"
+methods: "KM27 model trained on pct positive,HHS hosps,Human judgment"
 designated_model: true
-methods: "SEIRH model trained on pct positive,HHS hosps,Human judgment"
 data_inputs: "Daily flu hospitalizations,Daily percent positive cases,metaculus human judgment forecasts"
-methods_long: "to include"
+methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet complete.
+2023-10-12: KM27 model is completed and ready for training/submission for the following week.
+2023-10-18: KM27 model was incorrect last week. i spernt the entire week correcting the model. Thete is a final bug in the mehtod i use to aggregate from day forecasts to week forecasts. 
+i will need to solve this bug before the next submission date."
 ensemble_of_models: false
 ensemble_of_hub_models: false

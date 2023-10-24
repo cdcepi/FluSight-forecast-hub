@@ -119,7 +119,7 @@
         "model_abbr",
         "model_contributors",
         "license",
-        "designated_model"
+        "designated_model",
         "data_inputs",
         "methods",
         "methods_long",
