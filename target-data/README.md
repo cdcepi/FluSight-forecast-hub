@@ -25,7 +25,7 @@ Previously collected influenza data from the 2020-21 and the 2022-23 influenza s
 
 During the 2021-22 and 2022-23 influenza forecasting seasons, the dataset was updated daily based on data reported through the day prior. Therefore, datasets updated on Monday would include data reported through the immediately preceding Sunday, and this data snapshot would capture influenza hospital admissions that occurred through Saturday (see the data processing section for more information). As of June 11, 2023, the reporting cadence changed to weekly, so that qualifying facilities are required to report daily hospitalizations for the previous week to the [National Healthcare Safety Network (NHSN)](https://www.cdc.gov/nhsn/index.html) on each Tuesday, as indicated in the [hospital reporting guidance](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). 
 
-Aggregated official counts are publicly released on Fridays. Official counts can be revised in subsequent data updates.
+Aggregated official counts are publicly released on Fridays. Preliminary counts are released on Wednesdays. Official counts can be revised in subsequent data updates.
 These data are also available in a facility-level dataset; data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). 
 
 
