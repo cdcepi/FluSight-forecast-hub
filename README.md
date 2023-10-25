@@ -29,3 +29,5 @@ If you have questions about the development of this target, please reach out to 
 
 Additionally, the infrastructure to submit individual forecast trajectories (e.g., random sample simulations from the predictive distribution(s) of the forecast model) over the 2023-2024 influenza season **may** become available. Trajectory submissions would be **optional**. Details on formatting and the submission procedure would be provided prior to the first week of forecasts when trajectory submission is possible.
 
+## Acknowledgments
+This repository follows the guidelines and standards outlined by the [hubverse]([url](https://hubdocs.readthedocs.io/en/latest/)), which provides a set of data formats and open source tools for modeling hubs.
