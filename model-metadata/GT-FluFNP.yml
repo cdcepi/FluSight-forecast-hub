@@ -19,6 +19,8 @@ model_contributors: [
     "email": "leozhao1997@gatech.edu"
   },
 ]
+website_url: "https://github.com/AdityaLab/CDC-Forecasting/tree/main/Model_Training/CAMul-deploy-hosp"
+repo_url: "https://github.com/AdityaLab/CDC-Forecasting"
 license: "CC-BY-4.0"
 designated_model: True
 data_inputs: "Daily and weekly incident flu hospitalizations, queried through covidData"
