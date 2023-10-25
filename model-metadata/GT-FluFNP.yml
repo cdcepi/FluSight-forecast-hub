@@ -19,6 +19,7 @@ model_contributors: [
     "email": "leozhao1997@gatech.edu"
   },
 ]
+website_url: "https://adityalab.cc.gatech.edu/"
 license: "CC-BY-4.0"
 designated_model: True
 data_inputs: "Daily and weekly incident flu hospitalizations, queried through covidData"
