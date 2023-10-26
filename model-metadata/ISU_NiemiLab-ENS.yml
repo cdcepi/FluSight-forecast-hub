@@ -19,9 +19,7 @@ website_url: "https://jarad.me"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-include_viz: true
-include_ensemble: false
-include_eval: true
+designated_model: false
 methods: "An ensemble of models of ILI data which is then mapped linearly to hospitalizations"
 data_inputs: "weekly incident flu hospitalizations from HHS, and weekly ILI data"
 methods_long: "nonlinear model"
