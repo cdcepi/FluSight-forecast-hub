@@ -1,7 +1,7 @@
 team_name: "Guidehouse"
 team_abbr: "GH"
 model_name: "SVM Forecasting Model"
-model_abbr: "svm_model"
+model_abbr: "model"
 model_version: "1.0"
 model_contributors: [
   {
