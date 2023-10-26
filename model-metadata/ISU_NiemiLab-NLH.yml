@@ -22,7 +22,6 @@ team_funding: "funding"
 include_viz: true
 include_ensemble: true
 include_eval: true
-designated_model: true
 methods: "A nonlinear hierarchical model of ILI data which is then mapped linearly to hospitalizations"
 data_inputs: "weekly incident flu hospitalizations from HHS, and weekly ILI data"
 methods_long: "nonlinear model"
