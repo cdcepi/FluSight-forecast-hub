@@ -10,7 +10,7 @@ model_contributors: [
     "email": "ameiyappan@guidehouse.com"
   }
 ]
-license: "cc-by-4.0"
+license: "CC-BY-4.0"
 citation: ""
 team_funding: "n/a"
 designated_model: false
