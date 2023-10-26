@@ -1,7 +1,7 @@
 team_name: "ISU_NiemiLab"
 team_abbr: "ISU_NiemiLab"
 model_name: "Nonlinear ASG hierarchical model with discrepancy"
-model_abbr: "NLH"
+model_abbr: "ENS"
 model_version: "1.0"
 model_contributors: [
   {
@@ -20,11 +20,10 @@ license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
 include_viz: true
-include_ensemble: true
+include_ensemble: false
 include_eval: true
-designated_model: true
-methods: "A nonlinear hierarchical model of ILI data which is then mapped linearly to hospitalizations"
+methods: "An ensemble of models of ILI data which is then mapped linearly to hospitalizations"
 data_inputs: "weekly incident flu hospitalizations from HHS, and weekly ILI data"
 methods_long: "nonlinear model"
-ensemble_of_models: false
+ensemble_of_models: true
 ensemble_of_hub_models: false
