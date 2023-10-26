@@ -1,0 +1,25 @@
+team_name: "University of Guelph Dynamics Training Lab"
+team_abbr: "UGuelph"
+model_name: "Composite Curve"
+model_abbr: "CompositeCurve"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Edward Thommes",
+    "affiliation": "Sanofi/University of Guelph",
+    "email": "ethommes@uoguelph.ca"
+  },
+    {
+    "name": "Monica Cojocaru",
+    "affiliation": "University of Guelph",
+    "email": "mcojocar@uoguelph.ca"
+  }
+]
+website_url: "https://sites.google.com/site/mgcojocarumath/networks-and-dynamics-lab"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Composite of past epidemic curves"
+data_inputs: "Uses a midpoint-aligned composite of epidemic curves across past seasons and geographies (here states), following the approach of Schanzer et al., Influenza and Other Respiratory Viruses 2010 "
+methods_long: ""
+ensemble_of_models: false
+ensemble_of_hub_models: false
