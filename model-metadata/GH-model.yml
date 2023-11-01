@@ -1,0 +1,22 @@
+team_name: "Guidehouse"
+team_abbr: "GH"
+model_name: "model"
+model_abbr: "model"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Akilan Meiyappan",
+    "affiliation": "Guidehouse",
+    "email": "ameiyappan@guidehouse.com"
+  }
+]
+website_url: "https://github.com/gh-ai-solu/flusight-21-22/"
+license: "CC-BY-4.0"
+citation: ""
+team_funding: "n/a"
+designated_model: false
+methods: "SVM model trained on HHS Protect hosps."
+data_inputs: "Daily indcident flu hospitlization"
+methods_long: ""
+ensemble_of_models: false
+ensemble_of_hub_models: false
