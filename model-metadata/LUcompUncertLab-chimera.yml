@@ -19,6 +19,9 @@ data_inputs: "Daily flu hospitalizations,Daily percent positive cases,metaculus 
 methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet complete.
 2023-10-12: KM27 model is completed and ready for training/submission for the following week.
 2023-10-18: KM27 model was incorrect last week. i spernt the entire week correcting the model. Thete is a final bug in the mehtod i use to aggregate from day forecasts to week forecasts. 
-i will need to solve this bug before the next submission date."
+i will need to solve this bug before the next submission date.
+2023-11-01:Corrected KM27 and added in knowledge about flu: R0 is constrained to be between 1.1 and 2.5, vaccine proprtion is between 0.2 and 0.8. Generatioanl interval is Neg Bin and on average 3.6 days.
+Changed from Normal observational process to GammaPoisson. The GP is good but very computationally slow.
+Still cranky about how sensitive this model is to changes. This round ill try to focus on assigning seasons to distinct clusters. "
 ensemble_of_models: false
 ensemble_of_hub_models: false
