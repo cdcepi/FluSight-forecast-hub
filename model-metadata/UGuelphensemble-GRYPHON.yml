@@ -1,7 +1,7 @@
 team_name: "University of Guelph Dynamics Training Lab"
-team_abbr: "GRYPHONensemble"
-model_name: "GRYPHONensemble"
-model_abbr: "GRYPHONensemble"
+team_abbr: "UGuelphensemble"
+model_name: "GRYPHON"
+model_abbr: "GRYPHON"
 model_version: "1.0"
 model_contributors: [
   {
