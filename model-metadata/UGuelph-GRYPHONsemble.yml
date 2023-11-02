@@ -1,7 +1,7 @@
 team_name: "University of Guelph Dynamics Training Lab"
-team_abbr: "UGuelph"
-model_name: "Composite Curve"
-model_abbr: "CompositeCurve"
+team_abbr: "GRYPHONensemble"
+model_name: "GRYPHONensemble"
+model_abbr: "GRYPHONensemble"
 model_version: "1.0"
 model_contributors: [
   {
