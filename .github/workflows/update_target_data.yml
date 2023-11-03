@@ -27,6 +27,8 @@ jobs:
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
+      - name: Archive target csv files
+        run:  Rscript target-data/archive_target_data.R
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with: 

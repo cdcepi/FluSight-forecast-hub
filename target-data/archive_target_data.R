@@ -68,9 +68,9 @@ locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-
   
 target_data <- fetch_flu(temporal_resolution = "weekly")
 
-#archive_data <- sprintf("./auxiliary-data/target-data-archive/target-hospital-admissions_%s.csv", max(target_data$date))
+archive_data <- sprintf("./auxiliary-data/target-data-archive/target-hospital-admissions_%s.csv", max(target_data$date))
 
-write.csv(target_data, file = "./target-data/target-hospital-admissions.csv")
-#write.csv(target_data, file = archive_data, row.names = FALSE)
+#write.csv(target_data, file = "./target-data/target-hospital-admissions.csv")
+write.csv(target_data, file = archive_data, row.names = FALSE)
 
 
