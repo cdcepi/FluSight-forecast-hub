@@ -150,7 +150,7 @@ the following specific targets:
 
 
 ### `horizon`
-Values in the `horizon` column indicate the number of weeks between the `reference_date` and the `target_end_date`.  For both influenza hospital admission forecasts and rate change predictions this should be a number between -1 and 3, where for example a `horizon` of 0 indicates that the prediction is a nowcast for the week of submission and a `horizon` of 1 indicates that the prediction is a forecast for the week after submission. 
+Values in the `horizon` column indicate the number of weeks between the `reference_date` and the `target_end_date`.  For influenza hospital admission forecasts this should be a number between -1 and 3 and for rate change predictions this should be a number between 0 and 3, where for example a `horizon` of 0 indicates that the prediction is a nowcast for the week of submission and a `horizon` of 1 indicates that the prediction is a forecast for the week after submission. 
 
 ### `target_end_date`
 
@@ -158,7 +158,7 @@ Values in the `target_end_date` column must be a date in the format
 
     YYYY-MM-DD
     
-This is the last date of the forecast target's week. This will be the date of the Saturday at the end of the forecasted week. As a reminder, the `target_end_date` is the end date of the week during which the admissions occur, not the date the admission is reported (see the data processing section for more details). Within each row of the submission file, the `target_end_date` should be equal to the `reference_date` + `horizon`*(7 days).
+This is the last date of the forecast target's week. This will be the date of the Saturday at the end of the forecasted week. As a reminder, the `target_end_date` is the end date of the week during which the admissions are reported (see the data processing section for more details). Within each row of the submission file, the `target_end_date` should be equal to the `reference_date` + `horizon`*(7 days).
 
 
 ### `location`
@@ -209,7 +209,7 @@ For rate change forecasts, the output_type_id indicates the category that the pr
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "quantile" or "pmf" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For rate change forecasts, values are required to sum to 1 across all `output_type_ids` for each target and location (as specified in the FILL LINK hubverse documentation).
+Values in the `value` column are non-negative numbers indicating the "quantile" or "pmf" prediction for this row. For a "quantile" prediction, `value` is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For rate change forecasts, values are required to sum to 1 across all `output_type_ids` for each target and location (as specified in the [hubverse documentation](https://hubdocs.readthedocs.io/en/latest/format/model-output.html)).
 
 ### Example tables
 
@@ -230,16 +230,15 @@ admissions target with a reference date of Saturday, November 18, 2023.
 included in the predicted EW for an example of the rate trend target
 with a reference date of Saturday, November 18 2023. The rate trend
 target describes differences in the hospitalization rate between the
-baseline EW (two weeks prior to the EW of the reference date) and the
+baseline EW (one week prior to the EW of the reference date) and the
 target EW.
 
 | reference_date | horizon | target_end_date | target EW | target EW dates covered  | baseline EW | baseline EW dates covered |
 |:---------------|:--------|:----------------|:----------|:-------------------------|:------------|:--------------------------|
-| 2023-11-18     | -1      | 2023-11-11      | 45        | 2023-11-05 to 2023-11-11 | 44          | 2023-10-29 to 2023-11-04  |
-| 2023-11-18     | 0       | 2023-11-18      | 46        | 2023-11-12 to 2023-11-18 | 44          | 2023-10-29 to 2023-11-04  |
-| 2023-11-18     | 1       | 2023-11-25      | 47        | 2023-11-19 to 2023-11-25 | 44          | 2023-10-29 to 2023-11-04  |
-| 2023-11-18     | 2       | 2023-12-02      | 48        | 2023-11-26 to 2023-12-02 | 44          | 2023-10-29 to 2023-11-04  |
-| 2023-11-18     | 3       | 2023-12-09      | 49        | 2023-12-03 to 2023-12-09 | 44          | 2023-10-29 to 2023-11-04  |
+| 2023-11-18     | 0       | 2023-11-18      | 46        | 2023-11-12 to 2023-11-18 | 45          | 2023-11-05 to 2023-11-11  |
+| 2023-11-18     | 1       | 2023-11-25      | 47        | 2023-11-19 to 2023-11-25 | 45          | 2023-11-05 to 2023-11-11  |
+| 2023-11-18     | 2       | 2023-12-02      | 48        | 2023-11-26 to 2023-12-02 | 45          | 2023-11-05 to 2023-11-11  |
+| 2023-11-18     | 3       | 2023-12-09      | 49        | 2023-12-03 to 2023-12-09 | 45          | 2023-11-05 to 2023-11-11  |
 
 
 ## Forecast validation 
@@ -340,7 +339,7 @@ Evaluation will use official data reported from healthdata.gov as reported at th
 In order to mitigate the impact of reporting revisions and noise inherent in small counts, all week pairs with a difference of fewer than 10 hospital admissions will be classified as having a "stable" trend. 
 
 
-**For one-week ahead rate trends (horizon = -1):**
+**For one-week ahead rate trends (horizon = 0):**
 
 *Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
 
@@ -352,7 +351,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 *Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 2/100k.
 
-**For two-week ahead rate trends (horizon = 0):**
+**For two-week ahead rate trends (horizon = 1):**
 
 *Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
 
@@ -364,7 +363,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 *Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 3/100k.
 
-**For three-week ahead rate trends (horizon = 1):**
+**For three-week ahead rate trends (horizon = 2):**
 
 *Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 2/100k OR the corresponding magnitude of the count change is less than 10.
 
@@ -376,7 +375,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 *Large decrease:* negative forecasted rate changes that do not qualify as stable and for which the magnitude of the forecasted rate change is larger than or equal to 4/100k.
 
-**For four-week and five-week ahead rate trends (horizon = 2 or 3, respectively):**
+**For four-week and five-week ahead rate trends (horizon = 3):**
 
 *Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 2.5/100k OR the corresponding magnitude of the count change is less than 10.
 
