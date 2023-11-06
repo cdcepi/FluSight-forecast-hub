@@ -26,7 +26,7 @@ jobs:
           install.packages(c("dplyr", "lubridate", "RSocrata"))
         shell: Rscript {0}
       - name: Archive target csv files
-        run:  Rscript target-data/archive_target_data.R
+        run:  Rscript auxiliary-data/target-data-archive/archive_target_data.R
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with: 
