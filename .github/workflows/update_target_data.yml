@@ -6,10 +6,10 @@ on:
         description: 'Update target data'
         required: false
   schedule:
-    - cron: "15 16 * * 3"
+    - cron: "15 17 * * 3"
 
 jobs:
-  update_truth_data:
+  update_target_data:
     if: github.repository_owner == 'cdcepi'
     runs-on: macOS-latest
     steps:    
