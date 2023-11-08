@@ -9,7 +9,7 @@ on:
     - cron: "15 20 * * 3"
 
 jobs:
-  update_truth_data:
+  archive_target_data:
     if: github.repository_owner == 'cdcepi'
     runs-on: macOS-latest
     steps:    
@@ -30,7 +30,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with: 
-          add: 'target-data'
+          add: 'auxiliary-data'
           message: "Archive target data"
           default_author: github_actions
           push: true
