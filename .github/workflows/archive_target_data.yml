@@ -6,7 +6,7 @@ on:
         description: 'Archive target data'
         required: false
   schedule:
-    - cron: "15 20 * * 3"
+    - cron: "20 17 * * 3"
 
 jobs:
   archive_target_data:
