@@ -9,7 +9,7 @@ on:
     - cron: "15 17 * * 3"
 
 jobs:
-  update_truth_data:
+  update_target_data:
     if: github.repository_owner == 'cdcepi'
     runs-on: macOS-latest
     steps:    
