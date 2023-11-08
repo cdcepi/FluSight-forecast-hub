@@ -22,6 +22,7 @@ methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet
 i will need to solve this bug before the next submission date.
 2023-11-01:Corrected KM27 and added in knowledge about flu: R0 is constrained to be between 1.1 and 2.5, vaccine proprtion is between 0.2 and 0.8. Generatioanl interval is Neg Bin and on average 3.6 days.
 Changed from Normal observational process to GammaPoisson. The GP is good but very computationally slow.
-Still cranky about how sensitive this model is to changes. This round ill try to focus on assigning seasons to distinct clusters. "
+Still cranky about how sensitive this model is to changes. This round ill try to focus on assigning seasons to distinct clusters.
+2023-11-08:Added in priors for peak intensity and timing, and for the first two weeks of the season (MMWR 40 and 41). This adds stability to the model and speed."
 ensemble_of_models: false
 ensemble_of_hub_models: false
