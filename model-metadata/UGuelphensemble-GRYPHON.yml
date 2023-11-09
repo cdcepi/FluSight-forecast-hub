@@ -5,16 +5,31 @@ model_abbr: "GRYPHON"
 model_version: "1.0"
 model_contributors: [
   {
+    "name": "Edward Thommes",
+    "affiliation": "Sanofi/University of Guelph",
+    "email": "ethommes@uoguelph.ca"
+  },
+  {
+    "name": "Christopher van Bommel",
+    "affiliation": "University of Guelph",
+    "email": "cvanbomm@uoguelph.ca"
+  },
+  {
+    "name": "Rhiannon Loster",
+    "affiliation": "University of Guelph",
+    "email": "rloster@uoguelph.ca"
+  },
+  {
     "name": "Benjamin Benteke",
     "affiliation": "University of Guelph",
     "email": "bbenteke@uoguelph.ca"
   },
   {
-    "name": "Edward Thommes",
-    "affiliation": "Sanofi/University of Guelph",
-    "email": "ethommes@uoguelph.ca"
+    "name": "Pengfei Yue",
+    "affiliation": "University of Guelph",
+    "email": "yuep@uoguelph.ca"
   },
-    {
+  {
     "name": "Monica Cojocaru",
     "affiliation": "University of Guelph",
     "email": "mcojocar@uoguelph.ca"
