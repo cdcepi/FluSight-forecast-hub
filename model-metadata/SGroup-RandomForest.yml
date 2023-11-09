@@ -1,7 +1,7 @@
 team_name: Srivastava Group
 team_abbr: SGroup
 model_name: SGroup-RandomForest 
-model_abbr: SGroup_RF
+model_abbr: RandomForest
 model_contributors: [
   {
     "name": "Ajitesh Srivastava",
@@ -17,6 +17,7 @@ model_contributors: [
   }
 ]
 license: "CC-BY-4.0"
+website_url: "https://github.com/maa989"
 designated_model: true
 data_inputs: HHS, FluSurv-NET
 methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.

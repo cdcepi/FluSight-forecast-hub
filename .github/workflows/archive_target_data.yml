@@ -1,15 +1,15 @@
-name: Update target data
+name: Archive target data
 on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Update target data'
+        description: 'Archive target data'
         required: false
   schedule:
-    - cron: "15 17 * * 3"
+    - cron: "20 17 * * 3"
 
 jobs:
-  update_target_data:
+  archive_target_data:
     if: github.repository_owner == 'cdcepi'
     runs-on: macOS-latest
     steps:    
@@ -25,13 +25,13 @@ jobs:
         run: |
           install.packages(c("dplyr", "lubridate", "RSocrata"))
         shell: Rscript {0}
-      - name: Generate target csv files
-        run:  Rscript target-data/get_target_data.R
+      - name: Archive target csv files
+        run:  Rscript auxiliary-data/target-data-archive/archive_target_data.R
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with: 
-          add: 'target-data'
-          message: "Update target data"
+          add: 'auxiliary-data'
+          message: "Archive target data"
           default_author: github_actions
           push: true
 
