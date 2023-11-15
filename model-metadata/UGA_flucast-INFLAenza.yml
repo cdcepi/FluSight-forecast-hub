@@ -27,6 +27,7 @@ designated_model: true
 data_inputs: HHS
 methods: A spatial time-series model that uses the R-INLA package for estimating forecast posterior distributions.
 methods_long: A spatial time-series model that uses the R-INLA package for estimating a jointly fitted time-series model that includes seasonality terms, state-specific connectivity, and a random walk component.
+website_url: https://thefoxlab.wordpress.com/
 ensemble_of_models: false
 ensemble_of_hub_models: false
 team_funding: CSTE/CDC award NU38OT000297 
