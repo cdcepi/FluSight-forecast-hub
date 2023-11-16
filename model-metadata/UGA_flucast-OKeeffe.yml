@@ -23,10 +23,11 @@ model_contributors: [
   }
 ]
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 data_inputs: HHS
 methods: An epidemic model with an underlying machine learning component, coupled with a tempering term that acts as susceptible depletion and is estimated from historical data.
 methods_long: A class of epidemic models with a flexible underlying machine learning component, coupled with a tempering term that functionally acts as susceptible depletion, but can be estimated from historical data. We use historic HHS influenza wave data to make future forecasts
+website_url: https://github.com/gcgibson/semimech_package
 ensemble_of_models: false
 ensemble_of_hub_models: false
 team_funding: CSTE/CDC award NU38OT000297 
