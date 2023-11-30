@@ -53,4 +53,4 @@ ensemble_of_models: false
 ensemble_of_hub_models: false
 model_version: '0.01'
 website_url: http://www.gleamproject.org/
-team_funding: JTD, AV, and MC acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137.
+team_funding: JTD, AV, and MC acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137; DW, YM, RY acknowledge support from U. S. Army Research Office under Army-ECASE award W911NF-07-R-0003-03, the U.S. Department Of Energy, Office of Science, IARPA HAYSTAC Program, NSF Grants \#2205093, \#2146343, and \#2134274.
