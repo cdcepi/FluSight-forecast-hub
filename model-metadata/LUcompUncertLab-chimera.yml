@@ -27,6 +27,7 @@ Still cranky about how sensitive this model is to changes. This round ill try to
 2023-11-08:Added in priors for peak intensity and timing, and for the first two weeks of the season (MMWR 40 and 41). This adds stability to the model and speed.
 2023-11-23:Found two major bugs in the code. One is frustrating and the other very subtle. First bug was training on hospitalization data the same as last year. i missed the message about a change in the hosp data and so have been training my model on the wrong data up until now. The second bug is a subtle fix in the code that took some time to find.
 2023-12-09: Added back QO data, truncated to be two weeks before the forecast submission date. Forecasts look ok except for FIP=72. i'll need to investigate.
-2023-12-16: Ran versions without and without the QO data. For the majority of locations i chose the model that included QO data. There were 3 locations, 30,37,56 where i thought the model without QO data was better and so chose those forecasts instead."
+2023-12-16: Ran versions without and without the QO data. For the majority of locations i chose the model that included QO data. There were 3 locations, 30,37,56 where i thought the model without QO data was better and so chose those forecasts instead.
+2023-12-30: Not much to report. Still running a few slightly different versions of the model and then hand picking which model to submit for which location."
 ensemble_of_models: false
 ensemble_of_hub_models: false
