@@ -1,4 +1,4 @@
-team_name: "FluSight-equal_categorical"
+team_name: "FluSight-equal_cat"
 team_abbr: "FluSight"
 model_name: "Baseline model with equal probabilities for each rate-trend category"
 model_abbr: "equal_cat"
