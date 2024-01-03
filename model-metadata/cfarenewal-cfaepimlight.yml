@@ -8,8 +8,15 @@ model_contributors: [
     "name": "Catherine M. Herzog",
     "affiliation": "CFA/CDC",
     "email": "uvw5@cdc.gov"
-  }  
+  },
+
+  {
+    "name": "Dylan H. Morris",
+    "affiliation": "CFA/CDC",
+    "email": "dylan@dylanhmorris.com"
+  }
 ]
+
 license: "CC-BY-4.0"
 designated_model: true
 methods: "Simple renewal model fit to daily incidence data using the Epidemia package"
