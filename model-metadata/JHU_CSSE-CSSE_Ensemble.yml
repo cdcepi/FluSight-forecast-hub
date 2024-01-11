@@ -39,7 +39,7 @@ model_contributors: [
     "email": "pw2425@nyu.edu"
   }
 ]
-license: "cc-by-4.0"
+license: "CC-BY-4.0"
 designated_model: true
 data_inputs: "Weekly flu hospitalizations, Weekly weather for each states, Google search volume for flu-related symptoms, Change healthcare claims data (accessed via covidcast)"
 methods: "Ensemble of time series models including LSTM and GRU"
