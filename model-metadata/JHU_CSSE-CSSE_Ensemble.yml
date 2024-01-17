@@ -1,0 +1,48 @@
+team_name: "The Center for Systems Science and Engineering at Johns Hopkins University"
+team_abbr: "JHU_CSSE"
+model_name: "CSSE Ensemble"
+model_abbr: "CSSE_Ensemble"
+model_contributors: [
+  {
+    "name": "Lauren Gardner",
+    "affiliation": "Johns Hopkins University",
+    "email": "l.gardner@jhu.edu"
+  },
+  {
+    "name": "Hongru Du",
+    "affiliation": "Johns Hopkins University",
+    "email": "hdu9@jh.edu"
+  },
+  {
+    "name": "Hao Frank Yang",
+    "affiliation": "Johns Hopkins University",
+    "email": "haofrankyang@jhu.edu"
+  },
+  {
+    "name": "Shaochong Xu",
+    "affiliation": "Johns Hopkins University",
+    "email": "sxu75@jh.edu"
+  },
+  {
+    "name": "Xianglong Wang",
+    "affiliation": "Johns Hopkins University",
+    "email": "xwang344@jh.edu"
+  },
+  {
+    "name": "Yang Zhao",
+    "affiliation": "Peking University",
+    "email": "zy_@pku.edu.cn"
+  },
+  {
+    "name": "Pu Wang",
+    "affiliation": "New York University",
+    "email": "pw2425@nyu.edu"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly flu hospitalizations, Weekly weather for each states, Google search volume for flu-related symptoms, Change healthcare claims data (accessed via covidcast)"
+methods: "Ensemble of time series models including exponential smoothing, LSTM and GRU"
+methods_long: "This model predicts state-level influenza hospitalizations through an ensemble of time series forecasting methods at three hierarchical levels: individual state-level forecasts using exponential smoothing, Health and Human Services (HHS) region-level predictions with Long Short-Term Memory (LSTM) models, and a single Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) model that encompasses all states. These three-level models are combined to yield the final ensemble prediction."
+ensemble_of_models: true
+ensemble_of_hub_models: false
