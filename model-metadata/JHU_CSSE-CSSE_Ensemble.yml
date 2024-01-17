@@ -42,7 +42,7 @@ model_contributors: [
 license: "CC-BY-4.0"
 designated_model: true
 data_inputs: "Weekly flu hospitalizations, Weekly weather for each states, Google search volume for flu-related symptoms, Change healthcare claims data (accessed via covidcast)"
-methods: "Ensemble of time series models including LSTM and GRU"
-methods_long: "This model forecasts state-level influenza hospitalizations using an ensemble of time series forecasting methods, including: (1) Long Short-term Memory (LSTM), and (2) Gated Recurrent Units (GRU)."
+methods: "Ensemble of time series models including exponential smoothing, LSTM and GRU"
+methods_long: "This model predicts state-level influenza hospitalizations through an ensemble of time series forecasting methods at three hierarchical levels: individual state-level forecasts using exponential smoothing, Health and Human Services (HHS) region-level predictions with Long Short-Term Memory (LSTM) models, and a single Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) model that encompasses all states. These three-level models are combined to yield the final ensemble prediction."
 ensemble_of_models: true
 ensemble_of_hub_models: false
