@@ -4,7 +4,6 @@ model_name: "National baseline model with the rate-trend forecasts"
 model_abbr: "national_cat"
 model_version: "1.0"
 model_contributors: [
-  {
     {"name": "Jessica Davis",
     "affiliation": "MOBS Lab, Northeastern University",
     "email": "jes.davis@northeastern.edu"},
@@ -12,7 +11,6 @@ model_contributors: [
     {"name": "Rebecca Borchering",
     "affiliation": "CDC",
     "email": "xhq2@cdc.gov"}
-  }
 ]
 website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
 license: "CC-BY-4.0"
