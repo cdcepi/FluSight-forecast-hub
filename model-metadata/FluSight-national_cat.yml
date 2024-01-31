@@ -5,13 +5,13 @@ model_abbr: "national_cat"
 model_version: "1.0"
 model_contributors: [
   {
-    "name": "Jessica Davis",
+    {"name": "Jessica Davis",
     "affiliation": "MOBS Lab, Northeastern University",
-    "email": "jes.davis@northeastern.edu"
+    "email": "jes.davis@northeastern.edu"},
 
-    "name": "Rebecca Borchering",
+    {"name": "Rebecca Borchering",
     "affiliation": "CDC",
-    "email": "xhq2@cdc.gov"
+    "email": "xhq2@cdc.gov"}
   }
 ]
 website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
