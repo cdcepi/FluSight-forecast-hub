@@ -1,0 +1,23 @@
+team_name: "FluSight-national_cat"
+team_abbr: "FluSight"
+model_name: "National baseline model with the rate-trend forecasts"
+model_abbr: "national_cat"
+model_version: "1.0"
+model_contributors: [
+    {"name": "Jessica Davis",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "jes.davis@northeastern.edu"},
+
+    {"name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"}
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Simple baseline/reference model for the rate-trend forecasts that utilizes the national rate-trend data from previous weeks"
+data_inputs: "None"
+methods_long: "The probability that a jurisdiction is in each category depends on the percentage of location falling in each category for the most recent observed one week and two week differences. This probability distribution is applied to each location."
+
+ensemble_of_models: false
+ensemble_of_hub_models: false
