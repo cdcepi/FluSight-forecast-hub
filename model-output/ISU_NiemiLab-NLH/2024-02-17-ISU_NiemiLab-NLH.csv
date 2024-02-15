@@ -1,0 +1,141 @@
+"reference_date","horizon","target","target_end_date","location","output_type","output_type_id","value"
+"2024-02-17",-1,"wk flu hosp rate change","2024-02-10","US","pmf","decrease",0
+"2024-02-17",-1,"wk flu hosp rate change","2024-02-10","US","pmf","increase",0
+"2024-02-17",-1,"wk flu hosp rate change","2024-02-10","US","pmf","large_decrease",0
+"2024-02-17",-1,"wk flu hosp rate change","2024-02-10","US","pmf","large_increase",0.031
+"2024-02-17",-1,"wk flu hosp rate change","2024-02-10","US","pmf","stable",0.969
+"2024-02-17",0,"wk flu hosp rate change","2024-02-17","US","pmf","decrease",0
+"2024-02-17",0,"wk flu hosp rate change","2024-02-17","US","pmf","increase",0
+"2024-02-17",0,"wk flu hosp rate change","2024-02-17","US","pmf","large_decrease",0
+"2024-02-17",0,"wk flu hosp rate change","2024-02-17","US","pmf","large_increase",0.013625
+"2024-02-17",0,"wk flu hosp rate change","2024-02-17","US","pmf","stable",0.986375
+"2024-02-17",1,"wk flu hosp rate change","2024-02-24","US","pmf","decrease",0
+"2024-02-17",1,"wk flu hosp rate change","2024-02-24","US","pmf","increase",0
+"2024-02-17",1,"wk flu hosp rate change","2024-02-24","US","pmf","large_decrease",0
+"2024-02-17",1,"wk flu hosp rate change","2024-02-24","US","pmf","large_increase",0.007625
+"2024-02-17",1,"wk flu hosp rate change","2024-02-24","US","pmf","stable",0.992375
+"2024-02-17",2,"wk flu hosp rate change","2024-03-02","US","pmf","decrease",0
+"2024-02-17",2,"wk flu hosp rate change","2024-03-02","US","pmf","increase",0
+"2024-02-17",2,"wk flu hosp rate change","2024-03-02","US","pmf","large_decrease",0
+"2024-02-17",2,"wk flu hosp rate change","2024-03-02","US","pmf","large_increase",0.005
+"2024-02-17",2,"wk flu hosp rate change","2024-03-02","US","pmf","stable",0.995
+"2024-02-17",3,"wk flu hosp rate change","2024-03-09","US","pmf","decrease",0
+"2024-02-17",3,"wk flu hosp rate change","2024-03-09","US","pmf","increase",0
+"2024-02-17",3,"wk flu hosp rate change","2024-03-09","US","pmf","large_decrease",0
+"2024-02-17",3,"wk flu hosp rate change","2024-03-09","US","pmf","large_increase",0.00375
+"2024-02-17",3,"wk flu hosp rate change","2024-03-09","US","pmf","stable",0.99625
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.01",1372.8569
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.025",2119.11475
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.05",2709.2175
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.1",3389.56
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.15",3846.962
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.2",4217.266
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.25",4555.205
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.3",4881.448
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.35",5179.3385
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.4",5452.514
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.45",5709.5765
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.5",5984.19
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.55",6280.851
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.6",6557.122
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.65",6842.399
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.7",7170
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.75",7533.04
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.8",7973.304
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.85",8452.122
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.9",9084.318
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.95",10288.035
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.975",11387.895
+"2024-02-17",-1,"wk inc flu hosp","2024-02-10","US","quantile","0.99",12761.841
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.01",468.66899
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.025",1072.095
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.05",1673.411
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.1",2360.398
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.15",2805.6255
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.2",3133.214
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.25",3425.02
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.3",3709.942
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.35",3957.301
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.4",4218.926
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.45",4480.2605
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.5",4739.11
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.55",4979.5425
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.6",5240.692
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.65",5538.7565
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.7",5856.141
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.75",6239.6175
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.8",6617.64
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.85",7137.5675
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.9",7812.146
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.95",8837.101
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.975",10071.9225
+"2024-02-17",0,"wk inc flu hosp","2024-02-17","US","quantile","0.99",11506.745
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.01",0
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.025",442.36495
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.05",952.4208
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.1",1548.626
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.15",1948.603
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.2",2266.774
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.25",2580.7075
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.3",2862.367
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.35",3110.8355
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.4",3344.798
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.45",3589.828
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.5",3816.68
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.55",4060.478
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.6",4319.232
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.65",4582.477
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.7",4858.805
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.75",5177.405
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.8",5562.764
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.85",6020.78
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.9",6627.995
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.95",7715.4015
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.975",8804.974
+"2024-02-17",1,"wk inc flu hosp","2024-02-24","US","quantile","0.99",10385.432
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.01",0
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.025",0
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.05",421.63345
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.1",1010.043
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.15",1401.022
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.2",1727.082
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.25",2011.4275
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.3",2277.399
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.35",2511.7265
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.4",2739.152
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.45",2966.561
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.5",3185.85
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.55",3400.4255
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.6",3620.528
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.65",3855.437
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.7",4110.295
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.75",4397.73
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.8",4745.712
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.85",5184.5315
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.9",5740.472
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.95",6712.917
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.975",7940.22225
+"2024-02-17",2,"wk inc flu hosp","2024-03-02","US","quantile","0.99",9565.13490000001
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.01",0
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.025",0
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.05",79.716165
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.1",641.8577
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.15",1029.745
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.2",1347.764
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.25",1605.0575
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.3",1825.394
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.35",2052.753
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.4",2271.026
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.45",2491.1465
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.5",2702.65
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.55",2912.59
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.6",3114.006
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.65",3339.2155
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.7",3577.299
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.75",3871.2175
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.8",4183.57
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.85",4586.9505
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.9",5115.391
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.95",5976.5005
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.975",7060.3255
+"2024-02-17",3,"wk inc flu hosp","2024-03-09","US","quantile","0.99",8792.7044
