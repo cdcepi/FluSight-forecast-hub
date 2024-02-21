@@ -108,41 +108,38 @@ Other related and potentially helpful endpoints of the Epidata API include:
 - [COVID-19 Hospitalization by Facility](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html)
 - [COVID-19 Hospitalization:  Facility Lookup](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility_lookup.html)
 
-To access these data, teams can utilize the COVIDCast [Rpackage](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/), or the draft Epidata [R package](https://github.com/cmu-delphi/epidatr) or [Python package](https://github.com/cmu-delphi/epidatpy). Basic examples of pulling data with these packages are provided below; *additional related snippets are available [here](https://github.com/cmu-delphi/flusight-helper-snippets)*.
+To access these data, teams can use the [R Epidatr package](https://cmu-delphi.github.io/epidatr/), the draft [epidatpy package](https://github.com/cmu-delphi/epidatpy), or the legacy COVIDCast [R package](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/). Basic examples of pulling data with these packages are provided below; *additional related snippets are available [here](https://github.com/cmu-delphi/flusight-helper-snippets)*.
 
 ```
 ## In R #########################################################################
  
-# install.packages("remotes")
-# remotes::install_github("cmu-delphi/epidatr")
-# remotes::install_github("cmu-delphi/covidcast", subdir="R-packages/covidcast")
+# install.packages("epidatr")
 
 library(magrittr) # for `%>%`
 
 # Fetch daily HHS hospitalization count data for all states and territories for
 # April 2022 using `epidatr`, a draft new client package for accessing the
 # Delphi Epidata API:
-april = epidatr::covidcast(
+april <- epidatr::pub_covidcast(
   "hhs", "confirmed_admissions_influenza_1d",
   "state", "day",
   geo_values = "*",
   time_values = epidatr::epirange(20220401, 20220430)
-) %>%
-  epidatr::fetch()
+)
 
 # Fetch these measurements as they were reported on May 10, rather than the
 # current version:
-april_as_of_may10 =
-  epidatr::covidcast(
+april_as_of_may10 <-
+  epidatr::pub_covidcast(
 	"hhs", "confirmed_admissions_influenza_1d",
 	"state", "day",
 	"*",
 	epidatr::epirange(20220401, 20220430),
 	as_of = 20220510
-  ) %>%
-  epidatr::fetch()
+  )
 
 # Fetch the first data set using the older `covidcast` package:
+# remotes::install_github("cmu-delphi/covidcast", subdir="R-packages/covidcast")
 april_with_covidcast = covidcast::covidcast_signal(
   "hhs", "confirmed_admissions_influenza_1d",
   as.Date("2022-04-01"), as.Date("2022-04-30"),
