@@ -108,7 +108,7 @@ Other related and potentially helpful endpoints of the Epidata API include:
 - [COVID-19 Hospitalization by Facility](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html)
 - [COVID-19 Hospitalization:  Facility Lookup](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility_lookup.html)
 
-To access these data, teams can use the [R Epidatr package](https://github.com/cmu-delphi/epidatr), the draft [epidatpy package](https://github.com/cmu-delphi/epidatpy), or the legacy COVIDCast [R package](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/). Basic examples of pulling data with these packages are provided below; *additional related snippets are available [here](https://github.com/cmu-delphi/flusight-helper-snippets)*.
+To access these data, teams can use the [R Epidatr package](https://cmu-delphi.github.io/epidatr/), the draft [epidatpy package](https://github.com/cmu-delphi/epidatpy), or the legacy COVIDCast [R package](https://cmu-delphi.github.io/covidcast/covidcastR/) or [Python package](https://cmu-delphi.github.io/covidcast/covidcast-py/html/). Basic examples of pulling data with these packages are provided below; *additional related snippets are available [here](https://github.com/cmu-delphi/flusight-helper-snippets)*.
 
 ```
 ## In R #########################################################################
