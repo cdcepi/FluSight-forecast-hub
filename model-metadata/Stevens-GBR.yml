@@ -20,6 +20,11 @@ model_contributors: [
     "email": "bgohel@stevens.edu"
   },
   {
+    "name": "Sanika Mhadgut",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "smhadgut@stevens.edu"
+  },
+  {
     "name": "Nikhil Muralidhar",
     "affiliation": "Stevens Institute of Technology",
     "email": "nmurali1@stevens.edu"
