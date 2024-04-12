@@ -10,11 +10,6 @@ model_contributors: [
     "email": "aniruddha@virginia.edu"
   },
   {
-    "name": "Benjamin Hurt",
-    "affiliation": "UVA",
-    "email": "benjaminhurt@virginia.edu"
-  },
-  {
     "name": "Gursharn Kaur",
     "affiliation": "UVA",
     "email": "gursharn@virginia.edu"
@@ -33,11 +28,6 @@ model_contributors: [
     "name": "Srinivasan Venkatramanan",
     "affiliation": "UVA",
     "email": "srini@virginia.edu"
-  },
-  {
-    "name": "Lacey Critchley",
-    "affiliation": "UVA",
-    "email": "lcritchley@virginia.edu"
   },
   {
     "name": "Brian Klahn",
