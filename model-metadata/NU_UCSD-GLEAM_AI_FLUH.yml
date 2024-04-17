@@ -4,7 +4,8 @@ model_name: GLEAM_AI Flu Forecasting Model
 model_abbr: GLEAM_AI_FLUH
 model_contributors:
 - name: Mohammadmehdi Zahedi
-  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA
+  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA;
+    The Roux Institute, Northeastern University, Portland, ME, USA
   email: zahedi.m@northeastern.edu
   orcid: 0009-0002-7064-3258
 - name: Dongxia (Allen) Wu
