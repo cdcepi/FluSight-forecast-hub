@@ -5,8 +5,8 @@ on:
       name:
         description: 'Update target data'
         required: false
-  schedule:
-    - cron: "15 16 * * 3"
+ # schedule:
+ #   - cron: "15 16 * * 3"
 
 jobs:
   update_target_data:
