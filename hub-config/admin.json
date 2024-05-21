@@ -1,5 +1,5 @@
 {
-    "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v2.0.0/admin-schema.json",
+    "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v2.0.1/admin-schema.json",
     "name": "US CDC FluSight",
     "maintainer": "US CDC",
     "contact": {
@@ -10,5 +10,13 @@
     "repository_url": "https://github.com/cdcepi/FluSight-forecast-hub",
     "file_format": ["csv"],
     "timezone": "US/Eastern",
-    "model_output_dir": "model-output"
+    "model_output_dir": "model-output",
+    "cloud": {
+        "enabled": true,
+        "host": {
+          "name": "aws",
+          "storage_service": "s3",
+          "storage_location": "cdcepi-flusight-forecast-hub"
+        }
+    }
 }
