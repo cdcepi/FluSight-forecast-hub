@@ -1,0 +1,19 @@
+---
+title: "shiny app"
+format: pdf
+---
+
+```{r}
+library(shiny)
+```
+
+```{r}
+ui <- fluidPage(
+  "Hello, world!"
+)
+
+server <- function(input, output, session) {
+}
+shinyApp(ui, server)
+```
+

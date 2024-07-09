@@ -1,0 +1,151 @@
+# lineplot for the data
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+library(plotly)
+```
+
+```{r}
+library(lubridate)
+target_data$date <- as.Date(target_data$date, format = "%Y-%m-%d")
+```
+
+```{r}
+target_data1<- target_data|>
+  filter(location_name!="US")|>
+  group_by(date)|>
+  summarize(avg_weekly_rate = mean(weekly_rate, na.rm = TRUE))
+```
+
+#why the weekly rate of the flu could be over 1
+```{r}
+p <- target_data1|>
+  ggplot(aes(x=date, y=avg_weekly_rate))+
+    geom_area(fill="#69b3a2", alpha=0.5) +
+    geom_line(color="#69b3a2") +
+    ylab("Weekly Rate")
+p <- ggplotly(p)
+p
+```
+
+
+#weekly rate for each state
+```{r}
+target_data2<-target_data|>
+  filter(location_name!="US")
+```
+
+```{r}
+target_data2 |>
+  ggplot(aes(x = date, y = weekly_rate, labels = FALSE)) +
+  geom_area(fill = "#69b3a2", alpha = 0.5) +
+  geom_line(color = "#69b3a2") +
+  facet_wrap(~location_name, scales = "free_y") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+```
+
+# creating visualization for peaks and how does that different for each state
+```{r}
+library(sf)
+library(raster)
+library(dplyr)
+library(spData)
+library(tmap)   
+library(leaflet) 
+library(ggplot2)
+library(viridis)
+library(gifski)
+```
+
+```{r}
+library(usmap)
+library(ggplot2) 
+```
+
+```{r}
+us_states <- usmap::us_map(regions = "states")
+us_states_sf <- st_as_sf(us_states, coords = c("x", "y"), crs = 4326, agr = "constant")
+```
+
+```{r}
+map_data <- us_states_sf|>
+  left_join(target_data, by = c("full" = "location_name"))
+```
+
+# peak of 2023 -2024
+```{r}
+start_date <- as.Date("2023-12-23")
+end_date <- as.Date("2024-01-06")
+```
+
+```{r}
+map_data_2023_2024_peak <- map_data %>%
+  filter(date >= start_date & date <= end_date)
+```
+
+```{r}
+gg_map <- ggplot(map_data_2023_2024_peak) +
+  geom_sf(aes(fill = weekly_rate)) +
+  scale_fill_viridis_c(option = "plasma", direction = -1) +
+  labs(title = "Flu Probability by State (2023-2024 peak)", fill = "Flu Probability") +
+  theme_void()
+
+gg_map
+```
+
+is there a way to define peak?
+
+# peak of 2022 to 2023
+```{r}
+start_date1 <- as.Date("2022-12-03")
+end_date1 <- as.Date("2022-12-31")
+```
+
+```{r}
+map_data_2022_2023_peak <- map_data %>%
+  filter(date >= start_date1 & date <= end_date1)
+```
+
+```{r}
+gg_map1 <- ggplot(map_data_2022_2023_peak) +
+  geom_sf(aes(fill = weekly_rate)) +
+  scale_fill_viridis_c(option = "plasma", direction = -1) +
+  labs(title = "Flu Probability by State (2022-2023 peak)", fill = "Flu Probability") +
+  theme_void()
+
+gg_map1
+```
+
+```{r}
+library(arrow)
+```
+
+```{r}
+model_output_schema <- schema(
+  origin_date = date32(),
+  target = string(),
+  horizon = int32(),
+  location = string(),
+  output_type = string(),
+  output_type_id = string(),
+  value = int32(),
+  model_id = string()
+)
+```
+
+```{r}
+mod_out_con <- connect_model_output(model_output_dir,
+  file_format = "csv",
+  schema = model_output_schema
+)
+mod_out_con
+```
+

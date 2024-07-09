@@ -1,0 +1,171 @@
+---
+title: "creating plots"
+format: pdf
+---
+
+
+```{r}
+library(hubData)
+library(dplyr)
+```
+
+
+```{r}
+#connecting to the local repo hub
+hub_path <- "/Users/jenn/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub"
+hub_con <- connect_hub(hub_path)
+hub_con
+```
+
+```{r}
+#generate a tbl
+model_data1 <- hub_con %>%
+  collect_hub()
+
+model_data1<-model_data1|>
+  left_join(locations, by = "location")
+
+
+model_data<-model_data1|>
+  filter(target == "wk inc flu hosp")|>
+  filter(location == "06"|location == "25")|>
+  head(100000)
+```
+
+```{r}
+target_data <- target_data|>
+  left_join(locations, by = "location")
+```
+
+```{r}
+#summary stats
+names_of_models <- unique(model_data$model_id)
+names_of_models
+```
+
+```{r}
+model_data|>
+  distinct(target, output_type) |>
+  arrange(target, output_type)
+```
+
+```{r}
+summary(model_data)
+summary(target_data)
+```
+
+```{r}
+str(target_data)
+
+
+filtered_target_data <- target_data|>
+  filter(location %in% c("25", "48"),
+         date >= "2023-03-21", date <= "2024-04-27")
+
+plot_step_ahead_model_output(
+  model_output_data = model_data |>
+    filter(output_type %in% c("quantile", "median"), model_id %in% c("MIGHTE-Nsemble", "CEPH-Rtrend_fluH", "VTSanghani-Ensemble"), location %in% c("25", "48")),
+  target_data = filtered_target_data,
+  use_median_as_point = TRUE,
+  x_col_name = "target_end_date",
+  intervals = c(0.5, 0.8, 0.9),
+  facet = "location",
+  group = "reference_date",
+  interactive = FALSE
+)
+
+```
+
+```{r}
+ggplot() +
+  geom_line(
+    data = target_data|>
+      filter(location == "25",
+             date >= "2023-03-21", date <= "2024-04-27"),
+    mapping = aes(x = date, y = observation)
+  ) +
+  geom_line(
+    data = model_data |>
+      filter(
+        location == "25",
+        model_id == "MIGHTE-Nsemble",
+        reference_date == "2024-01-13",
+        output_type == "quantile"
+      ),
+    mapping = aes(x = target_end_date, y = value, group = output_type_id),
+    color = "blue",
+    alpha = 0.3
+  ) +
+  theme_bw()
+```
+
+
+#create the static plot
+```{r}
+model_data_pmf <- model_data1|>
+  filter(output_type == "pmf")
+
+```
+
+```{r}
+rate_threshold_stable <- 1 / 100000
+rate_threshold_increase <- 2 / 100000
+```
+
+```{r}
+target_data_classified <- target_data|>
+  mutate(Classification = case_when(
+    abs(weekly_rate) < rate_threshold_stable ~ "stable", 
+    value < 10 ~ "stable",
+    weekly_rate >= rate_threshold_increase ~ "large_increase",  
+    weekly_rate > 0 & weekly_rate < rate_threshold_increase ~ "increase", 
+    weekly_rate <= -rate_threshold_increase ~ "large_decrease",  
+    weekly_rate< 0 & abs(weekly_rate) < rate_threshold_increase ~ "decrease"  ))
+
+```
+
+
+```{r}
+forecasts_to_plot <- model_data_pmf |>
+  filter(
+    target == "wk flu hosp rate change", 
+    reference_date == "2023-11-04",      
+    location %in% c("25"))
+```
+
+```{r}
+observations_to_plot <- target_data_classified |>
+  filter(
+    location %in% c("25"),
+    date %in% forecasts_to_plot$target_end_date
+  )
+observations_to_plot |>
+  head()
+```
+
+```{r}
+forecasts_to_plot  |> 
+  left_join(observations_to_plot, join_by(target_end_date==date))
+```
+
+```{r}
+library(ggplot2)
+ggplot() +
+  geom_raster(
+    mapping = aes(x = target_end_date, y = output_type_id, fill = value),
+    data = forecasts_to_plot
+  ) +
+  scale_fill_viridis_c(
+    breaks = seq(from = 0, to = 1, by = 0.2),
+    limits = c(0, 1)
+  ) +
+  geom_point(
+    mapping = aes(x = date, y = Classification),
+    color = "#888888",
+    size = 3, stroke = 2,
+    data = observations_to_plot,
+  ) +
+  facet_grid(cols = vars(location)) +
+  ylab("output_type_id (intensity level category)")
+```
+

@@ -1,0 +1,100 @@
+---
+title: "code_replication_practice"
+format: html
+---
+
+```{r}
+library(hubExamples)
+library(hubVis)
+library(dplyr)
+```
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+head(forecast_outputs)
+```
+
+```{r}
+head(forecast_target_ts)
+```
+
+```{r}
+tail(forecast_target_ts)
+```
+
+```{r}
+head(forecast_target_observations)
+```
+
+```{r}
+forecast_outputs |>
+  distinct(target, output_type) |>
+  arrange(target, output_type)
+```
+
+```{r}
+# extract a subset of forecasts to plot and
+# set the output_type_id to be an ordered factor
+forecasts_to_plot <- forecast_outputs |>
+  filter(
+    target == "wk flu hosp rate category",
+    reference_date == "2022-12-17"
+  ) |>
+  mutate(
+    output_type_id = factor(output_type_id,
+                            levels = c("low", "moderate", "high", "very high"),
+                            ordered = TRUE)
+  )
+forecasts_to_plot |>
+  select(-model_id, -reference_date, -horizon) |>
+  head()
+```
+
+```{r}
+
+# extract the corresponding observations
+observations_to_plot <- forecast_target_observations |>
+  filter(
+    location %in% c("25", "48"),
+    target == "wk flu hosp rate category",
+    target_end_date %in% forecasts_to_plot$target_end_date
+  ) |>
+  mutate(
+    output_type_id = factor(output_type_id,
+                            levels = c("low", "moderate", "high", "very high"),
+                            ordered = TRUE)
+  )
+observations_to_plot |>
+  head()
+```
+
+```{r}
+
+# plot the predictions and observations
+ggplot() +
+  geom_raster(
+    mapping = aes(x = target_end_date, y = output_type_id, fill = value),
+    data = forecasts_to_plot
+  ) +
+  scale_fill_viridis_c(
+    breaks = seq(from = 0, to = 1, by = 0.2),
+    limits = c(0, 1)
+  ) +
+  geom_point(
+    mapping = aes(x = target_end_date, y = output_type_id,
+                  shape = factor(observation)),
+    color = "#888888",
+    size = 3, stroke = 2,
+    data = observations_to_plot,
+  ) +
+  scale_shape_manual(
+    values = c(1, 3),
+    breaks = c(0, 1)
+  ) +
+  facet_grid(rows = vars(model_id), cols = vars(location)) +
+  ylab("output_type_id (intensity level category)")
+```
+
