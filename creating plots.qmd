@@ -5,39 +5,6 @@ format: pdf
 
 
 ```{r}
-library(hubData)
-library(dplyr)
-```
-
-
-```{r}
-#connecting to the local repo hub
-hub_path <- "/Users/jenn/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub"
-hub_con <- connect_hub(hub_path)
-hub_con
-```
-
-```{r}
-#generate a tbl
-model_data1 <- hub_con %>%
-  collect_hub()
-
-model_data1<-model_data1|>
-  left_join(locations, by = "location")
-
-
-model_data<-model_data1|>
-  filter(target == "wk inc flu hosp")|>
-  filter(location == "06"|location == "25")|>
-  head(100000)
-```
-
-```{r}
-target_data <- target_data|>
-  left_join(locations, by = "location")
-```
-
-```{r}
 #summary stats
 names_of_models <- unique(model_data$model_id)
 names_of_models
@@ -104,52 +71,59 @@ ggplot() +
 ```{r}
 model_data_pmf <- model_data1|>
   filter(output_type == "pmf")
-
 ```
 
 ```{r}
-rate_threshold_stable <- 1 / 100000
-rate_threshold_increase <- 2 / 100000
-```
+library(dplyr)
+library(ggplot2)
+classification_levels <- c("large_decrease", "decrease", "stable", "increase", "large_increase")
 
-```{r}
-target_data_classified <- target_data|>
+# target_data_classified <- target_data |>
+#   mutate(Classification = case_when(
+#     abs(weekly_rate) < rate_threshold_stable ~ "stable", 
+#     observation < 10 ~ "stable",
+#     weekly_rate >= rate_threshold_increase ~ "large_increase",  
+#     weekly_rate > 0 & weekly_rate < rate_threshold_increase ~ "increase", 
+#     weekly_rate <= -rate_threshold_increase ~ "large_decrease",  
+#     weekly_rate < 0 & abs(weekly_rate) < rate_threshold_increase ~ "decrease"
+#   )) |>
+
+#create a column to calculate the magnititude of rate change
+target_data1 <- target_data|>
+  group_by(location)|>
+  arrange(date)|>
+  mutate(observation_1 = lag(observation))
+
+target_data_classified <- target_data1 %>%
   mutate(Classification = case_when(
-    abs(weekly_rate) < rate_threshold_stable ~ "stable", 
-    value < 10 ~ "stable",
-    weekly_rate >= rate_threshold_increase ~ "large_increase",  
-    weekly_rate > 0 & weekly_rate < rate_threshold_increase ~ "increase", 
-    weekly_rate <= -rate_threshold_increase ~ "large_decrease",  
-    weekly_rate< 0 & abs(weekly_rate) < rate_threshold_increase ~ "decrease"  ))
+    weekly_rate > 0 & weekly_rate < count_rate1 ~ "stable",
+    weekly_rate > 0 & observation < 10 ~ "stable",
+    weekly_rate > 0 & weekly_rate < count_rate2 ~ "increase",
+    weekly_rate > 0 & weekly_rate >= count_rate2 ~ "large increase",
+    weekly_rate < 0 & abs(weekly_rate) < count_rate2 ~ "decrease",
+    weekly_rate < 0 & abs(weekly_rate) >= count_rate2 ~ "large decrease"
+  )) %>%
+  mutate(Classification = factor(Classification, levels = classification_levels))
 
-```
+reference_date <- "2023-10-14"
 
-
-```{r}
 forecasts_to_plot <- model_data_pmf |>
   filter(
     target == "wk flu hosp rate change", 
-    reference_date == "2023-11-04",      
-    location %in% c("25"))
-```
+    reference_date == reference_date,      
+    location %in% c("25")
+  )
 
-```{r}
+
 observations_to_plot <- target_data_classified |>
   filter(
     location %in% c("25"),
     date %in% forecasts_to_plot$target_end_date
   )
-observations_to_plot |>
-  head()
-```
 
-```{r}
-forecasts_to_plot  |> 
-  left_join(observations_to_plot, join_by(target_end_date==date))
-```
+combined_data <- forecasts_to_plot |>
+  left_join(observations_to_plot, join_by(target_end_date == date))
 
-```{r}
-library(ggplot2)
 ggplot() +
   geom_raster(
     mapping = aes(x = target_end_date, y = output_type_id, fill = value),
@@ -165,7 +139,15 @@ ggplot() +
     size = 3, stroke = 2,
     data = observations_to_plot,
   ) +
-  facet_grid(cols = vars(location)) +
-  ylab("output_type_id (intensity level category)")
+  scale_y_discrete(limits = classification_levels) +
+  facet_grid(cols = vars(location))
+
+
 ```
+
+
+```{r}
+print(observations_to_plot)
+```
+
 

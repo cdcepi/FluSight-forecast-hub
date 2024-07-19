@@ -2,7 +2,9 @@ library(shiny)
 library(vroom)
 library(tidyverse)
 library(plotly)
-
+library(hubUtils)
+library(hubVis)
+library(dplyr)
 
 ui <- fluidPage(
   titlePanel("CDC FluSight Forecast"),
@@ -10,8 +12,14 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput("Outcome", "Outcome:", choices = unique(model_data$target), selected = "wk inc flu hosp"),
       selectInput("Unit", "Unit:", choices = unique(model_data$abbreviation), selected = 'CA'),
-      selectInput("Interval", "Interval:", choices = c("0%", "50%", "95%")),
-      selectInput("Models", "Select Models:", choices = unique(model_data$model_id), selected = "CADPH-FluCAT_Ensemble")
+      selectInput("Interval", "Interval:", choices = c(0.975, 0.025, 0.9, 0.1, 0.075, 0.25)),
+      checkboxGroupInput("Models", "Select Models:", choices = unique(model_data$model_id), selected = "CADPH-FluCAT_Ensemble"),
+      sliderInput("Date",
+                  "Dates:",
+                  min = min(model_data$reference_date),
+                  max = max(model_data$reference_date),
+                  value = max(model_data$reference_date),
+                  step = 7)
     ),
     mainPanel(
       plotOutput("fluplot"),
@@ -23,65 +31,27 @@ ui <- fluidPage(
 server <- function(input, output) {
 
   filtered_model_data <- reactive({
-    model_data|>
+    model_data %>%
       filter(abbreviation == input$Unit,
              model_id %in% input$Models,
-             target == input$Outcome)
+             target == input$Outcome,
+             reference_date == input$Date)|>
+      mutate(target_date = as.Date(reference_date) + (horizon * 7) - 1)
   })
+
   filtered_target_data <- reactive({
-    target_data|>
-      filter(abbreviation.x == input$Unit)
+    target_data %>%
+      filter(abbreviation == input$Unit,
+             date >= input$Date - months(6))
   })
-
-
 
   output$fluplot <- renderPlot({
-    ggplot() +
-      geom_line(data = filtered_model_data(), aes(x = reference_date, y = value, color = "Model Data"), linetype = "dashed") +
-      # Plot target data
-      geom_line(data = filtered_target_data(), aes(x = date, y = value, color = "Target Data")) +
-      scale_color_manual(values = c("Model Data" = "blue", "Target Data" = "red")) +
-      theme_bw() +
-      xlab("Date") +
-      ylab("Cases") +
-      ggtitle(paste("CDC FluSight Forecast for", input$Unit, "(", input$Outcome, ")")) +
-      theme(legend.title = element_blank())
+    hubVis::plot_step_ahead_model_output(filtered_model_data(), filtered_target_data(), interactive = FALSE)
   })
 }
-
-#use thehubvis plotting function-could plot the interval
-
-
-#when switch to plotly--not working
 
 shinyApp(ui = ui, server = server)
 
 
-
-
-
-
-#
-# ui <- fluidPage(
-#   fluidRow(
-#     column(6,
-#            selectizeInput("Outcome", "Outcome:", choices = unique(model_data$target), selected = "wk inc flu hosp"),
-#            selectizeInput("Unit", "Unit:", choices = unique(model_data$locatio), selected = '06'),
-#            selectInput("Interval", "Interval:", choices = c("0%", "50%", "95%")),
-#            selectInput("Models", "Select Models:", choices = unique(model_data$model_id), selected = "CADPH-FluCAT_Ensemble")
-#     )
-#   ),
-#   fluidRow(
-#     column(12,
-#            textOutput("selectedValue")
-#     )
-#   )
-# )
-
-# server <- function(input, output, session) {
-#   output$selectedValue <- renderText({
-#     paste("You selected:", input$Unit, input$Outcome, input$Interval, input$Models)
-#   })
-# }
 
 

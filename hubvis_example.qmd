@@ -1,0 +1,27 @@
+---
+title: "hubvis_plot_testing"
+format: html
+---
+
+```{r}
+model_data_filtered <- model_data|>
+  filter(abbreviation == "CA",
+         model_id == "CADPH-FluCAT_Ensemble",
+         reference_date == as.Date('2024-5-4'))|>
+   mutate(target_date = as.Date(reference_date) + (horizon * 7) - 1)
+```
+
+```{r}
+filtered_target_data <- target_data|>
+  filter(abbreviation == "CA",
+         date==as.Date('2024-5-4') )
+```
+
+```{r}
+library(hubVis)
+```
+
+```{r}
+plot_step_ahead_model_output(model_data_filtered, filtered_target_data )
+```
+
