@@ -1,0 +1,79 @@
+---
+title: "data_prep_categorical"
+format: pdf
+---
+
+```{r}
+library(hubData)
+library(dplyr)
+```
+
+
+```{r}
+# connecting to the local repo hub
+hub_path <- "/Users/jenn/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub"
+hub_con <- connect_hub(hub_path)
+hub_con
+```
+
+```{r}
+# read location data file
+location_full <- read.csv("auxiliary-data/locations.csv")
+```
+
+```{r}
+model_data_pmf <- model_data1|>
+  filter(output_type == "pmf")
+```
+
+```{r}
+# generate a tbl
+model_data1 <- hub_con %>%
+  collect_hub()
+
+model_data1<-model_data1|>
+  left_join(location_full, by = "location")
+
+
+model_data<-model_data1|>
+  filter(target == "wk inc flu hosp")|>
+  filter(location == "06"|location == "25")|>
+  head(10000)
+
+model_data$output_type_id <- as.numeric(model_data$output_type_id)
+```
+
+```{r}
+# join the location dataset
+target_data <- target_data|>
+  left_join(location_full, by = "location")|>
+  rename(observation = value)
+```
+
+```{r}
+# create a new column to show observation_{t-1}
+target_data1 <- target_data|>
+  group_by(location)|>
+  arrange(date)|>
+  mutate(observation_1 = lag(observation))
+
+target_data1$rate_change <- (target_data1$observation_1-target_data1$observation)
+
+# classify the rate change of target dataset
+target_data_classified <- target_data1|>
+  mutate(Classification = case_when(
+    rate_change > 0 & rate_change < count_rate1 ~ "stable",
+    rate_change > 0 & observation < 10 ~ "stable",
+    rate_change > 0 & rate_change < count_rate2 ~ "increase",
+    rate_change > 0 & rate_change >= count_rate2 ~ "large increase",
+    rate_change < 0 & abs(rate_change) < count_rate2 ~ "decrease",
+    rate_change < 0 & abs(rate_change) >= count_rate2 ~ "large decrease"
+  ))|>
+  mutate(Classification = factor(Classification, levels = classification_levels))
+
+```
+
+```{r}
+save(target_data_classified, model_data, file = "Categoricalshinydata.Rdata")
+```
+

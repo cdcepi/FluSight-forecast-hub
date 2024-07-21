@@ -94,14 +94,16 @@ target_data1 <- target_data|>
   arrange(date)|>
   mutate(observation_1 = lag(observation))
 
+target_data1$rate_change <- (target_data1$observation_1-target_data1$observation)
+
 target_data_classified <- target_data1 %>%
   mutate(Classification = case_when(
-    weekly_rate > 0 & weekly_rate < count_rate1 ~ "stable",
-    weekly_rate > 0 & observation < 10 ~ "stable",
-    weekly_rate > 0 & weekly_rate < count_rate2 ~ "increase",
-    weekly_rate > 0 & weekly_rate >= count_rate2 ~ "large increase",
-    weekly_rate < 0 & abs(weekly_rate) < count_rate2 ~ "decrease",
-    weekly_rate < 0 & abs(weekly_rate) >= count_rate2 ~ "large decrease"
+    rate_change > 0 & rate_change < count_rate1 ~ "stable",
+    rate_change > 0 & observation < 10 ~ "stable",
+    rate_change > 0 & rate_change < count_rate2 ~ "increase",
+    rate_change > 0 & rate_change >= count_rate2 ~ "large increase",
+    rate_change < 0 & abs(rate_change) < count_rate2 ~ "decrease",
+    rate_change < 0 & abs(rate_change) >= count_rate2 ~ "large decrease"
   )) %>%
   mutate(Classification = factor(Classification, levels = classification_levels))
 
