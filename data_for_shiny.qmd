@@ -24,15 +24,13 @@ location_full <- read.csv("auxiliary-data/locations.csv")
 #generate a tbl
 model_data1 <- hub_con %>%
   collect_hub()
-
-model_data1<-model_data1|>
-  left_join(location_full, by = "location")
+# 
+# model_data1<-model_data1|>
+#   left_join(location_full, by = "location")
 
 
 model_data<-model_data1|>
-  filter(target == "wk inc flu hosp")|>
-  filter(location == "06"|location == "25")|>
-  head(10000)
+  filter(target == "wk inc flu hosp")
 
 model_data$output_type_id <- as.numeric(model_data$output_type_id)
 ```
@@ -41,5 +39,9 @@ model_data$output_type_id <- as.numeric(model_data$output_type_id)
 target_data <- target_data|>
   left_join(location_full, by = "location")|>
   rename(observation = value)
+```
+
+```{r}
+save(model_data, target_data, file = "numericaldataprediction.Rdata")
 ```
 

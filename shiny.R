@@ -6,13 +6,16 @@ library(hubUtils)
 library(hubVis)
 library(dplyr)
 
+load("~/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub/numericaldataprediction.Rdata")
+
+
 ui <- fluidPage(
   titlePanel("CDC FluSight Forecast"),
   sidebarLayout(
     sidebarPanel(
       selectInput("Outcome", "Outcome:", choices = unique(model_data$target), selected = "wk inc flu hosp"),
       selectInput("Unit", "Unit:", choices = unique(model_data$abbreviation), selected = 'CA'),
-      selectInput("Interval", "Interval:", choices = c(0.975, 0.025, 0.9, 0.1, 0.075, 0.25)),
+      selectInput("Interval", "Interval:", choices = c(0.5, 0.8, 0.9, 0.95)),
       checkboxGroupInput("Models", "Select Models:", choices = unique(model_data$model_id), selected = "CADPH-FluCAT_Ensemble"),
       sliderInput("Date",
                   "Dates:",
@@ -45,8 +48,14 @@ server <- function(input, output) {
              date >= input$Date - months(6))
   })
 
-  output$fluplot <- renderPlot({
-    hubVis::plot_step_ahead_model_output(filtered_model_data(), filtered_target_data(), interactive = FALSE)
+  # output$fluplot <- renderPlot({
+  #   hubVis::plot_step_ahead_model_output(filtered_model_data(), filtered_target_data(), interactive = FALSE, intervals = input$Interval)
+  # })
+  output$fluplot <- renderPlotly({
+   data <- filtered_target_data()
+   p <- ggplot(data, aes(x = date, y = observation)) +
+     geom_point()
+   ggplotly(p)
   })
 }
 

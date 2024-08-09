@@ -21,10 +21,7 @@ hub_con
 location_full <- read.csv("auxiliary-data/locations.csv")
 ```
 
-```{r}
-model_data_pmf <- model_data1|>
-  filter(output_type == "pmf")
-```
+
 
 ```{r}
 # generate a tbl
@@ -44,6 +41,11 @@ model_data$output_type_id <- as.numeric(model_data$output_type_id)
 ```
 
 ```{r}
+model_data_pmf <- model_data1|>
+  filter(output_type == "pmf")
+```
+
+```{r}
 # join the location dataset
 target_data <- target_data|>
   left_join(location_full, by = "location")|>
@@ -51,6 +53,9 @@ target_data <- target_data|>
 ```
 
 ```{r}
+# define the classification level
+classification_levels <- c("large_decrease", "decrease", "stable", "increase", "large_increase")
+
 # create a new column to show observation_{t-1}
 target_data1 <- target_data|>
   group_by(location)|>
@@ -74,6 +79,6 @@ target_data_classified <- target_data1|>
 ```
 
 ```{r}
-save(target_data_classified, model_data, file = "Categoricalshinydata.Rdata")
+save(target_data_classified, model_data_pmf, file = "Categoricalshinydata.Rdata")
 ```
 

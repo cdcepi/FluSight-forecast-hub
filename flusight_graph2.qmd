@@ -1,0 +1,58 @@
+---
+title: "testing_for_second_flu_plot"
+format: html
+---
+
+```{r}
+filtered_horizon_data <- model_data_pmf |>
+  filter(horizon == 1,  
+         reference_date == as.Date("2023-10-14"), 
+         abbreviation == "GA")
+
+```
+
+
+```{r}
+horizon_target_data <- target_data_classified |>
+      filter(date %in% filtered_horizon_data$target_end_date,
+             abbreviation == "GA")
+
+```
+
+
+```{r}
+combined_data <- filtered_horizon_data |>
+  left_join(horizon_target_data, join_by(target_end_date == date))
+```
+
+```{r}
+fluplot <- ggplot() +
+  geom_raster(
+    mapping = aes(x = output_type_id, y = model_id, fill = value),
+    data = combined_data 
+  ) +
+  scale_fill_gradient(
+    low = "yellow",
+    high = "red",
+    breaks = seq(from = 0, to = 1, by = 0.2),
+    limits = c(0, 1)
+  ) +
+  geom_point(
+    mapping = aes(x = Classification, y = model_id),
+    color = "#888888",
+    size = 1, stroke = 2,
+    data =combined_data 
+  )+
+  facet_wrap(vars(horizon)) +
+  labs(
+    title = "Categorical Forecasts of Week Ahead Incident Hospitalizations",
+    y = "Week Ahead Incident Hospitalizations", 
+    x = "Date", 
+    fill = "Probability"
+  ) +
+  theme_bw()
+
+fluplot
+
+```
+

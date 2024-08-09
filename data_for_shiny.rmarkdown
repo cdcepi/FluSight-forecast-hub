@@ -1,0 +1,42 @@
+---
+title: "data_forshiny"
+format: html
+---
+
+```{r}
+library(hubData)
+library(dplyr)
+```
+
+```{r}
+#connecting to the local repo hub
+hub_path <- "/Users/jenn/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub"
+hub_con <- connect_hub(hub_path)
+hub_con
+```
+
+```{r}
+location_full <- read.csv("auxiliary-data/locations.csv")
+```
+
+```{r}
+#generate a tbl
+model_data1 <- hub_con %>%
+  collect_hub()
+
+model_data1<-model_data1|>
+  left_join(location_full, by = "location")
+
+
+model_data<-model_data1|>
+  filter(target == "wk inc flu hosp")
+
+model_data$output_type_id <- as.numeric(model_data$output_type_id)
+```
+
+```{r}
+target_data <- target_data|>
+  left_join(location_full, by = "location")|>
+  rename(observation = value)
+```
+
