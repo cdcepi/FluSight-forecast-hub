@@ -7,7 +7,7 @@ library(dplyr)
 classification_levels <- c("large_decrease", "decrease", "stable", "increase", "large_increase")
 
 # Load your data
-load("~/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub/Categoricalshinydata.Rdata")
+load("./Categoricalshinydata.Rdata")
 
 # Reorder model_id factor levels with specific models on top
 top <- c("FluSight-baseline_cat", "FluSight-ens_q_cat", "FluSight-ensemble", "FluSight-equal_cat", "FluSight-national_cat")

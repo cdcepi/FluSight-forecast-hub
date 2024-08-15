@@ -6,7 +6,7 @@ library(hubUtils)
 library(hubVis)
 library(dplyr)
 
-load("~/Documents/2024spring/summer_reich_lab/FluSight-forecast-hub/numericaldataprediction.Rdata")
+load("./numericaldataprediction.Rdata")
 
 
 ui <- fluidPage(
