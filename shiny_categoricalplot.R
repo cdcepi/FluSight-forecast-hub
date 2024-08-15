@@ -182,7 +182,7 @@ server <- function(input, output) {
       scale_x_discrete(limits = classification_levels) +
       facet_wrap(vars(horizon)) +
       labs(title = "Categorical Forecasts of week ahead incident hospitalizations",
-           y = "Week ahead incident hospitalizations", x = "Date", fill = "Probability") +
+           y = "Models", x = "Categories", fill = "Probability") +
       theme_bw()
   })
 

@@ -1,0 +1,13 @@
+name: FluSight-forecast-hub
+title: FluSight-forecast-hub
+username: flusightcategoricalprediction
+account: flusightcategoricalprediction
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12447599
+bundleId: 8978375
+url: https://flusightcategoricalprediction.shinyapps.io/FluSight-forecast-hub/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: code_replication_practice.qmd|creating plots.qmd|data_for_shiny.qmd|data_for_shiny.rmarkdown|final_report.pdf|final_report.qmd|flusight_graph2.qmd|hub-config/admin.json|hub-config/model-metadata-schema.json|hub-config/README.md|hub-config/tasks.json|hub-config/validations.yml|hubvis_example.qmd|LICENSE|numericaldataprediction.Rdata|README.md|Rplot.png|shiny_app_recreating_zoltar.qmd|shiny.R|target-data/eda.qmd|target-data/get_target_data.R|target-data/README.html|target-data/README.md

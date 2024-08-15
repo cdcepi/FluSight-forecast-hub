@@ -1,0 +1,50 @@
+---
+title: "Categorical Forecast Final Report"
+format: pdf
+---
+
+# Introduction
+
+The FluSight forecast hub is a [Github repository](https://github.com/YujieGong/flu_sight_analysis)  collecting forecast data from 2023 to 2024, run by the CDC. The CDC coordinated this nowcasting and forecasting challenge to encourage model predictions from various teams and support public health decisions. The challenge begins on October 11, 2023, and ends on May 1, 2024. The model prediction targets include providing quantile predictions and category probability predictions for hospital admissions at both national and state levels. The project is inspired from the [Zoltar](https://zoltardata.com/project/360/viz?as_of=2024-05-04&interval=95%25&target_var=week_ahead_incident_hospitalizations&xaxis_range=2023-10-14&xaxis_range=2024-06-06&yaxis_range=-1113.8812379327162&yaxis_range=22197.572696733303&model=FluSight-ensemble&unit=US) which provides quantile forecast visualization. This project aims to create a visualization tool for the categorical predictions of FluSight data. The need for a categorical data visualization tool arises because many flu predictions use multiple categories, and no such tool has yet been developed for FluSight. Having this visualization tool could be helpful for decision-making and provide easier and more straightforward communication with the public.
+
+
+# Data Preparation
+
+At the start of creating the app, I began by accessing data from the cloud. However, my R Studio was not working well to load the data, which may have been due to R version issues or problems encountered when updating the cloud. Therefore, I switched to local data access and filtered only categorical prediction data, which is indicated by output_type equals to pmf in the FluSight data. For target data, because the original target data does not have a classified category, we had to use [existing documentation](https://github.com/cdcepi/FluSight-forecast-hub/tree/main/model-output) to convert the target data into categories that could be compared with the prediction data. The documentation includes standards for categorization for horizons 0, 1, 2, and 3. For target data, we used the category standards for horizon 0 because we consider the target data to be the truth data. To avoid lengthy data processing each time R Studio is restarted, I saved the cleaned and filtered dataset into a data file, Categoricalshinydata.Rdata, which includes the two datasets model_data_pmf and target_data_classified. By doing this, whenever I need to run the R Shiny app, I can load the Rdata file directly to access the prepared datasets.
+
+# R Shiny Application
+
+The R Shiny app Flusight Categorical Forecast can be accessed through running the shiny_categoricalplot.R file in this [Github repo](https://github.com/YujieGong/flu_sight_analysis). The Shiny app includes three tabs: Info, Model-based Facet, and Horizon-based Facet. The Info section provides a brief introduction to the app, while the Model-based Facet and Horizon-based Facet offer two types of visualizations.
+
+## Model-based Facet Visualization
+
+![Screenshot of Model-based Facet Interface](pictures/model_based.png)
+
+The sidebar of the Model-based Facet visualization provides selection options for location, models, and dates. Users can select the location they are interested in, multiple models they want to explore or compare, and specific dates. The x-axis of the plot represents the date, calculated based on different horizons. For example, a prediction made on March 6, 2024, with the selected date of March 9, 2024, would use the equation target_end_date = reference_date + horizon * 7. In this case, the reference date is March 9, 2024, so the corresponding date for horizon 1 is calculated as March 16, 2024. Each model’s plot includes predictions for horizons -1, 0, 1, 2, and 3. The y-axis of the plot shows the predicted categories, indicated by five levels: large increase, increase, stable, decrease, and large decrease. The colored grid displays the probability that each prediction falls into each category, with red indicating higher probability and yellow indicating lower probability. The gray dot shows which category the target data falls into. The target data classification over time plot shows the range of time when the prediction is made and when the prediction is being evaluated.
+
+![Screenshot of FluSight-ensemble Prediction](pictures/model_single_plot.png){ width=60% }
+
+To provide a more detailed explanation, here is the plot of the FluSight-ensemble model with predictions made on March 6, 2024. From the plot, we can see that for March 1, 2024 (horizon -1), the target data category is stable. The model prediction shows a higher probability for the stable category and some possibility for the large increase category. For horizons 0, 1, and 2, the target categories and model categories align, both showing as stable. For the prediction for horizon 3, around April 1, 2024, the category predicted by the model is stable, while the target data category shows a decrease. We can conclude that the predictions made by the FluSight-ensemble model are generally accurate, though there are some fluctuations compared to the target data.
+
+
+
+## Horizon-based Facet Visualization
+
+![Screenshot of Horizon-Based Facet](pictures/horizon_based.png)
+In the Horizon-based Facet visualization, the sidebar offers selections for horizon, location, and dates. Users can compare the model's performance across different horizons. In this example, we selected the date March 9, 2024, and horizons 0 and 1. The x-axis shows different categories, and the y-axis shows the different models. The grid color represents the probability of falling into different categories. As with the previous graph, the red color indicates higher probability, and the yellow color indicates lower probability. The gray dots show the categories for each model. Since each facet shows a single horizon, the target data category is the same for each model.
+
+![Screenshot of Horizon-Based Facet](pictures/horizon_single_plot.png){ width=60% }
+
+This is the single plot for horizon 0, made on the prediction date of March 6, 2024. We can see that the target data all falls into the stable category, while there are variations in model predictions. Most models have a probability for the stable category, with a few models showing scattered weights for different categories.
+
+
+# Trends Analysis
+
+For trends observed in the Model-based Facet visualization, the overall predictability of the model is lower from October 2023 to January 2024. This period generally has more fluctuations in categories, as it is the peak of the flu season. The categories predicted by the model do not align well with the actual category of the target data. Another trend is that the model generally does not capture variations between each horizon for the entire date range. When the actual target data shows more variations between different horizons, the categories predicted by the model fail to capture those variations. In the Horizon-based Facet visualization, it is shown that when there are fewer category changes for the model, the forecast data tends to align better with the predictions. Specifically, when the target data are consistent across horizons, the predicted categories of each model tend to show fewer variations and more consistent weights for each category.
+
+
+# Future Work and Limitation
+
+For future work on this project, the Shiny app could include more interactivity by exploring other packages so that users could click on the grid of the plot to display the exact probability numbers. Additionally, there should be more discussion about the classification of the target data. We chose to use the horizon 0 documentation for the target data, considering it the truth data. However, during the app's creation, we realized that this method of converting target data does not make much sense when comparing it to forecast data with horizons other than 0. Also, the date x-axis of the visualization does not align well with the grid in the plot due to limitations in adjusting ggplot. Other packages could be explored to see if the date x-axis could be better adjusted.
+
+

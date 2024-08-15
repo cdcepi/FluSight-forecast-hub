@@ -27,8 +27,6 @@ model_data1 <- hub_con %>%
 # 
 # model_data1<-model_data1|>
 #   left_join(location_full, by = "location")
-
-
 model_data<-model_data1|>
   filter(target == "wk inc flu hosp")
 
