@@ -1,5 +1,7 @@
 # Target data 
 
+**Please Note: The target data description below pertains to the 2023-24 FluSight season. Target data for the 2024-25 season will remain focused on influenza laboratory-confirmed hospital admissions. However, updated details and links to current data sets will be provided as they become available.**
+
 The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that FluSight forecasts are eventually compared to. Influenza hospitalization data are taken from the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
 
 *Table of Contents*
