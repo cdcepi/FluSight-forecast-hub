@@ -108,6 +108,9 @@ One or more citations to manuscripts or preprints with additional model details.
 
 Any information about funding source(s) for the team or members of the team that would be natural to include on any resulting FluSight publications. For example, "National Institutes of General Medical Sciences (R01GM123456). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS."
 
+### trajectory_method
+Teams that are submitting samples are asked to please indicate the method that you are using to generate sample trajectories. For example, if stochastic trajectories are the main output of your forecast method, you might put “Submitted samples the primary output of the stochastic realizations of our mechanistic model framework.” If you generate more than 100 samples to identify your quantile distribution, you the total number of samples submitted here.
+
 # Data validation
 
 Optionally, you may validate a model metadata file locally before submitting it to the hub in a pull request. Note that this is not required, since the validations will also run on the pull request. To run the validations locally, follow these steps:
