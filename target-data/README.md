@@ -1,6 +1,6 @@
 # Target data 
 
-The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that FluSight forecasts are eventually compared to. Influenza hospitalization data are taken from the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
+The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that FluSight forecasts are eventually compared to. Influenza hospitalization data are taken from the [HealthData.gov Hospital Respiratory Data](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
 
 *Table of Contents*
 
@@ -14,16 +14,14 @@ Hospitalization data
 
 ### HealthData.gov Hospitalization Timeseries
 
-FluSight hospital admission prediction targets (`wk inc flu hosp` and `wk flu hosp rate changes`) for this season will continue to be based on the influenza 'previous day's admissions with laboratory confirmed influenza virus infection' [Field 34](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [HealthData.gov COVID-19 Reported Patient
-Impact and Hospital Capacity by State
-Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
+FluSight hospital admission prediction targets (`wk inc flu hosp`,`wk flu hosp rate changes`, ``, ``) for this season will be based on the influenza 'previous week's admissions with laboratory confirmed influenza virus infection' [Field 34](https://www.cdc.gov/nhsn/pdfs/pscmanual/Hospital-Respiratory-Data-Weekly-Template-Mapping.pdf) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [HealthData.gov Hospital Respiratory Data](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
 These data are released weekly.
 
 
 
-Previously collected influenza data from the 2020-21 and the 2022-23 influenza seasons (Fields 33-38) are included in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset. Reporting of the influenza fields 33-35 became mandatory in February 2022, and additional details are provided in the current [hospital reporting guidance and FAQs](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). Numbers of reporting hospitals increased after the period that reporting became mandatory in early 2022 but have since stabilized at high levels of compliance.  The number of hospitals reporting these data each day by state are available in the previous_day_admission_influenza_confirmed_coverage variable found in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset.
+Previously collected influenza data from the 2020-21, 2022-23, and 2023-24 influenza seasons (Fields 33-38) are included in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset. Reporting of the influenza fields 33-35 became mandatory in February 2022, and additional details are provided in the current [hospital reporting guidance and FAQs](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). Numbers of reporting hospitals increased after the period that reporting became mandatory in early 2022 but have since stabilized at high levels of compliance.  The number of hospitals reporting these data each day by state are available in the previous_day_admission_influenza_confirmed_coverage variable found in the COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset.
 
-During the 2021-22 and 2022-23 influenza forecasting seasons, the dataset was updated daily based on data reported through the day prior. Therefore, datasets updated on Monday would include data reported through the immediately preceding Sunday, and this data snapshot would capture influenza hospital admissions that occurred through Saturday (see the data processing section for more information). As of June 11, 2023, the reporting cadence changed to weekly, so that qualifying facilities are required to report daily hospitalizations for the previous week to the [National Healthcare Safety Network (NHSN)](https://www.cdc.gov/nhsn/index.html) on each Tuesday, as indicated in the [hospital reporting guidance](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). 
+During the 2021-22, 2022-23 and 2023-24 influenza forecasting seasons, the dataset was updated daily based on data reported through the day prior. Therefore, datasets updated on Monday would include data reported through the immediately preceding Sunday, and this data snapshot would capture influenza hospital admissions that occurred through Saturday (see the data processing section for more information). As of June 11, 2023, the reporting cadence changed to weekly, so that qualifying facilities are required to report daily hospitalizations for the previous week to the [National Healthcare Safety Network (NHSN)](https://www.cdc.gov/nhsn/index.html) on each Tuesday, as indicated in the [hospital reporting guidance](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf). 
 
 Aggregated official counts are publicly released on Fridays. Preliminary counts are released on Wednesdays. Official counts can be revised in subsequent data updates.
 These data are also available in a facility-level dataset; data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). 
@@ -44,23 +42,15 @@ Other data sources
 
 Influenza hospitalization admissions data is also available in a [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u); data values less than 4 are suppressed in the [facility-level dataset](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u). 
 
-Percent of Emergency Department visits with a specified pathogen (COVID-19, Influenza, and Respiratory Syncytial Virus) out of all emergency department visits in a given epiweek are reported by the CDC National Syndromic Surveillance Program (NSSP) and provided in the [2023 Respiratory Virus Response - NSSP Emergency Department Visits dataset](https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm).  Weekly national-level Emergency Department Visits for these pathogens are available for download by age-group in this [landing page](https://www.cdc.gov/ncird/surveillance/respiratory-illnesses/index.html).   
+Percent of Emergency Department visits with a specified pathogen (COVID-19, Influenza, and Respiratory Syncytial Virus) out of all emergency department visits in a given epiweek are reported by the CDC National Syndromic Surveillance Program (NSSP) and provided in the [2024 Respiratory Virus Response - NSSP Emergency Department Visits dataset](https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm).  Weekly national-level Emergency Department Visits for these pathogens are available for download by age-group in this [landing page](https://www.cdc.gov/ncird/surveillance/respiratory-illnesses/index.html).   
 
 Additional historical influenza surveillance data from other surveillance systems are available at [https://www.cdc.gov/flu/weekly/fluviewinteractive.htm](https://www.cdc.gov/flu/weekly/fluviewinteractive.htm). These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Additional potential data sources are available in Carnegie Mellon University's [Epidata API](https://delphi.cmu.edu/).
 
 
 ### Data processing
 
-The hospitalization target data is computed based on the `previous_day_admission_influenza_confirmed`
+The hospitalization target data is computed based on the `previous_day_admission_influenza_confirmed` ['numConfFluHospPatsAdult']
 field which provides the new daily admissions with a confirmed diagnosis of influenza.
-
-CDC has been reporting COVID hospital admission data on public facing websites using the dates listed in the date field, rather than shifting the admissions to the previous date to represent the actual date of admission. This season, FluView and FluSight will adopt this practice and no longer shift the dates to account for the actual event date of admission. Influenza hospitalization forecasts should no longer shift the admissions data by one day before aggregating to the weekly epiweek count, and epiweek forecasts this season will include admissions reported Sunday to Saturday. This also aligns with the availability of data from this system now that hospitals are required to report data Sunday to Saturday (capturing admissions that occurred Saturday through Friday) by the following Tuesday. These changes are only for FluSight influenza forecasts, not for COVID forecasts. We will generate a new dataset with the observed target weekly values that no longer shifts the data by one day and will be stored in this subdirectory.
-
-For each horizon of predictions, we will use the specification of
-epidemiological weeks (EWs) [defined by the US
-CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which
-run Sunday through Saturday. As an example, if 17 confirmed influenza hospital admissions were reported in the `previous_day_admission_influenza_confirmed` field in a row where the `date` field was 2023-11-15, then the target dataset would assign those 17 hospital admissions to a date of 2023-11-15. These hospital admissions would then be counted towards the weekly total computed for EW46 in 2023, which runs from 2023-11-12 through 2023-11-18. There are standard software packages to convert from dates to epidemic weeks and vice versa (e.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for Python).
-
 
 ### Additional resources
 

@@ -64,7 +64,8 @@ library(RSocrata)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
-#setwd("C:/Users/nqr2/Desktop/Github/FluSight-forecast-hub")
+#userid <- Sys.info()["user"]
+#setwd("C:/Users/",userid,"/Desktop/Github/FluSight-forecast-hub")
   
 target_data <- fetch_flu(temporal_resolution = "weekly")
 
