@@ -145,9 +145,7 @@
                             "target_name": "week ahead weekly influenza hospitalization rate change",
                             "target_units": "rate per 100,000 population",
                             "target_keys": {
-                                "target": [
-                                    "wk flu hosp rate change"
-                                ]
+                                "target": "wk flu hosp rate change"
                             },
                             "target_type": "ordinal",
                             "description": "This target represents the change in the rate of new hospitalizations per week comparing the week ending on the reference_date to the week ending [horizon] weeks after the reference_date, on target_end_date.",
@@ -326,9 +324,7 @@
                             "target_name": "incident influenza hospitalizations",
                             "target_units": "count",
                             "target_keys": {
-                                "target": [
-                                    "wk inc flu hosp"
-                                ]
+                                "target": "wk inc flu hosp"
                             },
                             "target_type": "continuous",
                             "description": "This target represents the count of new hospitalizations in the week ending on the date [horizon] weeks after the reference_date, on the target_end_date.",
@@ -473,9 +469,7 @@
                             "target_name": "incident influenza hospitalizations in the season week with the highest hospitalizations",
                             "target_units": "count",
                             "target_keys": {
-                                "target": [
-                                    "peak inc flu hosp"
-                                ]
+                                "target": "peak inc flu hosp"
                             },
                             "target_type": "continuous",
                             "description": "This target represents the count of new hospitalizations in the week of the season with the highest reported hospitalizations.",
@@ -607,9 +601,7 @@
                             "target_name": "season week with the highest hospitalizations",
                             "target_units": "count",
                             "target_keys": {
-                                "target": [
-                                    "peak week inc flu hosp"
-                                ]
+                                "target": "peak week inc flu hosp"
                             },
                             "target_type": "date",
                             "description": "This target represents the week of the season with the highest reported hospitalizations. This is the Saturday ending the epidemic week with the highest reported hospitalization count.",
