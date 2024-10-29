@@ -34,10 +34,10 @@ admissions_sample_submission <- tidyr::expand_grid(
         horizon = as.integer(c(-1, 0, 1, 2, 3)),
         location = c("US", "01"),
         output_type = "sample",
-        sample_idx_within_location = seq_len(100)
+        sample_idx_within_location = seq_len(100) - 1
     ) |>
     dplyr::mutate(
-        output_type_id = paste0(location, sample_idx_within_location),
+        output_type_id = paste0(location, sprintf("%02d", sample_idx_within_location)),
         target_end_date = reference_date + horizon * 7,
         value = rnbinom(n(), size = 100, mu = 1000)
     ) |>
