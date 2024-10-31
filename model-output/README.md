@@ -87,7 +87,7 @@ The metadata file will be saved within the model-metdata directory in the Hub's 
       team-model.yml
 
 Details on the content and formatting of metadata files are provdided in the [model-metadata README](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md).
-Note that returning teams should update the metadata file provided during the 2023-2024 season to document any changes that have been made to their model as well as to match updated content requirements.  
+Note that returning teams should update the metadata file provided during the 2023-2024 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
 Updates to the metadata files include the addition of the addition of an optional “trajectory_method” field where all teams that are submitting samples are asked to please indicate the method that you are using to generate sample trajectories. 
 
