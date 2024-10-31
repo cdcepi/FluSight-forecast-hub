@@ -1,6 +1,6 @@
 # Model metadata
 
-This folder contains metadata files for the models submitting to the FluSight forecasting collaboration. The specification for these files has been adapted to be consistent with [model metadata guidelines in the hubverse documentation](https://hubdocs.readthedocs.io/en/latest/format/model-metadata.html).
+This folder contains metadata files for the models submitting to the FluSight forecasting collaboration. The specification for these files has been adapted to be consistent with [model metadata guidelines in the hubverse documentation](https://hubverse.io/en/latest/user-guide/model-metadata.html).
 
 Each model is required to have metadata in 
 [yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
@@ -85,16 +85,16 @@ A boolean value (`true` or `false`) that indicates whether a model is an ensembl
 
 A boolean value (`true` or `false`) that indicates whether a model is an ensemble specifically of other models submited to the FluSight forecasting hub.
 
-## Optional
-
-### model_version
-An identifier of the version of the model
-
 ### website_url
 
 A url to a website that has additional data about your model. 
 We encourage teams to submit the most user-friendly version of your 
 model, e.g. a dashboard, or similar, that displays your model forecasts. 
+
+## Optional
+
+### model_version
+An identifier of the version of the model
 
 ### repo_url
 
