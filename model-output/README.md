@@ -49,7 +49,7 @@ uptake) may change over time.
 
 ## Target Data 
 
-*Note:*The data source for these prediction targets was drafted based on what was available for the 2023-2024 season and will be updated accordingly for the 2024-2025 season as new data becomes available.
+*Note:* The data source for these prediction targets was drafted based on what was available for the 2023-2024 season and will be updated accordingly for the 2024-2025 season as new data becomes available.
 
 This project treats laboratory confirmed influenza virus infection hospitalization admissions data reported through CDC's NHSN (National Health Safety Network) system in the [Hospital Respitatory Dataset](https://www.cdc.gov/nhsn/psc/hospital-respiratory-reporting.html) as the target ("gold standard") data for hospital admission forecasts.
 
@@ -58,7 +58,7 @@ Details on how data target data are defined can be found in the
 
 ## Data formatting 
 
-The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting.For the 2024-2025 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 3.0.1 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
+The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting. For the 2024-2025 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 3.0.1 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
 
 ### Subdirectory
 
@@ -89,7 +89,7 @@ The metadata file will be saved within the model-metdata directory in the Hub's 
 Details on the content and formatting of metadata files are provdided in the [model-metadata README](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md).
 Note that returning teams should update the metadata file provided during the 2023-2024 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
-Updates to the metadata files include the addition of the addition of an optional “trajectory_method” field where all teams that are submitting samples are asked to please indicate the method that you are using to generate sample trajectories. 
+Updates to the metadata files include the addition of the addition of an optional “sample_method” field where all teams that are submitting samples are asked to please indicate the method that you are using to generate sample trajectories. The "web_url" field has been updated to be a required field. 
 
 
 ### Forecasts
@@ -130,9 +130,9 @@ columns (in any order):
 -   `output_type_id`
 -   `value`
 
-No additional columns are allowed. **Note:** for some targets not all column values will apply, e.g., seasonal peak targets do not have an associated horizon. In this case "NA?"" should be entered for the non-applicable column in corresponding rows. 
+No additional columns are allowed. **Note:** for some targets not all column values will apply, e.g., seasonal peak targets do not have an associated `horizon`. In this case "NA" should be entered for the non-applicable column in corresponding rows. 
 
-The majority of values in each row of the file will be either a quantile or rate-trend prediction for a particular combination of location, date, and horizon. Please see Tables 1 and 2 for examples based on sample dates. See details below for exceptions related to new optional peak targets.  
+The majority of values in each row of the file will be either a quantile, sample, or rate-trend prediction for a particular combination of location, date, and horizon. Please see Tables 1 and 2 for examples based on example dates. See details below for exceptions related to new optional peak targets.  
 
 ### `reference_date` 
 
@@ -151,10 +151,12 @@ the following specific targets:
 -   `wk flu hosp rate change`
 -   `peak week inc flu hosp`
 -   `peak inc flu hosp`
+  
+For samples, this should be `wk inc flu hosp`. 
 
 
 ### `horizon`
-Values in the horizon column indicate the number of weeks between the reference_date and the target_end_date.  For influenza hospital admission forecasts this should be a number between -1 and 3 and rate change predictions should be a number between 0 and 3, where for example a horizon of 0 indicates that the prediction is a nowcast for the week of submission and a horizon of 1 indicates that the prediction is a forecast for the week after submission. See Tables 1 and 2 for examples. For the peak incidence and peak week targets, this column should be left blank/will not be used. For samples, this should be `wk inc flu hosp`. 
+Values in the horizon column indicate the number of weeks between the reference_date and the target_end_date.  For influenza hospital admission forecasts this should be a number between -1 and 3 and rate change predictions should be a number between 0 and 3, where for example a horizon of 0 indicates that the prediction is a nowcast for the week of submission and a horizon of 1 indicates that the prediction is a forecast for the week after submission. See Tables 1 and 2 for examples. For the peak incidence and peak week targets, this columns hould be left blank/will not be used. 
 
 ### `target_end_date`
 
@@ -209,17 +211,17 @@ np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.05)),
 #### pmf output
 
 For rate change forecasts, the output_type_id indicates the category that the predicted probability of occurrence should be associated with. Teams should provide the following categories:
-"large_increase", "increase", "stable", "decrease" and "large_decrease". Please see Appendix 1: rate-trend forecast specifications for details on how each category is defined. Note that thresholds between categories differ from those used in the 2023-2024 season and that new threshold values have been added for the one-week ahead rate-trend targets.
+"large_increase", "increase", "stable", "decrease" and "large_decrease". Please see Appendix 1: rate-trend forecast specifications for details on how each category is defined. Note that thresholds between categories differ from those used in the 2023-2024 season and that new threshold values have been added.
 
-For the peak week target, the output_type_id should specify each week in the season in the ISO format: YYYY-MM-DD.
+For the peak week target, the `output_type_id` should specify each week in the season in the ISO format: YYYY-MM-DD.
 
 #### sample output
 
 For sample forecasts (trajectories), the output_type_id indicates which sample a set of predictions should be considered a part of. Please see related [Hubverse documentation](https://hubverse.io/en/latest/user-guide/sample-output-type.html) for examples. Here, a sample is a draw from a joint distribution for flu hospitalizations across multiple prediction horizons, showing the possible value of hospitalizations on each target date. The values for a single sample will be included in different rows of a submission file, corresponding to the different prediction horizons and target dates; the shared output_type_id across those rows allows us to link those values into a single sample trajectory.
 
-For sample trajectories that are generated separately for each location, one valid way to set up output_type_id values would be to concatenate the two letter code for the location of the sample (e.g., MA) ad a two digit number identifying the sample index within that location. Since 100 samples are being collected for each trajectory, these numeric indices will be “00”, “01, … “99”, resulting in output_type_ids of MA00, MA01, …, MA 99. Each of those output_type_id values would appear across a set of rows in the submission file corresponding to different prediction horizons for MA. Similarly, for Florida forecasts, output_type_id values could be specified as FL00, … FL99. 
+For sample trajectories that are generated separately for each location, one valid way to set up output_type_id values would be to concatenate the two letter code for the location of the sample (e.g., MA) ad a two digit number identifying the sample index within that location. Since 100 samples are being collected for each trajectory, these numeric indices will be “00”, “01, … “99”, resulting in output_type_ids of MA00, MA01, …, MA 99. Each of those output_type_id values would appear across a set of rows in the submission file corresponding to different prediction horizons for MA. Similarly, for Florida forecasts, `output_type_id` values could be specified as FL00, … FL99. 
 
-As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a trajectory are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will only collect samples for the `wk flu hosp rate change` target.
+As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a sample are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will only collect samples for the `wk flu hosp rate change` target.
 
 National forecasts can be provided as samples with the output_type_id values of US00, US01, … US99. National-level samples should only be provided if these forecasts are either jointly determined across all states, capturing dependence across locations, or if the national target is modeled directly, i.e., is not the sum of separately generated state-level forecasts.  
 
