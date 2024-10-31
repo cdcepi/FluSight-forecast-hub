@@ -93,6 +93,9 @@ model, e.g. a dashboard, or similar, that displays your model forecasts.
 
 ## Optional
 
+### sample_methods
+A brief description of the methodology used to generate sample trajectories, as well as the total number of samples generated if they exceed 100.
+
 ### model_version
 An identifier of the version of the model
 
