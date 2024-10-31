@@ -12,7 +12,7 @@ These instructions provide detail about the [data
 format](#Data-formatting) as well as [validation](#Forecast-validation) that
 you can do prior to this pull request. In addition, we describe
 [metadata](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md)
-that each model should provide in the model-metadata folder.
+that each model should provide in the model-metadata folder. Sample submission files with the correct formatting conventions are provided in the [auxiliary-data folder](https://github.com/cdcepi/FluSight-forecast-hub/tree/main/auxiliary-data).
 
 *Table of Contents*
 
