@@ -45,5 +45,7 @@ Teams may also submit probability forecasts for peak week. Peak week will be def
 
 The objective of these seasonal targets is to provide actionable and intuitive forecasts for public health decision makers. These targets will characterize the season as a whole and predict the intensity and timing of the highest severity segment of the season to expand public health utility. 
 
+If you have questions about this season’s FluSight Collaboration, please reach out to Rebecca Borchering, Sarabeth Mathis, and the CDC FluSight team (flusight@cdc.gov).  
+
 ## Acknowledgments
 This repository follows the guidelines and standards outlined by the [hubverse]([url](https://hubdocs.readthedocs.io/en/latest/)), which provides a set of data formats and open source tools for modeling hubs.
