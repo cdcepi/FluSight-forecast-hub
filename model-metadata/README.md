@@ -62,7 +62,7 @@ including private vaccine production (which would be excluded by the "cc-by-nc-4
 
 ### designated_model 
 
-A team-specified boolean indicator (`true` or `false`) for whether the model should be considered eligible for inclusion in a Hub ensemble and public visualization. A team may specify up to two models as a designated_model for inclusion. Models which have a designated_model value of 'False' will still be included in internal forecasting hub evaluations.
+A team-specified boolean indicator (`true` or `false`) for whether the model should be considered eligible for inclusion in a Hub ensemble and public visualization. In general, a team may specify up to two models as a designated_model for inclusion. Models which have a designated_model value of 'False' will still be included in internal forecasting hub evaluations. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
 ### data_inputs
 
