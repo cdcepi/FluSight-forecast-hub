@@ -15,7 +15,7 @@ model_contributors: [
     "email": "Luke.Mullany@jhuapl.edu"
   }
 ]
-website_url: "https://gitlab.jhuapl.edu/cipher/jhuapl-dmd"
+website_url: "www.jhuapl.edu"
 license: "CC-BY-4.0"
 team_funding: "ACCIDDA"
 designated_model: true
