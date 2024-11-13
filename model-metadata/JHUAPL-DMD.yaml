@@ -15,7 +15,7 @@ model_contributors: [
     "email": "Luke.Mullany@jhuapl.edu"
   }
 ]
-website_url: "www.jhuapl.edu"
+website_url: "https://www.jhuapl.edu/"
 license: "CC-BY-4.0"
 team_funding: "ACCIDDA"
 designated_model: true
