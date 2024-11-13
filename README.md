@@ -39,8 +39,6 @@ Rate thresholds separating categories of change (e.g., separating "stable" trend
 
 *Note:* The threshold levels for rate_change that define the categories have been modified slightly for the 2024-25 season. These updated thresholds are derived from the distribution of previously observed data and are expected to capture a slightly larger range of increases and decreases, that previously would have been considered stable. 
 
-*Note:* This season we will solicit these targets for the same horizons as the hospital admission targets (i.e., rate difference between week $t+N$ and current week $t$, where $N$ is either -1, 0, 1, 2 or 3, respectively). 
-
 **Seasonal Forecast Targets:**
 
 Teams may also submit probability forecasts for peak week. Peak week will be defined as the epidemiologic week with the highest count of confirmed influenza hospital admissions during the 2024-2025 season. In the case multiple weeks observe the same highest count of confirmed influenza hospital admissions for a particular location, peak week forecasts for that location will not be scored. Based on analysis of previously observed influenza hospital admission data, we do not anticipate that this will happen frequently if at all. Separately, teams may submit quantile forecasts predicting peak incidence of influenza hospitalizations. Peak Incidence is defined as the highest count of confirmed influenza hospital admissions reach during any epidemiological week of the 2024-2025 season.
