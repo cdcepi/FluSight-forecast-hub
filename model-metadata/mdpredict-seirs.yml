@@ -1,0 +1,26 @@
+team_name: "Maryland Predict"
+team_abbr: "MDPredict"
+model_name: "modified susceptible-exposed-infectious-recovered-susceptible model"
+model_abbr: "SEIRS"
+model_contributors: [
+  {
+    "name": "Johnny Sheng",
+    "affiliation": "Richard Montgomery High School",
+    "email": "johnnysheng0324@example.com",
+    "orcid": "NA"
+  },
+  {
+    "name": "Ivan Zhang",
+    "affiliation": "Richard Montgomery High School",
+    "email": "ivanzhang0130@gmail.com",
+    "orcid": "NA"
+  }
+]
+license: "cc-by-4.0"
+designated_model: true
+data_inputs: "Weekly incident flu hospitalizations, queried through FluSight"
+methods: "MCMC model using SEIRS relations"
+methods_long: "Markov Chain Monte Carlo model creating predictions using susceptible-exposed-infectious-recovered-susceptible model, priors set with manually mapping of historic CDC flu data"
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: "https://sites.google.com/view/mdpredictfluforecasts/home"
