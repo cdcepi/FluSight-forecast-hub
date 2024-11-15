@@ -21,8 +21,6 @@ fetch_flu <- function(){
     dplyr::rename("value" = "totalconfflunewadm", "date"="weekendingdate", "state"="jurisdiction") %>% 
     dplyr::mutate(date = as.Date(date), 
                   value = as.numeric(value),
-                  epiweek = lubridate::epiweek(date), 
-                  epiyear = lubridate::epiyear(date),
                   state = str_replace(state, "USA", "US"))
   
   #bind state population data
@@ -43,17 +41,11 @@ library(RSocrata)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
-userid <- Sys.info()["user"]
-setwd(paste0("C:/Users/",userid,"/Desktop/Github/FluSight-forecast-hub"))
+setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
   
 target_data <- fetch_flu()
 
-#archive_data <- sprintf("./auxiliary-data/target-data-archive/target-hospital-admissions_%s.csv", max(target_data$date))
-
-write.csv(target_data, file = "./target-data/target-hospital-admissions.csv")
-#write.csv(target_data, file = archive_data, row.names = FALSE)
-
-
+write.csv(target_data, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
 
 
 
