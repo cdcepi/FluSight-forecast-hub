@@ -1,7 +1,7 @@
 team_name: "FluSight-seasonal-baseline"
 team_abbr: "FluSight"
 model_name: "Baseline seasonal model using historic data"
-model_abbr: "baseline-seasonal"
+model_abbr: "base-seasonal"
 model_version: "1.0"
 model_contributors: [
   {
