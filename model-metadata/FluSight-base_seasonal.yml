@@ -1,4 +1,4 @@
-team_name: "FluSight-seasonal-baseline"
+team_name: "FluSight-base_seasonal"
 team_abbr: "FluSight"
 model_name: "Baseline seasonal model using historic data"
 model_abbr: "base_seasonal"
