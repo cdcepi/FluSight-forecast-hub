@@ -1,6 +1,6 @@
 # Model metadata
 
-This folder contains metadata files for the models submitting to the FluSight forecasting collaboration. The specification for these files has been adapted to be consistent with [model metadata guidelines in the hubverse documentation](https://hubdocs.readthedocs.io/en/latest/format/model-metadata.html).
+This folder contains metadata files for the models submitting to the FluSight forecasting collaboration. The specification for these files has been adapted to be consistent with [model metadata guidelines in the hubverse documentation](https://hubverse.io/en/latest/user-guide/model-metadata.html).
 
 Each model is required to have metadata in 
 [yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
@@ -62,7 +62,7 @@ including private vaccine production (which would be excluded by the "cc-by-nc-4
 
 ### designated_model 
 
-A team-specified boolean indicator (`true` or `false`) for whether the model should be considered eligible for inclusion in a Hub ensemble and public visualization. A team may specify up to two models as a designated_model for inclusion. Models which have a designated_model value of 'False' will still be included in internal forecasting hub evaluations.
+A team-specified boolean indicator (`true` or `false`) for whether the model should be considered eligible for inclusion in a Hub ensemble and public visualization. In general, a team may specify up to two models as a designated_model for inclusion. Models which have a designated_model value of 'False' will still be included in internal forecasting hub evaluations. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
 ### data_inputs
 
@@ -85,16 +85,19 @@ A boolean value (`true` or `false`) that indicates whether a model is an ensembl
 
 A boolean value (`true` or `false`) that indicates whether a model is an ensemble specifically of other models submited to the FluSight forecasting hub.
 
-## Optional
-
-### model_version
-An identifier of the version of the model
-
 ### website_url
 
 A url to a website that has additional data about your model. 
 We encourage teams to submit the most user-friendly version of your 
 model, e.g. a dashboard, or similar, that displays your model forecasts. 
+
+## Optional
+
+### sample_methods
+A brief description of the methodology used to generate sample trajectories, as well as the total number of samples generated if they exceed 100.
+
+### model_version
+An identifier of the version of the model
 
 ### repo_url
 

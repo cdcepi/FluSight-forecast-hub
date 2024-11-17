@@ -1,0 +1,21 @@
+team_name: "FluSight-equal_cat"
+team_abbr: "FluSight"
+model_name: "Baseline model with equal probabilities for each rate-trend category"
+model_abbr: "equal_cat"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Simple baseline model predicting that the probability for each rate-trend category will equal 0.2 for all jurisdictions and horizons."
+data_inputs: "None"
+methods_long: "Simple baseline model predicting that the probability for each rate-trend category will be equal. Since there are five categories, for each jurisdiction and rate-difference horizon each category recieves a probability of 0.2 of occurring."
+
+ensemble_of_models: false
+ensemble_of_hub_models: false

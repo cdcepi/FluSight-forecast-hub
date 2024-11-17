@@ -1,0 +1,45 @@
+team_name: "University of Guelph Dynamics Training Lab"
+team_abbr: "UGuelphensemble"
+model_name: "GRYPHON"
+model_abbr: "GRYPHON"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Edward Thommes",
+    "affiliation": "Sanofi/University of Guelph",
+    "email": "ethommes@uoguelph.ca"
+  },
+  {
+    "name": "Christopher van Bommel",
+    "affiliation": "University of Guelph",
+    "email": "cvanbomm@uoguelph.ca"
+  },
+  {
+    "name": "Rhiannon Loster",
+    "affiliation": "University of Guelph",
+    "email": "rloster@uoguelph.ca"
+  },
+  {
+    "name": "Benjamin Benteke",
+    "affiliation": "University of Guelph",
+    "email": "bbenteke@uoguelph.ca"
+  },
+  {
+    "name": "Pengfei Yue",
+    "affiliation": "University of Guelph",
+    "email": "yuep@uoguelph.ca"
+  },
+  {
+    "name": "Monica Cojocaru",
+    "affiliation": "University of Guelph",
+    "email": "mcojocar@uoguelph.ca"
+  }
+]
+website_url: "https://sites.google.com/site/mgcojocarumath/networks-and-dynamics-lab"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Ensemble"
+data_inputs: "hospitalization data for US "
+methods_long: ""
+ensemble_of_models: True
+ensemble_of_hub_models: True

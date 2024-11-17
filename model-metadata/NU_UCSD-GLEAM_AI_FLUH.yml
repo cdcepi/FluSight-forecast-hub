@@ -1,0 +1,57 @@
+team_name: Northeastern University & University of California San Diego
+team_abbr: NU_UCSD
+model_name: GLEAM_AI Flu Forecasting Model
+model_abbr: GLEAM_AI_FLUH
+model_contributors:
+- name: Mohammadmehdi Zahedi
+  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA;
+    The Roux Institute, Northeastern University, Portland, ME, USA
+  email: zahedi.m@northeastern.edu
+  orcid: 0009-0002-7064-3258
+- name: Dongxia (Allen) Wu
+  affiliation: University of California, San Diego, La Jolla, CA, USA
+  email: dowu@ucsd.edu
+  orcid: 0000-0003-2412-6049
+- name: Jessica T. Davis
+  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA
+  email: jes.davis@northeastern.edu
+  orcid: 0000-0003-0726-1855
+- name: Yi-An Ma
+  affiliation: University of California, San Diego, La Jolla, CA, USA
+  email: yianma@ucsd.edu
+  orcid: 0000-0001-6074-6638
+- name: Rose Yu
+  affiliation: University of California, San Diego, La Jolla, CA, USA
+  email: roseyu@ucsd.edu
+  orcid: 0000-0002-8491-7937
+- name: Alessandro Vespignani
+  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA
+  email: a.vespignani@northeastern.edu
+  orcid: 0000-0003-3419-4205
+- name: Matteo Chinazzi
+  affiliation: Network Science Institute, Northeastern University, Boston, MA, USA;
+    The Roux Institute, Northeastern University, Portland, ME, USA
+  email: m.chinazzi@northeastern.edu
+  orcid: 0000-0002-5955-1929
+license: "CC-BY_SA-4.0"
+designated_model: true
+data_inputs: COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries
+  (https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
+  Data Provided by U.S. Department of Health & Human Services.
+methods: This a deep surrogate model trained to mimic MOBS-GLEAM_FLUH model.
+methods_long: "This a deep surrogate model trained to mimic MOBS-GLEAM_FLUH model.\
+  \ GLEAM_FLUH is based on a metapopulation approach in which the world is divided\
+  \ into geographical subpopulations. \nHuman mobility between subpopulations is represented\
+  \ on a network. This mobility data layer identifies the numbers of individuals traveling\
+  \ from one sub-population to another. \nThe mobility network is made up of different\
+  \ kinds of mobility processes, from short-range commuting between nearby subpopulations\
+  \ to intercontinental flights. \nTo model short-range mobility such as commuting\
+  \ or car travel, we rely on databases collected from the Offices of Statistics of\
+  \ 30 countries on five continents. \nSuperimposed on the worldwide population and\
+  \ mobility layers is an agent-based epidemic model that defines the infection and\
+  \ population dynamics."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: '0.01'
+website_url: http://www.gleamproject.org/
+team_funding: JTD, AV, and MC acknowledge support from grant HHS/CDC 6U01IP001137, HHS/CDC 5U01IP0001137; DW, YM, RY acknowledge support from U. S. Army Research Office under Army-ECASE award W911NF-07-R-0003-03, the U.S. Department Of Energy, Office of Science, IARPA HAYSTAC Program, NSF Grants \#2205093, \#2146343, and \#2134274.

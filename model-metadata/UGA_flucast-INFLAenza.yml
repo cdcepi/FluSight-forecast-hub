@@ -1,0 +1,34 @@
+team_name: UGA_flucast
+team_abbr: UGA_flucast
+model_name: INFLAenza
+model_abbr: INFLAenza
+model_contributors: [
+  {
+    "name": "Spencer J. Fox",
+    "affiliation": "University of Georgia",
+    "email": "sjfox@uga.edu",
+    "orcid": "0000-0003-1969-3778"
+  },
+  {
+    "name": "Bren Case",
+    "affiliation": "University of Georgia",
+    "email": "bcase@uga.edu",
+    "orcid": "1234-1234-1234-1234"
+  },
+{
+    "name": "Mariah Salcedo",
+    "affiliation": "University of Georgia",
+    "email": "mariah.salcedo@uga.edu",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: HHS
+methods: A spatial time-series model that uses the R-INLA package for estimating forecast posterior distributions.
+methods_long: A spatial time-series model that uses the R-INLA package for estimating a jointly fitted time-series model that includes seasonality terms, state-specific connectivity, and a random walk component.
+website_url: https://thefoxlab.wordpress.com/
+ensemble_of_models: false
+ensemble_of_hub_models: false
+team_funding: CSTE/CDC award NU38OT000297 
+

@@ -1,0 +1,36 @@
+team_name: "FluSight-baseline_cat"
+team_abbr: "FluSight"
+model_name: "Reference model translating FluSight-baseline quantile forecasts to pmf"
+model_abbr: "baseline_cat"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  },
+    {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+    {
+    "name": "Li Shandross",
+    "affiliation": "UMass Amherst",
+    "email": "lshandross@umass.edu"
+  },
+    {
+    "name": "Evan Ray",
+    "affiliation": "UMass Amherst",
+    "email": "elray@umass.edu"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Simple reference model translating FluSight baseline quantile forecasts to pmf."
+data_inputs: "None"
+methods_long: "Simple reference model translating FluSight baseline quantile forecasts to pmf using a customized version of a function to translate quantile forecasts to pmf forecasts."
+
+ensemble_of_models: false
+ensemble_of_hub_models: false

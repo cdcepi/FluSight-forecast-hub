@@ -1,0 +1,40 @@
+team_name: "Stevens Institute of Technology"
+team_abbr: "Stevens"
+model_name: "An ensemble of gradient boosting regressors"
+model_abbr: "GBR"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Aditya Brahme",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "abrahme@stevens.edu"
+  },
+  {
+    "name": "Rutvik Raut",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "rraut@stevens.edu"
+  },
+  {
+    "name": "Bhumiti Gohel",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "bgohel@stevens.edu"
+  },
+  {
+    "name": "Sanika Mhadgut",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "smhadgut@stevens.edu"
+  },
+  {
+    "name": "Nikhil Muralidhar",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "nmurali1@stevens.edu"
+  }
+]
+website_url: "https://sites.google.com/view/nikhil-muralidhar"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "An ensemble of basic tree models with equal weighting is used to create a robust and powerful tree-based model."
+data_inputs: "State-aggregated data weekly incident flu hospitalizations, queried through covidData"
+methods_long: "This model generates forecasts for state-level weekly influenza hospitalizations. The model comprises an ensemble of tree-based regression models based employing the gradient boosting learning paradigm."
+ensemble_of_models: true
+ensemble_of_hub_models: false

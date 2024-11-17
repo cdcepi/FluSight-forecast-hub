@@ -1,0 +1,31 @@
+name: Build dependency cache on main branch
+on:
+  push:
+    branches: main
+    paths:
+      - '.github/workflows/cache-deps.yaml'
+  schedule:
+    - cron: "10 16 * * *"
+
+jobs:
+  build-deps-cache-on-main:
+    if: github.repository_owner == 'cdcepi'
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          install-r: false
+          use-public-rspm: true
+
+      - name: Update R
+        run: |
+          sudo apt-get update
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: Infectious-Disease-Modeling-Hubs/hubValidations, any::sessioninfo
