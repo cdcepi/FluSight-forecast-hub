@@ -689,8 +689,8 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2024-11-23,wk inc flu hosp,3,2024-12-14,40,quantile,0.95,82
 2024-11-23,wk inc flu hosp,3,2024-12-14,40,quantile,0.975,98
 2024-11-23,wk inc flu hosp,3,2024-12-14,40,quantile,0.99,115
-2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.01,-1
-2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.025,-1
+2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.01,0
+2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.025,0
 2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.05,0
 2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.1,0
 2024-11-23,wk inc flu hosp,-1,2024-11-16,23,quantile,0.15,0
