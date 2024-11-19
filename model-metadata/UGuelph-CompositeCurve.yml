@@ -16,7 +16,7 @@ model_contributors: [
   },
   {
     "name": "Rhiannon Loster",
-    "affiliation": "University of Guelph",
+    "affiliation": "Public Health Ontario",
     "email": "rloster@uoguelph.ca"
   },
   {
@@ -26,8 +26,8 @@ model_contributors: [
   },
   {
     "name": "Pengfei Yue",
-    "affiliation": "University of Guelph",
-    "email": "yuep@uoguelph.ca"
+    "affiliation": "University of Waterloo",
+    "email": "m25yue@uwaterloo.ca"
   },
   {
     "name": "Monica Cojocaru",

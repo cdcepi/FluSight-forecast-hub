@@ -14,9 +14,9 @@ website_url: "https://github.com/computationalUncertaintyLab"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "CSTE/CDC"
-methods: "KM27 model trained on pct positive,HHS hosps,Human judgment"
+methods: "SE2IR trained on ILI and hosp data"
 designated_model: true
-data_inputs: "Daily flu hospitalizations,Daily percent positive cases,metaculus human judgment forecasts"
+data_inputs: "Weekly flu hosps and weekly ILI from FluView"
 methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet complete.
 2023-10-12: KM27 model is completed and ready for training/submission for the following week.
 2023-10-18: KM27 model was incorrect last week. i spernt the entire week correcting the model. Thete is a final bug in the mehtod i use to aggregate from day forecasts to week forecasts. 
@@ -29,6 +29,7 @@ Still cranky about how sensitive this model is to changes. This round ill try to
 2023-12-09: Added back QO data, truncated to be two weeks before the forecast submission date. Forecasts look ok except for FIP=72. i'll need to investigate.
 2023-12-16: Ran versions without and without the QO data. For the majority of locations i chose the model that included QO data. There were 3 locations, 30,37,56 where i thought the model without QO data was better and so chose those forecasts instead.
 2023-12-30: Not much to report. Still running a few slightly different versions of the model and then hand picking which model to submit for which location.
-2024-03-20:Not in love with Loc 2 but otherwise forecasts look ok"
+2024-03-20: Not in love with Loc 2 but otherwise forecasts look ok
+2024-11-17: new model up and running. Looks like good results visually."
 ensemble_of_models: false
 ensemble_of_hub_models: false
