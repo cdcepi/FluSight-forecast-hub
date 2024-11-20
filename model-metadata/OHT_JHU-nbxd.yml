@@ -23,7 +23,3 @@ ensemble_of_models: true
 ensemble_of_hub_models: false
 website_url: "https://github.com/CDDEP-DC/nbeats-xd"
 repo_url: "https://github.com/CDDEP-DC/nbeats-xd"
-designated_github_users: [
-    "atulchin",
-    "eklein-cddep"
-]
