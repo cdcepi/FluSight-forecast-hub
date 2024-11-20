@@ -1,0 +1,28 @@
+team_name: "VTSanghani"
+team_abbr: "VTSanghani"
+model_name: "Ensemble of deep learning models combined with traditonal statistical models"
+model_abbr: "Ensemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Patrick Butler",
+    "affiliation": "Virginia Tech",
+    "email": "pabutler@vt.edu"
+  },
+  {
+    "name": "Naren Ramakrishnan",
+    "affiliation": "Virginia Tech",
+    "email": "naren@cs.vt.edu"
+  },
+]
+website_url: "https://sanghani.cs.vt.edu/"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: true
+methods: "An ensemble of deep learning models as well as traditonal statistical methods."
+data_inputs: "Daily and weekly incident flu hospitalizations from HHS, Air Quality Index from EPA, Demographic data"
+methods_long: "This ensemble forecasts US national- and state-level influenza hospitalizations.  Included models focus
+  on novel deep learning techniques augmented with traditional statistical predictions"
+ensemble_of_models: true
+ensemble_of_hub_models: false

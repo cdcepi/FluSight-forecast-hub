@@ -111,7 +111,7 @@
             "type": "boolean"
         }
     },
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
         "team_name",
         "team_abbr",
@@ -119,6 +119,7 @@
         "model_abbr",
         "model_contributors",
         "license",
+        "designated_model",
         "data_inputs",
         "methods",
         "methods_long",

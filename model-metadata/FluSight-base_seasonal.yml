@@ -1,0 +1,50 @@
+team_name: "FluSight-base_seasonal"
+team_abbr: "FluSight"
+model_name: "Baseline seasonal model using historic data"
+model_abbr: "base_seasonal"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Annabella Hines",
+    "affiliation": "CDC",
+    "email": "zoh1@cdc.gov"
+  },
+  {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+  {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Kernel density estimation baseline predicting seasonal peak week and intensity of reported laboratory confirmed influenza hospital admissions."
+data_inputs: "Weekly incident flu hospital admissions from HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries and weekly rates of flu hospital admissions from FluSurv-NET."
+methods_long: "These seasonal target estimates were calculated based on a combination of
+  FluSurv-NET (2010/11-2019/20) and HHS/NHSN (2021/22-2023/24) data on influenza hospital admissions. 
+  For the peak week target, peak weeks were identified from each jurisdiction and season; peak week replicates 
+  consisted of national values as well as jurisdiction specific values (14 states for FluSurv-NET and all 
+  states, DC, and Puerto Rico for HHS Protect/NHSN). Gaussian kernel density estimation was used to approximate 
+  the distribution of peak weeks and hospitalization rates to then generate predicted peak probabilities 
+  for each week of the flu season. The intial distribution encompassed epidemic weeks 40 through 22, 
+  but the probabilities were proportionally redistributed to align with the current season's challenge 
+  period (epidemic weeks 47 through 22). The same distribution was replicated for the national level and 
+  all jurisdictions.
+
+  For the peak intensity baseline, kernel density estimation was performed on historic weekly hospitalization 
+  rates from FluSurv-NET and HHS Protect/NHSN (reported counts converted to rates using population size) using 
+  the same seasons specified above and a range of prespecified quantiles, which were then used to estimate the 
+  peak intensity by identifying the maximum value across all quantiles. Once quantile distributions for peak 
+  rates were identified, state population sizes from the 2023 U.S Census Estimates were used to translate these 
+  rates into weekly counts of influenza hospital admissions.
+
+  This method was adapted from previous FluSight Challenge seasonal baselines that included peak week and peak 
+  intensity as targets, specifically from the 2015/16 to 2019/20 seasons."
+ 
+ensemble_of_models: false
+ensemble_of_hub_models: false

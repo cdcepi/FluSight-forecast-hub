@@ -1,0 +1,24 @@
+team_name: "Center for Forecasting and Outbreak Analytics (CFA/CDC); SEIR model team"
+team_abbr: "cfa"
+model_name: "flu-mechanistic"
+model_abbr: "flumech"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Sam Brand",
+    "affiliation": "CFA/CDC",
+    "email": "usi1@cdc.gov"
+  },
+  {
+    "name": "Trevor Martin",
+    "affiliation": "CFA/CDC",
+    "email": "upx3@cdc.gov"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+methods: "SEIR mechanistic model for each US state with Bayesian inference."
+data_inputs: "Daily incident flu hospitalizations, queried through covidData, weekly NREVSS queried through `cdcfluview`."
+methods_long: "A mechanistic model generates infections for each day in season for three age groups (children, adults and 65+ elderly) and three flu subtypes (H1N1pdm09, H3N2, B), some of these infections lead to observed data (with delays). The observed data used to calculate the log-likelihood is daily HHS incident hospitalisations per day, weekly flu A/B test positives from clinical labs, and total test distribution across ages and flu subtypes from Public Health labs."
+ensemble_of_models: false
+ensemble_of_hub_models: false

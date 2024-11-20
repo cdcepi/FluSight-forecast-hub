@@ -1,0 +1,29 @@
+team_name: "GT-AdityaLab"
+team_abbr: "GT"
+model_name: "FluFNP"
+model_abbr: "FluFNP"
+model_contributors: [
+  {
+    "name": "B.Aditya Prakash",
+    "affiliation": "GeorgiaTech",
+    "email": "badityap@cc.gatech.edu"
+  },
+  {
+    "name": "Harshavardhan Kamarthi",
+    "affiliation": "GeorgiaTech",
+    "email": "hkamarthi3@gatech.edu"
+  },
+  {
+    "name": "Zhiyuan Zhao",
+    "affiliation": "GeorgiaTech",
+    "email": "leozhao1997@gatech.edu"
+  },
+]
+website_url: "https://adityalab.cc.gatech.edu/"
+license: "CC-BY-4.0"
+designated_model: True
+data_inputs: "Daily and weekly incident flu hospitalizations, queried through covidData"
+methods: "Calibrated and Accurate Multi-view Time-Series Forecasting"
+methods_long: "Integrate the knowledge and uncertainty from each data view in a dynamic context-specific manner assigning more importance to useful views to model a well-calibrated forecast distribution"
+ensemble_of_models: False
+ensemble_of_hub_models: False

@@ -23,17 +23,20 @@ model_contributors: [
     "name": "Evan Ray",
     "affiliation": "UMass Amherst",
     "email": "elray@umass.edu"
+  },
+  {
+    "name": "Li Shandross",
+    "affiliation": "UMass Amherst",
+    "email": "lshandross@umass.edu"
   }
 ]
-website_url: "https://github.com/reichlab/flu-hosp-models-2021-2022"
+website_url: "https://github.com/reichlab/trendsEnsemble"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-include_viz: true
-include_ensemble: true
-include_eval: true
+designated_model: true
 methods: "Equally weighted ensemble of simple time-series baseline models."
-data_inputs: "Daily and weekly incident flu hospitalizations, queried through covidData"
-methods_long: "Equally weighted ensemble of simple time-series baseline models. Each baseline model calculates first differences of incidence in recent weeks. These differences are sampled and then added to the most recently observed incidence. Variations on this method include (a) including the first differences and the negative of these differences to enforce symmetry, resulting in a flat-line forecast, (b) generating predictions by working on the daily scale and then aggregating to weekly predictions, or by working directly with weekly data; (c) varying the number of time-units in the past for computing the first differences (14 or 21 days, or 3 or 4 weeks) to focus on capturing recent trends, and (d) using the original time-series or a variance-stabilizing transformation of it, e.g. square-root. Additionally, the resulting predictive distributions are truncated so that any predicted samples computed to be less than zero are truncated to be zero."
+data_inputs: "Weekly incident flu hospitalizations"
+methods_long: "Equally weighted ensemble of simple time-series baseline models. Each baseline model calculates first differences of incidence in recent weeks. These differences are sampled and then added to the most recently observed incidence. Variations on this method include (a) including the first differences and the negative of these differences to enforce symmetry, resulting in a flat-line forecast, (b) varying the number of time-units in the past for computing the first differences (3 or 4 weeks) to focus on capturing recent trends, and (c) using the original time-series or a variance-stabilizing transformation of it, e.g. square-root. Additionally, the resulting predictive distributions are truncated so that any predicted samples computed to be less than zero are truncated to be zero."
 ensemble_of_models: true
 ensemble_of_hub_models: false

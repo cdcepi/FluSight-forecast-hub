@@ -1,0 +1,26 @@
+team_name: "UMass-Amherst"
+team_abbr: "UMass"
+model_name: "Ensemble of time series models"
+model_abbr: "flusion"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Evan Ray",
+    "affiliation": "UMass Amherst",
+    "email": "elray@umass.edu"
+  }
+]
+website_url: "https://github.com/reichlab/flusion"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: true
+methods: "Ensemble of statistical and machine learning time series models."
+data_inputs: "Weekly incident flu hospitalizations from HHS Protect, hospitalizations from FluSurv-NET, and ILI+ obtained by combining ILINet outpatient ILI rates with WHO/NREVSS test positivity rates."
+methods_long: "
+  2023-10-14: A linear pool of two sub-ensembles, one fit with all available data and one fit dropping the last data point which may be subject to revisions. Each sub-ensemble is an equally-weighted Vincent median ensemble of three components: 1) an AR(8) model fit only to HHS data on a fourth root scale; 2) a gradient boosting model fit to data from all three sources with uncertainty based on bootstrapping out-of-bag prediction errors; 3) a gradient boosting model fit to all three data sources with quantile regression separately for each quantile level, with predictions sorted to address quantile crossing.
+  2023-10-21: Fit only to the data release including data up through the week of 2023-10-14. Dropped bootstrap method, so submission is a quantile averaged ensemble of AR(8) and the gradient boosting model with quantile regression for all quantiles.
+  2023-11-25: Data for AK are suspect; low counts, including a reported 0 for Sat Nov 18. Roughly 18-20 reporting facilities per day rather than historical values of 21 or 22. I don't have a principled way to deal with this, so the submission for AK is a linear pool of predictions with and without the last weekly observation.
+  2023-12-02: Added a third component model, which is a gradient boosted quantile regression model that does not use any features that are a measure of the level of recent incidence."
+ensemble_of_models: true
+ensemble_of_hub_models: false
