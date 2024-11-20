@@ -29,8 +29,8 @@ methods_long: "
   
   Denoting the value of the transformed signal at time t by z_t, the model is:
   Z_t | z_{t-1}, z_{t-2}, a_1, a_2, sigma ~ N(a_1 * z_{t-1} + a_2 * z_{t-2}, sigma^2)
-  a_1, a_2 ~ Cauchy(0, 1)
-  sigma ~ Half-Cauchy(0, 1)
+  a_1, a_2 | eta ~ Normal(0, eta^2)
+  sigma, eta ~ Half-Cauchy(0, 1)
   
   This is intended as a baseline model.
   "
