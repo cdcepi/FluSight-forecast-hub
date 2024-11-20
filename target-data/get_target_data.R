@@ -41,7 +41,7 @@ library(RSocrata)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
-setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
+#setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
   
 target_data <- fetch_flu()
 
