@@ -10,17 +10,17 @@ model_contributors: [
     "orcid": "0000-0002-8808-8937"
   },
   {
+    "name": "Teresa Yamana",
+    "affiliation": "Columbia University",
+    "email": "tky2104@cumc.columbia.edu",
+    "orcid": "0000-0001-8349-3151"
+  },
+  {
     "name": "Sen Pei",
     "affiliation": "Columbia University",
     "email": "sp3449@cumc.columbia.edu",
     "orcid": "0000-0002-7072-2995"
-  }
-  {
-    "name": "Teresa Yamana",
-    "affiliation": "Columbia University",
-    "email": "tky2104@cumc.columbia.edu>",
-    "orcid": "0000-0001-8349-3151"
-  }
+  },
   {
     "name": "Jeffrey Shaman",
     "affiliation": "Columbia University",
