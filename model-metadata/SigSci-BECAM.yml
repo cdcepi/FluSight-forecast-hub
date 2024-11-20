@@ -1,0 +1,32 @@
+team_name: "Signature Science"
+team_abbr: "SigSci"
+model_name: "Baseline Empirical Categorical Model"
+model_abbr: "BECAM"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "VP Nagraj",
+    "affiliation": "Signature Science, LLC",
+    "email": "pnagraj@signaturescience.com"
+  },
+  {
+    "name": "Amy Benefield",
+    "affiliation": "Signature Science, LLC",
+    "email": "abenefield@signaturescience.com"
+  },
+  {
+    "name": "Desiree Williams",
+    "affiliation": "Signature Science, LLC",
+    "email": "dwilliams@signaturescience.com"
+  }
+]
+website_url: "https://github.com/signaturescience/fiphde"
+license: "CC-BY-4.0"
+citation: ""
+team_funding: "CSTE subaward"
+designated_model: true
+methods: "Categorical forecasts derived from observed rate changes over time."
+data_inputs: "Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN)."
+methods_long: "Categorical forecasts derived from observed rate changes over time. Originally developed as a potential baseline categorical forecaster. The model is fit each week by first retrieving weekly flu hospitalizations reported via NHSN at the state and national level, then characterizing the rate change at horizons per the FluSight guidelines. The algorithm then bins rate changes within locations and computes the proportion of observed categories. The proportion of each category is assigned as the probability for the given horizon and location."
+ensemble_of_models: false
+ensemble_of_hub_models: false
