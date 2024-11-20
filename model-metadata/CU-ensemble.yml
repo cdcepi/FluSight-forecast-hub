@@ -1,7 +1,7 @@
 team_name: "Columbia University"
 team_abbr: "CU"
-model_name: "Columbia University Ensemble"
-model_abbr: "CU-ensemble"
+model_name: "Ensemble"
+model_abbr: "ensemble"
 model_contributors: [
   {
     "name": "Rami Yaari",
