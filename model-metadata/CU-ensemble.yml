@@ -1,7 +1,7 @@
 team_name: "Columbia University"
 team_abbr: "CU"
-model_name: "Ensemble"
-model_abbr: "ensemble"
+model_name: "Columbia University Ensemble"
+model_abbr: "CU_ensemble"
 model_contributors: [
   {
     "name": "Rami Yaari",
@@ -30,8 +30,8 @@ model_contributors: [
 ]
 website_url: "https://blogs.cuit.columbia.edu/jls106/"
 repo_url: "https://github.com/ramiyaari/Flusight-CU-Ensemble"
-license: "cc-by-4.0"
-team_model_designation: "primary"
+license: "CC-BY-4.0"
+designated_model: true
 ensemble_of_models: true
 ensemble_of_hub_models: false
 data_inputs: "1) State specific weekly total number of hospitalized patients taken from the US Department of Health and Human Services, COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries (target data), 2) State specific weekly weighted influenza-like illness values downloaded from the CDC website, 3) State specific weekly percentage of positive influenza lab tests downloaded from the CDC FluView website, and 4) State specific weekly average absolute humidity values"
