@@ -1,6 +1,6 @@
 # Target data 
 
-The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that FluSight forecasts are eventually compared to. Influenza hospitalization data are taken from the [National Healthcare Safety Network Hospital Respitatory Dataset](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy/about_data).
+The target-data folder contains the laboratory confirmed influenza hospital admission ("gold standard") data that FluSight forecasts are eventually compared to. Influenza hospitalization data are taken from the [National Healthcare Safety Network Hospital Respitatory Dataset](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data).
 
 *Table of Contents*
 
@@ -14,7 +14,7 @@ Hospitalization data
 
 ### NHSN Weekly Hospital Respiratory Data
 
-FluSight hospital admission prediction targets (`wk inc flu hosp`,`wk flu hosp rate changes`, `peak week inc flu hosp`, and `peak inc flu hosp`) for this season will be based on the ['total number of patients hospitalized with influenza captured for the Wednesday of the reporting week'](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy/about_data) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [Weekly Hospital Respiratory Data](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data).
+FluSight hospital admission prediction targets (`wk inc flu hosp`,`wk flu hosp rate changes`, `peak week inc flu hosp`, and `peak inc flu hosp`) for this season will be based on the ['total number of patients hospitalized with influenza captured for the Wednesday of the reporting week'](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [Weekly Hospital Respiratory Data](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data).
 These data are released weekly.
 
 
