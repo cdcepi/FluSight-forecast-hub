@@ -30,7 +30,7 @@ model_contributors: [
 ]
 website_url: "https://blogs.cuit.columbia.edu/jls106/"
 repo_url: "https://github.com/ramiyaari/Flusight-CU-Ensemble"
-license: "cc-by-4.0"
+license: "CC-BY-4.0"
 team_model_designation: "primary"
 ensemble_of_models: true
 ensemble_of_hub_models: false
