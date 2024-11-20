@@ -1,0 +1,25 @@
+team_name: "One Health Trust and Johns Hopkins University"
+team_abbr: "OHT_JHU"
+model_name: "NBEATS exogenous covariate decoder"
+model_abbr: "nbxd"
+model_contributors: [
+  {
+    "name": "Alexander Tulchinsky",
+    "affiliation": "One Health Trust",
+    "email": "tulchinsky@onehealthtrust.org"
+  },
+  {
+    "name": "Eili Klein",
+    "affiliation": "One Health Trust & Johns Hopkins School of Medicine",
+    "email": "eklein@jhu.edu"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly incident hospitalizations, weekly average dew point, NREVSS laboratory surveillance weekly % positivity"
+methods: "Neural network that encodes the data inputs using a TCN (Bai et al. 2018) and decodes the result into a forecast using N-BEATS (Oreshkin et al. 2000)"
+methods_long: "Neural network model based on N-BEATS (Oreshkin et al. 2000), which is a residual block type architecture that generates point forecasts from univariate time series data. The network accepts a fixed lookback window of time points as input, and has a set number of output nodes corresponding to the length of the forecast horizon. We extend the network with additional residual blocks that output error variance forecasts (evaluated using a likelihood loss function) which allows generating quantile forecasts, assuming a parametric (gamma) error distribution. Additional predictor variables are incorporated using a temporal convolutional network (TCN; Bai et al. 2018). The TCN accepts one input channel for each predictor time series (or static variable), including past values of the target variable, and outputs a single channel with the same length as the lookback window. The TCN output channel is used as the input to the extended N-BEATS network. Each value in the TCN output sequence is a non-linear combination of the predictor variables at that point and all previous points in the lookback window, which preserves the temporal structure of the input. Forecast is the median of an ensemble of such models with varying lookback window sizes and random initializations."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+website_url: "https://github.com/CDDEP-DC/nbeats-xd"
+repo_url: "https://github.com/CDDEP-DC/nbeats-xd"
