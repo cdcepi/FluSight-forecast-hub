@@ -1,0 +1,37 @@
+team_name: "MOBS Lab at Northeastern University and ISI Foundation"
+team_abbr: "NEU_ISI"
+model_name: "Adaptive Ensemble"
+model_abbr: "AdaptiveEnsemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Stefania Fiandrino",
+    "affiliation": "Sapienza, University of Rome, ISI Foundation",
+    "email": "stefania.fiandrino@isi.it"
+  },
+  {
+    "name": "Daniela Paolotti",
+    "affiliation": "ISI Foundation",
+    "email": "daniela.paolotti@isi.it"
+  },
+  {
+    "name": "Nicolò Gozzi",
+    "affiliation": "ISI Foundation",
+    "email": "nicolo.gozzi@isi.it"
+  },
+  {
+    "name": "Alessandro Vespignani",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "alexves@gmail.com"
+  },
+]
+website_url: "https://www.isi.it/"
+license: "CC-BY_SA-4.0"
+designated_model: true
+citation: "not applicable"
+team_funding: "not applicable"
+methods: "An adaptive ensemble of multiple models contributing to the Flu Scenario Modeling Hub."
+data_inputs: "Weekly incident flu hospitalizations, projections submitted to the Flu SMH"
+methods_long: "The adaptive ensemble approach combines projections from the Flu Scenario Modeling Hub across all defined scenarios. The approach leverages new surveillance data points to generate an adaptive ensemble by dynamically rejecting the subset of individual models' trajectories that do not closely match the observed trends."
+ensemble_of_models: true
+ensemble_of_hub_models: true

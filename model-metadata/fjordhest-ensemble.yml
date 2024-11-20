@@ -1,0 +1,30 @@
+team_name: Fjordhest
+team_abbr: fjordhest
+model_name: fjordhest-ensemble
+model_abbr: ensemble
+model_contributors: [
+{
+"name": "Sasi Kandula",
+"affiliation": "Norwegian Institute of Public Health",
+"email": "sasikiran.kandula@fhi.no"
+},
+{
+"name": "Alfonso Diz-Lois Palomares",
+"affiliation": "Norwegian Institute of Public Health; University of Oslo",
+"email": "Alfonso.Diz-LoisPalomares@fhi.no"
+},
+{
+"name": "Birgitte De Blasio",
+"affiliation": "Norwegian Institute of Public Health; University of Oslo",
+"email": "Birgitte.Freiesleben.DeBlasio@fhi.no"
+}
+]
+license: CC-BY_SA-4.0
+designated_model: true
+data_inputs: US Department of Health and Human Services, COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries
+methods: An inverse-WIS weighted ensemble of 3 component models - a compartmental model, a quantile AR model, and a baseline model of random walk with drift. 
+methods_long: The mechanistic model is a stochastic SEIR model, with a sequential Monte Carlo based inference. Quantile autoregression model uses quantgen R package, and is similar to CMU-Timeseries model from 2022/23 season. Random walk model uses fable R package. To build an ensemble, the quantile distributions of the component models are weighted (location- and target-specific) by the mean of inverse-WIS scores over the last 3 weeks that could be evaluated. The estimates are solely the responsibility of the contributors and do not represent, nor are endorsed by, the Norwegian Institute of Public Health.
+ensemble_of_models: true
+ensemble_of_hub_models: false
+team_funding: none
+citation: "Geir Storvik, Alfonso Diz-Lois Palomares, Solveig Engebretsen, et al. (2023) A sequential Monte Carlo approach to estimate a time varying reproduction number in infectious disease models: the COVID-19 case., Journal of the Royal Statistical Society Series A: Statistics in Society, 2023; https://doi.org/10.1093/jrsssa/qnad043; Tibshirani R, Brooks L (2020). quantgen: Tools for generalized quantile modeling; https://github.com/cmu-delphi/flu-hosp-forecast/; O'Hara-Wild M, Hyndman R, Wang E (2022). fable: Forecasting Models for Tidy Time Series. R package version 0.3.2."

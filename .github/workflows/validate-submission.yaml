@@ -23,16 +23,13 @@ jobs:
           install-r: false
           use-public-rspm: true
 
-      - name: Install system dependencies
+      - name: Update R
         run: |
           sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev libv8-dev
 
-      - name: Install HubValidations
-        run: |
-          install.packages("remotes")
-          remotes::install_github("Infectious-Disease-Modeling-Hubs/hubValidations")
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: Infectious-Disease-Modeling-Hubs/hubValidations, any::sessioninfo
 
       - name: Run validations
         env:

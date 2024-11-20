@@ -1,0 +1,34 @@
+team_name: UGA_flucast
+team_abbr: UGA_flucast
+model_name: OKeeffe
+model_abbr: OKeeffe
+model_contributors: [
+  {
+    "name": "Spencer Fox",
+    "affiliation": "University of Georgia",
+    "email": "sjfox@uga.edu",
+    "orcid": "0000-0003-1969-3778"
+  },
+  {
+    "name": "Graham C. Gibson",
+    "affiliation": "Los Alamos National Laboratories",
+    "email": "gcgibson@lanl.gov",
+    "orcid": "1234-1234-1234-1234"
+  },
+  {
+    "name": "Lauren Meyers",
+    "affiliation": "The University of Texas at Austin",
+    "email": "laurenmeyers@austin.utexas.edu",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: HHS
+methods: An epidemic model with an underlying machine learning component, coupled with a tempering term that acts as susceptible depletion and is estimated from historical data.
+methods_long: A class of epidemic models with a flexible underlying machine learning component, coupled with a tempering term that functionally acts as susceptible depletion, but can be estimated from historical data. We use historic HHS influenza wave data to make future forecasts
+website_url: https://github.com/gcgibson/semimech_package
+ensemble_of_models: false
+ensemble_of_hub_models: false
+team_funding: CSTE/CDC award NU38OT000297 
+

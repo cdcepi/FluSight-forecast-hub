@@ -1,0 +1,33 @@
+team_name: "Signature Science"
+team_abbr: "SigSci"
+model_name: "Count Regression"
+model_abbr: "CREG"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "VP Nagraj",
+    "affiliation": "Signature Science, LLC",
+    "email": "pnagraj@signaturescience.com"
+  },
+  {
+    "name": "Amy Benefield",
+    "affiliation": "Signature Science, LLC",
+    "email": "abenefield@signaturescience.com"
+  },
+  {
+    "name": "Desiree Williams",
+    "affiliation": "Signature Science, LLC",
+    "email": "dwilliams@signaturescience.com"
+  }
+]
+website_url: "https://github.com/signaturescience/fiphde"
+license: "CC-BY-4.0"
+citation: ""
+team_funding: "CSTE subaward"
+designated_model: true
+methods: "Count regression modeling."
+data_inputs: "Weekly incident flu hospitalizations by state retrieved from HHS Protect API. Percent positivity of clinical lab tests by state retrieved from NREVSS. Percentage of outpatient visits characterized as influenza-like illness (ILI) by state from ILInet."
+methods_long: "Count regression modeling approach. The procedure independently fits multiple count regression models for each location every week. Possible models are defined by a grid of all combinations of potential covariates (e.g., ILI, percent positivity of clinical lab flu tests) and model families (e.g., negative binomial, quasipoisson). The best fit model for the given forecast week and location is carried forward to generate forecasts. Forecasted values are rounded to the nearest integer and truncated at zero to align with hospitalization count target. All forecasts are reviewed for plausibility by a human prior to submission."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+
