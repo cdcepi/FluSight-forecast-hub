@@ -1,0 +1,38 @@
+team_name: "UMass-Amherst"
+team_abbr: "UMass"
+model_name: "AR(2)"
+model_abbr: "AR2"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Evan Ray",
+    "affiliation": "UMass Amherst",
+    "email": "elray@umass.edu"
+  }
+]
+website_url: "https://github.com/reichlab/idmodels"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: false
+methods: "An AR(2) model fit separately to each location."
+data_inputs: "Weekly incident flu hospitalizations from NHSN."
+methods_long: "
+  This is an AR(2) model fit separately to each location using Bayesian methods.
+  Prior to model estimation, we perform the following three data transformations:
+   1. Convert hospitalization counts to a rate per 100,000 population.
+   2. Take the fourth root.
+   3. Scale and center, dividing by the 95th percentile of all weekly values for
+      the given location and subsequently subtracting the mean.
+  Predictions on the transformed scale are converted back to predictions on the
+  original scale by inverting these transformations.
+  
+  Denoting the value of the transformed signal at time t by z_t, the model is:
+  Z_t | z_{t-1}, z_{t-2}, a_1, a_2, sigma ~ N(a_1 * z_{t-1} + a_2 * z_{t-2}, sigma^2)
+  a_1, a_2 | eta ~ Normal(0, eta^2)
+  sigma, eta ~ Half-Cauchy(0, 1)
+  
+  This is intended as a baseline model.
+  "
+ensemble_of_models: false
+ensemble_of_hub_models: false

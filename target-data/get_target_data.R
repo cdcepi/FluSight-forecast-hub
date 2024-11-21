@@ -11,8 +11,8 @@ fetch_flu <- function(){
   require(stringr)
   
   #read data from data.cdc.gov, filtering for when flu reporting became mandatory
-  health_data = RSocrata::read.socrata(url = "https://data.cdc.gov/resource/ua7e-t2fy.json") %>% 
-    dplyr::filter(weekendingdate >= as.Date("2024-11-02"))
+  health_data = RSocrata::read.socrata(url = "https://data.cdc.gov/resource/mpgq-jmmr.json") %>% 
+    dplyr::filter(weekendingdate >= as.Date("2022-02-01"))
   
   #remove  VI and AS as they are not included for FluSight, keep only necessary vars and add epiweek and epiyear 
   recent_data = health_data %>% 
@@ -41,7 +41,7 @@ library(RSocrata)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
-setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
+#setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
   
 target_data <- fetch_flu()
 
