@@ -24,8 +24,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,01,quantile,0.99,45.80866527557373
 2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,decrease,0.0853131516133362
 2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,increase,0.0079905382955018
-2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,largedecrease,8.047260097807089e-26
-2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,large_decrease,8.047260097807089e-26
+2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,01,pmf,stable,0.9066963100911618
 2024-11-23,0,wk inc flu hosp,2024-11-23,02,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,02,quantile,0.025,0.0
@@ -52,8 +52,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,02,quantile,0.99,7.037440099716187
 2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,decrease,0.0669775428010257
 2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,increase,0.2251771109880319
-2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,largedecrease,4.929433787590697e-13
-2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,largeincrease,8.370493187470629e-11
+2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,large_decrease,4.929433787590697e-13
+2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,large_increase,8.370493187470629e-11
 2024-11-23,0,wk flu hosp rate change,2024-11-23,02,pmf,stable,0.7078453461267444
 2024-11-23,0,wk inc flu hosp,2024-11-23,04,quantile,0.01,56.60648488998413
 2024-11-23,0,wk inc flu hosp,2024-11-23,04,quantile,0.025,56.60648488998413
@@ -80,8 +80,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,04,quantile,0.99,143.64943552017212
 2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,decrease,0.1644284378119435
 2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,increase,0.1246947511297955
-2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,largedecrease,9.45905592471923e-10
-2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,largeincrease,3.1597480187883775e-10
+2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,large_decrease,9.45905592471923e-10
+2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,large_increase,3.1597480187883775e-10
 2024-11-23,0,wk flu hosp rate change,2024-11-23,04,pmf,stable,0.7108768097963805
 2024-11-23,0,wk inc flu hosp,2024-11-23,05,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,05,quantile,0.025,0.0
@@ -108,8 +108,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,05,quantile,0.99,14.840148210525513
 2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,decrease,0.0117437909960205
 2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,increase,0.0053274347471236
-2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,largedecrease,1.7283663050590041e-43
-2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,large_decrease,1.7283663050590041e-43
+2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,05,pmf,stable,0.982928774256856
 2024-11-23,0,wk inc flu hosp,2024-11-23,06,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,06,quantile,0.025,0.0
@@ -136,8 +136,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,06,quantile,0.99,155.61709785461426
 2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,decrease,0.0424310661610388
 2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,increase,0.0001036248927114
-2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,largedecrease,3.592418699124137e-47
-2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,large_decrease,3.592418699124137e-47
+2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,06,pmf,stable,0.9574653089462496
 2024-11-23,0,wk inc flu hosp,2024-11-23,08,quantile,0.01,1.0034690499305725
 2024-11-23,0,wk inc flu hosp,2024-11-23,08,quantile,0.025,1.0034690499305725
@@ -164,8 +164,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,08,quantile,0.99,15.360557973384855
 2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,decrease,9.60526804290505e-08
 2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,increase,6.0865655848729724e-09
-2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,largedecrease,1.3098764300420053e-198
-2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,large_decrease,1.3098764300420053e-198
+2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,08,pmf,stable,0.999999897860754
 2024-11-23,0,wk inc flu hosp,2024-11-23,09,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,09,quantile,0.025,0.0
@@ -192,8 +192,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,09,quantile,0.99,26.230529651641845
 2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,decrease,0.0277789371448927
 2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,increase,0.121061264163388
-2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,largedecrease,2.248709162916677e-19
-2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,largeincrease,1.1102230246251563e-16
+2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,large_decrease,2.248709162916677e-19
+2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,large_increase,1.1102230246251563e-16
 2024-11-23,0,wk flu hosp rate change,2024-11-23,09,pmf,stable,0.8511597986917192
 2024-11-23,0,wk inc flu hosp,2024-11-23,10,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,10,quantile,0.025,0.0
@@ -220,8 +220,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,10,quantile,0.99,3.263296380639076
 2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,decrease,3.906876169575292e-05
 2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,increase,0.000633522281684
-2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,largedecrease,1.8654190289098315e-106
-2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,large_decrease,1.8654190289098315e-106
+2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,10,pmf,stable,0.9993274089566202
 2024-11-23,0,wk inc flu hosp,2024-11-23,11,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,11,quantile,0.025,0.0
@@ -248,8 +248,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,11,quantile,0.99,7.422314682006835
 2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,decrease,0.0062336457157333
 2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,increase,0.4819879105985849
-2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,largedecrease,4.068308082529334e-19
-2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,largeincrease,7.535094770361184e-11
+2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,large_decrease,4.068308082529334e-19
+2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,large_increase,7.535094770361184e-11
 2024-11-23,0,wk flu hosp rate change,2024-11-23,11,pmf,stable,0.5117784436103308
 2024-11-23,0,wk inc flu hosp,2024-11-23,12,quantile,0.01,48.96141052246094
 2024-11-23,0,wk inc flu hosp,2024-11-23,12,quantile,0.025,48.96141052246094
@@ -276,8 +276,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,12,quantile,0.99,240.7428436279297
 2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,decrease,0.234711544329136
 2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,increase,0.0216610583668577
-2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,largedecrease,6.27387994940924e-13
-2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,large_decrease,6.27387994940924e-13
+2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,12,pmf,stable,0.7436273973033789
 2024-11-23,0,wk inc flu hosp,2024-11-23,13,quantile,0.01,17.444205932617194
 2024-11-23,0,wk inc flu hosp,2024-11-23,13,quantile,0.025,17.444205932617194
@@ -304,8 +304,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,13,quantile,0.99,91.18544036865234
 2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,decrease,2.421878358469279e-05
 2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,increase,0.3520319191433642
-2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,largedecrease,1.6811569440902875e-47
-2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,large_decrease,1.6811569440902875e-47
+2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,13,pmf,stable,0.6479438620730511
 2024-11-23,0,wk inc flu hosp,2024-11-23,15,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,15,quantile,0.025,0.0
@@ -332,8 +332,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,15,quantile,0.99,8.700756311416626
 2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,decrease,0.6147177520711928
 2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,increase,9.209093921991318e-06
-2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,largedecrease,1.7055001504440997e-22
-2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,large_decrease,1.7055001504440997e-22
+2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,15,pmf,stable,0.3852730388348852
 2024-11-23,0,wk inc flu hosp,2024-11-23,16,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,16,quantile,0.025,0.0
@@ -360,8 +360,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,16,quantile,0.99,5.0816168785095215
 2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,decrease,3.9940274335598066e-11
 2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,increase,3.605114839988488e-08
-2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,largedecrease,1.1718442182178403e-242
-2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,large_decrease,1.1718442182178403e-242
+2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,16,pmf,stable,0.9999999639089112
 2024-11-23,0,wk inc flu hosp,2024-11-23,17,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,17,quantile,0.025,0.0
@@ -388,8 +388,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,17,quantile,0.99,45.19319023132324
 2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,decrease,6.242775256257496e-05
 2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,increase,0.0002660878263015
-2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,largedecrease,5.243532227418476e-95
-2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,large_decrease,5.243532227418476e-95
+2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,17,pmf,stable,0.9996714844211358
 2024-11-23,0,wk inc flu hosp,2024-11-23,18,quantile,0.01,4.208646774291992
 2024-11-23,0,wk inc flu hosp,2024-11-23,18,quantile,0.025,4.208646774291992
@@ -416,8 +416,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,18,quantile,0.99,51.45337867736816
 2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,decrease,0.0011158603610731
 2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,increase,0.1970812799119825
-2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,largedecrease,1.914665457527437e-33
-2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,large_decrease,1.914665457527437e-33
+2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,18,pmf,stable,0.8018028597269443
 2024-11-23,0,wk inc flu hosp,2024-11-23,19,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,19,quantile,0.025,0.0
@@ -444,8 +444,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,19,quantile,0.99,19.794452667236328
 2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,decrease,0.0047316357754677
 2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,increase,0.0648501070999397
-2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,largedecrease,1.1745833454552556e-32
-2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,large_decrease,1.1745833454552556e-32
+2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,19,pmf,stable,0.9304182571245924
 2024-11-23,0,wk inc flu hosp,2024-11-23,20,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,20,quantile,0.025,0.0
@@ -472,8 +472,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,20,quantile,0.99,34.85516166687012
 2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,decrease,0.0001594864379303
 2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,increase,0.0437568373494409
-2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,largedecrease,8.86263613180873e-56
-2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,large_decrease,8.86263613180873e-56
+2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,20,pmf,stable,0.9560836762126288
 2024-11-23,0,wk inc flu hosp,2024-11-23,21,quantile,0.01,0.2353537864983081
 2024-11-23,0,wk inc flu hosp,2024-11-23,21,quantile,0.025,0.2353537864983081
@@ -500,8 +500,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,21,quantile,0.99,26.1902767829597
 2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,decrease,0.0017727193467461
 2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,increase,0.1325929099134186
-2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,largedecrease,2.154843904038043e-33
-2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,large_decrease,2.154843904038043e-33
+2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,21,pmf,stable,0.8656343707398352
 2024-11-23,0,wk inc flu hosp,2024-11-23,22,quantile,0.01,17.001039505004883
 2024-11-23,0,wk inc flu hosp,2024-11-23,22,quantile,0.025,17.001039505004883
@@ -528,8 +528,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,22,quantile,0.99,40.90860176086426
 2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,decrease,0.002874026634621
 2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,increase,0.0363079108368011
-2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,largedecrease,5.8774569959944805e-40
-2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,large_decrease,5.8774569959944805e-40
+2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,22,pmf,stable,0.9608180625285778
 2024-11-23,0,wk inc flu hosp,2024-11-23,23,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,23,quantile,0.025,0.0
@@ -556,8 +556,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,23,quantile,0.99,7.551947131156922
 2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,decrease,3.445854095626256e-07
 2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,increase,0.0012505461707826
-2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,largedecrease,1.616762278947681e-137
-2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,large_decrease,1.616762278947681e-137
+2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,23,pmf,stable,0.9987491092438078
 2024-11-23,0,wk inc flu hosp,2024-11-23,24,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,24,quantile,0.025,0.0
@@ -584,8 +584,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,24,quantile,0.99,9.60790419578552
 2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,decrease,3.1673259393353863e-17
 2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,increase,0.0
-2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,largedecrease,0.0
-2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,large_decrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,24,pmf,stable,1.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,25,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,25,quantile,0.025,0.0
@@ -612,8 +612,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,25,quantile,0.99,25.343714714050293
 2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,decrease,0.0006538656222738
 2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,increase,0.0105563881241497
-2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,largedecrease,1.3865221486539677e-58
-2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,large_decrease,1.3865221486539677e-58
+2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,25,pmf,stable,0.9887897462535764
 2024-11-23,0,wk inc flu hosp,2024-11-23,26,quantile,0.01,1.563070678710929
 2024-11-23,0,wk inc flu hosp,2024-11-23,26,quantile,0.025,1.563070678710929
@@ -640,8 +640,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,26,quantile,0.99,80.28858337402345
 2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,decrease,1.195472148454836e-05
 2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,increase,0.410183252225365
-2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,largedecrease,3.911233735854695e-49
-2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,large_decrease,3.911233735854695e-49
+2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,26,pmf,stable,0.5898047930531505
 2024-11-23,0,wk inc flu hosp,2024-11-23,27,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,27,quantile,0.025,0.0
@@ -668,8 +668,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,27,quantile,0.99,107.21064174175262
 2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,decrease,0.0647091210720558
 2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,increase,0.6122333408834105
-2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,largedecrease,4.908584131591696e-06
-2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,largeincrease,0.00455712916605
+2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,large_decrease,4.908584131591696e-06
+2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,large_increase,0.00455712916605
 2024-11-23,0,wk flu hosp rate change,2024-11-23,27,pmf,stable,0.318495500294352
 2024-11-23,0,wk inc flu hosp,2024-11-23,28,quantile,0.01,3.5654983520507812
 2024-11-23,0,wk inc flu hosp,2024-11-23,28,quantile,0.025,3.5654983520507812
@@ -696,8 +696,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,28,quantile,0.99,26.987125396728516
 2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,decrease,0.1637214007871793
 2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,increase,0.0092138756462142
-2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,largedecrease,4.811348680116737e-18
-2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,large_decrease,4.811348680116737e-18
+2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,28,pmf,stable,0.8270647235666064
 2024-11-23,0,wk inc flu hosp,2024-11-23,29,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,29,quantile,0.025,0.0
@@ -724,8 +724,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,29,quantile,0.99,65.10303245544434
 2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,decrease,0.1260178217639809
 2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,increase,0.0793663368519596
-2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,largedecrease,2.145392093288751e-12
-2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,largeincrease,3.2118752102405784e-13
+2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,large_decrease,2.145392093288751e-12
+2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,large_increase,3.2118752102405784e-13
 2024-11-23,0,wk flu hosp rate change,2024-11-23,29,pmf,stable,0.7946158413815929
 2024-11-23,0,wk inc flu hosp,2024-11-23,30,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,30,quantile,0.025,0.0
@@ -752,8 +752,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,30,quantile,0.99,10.11900269985199
 2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,decrease,0.0170741007303754
 2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,increase,0.1952131762557252
-2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,largedecrease,4.2602956673694064e-24
-2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,large_decrease,4.2602956673694064e-24
+2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,30,pmf,stable,0.7877127230138993
 2024-11-23,0,wk inc flu hosp,2024-11-23,31,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,31,quantile,0.025,0.0
@@ -780,8 +780,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,31,quantile,0.99,6.9482262134552
 2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,decrease,0.0011894994232109
 2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,increase,0.000796819647765
-2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,largedecrease,7.926773737998692e-69
-2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,large_decrease,7.926773737998692e-69
+2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,31,pmf,stable,0.998013680929024
 2024-11-23,0,wk inc flu hosp,2024-11-23,32,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,32,quantile,0.025,0.0
@@ -808,8 +808,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,32,quantile,0.99,50.92215347290039
 2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,decrease,0.1932532838416688
 2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,increase,0.2133925786832793
-2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,largedecrease,3.1009586946323384e-06
-2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,largeincrease,4.3313076040218945e-06
+2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,large_decrease,3.1009586946323384e-06
+2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,large_increase,4.3313076040218945e-06
 2024-11-23,0,wk flu hosp rate change,2024-11-23,32,pmf,stable,0.5933467052087531
 2024-11-23,0,wk inc flu hosp,2024-11-23,33,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,33,quantile,0.025,0.0
@@ -836,8 +836,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,33,quantile,0.99,3.622881531715393
 2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,decrease,8.127954886554104e-07
 2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,increase,8.477412127383399e-05
-2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,largedecrease,2.0033974844987222e-151
-2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,large_decrease,2.0033974844987222e-151
+2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,33,pmf,stable,0.9999144130832376
 2024-11-23,0,wk inc flu hosp,2024-11-23,34,quantile,0.01,9.15786361694336
 2024-11-23,0,wk inc flu hosp,2024-11-23,34,quantile,0.025,9.15786361694336
@@ -864,8 +864,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,34,quantile,0.99,45.96422576904297
 2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,decrease,6.17268023050033e-05
 2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,increase,0.0207021908376469
-2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,largedecrease,9.163976688696935e-69
-2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,large_decrease,9.163976688696935e-69
+2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,34,pmf,stable,0.979236082360048
 2024-11-23,0,wk inc flu hosp,2024-11-23,35,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,35,quantile,0.025,0.0
@@ -892,8 +892,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,35,quantile,0.99,18.025513172149655
 2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,decrease,0.0324477179700242
 2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,increase,0.1199661767702202
-2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,largedecrease,2.759133162487885e-21
-2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,large_decrease,2.759133162487885e-21
+2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,35,pmf,stable,0.8475861052597555
 2024-11-23,0,wk inc flu hosp,2024-11-23,36,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,36,quantile,0.025,0.0
@@ -920,8 +920,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,36,quantile,0.99,90.12687240600587
 2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,decrease,2.0837806005977255e-09
 2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,increase,0.5066233374773831
-2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,largedecrease,7.163942708695105e-85
-2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,large_decrease,7.163942708695105e-85
+2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,36,pmf,stable,0.4933766604388363
 2024-11-23,0,wk inc flu hosp,2024-11-23,37,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,37,quantile,0.025,0.0
@@ -948,8 +948,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,37,quantile,0.99,107.80133891105652
 2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,decrease,0.0481147156683096
 2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,increase,0.289609949578223
-2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,largedecrease,8.040622403790274e-12
-2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,largeincrease,9.068076844975792e-09
+2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,large_decrease,8.040622403790274e-12
+2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,large_increase,9.068076844975792e-09
 2024-11-23,0,wk flu hosp rate change,2024-11-23,37,pmf,stable,0.6622753256773498
 2024-11-23,0,wk inc flu hosp,2024-11-23,38,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,38,quantile,0.025,0.0
@@ -976,8 +976,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,38,quantile,0.99,4.022585391998291
 2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,decrease,0.0005123121323052
 2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,increase,0.2230147080907514
-2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,largedecrease,2.257161774472908e-47
-2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,large_decrease,2.257161774472908e-47
+2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,38,pmf,stable,0.7764729797769434
 2024-11-23,0,wk inc flu hosp,2024-11-23,39,quantile,0.01,0.2619228363037109
 2024-11-23,0,wk inc flu hosp,2024-11-23,39,quantile,0.025,0.2619228363037109
@@ -1004,8 +1004,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,39,quantile,0.99,695.14768409729
 2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,decrease,0.3876800823237291
 2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,increase,0.2592984489066484
-2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,largedecrease,0.1157779344660526
-2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,largeincrease,0.0422708525358623
+2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,large_decrease,0.1157779344660526
+2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,large_increase,0.0422708525358623
 2024-11-23,0,wk flu hosp rate change,2024-11-23,39,pmf,stable,0.1949726817677074
 2024-11-23,0,wk inc flu hosp,2024-11-23,40,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,40,quantile,0.025,0.0
@@ -1032,8 +1032,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,40,quantile,0.99,31.240535616874695
 2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,decrease,0.102672147222732
 2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,increase,0.0410153672491252
-2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,largedecrease,2.148056930157463e-17
-2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,large_decrease,2.148056930157463e-17
+2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,40,pmf,stable,0.8563124855281427
 2024-11-23,0,wk inc flu hosp,2024-11-23,41,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,41,quantile,0.025,0.0
@@ -1060,8 +1060,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,41,quantile,0.99,15.897533405572176
 2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,decrease,0.0102146385361104
 2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,increase,0.0059737693151817
-2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,largedecrease,1.4443454295299376e-40
-2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,large_decrease,1.4443454295299376e-40
+2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,41,pmf,stable,0.9838115921487076
 2024-11-23,0,wk inc flu hosp,2024-11-23,42,quantile,0.01,4.358444690704346
 2024-11-23,0,wk inc flu hosp,2024-11-23,42,quantile,0.025,4.358444690704346
@@ -1088,8 +1088,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,42,quantile,0.99,83.49261426925659
 2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,decrease,0.0518191743453367
 2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,increase,0.0095569941840971
-2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,largedecrease,1.0921447319070783e-27
-2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,large_decrease,1.0921447319070783e-27
+2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,42,pmf,stable,0.938623831470566
 2024-11-23,0,wk inc flu hosp,2024-11-23,44,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,44,quantile,0.025,0.0
@@ -1116,8 +1116,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,44,quantile,0.99,6.6502766609191895
 2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,decrease,0.0283400035805681
 2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,increase,0.1823577182274417
-2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,largedecrease,2.60311081983263e-21
-2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,large_decrease,2.60311081983263e-21
+2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,44,pmf,stable,0.7893022781919902
 2024-11-23,0,wk inc flu hosp,2024-11-23,45,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,45,quantile,0.025,0.0
@@ -1144,8 +1144,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,45,quantile,0.99,17.478675842285156
 2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,decrease,0.0069124567497587
 2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,increase,1.386845106754464e-06
-2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,largedecrease,1.3464040252629918e-82
-2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,large_decrease,1.3464040252629918e-82
+2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,45,pmf,stable,0.9930861564051344
 2024-11-23,0,wk inc flu hosp,2024-11-23,46,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,46,quantile,0.025,0.0
@@ -1172,8 +1172,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,46,quantile,0.99,4.835848331451416
 2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,decrease,0.0090141804767015
 2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,increase,0.0177932774325055
-2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,largedecrease,1.0583877358744826e-33
-2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,large_decrease,1.0583877358744826e-33
+2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,46,pmf,stable,0.9731925420907928
 2024-11-23,0,wk inc flu hosp,2024-11-23,47,quantile,0.01,20.598530292510983
 2024-11-23,0,wk inc flu hosp,2024-11-23,47,quantile,0.025,20.598530292510983
@@ -1200,8 +1200,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,47,quantile,0.99,64.88496732711792
 2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,decrease,0.0261140649880158
 2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,increase,0.035321316428316
-2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,largedecrease,8.2344886910875e-28
-2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,large_decrease,8.2344886910875e-28
+2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,47,pmf,stable,0.938564618583668
 2024-11-23,0,wk inc flu hosp,2024-11-23,48,quantile,0.01,74.641845703125
 2024-11-23,0,wk inc flu hosp,2024-11-23,48,quantile,0.025,74.641845703125
@@ -1228,8 +1228,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,48,quantile,0.99,188.0086975097656
 2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,decrease,0.0006315945519401
 2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,increase,0.00069214797124
-2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,largedecrease,9.628970714855411e-74
-2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,large_decrease,9.628970714855411e-74
+2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,48,pmf,stable,0.9986762574768198
 2024-11-23,0,wk inc flu hosp,2024-11-23,49,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,49,quantile,0.025,0.0
@@ -1256,8 +1256,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,49,quantile,0.99,8.348699808120728
 2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,decrease,4.598588529756618e-07
 2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,increase,3.49723834521809e-05
-2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,largedecrease,5.886085394879467e-152
-2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,large_decrease,5.886085394879467e-152
+2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,49,pmf,stable,0.9999645677576948
 2024-11-23,0,wk inc flu hosp,2024-11-23,50,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,50,quantile,0.025,0.0
@@ -1284,8 +1284,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,50,quantile,0.99,1.7050172835588455
 2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,decrease,0.0001085726700853
 2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,increase,0.0217100930665471
-2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,largedecrease,6.416974376677318e-62
-2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,large_decrease,6.416974376677318e-62
+2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,50,pmf,stable,0.9781813342633676
 2024-11-23,0,wk inc flu hosp,2024-11-23,51,quantile,0.01,7.180637359619148
 2024-11-23,0,wk inc flu hosp,2024-11-23,51,quantile,0.025,7.180637359619148
@@ -1312,8 +1312,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,51,quantile,0.99,42.85622787475585
 2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,decrease,0.0010185416252906
 2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,increase,0.0073785870333423
-2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,largedecrease,3.214300027167866e-58
-2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,large_decrease,3.214300027167866e-58
+2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,51,pmf,stable,0.9916028713413668
 2024-11-23,0,wk inc flu hosp,2024-11-23,53,quantile,0.01,0.0
 2024-11-23,0,wk inc flu hosp,2024-11-23,53,quantile,0.025,0.0
@@ -1340,8 +1340,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,53,quantile,0.99,21.85680675506592
 2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,decrease,6.533422990680718e-12
 2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,increase,0.923525472578944
-2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,largedecrease,2.802053931975719e-85
-2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,large_decrease,2.802053931975719e-85
+2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,53,pmf,stable,0.0764745274145224
 2024-11-23,0,wk inc flu hosp,2024-11-23,54,quantile,0.01,5.49165153503418
 2024-11-23,0,wk inc flu hosp,2024-11-23,54,quantile,0.025,5.49165153503418
@@ -1368,8 +1368,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,54,quantile,0.99,15.857851028442385
 2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,decrease,5.4612479244779495e-08
 2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,increase,0.954872561298872
-2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,largedecrease,5.160795353708044e-47
-2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,largeincrease,1.0103029524088925e-13
+2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,large_decrease,5.160795353708044e-47
+2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,large_increase,1.0103029524088925e-13
 2024-11-23,0,wk flu hosp rate change,2024-11-23,54,pmf,stable,0.0451273840885478
 2024-11-23,0,wk inc flu hosp,2024-11-23,55,quantile,0.01,2.795940265655517
 2024-11-23,0,wk inc flu hosp,2024-11-23,55,quantile,0.025,2.795940265655517
@@ -1396,8 +1396,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,55,quantile,0.99,9.981474056243895
 2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,decrease,2.8097474171429046e-28
 2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,increase,3.7303493627405266e-14
-2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,largedecrease,0.0
-2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,large_decrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,55,pmf,stable,0.9999999999999628
 2024-11-23,0,wk inc flu hosp,2024-11-23,56,quantile,0.01,0.9189513325691224
 2024-11-23,0,wk inc flu hosp,2024-11-23,56,quantile,0.025,0.9189513325691224
@@ -1424,8 +1424,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,56,quantile,0.99,4.180489718914032
 2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,decrease,0.0002852253926512
 2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,increase,0.025334726541743
-2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,largedecrease,2.4284392908779724e-46
-2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,large_decrease,2.4284392908779724e-46
+2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,56,pmf,stable,0.9743800480656056
 2024-11-23,0,wk inc flu hosp,2024-11-23,72,quantile,0.01,7.611678123474121
 2024-11-23,0,wk inc flu hosp,2024-11-23,72,quantile,0.025,7.611678123474121
@@ -1452,8 +1452,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,72,quantile,0.99,26.965310096740723
 2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,decrease,0.0045381098558705
 2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,increase,0.0222039656257186
-2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,largedecrease,1.1777999546923066e-37
-2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,large_decrease,1.1777999546923066e-37
+2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,72,pmf,stable,0.9732579245184108
 2024-11-23,0,wk inc flu hosp,2024-11-23,US,quantile,0.01,915.3159204101562
 2024-11-23,0,wk inc flu hosp,2024-11-23,US,quantile,0.025,915.3159204101562
@@ -1480,8 +1480,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,0,wk inc flu hosp,2024-11-23,US,quantile,0.99,1935.7675756835936
 2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,decrease,0.0006168687842102
 2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,increase,0.000284216444898
-2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,largedecrease,3.259602182374733e-79
-2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,largeincrease,0.0
+2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,large_decrease,3.259602182374733e-79
+2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,large_increase,0.0
 2024-11-23,0,wk flu hosp rate change,2024-11-23,US,pmf,stable,0.9990989147708916
 2024-11-23,1,wk inc flu hosp,2024-11-30,01,quantile,0.01,10.911033630371094
 2024-11-23,1,wk inc flu hosp,2024-11-30,01,quantile,0.025,10.911033630371094
@@ -1508,8 +1508,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,01,quantile,0.99,70.78446960449219
 2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,decrease,1.4599255431407188e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,increase,0.9876957380294268
-2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,largedecrease,2.526446196123392e-39
-2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,largeincrease,1.564892659899897e-11
+2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,large_decrease,2.526446196123392e-39
+2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,large_increase,1.564892659899897e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,01,pmf,stable,0.0122896626994927
 2024-11-23,1,wk inc flu hosp,2024-11-30,02,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,02,quantile,0.025,0.0
@@ -1536,8 +1536,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,02,quantile,0.99,11.065814018249512
 2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,decrease,5.11620794498368e-07
 2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,increase,0.9975469703328173
-2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,largedecrease,5.111948318881449e-30
-2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,largeincrease,0.0022940187186436
+2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,large_decrease,5.111948318881449e-30
+2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,large_increase,0.0022940187186436
 2024-11-23,1,wk flu hosp rate change,2024-11-30,02,pmf,stable,0.0001584993277445
 2024-11-23,1,wk inc flu hosp,2024-11-30,04,quantile,0.01,22.353493690490723
 2024-11-23,1,wk inc flu hosp,2024-11-30,04,quantile,0.025,22.353493690490723
@@ -1564,8 +1564,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,04,quantile,0.99,201.52420711517337
 2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,decrease,0.0007113219023216
 2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,increase,0.9749837824594286
-2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,largedecrease,8.274523314428478e-15
-2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,largeincrease,0.0114025123384025
+2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,large_decrease,8.274523314428478e-15
+2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,large_increase,0.0114025123384025
 2024-11-23,1,wk flu hosp rate change,2024-11-30,04,pmf,stable,0.0129023832998389
 2024-11-23,1,wk inc flu hosp,2024-11-30,05,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,05,quantile,0.025,0.0
@@ -1592,8 +1592,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,05,quantile,0.99,32.33875537872314
 2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,decrease,0.0002715671258017
 2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,increase,0.8569008344782374
-2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,largedecrease,7.16747780440424e-48
-2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,large_decrease,7.16747780440424e-48
+2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,05,pmf,stable,0.1428275983959608
 2024-11-23,1,wk inc flu hosp,2024-11-30,06,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,06,quantile,0.025,0.0
@@ -1620,8 +1620,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,06,quantile,0.99,186.46963691711423
 2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,decrease,5.10792827202054e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,increase,0.304070325083803
-2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,largedecrease,1.1159640511353829e-155
-2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,large_decrease,1.1159640511353829e-155
+2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,06,pmf,stable,0.6959245669879249
 2024-11-23,1,wk inc flu hosp,2024-11-30,08,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,08,quantile,0.025,0.0
@@ -1648,8 +1648,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,08,quantile,0.99,22.56708335876465
 2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,decrease,1.0029324560086998e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,increase,0.5821190784750073
-2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,largedecrease,4.025184018735325e-272
-2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,large_decrease,4.025184018735325e-272
+2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,08,pmf,stable,0.4178809215149633
 2024-11-23,1,wk inc flu hosp,2024-11-30,09,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,09,quantile,0.025,0.0
@@ -1676,8 +1676,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,09,quantile,0.99,26.03091287612915
 2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,decrease,4.538079922157831e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,increase,0.8893639891417076
-2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,largedecrease,8.14737070949095e-79
-2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,large_decrease,8.14737070949095e-79
+2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,09,pmf,stable,0.1106314727783702
 2024-11-23,1,wk inc flu hosp,2024-11-30,10,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,10,quantile,0.025,0.0
@@ -1704,8 +1704,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,10,quantile,0.99,3.0177040100097656
 2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,decrease,1.961042611913897e-56
 2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,increase,1.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,10,pmf,stable,4.856157165847933e-18
 2024-11-23,1,wk inc flu hosp,2024-11-30,11,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,11,quantile,0.025,0.0
@@ -1732,8 +1732,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,11,quantile,0.99,10.150763206481932
 2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,decrease,2.6666526742696844e-12
 2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,increase,0.9999470629539292
-2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,largedecrease,6.230339517763781e-56
-2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,largeincrease,5.2541043040643665e-05
+2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,large_decrease,6.230339517763781e-56
+2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,large_increase,5.2541043040643665e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,11,pmf,stable,3.96000363379604e-07
 2024-11-23,1,wk inc flu hosp,2024-11-30,12,quantile,0.01,73.65212440490723
 2024-11-23,1,wk inc flu hosp,2024-11-30,12,quantile,0.025,73.65212440490723
@@ -1760,8 +1760,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,12,quantile,0.99,225.3201961517334
 2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,decrease,4.3541911667409316e-08
 2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,increase,0.9838044020869308
-2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,largedecrease,3.3107579060962534e-87
-2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,large_decrease,3.3107579060962534e-87
+2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,12,pmf,stable,0.0161955543711576
 2024-11-23,1,wk inc flu hosp,2024-11-30,13,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,13,quantile,0.025,0.0
@@ -1788,8 +1788,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,13,quantile,0.99,118.63307159423827
 2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,decrease,3.9047394215569775e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,increase,0.907122432480389
-2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,largedecrease,1.3029842663226324e-56
-2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,large_decrease,1.3029842663226324e-56
+2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,13,pmf,stable,0.0928385201253953
 2024-11-23,1,wk inc flu hosp,2024-11-30,15,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,15,quantile,0.025,0.0
@@ -1816,8 +1816,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,15,quantile,0.99,10.96838253736496
 2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,decrease,3.3331691314940196e-10
 2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,increase,0.9995074758836816
-2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,largedecrease,4.0652438914292746e-91
-2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,large_decrease,4.0652438914292746e-91
+2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,15,pmf,stable,0.0004925237830014
 2024-11-23,1,wk inc flu hosp,2024-11-30,16,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,16,quantile,0.025,0.0
@@ -1844,8 +1844,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,16,quantile,0.99,8.44870638847351
 2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,decrease,1.5616910846549069e-21
 2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,increase,0.9993311984943858
-2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,largedecrease,4.977119216366926e-301
-2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,large_decrease,4.977119216366926e-301
+2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,16,pmf,stable,0.0006688015056141
 2024-11-23,1,wk inc flu hosp,2024-11-30,17,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,17,quantile,0.025,0.0
@@ -1872,8 +1872,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,17,quantile,0.99,49.50467811584471
 2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,decrease,1.4244217920710024e-09
 2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,increase,0.1792922548132429
-2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,largedecrease,4.8153202197327985e-291
-2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,large_decrease,4.8153202197327985e-291
+2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,17,pmf,stable,0.8207077437623352
 2024-11-23,1,wk inc flu hosp,2024-11-30,18,quantile,0.01,7.813606262207031
 2024-11-23,1,wk inc flu hosp,2024-11-30,18,quantile,0.025,7.813606262207031
@@ -1900,8 +1900,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,18,quantile,0.99,83.77325439453125
 2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,decrease,8.82014178955703e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,increase,0.972191495934732
-2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,largedecrease,1.1275504057069494e-49
-2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,large_decrease,1.1275504057069494e-49
+2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,18,pmf,stable,0.0277996839234785
 2024-11-23,1,wk inc flu hosp,2024-11-30,19,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,19,quantile,0.025,0.0
@@ -1928,8 +1928,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,19,quantile,0.99,30.92258197784424
 2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,decrease,1.3065883896007748e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,increase,0.9064093550968988
-2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,largedecrease,2.765094797783153e-62
-2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,large_decrease,2.765094797783153e-62
+2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,19,pmf,stable,0.0935775790192052
 2024-11-23,1,wk inc flu hosp,2024-11-30,20,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,20,quantile,0.025,0.0
@@ -1956,8 +1956,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,20,quantile,0.99,52.514780349731446
 2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,decrease,5.221989866480929e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,increase,0.8887312789453574
-2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,largedecrease,4.595442557983463e-191
-2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,large_decrease,4.595442557983463e-191
+2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,20,pmf,stable,0.1112687210024226
 2024-11-23,1,wk inc flu hosp,2024-11-30,21,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,21,quantile,0.025,0.0
@@ -1984,8 +1984,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,21,quantile,0.99,78.62682434082032
 2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,decrease,0.0020125066222486
 2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,increase,0.9174622047252784
-2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,largedecrease,4.002438260977462e-21
-2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,largeincrease,1.7419623721259825e-07
+2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,large_decrease,4.002438260977462e-21
+2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,large_increase,1.7419623721259825e-07
 2024-11-23,1,wk flu hosp rate change,2024-11-30,21,pmf,stable,0.0805251144562358
 2024-11-23,1,wk inc flu hosp,2024-11-30,22,quantile,0.01,10.66677604675293
 2024-11-23,1,wk inc flu hosp,2024-11-30,22,quantile,0.025,10.66677604675293
@@ -2012,8 +2012,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,22,quantile,0.99,56.593805923461915
 2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,decrease,1.255943828671972e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,increase,0.9913521799513466
-2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,largedecrease,1.0758193383223493e-50
-2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,largeincrease,2.220446049250313e-15
+2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,large_decrease,1.0758193383223493e-50
+2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,large_increase,2.220446049250313e-15
 2024-11-23,1,wk flu hosp rate change,2024-11-30,22,pmf,stable,0.0086465641048224
 2024-11-23,1,wk inc flu hosp,2024-11-30,23,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,23,quantile,0.025,0.0
@@ -2040,8 +2040,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,23,quantile,0.99,20.748370966911317
 2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,decrease,2.0935873775354377e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,increase,0.9997519088378548
-2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,largedecrease,8.080982966956349e-102
-2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,large_decrease,8.080982966956349e-102
+2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,23,pmf,stable,0.0002480911412093
 2024-11-23,1,wk inc flu hosp,2024-11-30,24,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,24,quantile,0.025,0.0
@@ -2068,8 +2068,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,24,quantile,0.99,22.254498443603516
 2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,decrease,3.245383157884776e-13
 2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,increase,0.3094977171331574
-2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,24,pmf,stable,0.690502282866518
 2024-11-23,1,wk inc flu hosp,2024-11-30,25,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,25,quantile,0.025,0.0
@@ -2096,8 +2096,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,25,quantile,0.99,41.98163890838623
 2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,decrease,3.2507007957183768e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,increase,0.5336062360031464
-2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,largedecrease,4.977690480993021e-132
-2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,large_decrease,4.977690480993021e-132
+2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,25,pmf,stable,0.4663905132960579
 2024-11-23,1,wk inc flu hosp,2024-11-30,26,quantile,0.01,2.421916961669922
 2024-11-23,1,wk inc flu hosp,2024-11-30,26,quantile,0.025,2.421916961669922
@@ -2124,8 +2124,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,26,quantile,0.99,114.7169303894043
 2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,decrease,1.046099745581623e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,increase,0.9495789398852484
-2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,largedecrease,2.3734688671248464e-58
-2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,large_decrease,2.3734688671248464e-58
+2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,26,pmf,stable,0.0504105991172958
 2024-11-23,1,wk inc flu hosp,2024-11-30,27,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,27,quantile,0.025,0.0
@@ -2152,8 +2152,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,27,quantile,0.99,103.40701138973236
 2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,decrease,0.0099658520039057
 2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,increase,0.8560933243001794
-2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,largedecrease,2.9070458722211076e-16
-2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,largeincrease,1.2844529615474445e-06
+2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,large_decrease,2.9070458722211076e-16
+2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,large_increase,1.2844529615474445e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,27,pmf,stable,0.133939539242953
 2024-11-23,1,wk inc flu hosp,2024-11-30,28,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,28,quantile,0.025,0.0
@@ -2180,8 +2180,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,28,quantile,0.99,37.465932540893554
 2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,decrease,0.0002710173042106
 2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,increase,0.9537019425603986
-2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,largedecrease,1.0446991356601317e-29
-2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,largeincrease,4.733659020317305e-10
+2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,large_decrease,1.0446991356601317e-29
+2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,large_increase,4.733659020317305e-10
 2024-11-23,1,wk flu hosp rate change,2024-11-30,28,pmf,stable,0.0460270396620247
 2024-11-23,1,wk inc flu hosp,2024-11-30,29,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,29,quantile,0.025,0.0
@@ -2208,8 +2208,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,29,quantile,0.99,93.47958499908448
 2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,decrease,0.0072437359411867
 2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,increase,0.7170504088820756
-2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,largedecrease,7.277357386452302e-27
-2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,largeincrease,1.021405182655144e-14
+2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,large_decrease,7.277357386452302e-27
+2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,large_increase,1.021405182655144e-14
 2024-11-23,1,wk flu hosp rate change,2024-11-30,29,pmf,stable,0.2757058551767274
 2024-11-23,1,wk inc flu hosp,2024-11-30,30,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,30,quantile,0.025,0.0
@@ -2236,8 +2236,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,30,quantile,0.99,12.385815062522887
 2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,decrease,3.2216010257430903e-09
 2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,increase,0.9996178825596914
-2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,largedecrease,5.628214244845652e-76
-2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,large_decrease,5.628214244845652e-76
+2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,30,pmf,stable,0.0003821142187076
 2024-11-23,1,wk inc flu hosp,2024-11-30,31,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,31,quantile,0.025,0.0
@@ -2264,8 +2264,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,31,quantile,0.99,10.63917957305908
 2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,decrease,2.8164379723451096e-15
 2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,increase,0.9987662844519664
-2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,largedecrease,1.6747549591863088e-184
-2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,large_decrease,1.6747549591863088e-184
+2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,31,pmf,stable,0.0012337155480306
 2024-11-23,1,wk inc flu hosp,2024-11-30,32,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,32,quantile,0.025,0.0
@@ -2292,8 +2292,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,32,quantile,0.99,65.90080261230469
 2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,decrease,0.0019901114510347
 2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,increase,0.9403968905197756
-2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,largedecrease,5.5474644187912876e-18
-2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,largeincrease,1.8619067587932747e-05
+2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,large_decrease,5.5474644187912876e-18
+2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,large_increase,1.8619067587932747e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,32,pmf,stable,0.0575943789616017
 2024-11-23,1,wk inc flu hosp,2024-11-30,33,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,33,quantile,0.025,0.0
@@ -2320,8 +2320,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,33,quantile,0.99,4.63396954536438
 2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,decrease,4.505577283389464e-40
 2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,increase,0.9999999998205328
-2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,33,pmf,stable,1.794673271833026e-10
 2024-11-23,1,wk inc flu hosp,2024-11-30,34,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,34,quantile,0.025,0.0
@@ -2348,8 +2348,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,34,quantile,0.99,68.5730860900879
 2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,decrease,8.950758208734234e-06
 2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,increase,0.8068090197461297
-2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,largedecrease,3.989106157094983e-86
-2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,large_decrease,3.989106157094983e-86
+2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,34,pmf,stable,0.1931820294956615
 2024-11-23,1,wk inc flu hosp,2024-11-30,35,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,35,quantile,0.025,0.0
@@ -2376,8 +2376,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,35,quantile,0.99,25.785934619903564
 2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,decrease,5.104226026103678e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,increase,0.9627587088789592
-2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,largedecrease,4.825589247752726e-44
-2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,largeincrease,1.1102230246251563e-16
+2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,large_decrease,4.825589247752726e-44
+2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,large_increase,1.1102230246251563e-16
 2024-11-23,1,wk flu hosp rate change,2024-11-30,35,pmf,stable,0.0371902488607796
 2024-11-23,1,wk inc flu hosp,2024-11-30,36,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,36,quantile,0.025,0.0
@@ -2404,8 +2404,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,36,quantile,0.99,126.9758920288086
 2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,decrease,7.790134719270099e-07
 2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,increase,0.90446766128731
-2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,largedecrease,3.1487149848575523e-93
-2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,large_decrease,3.1487149848575523e-93
+2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,36,pmf,stable,0.0955315596992181
 2024-11-23,1,wk inc flu hosp,2024-11-30,37,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,37,quantile,0.025,0.0
@@ -2432,8 +2432,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,37,quantile,0.99,116.73052215576172
 2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,decrease,0.0101718593723426
 2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,increase,0.6353271350618745
-2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,largedecrease,1.05783600150006e-28
-2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,large_decrease,1.05783600150006e-28
+2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,37,pmf,stable,0.3545010055657828
 2024-11-23,1,wk inc flu hosp,2024-11-30,38,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,38,quantile,0.025,0.0
@@ -2460,8 +2460,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,38,quantile,0.99,9.18335461616516
 2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,decrease,9.369831222941052e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,increase,0.9999964514094186
-2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,largedecrease,5.208753431837122e-63
-2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,largeincrease,2.4362861728022267e-09
+2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,large_decrease,5.208753431837122e-63
+2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,large_increase,2.4362861728022267e-09
 2024-11-23,1,wk flu hosp rate change,2024-11-30,38,pmf,stable,3.546060596914294e-06
 2024-11-23,1,wk inc flu hosp,2024-11-30,39,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,39,quantile,0.025,0.0
@@ -2488,8 +2488,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,39,quantile,0.99,707.9565982818604
 2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,decrease,0.0060757892744799
 2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,increase,0.4811137528306773
-2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,largedecrease,2.4858429145751587e-06
-2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,largeincrease,0.4989891065241151
+2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,large_decrease,2.4858429145751587e-06
+2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,large_increase,0.4989891065241151
 2024-11-23,1,wk flu hosp rate change,2024-11-30,39,pmf,stable,0.013818865527813
 2024-11-23,1,wk inc flu hosp,2024-11-30,40,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,40,quantile,0.025,0.0
@@ -2516,8 +2516,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,40,quantile,0.99,38.204050369262696
 2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,decrease,0.0001243093398863
 2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,increase,0.920723311831342
-2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,largedecrease,8.56964895651867e-45
-2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,large_decrease,8.56964895651867e-45
+2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,40,pmf,stable,0.0791523788287716
 2024-11-23,1,wk inc flu hosp,2024-11-30,41,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,41,quantile,0.025,0.0
@@ -2544,8 +2544,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,41,quantile,0.99,11.959204025268557
 2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,decrease,4.463149895663541e-13
 2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,increase,0.4884412825231561
-2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,41,pmf,stable,0.5115587174763976
 2024-11-23,1,wk inc flu hosp,2024-11-30,42,quantile,0.01,28.15838623046875
 2024-11-23,1,wk inc flu hosp,2024-11-30,42,quantile,0.025,28.15838623046875
@@ -2572,8 +2572,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,42,quantile,0.99,100.41302490234376
 2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,decrease,2.019085437772448e-07
 2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,increase,0.9392942950982464
-2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,largedecrease,6.970170779300385e-97
-2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,large_decrease,6.970170779300385e-97
+2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,42,pmf,stable,0.0607055029932099
 2024-11-23,1,wk inc flu hosp,2024-11-30,44,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,44,quantile,0.025,0.0
@@ -2600,8 +2600,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,44,quantile,0.99,12.875030555725097
 2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,decrease,2.8921373789548265e-18
 2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,increase,0.99999998089156
-2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,largedecrease,5.215283989912819e-131
-2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,large_decrease,5.215283989912819e-131
+2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,44,pmf,stable,1.910843992115288e-08
 2024-11-23,1,wk inc flu hosp,2024-11-30,45,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,45,quantile,0.025,0.0
@@ -2628,8 +2628,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,45,quantile,0.99,29.77249973297119
 2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,decrease,6.401793541284567e-08
 2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,increase,0.8139929435376632
-2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,largedecrease,4.381299873583541e-140
-2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,large_decrease,4.381299873583541e-140
+2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,45,pmf,stable,0.1860069924444013
 2024-11-23,1,wk inc flu hosp,2024-11-30,46,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,46,quantile,0.025,0.0
@@ -2656,8 +2656,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,46,quantile,0.99,7.509967803955078
 2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,decrease,8.721649675716039e-18
 2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,increase,0.9999997963625814
-2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,largedecrease,5.777285392096272e-116
-2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,large_decrease,5.777285392096272e-116
+2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,46,pmf,stable,2.0363741856790626e-07
 2024-11-23,1,wk inc flu hosp,2024-11-30,47,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,47,quantile,0.025,0.0
@@ -2684,8 +2684,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,47,quantile,0.99,96.9312887573242
 2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,decrease,0.0005988634867637
 2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,increase,0.9337470539588988
-2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,largedecrease,1.7653409345781448e-29
-2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,largeincrease,4.9316439820756835e-11
+2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,large_decrease,1.7653409345781448e-29
+2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,large_increase,4.9316439820756835e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,47,pmf,stable,0.0656540825050211
 2024-11-23,1,wk inc flu hosp,2024-11-30,48,quantile,0.01,61.26222229003906
 2024-11-23,1,wk inc flu hosp,2024-11-30,48,quantile,0.025,61.26222229003906
@@ -2712,8 +2712,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,48,quantile,0.99,200.3988494873047
 2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,decrease,1.1140325303487644e-09
 2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,increase,0.8914989660517831
-2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,largedecrease,2.6877025680764648e-163
-2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,large_decrease,2.6877025680764648e-163
+2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,48,pmf,stable,0.1085010328341842
 2024-11-23,1,wk inc flu hosp,2024-11-30,49,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,49,quantile,0.025,0.0
@@ -2740,8 +2740,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,49,quantile,0.99,10.322582721710209
 2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,decrease,9.997743508294761e-23
 2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,increase,0.9411878025966324
-2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,49,pmf,stable,0.0588121974033675
 2024-11-23,1,wk inc flu hosp,2024-11-30,50,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,50,quantile,0.025,0.0
@@ -2768,8 +2768,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,50,quantile,0.99,1.2848799377679825
 2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,decrease,2.3212492890313632e-60
 2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,increase,1.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,largedecrease,0.0
-2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,large_decrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,50,pmf,stable,5.130633610285186e-27
 2024-11-23,1,wk inc flu hosp,2024-11-30,51,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,51,quantile,0.025,0.0
@@ -2796,8 +2796,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,51,quantile,0.99,58.5331884765625
 2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,decrease,2.565141709353724e-05
 2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,increase,0.7542543911661703
-2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,largedecrease,8.270986845412039e-83
-2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,large_decrease,8.270986845412039e-83
+2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,51,pmf,stable,0.245719957416736
 2024-11-23,1,wk inc flu hosp,2024-11-30,53,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,53,quantile,0.025,0.0
@@ -2824,8 +2824,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,53,quantile,0.99,37.06756031036376
 2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,decrease,1.459881082694582e-23
 2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,increase,0.999987470025806
-2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,largedecrease,6.734753612055116e-287
-2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,large_decrease,6.734753612055116e-287
+2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,53,pmf,stable,1.2529974193890598e-05
 2024-11-23,1,wk inc flu hosp,2024-11-30,54,quantile,0.01,4.605768203735348
 2024-11-23,1,wk inc flu hosp,2024-11-30,54,quantile,0.025,4.605768203735348
@@ -2852,8 +2852,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,54,quantile,0.99,21.55571556091309
 2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,decrease,8.350759533210213e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,increase,0.9999721002642328
-2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,largedecrease,1.6809199054720135e-70
-2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,largeincrease,1.5087930904655877e-13
+2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,large_decrease,1.6809199054720135e-70
+2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,large_increase,1.5087930904655877e-13
 2024-11-23,1,wk flu hosp rate change,2024-11-30,54,pmf,stable,2.7899652108750464e-05
 2024-11-23,1,wk inc flu hosp,2024-11-30,55,quantile,0.01,0.0
 2024-11-23,1,wk inc flu hosp,2024-11-30,55,quantile,0.025,0.0
@@ -2880,8 +2880,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,55,quantile,0.99,25.433932609558106
 2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,decrease,3.554720338585099e-11
 2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,increase,0.7191453021390545
-2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,largedecrease,1.811459071587897e-235
-2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,large_decrease,1.811459071587897e-235
+2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,55,pmf,stable,0.2808546978253983
 2024-11-23,1,wk inc flu hosp,2024-11-30,56,quantile,0.01,0.8168403580784798
 2024-11-23,1,wk inc flu hosp,2024-11-30,56,quantile,0.025,0.8168403580784798
@@ -2908,8 +2908,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,56,quantile,0.99,4.9986017271876335
 2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,decrease,3.707385439187811e-44
 2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,increase,0.9999999993937086
-2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,largedecrease,3.016030319094102e-196
-2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,largeincrease,6.06291350457866e-10
+2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,large_decrease,3.016030319094102e-196
+2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,large_increase,6.06291350457866e-10
 2024-11-23,1,wk flu hosp rate change,2024-11-30,56,pmf,stable,2.1823203768108352e-23
 2024-11-23,1,wk inc flu hosp,2024-11-30,72,quantile,0.01,6.1427083015441895
 2024-11-23,1,wk inc flu hosp,2024-11-30,72,quantile,0.025,6.1427083015441895
@@ -2936,8 +2936,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,72,quantile,0.99,31.583129405975345
 2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,decrease,1.3462235775717021e-13
 2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,increase,0.9997197071594532
-2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,largedecrease,1.4453249960754919e-126
-2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,large_decrease,1.4453249960754919e-126
+2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,72,pmf,stable,0.0002802928404121
 2024-11-23,1,wk inc flu hosp,2024-11-30,US,quantile,0.01,749.7594604492188
 2024-11-23,1,wk inc flu hosp,2024-11-30,US,quantile,0.025,749.7594604492188
@@ -2964,8 +2964,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,1,wk inc flu hosp,2024-11-30,US,quantile,0.99,2679.0999145507812
 2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,decrease,7.85068045714127e-08
 2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,increase,0.9164397023251816
-2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,largedecrease,1.3717286036478445e-113
-2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,largeincrease,0.0
+2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,large_decrease,1.3717286036478445e-113
+2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,large_increase,0.0
 2024-11-23,1,wk flu hosp rate change,2024-11-30,US,pmf,stable,0.0835602191680139
 2024-11-23,2,wk inc flu hosp,2024-12-07,01,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,01,quantile,0.025,0.0
@@ -2992,8 +2992,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,01,quantile,0.99,127.27093154907226
 2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,decrease,0.0027905037967163
 2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,increase,0.9595534992529168
-2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,largedecrease,1.2968525708541392e-20
-2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,largeincrease,1.193354996931184e-06
+2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,large_decrease,1.2968525708541392e-20
+2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,large_increase,1.193354996931184e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,01,pmf,stable,0.0376548035953697
 2024-11-23,2,wk inc flu hosp,2024-12-07,02,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,02,quantile,0.025,0.0
@@ -3020,8 +3020,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,02,quantile,0.99,15.045421600341797
 2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,decrease,2.759458640147436e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,increase,0.9986693428479972
-2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,largedecrease,1.3578202838493524e-26
-2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,largeincrease,0.0002174471428492
+2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,large_decrease,1.3578202838493524e-26
+2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,large_increase,0.0002174471428492
 2024-11-23,2,wk flu hosp rate change,2024-12-07,02,pmf,stable,0.0010856154227521
 2024-11-23,2,wk inc flu hosp,2024-12-07,04,quantile,0.01,26.319611511230462
 2024-11-23,2,wk inc flu hosp,2024-12-07,04,quantile,0.025,26.319611511230462
@@ -3048,8 +3048,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,04,quantile,0.99,230.50802520751955
 2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,decrease,0.0005083925718708
 2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,increase,0.9908172596135508
-2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,largedecrease,1.7228222467366232e-19
-2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,largeincrease,0.0005034746769613
+2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,large_decrease,1.7228222467366232e-19
+2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,large_increase,0.0005034746769613
 2024-11-23,2,wk flu hosp rate change,2024-12-07,04,pmf,stable,0.0081708731376171
 2024-11-23,2,wk inc flu hosp,2024-12-07,05,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,05,quantile,0.025,0.0
@@ -3076,8 +3076,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,05,quantile,0.99,66.07197284698486
 2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,decrease,0.0136562070077942
 2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,increase,0.8510875417840076
-2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,largedecrease,4.355498223315588e-22
-2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,largeincrease,1.1265521848713431e-10
+2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,large_decrease,4.355498223315588e-22
+2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,large_increase,1.1265521848713431e-10
 2024-11-23,2,wk flu hosp rate change,2024-12-07,05,pmf,stable,0.1352562510955429
 2024-11-23,2,wk inc flu hosp,2024-12-07,06,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,06,quantile,0.025,0.0
@@ -3104,8 +3104,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,06,quantile,0.99,282.2287078857422
 2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,decrease,0.0008097413340471
 2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,increase,0.4945755826770541
-2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,largedecrease,5.271360883144498e-114
-2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,large_decrease,5.271360883144498e-114
+2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,06,pmf,stable,0.5046146759888988
 2024-11-23,2,wk inc flu hosp,2024-12-07,08,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,08,quantile,0.025,0.0
@@ -3132,8 +3132,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,08,quantile,0.99,37.07802997589111
 2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,decrease,5.582393786113346e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,increase,0.6104718904169808
-2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,largedecrease,1.5485786700987405e-187
-2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,large_decrease,1.5485786700987405e-187
+2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,08,pmf,stable,0.3895225271892331
 2024-11-23,2,wk inc flu hosp,2024-12-07,09,quantile,0.01,9.11766767501831
 2024-11-23,2,wk inc flu hosp,2024-12-07,09,quantile,0.025,9.11766767501831
@@ -3160,8 +3160,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,09,quantile,0.99,37.59428071975708
 2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,decrease,1.066030486664073e-09
 2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,increase,0.998408028316173
-2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,largedecrease,9.057528943988416e-133
-2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,large_decrease,9.057528943988416e-133
+2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,09,pmf,stable,0.0015919706177964
 2024-11-23,2,wk inc flu hosp,2024-12-07,10,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,10,quantile,0.025,0.0
@@ -3188,8 +3188,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,10,quantile,0.99,6.639667272567749
 2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,decrease,1.778739685512772e-16
 2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,increase,0.9999984168447212
-2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,largedecrease,1.2150799380072109e-201
-2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,large_decrease,1.2150799380072109e-201
+2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,10,pmf,stable,1.5831552785350471e-06
 2024-11-23,2,wk inc flu hosp,2024-12-07,11,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,11,quantile,0.025,0.0
@@ -3216,8 +3216,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,11,quantile,0.99,12.500759639739991
 2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,decrease,4.245248822808304e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,increase,0.9998035732163676
-2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,largedecrease,4.525395867869857e-42
-2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,largeincrease,1.9746804658105077e-07
+2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,large_decrease,4.525395867869857e-42
+2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,large_increase,1.9746804658105077e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,11,pmf,stable,0.0001958047907034
 2024-11-23,2,wk inc flu hosp,2024-12-07,12,quantile,0.01,21.845883789062498
 2024-11-23,2,wk inc flu hosp,2024-12-07,12,quantile,0.025,21.845883789062498
@@ -3244,8 +3244,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,12,quantile,0.99,295.6117883300781
 2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,decrease,0.0001817098430083
 2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,increase,0.9342951245009916
-2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,largedecrease,2.203967665720998e-59
-2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,large_decrease,2.203967665720998e-59
+2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,12,pmf,stable,0.0655231656559999
 2024-11-23,2,wk inc flu hosp,2024-12-07,13,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,13,quantile,0.025,0.0
@@ -3272,8 +3272,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,13,quantile,0.99,178.9297570800781
 2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,decrease,0.0046965683683453
 2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,increase,0.8578748633022286
-2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,largedecrease,1.170699201399614e-33
-2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,large_decrease,1.170699201399614e-33
+2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,13,pmf,stable,0.137428568329426
 2024-11-23,2,wk inc flu hosp,2024-12-07,15,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,15,quantile,0.025,0.0
@@ -3300,8 +3300,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,15,quantile,0.99,13.70536442756653
 2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,decrease,7.522608613892735e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,increase,0.9959395115435276
-2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,largedecrease,5.355435182881528e-82
-2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,large_decrease,5.355435182881528e-82
+2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,15,pmf,stable,0.004059736195611
 2024-11-23,2,wk inc flu hosp,2024-12-07,16,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,16,quantile,0.025,0.0
@@ -3328,8 +3328,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,16,quantile,0.99,15.27112627029419
 2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,decrease,1.314433871532553e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,increase,0.9836180173273462
-2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,largedecrease,3.3206888968558565e-122
-2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,large_decrease,3.3206888968558565e-122
+2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,16,pmf,stable,0.0163818512292666
 2024-11-23,2,wk inc flu hosp,2024-12-07,17,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,17,quantile,0.025,0.0
@@ -3356,8 +3356,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,17,quantile,0.99,82.14050804138184
 2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,decrease,0.0002150580733065
 2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,increase,0.4481934556287873
-2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,largedecrease,3.2636940840495066e-147
-2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,large_decrease,3.2636940840495066e-147
+2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,17,pmf,stable,0.5515914862979062
 2024-11-23,2,wk inc flu hosp,2024-12-07,18,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,18,quantile,0.025,0.0
@@ -3384,8 +3384,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,18,quantile,0.99,125.0507650756836
 2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,decrease,0.0035558775685613
 2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,increase,0.9164475009125416
-2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,largedecrease,1.7913820666037064e-26
-2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,largeincrease,3.7670311314741405e-11
+2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,large_decrease,1.7913820666037064e-26
+2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,large_increase,3.7670311314741405e-11
 2024-11-23,2,wk flu hosp rate change,2024-12-07,18,pmf,stable,0.0799966214812266
 2024-11-23,2,wk inc flu hosp,2024-12-07,19,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,19,quantile,0.025,0.0
@@ -3412,8 +3412,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,19,quantile,0.99,54.901717529296874
 2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,decrease,0.0002732999152187
 2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,increase,0.9628215452770617
-2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,largedecrease,8.39344008330407e-41
-2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,largeincrease,3.3306690738754696e-16
+2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,large_decrease,8.39344008330407e-41
+2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,large_increase,3.3306690738754696e-16
 2024-11-23,2,wk flu hosp rate change,2024-12-07,19,pmf,stable,0.0369051548077193
 2024-11-23,2,wk inc flu hosp,2024-12-07,20,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,20,quantile,0.025,0.0
@@ -3440,8 +3440,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,20,quantile,0.99,65.11314105987549
 2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,decrease,4.203276062070212e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,increase,0.859727734725392
-2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,largedecrease,1.713904094838839e-175
-2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,large_decrease,1.713904094838839e-175
+2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,20,pmf,stable,0.1402718449470017
 2024-11-23,2,wk inc flu hosp,2024-12-07,21,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,21,quantile,0.025,0.0
@@ -3468,8 +3468,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,21,quantile,0.99,165.49356018066408
 2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,decrease,0.0259853153872486
 2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,increase,0.8822587921588343
-2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,largedecrease,5.799824146595411e-11
-2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,largeincrease,0.0004624901249865
+2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,large_decrease,5.799824146595411e-11
+2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,large_increase,0.0004624901249865
 2024-11-23,2,wk flu hosp rate change,2024-12-07,21,pmf,stable,0.0912934022709322
 2024-11-23,2,wk inc flu hosp,2024-12-07,22,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,22,quantile,0.025,0.0
@@ -3496,8 +3496,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,22,quantile,0.99,95.07823501586914
 2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,decrease,0.0024445601788082
 2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,increase,0.9433128242215332
-2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,largedecrease,6.265187927200058e-25
-2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,largeincrease,2.5023173533256227e-09
+2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,large_decrease,6.265187927200058e-25
+2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,large_increase,2.5023173533256227e-09
 2024-11-23,2,wk flu hosp rate change,2024-12-07,22,pmf,stable,0.0542426130973412
 2024-11-23,2,wk inc flu hosp,2024-12-07,23,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,23,quantile,0.025,0.0
@@ -3524,8 +3524,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,23,quantile,0.99,33.58334990501404
 2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,decrease,0.0004354099576805
 2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,increase,0.9857305301778988
-2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,largedecrease,3.46213180821147e-27
-2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,largeincrease,9.112396359700625e-08
+2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,large_decrease,3.46213180821147e-27
+2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,large_increase,9.112396359700625e-08
 2024-11-23,2,wk flu hosp rate change,2024-12-07,23,pmf,stable,0.013833968740457
 2024-11-23,2,wk inc flu hosp,2024-12-07,24,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,24,quantile,0.025,0.0
@@ -3552,8 +3552,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,24,quantile,0.99,45.92274662017822
 2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,decrease,4.475772065760061e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,increase,0.6719859703075755
-2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,largedecrease,1.5788635939400685e-135
-2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,large_decrease,1.5788635939400685e-135
+2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,24,pmf,stable,0.3279692719717669
 2024-11-23,2,wk inc flu hosp,2024-12-07,25,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,25,quantile,0.025,0.0
@@ -3580,8 +3580,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,25,quantile,0.99,55.24396228790283
 2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,decrease,0.0004805588820597
 2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,increase,0.5535633753263509
-2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,largedecrease,1.1160320296134208e-115
-2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,large_decrease,1.1160320296134208e-115
+2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,25,pmf,stable,0.4459560657915893
 2024-11-23,2,wk inc flu hosp,2024-12-07,26,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,26,quantile,0.025,0.0
@@ -3608,8 +3608,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,26,quantile,0.99,145.78116485595703
 2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,decrease,0.001771859577159
 2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,increase,0.8864465406236397
-2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,largedecrease,1.036413703800844e-41
-2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,large_decrease,1.036413703800844e-41
+2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,26,pmf,stable,0.1117815997992012
 2024-11-23,2,wk inc flu hosp,2024-12-07,27,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,27,quantile,0.025,0.0
@@ -3636,8 +3636,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,27,quantile,0.99,105.23536944389345
 2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,decrease,0.0148995797736055
 2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,increase,0.8342158447612611
-2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,largedecrease,1.4838865941795717e-22
-2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,largeincrease,2.7285285142397697e-11
+2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,large_decrease,1.4838865941795717e-22
+2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,large_increase,2.7285285142397697e-11
 2024-11-23,2,wk flu hosp rate change,2024-12-07,27,pmf,stable,0.1508845754378479
 2024-11-23,2,wk inc flu hosp,2024-12-07,28,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,28,quantile,0.025,0.0
@@ -3664,8 +3664,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,28,quantile,0.99,75.36980194091797
 2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,decrease,0.013096383338453
 2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,increase,0.9001970287270953
-2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,largedecrease,1.193056300022925e-15
-2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,largeincrease,5.088473634118351e-06
+2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,large_decrease,1.193056300022925e-15
+2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,large_increase,5.088473634118351e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,28,pmf,stable,0.0867014994608164
 2024-11-23,2,wk inc flu hosp,2024-12-07,29,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,29,quantile,0.025,0.0
@@ -3692,8 +3692,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,29,quantile,0.99,194.9716889190674
 2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,decrease,0.0490856039242054
 2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,increase,0.7696311615910405
-2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,largedecrease,3.620890361023584e-13
-2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,largeincrease,8.619005502641386e-07
+2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,large_decrease,3.620890361023584e-13
+2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,large_increase,8.619005502641386e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,29,pmf,stable,0.1812823725838416
 2024-11-23,2,wk inc flu hosp,2024-12-07,30,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,30,quantile,0.025,0.0
@@ -3720,8 +3720,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,30,quantile,0.99,20.106744170188904
 2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,decrease,5.51393211074251e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,increase,0.9913542419812834
-2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,largedecrease,1.6554228648144008e-46
-2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,largeincrease,5.551115123125784e-16
+2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,large_decrease,1.6554228648144008e-46
+2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,large_increase,5.551115123125784e-16
 2024-11-23,2,wk flu hosp rate change,2024-12-07,30,pmf,stable,0.0085906186976085
 2024-11-23,2,wk inc flu hosp,2024-12-07,31,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,31,quantile,0.025,0.0
@@ -3748,8 +3748,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,31,quantile,0.99,22.331702575683593
 2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,decrease,3.187938178011224e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,increase,0.9871274244420584
-2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,largedecrease,6.015528009610342e-76
-2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,large_decrease,6.015528009610342e-76
+2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,31,pmf,stable,0.0128693876197635
 2024-11-23,2,wk inc flu hosp,2024-12-07,32,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,32,quantile,0.025,0.0
@@ -3776,8 +3776,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,32,quantile,0.99,75.40669471740722
 2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,decrease,0.0081478856984902
 2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,increase,0.9010352791550535
-2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,largedecrease,1.3631516429625982e-19
-2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,largeincrease,6.130921048619342e-08
+2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,large_decrease,1.3631516429625982e-19
+2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,large_increase,6.130921048619342e-08
 2024-11-23,2,wk flu hosp rate change,2024-12-07,32,pmf,stable,0.0908167738372456
 2024-11-23,2,wk inc flu hosp,2024-12-07,33,quantile,0.01,0.8770904541015625
 2024-11-23,2,wk inc flu hosp,2024-12-07,33,quantile,0.025,0.8770904541015625
@@ -3804,8 +3804,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,33,quantile,0.99,9.034602165222168
 2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,decrease,2.984125803851562e-21
 2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,increase,0.999999904144731
-2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,largedecrease,2.7253553710224026e-293
-2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,large_decrease,2.7253553710224026e-293
+2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,33,pmf,stable,9.58552689798048e-08
 2024-11-23,2,wk inc flu hosp,2024-12-07,34,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,34,quantile,0.025,0.0
@@ -3832,8 +3832,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,34,quantile,0.99,122.0896075439453
 2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,decrease,0.000639874898759
 2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,increase,0.8901154945608809
-2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,largedecrease,2.9754487537717536e-54
-2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,large_decrease,2.9754487537717536e-54
+2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,34,pmf,stable,0.1092446305403601
 2024-11-23,2,wk inc flu hosp,2024-12-07,35,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,35,quantile,0.025,0.0
@@ -3860,8 +3860,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,35,quantile,0.99,58.19757730484009
 2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,decrease,0.0183576638375528
 2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,increase,0.8849416917771828
-2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,largedecrease,1.0068254996154118e-15
-2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,largeincrease,1.6474931971988127e-06
+2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,large_decrease,1.0068254996154118e-15
+2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,large_increase,1.6474931971988127e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,35,pmf,stable,0.0966989968920661
 2024-11-23,2,wk inc flu hosp,2024-12-07,36,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,36,quantile,0.025,0.0
@@ -3888,8 +3888,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,36,quantile,0.99,191.08396240234376
 2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,decrease,4.7560344783019e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,increase,0.8714444664419976
-2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,largedecrease,2.1810507811268304e-134
-2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,large_decrease,2.1810507811268304e-134
+2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,36,pmf,stable,0.128550777523524
 2024-11-23,2,wk inc flu hosp,2024-12-07,37,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,37,quantile,0.025,0.0
@@ -3916,8 +3916,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,37,quantile,0.99,170.6555347442627
 2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,decrease,0.018707076946381
 2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,increase,0.7159447148321656
-2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,largedecrease,1.3719895309483792e-29
-2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,large_decrease,1.3719895309483792e-29
+2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,37,pmf,stable,0.2653482082214533
 2024-11-23,2,wk inc flu hosp,2024-12-07,38,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,38,quantile,0.025,0.0
@@ -3944,8 +3944,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,38,quantile,0.99,22.69369387626648
 2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,decrease,0.000552123463475
 2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,increase,0.9918152832576632
-2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,largedecrease,1.1514077461016462e-21
-2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,largeincrease,6.557192036316106e-05
+2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,large_decrease,1.1514077461016462e-21
+2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,large_increase,6.557192036316106e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,38,pmf,stable,0.0075670213584985
 2024-11-23,2,wk inc flu hosp,2024-12-07,39,quantile,0.01,10.524866104125977
 2024-11-23,2,wk inc flu hosp,2024-12-07,39,quantile,0.025,10.524866104125977
@@ -3972,8 +3972,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,39,quantile,0.99,773.6197872161865
 2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,decrease,0.0154351343952531
 2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,increase,0.6001613982079236
-2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,largedecrease,7.93784858653534e-06
-2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,largeincrease,0.3648553005863533
+2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,large_decrease,7.93784858653534e-06
+2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,large_increase,0.3648553005863533
 2024-11-23,2,wk flu hosp rate change,2024-12-07,39,pmf,stable,0.0195402289618833
 2024-11-23,2,wk inc flu hosp,2024-12-07,40,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,40,quantile,0.025,0.0
@@ -4000,8 +4000,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,40,quantile,0.99,64.91596221923828
 2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,decrease,0.0037091858988093
 2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,increase,0.9052580438556106
-2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,largedecrease,1.8029318268499526e-29
-2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,largeincrease,2.574607194105738e-13
+2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,large_decrease,1.8029318268499526e-29
+2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,large_increase,2.574607194105738e-13
 2024-11-23,2,wk flu hosp rate change,2024-12-07,40,pmf,stable,0.0910327702453226
 2024-11-23,2,wk inc flu hosp,2024-12-07,41,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,41,quantile,0.025,0.0
@@ -4028,8 +4028,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,41,quantile,0.99,15.388718061447143
 2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,decrease,6.0884596782596485e-09
 2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,increase,0.5812754580527384
-2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,largedecrease,0.0
-2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,large_decrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,41,pmf,stable,0.418724535858802
 2024-11-23,2,wk inc flu hosp,2024-12-07,42,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,42,quantile,0.025,0.0
@@ -4056,8 +4056,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,42,quantile,0.99,208.2942514038086
 2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,decrease,0.0032878346628697
 2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,increase,0.9055402813831857
-2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,largedecrease,4.229044332369519e-30
-2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,largeincrease,1.3644640972643176e-13
+2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,large_decrease,4.229044332369519e-30
+2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,large_increase,1.3644640972643176e-13
 2024-11-23,2,wk flu hosp rate change,2024-12-07,42,pmf,stable,0.0911718839538081
 2024-11-23,2,wk inc flu hosp,2024-12-07,44,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,44,quantile,0.025,0.0
@@ -4084,8 +4084,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,44,quantile,0.99,24.666902980804444
 2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,decrease,1.5451059975358468e-08
 2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,increase,0.9999484227118252
-2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,largedecrease,6.980007972566606e-64
-2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,largeincrease,6.139533326177117e-14
+2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,large_decrease,6.980007972566606e-64
+2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,large_increase,6.139533326177117e-14
 2024-11-23,2,wk flu hosp rate change,2024-12-07,44,pmf,stable,5.156183705332976e-05
 2024-11-23,2,wk inc flu hosp,2024-12-07,45,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,45,quantile,0.025,0.0
@@ -4112,8 +4112,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,45,quantile,0.99,80.29509735107422
 2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,decrease,0.0017373447272011
 2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,increase,0.8635206785722076
-2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,largedecrease,1.5044094648644315e-46
-2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,large_decrease,1.5044094648644315e-46
+2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,45,pmf,stable,0.1347419767005911
 2024-11-23,2,wk inc flu hosp,2024-12-07,46,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,46,quantile,0.025,0.0
@@ -4140,8 +4140,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,46,quantile,0.99,18.082694396972656
 2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,decrease,3.1381668432141816e-06
 2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,increase,0.998759385657192
-2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,largedecrease,9.39149989188517e-39
-2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,largeincrease,2.9028430881261613e-08
+2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,large_decrease,9.39149989188517e-39
+2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,large_increase,2.9028430881261613e-08
 2024-11-23,2,wk flu hosp rate change,2024-12-07,46,pmf,stable,0.0012374471475337
 2024-11-23,2,wk inc flu hosp,2024-12-07,47,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,47,quantile,0.025,0.0
@@ -4168,8 +4168,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,47,quantile,0.99,157.49479598999022
 2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,decrease,0.0122327408221441
 2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,increase,0.8897217432871052
-2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,largedecrease,1.801943591139348e-18
-2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,largeincrease,9.148567958749965e-08
+2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,large_decrease,1.801943591139348e-18
+2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,large_increase,9.148567958749965e-08
 2024-11-23,2,wk flu hosp rate change,2024-12-07,47,pmf,stable,0.0980454244050711
 2024-11-23,2,wk inc flu hosp,2024-12-07,48,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,48,quantile,0.025,0.0
@@ -4196,8 +4196,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,48,quantile,0.99,321.5290826416016
 2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,decrease,0.0005537870656367
 2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,increase,0.828294510004576
-2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,largedecrease,1.7554588371888635e-68
-2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,large_decrease,1.7554588371888635e-68
+2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,48,pmf,stable,0.1711517029297872
 2024-11-23,2,wk inc flu hosp,2024-12-07,49,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,49,quantile,0.025,0.0
@@ -4224,8 +4224,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,49,quantile,0.99,17.427033290863037
 2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,decrease,5.601950883463493e-11
 2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,increase,0.8953864883194609
-2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,largedecrease,0.0
-2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,large_decrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,49,pmf,stable,0.1046135116245196
 2024-11-23,2,wk inc flu hosp,2024-12-07,50,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,50,quantile,0.025,0.0
@@ -4252,8 +4252,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,50,quantile,0.99,1.8107784986495972
 2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,decrease,1.6210234684969098e-29
 2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,increase,0.9999999999999772
-2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,largedecrease,3.9149049116021065e-243
-2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,large_decrease,3.9149049116021065e-243
+2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,50,pmf,stable,2.281039971554007e-14
 2024-11-23,2,wk inc flu hosp,2024-12-07,51,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,51,quantile,0.025,0.0
@@ -4280,8 +4280,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,51,quantile,0.99,83.43289535522462
 2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,decrease,0.0010744722096792
 2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,increase,0.7773664325470759
-2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,largedecrease,4.9477122448419085e-68
-2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,large_decrease,4.9477122448419085e-68
+2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,51,pmf,stable,0.2215590952432447
 2024-11-23,2,wk inc flu hosp,2024-12-07,53,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,53,quantile,0.025,0.0
@@ -4308,8 +4308,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,53,quantile,0.99,68.29042083740234
 2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,decrease,1.3943512738610842e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,increase,0.9397855677325082
-2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,largedecrease,1.5755850826719336e-96
-2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,large_decrease,1.5755850826719336e-96
+2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,53,pmf,stable,0.0602004887547531
 2024-11-23,2,wk inc flu hosp,2024-12-07,54,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,54,quantile,0.025,0.0
@@ -4336,8 +4336,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,54,quantile,0.99,41.93538951873779
 2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,decrease,0.0007396661611806
 2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,increase,0.982496695598912
-2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,largedecrease,6.331116308018777e-25
-2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,largeincrease,3.589376155188617e-07
+2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,large_decrease,6.331116308018777e-25
+2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,large_increase,3.589376155188617e-07
 2024-11-23,2,wk flu hosp rate change,2024-12-07,54,pmf,stable,0.0167632793022918
 2024-11-23,2,wk inc flu hosp,2024-12-07,55,quantile,0.01,0.0
 2024-11-23,2,wk inc flu hosp,2024-12-07,55,quantile,0.025,0.0
@@ -4364,8 +4364,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,55,quantile,0.99,46.92665927886963
 2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,decrease,6.110894073643684e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,increase,0.7726564631271238
-2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,largedecrease,3.5987152864799975e-113
-2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,large_decrease,3.5987152864799975e-113
+2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,55,pmf,stable,0.2272824279321398
 2024-11-23,2,wk inc flu hosp,2024-12-07,56,quantile,0.01,0.7126297950744629
 2024-11-23,2,wk inc flu hosp,2024-12-07,56,quantile,0.025,0.7126297950744629
@@ -4392,8 +4392,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,56,quantile,0.99,7.75527811050415
 2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,decrease,2.4697245292556293e-19
 2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,increase,0.9999999944604828
-2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,largedecrease,4.686069862086016e-100
-2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,largeincrease,5.5148920985459435e-09
+2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,large_decrease,4.686069862086016e-100
+2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,large_increase,5.5148920985459435e-09
 2024-11-23,2,wk flu hosp rate change,2024-12-07,56,pmf,stable,2.462515326574695e-11
 2024-11-23,2,wk inc flu hosp,2024-12-07,72,quantile,0.01,12.53195415496826
 2024-11-23,2,wk inc flu hosp,2024-12-07,72,quantile,0.025,12.53195415496826
@@ -4420,8 +4420,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,72,quantile,0.99,27.22692264556885
 2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,decrease,6.268935275414377e-29
 2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,increase,0.9999999649267636
-2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,largedecrease,0.0
-2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,large_decrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,72,pmf,stable,3.507323626936604e-08
 2024-11-23,2,wk inc flu hosp,2024-12-07,US,quantile,0.01,538.8776513671874
 2024-11-23,2,wk inc flu hosp,2024-12-07,US,quantile,0.025,538.8776513671874
@@ -4448,8 +4448,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,2,wk inc flu hosp,2024-12-07,US,quantile,0.99,3355.0969580078126
 2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,decrease,6.599094126983457e-05
 2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,increase,0.8908877463637633
-2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,largedecrease,1.5009180635454404e-87
-2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,largeincrease,0.0
+2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,large_decrease,1.5009180635454404e-87
+2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,large_increase,0.0
 2024-11-23,2,wk flu hosp rate change,2024-12-07,US,pmf,stable,0.1090462626949668
 2024-11-23,3,wk inc flu hosp,2024-12-14,01,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,01,quantile,0.025,0.0
@@ -4476,8 +4476,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,01,quantile,0.99,188.95408630371097
 2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,decrease,0.0088410812823015
 2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,increase,0.9542965265009282
-2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,largedecrease,2.269011247478465e-15
-2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,largeincrease,7.90330913252868e-05
+2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,large_decrease,2.269011247478465e-15
+2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,large_increase,7.90330913252868e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,01,pmf,stable,0.0367833591254426
 2024-11-23,3,wk inc flu hosp,2024-12-14,02,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,02,quantile,0.025,0.0
@@ -4504,8 +4504,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,02,quantile,0.99,23.612496242523193
 2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,decrease,0.0002702606115677
 2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,increase,0.996740734779062
-2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,largedecrease,3.3211422528530383e-22
-2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,largeincrease,0.0003328384291194
+2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,large_decrease,3.3211422528530383e-22
+2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,large_increase,0.0003328384291194
 2024-11-23,3,wk flu hosp rate change,2024-12-14,02,pmf,stable,0.0026561661802506
 2024-11-23,3,wk inc flu hosp,2024-12-14,04,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,04,quantile,0.025,0.0
@@ -4532,8 +4532,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,04,quantile,0.99,321.81273559570315
 2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,decrease,0.0064301228794161
 2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,increase,0.9681423917344276
-2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,largedecrease,9.025385559947029e-13
-2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,largeincrease,0.004061204487903
+2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,large_decrease,9.025385559947029e-13
+2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,large_increase,0.004061204487903
 2024-11-23,3,wk flu hosp rate change,2024-12-14,04,pmf,stable,0.0213662808973506
 2024-11-23,3,wk inc flu hosp,2024-12-14,05,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,05,quantile,0.025,0.0
@@ -4560,8 +4560,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,05,quantile,0.99,95.940182762146
 2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,decrease,0.0393225554653802
 2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,increase,0.8556397618300124
-2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,largedecrease,1.0691773746348259e-13
-2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,largeincrease,3.0875994905255055e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,large_decrease,1.0691773746348259e-13
+2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,large_increase,3.0875994905255055e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,05,pmf,stable,0.1050345951050098
 2024-11-23,3,wk inc flu hosp,2024-12-14,06,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,06,quantile,0.025,0.0
@@ -4588,8 +4588,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,06,quantile,0.99,546.8912652587891
 2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,decrease,0.0179982932666089
 2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,increase,0.6337512066948203
-2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,largedecrease,9.550373878469285e-57
-2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,large_decrease,9.550373878469285e-57
+2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,06,pmf,stable,0.3482505000385707
 2024-11-23,3,wk inc flu hosp,2024-12-14,08,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,08,quantile,0.025,0.0
@@ -4616,8 +4616,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,08,quantile,0.99,62.64276361465454
 2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,decrease,0.0020015185111774
 2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,increase,0.6728993959624571
-2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,largedecrease,6.574755819300927e-103
-2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,large_decrease,6.574755819300927e-103
+2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,08,pmf,stable,0.3250990855263654
 2024-11-23,3,wk inc flu hosp,2024-12-14,09,quantile,0.01,0.5202478027343744
 2024-11-23,3,wk inc flu hosp,2024-12-14,09,quantile,0.025,0.5202478027343744
@@ -4644,8 +4644,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,09,quantile,0.99,88.3546224975586
 2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,decrease,0.0005342462696445
 2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,increase,0.9844159951665362
-2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,largedecrease,5.736176050895177e-33
-2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,largeincrease,4.714550971840481e-11
+2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,large_decrease,5.736176050895177e-33
+2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,large_increase,4.714550971840481e-11
 2024-11-23,3,wk flu hosp rate change,2024-12-14,09,pmf,stable,0.0150497585166737
 2024-11-23,3,wk inc flu hosp,2024-12-14,10,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,10,quantile,0.025,0.0
@@ -4672,8 +4672,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,10,quantile,0.99,17.482248067855835
 2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,decrease,4.587610081220173e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,increase,0.994918744084351
-2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,largedecrease,2.80676428024575e-50
-2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,large_decrease,2.80676428024575e-50
+2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,10,pmf,stable,0.0050353798148368
 2024-11-23,3,wk inc flu hosp,2024-12-14,11,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,11,quantile,0.025,0.0
@@ -4700,8 +4700,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,11,quantile,0.99,36.01069311141968
 2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,decrease,0.0085291363645258
 2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,increase,0.948219833942851
-2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,largedecrease,1.6933422668815018e-10
-2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,largeincrease,0.0229739868975816
+2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,large_decrease,1.6933422668815018e-10
+2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,large_increase,0.0229739868975816
 2024-11-23,3,wk flu hosp rate change,2024-12-14,11,pmf,stable,0.0202770426257071
 2024-11-23,3,wk inc flu hosp,2024-12-14,12,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,12,quantile,0.025,0.0
@@ -4728,8 +4728,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,12,quantile,0.99,357.7438427734375
 2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,decrease,0.0025845286789067
 2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,increase,0.8853270768972288
-2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,largedecrease,7.358646009258951e-53
-2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,large_decrease,7.358646009258951e-53
+2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,12,pmf,stable,0.1120883944238644
 2024-11-23,3,wk inc flu hosp,2024-12-14,13,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,13,quantile,0.025,0.0
@@ -4756,8 +4756,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,13,quantile,0.99,256.2737315368652
 2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,decrease,0.0264196000834652
 2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,increase,0.8168980132550352
-2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,largedecrease,5.0435370542707905e-24
-2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,largeincrease,2.9898306053155466e-13
+2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,large_decrease,5.0435370542707905e-24
+2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,large_increase,2.9898306053155466e-13
 2024-11-23,3,wk flu hosp rate change,2024-12-14,13,pmf,stable,0.1566823866612005
 2024-11-23,3,wk inc flu hosp,2024-12-14,15,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,15,quantile,0.025,0.0
@@ -4784,8 +4784,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,15,quantile,0.99,26.978278875350952
 2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,decrease,0.0009071831610272
 2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,increase,0.9687430967475382
-2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,largedecrease,1.2998778289861893e-43
-2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,large_decrease,1.2998778289861893e-43
+2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,15,pmf,stable,0.0303497200914345
 2024-11-23,3,wk inc flu hosp,2024-12-14,16,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,16,quantile,0.025,0.0
@@ -4812,8 +4812,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,16,quantile,0.99,40.14792490005493
 2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,decrease,0.0032211494110229
 2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,increase,0.9328807248792206
-2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,largedecrease,3.675733870782207e-34
-2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,largeincrease,1.3322676295501878e-15
+2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,large_decrease,3.675733870782207e-34
+2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,large_increase,1.3322676295501878e-15
 2024-11-23,3,wk flu hosp rate change,2024-12-14,16,pmf,stable,0.0638981257097551
 2024-11-23,3,wk inc flu hosp,2024-12-14,17,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,17,quantile,0.025,0.0
@@ -4840,8 +4840,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,17,quantile,0.99,192.34130317687988
 2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,decrease,0.0201908881577117
 2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,increase,0.6650695172746277
-2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,largedecrease,8.800872922603218e-49
-2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,large_decrease,8.800872922603218e-49
+2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,17,pmf,stable,0.3147395945676606
 2024-11-23,3,wk inc flu hosp,2024-12-14,18,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,18,quantile,0.025,0.0
@@ -4868,8 +4868,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,18,quantile,0.99,188.034873046875
 2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,decrease,0.0178126173879907
 2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,increase,0.9011415602616614
-2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,largedecrease,3.878312465699986e-17
-2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,largeincrease,3.794877289076126e-07
+2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,large_decrease,3.878312465699986e-17
+2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,large_increase,3.794877289076126e-07
 2024-11-23,3,wk flu hosp rate change,2024-12-14,18,pmf,stable,0.0810454428626189
 2024-11-23,3,wk inc flu hosp,2024-12-14,19,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,19,quantile,0.025,0.0
@@ -4896,8 +4896,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,19,quantile,0.99,103.92211624145509
 2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,decrease,0.004982607849934
 2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,increase,0.9599955483106252
-2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,largedecrease,8.571689628537715e-19
-2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,largeincrease,4.3552561572735016e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,large_decrease,8.571689628537715e-19
+2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,large_increase,4.3552561572735016e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,19,pmf,stable,0.0350174885832834
 2024-11-23,3,wk inc flu hosp,2024-12-14,20,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,20,quantile,0.025,0.0
@@ -4924,8 +4924,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,20,quantile,0.99,89.9612671661377
 2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,decrease,0.0003561721821244
 2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,increase,0.8404598317533383
-2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,largedecrease,1.1163625535246597e-104
-2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,large_decrease,1.1163625535246597e-104
+2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,20,pmf,stable,0.1591839960645373
 2024-11-23,3,wk inc flu hosp,2024-12-14,21,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,21,quantile,0.025,0.0
@@ -4952,8 +4952,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,21,quantile,0.99,263.46421020507813
 2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,decrease,0.0514292353081878
 2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,increase,0.8550616682626268
-2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,largedecrease,1.5443730410858016e-06
-2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,largeincrease,0.0356758824795275
+2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,large_decrease,1.5443730410858016e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,large_increase,0.0356758824795275
 2024-11-23,3,wk flu hosp rate change,2024-12-14,21,pmf,stable,0.0578316695766167
 2024-11-23,3,wk inc flu hosp,2024-12-14,22,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,22,quantile,0.025,0.0
@@ -4980,8 +4980,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,22,quantile,0.99,147.25714935302733
 2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,decrease,0.0129902502768885
 2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,increase,0.926654904545214
-2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,largedecrease,1.4358137134221178e-16
-2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,largeincrease,3.38571233371443e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,large_decrease,1.4358137134221178e-16
+2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,large_increase,3.38571233371443e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,22,pmf,stable,0.0603514594655635
 2024-11-23,3,wk inc flu hosp,2024-12-14,23,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,23,quantile,0.025,0.0
@@ -5008,8 +5008,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,23,quantile,0.99,36.90366428375244
 2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,decrease,0.0090262240856616
 2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,increase,0.9586009937670732
-2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,largedecrease,2.7049448700165628e-11
-2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,largeincrease,0.0096791829215544
+2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,large_decrease,2.7049448700165628e-11
+2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,large_increase,0.0096791829215544
 2024-11-23,3,wk flu hosp rate change,2024-12-14,23,pmf,stable,0.0226935991986611
 2024-11-23,3,wk inc flu hosp,2024-12-14,24,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,24,quantile,0.025,0.0
@@ -5036,8 +5036,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,24,quantile,0.99,82.90876197814941
 2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,decrease,0.004988809705008
 2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,increase,0.7758027379205172
-2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,largedecrease,3.880016467457552e-61
-2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,large_decrease,3.880016467457552e-61
+2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,24,pmf,stable,0.2192084523744747
 2024-11-23,3,wk inc flu hosp,2024-12-14,25,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,25,quantile,0.025,0.0
@@ -5064,8 +5064,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,25,quantile,0.99,69.65759754180908
 2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,decrease,0.0018822031836846
 2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,increase,0.5857361256449587
-2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,largedecrease,1.6926078719235758e-126
-2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,large_decrease,1.6926078719235758e-126
+2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,25,pmf,stable,0.4123816711713566
 2024-11-23,3,wk inc flu hosp,2024-12-14,26,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,26,quantile,0.025,0.0
@@ -5092,8 +5092,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,26,quantile,0.99,297.9482095336914
 2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,decrease,0.0160594626212721
 2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,increase,0.8953919605910756
-2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,largedecrease,3.6786387561233124e-20
-2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,largeincrease,5.214197740244231e-09
+2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,large_decrease,3.6786387561233124e-20
+2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,large_increase,5.214197740244231e-09
 2024-11-23,3,wk flu hosp rate change,2024-12-14,26,pmf,stable,0.0885485715734544
 2024-11-23,3,wk inc flu hosp,2024-12-14,27,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,27,quantile,0.025,0.0
@@ -5120,8 +5120,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,27,quantile,0.99,96.50371074676514
 2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,decrease,0.0118637752162484
 2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,increase,0.8426345566742859
-2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,largedecrease,9.864105513298356e-35
-2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,large_decrease,9.864105513298356e-35
+2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,27,pmf,stable,0.1455016681094657
 2024-11-23,3,wk inc flu hosp,2024-12-14,28,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,28,quantile,0.025,0.0
@@ -5148,8 +5148,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,28,quantile,0.99,118.35971305847168
 2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,decrease,0.0359946476791014
 2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,increase,0.8874179316155031
-2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,largedecrease,1.790376918939457e-10
-2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,largeincrease,0.0005645048860836
+2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,large_decrease,1.790376918939457e-10
+2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,large_increase,0.0005645048860836
 2024-11-23,3,wk flu hosp rate change,2024-12-14,28,pmf,stable,0.0760229156402741
 2024-11-23,3,wk inc flu hosp,2024-12-14,29,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,29,quantile,0.025,0.0
@@ -5176,8 +5176,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,29,quantile,0.99,303.84299560546873
 2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,decrease,0.0647410954347257
 2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,increase,0.8303140517200975
-2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,largedecrease,3.380553380609486e-09
-2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,largeincrease,0.0004445746151536
+2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,large_decrease,3.380553380609486e-09
+2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,large_increase,0.0004445746151536
 2024-11-23,3,wk flu hosp rate change,2024-12-14,29,pmf,stable,0.1045002748494696
 2024-11-23,3,wk inc flu hosp,2024-12-14,30,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,30,quantile,0.025,0.0
@@ -5204,8 +5204,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,30,quantile,0.99,37.36424446105957
 2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,decrease,0.005415236111063
 2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,increase,0.9673682920904888
-2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,largedecrease,3.0623917302805144e-19
-2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,largeincrease,3.4276942083577566e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,large_decrease,3.0623917302805144e-19
+2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,large_increase,3.4276942083577566e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,30,pmf,stable,0.0272130441042398
 2024-11-23,3,wk inc flu hosp,2024-12-14,31,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,31,quantile,0.025,0.0
@@ -5232,8 +5232,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,31,quantile,0.99,44.30318672180176
 2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,decrease,0.0025787979260857
 2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,increase,0.9476218769574108
-2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,largedecrease,5.795194976492963e-33
-2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,largeincrease,3.6415315207705135e-14
+2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,large_decrease,5.795194976492963e-33
+2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,large_increase,3.6415315207705135e-14
 2024-11-23,3,wk flu hosp rate change,2024-12-14,31,pmf,stable,0.0497993251164669
 2024-11-23,3,wk inc flu hosp,2024-12-14,32,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,32,quantile,0.025,0.0
@@ -5260,8 +5260,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,32,quantile,0.99,92.49223136901855
 2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,decrease,0.0111460856201872
 2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,increase,0.9273589418209476
-2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,largedecrease,9.281983571903436e-18
-2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,largeincrease,9.646845264832391e-07
+2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,large_decrease,9.281983571903436e-18
+2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,large_increase,9.646845264832391e-07
 2024-11-23,3,wk flu hosp rate change,2024-12-14,32,pmf,stable,0.0614940078743386
 2024-11-23,3,wk inc flu hosp,2024-12-14,33,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,33,quantile,0.025,0.0
@@ -5288,8 +5288,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,33,quantile,0.99,23.25981044769287
 2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,decrease,3.0707479215750144e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,increase,0.9985684865180564
-2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,largedecrease,9.177749185852692e-67
-2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,large_decrease,9.177749185852692e-67
+2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,33,pmf,stable,0.0014284427340219
 2024-11-23,3,wk inc flu hosp,2024-12-14,34,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,34,quantile,0.025,0.0
@@ -5316,8 +5316,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,34,quantile,0.99,218.45496337890623
 2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,decrease,0.0167869160811664
 2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,increase,0.8659457695372275
-2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,largedecrease,3.863583134594588e-24
-2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,largeincrease,4.115929819192843e-12
+2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,large_decrease,3.863583134594588e-24
+2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,large_increase,4.115929819192843e-12
 2024-11-23,3,wk flu hosp rate change,2024-12-14,34,pmf,stable,0.11726731437749
 2024-11-23,3,wk inc flu hosp,2024-12-14,35,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,35,quantile,0.025,0.0
@@ -5344,8 +5344,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,35,quantile,0.99,122.05927757263184
 2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,decrease,0.0585283336633111
 2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,increase,0.8640351938317972
-2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,largedecrease,3.7770928471910403e-07
-2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,largeincrease,0.0132920117989862
+2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,large_decrease,3.7770928471910403e-07
+2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,large_increase,0.0132920117989862
 2024-11-23,3,wk flu hosp rate change,2024-12-14,35,pmf,stable,0.0641440829966208
 2024-11-23,3,wk inc flu hosp,2024-12-14,36,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,36,quantile,0.025,0.0
@@ -5372,8 +5372,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,36,quantile,0.99,354.73056762695313
 2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,decrease,4.919604697763147e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,increase,0.8884112997011956
-2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,largedecrease,1.1691635282030867e-135
-2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,large_decrease,1.1691635282030867e-135
+2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,36,pmf,stable,0.1115395042518267
 2024-11-23,3,wk inc flu hosp,2024-12-14,37,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,37,quantile,0.025,0.0
@@ -5400,8 +5400,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,37,quantile,0.99,289.3369026184082
 2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,decrease,0.029298799226351
 2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,increase,0.8392350525776263
-2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,largedecrease,5.178132530389099e-19
-2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,largeincrease,1.351597611609634e-09
+2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,large_decrease,5.178132530389099e-19
+2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,large_increase,1.351597611609634e-09
 2024-11-23,3,wk flu hosp rate change,2024-12-14,37,pmf,stable,0.131466146844425
 2024-11-23,3,wk inc flu hosp,2024-12-14,38,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,38,quantile,0.025,0.0
@@ -5428,8 +5428,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,38,quantile,0.99,36.85955500602722
 2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,decrease,0.0132052276527911
 2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,increase,0.9556309011998052
-2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,largedecrease,1.2825724142460316e-11
-2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,largeincrease,0.0033603946123518
+2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,large_decrease,1.2825724142460316e-11
+2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,large_increase,0.0033603946123518
 2024-11-23,3,wk flu hosp rate change,2024-12-14,38,pmf,stable,0.0278034765222262
 2024-11-23,3,wk inc flu hosp,2024-12-14,39,quantile,0.01,112.332587890625
 2024-11-23,3,wk inc flu hosp,2024-12-14,39,quantile,0.025,112.332587890625
@@ -5456,8 +5456,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,39,quantile,0.99,912.5212939453124
 2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,decrease,0.0088434863859938
 2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,increase,0.5939992152430379
-2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,largedecrease,1.105702098042708e-06
-2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,largeincrease,0.3869489232743885
+2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,large_decrease,1.105702098042708e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,large_increase,0.3869489232743885
 2024-11-23,3,wk flu hosp rate change,2024-12-14,39,pmf,stable,0.0102072693944816
 2024-11-23,3,wk inc flu hosp,2024-12-14,40,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,40,quantile,0.025,0.0
@@ -5484,8 +5484,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,40,quantile,0.99,113.50099624633788
 2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,decrease,0.0192209159364329
 2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,increase,0.9014062158686214
-2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,largedecrease,6.075362370260038e-17
-2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,largeincrease,4.285335477582919e-07
+2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,large_decrease,6.075362370260038e-17
+2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,large_increase,4.285335477582919e-07
 2024-11-23,3,wk flu hosp rate change,2024-12-14,40,pmf,stable,0.0793724396613978
 2024-11-23,3,wk inc flu hosp,2024-12-14,41,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,41,quantile,0.025,0.0
@@ -5512,8 +5512,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,41,quantile,0.99,26.64352602481842
 2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,decrease,0.0010484796864654
 2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,increase,0.7437248805982636
-2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,largedecrease,7.52061162666427e-104
-2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,large_decrease,7.52061162666427e-104
+2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,41,pmf,stable,0.2552266397152709
 2024-11-23,3,wk inc flu hosp,2024-12-14,42,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,42,quantile,0.025,0.0
@@ -5540,8 +5540,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,42,quantile,0.99,418.1682147216797
 2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,decrease,0.0044859327825026
 2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,increase,0.964334134668714
-2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,largedecrease,2.0320772781369991e-19
-2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,largeincrease,3.1112657228327123e-06
+2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,large_decrease,2.0320772781369991e-19
+2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,large_increase,3.1112657228327123e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,42,pmf,stable,0.0311768212830604
 2024-11-23,3,wk inc flu hosp,2024-12-14,44,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,44,quantile,0.025,0.0
@@ -5568,8 +5568,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,44,quantile,0.99,38.53117691040039
 2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,decrease,0.0001165311406482
 2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,increase,0.9970025959518396
-2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,largedecrease,3.349522823309954e-22
-2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,largeincrease,0.0016253238731883
+2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,large_decrease,3.349522823309954e-22
+2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,large_increase,0.0016253238731883
 2024-11-23,3,wk flu hosp rate change,2024-12-14,44,pmf,stable,0.0012555490343238
 2024-11-23,3,wk inc flu hosp,2024-12-14,45,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,45,quantile,0.025,0.0
@@ -5596,8 +5596,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,45,quantile,0.99,134.98060256958007
 2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,decrease,0.0155625175390714
 2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,increase,0.8835433451868068
-2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,largedecrease,7.886070325349713e-23
-2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,largeincrease,6.92508272948089e-11
+2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,large_decrease,7.886070325349713e-23
+2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,large_increase,6.92508272948089e-11
 2024-11-23,3,wk flu hosp rate change,2024-12-14,45,pmf,stable,0.1008941372048709
 2024-11-23,3,wk inc flu hosp,2024-12-14,46,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,46,quantile,0.025,0.0
@@ -5624,8 +5624,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,46,quantile,0.99,45.59304428100586
 2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,decrease,0.0037297795644648
 2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,increase,0.9569505319751246
-2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,largedecrease,8.205716718262824e-12
-2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,largeincrease,0.0255855924970632
+2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,large_decrease,8.205716718262824e-12
+2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,large_increase,0.0255855924970632
 2024-11-23,3,wk flu hosp rate change,2024-12-14,46,pmf,stable,0.0137340959551414
 2024-11-23,3,wk inc flu hosp,2024-12-14,47,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,47,quantile,0.025,0.0
@@ -5652,8 +5652,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,47,quantile,0.99,267.5052215576172
 2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,decrease,0.0285986565784205
 2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,increase,0.8960708171714147
-2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,largedecrease,1.0888802485546629e-12
-2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,largeincrease,5.64592793829144e-05
+2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,large_decrease,1.0888802485546629e-12
+2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,large_increase,5.64592793829144e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,47,pmf,stable,0.0752740669696929
 2024-11-23,3,wk inc flu hosp,2024-12-14,48,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,48,quantile,0.025,0.0
@@ -5680,8 +5680,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,48,quantile,0.99,464.41505432128906
 2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,decrease,0.0082176253722876
 2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,increase,0.8122231128516613
-2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,largedecrease,5.8957604538049526e-46
-2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,large_decrease,5.8957604538049526e-46
+2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,48,pmf,stable,0.1795592617760511
 2024-11-23,3,wk inc flu hosp,2024-12-14,49,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,49,quantile,0.025,0.0
@@ -5708,8 +5708,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,49,quantile,0.99,30.72074760437012
 2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,decrease,7.177284701924774e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,increase,0.8476681506903654
-2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,largedecrease,5.6605167660876785e-151
-2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,large_decrease,5.6605167660876785e-151
+2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,49,pmf,stable,0.1522600764626153
 2024-11-23,3,wk inc flu hosp,2024-12-14,50,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,50,quantile,0.025,0.0
@@ -5736,8 +5736,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,50,quantile,0.99,6.048232078552246
 2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,decrease,2.3275073128934566e-11
 2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,increase,0.9999977883516726
-2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,largedecrease,5.619605414769825e-103
-2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,large_decrease,5.619605414769825e-103
+2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,50,pmf,stable,2.2116250522388645e-06
 2024-11-23,3,wk inc flu hosp,2024-12-14,51,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,51,quantile,0.025,0.0
@@ -5764,8 +5764,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,51,quantile,0.99,130.50888412475587
 2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,decrease,0.0097784598094397
 2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,increase,0.8203299474076255
-2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,largedecrease,6.286562687764971e-42
-2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,large_decrease,6.286562687764971e-42
+2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,51,pmf,stable,0.1698915927829347
 2024-11-23,3,wk inc flu hosp,2024-12-14,53,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,53,quantile,0.025,0.0
@@ -5792,8 +5792,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,53,quantile,0.99,139.7914889526367
 2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,decrease,0.0026375457787134
 2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,increase,0.8696635370230956
-2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,largedecrease,1.09899568505831e-58
-2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,large_decrease,1.09899568505831e-58
+2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,53,pmf,stable,0.1276989171981908
 2024-11-23,3,wk inc flu hosp,2024-12-14,54,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,54,quantile,0.025,0.0
@@ -5820,8 +5820,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,54,quantile,0.99,83.04940414428711
 2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,decrease,0.0181954808607991
 2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,increase,0.9396649544792968
-2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,largedecrease,2.168722071364529e-10
-2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,largeincrease,0.0053827522023294
+2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,large_decrease,2.168722071364529e-10
+2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,large_increase,0.0053827522023294
 2024-11-23,3,wk flu hosp rate change,2024-12-14,54,pmf,stable,0.0367568122407026
 2024-11-23,3,wk inc flu hosp,2024-12-14,55,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,55,quantile,0.025,0.0
@@ -5848,8 +5848,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,55,quantile,0.99,108.48021125793456
 2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,decrease,0.0074477474055225
 2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,increase,0.8543835197727659
-2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,largedecrease,1.9374857072227973e-39
-2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,large_decrease,1.9374857072227973e-39
+2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,55,pmf,stable,0.1381687328217115
 2024-11-23,3,wk inc flu hosp,2024-12-14,56,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,56,quantile,0.025,0.0
@@ -5876,8 +5876,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,56,quantile,0.99,13.5037410736084
 2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,decrease,1.3238300040738716e-06
 2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,increase,0.9997740407681568
-2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,largedecrease,4.115245277273222e-34
-2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,largeincrease,6.473199075496261e-05
+2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,large_decrease,4.115245277273222e-34
+2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,large_increase,6.473199075496261e-05
 2024-11-23,3,wk flu hosp rate change,2024-12-14,56,pmf,stable,0.000159903411084
 2024-11-23,3,wk inc flu hosp,2024-12-14,72,quantile,0.01,8.385811462402344
 2024-11-23,3,wk inc flu hosp,2024-12-14,72,quantile,0.025,8.385811462402344
@@ -5904,8 +5904,8 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,72,quantile,0.99,31.29668746948242
 2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,decrease,7.699274016161898e-15
 2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,increase,0.9999040840445732
-2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,largedecrease,1.5885335189574171e-305
-2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,large_decrease,1.5885335189574171e-305
+2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,72,pmf,stable,9.591595541925792e-05
 2024-11-23,3,wk inc flu hosp,2024-12-14,US,quantile,0.01,0.0
 2024-11-23,3,wk inc flu hosp,2024-12-14,US,quantile,0.025,0.0
@@ -5932,6 +5932,6 @@ reference_date,horizon,target,target_end_date,location,output_type,output_type_i
 2024-11-23,3,wk inc flu hosp,2024-12-14,US,quantile,0.99,5555.215263671875
 2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,decrease,0.0083783363422127
 2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,increase,0.8305591194480567
-2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,largedecrease,1.2418465375837089e-42
-2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,largeincrease,0.0
+2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,large_decrease,1.2418465375837089e-42
+2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,large_increase,0.0
 2024-11-23,3,wk flu hosp rate change,2024-12-14,US,pmf,stable,0.1610625442097305
