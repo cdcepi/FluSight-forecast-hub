@@ -1,0 +1,27 @@
+team_name: "ISU_NiemiLab"
+team_abbr: "ISU_NiemiLab"
+model_name: "Gibbs posterior optimal linear pool ensemble"
+model_abbr: "GPE"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Spencer Wadsworth",
+    "affiliation": "Iowa State",
+    "email": "sgw96@iastate.edu"
+  },
+  {
+    "name": "Jarad Niemi",
+    "affiliation": "Iowa State",
+    "email": "niemi@iastate.edu"
+  }
+]
+website_url: "https://jarad.me"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: true
+methods: "A linear pool combination of other forecasts with weights selected using a Gibbs posterior"
+data_inputs: "weekly incident flu hospitalizations from HHS, FluSight forecasts"
+methods_long: "nonlinear model"
+ensemble_of_models: false
+ensemble_of_hub_models: true
