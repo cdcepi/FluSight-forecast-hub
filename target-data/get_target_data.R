@@ -8,6 +8,7 @@ fetch_flu <- function(){
   require(dplyr)
   require(lubridate)
   require(RSocrata)
+  require(stringr)
   
   #read data from data.cdc.gov, filtering for when flu reporting became mandatory
   health_data = RSocrata::read.socrata(url = "https://data.cdc.gov/resource/mpgq-jmmr.json") %>% 
@@ -20,7 +21,7 @@ fetch_flu <- function(){
     dplyr::rename("value" = "totalconfflunewadm", "date"="weekendingdate", "state"="jurisdiction") %>% 
     dplyr::mutate(date = as.Date(date), 
                   value = as.numeric(value),
-                  state = gsub(state, "USA", "US"))
+                  state = str_replace(state, "USA", "US"))
   
   #bind state population data
   full_data = dplyr::left_join(recent_data, locations, by = join_by("state" == "abbreviation"))
@@ -37,6 +38,7 @@ fetch_flu <- function(){
 library(dplyr)
 library(lubridate)
 library(RSocrata)
+library(stringr)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
