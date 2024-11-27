@@ -1,0 +1,32 @@
+team_name: "VTSanghani"
+team_abbr: "VTSanghani"
+model_name: "PRIME"
+model_abbr: "PRIME"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Yiqi Su",
+    "affiliation": "Virginia Tech",
+    "email": "yiqisu@vt.edu"
+  },
+  {
+    "name": "Patrick Butler",
+    "affiliation": "Virginia Tech",
+    "email": "pabutler@vt.edu"
+  },
+  {
+    "name": "Naren Ramakrishnan",
+    "affiliation": "Virginia Tech",
+    "email": "naren@cs.vt.edu"
+  },
+]
+website_url: "https://sanghani.cs.vt.edu/"
+license: "CC-BY-4.0"
+team_funding: "NSF"
+designated_model: true
+methods: "Integration of model-based and time series forecasting methods."
+data_inputs: "National and jurisdictional weekly incident influenza like illness (ILI) case counts, flu vaccination coverage, illness activity, hospitalization admissions, mortality data, and state informtion."
+methods_long: "This ensemble forecasts US national- and state-level influenza hospitalizations. Included models focus
+  on novel deep learning techniques" 
+ensemble_of_models: false
+ensemble_of_hub_models: false
