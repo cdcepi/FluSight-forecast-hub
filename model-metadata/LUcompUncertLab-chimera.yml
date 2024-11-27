@@ -30,6 +30,7 @@ Still cranky about how sensitive this model is to changes. This round ill try to
 2023-12-16: Ran versions without and without the QO data. For the majority of locations i chose the model that included QO data. There were 3 locations, 30,37,56 where i thought the model without QO data was better and so chose those forecasts instead.
 2023-12-30: Not much to report. Still running a few slightly different versions of the model and then hand picking which model to submit for which location.
 2024-03-20: Not in love with Loc 2 but otherwise forecasts look ok
-2024-11-17: new model up and running. Looks like good results visually."
+2024-11-17: new model up and running. Looks like good results visually.
+2024-11-27: didnt have much time to work on hosp forecasts this week. Need to account for these outlier states."
 ensemble_of_models: false
 ensemble_of_hub_models: false
