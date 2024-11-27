@@ -21,7 +21,7 @@ fetch_flu <- function(){
     dplyr::rename("value" = "totalconfflunewadm", "date"="weekendingdate", "state"="jurisdiction") %>% 
     dplyr::mutate(date = as.Date(date), 
                   value = as.numeric(value),
-                  state = str_replace(state, "USA", "US"))
+                  state = stringr::str_replace(state, "USA", "US"))
   
   #bind state population data
   full_data = dplyr::left_join(recent_data, locations, by = join_by("state" == "abbreviation"))
