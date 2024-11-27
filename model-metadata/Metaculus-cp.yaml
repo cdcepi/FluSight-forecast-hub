@@ -1,0 +1,28 @@
+team_name: "Metaculus"
+team_abbr: "Metaculus"
+model_name: "Metaculus Community Prediction"
+model_abbr: "cp"
+model_version: "1.0"
+model_contributors:
+    [
+        {
+            "name": "Ryan Beck",
+            "affiliation": "Metaculus",
+            "email": "ryan@metaculus.com",
+        },
+        {
+            "name": "Nikos Bosse",
+            "affiliation": "Metaculus",
+            "email": "nikos@metaculus.com",
+        },
+    ]
+website_url: "https://www.metaculus.com/questions/29507/us-weekly-influenza-hospitalizations-24-25/"
+repo_url: "https://github.com/Metaculus/respiratory-diseases"
+license: "CC-BY-4.0"
+designated_model: true
+team_funding: "This project is supported by the National Science Foundation under Award No. 2438211. Any opinions, findings and conclusions or recommendations expressed in this project are those of Metaculus and our forecasters, and do not necessarily reflect the views of the National Science Foundation."
+methods: "A recency-weighted average of predictions made by forecasters on the Metaculus prediction platform."
+data_inputs: "Users are allowed to make use of any data they choose. The recency-weighted average takes only the numeric forecasts made by forecasters on the platform into account."
+methods_long: "The Metaculus Community Prediction is a consensus of recent forecaster predictions. It is designed to respond to big changes in forecaster opinion while still being fairly insensitive to outliers. For every forecaster, on ly their most recent prediction is kept. Predictions are assigned a number n, from oldest to newest (oldest is 1). Every prediction is weighted proportional to exp(sqrt(n)). Predictions are then aggregated by creating a mixture distribution of all available weighted forecasts."
+ensemble_of_models: true
+ensemble_of_hub_models: false
