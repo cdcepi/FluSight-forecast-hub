@@ -1,0 +1,35 @@
+team_name: "MOBS Lab at Northeastern University and ISI Foundation"
+team_abbr: "NEU_ISI"
+model_name: "Flu Behavioural Model"
+model_abbr: "FluBcast"
+model_version: "1.0"
+model_contributors: [
+    {
+    "name": "Stefania Fiandrino",
+    "affiliation": "Sapienza, University of Rome, ISI Foundation",
+    "email": "stefania.fiandrino@isi.it"
+  },
+    {
+    "name": "Daniela Paolotti",
+    "affiliation": "ISI Foundation",
+    "email": "daniela.paolotti@isi.it"
+  },
+  {
+    "name": "Alessandro Vespignani",
+    "affiliation": "MOBS Lab, Northeastern University",
+    "email": "alexves@gmail.com"
+  },
+  {
+    "name": "Nicolò Gozzi",
+    "affiliation": "ISI Foundation",
+    "email": "nicolo.gozzi@isi.it"
+  },
+]
+website_url: "https://www.isi.it/"
+license: "CC-BY_SA-4.0"
+designated_model: true
+methods: "A stochastic, age-structured compartmental model that explicitly integrates behavioral changes through a new compartment of susceptible individuals who are risk averse."
+data_inputs: "Weekly incident flu hospitalizations, contact matrices from Mistry et al. (2021), Prem et al (2017)"
+methods_long: "FluBcast is a compartmental behavioral feedback model that simulates the feedback loop by explicitly representing different behavioral classes within the population. Specifically, it is a stochastic, age-structured compartmental model that integrates behavioral changes through a new compartment of risk-averse susceptible individuals."
+ensemble_of_models: false
+ensemble_of_hub_models: false
