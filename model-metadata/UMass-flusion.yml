@@ -25,6 +25,8 @@ methods_long: "
   As of 2024-11-23, these are equally weighted.
   Categorical predictions are derived from the quantile predictions by fitting a monotonic spline to interpolate the quantiles.
   
+  2024-11-30: Our model is not responding well to data anomalies in OH. We have dropped that state from this week's submission.
+  
   2023/24 season:
   2023-10-14: A linear pool of two sub-ensembles, one fit with all available data and one fit dropping the last data point which may be subject to revisions. Each sub-ensemble is an equally-weighted Vincent median ensemble of three components: 1) an AR(8) model fit only to HHS data on a fourth root scale; 2) a gradient boosting model fit to data from all three sources with uncertainty based on bootstrapping out-of-bag prediction errors; 3) a gradient boosting model fit to all three data sources with quantile regression separately for each quantile level, with predictions sorted to address quantile crossing.
   2023-10-21: Fit only to the data release including data up through the week of 2023-10-14. Dropped bootstrap method, so submission is a quantile averaged ensemble of AR(8) and the gradient boosting model with quantile regression for all quantiles.
