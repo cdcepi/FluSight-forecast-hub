@@ -1,0 +1,52 @@
+team_name: "MIGHTE"
+team_abbr: "MIGHTE"
+model_name: "Joint time series ensemble"
+model_abbr: "Joint"
+model_version: "0.1"
+model_contributors: [
+  {
+    "name": "Austin Meyer",
+    "affiliation": "Northeastern University",
+    "email": "austin.g.meyer@gmail.com"
+  },
+  {
+    "name": "Fred Lu",
+    "affiliation": "Northeastern University",
+    "email": "fredlu1618@gmail.com"
+  },
+  {
+    "name": "Leonardo Clemente",
+    "affiliation": "Northeastern University",
+    "email": "c.clementelopez@northeastern.edu"
+  },
+  {
+    "name": "Mauricio Santillana",
+    "affiliation": "Northeastern University",
+    "email": "m.santillana@northeastern.edu"
+  },
+  {
+    "name": "Shihao Yang",
+    "affiliation": "Georgia Tech",
+    "email": "shihao.yang@isye.gatech.edu"
+  },
+  {
+    "name": "Candice Djorno",
+    "affiliation": "Georgia Tech",
+    "email":  "cdjorno3@gatech.edu"  
+  },
+  {
+    "name": "Jiecheng Lu",
+    "affiliation": "Georgia Tech",
+    "email": "jlu414@gatech.edu"
+  }
+]
+website_url: "https://github.com/MIGHTE-lab/"
+license: "CC-BY-4.0"
+citation: ""
+team_funding: ""
+designated_model: true
+methods: "Joint submission with GATech with weighted ensemble of time-series component models"
+data_inputs: "Weekly incident flu hospitalizations, with imputation for unreported hospitalizations, Google Trends data"
+methods_long: "Weighted ensemble of time-series models, including lightGBM, ARIMA models, autoregressive models (ARGO2)."
+ensemble_of_models: true
+ensemble_of_hub_models: false
