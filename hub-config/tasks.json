@@ -1,5 +1,5 @@
 {
-    "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v3.0.1/tasks-schema.json",
+    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v4.0.0/tasks-schema.json",
     "rounds": [
         {
             "round_id_from_variable": true,
@@ -116,7 +116,6 @@
                                 "2025-04-26", "2025-05-03", "2025-05-10", "2025-05-17", 
                                 "2025-05-24", "2025-05-31", "2025-06-07", "2025-06-14",
                                 "2025-06-21"
-
                             ]
                         }
                     },
@@ -129,14 +128,14 @@
                                     "stable",
                                     "increase",
                                     "large_increase"
-                                ],
-                                "optional": null
+                                ]
                             },
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
                                 "maximum": 1
-                            }
+                            },
+                            "is_required": true
                         }
                     },
                     "target_metadata": [
@@ -296,17 +295,16 @@
                                     0.95,
                                     0.975,
                                     0.99
-                                ],
-                                "optional": null
+                                ]
                             },
                             "value": {
                                 "type": "double",
                                 "minimum": 0
-                            }
+                            },
+                            "is_required": true
                         },
                         "sample": {
                             "output_type_id_params": {
-                                "is_required": false,
                                 "type": "integer",
                                 "min_samples_per_task": 100,
                                 "max_samples_per_task": 100,
@@ -315,7 +313,8 @@
                             "value": {
                                 "type": "integer",
                                 "minimum": 0
-                            }
+                            },
+                            "is_required": false
                         }
                     },
                     "target_metadata": [
@@ -454,13 +453,13 @@
                                     0.95,
                                     0.975,
                                     0.99
-                                ],
-                                "optional": null
+                                ]
                             },
                             "value": {
                                 "type": "double",
                                 "minimum": 0
-                            }
+                            },
+                            "is_required": true
                         }
                     },
                     "target_metadata": [
@@ -585,14 +584,14 @@
                                     "2025-04-05", "2025-04-12", "2025-04-19",
                                     "2025-04-26", "2025-05-03", "2025-05-10",
                                     "2025-05-17", "2025-05-24", "2025-05-31"
-                                ],
-                                "optional": null
+                                ]
                             },
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
                                 "maximum": 1
-                            }
+                            },
+                            "is_required": true
                         }
                     },
                     "target_metadata": [
@@ -616,5 +615,6 @@
                 "end": -3
             }
         }
-    ]
+    ],
+    "derived_task_ids": ["target_end_date"]
 }
