@@ -1,7 +1,7 @@
 team_name: UGA Center for the Ecology of Infectious Diseases (CEID)
 team_abbr: UGA_CEID
 model_name: UGA_CEID_Walk
-model_abbr: UGA_CEID_Walk
+model_abbr: Walk
 model_contributors: [
   {
     "name": "John M. Drake",
