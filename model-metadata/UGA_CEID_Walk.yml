@@ -22,7 +22,7 @@ model_contributors: [
     "orcid": "0000-0001-7825-6418"
   }
 ]
-license: "MIT License"
+license: "CC-BY-4.0" 
 designated_model: true
 data_inputs: Weekly incident flu hospitalizations reported to NHSN.
 methods: An random walk model assumes that the next few weeks of any time series of indicators will have the same spread as the last few weeks and will be centered on the last observation.
