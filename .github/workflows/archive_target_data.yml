@@ -5,8 +5,8 @@ on:
       name:
         description: 'Archive target data'
         required: false
-#  schedule:
-#    - cron: "20 17 * * 3"
+  schedule:
+    - cron: "20 17 * * 3"
 
 jobs:
   archive_target_data:
