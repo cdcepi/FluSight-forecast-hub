@@ -1,0 +1,25 @@
+team_name: "UI_CompEpi"
+team_abbr: "UI_CompEpi"
+model_name: "EpiGen"
+model_abbr: "EpiGen"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Bijaya Adhikari",
+    "affiliation": "University of Iowa",
+    "email": "bijaya-adhikari@uiowa.edu"
+  },
+  {
+    "name": "Hieu Vu",
+    "affiliation": "University of Iowa",
+    "email": "hieu-vu@uiowa.edu"
+  }
+]
+website_url: "https://pisa.cs.uiowa.edu/compepi/"
+license: "CC-BY-4.0"
+designated_model: True
+data_inputs: "Weekly incident flu hospitalizations from HealthData.gov, and outpatient ILI from ILINet"
+methods: "Ensemble of traditional and deep predictive models trained on combination of historical and synthetic data"
+methods_long: "We train an ensemble of deep learning approachs including ARIMA, LSTM, EpiDeep, EpiFNP, Transformer models on historical and synthetic data. Our synthetic data is generated using a variational autoencoder (VAE) trained on historical data. We use the ensemble of models to predict the target data."
+ensemble_of_models: True
+ensemble_of_hub_models: False
