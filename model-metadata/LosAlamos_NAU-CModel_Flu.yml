@@ -43,14 +43,44 @@ model_contributors: [
             "name": "Abhishek Mallela",
             "affiliation": "Los Alamos National Lab",
             "email": "abhishek.mallela@gmail.com",
+        },
+        {
+            "name": "Ely Miller",
+            "affiliation": "Northern Arizona University",
+            "email": "efm46@nau.edu",
+        },
+        {
+            "name": "Colin Grosvenor",
+            "affiliation": "Northern Arizona University",
+            "email": "cjg489@nau.edu",
+        },
+        {
+            "name": "Bria Fieberger",
+            "affiliation": "Northern Arizona University",
+            "email": "bjf235@nau.edu",
+        },
+        {
+            "name": "Kylie Ann Geist",
+            "affiliation": "Northern Arizona University",
+            "email": "kag592@nau.edu",
+        },
+        {
+            "name": "Maya Baltz",
+            "affiliation": "Northern Arizona University",
+            "email": "msb438@nau.edu",
+        },
+        {
+            "name": "Ozbej Bernik",
+            "affiliation": "Northern Arizona University",
+            "email": "ob244@nau.edu",
         }
     ]
-website_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
-repo_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
+website_url: "https://pybnf.readthedocs.io/en/latest/"
+repo_url: "https://github.com/lanl/PyBNF"
 license: "CC-BY-4.0"
 designated_model: true
-methods: "A compartmental model with Bayesian inference, uncertainty quantification and calibration."
-data_inputs: "State level daily hospitalization data from HealthData.gov."
-methods_long: "We employed a compartmental model that features a time-dependent transmission rate as the base model. Using Bayesian inference, we parametrize the transmission rate from hospitalization data. Subsequent steps involved uncertainty quantification and model calibration."
+methods: "A compartmental model with Bayesian inference and uncertainty quantification."
+data_inputs: "State level weekly hospitalization data from https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data."
+methods_long: "We employed a compartmental model that features a time-dependent transmission rate as the base model. Using Bayesian inference, we parametrize the transmission rate from hospitalization data by PyBioNetFit. Subsequent steps involve uncertainty quantification."
 ensemble_of_models: false
 ensemble_of_hub_models: false
