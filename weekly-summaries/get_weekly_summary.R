@@ -236,6 +236,8 @@ map_data <-forecasttools::pivot_hubverse_quantiles_wider(
     forecast_due_date_formatted = format(forecast_due_date, "%B %d, %Y"),  # Format as "Month DD, YYYY"
     forecast_due_date = format(forecast_due_date, "%Y-%m-%d")  # Format as "YYYY-MM-DD"
   ) |> 
+  dplyr::mutate(location = factor(location, levels = c("US", sort(setdiff(unique(location), "US"))))) %>%
+  arrange(location) %>% 
   dplyr::select(
     location_name = location, # rename location col
     horizon,
