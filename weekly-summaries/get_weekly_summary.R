@@ -66,7 +66,10 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
     forecast_due_date_formatted = format(forecast_due_date, "%B %d, %Y"),  # Format as "Month DD, YYYY"
     forecast_due_date = format(forecast_due_date, "%Y-%m-%d")  # Format as "YYYY-MM-DD"
   ) |>
-  dplyr::filter(horizon !=3)|>
+  dplyr::filter(horizon !=3, horizon != -1)|>
+  mutate(location_name = recode(location_name, "United States" = "US")) %>% 
+  mutate(location_name = factor(location_name, levels = c("US", sort(setdiff(unique(location_name), "US"))))) %>%
+  arrange(location_name) %>% 
   dplyr::select(
     location_name,
     abbreviation,
@@ -92,7 +95,7 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
-output_filename <- paste0(ref_date, "-flu_forecasts_data.csv")
+output_filename <- paste0(ref_date, "_flu_forecasts_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -260,7 +263,7 @@ map_data <-forecasttools::pivot_hubverse_quantiles_wider(
 
 # output folder and file paths for Map Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
-output_filename <- paste0(ref_date, "-flu_map_data.csv")
+output_filename <- paste0(ref_date, "_flu_map_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -348,7 +351,7 @@ truth_data <- flu_data |>
   )
 # output folder and file paths for Truth Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", reference_date)
-output_filename <- paste0(reference_date, "-flu_target_hospital_admisssions_data.csv")
+output_filename <- paste0(reference_date, "_flu_target_hospital_admissions_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
