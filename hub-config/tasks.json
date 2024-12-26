@@ -613,7 +613,7 @@
             "submissions_due": {
                 "relative_to": "reference_date",
                 "start": -6,
-                "end": -3
+                "end": -2
             }
         }
     ]
