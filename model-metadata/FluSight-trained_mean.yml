@@ -1,0 +1,30 @@
+team_name: "FluSight-trained_mean"
+team_abbr: "FluSight"
+model_name: "Ensemble models using 6 weeks of FluSight forecast submissions"
+model_abbr: "trained_mean"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+    {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  },
+    {
+    "name": "Annabella Hines",
+    "affiliation": "CDC",
+    "email": "zoh1@cdc.gov"
+  }
+]
+website_url: "https://github.com/Infectious-Disease-Modeling-Hubs/hubEnsembles"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Mean-based weighted ensemble of quantile forecasts submissions."
+data_inputs: "Weekly incident flu hospitalizations from HealthData.gov Hospital Respiratory Dataset."
+methods_long: "The Hubverse package hubEnsembles is used to generate the ensemble forecast. A weighted mean of quantile outputs is used for all eligible quantile-based forecasts with submissions during the prior six weeks. Weights were calculated using a sigmoidal transformation of the forecasts’ relative weighted interval score with respect to the baseline forecast during the prior six weeks. The weight for included forecasts was limited to 0.3."
+ensemble_of_models: true
+ensemble_of_hub_models: true
