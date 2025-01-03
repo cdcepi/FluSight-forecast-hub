@@ -2,7 +2,7 @@ team_name: "University of Guelph Dynamics Training Lab"
 team_abbr: "UGuelph"
 model_name: "Composite Curve"
 model_abbr: "CompositeCurve"
-model_version: "2.0"
+model_version: "2.1"
 model_contributors: [
   {
     "name": "Edward Thommes",
@@ -40,8 +40,8 @@ license: "CC-BY-4.0"
 designated_model: true
 methods: "Composite of past epidemic curves"
 data_inputs: "target-hospital-admissions.csv"
-methods_long: "We produce a peak-aligned composite curve epidemic curves across past seasons and regions, normalizing the season for percent of cases each week, and then taking the median percentage across the resulting curves for each number of weeks from the peak, following the approach of Schanzer et al., Influenza and Other Respiratory Viruses 2010.   Then, for each state, we compute the ratio of cases between the most recent count and the previous count, and compare against the ratios along the median curve.”
-sample_method: “Each position along the curve is weighted based on its difference from the observed ratio, and these weights are used to select 100 positions (allowing repetition) along the curve. These positions are used to produce the 100 sample trajectories by applying the subsequent ratios to the observed data."
+methods_long: "We produce a peak-aligned composite curve epidemic curves across past seasons and regions, normalizing the season for percent of cases each week, and then taking the median percentage across the resulting curves for each number of weeks from the peak, following the approach of Schanzer et al., Influenza and Other Respiratory Viruses 2010.   Then, for each state, we compute the normalized case count for the preceding four weeks, and compare against the normalized four week windows of the composite curve, following the approach of Morel et al. PLOS Computational Biology, 2023.  Revised from previous versions December 30, 2024.”
+sample_method: “Each window along the curve is weighted based on its distance from the most recent window and these weights are used to select 100 windows (allowing repetition) along the curve. These windows are used to produce the 100 sample trajectories by applying the subsequent scaling factors to the observed data."
 ensemble_of_models: false
 ensemble_of_hub_models: false
 
