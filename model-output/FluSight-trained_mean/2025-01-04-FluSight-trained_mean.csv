@@ -1,4 +1,4 @@
-model_id,reference_date,location,horizon,target_variable,target_end_date,output_type,output_type_id,value
+model_id,reference_date,location,horizon,target,target_end_date,output_type,output_type_id,value
 FluSight-trained_mean,2025-01-04,01,0,wk inc flu hosp,2025-01-04,quantile,0.01,345.3300138870297
 FluSight-trained_mean,2025-01-04,01,0,wk inc flu hosp,2025-01-04,quantile,0.025,412.7868406487551
 FluSight-trained_mean,2025-01-04,01,0,wk inc flu hosp,2025-01-04,quantile,0.05,465.88646717389526
