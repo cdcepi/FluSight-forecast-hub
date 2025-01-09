@@ -11,7 +11,7 @@ model_contributors: [
   },
 ]
 website_url: "https://www.jhuapl.edu/"
-license: "MIT"
+license: "cc-by-4.0"
 team_funding: "ACCIDDA"
 designated_model: true
 methods: "N-HiTS model with custom Weighted Interval Score (WIS) loss for probabilistic flu hospitalization forecasts by state."
