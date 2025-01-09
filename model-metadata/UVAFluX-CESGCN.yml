@@ -39,7 +39,7 @@ website_url: "https://biocomplexity.virginia.edu/institute/divisions/network-sys
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"
-designated_model: False
+designated_model: True
 methods: "A Graph Neural Network forecasting model"
 data_inputs: "Weekly incident flu hospitalizations from HHS"
 methods_long: "This is a state-level graph-neural-network-based model for forecasting the new influenza hospitalizations. The graph encodes the causal relationships across states and is derived using transfer entropy."
