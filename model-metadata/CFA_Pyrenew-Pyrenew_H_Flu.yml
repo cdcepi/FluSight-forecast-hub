@@ -40,7 +40,7 @@ license: "CC-BY-4.0"
 designated_model: false
 methods: "Basic renewal model using the Pyrenew-HEW framework."
 data_inputs: "Epiweekly incident influenza hospital admissions from NHSN HRD via data.cdc.gov."
-methods_long: "Simple renewal model fit only to the target signal for benchmarking multi-signal models that use related frameworks but other observables."
+methods_long: "Simple renewal model fit only to the target signal. Used to benchmark related multi-signal models the same framework with additional observables."
 website_url: "https://github.com/cdcgov/pyrenew-hew"
 repo_url: "https://github.com/cdcgov/pyrenew-hew"
 ensemble_of_models: false
