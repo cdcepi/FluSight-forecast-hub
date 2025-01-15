@@ -1,7 +1,7 @@
 team_name: "Carnegie Mellon Delphi Group"
 team_abbr: "CMU"
 model_name: "climatological baseline"
-model_abbr: "climate-baseline"
+model_abbr: "climate_baseline"
 model_version: "1.0"
 model_contributors:
   [
