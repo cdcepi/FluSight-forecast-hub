@@ -112,6 +112,9 @@ if (!fs::file_exists(output_filepath)) {
   stop("File already exists: ", output_filepath)
 }
 
+path <- paste0("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/", output_filename)
+write_csv(all_forecasts_data, path)
+
 
 
 #' Generate the Map file containing ensemble forecast data.
@@ -281,7 +284,8 @@ if (!fs::file_exists(output_filepath)) {
 } else {
   stop("File already exists: ", output_filepath)
 }
-
+path <- paste0("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/", output_filename)
+write_csv(map_data, path)
 
 
 #' Generate the Truth Data file containing the most recent observed NHSN hospital admissions data.
@@ -369,3 +373,6 @@ if (!fs::file_exists(output_filepath)) {
 } else {
   stop("File already exists: ", output_filepath)
 }
+
+path <- paste0("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/", output_filename)
+write_csv(truth_data, path)
