@@ -18,7 +18,7 @@
 #' To run:
 #' Rscript gen_forecast_data.R --reference_date 2024-11-23 --base_hub_path ../../
 
-ref_date <- as.Date("2025-01-18")#lubridate::ceiling_date(Sys.Date(), "week") - days(1)
+ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
 reference_date <- ref_date
 current_ref_date <- ref_date
 base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSight-forecast-hub")
@@ -113,7 +113,7 @@ if (!fs::file_exists(output_filepath)) {
   stop("File already exists: ", output_filepath)
 }
 
-file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
 write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
 
 
@@ -286,7 +286,7 @@ if (!fs::file_exists(output_filepath)) {
   stop("File already exists: ", output_filepath)
 }
 
-file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
 write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
 
 #' Generate the Truth Data file containing the most recent observed NHSN hospital admissions data.
@@ -375,6 +375,6 @@ if (!fs::file_exists(output_filepath)) {
   stop("File already exists: ", output_filepath)
 }
 
-file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
 write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
 
