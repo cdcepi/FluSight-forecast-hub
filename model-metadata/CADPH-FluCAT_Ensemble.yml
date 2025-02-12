@@ -9,11 +9,6 @@ model_contributors: [
     "email": "lauren.white@cdph.ca.gov"
   },
   {
-    "name": "Erin Murray",
-    "affiliation": "California Department of Public Health",
-    "email": "erin.murray@cdph.ca.gov"
-  },
-  {
     "name": "Tomas M. Leon",
     "affiliation": "California Department of Public Health",
     "email": "tomas.leon@cdph.ca.gov"

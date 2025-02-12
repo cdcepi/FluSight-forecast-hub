@@ -1,0 +1,26 @@
+team_name: "Johns Hopkins University Applied Physics Lab"
+team_abbr: "JHUAPL"
+model_name: "Dynamic mode decomposition"
+model_abbr: "DMD"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "William T. Redman",
+    "affiliation": "Johns Hopkins University Applied Physics Lab",
+    "email": "will.redman@jhuapl.edu"
+  },
+  {
+    "name": "Luke Mullany",
+    "affiliation": "Johns Hopkins University Applied Physics Lab",
+    "email": "Luke.Mullany@jhuapl.edu"
+  }
+]
+website_url: "https://www.jhuapl.edu/"
+license: "CC-BY-4.0"
+team_funding: "ACCIDDA"
+designated_model: true
+methods: "Dynamic mode decomposition for time-series."
+data_inputs: "Daily and weekly incident flu hospitalizations, queried through FluSight"
+methods_long: "A sliding window is used to construct an temporally local approximation of the Koopman operator. Time-delays and radial basis functions are used for the lifting to function space. All states (and D.C. + P.R.) are used to construct the approximation of the Koopman operator to estimate couplings/correlations. Gaussian noise, of variance estiamted from previous years, is used to sample possible variants of the data to approximate the forecast percentiles."
+ensemble_of_models: false
+ensemble_of_hub_models: false

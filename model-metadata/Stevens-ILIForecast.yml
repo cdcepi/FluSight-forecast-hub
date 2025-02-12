@@ -1,0 +1,25 @@
+team_name: "Stevens Institute of Technology"
+team_abbr: "Stevens"
+model_name: "Stevens ILIForecast"
+model_abbr: "ILIForecast"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Shital Adhikari",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "sadhikar1@stevens.edu"
+  },
+  {
+    "name": "Nikhil Muralidhar",
+    "affiliation": "Stevens Institute of Technology",
+    "email": "nmurali1@stevens.edu"
+  }
+]
+website_url: "https://sites.google.com/view/nikhil-muralidhar"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "This approach uses multiple forecasting models as gradient boosting, decision trees, and other machine learning techniques, to generate predictions by combining insights from each model."
+data_inputs: "The data inputs consist of historical datasets and target data. Using these, predictions are made by integrating the outputs of the various models in the ensemble."
+methods_long: "We employ a combination of multiple forecasting models—such as gradient boosting, decision trees, and ARIMA models—using ensemble techniques to achieve final predictions. By analyzing all available historical data, we generate comprehensive five-week forecasts that reflect a synthesis of each model's strengths."
+ensemble_of_models: true
+ensemble_of_hub_models: false

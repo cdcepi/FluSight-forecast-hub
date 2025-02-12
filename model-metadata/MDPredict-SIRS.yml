@@ -1,0 +1,24 @@
+team_name: "Maryland Predict"
+team_abbr: "MDPredict"
+model_name: "modified susceptible-infectious-recovered-susceptible model"
+model_abbr: "SIRS"
+model_contributors: [
+  {
+    "name": "Johnny Sheng",
+    "affiliation": "Richard Montgomery High School",
+    "email": "johnnysheng0324@gmail.com"
+  },
+  {
+    "name": "Ivan Zhang",
+    "affiliation": "Richard Montgomery High School",
+    "email": "ivanzhang0130@gmail.com"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly incident flu hospitalizations reported to NHSN. For the time period when mandatory reporting of hospitalizations was not in effect, we estimated weekly incident flu hospitalizations using emergency department visits reported to NSSP."
+methods: "SIRS model using MCMC to estimate disease parameters and incorporating waning immunity, imported cases, and a time-dependent transmission rate that fluctuates seasonally and during specific periods."
+methods_long: "A SIRS model is used to generate forecasts. Key model parameters such as the transmission rate and the duration of immunity are estimated through MCMC by comparing simulated data to observed hospitalization data, allowing for uncertainty quantification. The model also incorporates a time-dependent transmission rate that fluctuates seasonally and additional periods of increased/decreased transmission based on historical trends. Imports of cases are included to account for influenza infections introduced through international travel. Spatial correlation is not considered."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: "https://sites.google.com/view/mdpredictfluforecasts/home"

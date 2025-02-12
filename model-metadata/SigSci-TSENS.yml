@@ -2,7 +2,7 @@ team_name: "Signature Science"
 team_abbr: "SigSci"
 model_name: "Time Series Ensemble"
 model_abbr: "TSENS"
-model_version: "1.0"
+model_version: "2.0"
 model_contributors: [
   {
     "name": "VP Nagraj",
@@ -26,7 +26,7 @@ citation: ""
 team_funding: "CSTE subaward"
 designated_model: true
 methods: "Ensemble of time series models."
-data_inputs: "Weekly incident flu hospitalizations by state retrieved from HHS Protect API."
-methods_long: "Time series ensemble with equal weights for each component. The ensemble includes models that are fit independently for each location every week. The component models include different classes of time series models, some of which have automated parameter selection (e.g., ARIMA). Models are first combined before generating an ensemble forecast, as opposed to generating individual forecasts for each model and then combining forecasts. Forecasted values are rounded to the nearest integer and truncated at zero to align with hospitalization count target. All forecasts are reviewed for plausibility by a human prior to submission."
+data_inputs: "Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN)."
+methods_long: "Time series ensemble with equal weights for each component. The ensemble includes models that are fit independently for each location every week. The component models include different classes of time series models, some of which have automated parameter selection (e.g., ARIMA). Models are first combined before generating an ensemble forecast, as opposed to generating individual forecasts for each model and then combining forecasts. Forecasted values are rounded to the nearest integer and truncated at zero to align with hospitalization count target. The component models are fit using a time series extended with methods described in https://www.medrxiv.org/content/10.1101/2024.07.31.24311314v1. All forecasts are reviewed for plausibility by a human prior to submission."
 ensemble_of_models: true
 ensemble_of_hub_models: false

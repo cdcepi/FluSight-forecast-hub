@@ -13,36 +13,23 @@ model_contributors: [
     "affiliation": "Johns Hopkins University",
     "email": "hdu9@jh.edu"
   },
-  {
-    "name": "Hao Frank Yang",
-    "affiliation": "Johns Hopkins University",
-    "email": "haofrankyang@jhu.edu"
-  },
+
   {
     "name": "Shaochong Xu",
     "affiliation": "Johns Hopkins University",
     "email": "sxu75@jh.edu"
   },
   {
-    "name": "Xianglong Wang",
+    "name": "Liyue Zhang",
     "affiliation": "Johns Hopkins University",
-    "email": "xwang344@jh.edu"
-  },
-  {
-    "name": "Yang Zhao",
-    "affiliation": "Peking University",
-    "email": "zy_@pku.edu.cn"
-  },
-  {
-    "name": "Pu Wang",
-    "affiliation": "New York University",
-    "email": "pw2425@nyu.edu"
+    "email": "lzhan261@jh.edu"
   }
 ]
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "Weekly flu hospitalizations, Weekly weather for each states, Google search volume for flu-related symptoms, Change healthcare claims data (accessed via covidcast)"
-methods: "Ensemble of time series models including exponential smoothing, LSTM and GRU"
-methods_long: "This model predicts state-level influenza hospitalizations through an ensemble of time series forecasting methods at three hierarchical levels: individual state-level forecasts using exponential smoothing, Health and Human Services (HHS) region-level predictions with Long Short-Term Memory (LSTM) models, and a single Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) model that encompasses all states. These three-level models are combined to yield the final ensemble prediction."
+data_inputs: "Weekly flu/ COVID-19 hospitalizations, Google search volume for flu-related symptoms, healthcare claims data (accessed via covidcast)"
+methods: "A Multi-Pathogen Optimized Geo-Hierarchical Ensemble Framework (MPOG-Ensemble)"
+methods_long: "This model forecasts state-level influenza hospitalizations using a combination of time series forecasting methods, organized across three hierarchical levels. At the individual state level, forecasts are generated using Holt-Winters Exponential Smoothing. For regional predictions, which group states based on recent flu activity trends identified through the Louvain method, Long Short-Term Memory (LSTM) models are employed. Additionally, a LSTM model that covers all states is implemented. These three-tiered model outputs are integrated, selecting weights based on their recent performance in terms of Mean Absolute Error (MAE) to produce the final prediction."
 ensemble_of_models: true
 ensemble_of_hub_models: false
+
