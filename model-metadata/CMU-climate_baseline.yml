@@ -1,0 +1,24 @@
+team_name: "Carnegie Mellon Delphi Group"
+team_abbr: "CMU"
+model_name: "climatological baseline"
+model_abbr: "climate_baseline"
+model_version: "1.0"
+model_contributors:
+  [
+    { "name": "Logan Brooks", "affiliation": "UC Berkeley", "email": "lcbrooks@berkeley.edu" },
+    { "name": "Dmitry Shemetov", "affiliation": "Carnegie Mellon University", "email": "dshemeto@andrew.cmu.edu" },
+    { "name": "Nat DeFries", "affiliation": "Carnegie Mellon University", "email": "ndefries@andrew.cmu.edu" },
+    { "name": "David Weber", "affiliation": "Carnegie Mellon University", "email": "davidweb@andrew.cmu.edu" },
+    { "name": "Daniel McDonald", "affiliation": "University of British Columbia", "email": "daniel@stat.ubc.ca" },
+    { "name": "Ryan Tibshirani", "affiliation": "UC Berkeley", "email": "ryantibs@berkeley.edu" },
+  ]
+website_url: "https://github.com/cmu-delphi/exploration-tooling/"
+repo_url: "https://github.com/cmu-delphi/exploration-tooling/"
+license: "CC-BY-4.0"
+designated_model: false
+team_funding: "Centers for Disease Control and Prevention Awards: U011P001121, 75D30123C15907, NU38FT000005"
+methods: "An ensemble of historically formed quantiles"
+data_inputs: "Weekly incident flu hospitalizations, queried through Delphi Epidata API."
+methods_long: "Using data from 2022 onwards, the climatological model uses samples from the 7 weeks centered around the target week and reference week to form the quantiles for the target week, as one might use climate information to form a meteorological forecast. To get more variation at some potential issue of generalization, one can form quantiles after aggregating across geographic values as well as years (after converting to a rate based case count). This model uses a simple average of the geo-specific quantiles and the geo-aggregated quantiles."
+ensemble_of_models: true
+ensemble_of_hub_models: false

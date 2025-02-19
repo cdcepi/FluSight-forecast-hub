@@ -20,6 +20,7 @@
 
 ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
 reference_date <- ref_date
+current_ref_date <- ref_date
 base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSight-forecast-hub")
 
 # create model metadata path
@@ -66,7 +67,10 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
     forecast_due_date_formatted = format(forecast_due_date, "%B %d, %Y"),  # Format as "Month DD, YYYY"
     forecast_due_date = format(forecast_due_date, "%Y-%m-%d")  # Format as "YYYY-MM-DD"
   ) |>
-  dplyr::filter(horizon !=3)|>
+  dplyr::filter(horizon !=3, horizon != -1)|>
+  mutate(location_name = recode(location_name, "United States" = "US")) %>% 
+  mutate(location_name = factor(location_name, levels = c("US", sort(setdiff(unique(location_name), "US"))))) %>%
+  arrange(location_name) %>% 
   dplyr::select(
     location_name,
     abbreviation,
@@ -92,7 +96,7 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
-output_filename <- paste0(ref_date, "-flu_forecasts_data.csv")
+output_filename <- paste0(ref_date, "_flu_forecasts_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -108,6 +112,9 @@ if (!fs::file_exists(output_filepath)) {
 } else {
   stop("File already exists: ", output_filepath)
 }
+
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
+write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
 
 
 
@@ -233,6 +240,8 @@ map_data <-forecasttools::pivot_hubverse_quantiles_wider(
     forecast_due_date_formatted = format(forecast_due_date, "%B %d, %Y"),  # Format as "Month DD, YYYY"
     forecast_due_date = format(forecast_due_date, "%Y-%m-%d")  # Format as "YYYY-MM-DD"
   ) |> 
+  dplyr::mutate(location = factor(location, levels = c("US", sort(setdiff(unique(location), "US"))))) %>%
+  arrange(location) %>% 
   dplyr::select(
     location_name = location, # rename location col
     horizon,
@@ -260,7 +269,7 @@ map_data <-forecasttools::pivot_hubverse_quantiles_wider(
 
 # output folder and file paths for Map Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
-output_filename <- paste0(ref_date, "-flu_map_data.csv")
+output_filename <- paste0(ref_date, "_flu_map_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -277,7 +286,8 @@ if (!fs::file_exists(output_filepath)) {
   stop("File already exists: ", output_filepath)
 }
 
-
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
+write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
 
 #' Generate the Truth Data file containing the most recent observed NHSN hospital admissions data.
 #' This script fetches the most recent observed influenza hospital admissions data for all regions 
@@ -348,7 +358,7 @@ truth_data <- flu_data |>
   )
 # output folder and file paths for Truth Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", reference_date)
-output_filename <- paste0(reference_date, "-flu_target_hospital_admisssions_data.csv")
+output_filename <- paste0(reference_date, "_flu_target_hospital_admissions_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -364,3 +374,7 @@ if (!fs::file_exists(output_filepath)) {
 } else {
   stop("File already exists: ", output_filepath)
 }
+
+#file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
+write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
+

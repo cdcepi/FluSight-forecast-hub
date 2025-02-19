@@ -1,0 +1,21 @@
+team_name: "Johns Hopkins University Applied Physics Laboratory"
+team_abbr: "JHUAPL"
+model_name: "Morris"
+model_abbr: "Morris"
+model_version: "2.0"
+model_contributors: [
+  {
+    "name": "Matthew C Kinsey",
+    "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+    "email": "matt.kinsey@jhuapl.edu"
+  },
+]
+website_url: "https://www.jhuapl.edu/"
+license: "CC-BY-4.0"
+team_funding: "ACCIDDA"
+designated_model: true
+methods: "N-HiTS model with custom Weighted Interval Score (WIS) loss for probabilistic flu hospitalization forecasts by state."
+data_inputs: "The model primarily uses the Weekly Hospital Respiratory Data Metrics from the National Healthcare Safety Network (NHSN), including total influenza hospitalizations, admissions, and reporting percentages. Derived features include temporal encodings (day of week, week of year) and reporting fractions. No external data sources beyond the NHSN dataset are used."
+methods_long: "This model uses a Neural Hierarchical Interpolation for Time Series (N-HiTS) architecture to forecast influenza hospitalizations by state. It's trained on weekly data from the National Healthcare Safety Network, incorporating time encodings and state-specific features. The model employs a novel Weighted Interval Score (WIS) loss function, enabling probabilistic forecasts that balance accuracy and uncertainty quantification. Hyperparameter optimization is performed using a Bayesian surrogate model."
+ensemble_of_models: false
+ensemble_of_hub_models: false

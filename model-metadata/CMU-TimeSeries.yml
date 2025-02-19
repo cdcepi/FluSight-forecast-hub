@@ -18,7 +18,12 @@ license: "CC-BY-4.0"
 designated_model: true
 team_funding: "Centers for Disease Control and Prevention Awards: U011P001121, 75D30123C15907, NU38FT000005"
 methods: "An ensemble of AR-based time-series models."
-data_inputs: "Daily and weekly incident flu hospitalizations, queried through Delphi Epidata API."
-methods_long: "A basic quantile autoregression fit using lagged values of influenza-related hospitalization counts (normalized by population). The data are smoothed in time and the latter data source is adjusted to remove systematic day-of-week effects. The model is fit jointly across all 50 US states, the District of Columbia, Puerto Rico, and the Virgin Islands, using the most recently available 21 days of training data. Each of the 23 quantiles is learned using a separate quantile regression with nonnegativity and quantile sorting constraints applied post hoc. All data signals are available as indicators through the Delphi Epidata API (https://cmu-delphi.github.io/delphi-epidata)."
+data_inputs: "Weekly incident flu hospitalizations and historical flusurv and ILI data, queried through Delphi Epidata API."
+methods_long: "A basic quantile auto-regression fit using lagged values of influenza-related hospitalization counts (normalized by population).
+The data are whitened so that the historical flusurv and ILI data can be used to augment the number of training examples.
+The model is fit jointly across all 50 US states, the District of Columbia, Puerto Rico, and the Virgin Islands, using a window of data 7 weeks centered on the forecast date, including all past years.
+Each of the 23 quantiles is learned using a separate quantile regression with nonnegativity and quantile sorting constraints applied post hoc.
+All data signals are available as indicators through the Delphi Epidata API (https://cmu-delphi.github.io/delphi-epidata).
+This model is averaged with both a climatological model and a simple linear model, with the weight on the windowed seasonal model above being ~6 times that of either the linear or climatological model. "
 ensemble_of_models: true
 ensemble_of_hub_models: false

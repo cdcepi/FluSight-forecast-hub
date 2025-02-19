@@ -1,0 +1,47 @@
+team_name: "UVAFluX-CESGCN"
+team_abbr: "UVAFluX"
+model_name: "A graph neural network model"
+model_abbr: "CESGCN"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Aniruddha Adiga",
+    "affiliation": "UVA",
+    "email": "aniruddha@virginia.edu"
+  },
+  {
+    "name": "Jingyuan Chou",
+    "affiliation": "UVA",
+    "email": "jc2wv@virginia.edu"
+  },
+  {
+    "name": "Gursharn Kaur",
+    "affiliation": "UVA",
+    "email": "gursharn@virginia.edu"
+  },
+  {
+    "name": "Bryan Lewis",
+    "affiliation": "UVA",
+    "email": "bl4zc@virginia.edu"
+  },
+  {
+    "name": "Madhav Marathe",
+    "affiliation": "UVA",
+    "email": "marathe@virginia.edu"
+  },
+  {
+    "name": "Srinivasan Venkatramanan",
+    "affiliation": "UVA",
+    "email": "srini@virginia.edu"
+  }
+]
+website_url: "https://biocomplexity.virginia.edu/institute/divisions/network-systems-science-and-advanced-computing"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: True
+methods: "A Graph Neural Network forecasting model"
+data_inputs: "Weekly incident flu hospitalizations from HHS"
+methods_long: "This is a state-level graph-neural-network-based model for forecasting the new influenza hospitalizations. The graph encodes the causal relationships across states and is derived using transfer entropy."
+ensemble_of_models: false
+ensemble_of_hub_models: false
