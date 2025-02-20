@@ -1,4 +1,4 @@
-team_name: "Johns Hopkins University Applied Physics Lab"
+team_name: "Johns Hopkins University Applied Physics Laboratory"
 team_abbr: "JHUAPL"
 model_name: "Dynamic mode decomposition"
 model_abbr: "DMD"
@@ -6,12 +6,12 @@ model_version: "1.0"
 model_contributors: [
   {
     "name": "William T. Redman",
-    "affiliation": "Johns Hopkins University Applied Physics Lab",
+    "affiliation": "Johns Hopkins University Applied Physics Laboratory",
     "email": "will.redman@jhuapl.edu"
   },
   {
     "name": "Luke Mullany",
-    "affiliation": "Johns Hopkins University Applied Physics Lab",
+    "affiliation": "Johns Hopkins University Applied Physics Laboratory",
     "email": "Luke.Mullany@jhuapl.edu"
   }
 ]
