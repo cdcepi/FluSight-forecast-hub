@@ -18,10 +18,12 @@
 #' To run:
 #' Rscript gen_forecast_data.R --reference_date 2024-11-23 --base_hub_path ../../
 
-ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
+ref_date <- as.Date("2025-03-08")#lubridate::ceiling_date(Sys.Date(), "week") - days(1)
 reference_date <- ref_date
 current_ref_date <- ref_date
 base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSight-forecast-hub")
+eligible_models = read.csv(paste0("C:/Users/",Sys.info()["user"],"/Desktop/GitHub/Flusight-ensemble/Model Inclusion/models-to-include-in-ensemble-", ref_date, ".csv"), header = TRUE)
+eligible_models = as.character(eligible_models$Model)
 
 # create model metadata path
 model_metadata <- hubData::load_model_metadata(
@@ -93,6 +95,9 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
     forecast_due_date,
     forecast_due_date_formatted
   )
+
+
+all_forecasts_data <- all_forecasts_data[all_forecasts_data$model %in% eligible_models | grepl("FluSight", all_forecasts_data$model),]
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
