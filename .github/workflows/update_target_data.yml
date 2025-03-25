@@ -23,10 +23,12 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages(c("dplyr", "lubridate", "RSocrata"))
+          install.packages(c("cli", "dplyr", "here", "lubridate", "readr", "RSocrata", "tidyr"))
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
+      - name: Generate Hubverse-formatted target-data
+        run:  Rscript target-data/get_target_data_hubverse.R
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with: 
