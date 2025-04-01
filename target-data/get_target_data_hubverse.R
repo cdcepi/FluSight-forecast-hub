@@ -55,6 +55,7 @@ create_oracle_output_wk_inc <- function(weekly_data) {
   oracle_output_wk_inc <- oracle_output_wk_inc %>%
     dplyr::cross_join(
       # add a row for each horizon defined in the modeling task
+      # (except horizon 0, which is not used for scoring/viz)
       data.frame(horizon = 0:3)
     )
 }
@@ -62,7 +63,7 @@ create_oracle_output_wk_inc <- function(weekly_data) {
 #' @description
 #' `create_oracle_output_rate_change` creates Hubverse-formatted oracle output
 #' target data for the "wk flu hosp rate change" target. It creates a "category"
-#' column that contains the observed category for each location, date,  
+#' column that contains the observed category for each location, date,
 #' and horizon.
 #'
 #' Categories are "large_decrease", "decrease", "stable", "increase",
@@ -378,7 +379,10 @@ oracle_output_rate_change <- calc_oracle_output_rate_change(weekly_data_all)
 oracle_output <- dplyr::bind_rows(oracle_output_wk_inc, oracle_output_rate_change)
 oracle_output <- oracle_output[c("target", "location", "horizon", "target_end_date", "output_type_id", "oracle_value")]
 
-oracle_output_path <- file.path(here::here(), "target-data/oracle-output")
+# Add as_of column
+latest_date <- max(oracle_output$target_end_date, na.rm = TRUE)
+
+oracle_output_path <- file.path(here::here(), paste0("target-data/oracle-output/as_of=", latest_date))
 if (!dir.exists(oracle_output_path)) {
   dir.create(oracle_output_path, recursive = TRUE)
 }
