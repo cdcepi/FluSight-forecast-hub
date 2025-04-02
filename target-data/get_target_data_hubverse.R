@@ -55,7 +55,7 @@ create_oracle_output_wk_inc <- function(weekly_data) {
   oracle_output_wk_inc <- oracle_output_wk_inc %>%
     dplyr::cross_join(
       # add a row for each horizon defined in the modeling task
-      # (except horizon 0, which is not used for scoring/viz)
+      # (except horizon -1, which is not used for scoring/viz)
       data.frame(horizon = 0:3)
     )
 }
