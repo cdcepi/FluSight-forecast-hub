@@ -381,6 +381,8 @@ oracle_output <- oracle_output[c("target", "location", "horizon", "target_end_da
 
 # Add as_of column
 latest_date <- max(oracle_output$target_end_date, na.rm = TRUE)
+oracle_output <- oracle_output %>%
+  dplyr::mutate(as_of = latest_date)
 
 oracle_output_path <- file.path(here::here(), paste0("target-data/oracle-output/as_of=", latest_date))
 if (!dir.exists(oracle_output_path)) {
