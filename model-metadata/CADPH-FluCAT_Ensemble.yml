@@ -22,6 +22,6 @@ methods_long: "An ensemble of several time series forecasts including; (1) autor
 ensemble_of_models: true
 ensemble_of_hub_models: false
 model_version: "1.1"
-website_url: "https://calcat.covid19.ca.gov/cacovidmodels/"
+website_url: "http://calcat.cdph.ca.gov/"
 team_funding: "The views and opinions expressed by the authors are their own and do not necessarily represent the views and opinions of the California Department of Public Health or the California Health and Human Services Agency."
 
