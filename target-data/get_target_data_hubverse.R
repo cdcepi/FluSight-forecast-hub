@@ -1,3 +1,26 @@
+#!/usr/bin/env Rscript
+# DOC
+# Generate Hubverse-formatted target data for the FluSight Forecast hub.
+#
+# USAGE
+#     Rscript "get_target_data_hubverse.R" as_of include_after
+#
+# ARGUMENTS
+#     as_of: Optional "YYYY-MM-DD" string.
+#                    If provided, read archived target data instead of the latest version.
+#     include_after: Optional "YYYY-MM-DD" string.
+#                    Exlucde target data dated on or earlier than this date. Defaults to "2024-11-01".
+#                    Note: the modeling tasks defined in tasks.json were updated for the 2024-2025 flu
+#                    season, so don't run this script with an include_after date before 2024-11-01.
+#
+# EXAMPLE
+#     Generate Hubverse target data based on the latest available FluSight target-hospital-admissions.csv
+#     `Rscript "get_target_data_hubverse.R"`
+#
+#     Generate Hubverse target data based on the 2025-01-11 archived version of FluSight target-hospital-admissions.csv
+#     Rscript "get_target_data_hubverse.R" 2025-01-11
+#
+# DOC
 here::i_am("target-data/get_target_data_hubverse.R")
 library(cli)
 suppressPackageStartupMessages(library(dplyr))
