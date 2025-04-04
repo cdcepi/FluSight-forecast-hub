@@ -157,17 +157,17 @@ create_oracle_output_wk_inc <- function(time_series_target) {
 #' @return A dataframe
 calc_oracle_output_rate_change <- function(time_series_target) {
   obs_categories <- time_series_target |>
-    dplyr::group_by(.data$location) |>
-    dplyr::arrange(.data$target_end_date) |>
+    dplyr::group_by(.data[["location"]]) |>
+    dplyr::arrange(.data[["target_end_date"]]) |>
     dplyr::mutate(
-      rate_diff0 = .data$weekly_rate - lag(.data$weekly_rate, 1),
-      rate_diff1 = .data$weekly_rate - lag(.data$weekly_rate, 2),
-      rate_diff2 = .data$weekly_rate - lag(.data$weekly_rate, 3),
-      rate_diff3 = .data$weekly_rate - lag(.data$weekly_rate, 4),
-      count_change0 = .data$observation - lag(.data$observation, 1),
-      count_change1 = .data$observation - lag(.data$observation, 2),
-      count_change2 = .data$observation - lag(.data$observation, 3),
-      count_change3 = .data$observation - lag(.data$observation, 4)
+      rate_diff0 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 1),
+      rate_diff1 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 2),
+      rate_diff2 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 3),
+      rate_diff3 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 4),
+      count_change0 = .data[["observation"]] - lag(.data[["observation"]], 1),
+      count_change1 = .data[["observation"]] - lag(.data[["observation"]], 2),
+      count_change2 = .data[["observation"]] - lag(.data[["observation"]], 3),
+      count_change3 = .data[["observation"]] - lag(.data[["observation"]], 4)
     ) |>
     dplyr::ungroup() |>
     tidyr::pivot_longer(
@@ -202,7 +202,7 @@ calc_oracle_output_rate_change <- function(time_series_target) {
       )
     ) |>
     dplyr::select("target_end_date", "location", "horizon", "category", "as_of") |>
-    dplyr::filter(!is.na(.data$category))
+    dplyr::filter(!is.na(.data[["category"]]))
 
   # Convert to the format for oracle output, which has an oracle_value of 1 for
   # the observed category and 0 for all other categories.
@@ -217,7 +217,7 @@ calc_oracle_output_rate_change <- function(time_series_target) {
     ) |>
     dplyr::mutate(
       target = "wk flu hosp rate change",
-      oracle_value = ifelse(is.na(.data$oracle_value), 0, 1)
+      oracle_value = ifelse(is.na(.data[["oracle_value"]]), 0, 1)
     )
 
     oracle_output
@@ -251,7 +251,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data$value / .data$population * 100000,
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
       as_of = as.Date("2025-03-22")
     )
 
@@ -264,8 +264,8 @@ run_target_data_tests <- function() {
   # for each date/location/horizon, oracle_value sums to 1
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::group_by(.data$target_end_date, location, .data$horizon) |>
-      dplyr::summarize(sum_oracle_value = sum(.data$oracle_value), .groups = "drop") |>
+      dplyr::group_by(.data[["target_end_date"]], location, .data[["horizon"]]) |>
+      dplyr::summarize(sum_oracle_value = sum(.data[["oracle_value"]]), .groups = "drop") |>
       dplyr::pull("sum_oracle_value") |>
       unique() |>
       all.equal(1)
@@ -274,7 +274,7 @@ run_target_data_tests <- function() {
   # expected categories, all stable
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::filter(.data$oracle_value > 0) |>
+      dplyr::filter(.data[["oracle_value"]] > 0) |>
       dplyr::pull("output_type_id") |>
       unique() |>
       all.equal("stable")
@@ -300,7 +300,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data$value / .data$population * 100000,
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
       as_of = as.Date("2025-03-22")
     )
 
@@ -313,8 +313,8 @@ run_target_data_tests <- function() {
   # for each date/location/horizon, oracle_value sums to 1
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::group_by(.data$target_end_date, location, .data$horizon) |>
-      dplyr::summarize(sum_oracle_value = sum(.data$oracle_value), .groups = "drop") |>
+      dplyr::group_by(.data[["target_end_date"]], location, .data[["horizon"]]) |>
+      dplyr::summarize(sum_oracle_value = sum(.data[["oracle_value"]]), .groups = "drop") |>
       dplyr::pull("sum_oracle_value") |>
       unique() |>
       all.equal(1)
@@ -343,15 +343,15 @@ run_target_data_tests <- function() {
       values_to = "output_type_id",
       names_prefix = "horizon_"
     ) |>
-    dplyr::mutate(horizon = as.integer(.data$horizon)) |>
-    dplyr::filter(!is.na(.data$output_type_id))
+    dplyr::mutate(horizon = as.integer(.data[["horizon"]])) |>
+    dplyr::filter(!is.na(.data[["output_type_id"]]))
 
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::filter(.data$oracle_value > 0) |>
+      dplyr::filter(.data[["oracle_value"]] > 0) |>
       dplyr::select(-"oracle_value") |>
       dplyr::full_join(exp_categories, by = c("target_end_date", "location", "horizon")) |>
-      dplyr::mutate(comparison = (.data$output_type_id.x == .data$output_type_id.y)) |>
+      dplyr::mutate(comparison = (.data[["output_type_id.x"]] == .data[["output_type_id.y"]])) |>
       dplyr::pull("comparison") |>
       unique() |>
       all.equal(TRUE)
@@ -377,7 +377,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data$value / .data$population * 100000,
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
       as_of = as.Date("2025-03-22")
     )
 
@@ -390,8 +390,8 @@ run_target_data_tests <- function() {
   # for each date/location/horizon, oracle_value sums to 1
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::group_by(.data$target_end_date, location, .data$horizon) |>
-      dplyr::summarize(sum_oracle_value = sum(.data$oracle_value), .groups = "drop") |>
+      dplyr::group_by(.data[["target_end_date"]], location, .data[["horizon"]]) |>
+      dplyr::summarize(sum_oracle_value = sum(.data[["oracle_value"]]), .groups = "drop") |>
       dplyr::pull("sum_oracle_value") |>
       unique() |>
       all.equal(1)
@@ -433,15 +433,15 @@ run_target_data_tests <- function() {
       values_to = "output_type_id",
       names_prefix = "horizon_"
     ) |>
-    dplyr::mutate(horizon = as.integer(.data$horizon)) |>
-    dplyr::filter(!is.na(.data$output_type_id))
+    dplyr::mutate(horizon = as.integer(.data[["horizon"]])) |>
+    dplyr::filter(!is.na(.data[["output_type_id"]]))
 
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::filter(.data$oracle_value > 0) |>
+      dplyr::filter(.data[["oracle_value"]] > 0) |>
       dplyr::select(-"oracle_value") |>
       dplyr::full_join(exp_categories, by = c("target_end_date", "location", "horizon")) |>
-      dplyr::mutate(comparison = (.data$output_type_id.x == .data$output_type_id.y)) |>
+      dplyr::mutate(comparison = (.data[["output_type_id.x"]] == .data[["output_type_id.y"]])) |>
       dplyr::pull("comparison") |>
       unique() |>
       all.equal(TRUE)
@@ -533,9 +533,9 @@ if (is.na(include_after) || is.null(include_after)) {
 ok <- run_target_data_tests()
 ok <- ifelse(is.logical(ok), ok, FALSE)
 if (isTRUE(all(ok))) {
-  cli::cli_alert_success("All oracle rate change tests passed.")
+  cli::cli_alert_success("All target data tests passed.")
 } else {
-  cli::cli_alert_danger("Oracle rate change tests failed: exiting script.")
+  cli::cli_alert_danger("Target data tests failed: exiting script.")
   quit(save = "no", status = 1)
 }
 
