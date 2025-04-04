@@ -39,7 +39,7 @@ get_location_data <- function() {
   location_file <-
     read_csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") # nolint: line_length_linter.
   # first 4 columns of locations.csv are abbreviation, location, location_name, population
-  location_file %>% dplyr::select(1:4)
+  location_file |> dplyr::select(1:4)
 }
 
 #' @description
@@ -95,8 +95,8 @@ get_base_target_data <- function(include_after, as_of = NULL) {
 #' @returns A dataframe
 create_time_series_target_data <- function(weekly_data, location_data) {
 
-  weekly_data <- weekly_data %>%
-    dplyr::select(-location) %>%
+  weekly_data <- weekly_data |>
+    dplyr::select(-location) |>
     dplyr::inner_join(location_data,
                         by = c("location_name"))
   time_series_wk_inc <- cbind(
@@ -137,7 +137,7 @@ create_oracle_output_wk_inc <- function(time_series_target) {
     time_series_target[c("target_end_date", "location", "observation", "as_of")]
   )
   colnames(oracle_output_wk_inc) <- c("target", "target_end_date", "location", "oracle_value", "as_of")
-  oracle_output_wk_inc <- oracle_output_wk_inc %>%
+  oracle_output_wk_inc <- oracle_output_wk_inc |>
     dplyr::cross_join(
       # add a row for each horizon defined in the modeling task
       # (except horizon -1, which is not used for scoring/viz)
@@ -157,9 +157,9 @@ create_oracle_output_wk_inc <- function(time_series_target) {
 #' @param time_series_target Dataframe of Hubverse-formatted time series target data.
 #' @returns A dataframe
 calc_oracle_output_rate_change <- function(time_series_target) {
-  obs_categories <- time_series_target %>%
-    dplyr::group_by(.data$location) %>%
-    dplyr::arrange(.data$target_end_date) %>%
+  obs_categories <- time_series_target |>
+    dplyr::group_by(.data$location) |>
+    dplyr::arrange(.data$target_end_date) |>
     dplyr::mutate(
       rate_diff0 = .data$weekly_rate - lag(.data$weekly_rate, 1),
       rate_diff1 = .data$weekly_rate - lag(.data$weekly_rate, 2),
@@ -169,15 +169,15 @@ calc_oracle_output_rate_change <- function(time_series_target) {
       count_change1 = .data$observation - lag(.data$observation, 2),
       count_change2 = .data$observation - lag(.data$observation, 3),
       count_change3 = .data$observation - lag(.data$observation, 4)
-    ) %>%
-    dplyr::ungroup() %>%
+    ) |>
+    dplyr::ungroup() |>
     tidyr::pivot_longer(
       cols = c("rate_diff0", "rate_diff1", "rate_diff2", "rate_diff3"),
       names_to = "horizon",
       names_prefix = "rate_diff",
       values_to = "rate_diff",
       names_transform = list(horizon = as.integer)
-    ) %>%
+    ) |>
     dplyr::mutate(
       category = case_when(
         horizon == 0 & (abs(count_change0) < 10 | rate_diff < 0.3 & rate_diff > -0.3) ~ "stable",
@@ -201,8 +201,8 @@ calc_oracle_output_rate_change <- function(time_series_target) {
         horizon == 3 & rate_diff >= 1 ~ "increase",
         horizon == 3 & rate_diff <= -1 ~ "decrease"
       )
-    ) %>%
-    dplyr::select("target_end_date", "location", "horizon", "category", "as_of") %>%
+    ) |>
+    dplyr::select("target_end_date", "location", "horizon", "category", "as_of") |>
     dplyr::filter(!is.na(.data$category))
 
   # Convert to the format for oracle output, which has an oracle_value of 1 for
@@ -478,7 +478,7 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01") {
   # Get original target data from FluSight hub and filter using include_after
   location_data <- get_location_data()
   weekly_data_all <- get_base_target_data(as_of = as_of)
-  weekly_data_all <- weekly_data_all %>%
+  weekly_data_all <- weekly_data_all |>
     dplyr::filter(date > include_after)
 
   # create and write time series target data
