@@ -9,7 +9,7 @@
 #     as_of: Optional "YYYY-MM-DD" string.
 #                    If provided, read archived target data instead of the latest version.
 #     include_after: Optional "YYYY-MM-DD" string.
-#                    Exlucde target data dated on or earlier than this date. Defaults to "2024-11-01".
+#                    Exclude target data dated on or earlier than this date. Defaults to "2024-11-01".
 #                    Note: the modeling tasks defined in tasks.json were updated for the 2024-2025 flu
 #                    season, so don't run this script with an include_after date before 2024-11-01.
 #
