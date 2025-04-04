@@ -235,7 +235,7 @@ run_target_data_tests <- function() {
   #   +/- 1 at horizon 3.
   location_data <- get_location_data()
   obs_dates <- seq.Date(from = as.Date("2024-11-02"), by = "week", length.out = 10)
-  us_pop <- location_data |> dplyr::filter(location == "US") |> dplyr::pull("population")
+  us_pop <- location_data$population[location_data$location == "US"]
   us_pop_100k <- function(c) {
     floor(c * us_pop / 100000)
   }
