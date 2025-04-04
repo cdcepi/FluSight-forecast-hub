@@ -348,9 +348,7 @@ run_target_data_tests <- function() {
 
   ok <- append(ok,
     test_oracle_output_rate_change |>
-      dplyr::filter(
-        .data$oracle_value > 0
-      ) |>
+      dplyr::filter(.data$oracle_value > 0) |>
       dplyr::select(-"oracle_value") |>
       dplyr::full_join(exp_categories, by = c("target_end_date", "location", "horizon")) |>
       dplyr::mutate(comparison = (.data$output_type_id.x == .data$output_type_id.y)) |>
