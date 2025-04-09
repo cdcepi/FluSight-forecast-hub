@@ -141,7 +141,7 @@
                     },
                     "target_metadata": [
                         {
-                            "target_id": "flu hosp rate change",
+                            "target_id": "wk flu hosp rate change",
                             "target_name": "week ahead weekly influenza hospitalization rate change",
                             "target_units": "rate per 100,000 population",
                             "target_keys": {
