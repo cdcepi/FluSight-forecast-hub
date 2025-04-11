@@ -160,14 +160,14 @@ calc_oracle_output_rate_change <- function(time_series_target) {
     dplyr::group_by(.data[["location"]]) |>
     dplyr::arrange(.data[["target_end_date"]]) |>
     dplyr::mutate(
-      rate_diff0 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 1),
-      rate_diff1 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 2),
-      rate_diff2 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 3),
-      rate_diff3 = .data[["weekly_rate"]] - lag(.data[["weekly_rate"]], 4),
-      count_change0 = .data[["observation"]] - lag(.data[["observation"]], 1),
-      count_change1 = .data[["observation"]] - lag(.data[["observation"]], 2),
-      count_change2 = .data[["observation"]] - lag(.data[["observation"]], 3),
-      count_change3 = .data[["observation"]] - lag(.data[["observation"]], 4)
+      rate_diff0 = .data[["weekly_rate"]] - dplyr::lag(.data[["weekly_rate"]], 1),
+      rate_diff1 = .data[["weekly_rate"]] - dplyr::lag(.data[["weekly_rate"]], 2),
+      rate_diff2 = .data[["weekly_rate"]] - dplyr::lag(.data[["weekly_rate"]], 3),
+      rate_diff3 = .data[["weekly_rate"]] - dplyr::lag(.data[["weekly_rate"]], 4),
+      count_change0 = .data[["observation"]] - dplyr::lag(.data[["observation"]], 1),
+      count_change1 = .data[["observation"]] - dplyr::lag(.data[["observation"]], 2),
+      count_change2 = .data[["observation"]] - dplyr::lag(.data[["observation"]], 3),
+      count_change3 = .data[["observation"]] - dplyr::lag(.data[["observation"]], 4)
     ) |>
     dplyr::ungroup() |>
     tidyr::pivot_longer(
