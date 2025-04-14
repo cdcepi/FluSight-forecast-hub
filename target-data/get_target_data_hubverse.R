@@ -67,22 +67,8 @@ get_base_target_data <- function(include_after, as_of = NULL) {
 
   cli::cli_inform(paste0("Reading target data from ", file_name, "..."))
 
-  base_target_data <- readr::read_csv(file = file_name)
-  latest_date <- max(base_target_data$date, na.rm = TRUE)
+  readr::read_csv(file = file_name)
 
-  if (!get_latest && as.Date(latest_date) != as.Date(as_of)) {
-    cli::cli_alert_danger(
-      paste0("Latest date in the target data (", latest_date, ") does not match the 'as_of' date (", as_of, ").")
-    )
-    stop()
-  }
-
-  base_target_data <- cbind(
-    base_target_data,
-    data.frame(as_of = as.Date(latest_date))
-  )
-
-  base_target_data
 }
 
 #' @description
@@ -101,9 +87,9 @@ create_time_series_target_data <- function(weekly_data, location_data) {
     dplyr::inner_join(location_data, by = c("location_name"))
   time_series_wk_inc <- cbind(
     data.frame(target = "wk inc flu hosp"),
-    weekly_data[c("date", "location", "value", "weekly_rate", "as_of")]
+    weekly_data[c("date", "location", "value", "weekly_rate")]
   )
-  colnames(time_series_wk_inc) <- c("target", "target_end_date", "location", "observation", "weekly_rate", "as_of")
+  colnames(time_series_wk_inc) <- c("target", "target_end_date", "location", "observation", "weekly_rate")
 
   time_series_wk_inc
 }
@@ -119,7 +105,7 @@ create_oracle_output_target_data <- function(time_series_target) {
   oracle_output_rate_change <- calc_oracle_output_rate_change(time_series_target)
 
   oracle_output <- dplyr::bind_rows(oracle_output_wk_inc, oracle_output_rate_change)
-  oracle_output_cols <- c("target", "location", "horizon", "target_end_date", "output_type_id", "oracle_value", "as_of")
+  oracle_output_cols <- c("target", "location", "horizon", "target_end_date", "output_type_id", "oracle_value")
   oracle_output <- oracle_output[oracle_output_cols]
 
   oracle_output
@@ -134,9 +120,9 @@ create_oracle_output_target_data <- function(time_series_target) {
 create_oracle_output_wk_inc <- function(time_series_target) {
   oracle_output_wk_inc <- cbind(
     data.frame(target = "wk inc flu hosp"),
-    time_series_target[c("target_end_date", "location", "observation", "as_of")]
+    time_series_target[c("target_end_date", "location", "observation")]
   )
-  colnames(oracle_output_wk_inc) <- c("target", "target_end_date", "location", "oracle_value", "as_of")
+  colnames(oracle_output_wk_inc) <- c("target", "target_end_date", "location", "oracle_value")
   oracle_output_wk_inc <- oracle_output_wk_inc |>
     dplyr::cross_join(
       # add a row for each horizon defined in the modeling task
@@ -202,19 +188,19 @@ calc_oracle_output_rate_change <- function(time_series_target) {
         horizon == 3 & rate_diff <= -1 ~ "decrease"
       )
     ) |>
-    dplyr::select("target_end_date", "location", "horizon", "category", "as_of") |>
+    dplyr::select("target_end_date", "location", "horizon", "category") |>
     dplyr::filter(!is.na(.data[["category"]]))
 
   # Convert to the format for oracle output, which has an oracle_value of 1 for
   # the observed category and 0 for all other categories.
   oracle_output <- obs_categories |>
-    dplyr::select("target_end_date", "location", "horizon", "as_of") |>
+    dplyr::select("target_end_date", "location", "horizon") |>
     dplyr::cross_join(
       data.frame(output_type_id = c("large_decrease", "decrease", "stable", "increase", "large_increase"))
     ) |>
     dplyr::left_join(
       obs_categories |> dplyr::mutate(oracle_value = 1),
-      by = c("target_end_date", "location", "horizon", "output_type_id" = "category", "as_of")
+      by = c("target_end_date", "location", "horizon", "output_type_id" = "category")
     ) |>
     dplyr::mutate(
       target = "wk flu hosp rate change",
@@ -252,8 +238,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
-      as_of = as.Date("2025-03-22")
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000
     )
 
   test_ts_data <- create_time_series_target_data(test_data, location_data)
@@ -301,8 +286,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
-      as_of = as.Date("2025-03-22")
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000
     )
 
   test_ts_data <- create_time_series_target_data(test_data, location_data)
@@ -378,8 +362,7 @@ run_target_data_tests <- function() {
   ) |>
     dplyr::left_join(location_data, by = "location") |>
     dplyr::mutate(
-      weekly_rate = .data[["value"]] / .data[["population"]] * 100000,
-      as_of = as.Date("2025-03-22")
+      weekly_rate = .data[["value"]] / .data[["population"]] * 100000
     )
 
   test_ts_data <- create_time_series_target_data(test_data, location_data)
@@ -462,21 +445,36 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01") {
     as.Date(include_after, format = "%Y-%m-%d"),
     error = function(e) stop(paste0("Invalid date format for include_after. Please use 'YYYY-MM-DD': ", include_after))
   )
-  if (!is.null(as_of)) {
+  if (is.null(as_of) || is.na(as_of)) {
+    get_latest <- TRUE
     tryCatch(
       as.Date(as_of, format = "%Y-%m-%d"),
       error = function(e) stop(paste0("Invalid date format. Please use 'YYYY-MM-DD': ", as_of))
     )
+  } else {
+    get_latest <- FALSE
+  }
+  print(get_latest)
+  location_data <- get_location_data()
+
+  # Get original target data from FluSight hub. If as_of parameter is provided,
+  # make sure it matches the latest date in the target data.
+  weekly_data_all <- get_base_target_data(as_of = as_of)
+  latest_date <- max(weekly_data_all$date, na.rm = TRUE)
+
+  if (isFALSE(get_latest) && as.Date(latest_date) != as.Date(as_of)) {
+    cli::cli_alert_danger(
+      paste0("Latest date in the target data (", latest_date, ") does not match the 'as_of' date (", as_of, ").")
+    )
+    stop()
   }
 
-  # Get original target data from FluSight hub and filter using include_after
-  location_data <- get_location_data()
-  weekly_data_all <- get_base_target_data(as_of = as_of)
+  # Filter out target data dated on or earlier than the include_after date
   weekly_data_all <- weekly_data_all[weekly_data_all$date > include_after, ]
 
   # create and write time series target data
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
-  as_of <- time_series_target$as_of[1]
+  as_of <- latest_date
 
   time_series_path <- file.path(here::here(), paste0("target-data/time-series/as_of=", as_of))
   time_series_filename <- "time-series.csv"
