@@ -1,6 +1,7 @@
 #!/usr/bin/env Rscript
 # DOC
 # Generate Hubverse-formatted target data for the FluSight Forecast hub.
+# This script should be run from the repo's target-data directory.
 #
 # USAGE
 #     Rscript "get_target_data_hubverse.R" as_of include_after
