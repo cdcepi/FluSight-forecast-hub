@@ -496,56 +496,47 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
     )
   }
 
+  # Where we'll save things
+  time_series_path <- file.path(target_data_path, "time-series")
+  time_series_file <- file.path(time_series_path, "time-series.csv")
+  oracle_output_path <- file.path(target_data_path, "oracle_output")
+  oracle_output_file <- file.path(oracle_output_path, "oracle-output.csv")
+
   # Get original target data from FluSight hub and filter using include_after
   location_data <- get_location_data()
   weekly_data_all <- get_base_target_data(target_data_path = target_data_path, as_of = as_of)
   weekly_data_all <- weekly_data_all[weekly_data_all$date > include_after, ]
   as_of <- weekly_data_all$as_of[1]
 
-  # create time series target data
+  # create time series data and append to existing file
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
-
-  # append time series target data to existing time series and write new file
-  time_series_path <- file.path(target_data_path, "time-series")
-  time_series_file <- file.path(time_series_path, "time-series.csv")
   existing_time_series <- get_existing_time_series(as_of, colnames(time_series_target), time_series_file)
   updated_time_series <- rbind(existing_time_series, time_series_target)
 
-  # append new time series
+  # Create oracle output data
+  oracle_output_target <- create_oracle_output_target_data(time_series_target)
+
+ # Write updated target data files
   if (!dir.exists(time_series_path)) {
     dir.create(time_series_path, recursive = TRUE)
   }
-  tryCatch(
-    write.csv(updated_time_series, file = time_series_file, row.names = FALSE),
-    error = function(e) {
-      cli::cli_alert_danger(paste0(
-                                  "Failed when writing time series target data to ",
-                                  time_series_file, ":", e$message))
-      quit(save = "no", status = 1)
-    }
-  )
-  cli::cli_alert_success(paste0("Time series target data written to ", time_series_file))
-
-  # create and write oracle output target data
-  oracle_output_target <- create_oracle_output_target_data(time_series_target)
-  oracle_output_path <- file.path(target_data_path, "oracle_output")
-  oracle_output_file <- file.path(oracle_output_path, "oracle-output.csv")
-
   if (!dir.exists(oracle_output_path)) {
     dir.create(oracle_output_path, recursive = TRUE)
   }
-  tryCatch(
-    write.csv(oracle_output_target, file = oracle_output_file, row.names = FALSE),
+
+  tryCatch({
+    write.csv(updated_time_series, file = time_series_file, row.names = FALSE)
+    write.csv(oracle_output_target, file = oracle_output_file, row.names = FALSE)},
     error = function(e) {
-      cli::cli_alert_danger(paste0(
-                                  "Failed when writing oracle output target data to ",
-                                  oracle_output_file, ":", e$message))
+      cli::cli_alert_danger(paste0("Failed to save target data:", e$message))
       quit(save = "no", status = 1)
     }
   )
-  cli::cli_alert_success(
-    paste0("Oracle output target data written to ", oracle_output_file))
-
+  cli::cli_alert_success("Target data saved:")
+  cli::cli_bullets(c(
+    "*" = time_series_file,
+    "*" = oracle_output_file
+  ))
 }
 
 args <- commandArgs(trailingOnly = TRUE)
