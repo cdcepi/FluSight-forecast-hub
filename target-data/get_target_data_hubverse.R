@@ -528,25 +528,23 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
 
   # create and write oracle output target data
   oracle_output_target <- create_oracle_output_target_data(time_series_target)
+  oracle_output_path <- file.path(target_data_path, "oracle_output")
+  oracle_output_file <- file.path(oracle_output_path, "oracle-output.csv")
 
-  oracle_output_path <- file.path(target_data_path, "oracle-output", paste0("as_of=", as_of))
-  oracle_output_filename <- "oracle-output.csv"
   if (!dir.exists(oracle_output_path)) {
     dir.create(oracle_output_path, recursive = TRUE)
   }
   tryCatch(
-    write.csv(oracle_output_target, file = paste0(oracle_output_path, "/", oracle_output_filename), row.names = FALSE),
+    write.csv(oracle_output_target, file = oracle_output_file, row.names = FALSE),
     error = function(e) {
       cli::cli_alert_danger(paste0(
                                   "Failed when writing oracle output target data to ",
-                                  oracle_output_path,
-                                  "/", oracle_output_filename, ":",
-                                  e$message))
+                                  oracle_output_file, ":", e$message))
       quit(save = "no", status = 1)
     }
   )
   cli::cli_alert_success(
-    paste0("Oracle output target data written to ", oracle_output_path, "/", oracle_output_filename))
+    paste0("Oracle output target data written to ", oracle_output_file))
 
 }
 
