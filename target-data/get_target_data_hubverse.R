@@ -508,13 +508,21 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   weekly_data_all <- weekly_data_all[weekly_data_all$date > include_after, ]
   as_of <- weekly_data_all$as_of[1]
 
+  # Specify sort order for target data files (not absolutely necessary, but helps human readibility and diffs)
+  time_series_sort_columns <- c("as_of", "target", "target_end_date", "location")
+  oracle_sort_columns <- c("as_of", "target", "target_end_date", "location", "horizon", "output_type_id")
+
   # create time series data and append to existing file
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
   existing_time_series <- get_existing_time_series(as_of, colnames(time_series_target), time_series_file)
   updated_time_series <- rbind(existing_time_series, time_series_target)
+  updated_time_series <- updated_time_series[do.call(
+    order, updated_time_series[, time_series_sort_columns, drop = FALSE]), ]
 
   # Create oracle output data
   oracle_output_target <- create_oracle_output_target_data(time_series_target)
+  oracle_output_target <- oracle_output_target[do.call(
+    order, oracle_output_target[, oracle_sort_columns, drop = FALSE]), ]
 
  # Write updated target data files
   if (!dir.exists(time_series_path)) {
