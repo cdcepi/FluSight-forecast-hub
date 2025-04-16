@@ -509,21 +509,29 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   as_of <- weekly_data_all$as_of[1]
 
   # Specify sort order for target data files (not absolutely necessary, but helps human readibility and diffs)
-  time_series_sort_columns <- c("as_of", "target", "target_end_date", "location")
-  oracle_sort_columns <- c("as_of", "target", "target_end_date", "location", "horizon", "output_type_id")
+  time_series_col_order <- c("as_of", "target", "target_end_date", "location")
+  oracle_col_order <- c("as_of", "target", "target_end_date", "location", "horizon", "output_type_id")
 
   # create time series data and append to existing file
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
   existing_time_series <- get_existing_time_series(as_of, colnames(time_series_target), time_series_file)
   updated_time_series <- rbind(existing_time_series, time_series_target)
   updated_time_series <- updated_time_series[do.call(
-    order, updated_time_series[, time_series_sort_columns, drop = FALSE]), ]
+    order, updated_time_series[, time_series_col_order, drop = FALSE]), ]
 
   # Create oracle output data
   oracle_output_target <- create_oracle_output_target_data(time_series_target)
   oracle_output_target <- oracle_output_target[do.call(
-    order, oracle_output_target[, oracle_sort_columns, drop = FALSE]), ]
+    order, oracle_output_target[, oracle_col_order, drop = FALSE]), ]
 
+  # Re-order the target-data columns to reflect the files' sort order
+  updated_time_series <- updated_time_series |>
+    dplyr::select(all_of(time_series_col_order), everything())
+  oracle_output_target <- oracle_output_target |>
+    dplyr::select(all_of(oracle_col_order), everything())
+
+  # updated_time_series <- updated_time_series[do.call(
+  #   order, updated_time_series[, time_series_col_order, drop = FALSE]), ]
  # Write updated target data files
   if (!dir.exists(time_series_path)) {
     dir.create(time_series_path, recursive = TRUE)
