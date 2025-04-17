@@ -523,17 +523,17 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
   existing_time_series <- get_existing_time_series(as_of, colnames(time_series_target), time_series_file)
   updated_time_series <- rbind(existing_time_series, time_series_target)
-  low_rent_arrange <- function(df, cols) {
+  arrange_cols <- function(df, cols) {
     # Similar to `dplyr::arrange()`, but using base tools. 
     # The `do.call()` technique is a way to use the columns of a data frame
     # (or items of a list) as separate arguments to a function.
     df[do.call(order, df[cols]), ]
   }
-  updated_time_series <- low_rent_arrange(updated_time_series, time_series_col_order)
+  updated_time_series <- arrange_cols(updated_time_series, time_series_col_order)
 
   # Create oracle output data
   oracle_output_target <- create_oracle_output_target_data(time_series_target)
-  oracle_output_target <- low_rent_arrange(oracle_output_target, oracle_col_order)
+  oracle_output_target <- arrange_cols(oracle_output_target, oracle_col_order)
 
   # Re-order the target-data columns to reflect the files' sort order
   updated_time_series <- updated_time_series |>
