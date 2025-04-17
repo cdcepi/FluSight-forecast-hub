@@ -145,7 +145,8 @@ create_oracle_output_target_data <- function(time_series_target) {
   oracle_output_rate_change <- calc_oracle_output_rate_change(time_series_target)
 
   oracle_output <- dplyr::bind_rows(oracle_output_wk_inc, oracle_output_rate_change)
-  oracle_output_cols <- c("target", "location", "horizon", "target_end_date", "output_type_id", "oracle_value", "as_of")
+  oracle_output_cols <- c(
+    "target", "location", "horizon", "target_end_date", "output_type", "output_type_id", "oracle_value", "as_of")
   oracle_output <- oracle_output[oracle_output_cols]
 
   oracle_output
@@ -162,12 +163,16 @@ create_oracle_output_wk_inc <- function(time_series_target) {
     data.frame(target = "wk inc flu hosp"),
     time_series_target[c("target_end_date", "location", "observation", "as_of")]
   )
-  colnames(oracle_output_wk_inc) <- c("target", "target_end_date", "location", "oracle_value", "as_of")
+  colnames(oracle_output_wk_inc) <- c(
+    "target", "target_end_date", "location", "oracle_value", "as_of")
   oracle_output_wk_inc <- oracle_output_wk_inc |>
     dplyr::cross_join(
       # add a row for each horizon defined in the modeling task
       # (except horizon -1, which is not used for scoring/viz)
       data.frame(horizon = 0:3)
+    ) |>
+    dplyr::mutate(
+      output_type = "quantile",
     )
 }
 
@@ -233,7 +238,7 @@ calc_oracle_output_rate_change <- function(time_series_target) {
 
   # Convert to the format for oracle output, which has an oracle_value of 1 for
   # the observed category and 0 for all other categories.
-  oracle_output <- obs_categories |>
+  oracle_output_rate_change <- obs_categories |>
     dplyr::select("target_end_date", "location", "horizon", "as_of") |>
     dplyr::cross_join(
       data.frame(output_type_id = c("large_decrease", "decrease", "stable", "increase", "large_increase"))
@@ -244,10 +249,11 @@ calc_oracle_output_rate_change <- function(time_series_target) {
     ) |>
     dplyr::mutate(
       target = "wk flu hosp rate change",
+      output_type = "pmf",
       oracle_value = ifelse(is.na(.data[["oracle_value"]]), 0, 1)
     )
 
-    oracle_output
+  oracle_output_rate_change
 }
 
 run_target_data_tests <- function() {
@@ -511,7 +517,7 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
 
   # Specify sort order for target data files (not absolutely necessary, but helps human readibility and diffs)
   time_series_col_order <- c("as_of", "target", "target_end_date", "location", "location_name")
-  oracle_col_order <- c("as_of", "target", "target_end_date", "location", "horizon", "output_type_id")
+  oracle_col_order <- c("as_of", "target", "target_end_date", "location", "horizon", "output_type", "output_type_id")
 
   # create time series data and append to existing file
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
