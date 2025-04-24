@@ -504,10 +504,8 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   }
 
   # Where we'll save things
-  time_series_path <- file.path(target_data_path, "time-series")
-  time_series_file <- file.path(time_series_path, "time-series.csv")
-  oracle_output_path <- file.path(target_data_path, "oracle-output")
-  oracle_output_file <- file.path(oracle_output_path, "oracle-output.csv")
+  time_series_file <- file.path(target_data_path, "time-series.csv")
+  oracle_output_file <- file.path(target_data_path, "oracle-output.csv")
 
   # Get original target data from FluSight hub and filter using include_after
   location_data <- get_location_data()
@@ -542,11 +540,8 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
     dplyr::select(all_of(oracle_col_order), everything())
 
  # Write updated target data files
-  if (!dir.exists(time_series_path)) {
-    dir.create(time_series_path, recursive = TRUE)
-  }
-  if (!dir.exists(oracle_output_path)) {
-    dir.create(oracle_output_path, recursive = TRUE)
+  if (!dir.exists(target_data_path)) {
+    dir.create(target_data_path, recursive = TRUE)
   }
 
   tryCatch({
