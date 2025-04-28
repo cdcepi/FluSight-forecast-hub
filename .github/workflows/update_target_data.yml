@@ -15,9 +15,8 @@ on:
 
 jobs:
   update_target_data:
-    if: github.repository_owner == 'cdcepi'
     runs-on: macOS-latest
-    steps:    
+    steps:
       - name: Checkout repo
         uses: actions/checkout@v3
         with: 
