@@ -36,7 +36,7 @@ jobs:
       - name: Generate target csv files (with new hubverse flavor!)
         run:  Rscript target-data/get_target_data_hubverse.R
       - name: Commit changes and create PR 🚀
-        if: ${{ inputs.publish || github.event_name == "schedule" }}
+        if: ${{ inputs.publish || github.event_name == 'schedule' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
