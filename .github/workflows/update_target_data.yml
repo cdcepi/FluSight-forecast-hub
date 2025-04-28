@@ -44,7 +44,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b update/targets/"$PR_DATETIME"
           git add target-data/
-          git commit -m "Update target data"
+          git commit -m "Update target data" || echo nothing to commit
           git push -u origin update/targets/"$PR_DATETIME"
           gh pr create \
             --base main \
