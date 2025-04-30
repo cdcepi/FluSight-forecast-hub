@@ -3,15 +3,15 @@
 # Generate Hubverse-formatted target data for the FluSight Forecast hub.
 #
 # USAGE
-#     Rscript "get_target_data_hubverse.R" as_of include_after
+#     Rscript "get_target_data_hubverse.R" as_of oracle_include_after
 #
 # ARGUMENTS
 #     as_of: Optional "YYYY-MM-DD" string.
 #                    If provided, read archived target data instead of the latest version.
-#     include_after: Optional "YYYY-MM-DD" string.
-#                    Exclude target data dated on or earlier than this date. Defaults to "2024-11-01".
+#     oracle_include_after: Optional "YYYY-MM-DD" string.
+#                    Starting date for oracle-output target data. Defaults to "2024-11-01".
 #                    Note: the modeling tasks defined in tasks.json were updated for the 2024-2025 flu
-#                    season, so don't run this script with an include_after date before 2024-11-01.
+#                    season, so don't run this script with an oracle_include_after date before 2024-11-01.
 #
 # EXAMPLE
 #     Generate Hubverse target data based on the latest available FluSight target-hospital-admissions.csv
@@ -49,7 +49,7 @@ get_location_data <- function() {
 #' @param target_data_path Path to the target data directory.
 #' @param as_of Optional "YYYY-MM-DD" string. If provided, read archived target data instead of the latest version.
 #' @return A dataframe
-get_base_target_data <- function(include_after, target_data_path, as_of = NULL) {
+get_base_target_data <- function(target_data_path, as_of = NULL) {
   # if as_of is not provided, read the latest target data
   if (is.null(as_of) || is.na(as_of)) {
     get_latest <- TRUE
@@ -135,18 +135,30 @@ create_time_series_target_data <- function(weekly_data, location_data) {
 }
 
 #' @description
-#' `create_oracle_output_target_data` creates Hubverse-formatted oracle output
-#' target data.
+#' `create_oracle_output_target_data` uses Hubverse-formatted time series target data to generate
+#' a corresponding set of oracle output data. If the time series target data doesn't contain
+#' any records with a target_end_date greater than the specified oracle_include_after date,
+#' return an empty oracle output dataframe.
 #'
 #' @param time_series_target Dataframe with the time series target data.
+#' @param oracle_include_after "YYYY-MM-DD" string. Start date for oracle output target data.
 #' @return A dataframe
-create_oracle_output_target_data <- function(time_series_target) {
+create_oracle_output_target_data <- function(time_series_target, oracle_include_after) {
+  oracle_output_cols <- c(
+    "target", "location", "horizon", "target_end_date", "output_type", "output_type_id", "oracle_value", "as_of")
+
+  # Filter time series rows to those that match the oracle_include_after criteria
+  time_series_target <- time_series_target[time_series_target$target_end_date > oracle_include_after, ]
+  if (nrow(time_series_target) == 0) {
+    empty_oracle_output <- data.frame(matrix(ncol = length(oracle_output_cols), nrow = 0))
+    colnames(empty_oracle_output) <- oracle_output_cols
+    return(empty_oracle_output)
+  }
+
   oracle_output_wk_inc <- create_oracle_output_wk_inc(time_series_target)
   oracle_output_rate_change <- calc_oracle_output_rate_change(time_series_target)
 
   oracle_output <- dplyr::bind_rows(oracle_output_wk_inc, oracle_output_rate_change)
-  oracle_output_cols <- c(
-    "target", "location", "horizon", "target_end_date", "output_type", "output_type_id", "oracle_value", "as_of")
   oracle_output <- oracle_output[oracle_output_cols]
 
   oracle_output
@@ -487,14 +499,14 @@ run_target_data_tests <- function() {
 #' by the FluSight Forecast hub.
 #'
 #' @param as_of Optional "YYYY-MM-DD" string. If provided, read archived target data instead of the latest version.
-#' @param include_after "YYYY-MM_DD" string. Base target data dated on or earlier will be excluded.
+#' @param oracle_include_after "YYYY-MM_DD" string. Base target data dated on or earlier will be excluded.
 #' @param target_data_path Path to the target data directory.
 #' @return NULL
-create_target_data <- function(as_of = NULL, include_after = "2024-11-01", target_data_path) {
+create_target_data <- function(as_of = NULL, oracle_include_after = "2024-11-01", target_data_path) {
   # Validate input params
   tryCatch(
-    as.Date(include_after, format = "%Y-%m-%d"),
-    error = function(e) stop(paste0("Invalid date format for include_after. Please use 'YYYY-MM-DD': ", include_after))
+    as.Date(oracle_include_after, format = "%Y-%m-%d"),
+    error = function(e) stop(paste0("Invalid date format for oracle_include_after. Please use 'YYYY-MM-DD': ", oracle_include_after))
   )
   if (!is.null(as_of)) {
     tryCatch(
@@ -504,15 +516,12 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   }
 
   # Where we'll save things
-  time_series_path <- file.path(target_data_path, "time-series")
-  time_series_file <- file.path(time_series_path, "time-series.csv")
-  oracle_output_path <- file.path(target_data_path, "oracle-output")
-  oracle_output_file <- file.path(oracle_output_path, "oracle-output.csv")
+  time_series_file <- file.path(target_data_path, "time-series.csv")
+  oracle_output_file <- file.path(target_data_path, "oracle-output.csv")
 
-  # Get original target data from FluSight hub and filter using include_after
+  # Get original target data from FluSight hub
   location_data <- get_location_data()
   weekly_data_all <- get_base_target_data(target_data_path = target_data_path, as_of = as_of)
-  weekly_data_all <- weekly_data_all[weekly_data_all$date > include_after, ]
   as_of <- weekly_data_all$as_of[1]
 
   # Specify sort order for target data files (not absolutely necessary, but helps human readibility and diffs)
@@ -532,7 +541,7 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
   updated_time_series <- arrange_cols(updated_time_series, time_series_col_order)
 
   # Create oracle output data
-  oracle_output_target <- create_oracle_output_target_data(time_series_target)
+  oracle_output_target <- create_oracle_output_target_data(time_series_target, oracle_include_after)
   oracle_output_target <- arrange_cols(oracle_output_target, oracle_col_order)
 
   # Re-order the target-data columns to reflect the files' sort order
@@ -542,11 +551,8 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
     dplyr::select(all_of(oracle_col_order), everything())
 
  # Write updated target data files
-  if (!dir.exists(time_series_path)) {
-    dir.create(time_series_path, recursive = TRUE)
-  }
-  if (!dir.exists(oracle_output_path)) {
-    dir.create(oracle_output_path, recursive = TRUE)
+  if (!dir.exists(target_data_path)) {
+    dir.create(target_data_path, recursive = TRUE)
   }
 
   tryCatch({
@@ -566,12 +572,14 @@ create_target_data <- function(as_of = NULL, include_after = "2024-11-01", targe
 
 args <- commandArgs(trailingOnly = TRUE)
 as_of <- args[1]
-include_after <- args[2]
+# next line is for testing
+oracle_include_after <- args[2]
 
-# if include_after date is not provided, default to the beginning
-# of the 2024-2025 flu season
-if (is.na(include_after) || is.null(include_after)) {
-  include_after <- "2024-11-01"
+# If oracle_include_after date is not provided, default to the beginning
+# of the 2024-2025 flu season (note: mandatory reporting was reinstated as
+# of 2024-11-01)
+if (is.na(oracle_include_after) || is.null(oracle_include_after)) {
+  oracle_include_after <- "2024-10-31"
 }
 
 # Run tests
@@ -586,4 +594,4 @@ if (isTRUE(all(ok))) {
 
 # Create the target data
 target_data_path <- file.path(here::here(), "target-data")
-create_target_data(as_of = as_of, include_after = include_after, target_data_path = target_data_path)
+create_target_data(as_of = as_of, oracle_include_after = oracle_include_after, target_data_path = target_data_path)
