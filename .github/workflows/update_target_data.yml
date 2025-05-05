@@ -2,9 +2,6 @@ name: Update target data
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Update target data'
-        required: false
       publish:
         description: 'Publish the target data'
         type: boolean
@@ -44,14 +41,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PR_DATETIME=$(date +'%Y-%m-%d_%H-%M-%S')
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b update/targets/"$PR_DATETIME"
           git add target-data/
           git commit -m "Update target data" || echo nothing to commit
-          git push -u origin update/targets/"$PR_DATETIME"
-          gh pr create \
-            --base main \
-            --title "Update target data $PR_DATETIME" \
-            --body "This PR was created via GitHub Actions: update target data."
+          git push origin main
