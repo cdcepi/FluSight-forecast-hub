@@ -2,6 +2,7 @@
 # Script that runs with the Pull baselines action to download and save the weekly baselines from the FluSight-baseline repository.
 # Retrieves specifically FluSight-baseline, FluSight-base_seasonal, and FluSight-equal_cat.
 
+# load package
 library(lubridate)
 
 # Get last Saturday
