@@ -2,9 +2,6 @@ name: Update target data
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Update target data'
-        required: false
       publish:
         description: 'Publish the target data'
         type: boolean
