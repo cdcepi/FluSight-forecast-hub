@@ -34,4 +34,3 @@ methods_long: "This model uses LightGBM to generate probabilistic forecasts, tra
 ensemble_of_models: true
 ensemble_of_hub_models: false
 model_version: "1.0"
-designated_github_users: ["zshamsi2"]
