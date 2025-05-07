@@ -27,7 +27,7 @@ jobs:
         with:
           install-r: false
           use-public-rspm: true
-          extra-repositories: 'https://hubverse-org.r-universe.dev'
+          #extra-repositories: 'https://hubverse-org.r-universe.dev'
 
       - name: Update R
         run: |
