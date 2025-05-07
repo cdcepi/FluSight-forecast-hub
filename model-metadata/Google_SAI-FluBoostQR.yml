@@ -31,7 +31,7 @@ designated_model: true
 data_inputs: "Influenza Hospital Admissions data (NHSN) and Population data"
 methods: "LightGBM quantile regression models with lagged target and time features."
 methods_long: "This model uses LightGBM to generate probabilistic forecasts, training a separate gradient boosting model for each of the 23 required quantile levels. Key input features include 1 and 52-week lagged influenza admissions, cyclical time features (year, seasonal week encodings), location, and population. The models are trained on simulated historical forecast scenarios to learn from past data structures. Uncertainty is directly represented by the collection of quantile predictions, and final predictions are post-processed for non-negativity and monotonicity. Spatial correlation between locations is not explicitly modeled."
-ensemble_of_models: false
+ensemble_of_models: true
 ensemble_of_hub_models: false
 model_version: "1.0"
 designated_github_users: ["zshamsi2"]
