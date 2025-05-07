@@ -33,16 +33,11 @@ jobs:
         run: |
           sudo apt-get update
 
-      #- uses: r-lib/actions/setup-r-dependencies@v2
-        #with:
-          #packages: |
-            #any::hubValidations
-            #any::sessioninfo
-      - name: Install hubValidations
-        run: |
-          install.packages("hubValidations")
-          install.packages("sessioninfo")
-  shell: Rscript {0}
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::hubValidations
+            any::sessioninfo
       - name: Run validations
         env:
           PR_NUMBER: ${{ github.event.number }}
