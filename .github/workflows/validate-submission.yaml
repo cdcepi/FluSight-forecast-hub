@@ -2,6 +2,11 @@ name: Hub Submission Validation (R)
 
 on:
   workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR Number'
+        required: true
+        type: integer
   pull_request:
     branches: main
     paths:
