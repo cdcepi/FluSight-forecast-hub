@@ -2,11 +2,6 @@ name: Hub Submission Validation (R)
 
 on:
   workflow_dispatch:
-    inputs:
-      pr_number:
-        description: 'PR Number'
-        required: true
-        type: integer
   pull_request:
     branches: main
     paths:
@@ -27,7 +22,7 @@ jobs:
         with:
           install-r: false
           use-public-rspm: true
-          #extra-repositories: 'https://hubverse-org.r-universe.dev'
+          extra-repositories: 'https://hubverse-org.r-universe.dev'
 
       - name: Update R
         run: |
@@ -35,9 +30,11 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          pak-version: "devel" #Delete this line or comment it out when pak is fixed; added 2025-05-08.
           packages: |
-            github::hubverse-org/hubValidations
-            any::sessioninfo
+           any::hubValidations
+           any::sessioninfo
+           
       - name: Run validations
         env:
           PR_NUMBER: ${{ github.event.number }}
