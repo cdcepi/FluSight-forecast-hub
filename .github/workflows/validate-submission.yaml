@@ -30,9 +30,10 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          pak-version: "devel" #Delete this line or comment it out when pak is fixed; added 2025-05-08.
+          #pak-version: "devel" #Delete this line or comment it out when pak is fixed; added 2025-05-08.
           packages: |
-           any::hubValidations
+          #any::hubValidations
+           github::hubverse-org/hubValidations
            any::sessioninfo
            
       - name: Run validations
