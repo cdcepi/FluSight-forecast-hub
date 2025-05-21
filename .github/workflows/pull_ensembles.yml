@@ -1,0 +1,67 @@
+name: Pull ensembles
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Pull Ensembles'
+        required: false
+      publish:
+        description: 'Pull ensemble forecasts'
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+    contents: write
+    pull-requests: write
+
+jobs:
+  pull_ensembles:
+    if: github.repository_owner == 'cdcepi'
+    runs-on: macOS-latest
+    steps:    
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with: 
+          fetch-depth: 0
+      - name: Setup R 
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install dependencies
+        run: |
+          install.packages("pak")
+          pak::pkg_install(c(
+          "readr", "dplyr", "tidyr",
+          "lubridate", "fs",
+          "github::hubverse-org/hubValidations"))
+        shell: Rscript {0}
+      - name: Pull ensemble csv files
+        run:  Rscript auxiliary-data/pull-flusight-ensembles.R
+      - name: Show validation output in logs (for debugging)
+        run: cat validation_result.md || echo "No validation_result.md found"
+      - name: Read validation result
+        id: validation
+        run: |
+          {
+            echo 'body<<EOF'
+            cat validation_result.md
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+      - name: Commit changes and create PR 🚀
+        if: ${{ inputs.publish || github.event_name == 'schedule' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_DATETIME=$(date +'%Y-%m-%d_%H-%M-%S')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b pull/ensembles/"$PR_DATETIME"
+          git add .
+          git commit -m "Pull ensemble forecasts"
+          git push --set-upstream origin pull/ensembles/"$PR_DATETIME"
+          gh pr create --title "Add new ensemble forecasts" \
+            --body "${{ steps.validation.outputs.body }}" \
+            --base main \
+            --head pull/ensembles/"$PR_DATETIME"
+        shell: bash
