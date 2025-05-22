@@ -24,7 +24,6 @@ tryCatch({
                       "FluSight-trained_mean", 
                       "FluSight-trained_med", 
                       "FluSight-baseline_cat", 
-                      "FluSight-equal_cat", 
                       "FluSight-ens_q_cat")
   ensemble_folders <- ensemble_types
 
