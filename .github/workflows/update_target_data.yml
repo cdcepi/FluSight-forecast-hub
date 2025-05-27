@@ -2,11 +2,17 @@ name: Update target data
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'Update target data'
+      publish:
+        description: 'Publish the target data'
+        type: boolean
         required: false
+        default: true
   schedule:
     - cron: "20 16 * * 3"
+
+permissions:
+    contents: write
+    pull-requests: write
 
 jobs:
   update_target_data:
@@ -24,15 +30,19 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages("RSocrata", repos = c("https://chicago.r-universe.dev", "https://cloud.r-project.org"))
-          install.packages(c("dplyr", "lubridate"))
+          install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate"))
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v7
-        with: 
-          add: 'target-data'
-          message: "Update target data"
-          default_author: github_actions
-          push: true
-
+      - name: Generate target csv files (with new hubverse flavor!)
+        run:  Rscript target-data/get_target_data_hubverse.R
+      - name: Commit changes and create PR 🚀
+        if: ${{ inputs.publish || github.event_name == 'schedule' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add target-data/
+          git commit -m "Update target data" || echo nothing to commit
+          git push origin main
