@@ -29,8 +29,8 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate", "remotes"))
-          install.packages("RSocrata", repos = c("https://cloud.r-project.org", "https://cran.rstudio.com"))
+          install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate", "devtools"))
+          devtools::install_github("Chicago/RSocrata", ref="dev"))
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
