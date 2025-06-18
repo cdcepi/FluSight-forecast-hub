@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate", "remotes"))
-          remotes::install_github("soodoku/rsocrata")
+          install.packages("RSocrata", repos = c("https://cloud.r-project.org", "https://cran.rstudio.com"))
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R
