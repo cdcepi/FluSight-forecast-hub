@@ -16,7 +16,7 @@ fetch_flu <- function(){
   #   dplyr::filter(weekendingdate >= as.Date("2022-02-01"))
   
   # Function to fetch paginated data
-  fetch_socrata_data <- function(base_url, limit = 1000, max_rows = 20000) {
+  fetch_socrata_data <- function(base_url, limit = 1000, max_rows = 30000) {
     offsets <- seq(0, max_rows, by = limit)
     
     all_data <- map_dfr(offsets, function(offset) {
@@ -38,7 +38,7 @@ fetch_flu <- function(){
   base_url <- "https://data.cdc.gov/resource/mpgq-jmmr.json"
   
   # Download all data (adjust `max_rows` if needed)
-  health_data_raw <- fetch_socrata_data(base_url, limit = 1000, max_rows = 100000)
+  health_data_raw <- fetch_socrata_data(base_url, limit = 1000, max_rows = 30000)
   
   # Now filter it
   health_data <- health_data_raw %>%
