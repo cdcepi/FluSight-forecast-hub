@@ -530,6 +530,8 @@ create_target_data <- function(as_of = NULL, oracle_include_after = "2024-11-01"
 
   # create time series data and append to existing file
   time_series_target <- create_time_series_target_data(weekly_data_all, location_data)
+  # Adjust the as_of column in time_series_target forward by 4 days for Wednesday release
+  time_series_target$as_of <- as.Date(time_series_target$as_of) + 4
   existing_time_series <- get_existing_time_series(as_of, colnames(time_series_target), time_series_file)
   updated_time_series <- rbind(existing_time_series, time_series_target)
   arrange_cols <- function(df, cols) {
