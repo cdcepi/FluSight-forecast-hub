@@ -71,8 +71,9 @@ Note that reported data are occasionally revised as data are updated. Please see
 
 
 ### CSV files
-A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations. A corresponding CSV file is created in `target-data/target-hospital-admissions.csv`.
+A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations. A corresponding CSV file is created in `target-data/target-hospital-admissions.csv`. 
 
+Additional CSV files are available in Hubverse formatted data, including a time series in `target-data/time-series.csv` and oracle data in `target-data/oracle-output.csv`. In the time series file, the as_of variable represents the reference_date of the data release for dates before 2025-07-05. After this date, the as_of variable indicates the date of data release, typically the Wednesday following the reference_date.
 
 ### Resources for Accessing Hospitalization Data
 
