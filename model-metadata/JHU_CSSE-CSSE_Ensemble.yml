@@ -30,7 +30,8 @@ designated_model: true
 data_inputs: "Weekly flu/ COVID-19 hospitalizations, Google search volume for flu-related symptoms, healthcare claims data (accessed via covidcast)"
 methods: "A Multi-Pathogen Optimized Geo-Hierarchical Ensemble Framework (MPOG-Ensemble)"
 methods_long: "This model forecasts state-level influenza hospitalizations using a combination of time series forecasting methods, organized across three hierarchical levels. At the individual state level, forecasts are generated using Holt-Winters Exponential Smoothing. For regional predictions, which group states based on recent flu activity trends identified through the Louvain method, Long Short-Term Memory (LSTM) models are employed. Additionally, a LSTM model that covers all states is implemented. These three-tiered model outputs are integrated, selecting weights based on their recent performance in terms of Mean Absolute Error (MAE) to produce the final prediction."
-website_url: "https://systems.jhu.edu/lauren_gardner/"
+citation: "Xu, S., Du, H., Dong, E., Wang, X., Zhang, L., & Gardner, L. M. (2025). A Multi-pathogen Hospitalization Forecasting Model for the United States: An Optimized Geo-Hierarchical Ensemble Framework. medRxiv, 2025-01."
+website_url: "https://systems.jhu.edu"
 ensemble_of_models: true
 ensemble_of_hub_models: false
 
