@@ -15,7 +15,7 @@ model_contributors: [
     "email": "viboudc@mail.nih.gov"
   }
 ]
-website_url: "https://github.com/midas-network/flu-scenario-modeling-hub/tree/main/data-processed/NIH-Flu_TS"
+website_url: "https://github.com/midas-network/flu-scenario-modeling-hub_archive/blob/821692fc1bc188766fb1e3d8067cccb4ddfe1a22/data-processed/NIH-Flu_TS/2024-08-11-NIH-Flu_TS-abstract.md"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "not applicable"
