@@ -16,11 +16,35 @@ fetch_flu <- function(){
   #   dplyr::filter(weekendingdate >= as.Date("2022-02-01"))
   
   # Function to fetch paginated data
-  fetch_socrata_data <- function(base_url, limit = 1000, max_rows = 30000) {
+  # fetch_socrata_data <- function(base_url, limit = 1000, max_rows = 30000) {
+  #   offsets <- seq(0, max_rows, by = limit)
+  #   
+  #   all_data <- map_dfr(offsets, function(offset) {
+  #     paged_url <- paste0(base_url, "?$limit=", limit, "&$offset=", offset)
+  #     message("Fetching offset: ", offset)
+  #     tryCatch(
+  #       fromJSON(paged_url),
+  #       error = function(e) {
+  #         message("Error at offset ", offset, ": ", e$message)
+  #         NULL
+  #       }
+  #     )
+  #   })
+  #   
+  #   return(all_data)
+  # }
+  fetch_socrata_data <- function(base_url, limit = 1000, max_rows = 30000, filter_query = NULL) {
     offsets <- seq(0, max_rows, by = limit)
     
     all_data <- map_dfr(offsets, function(offset) {
+      # Construct the paged URL with optional filtering
       paged_url <- paste0(base_url, "?$limit=", limit, "&$offset=", offset)
+      
+      # Add filter query if provided
+      if (!is.null(filter_query)) {
+        paged_url <- paste0(paged_url, "&", filter_query)
+      }
+      
       message("Fetching offset: ", offset)
       tryCatch(
         fromJSON(paged_url),
@@ -36,15 +60,19 @@ fetch_flu <- function(){
   
   # CDC Socrata endpoint
   base_url <- "https://data.cdc.gov/resource/mpgq-jmmr.json"
+  ed_url <- "https://data.cdc.gov/resource/rdmq-nq56.json"
   
-  # Download all data (adjust `max_rows` if needed)
+  # Define the filter query for the ED data
+  filter_query <- "$where=county='All'"
+  
+  # Download all data (adjust `max_rows` if needed, as of 7/15 about 9,500 rows used)
   health_data_raw <- fetch_socrata_data(base_url, limit = 1000, max_rows = 30000)
+  ed_data_raw <- fetch_socrata_data(ed_url, limit = 1000, max_rows = 80000, filter_query = filter_query)
   
   # Now filter it
   health_data <- health_data_raw %>%
     mutate(weekendingdate = as.Date(weekendingdate)) %>%
     filter(weekendingdate >= as.Date("2022-02-01"))
-  
   
   
   #remove  VI and AS as they are not included for FluSight, keep only necessary vars and add epiweek and epiyear 
@@ -55,16 +83,31 @@ fetch_flu <- function(){
     dplyr::mutate(date = as.Date(date), 
                   value = as.numeric(value),
                   state = gsub("USA", "US", state))
+                  #target="wk inc flu hosp")
+  
+  #filter
+  ed_data <- ed_data_raw %>% 
+    dplyr::select(week_end, geography, percent_visits_influenza) %>% 
+    dplyr::rename("date" = "week_end", "state" = "geography", "value" = "percent_visits_influenza") %>% 
+    dplyr::mutate(date = as.Date(date), 
+                  value = as.numeric(value),
+                  state = gsub("USA", "US", state))
+                  #target="wk inc flu prop ed visits")
+    
+  
+  ed_full_data = dplyr::left_join(ed_data, locations, by = join_by("state" == "location_name")) %>% 
+    rename(location_name = state, state = abbreviation) %>% select(-state, -population)
   
   #bind state population data
   full_data = dplyr::left_join(recent_data, locations, by = join_by("state" == "abbreviation"))
   
+  
   #calculates weekly rate 
   final_dat = full_data %>% 
-    dplyr::mutate(weekly_rate = (value*100000)/population ) %>% 
+    dplyr::mutate(weekly_rate = (value*100000)/population) %>% 
     select(date, location, location_name, value, weekly_rate)
   
-  return(final_dat)
+  #return(final_dat)
   
 }
 
@@ -78,6 +121,10 @@ locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-
 
 #setwd(paste0("C:/Users/",Sys.info()["user"],"/Desktop/Github/FluSight-forecast-hub"))
   
-target_data <- fetch_flu()
+#target_data <- fetch_flu()
 
-write.csv(target_data, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
+fetch_flu()
+
+write.csv(final_data, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
+
+write.csv(ed_full_data, file = "./target-data/target-ed-visits.csv", row.names = FALSE)
