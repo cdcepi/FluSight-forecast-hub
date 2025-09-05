@@ -91,7 +91,7 @@ fetch_flu <- function(){
     dplyr::rename("date" = "week_end", "state" = "geography", "value" = "percent_visits_influenza") %>% 
     dplyr::mutate(date = as.Date(date), 
                   value = as.numeric(value)/100,
-                  state = gsub("USA", "US", state))
+                  state = gsub("United States", "US", state))
                   #target="wk inc flu prop ed visits")
     
   
