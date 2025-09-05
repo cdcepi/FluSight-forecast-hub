@@ -90,8 +90,8 @@ fetch_flu <- function(){
     dplyr::select(week_end, geography, percent_visits_influenza) %>% 
     dplyr::rename("date" = "week_end", "state" = "geography", "value" = "percent_visits_influenza") %>% 
     dplyr::mutate(date = as.Date(date), 
-                  value = as.numeric(value),
-                  state = gsub("USA", "US", state))
+                  value = as.numeric(value)/100,
+                  state = gsub("United States", "US", state))
                   #target="wk inc flu prop ed visits")
     
   
@@ -107,7 +107,21 @@ fetch_flu <- function(){
     dplyr::mutate(weekly_rate = (value*100000)/population) %>% 
     select(date, location, location_name, value, weekly_rate)
   
-  #return(final_dat)
+  #return(final_dat, ed_full_data)
+    ed_full_data = dplyr::left_join(ed_data, locations, by = join_by("state" == "location_name")) %>% 
+    rename(location_name = state, state = abbreviation) %>% select(-state, -population)
+  
+  #bind state population data
+  full_data = dplyr::left_join(recent_data, locations, by = join_by("state" == "abbreviation"))
+  
+  
+  #calculates weekly rate 
+  final_dat = full_data %>% 
+    dplyr::mutate(weekly_rate = (value*100000)/population) %>% 
+    select(date, location, location_name, value, weekly_rate)
+  
+  #return(final_dat, ed_full_data)
+  return(list(final_dat = final_dat, ed_full_data = ed_full_data))
   
 }
 
@@ -115,7 +129,6 @@ library(dplyr)
 library(lubridate)
 library(jsonlite)
 library(purrr)
-#library(RSocrata)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
@@ -123,8 +136,12 @@ locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-
   
 #target_data <- fetch_flu()
 
-fetch_flu()
+result <- fetch_flu()
+final_data <- result$final_dat  # Access final_dat
+ed_full_data <- result$ed_full_data 
+
+options(scipen=999)
 
 write.csv(final_data, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
 
-write.csv(ed_full_data, file = "./target-data/target-ed-visits-prop.csv", row.names = FALSE)
+write.csv(ed_full_data, file = "./target-data/target-ed-visits.csv", row.names = FALSE)
