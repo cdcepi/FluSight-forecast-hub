@@ -144,4 +144,4 @@ options(scipen=999)
 
 write.csv(final_data, file = "./target-data/target-hospital-admissions.csv", row.names = FALSE)
 
-write.csv(ed_full_data, file = "./target-data/target-ed-visits.csv", row.names = FALSE)
+write.csv(ed_full_data, file = "./target-data/target-ed-visits-prop.csv", row.names = FALSE)
