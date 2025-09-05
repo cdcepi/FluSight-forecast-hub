@@ -342,6 +342,7 @@
                             "output_type_id_params": {
                                 "is_required": false,
                                 "type": "character",
+                                "max_length": 15,
                                 "min_samples_per_task": 100,
                                 "max_samples_per_task": 100,
                                 "compound_taskid_set" : ["reference_date", "location", "target"]
@@ -840,7 +841,8 @@
                         "sample": {
                             "output_type_id_params": {
                                 "is_required": false,
-                                "type": "character", 
+                                "type": "character",
+                                "max_length": 15,
                                 "min_samples_per_task": 100,
                                 "max_samples_per_task": 100,
                                 "compound_taskid_set" : ["reference_date", "location", "target"] 
