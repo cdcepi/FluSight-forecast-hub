@@ -111,6 +111,10 @@ One or more citations to manuscripts or preprints with additional model details.
 
 Any information about funding source(s) for the team or members of the team that would be natural to include on any resulting FluSight publications. For example, "National Institutes of General Medical Sciences (R01GM123456). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS."
 
+### backfill_adjustment
+
+A description of any adjustments made to the real time data to account for potential changes due to backfill
+
 # Data validation
 
 Optionally, you may validate a model metadata file locally before submitting it to the hub in a pull request. Note that this is not required, since the validations will also run on the pull request. To run the validations locally, follow these steps:
