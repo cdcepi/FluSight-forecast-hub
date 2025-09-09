@@ -5,6 +5,7 @@ The target-data folder contains the laboratory confirmed influenza hospital admi
 *Table of Contents*
 
 -   [Hospitalization data](#hospitalization-data)
+-   [Emergency Department Visit data](#ed-visit-data)
 -   [Other data sources](#data-sources)
 -   [Accessing target data](#accessing-target-data)
 
@@ -14,12 +15,10 @@ Hospitalization data
 
 ### NHSN Weekly Hospital Respiratory Data
 
-FluSight hospital admission prediction targets (`wk inc flu hosp`,`wk flu hosp rate changes`, `peak week inc flu hosp`, and `peak inc flu hosp`) for this season will be based on the ['total number of patients hospitalized with influenza captured for the Wednesday of the reporting week'](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [Weekly Hospital Respiratory Data](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data).
+FluSight hospital admission prediction targets (`wk inc flu hosp`,`wk flu hosp rate changes`, `peak week inc flu hosp`, and `peak inc flu hosp`) for this season will be based on the ['total number of new hospital admissions of patients with confirmed influenza captured during the reporting week'](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data) reported through CDC's NHSN (the dataset formerly known as HHS-Protect), [Weekly Hospital Respiratory Data](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data).
 These data are released weekly.
 
-
-
-Previously collected influenza data from the 2020-21, 2022-23, and 2023-2024 influenza seasons are included in the NHSN Weekly Hospital Respiratory Data as well as originally in the archived COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset. Reporting of the influenza fields 33-35 became mandatory in February 2022, and additional details are provided in the current [hospital reporting guidance and FAQs](https://www.cdc.gov/nhsn/psc/hospital-respiratory-reporting.html). Numbers of reporting hospitals increased after the period that reporting became mandatory in early 2022 but have since stabilized at high levels of compliance.  The number of hospitals reporting these data each week by state are available in the `totalconfflunewadm` variable found in the Weekly Hospital Respiratory Dataset.
+Previously collected influenza data from the 2020-21 through 2024-2025 influenza seasons are included in the NHSN Weekly Hospital Respiratory Data as well as originally in the archived COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries dataset. Reporting of the influenza fields 33-35 became mandatory in February 2022, and additional details are provided in the current [hospital reporting guidance and FAQs](https://www.cdc.gov/nhsn/psc/hospital-respiratory-reporting.html). Numbers of reporting hospitals increased after the period that reporting became mandatory in early 2022 but have since stabilized at high levels of compliance.  The number of hospitals reporting these data each week by state are available in the `totalconfflunewadm` variable found in the Weekly Hospital Respiratory Dataset.
 
 [Weekly official counts](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/ua7e-t2fy/about_data) are publicly released on Fridays. [Preliminary counts](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Hospital-Respiratory-Data-HRD-Metrics-by-Ju/mpgq-jmmr/about_data) are released on Wednesdays. Official counts can be revised in subsequent data updates.
 
@@ -33,11 +32,13 @@ This implies that some values may be repeated. Extra caution should be applied i
 
 Some of these data are also available programmatically through the [EpiData](https://cmu-delphi.github.io/delphi-epidata/) API. See accessing target (truth) data section below for details.
 
-
-Other data sources
+Emergency Department Visit data
 ------------
 
-Percent of Emergency Department visits with a specified pathogen (COVID-19, Influenza, and Respiratory Syncytial Virus) out of all emergency department visits in a given epiweek are reported by the CDC National Syndromic Surveillance Program (NSSP) and provided in the [2023 Respiratory Virus Response - NSSP Emergency Department Visits dataset](https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm).  Weekly national-level Emergency Department Visits for these pathogens are available for download by age-group in this [landing page](https://www.cdc.gov/ncird/surveillance/respiratory-illnesses/index.html).   
+Percent of Emergency Department visits with a specified pathogen (COVID-19, Influenza, and Respiratory Syncytial Virus) out of all emergency department visits in a given epiweek are reported by the CDC National Syndromic Surveillance Program (NSSP) and provided in the [NSSP Emergency Department Visit Trajectories by State and Sub State Regions- COVID-19, Flu, RSV, Combined dataset](https://data.cdc.gov/Public-Health-Surveillance/NSSP-Emergency-Department-Visit-Trajectories-by-St/rdmq-nq56/about_data). The proportion of influenza emergency department visits target for this season will be based on the `percent_visits_influenza` variable in that data set. 
+
+Other data sources
+------------ 
 
 Additional historical influenza surveillance data from other surveillance systems are available at [https://www.cdc.gov/flu/weekly/fluviewinteractive.htm](https://www.cdc.gov/flu/weekly/fluviewinteractive.htm). These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Additional potential data sources are available in Carnegie Mellon University's [Epidata API](https://delphi.cmu.edu/).
 
@@ -46,6 +47,8 @@ Additional historical influenza surveillance data from other surveillance system
 
 The hospitalization target data is computed based on the `totalconfflunewadm`
 field which provides the new weekly admissions with a confirmed diagnosis of influenza.
+
+The emergency department visit target data is computed based on the `percent_visits_influenza` field which provides the proportion of emergency department visits attributed to influenza. Although these numbers are reported as percentages, we provide the target data as decimal proportions (i.e., percent_visits_influenza/ 100) in target-ed-visits-prop.csv and require forecast submissions to also be decimal proportions (minimum = 0 and maximum = 1). To obtain state-level data, we filter the dataset to include only the rows where the county column is equal to All. 
 
 For each horizon of predictions, we will use the specification of
 epidemiological weeks (EWs) [defined by the US
@@ -58,7 +61,7 @@ run Sunday through Saturday.There are standard software packages to convert from
 Here are a few additional resources that describe these hospitalization
 data:
 
--   [data dictionary for the
+-   [data dictionary for the hospital admissions
     dataset](https://www.cdc.gov/nhsn/pdfs/pscmanual/Hospital-Respiratory-Data-Weekly-Template-Mapping.pdf)
 -   the [official document describing the **guidance for hospital
     reporting**](https://www.cdc.gov/nhsn/pdfs/pscmanual/HRD-Protocol-Final.pdf)
@@ -71,7 +74,7 @@ Note that reported data are occasionally revised as data are updated. Please see
 
 
 ### CSV files
-A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations. A corresponding CSV file is created in `target-data/target-hospital-admissions.csv`. 
+A set of comma-separated plain text files are automatically updated every week with the latest observed values for incident hospitalizations and emergency department visits. The corresponding CSV files are created in `target-data/target-hospital-admissions.csv` and `target-data/target-ed-visits-prop.csv`. 
 
 Additional CSV files are available in Hubverse formatted data, including a time series in `target-data/time-series.csv` and oracle data in `target-data/oracle-output.csv`. In the time series file, the as_of variable represents the reference_date of the data release for dates before 2025-07-05. After this date, the as_of variable indicates the date of data release, typically the Wednesday following the reference_date.
 
