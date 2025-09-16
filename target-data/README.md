@@ -91,5 +91,5 @@ Various other data sets and their version histories, including data sets not ava
 - [Facility-level hospitalization reporting (old form)](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html) 
 - [Facility lookup](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility_lookup.html)
 
-Other data available in the API are listed in the [API documentation](https://cmu-delphi.github.io/delphi-epidata/) and [signal discovery tool](https://delphi.cmu.edu/signals/) (in development). To access these data, teams can utilize the [epidatr R package](https://cmu-delphi.github.io/epidatr/) or [epidatpy Python package](https://cmu-delphi.github.io/epidatpy/). Some basic examples of pulling old influenza data are available [here](https://github.com/cmu-delphi/flusight-helper-snippets).
+Other data available in the API are listed in the [API documentation](https://cmu-delphi.github.io/delphi-epidata/) and also available via a web-based indicator discovery tool, [Delphi EpiPortal](https://delphi.cmu.edu/epiportal/). To access these data programmatically, teams can utilize the [epidatr R package](https://cmu-delphi.github.io/epidatr/) or [epidatpy Python package](https://cmu-delphi.github.io/epidatpy/). Some basic examples of pulling old influenza data are available [here](https://github.com/cmu-delphi/flusight-helper-snippets).
 
