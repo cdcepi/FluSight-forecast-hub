@@ -9,6 +9,7 @@ fetch_flu <- function(){
   require(lubridate)
   require(jsonlite)
   require(purrr)
+  require(stringr)
   #require(RSocrata)
   
   #read data from data.cdc.gov, filtering for when flu reporting became mandatory
@@ -130,6 +131,7 @@ library(dplyr)
 library(lubridate)
 library(jsonlite)
 library(purrr)
+library(stringr)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
