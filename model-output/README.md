@@ -49,16 +49,14 @@ uptake) may change over time.
 
 ## Target Data 
 
-*Note:* The data source for these prediction targets was drafted based on what was available for the 2023-2024 season and will be updated accordingly for the 2024-2025 season as new data becomes available.
-
-This project treats laboratory confirmed influenza virus infection hospitalization admissions data reported through CDC's NHSN (National Health Safety Network) system in the [Hospital Respitatory Dataset](https://www.cdc.gov/nhsn/psc/hospital-respiratory-reporting.html) as the target ("gold standard") data for hospital admission forecasts.
+This project treats laboratory confirmed influenza virus infection hospital admissions data reported through CDC's NHSN (National Health Safety Network) system in the [Hospital Respitatory Dataset](https://www.cdc.gov/nhsn/psc/hospital-respiratory-reporting.html) as the target ("gold standard") data for hospital admission forecasts.
 
 Details on how data target data are defined can be found in the
 [target-data folder README file](../target-data/README.md).
 
 ## Data formatting 
 
-The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting. For the 2024-2025 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 3.0.1 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
+The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting. For the 2025-2026 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 3.0.1 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
 
 ### Subdirectory
 
@@ -87,10 +85,9 @@ The metadata file will be saved within the model-metdata directory in the Hub's 
       team-model.yml
 
 Details on the content and formatting of metadata files are provdided in the [model-metadata README](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md).
-Note that returning teams should update the metadata file provided during the 2023-2024 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
+Note that returning teams should update the metadata file provided during the 2024-2025 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
-Updates to the metadata files include the addition of the addition of an optional “sample_method” field where all teams that are submitting samples are asked to please indicate the method that you are using to generate sample trajectories. The "web_url" field has been updated to be a required field. 
-
+Updates to the metadata files for the 2025-2026 season include the addition  of an optional “backfill adjustment” field. Teams should include this field if their model has a specific method to account for subsequent updates to the observed data. 
 
 ### Forecasts
 
@@ -130,7 +127,7 @@ columns (in any order):
 -   `output_type_id`
 -   `value`
 
-No additional columns are allowed. **Note:** for some targets not all column values will apply, e.g., seasonal peak targets do not have an associated `horizon`. In this case "NA" should be entered for the non-applicable column in corresponding rows. 
+No additional columns are allowed. **Note:** for some targets not all column values will apply, e.g., seasonal peak targets do not have an associated `horizon`. In this case, cells should be left blank or “NA” (without quotes) should be entered for the non-applicable column in corresponding rows. 
 
 The majority of values in each row of the file will be either a quantile, sample, or rate-trend prediction for a particular combination of location, date, and horizon. Please see Tables 1 and 2 for examples based on example dates. See details below for exceptions related to new optional peak targets.  
 
@@ -149,6 +146,7 @@ the following specific targets:
 
 -   `wk inc flu hosp` 
 -   `wk flu hosp rate change`
+-   `wk inc flu prop ed visits`
 -   `peak week inc flu hosp`
 -   `peak inc flu hosp`
   
@@ -156,7 +154,7 @@ For samples, this should be `wk inc flu hosp`.
 
 
 ### `horizon`
-Values in the horizon column indicate the number of weeks between the reference_date and the target_end_date.  For influenza hospital admission forecasts this should be a number between -1 and 3 and rate change predictions should be a number between 0 and 3, where for example a horizon of 0 indicates that the prediction is a nowcast for the week of submission and a horizon of 1 indicates that the prediction is a forecast for the week after submission. See Tables 1 and 2 for examples. For the peak incidence and peak week targets, this columns hould be left blank/will not be used. 
+Values in the horizon column indicate the number of weeks between the reference_date and the target_end_date.  For influenza hospital admission forecasts and influenza proportion of emergency department visits this should be a number between -1 and 3 and rate change predictions should be a number between 0 and 3, where for example a horizon of 0 indicates that the prediction is a nowcast for the week of submission and a horizon of 1 indicates that the prediction is a forecast for the week after submission. See Tables 1 and 2 for examples. For the peak incidence and peak week targets, this columns hould be left blank/will not be used. 
 
 ### `target_end_date`
 
@@ -183,7 +181,7 @@ Values in the `output_type` column are either
 -   `pmf`
 -   `sample`
 
-This value indicates whether that row corresponds to a quantile forecast, for incident hospital admissions or peak hospital admissions, or the probability mass function (pmf), of a categorical forecast for rate-trend or of the peak week, or a sample for incident hospital admission trajectories. Quantile forecasts are used in visualizations and to construct the primary FluSight ensemble. 
+This value indicates whether that row corresponds to a quantile forecast for incident hospital admissions, proportion of emergency department visits, or peak hospital admissions, a probability mass function (pmf) for categorical rate-trend forecasts or peak week, or a sample for incident hospital admission trajectories. Quantile forecasts are used in visualizations and to construct the primary FluSight ensemble. 
 
 ### `output_type_id`
 Values in the `output_type_id` column specify identifying information for the output type.
@@ -217,46 +215,46 @@ For the peak week target, the `output_type_id` should specify the last Saturday 
 
 #### sample output
 
-For sample forecasts (trajectories), the output_type_id indicates which sample a set of predictions should be considered a part of. Please see related [Hubverse documentation](https://hubverse.io/en/latest/user-guide/sample-output-type.html) for examples. Here, a sample is a draw from a joint distribution for flu hospitalizations across multiple prediction horizons, showing the possible value of hospitalizations on each target date. The values for a single sample will be included in different rows of a submission file, corresponding to the different prediction horizons and target dates; the shared output_type_id across those rows allows us to link those values into a single sample trajectory.
+For sample forecasts (trajectories), the output_type_id indicates which sample a set of predictions should be considered a part of. Please see related [Hubverse documentation](https://hubverse.io/en/latest/user-guide/sample-output-type.html) for examples. Here, a sample is a draw from a joint distribution for flu hospital admissions across multiple prediction horizons, showing the possible value of hospital admissions on each target date. The values for a single sample will be included in different rows of a submission file, corresponding to the different prediction horizons and target dates; the shared output_type_id across those rows allows us to link those values into a single sample trajectory.
 
 For sample trajectories that are generated separately for each location, one valid way to set up output_type_id values would be to concatenate the two letter code for the location of the sample (e.g., MA) ad a two digit number identifying the sample index within that location. Since 100 samples are being collected for each trajectory, these numeric indices will be “00”, “01, … “99”, resulting in output_type_ids of MA00, MA01, …, MA 99. Each of those output_type_id values would appear across a set of rows in the submission file corresponding to different prediction horizons for MA. Similarly, for Florida forecasts, `output_type_id` values could be specified as FL00, … FL99. 
 
-As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a sample are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will only collect samples for the `wk flu hosp rate change` target.
+As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a sample are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will only collect samples for the `wk inc flu hosp` target.
 
 National forecasts can be provided as samples with the output_type_id values of US00, US01, … US99. National-level samples should only be provided if these forecasts are either jointly determined across all states, capturing dependence across locations, or if the national target is modeled directly, i.e., is not the sum of separately generated state-level forecasts.  
 
 ### `value`
 
-Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2024-2025 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For samples, this will be an integer value corresponding to a particular sample for a hospital admission forecast. Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. Values for samples should be integers greater than equal to 0.
+Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2025-2026 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts(`wk flu hosp rate change`) and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For the emergency department visit proportion target (`wk inc flu prop ed visits`), values should be between 0 and 1 (inclusive). For samples, this will be an integer value corresponding to a particular sample for a hospital admission forecast. Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. Values for samples should be integers greater than equal to 0.
 
 ### Example tables
 
 **Table 1:** the reference date, target end dates, and the dates
 included in the predicted EW for an example of the weekly hospital
-admissions target with a reference date of Saturday, November 16, 2024.
+admissions target with a reference date of Saturday, October 18, 2025.
 
 | reference_date | horizon | target_end_date | target EW | target EW dates covered  |
 |:---------------|:--------|:----------------|:----------|:-------------------------|
-| 2024-11-16     | -1      | 2024-11-09      | 45        | 2024-11-03 to 2024-11-09 |
-| 2024-11-16     | 0       | 2024-11-16      | 46        | 2024-11-10 to 2024-11-16 |
-| 2024-11-16     | 1       | 2024-11-23      | 47        | 2024-11-17 to 2024-11-23 |
-| 2024-11-16     | 2       | 2024-11-30      | 48        | 2024-11-24 to 2024-11-30 |
-| 2024-11-16     | 3       | 2024-12-07      | 49        | 2024-12-01 to 2024-12-07 |
+| 2025-10-18     | -1      | 2025-10-11      | 41        | 2025-10-05 to 2025-10-11 |
+| 2025-10-18     | 0       | 2025-10-18      | 42        | 2025-10-12 to 2025-10-18 |
+| 2025-10-18     | 1       | 2025-10-25      | 43        | 2025-10-19 to 2025-10-25 |
+| 2025-10-18     | 2       | 2025-11-01      | 44        | 2025-10-26 to 2025-11-01 |
+| 2025-10-18     | 3       | 2025-11-08      | 45        | 2025-11-02 to 2025-11-08 |
 
 
 **Table 2:** the reference date, target end dates, and the dates
 included in the predicted EW for an example of the rate trend target
-with a reference date of Saturday, November 16 2024. The rate trend
-target describes differences in the hospitalization rate between the
+with a reference date of Saturday, October 18, 2025. The rate trend
+target describes differences in the hospital admission rate between the
 baseline EW (one week prior to the EW of the reference date) and the
 target EW.
 
 | reference_date | horizon | target_end_date | target EW | target EW dates covered  | baseline EW | baseline EW dates covered |
 |:---------------|:--------|:----------------|:----------|:-------------------------|:------------|:--------------------------|
-| 2024-11-16     | 0       | 2024-11-16      | 46        | 2024-11-10 to 2024-11-16 | 45          | 2024-11-03 to 2023-11-09  |
-| 2024-11-16     | 1       | 2024-11-23      | 47        | 2024-11-17 to 2024-11-23 | 45          | 2024-11-03 to 2023-11-09  |
-| 2024-11-16     | 2       | 2024-11-30      | 48        | 2024-11-24 to 2024-11-30 | 45          | 2024-11-03 to 2023-11-09  |
-| 2024-11-16     | 3       | 2024-12-07      | 49        | 2024-12-01 to 2024-12-07 | 45          | 2024-11-03 to 2023-11-09  |
+| 2025-10-18     | 0       | 2025-10-18      | 42        | 2025-10-12 to 2025-10-18 | 41          | 2025-10-05 to 2025-10-11  |
+| 2025-10-18     | 1       | 2025-10-25      | 43        | 2025-10-19 to 2025-10-25 | 41          | 2025-10-05 to 2025-10-11  |
+| 2025-10-18     | 2       | 2025-11-01      | 44        | 2025-10-26 to 2025-11-01 | 41          | 2025-10-05 to 2025-10-11  |
+| 2025-10-18     | 3       | 2025-11-08      | 45        | 2025-11-02 to 2025-11-08 | 41          | 2025-10-05 to 2025-10-11  |
 
 
 ## Forecast validation 
@@ -351,7 +349,7 @@ In order to ensure that forecasting is done in real time, all forecasts are requ
 ## Evaluation criteria
 Forecasts will be evaluated using a variety of metrics, including weighted interval score (WIS) and its components and prediction interval coverage. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
 
-Evaluation will use official data reported from healthdata.gov as reported at the end or following the final forecast date (depending on data availability).
+Evaluation will use official data reported from data.cdc.gov as reported at the end or following the final forecast date (depending on data availability).
 
 # Rate-trend forecast specifications
 In order to mitigate the impact of reporting revisions and noise inherent in small counts, all week pairs with a difference of fewer than 10 hospital admissions will be classified as having a "stable" trend. 
@@ -359,7 +357,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 **For one-week ahead rate trends (horizon = 0):**
 
-*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 0.3/100k OR the corresponding magnitude of the count change is less than 10.
+*Stable:* forecasted changes in hospital admissions qualify as stable if either the magnitude of the rate change is less than 0.3/100k OR the corresponding magnitude of the count change is less than 10.
 
 *Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 1.7/100k.
 
@@ -371,7 +369,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 **For two-week ahead rate trends (horizon = 1):**
 
-*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 0.5/100k OR the corresponding magnitude of the count change is less than 10.
+*Stable:* forecasted changes in hospital admissions qualify as stable if either the magnitude of the rate change is less than 0.5/100k OR the corresponding magnitude of the count change is less than 10.
 
 *Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 3/100k.
 
@@ -383,7 +381,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 **For three-week ahead rate trends (horizon = 2):**
 
-*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 0.7/100k OR the corresponding magnitude of the count change is less than 10.
+*Stable:* forecasted changes in hospital admissions qualify as stable if either the magnitude of the rate change is less than 0.7/100k OR the corresponding magnitude of the count change is less than 10.
 
 *Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 4/100k.
 
@@ -395,7 +393,7 @@ In order to mitigate the impact of reporting revisions and noise inherent in sma
 
 **For four-week and five-week ahead rate trends (horizon = 3):**
 
-*Stable:* forecasted changes in hospitalizations qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
+*Stable:* forecasted changes in hospital admissions qualify as stable if either the magnitude of the rate change is less than 1/100k OR the corresponding magnitude of the count change is less than 10.
 
 *Increase:* positive forecasted changes that do not qualify as stable and for which the forecasted rate change is less than 5/100k.
 

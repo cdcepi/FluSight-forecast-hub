@@ -9,6 +9,7 @@ fetch_flu <- function(){
   require(lubridate)
   require(jsonlite)
   require(purrr)
+  require(stringr)
   #require(RSocrata)
   
   #read data from data.cdc.gov, filtering for when flu reporting became mandatory
@@ -75,9 +76,10 @@ fetch_flu <- function(){
     filter(weekendingdate >= as.Date("2022-02-01"))
   
   
-  #remove  VI and AS as they are not included for FluSight, keep only necessary vars and add epiweek and epiyear 
+  #remove  VI, AS, and regions as they are not included for FluSight, keep only necessary vars and add epiweek and epiyear 
   recent_data = health_data %>% 
-    dplyr::filter(!jurisdiction %in% c("VI", "AS", "GU", "MP")) %>% 
+    dplyr::filter(!jurisdiction %in% c("VI", "AS", "GU", "MP")) %>%
+    filter(!str_detect(jurisdiction, "Region")) %>%
     dplyr::select(jurisdiction, weekendingdate, totalconfflunewadm) %>% 
     dplyr::rename("value" = "totalconfflunewadm", "date"="weekendingdate", "state"="jurisdiction") %>% 
     dplyr::mutate(date = as.Date(date), 
@@ -129,6 +131,7 @@ library(dplyr)
 library(lubridate)
 library(jsonlite)
 library(purrr)
+library(stringr)
 
 locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-forecast-hub/main/auxiliary-data/locations.csv") %>% dplyr::select(1:4)
 
@@ -137,8 +140,8 @@ locations <- read.csv(file = "https://raw.githubusercontent.com/cdcepi/FluSight-
 #target_data <- fetch_flu()
 
 result <- fetch_flu()
-final_data <- result$final_dat  # Access final_dat
-ed_full_data <- result$ed_full_data 
+final_data <- result$final_dat  %>% arrange(desc(date))
+ed_full_data <- result$ed_full_data %>% arrange(desc(date))
 
 options(scipen=999)
 
