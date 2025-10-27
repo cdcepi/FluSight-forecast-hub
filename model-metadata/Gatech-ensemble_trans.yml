@@ -1,7 +1,7 @@
 team_name: "Gatech-ISYE-TS"
 team_abbr: "Gatech"
-model_name: "Ensemble of Attention-based Time Series Probabilistic Forecasts"
-model_abbr: "ensemble_prob"
+model_name: "Ensemble of Transformer-based Time Series Probabilistic Forecasts"
+model_abbr: "ensemble_trans"
 model_version: "1.0"
 model_contributors: [
   {
@@ -25,7 +25,7 @@ license: "CC-BY-4.0"
 citation: ""
 team_funding: ""
 designated_model: true
-methods: "Ensemble of deep learning attention-based probabilistic prediction architecture with different core time-series predictors, including ARM, CATS, and ICTS."
+methods: "Ensemble of deep learning transformer-based probabilistic prediction architecture with different core time-series predictors, including ARM, CATS, ICTSP, WAVE, and SAMoVAR."
 methods_long: "We modified the output structure of CATS and ICTSP, along with other attention-based multivariate time series forecasting architectures, into a multiple-output quantile forecasting framework. This allows the model to build quantile predictions progressively extending outward from the median point prediction. The median is trained using MSE loss, while the other quantile output heads are trained based on an adjusted WIS loss. To construct a predictor pool, we train the models using core time-series predictors with varying complexities. Finally, we adopt a local window ensemble strategy to integrate the results from different predictors into the final ensemble predictions."
 data_inputs: "Daily and weekly incident flu hospitalizations, ILI, and Google Trends"
 ensemble_of_models: true
