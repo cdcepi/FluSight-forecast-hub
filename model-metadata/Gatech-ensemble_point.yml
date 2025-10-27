@@ -1,0 +1,32 @@
+team_name: "Gatech-ISYE-TS"
+team_abbr: "Gatech"
+model_name: "Ensemble of Statistical and ML Time Series Point Estimates"
+model_abbr: "ensemble_point"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Shihao Yang",
+    "affiliation": "Georgia Tech",
+    "email": "shihao.yang@isye.gatech.edu"
+  },
+  {
+    "name": "Candice Djorno",
+    "affiliation": "Georgia Tech",
+    "email":  "cdjorno3@gatech.edu"  
+  },
+  {
+    "name": "Jiecheng Lu",
+    "affiliation": "Georgia Tech",
+    "email": "jlu414@gatech.edu"
+  }
+]
+website_url: "https://github.com/gatech-isye-yanglab/flucast"
+license: "CC-BY-4.0"
+citation: ""
+team_funding: ""
+designated_model: true
+methods: "Ensemble of statistical and ML time series model predictions, including ARIMA, ARGO, ARGO2, and deep learning models."
+methods_long: "Ensemble of statistical and ML time series model predictions, including ARIMA, ARGO, ARGO2, and deep learning models. ARIMA and ARGO (AutoRegression with GOogle search data) models are used to produce univariate forecasts for each location, incorporating Google Trends search volumes of flu-related terms as exogenous variables. ARGO2 (2-step Augmented Regression with GOogle data) performs state-level prediction using both state- and national-level ARGO predictions. A local window ensemble strategy is adopted to integrate the results from ARIMA, ARGO, ARGO2, and deep learning models into the final ensemble predictions."
+data_inputs: "Daily and weekly incident flu hospitalizations, ILI, and Google Trends"
+ensemble_of_models: true
+ensemble_of_hub_models: false
