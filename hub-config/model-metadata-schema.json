@@ -109,6 +109,10 @@
         "ensemble_of_hub_models": {
             "description": "Indicator for whether this model is an ensemble specifically of other models submitted to this Hub",
             "type": "boolean"
+        },
+        "backfill_adjustment": {
+            "description": "A description of any adjustments made to the real time data to account for potential changes due to backfill",
+            "type": "string"
         }
     },
     "additionalProperties": false,

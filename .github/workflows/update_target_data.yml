@@ -7,8 +7,8 @@ on:
         type: boolean
         required: false
         default: true
-  schedule:
-    - cron: "20 16 * * 3"
+  #schedule:
+    #- cron: "20 16 * * 3"
 
 permissions:
     contents: write
@@ -29,8 +29,7 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages("RSocrata", repos = c("https://chicago.r-universe.dev", "https://cloud.r-project.org"))
-          install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate"))
+          install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate", "devtools", "purrr", "jsonlite"))
         shell: Rscript {0}
       - name: Generate target csv files
         run:  Rscript target-data/get_target_data.R

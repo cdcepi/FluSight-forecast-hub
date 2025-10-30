@@ -331,7 +331,8 @@ flu_data <- forecasttools::pull_nhsn(
       "USA", 
       "US"
     )
-  )
+  )|>
+  dplyr::filter(!str_detect(state, "Region"))
 
 # convert state abbreviation to location code 
 # and to long name
