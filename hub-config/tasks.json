@@ -1,5 +1,5 @@
 {
-    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v3.0.1/tasks-schema.json",
+    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v6.0.0/tasks-schema.json",
     "rounds": [
         {
             "round_id_from_variable": true,
@@ -146,9 +146,9 @@
                                     "stable",
                                     "increase",
                                     "large_increase"
-                                ],
-                                "optional": null
+                                ]
                             },
+                            "is_required": false,
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
@@ -330,9 +330,9 @@
                                     0.95,
                                     0.975,
                                     0.99
-                                ],
-                                "optional": null
+                                ]
                             },
+                            "is_required": true,
                             "value": {
                                 "type": "double",
                                 "minimum": 0
@@ -340,13 +340,13 @@
                         },
                         "sample": {
                             "output_type_id_params": {
-                                "is_required": false,
                                 "type": "character",
                                 "max_length": 15,
                                 "min_samples_per_task": 100,
                                 "max_samples_per_task": 100,
                                 "compound_taskid_set" : ["reference_date", "location", "target"]
                             },
+                            "is_required": false,
                             "value": {
                                 "type": "integer",
                                 "minimum": 0
@@ -497,9 +497,9 @@
                                     0.95,
                                     0.975,
                                     0.99
-                                ],
-                                "optional": null
+                                ]
                             },
+                            "is_required": false,
                             "value": {
                                 "type": "double",
                                 "minimum": 0
@@ -646,9 +646,9 @@
                                     "2026-03-14", "2026-03-21", "2026-03-28",
                                     "2026-04-04", "2026-04-11", "2026-04-18", 
                                     "2026-04-25", "2026-05-02"
-                                ],
-                                "optional": null
+                                ]
                             },
+                            "is_required": false,
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
@@ -829,9 +829,9 @@
                                     0.95,
                                     0.975,
                                     0.99
-                                ],
-                                "optional": null
+                                ]
                             },
+                            "is_required": false,
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
@@ -840,13 +840,13 @@
                         },
                         "sample": {
                             "output_type_id_params": {
-                                "is_required": false,
                                 "type": "character",
                                 "max_length": 15,
                                 "min_samples_per_task": 100,
                                 "max_samples_per_task": 100,
                                 "compound_taskid_set" : ["reference_date", "location", "target"] 
                             },
+                            "is_required" : false,
                             "value": {
                                 "type": "double",
                                 "minimum": 0,
