@@ -1,7 +1,7 @@
 team_name: "Cornell-JHU"
-team_abbr: "Cornell-JHU"
+team_abbr: "cornell_jhu"
 model_name: "hierarchSIR"
-model_abbr: "hierarchSIR"
+model_abbr: "hierarchsir"
 model_contributors: [
   {
     "name": "Tijs W. Alleman",
