@@ -35,7 +35,7 @@ model_contributors: [
   }  
 ]
 website_url: "https://github.com/twallema"
-repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell-JHU_hierarchSIR"
+repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-hierarchSIR"
 license: "CC-BY_SA-4.0"
 designated_model: true
 ensemble_of_models: false
