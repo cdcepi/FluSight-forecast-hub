@@ -2,22 +2,12 @@ team_name: "MIGHTE"
 team_abbr: "MIGHTE"
 model_name: "Time series ensemble"
 model_abbr: "Nsemble"
-model_version: "1.0"
+model_version: "2.0"
 model_contributors: [
   {
     "name": "Austin Meyer",
     "affiliation": "Northeastern University",
     "email": "austin.g.meyer@gmail.com"
-  },
-  {
-    "name": "Fred Lu",
-    "affiliation": "Northeastern University",
-    "email": "fredlu1618@gmail.com"
-  },
-  {
-    "name": "Leonardo Clemente",
-    "affiliation": "Northeastern University",
-    "email": "c.clementelopez@northeastern.edu"
   },
   {
     "name": "Mauricio Santillana",
@@ -30,8 +20,8 @@ license: "CC-BY-4.0"
 citation: "Meyer, A. G., Lu, F., Clemente, L., & Santillana, M. (2024). A prospective real-time transfer learning approach to estimate Influenza hospitalizations with limited data. medRxiv, 2024-07."
 team_funding: ""
 designated_model: true
-methods: "Weighted ensemble of time-series models including lightGBM and ARIMA"
+methods: "Weighted ensemble of time-series models including LightGBM, SVM, and ARIMA"
 data_inputs: "Weekly incident flu hospitalizations, with imputation for unreported hospitalizations"
-methods_long: "Weighted ensemble of time-series models, including lightGBM with hyperparameters tuned over the previous season, lightGBM validated over the previous season and tuned on the season before, and ARIMA models."
+methods_long: "Weighted ensemble of time-series models, including LightGBM and SVM with hyperparameters tuned over the previous seasons along with ARIMA model with orders selected automatically. Then, a weighted ensemble with weighting base on most recent 4-6 weeks."
 ensemble_of_models: true
 ensemble_of_hub_models: false
