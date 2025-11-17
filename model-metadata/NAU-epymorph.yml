@@ -50,7 +50,7 @@ model_contributors: [
             "email": "Joseph.Mihaljevic@nau.edu",
         }
     ]
-website_url: "https://docs.www.epimorph.org/"
+website_url: "https://www.epimorph.org/"
 license: "CC-BY-4.0"
 designated_model: true
 methods: "A compartmental model with Bayesian inference, uncertainty quantification and calibration."
@@ -58,4 +58,5 @@ data_inputs: "State level weekly hospitalization data from NHSN."
 methods_long: "A compartmental model with a time-dependent transmission rate. Model state and parameters are fit using a particle filter."
 ensemble_of_models: false
 ensemble_of_hub_models: false
+
 
