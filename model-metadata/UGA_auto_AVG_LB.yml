@@ -39,7 +39,8 @@ license: "CC-BY-4.0"
 
 designated_model: true
 data_inputs: Weekly incident flu hospitalizations reported to NHSN.
-methods: An automatic ARIMAX that fits on 104 weeks of logarithmic transformed hospitalizations. It uses a 1 week-lag of logarithmic transformed average of hospitalizations in the U.S. as exogenous variable. 
+methods: An automatic ARIMAX that fits on 104 weeks of logarithmic transformed hospitalizations. It uses a 1 week-lag of logarithmic transformed average of hospitalizations in the U.S. as exogenous variable.
+methods_long: An automatic ARIMAX that fits on 104 weeks of logarithmic transformed hospitalizations. It uses a 1 week-lag of logarithmic transformed average of hospitalizations in the U.S. as exogenous variable.
 website_url: https://github.com/CEIDatUGA/FluSight_auto_AVG_LB
 ensemble_of_models: false
 ensemble_of_hub_models: false
