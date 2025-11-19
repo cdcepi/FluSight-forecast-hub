@@ -3,18 +3,18 @@ team_abbr: UGA_CEID
 model_name: UGA_CEID_auto_AVG_LB
 model_abbr: auto_AVG_LB
 model_contributors: [
-    {
+  {
     "name": "Victor Arraes Rocha Felix",
     "affiliation": "University of Georgia",
     "email": "victorfelix@uga.edu",
     "orcid": "0000-0001-7825-6418"
-  }, 
+  },  
   {
     "name": "John M. Drake",
     "affiliation": "University of Georgia",
     "email": "jdrake@uga.edu",
     "orcid": "0000-0003-4646-1235"
-  }, 
+  },
   {
     "name": "Pejman Rohani",
     "affiliation": "University of Georgia",
