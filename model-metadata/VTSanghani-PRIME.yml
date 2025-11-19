@@ -22,9 +22,8 @@ license: "CC-BY-4.0"
 team_funding: "NSF awards CCF-1918770, DBI-2412389"
 designated_model: true
 methods: "Integration of model-based and time series forecasting methods."
-data_inputs: "Jurisdiction- and city-level weekly incident influenza like illness (ILI) case counts and hospitalization admissions."
-methods_long: "Develop deep learning methods for short-term forecasting of U.S. jurisdiction- and city-level percentages of 
-emergency department (ED) visits attributable to influenza or influenza-like illness (ILI), 
+data_inputs: "National and jurisdictional weekly incident influenza like illness (ILI) case counts, hospitalization admissions and ED visits."
+methods_long: "Develop deep learning methods for short-term forecasting of US national- and state-level influenza hospitalizations, 
 leveraging machine learning models designed to capture complex temporal and spatial dependencies." 
 ensemble_of_models: false
 ensemble_of_hub_models: false
