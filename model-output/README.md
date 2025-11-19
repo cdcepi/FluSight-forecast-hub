@@ -211,7 +211,7 @@ np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.05)),
 For rate change forecasts, the output_type_id indicates the category that the predicted probability of occurrence should be associated with. Teams should provide the following categories:
 "large_increase", "increase", "stable", "decrease" and "large_decrease". Please see Appendix 1: rate-trend forecast specifications for details on how each category is defined. Note that thresholds between categories differ from those used in the 2023-2024 season and that new threshold values have been added.
 
-For the peak week target, the `output_type_id` should specify the last Saturday of each epidemic week in the season (2024-11-23 to 2025-05-31) in ISO format: YYYY-MM-DD.
+For the peak week target, the `output_type_id` should specify the last Saturday of each epidemic week in the season (2025-11-22 to 2026-05-23) in ISO format: YYYY-MM-DD.
 
 #### sample output
 

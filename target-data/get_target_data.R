@@ -61,6 +61,7 @@ fetch_flu <- function(){
   
   # CDC Socrata endpoint
   base_url <- "https://data.cdc.gov/resource/mpgq-jmmr.json"
+  #base_url <- "https://data.cdc.gov/resource/ua7e-t2fy.json" #Friday data
   ed_url <- "https://data.cdc.gov/resource/rdmq-nq56.json"
   
   # Define the filter query for the ED data

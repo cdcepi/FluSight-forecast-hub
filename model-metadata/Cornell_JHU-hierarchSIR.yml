@@ -1,0 +1,47 @@
+team_name: "Cornell_JHU"
+team_abbr: "Cornell_JHU"
+model_name: "hierarchSIR"
+model_abbr: "hierarchSIR"
+model_contributors: [
+  {
+    "name": "Tijs W. Alleman",
+    "affiliation": "Cornell University",
+    "email": "twa27@cornell.edu",
+    "orcid": "0000-0002-1751-3801"
+  },
+  {
+    "name": "Tim Van Wesemael",
+    "affiliation": "Ghent University",
+    "email": "tim.vanwesemael@ugent.be",
+    "orcid": "0000-0002-2105-8805"
+  },
+  {
+    "name": "Shaun Truelove",
+    "affiliation": "Johns Hopkins Bloomberg School of Public Health",
+    "email": "shauntruelove@jhu.edu",
+    "orcid": "0000-0003-0538-0607"
+  },
+  {
+    "name": "Alison L. Hill",
+    "affiliation": "University of Toronto",
+    "email": "alison.hill@utoronto.ca",
+    "orcid": "0000-0002-6583-3623"
+  },
+  {
+    "name": "Ana I. Bento",
+    "affiliation": "Cornell University",
+    "email": "arb24@cornell.edu",
+    "orcid": "0000-0001-8851-4329"
+  }  
+]
+website_url: "https://github.com/twallema"
+repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-hierarchSIR"
+license: "CC-BY_SA-4.0"
+designated_model: true
+ensemble_of_models: false
+ensemble_of_hub_models: false
+data_inputs: "NHSN HRD dataset new Influenza hospitalisations"
+backfill_adjustment: "None."
+methods: "An SIR mechanistic disease dynamics model wrapped in a Bayesian hierarchical (across-season) statistical model."
+methods_long: "An SIR model with unknown case ascertainment, basic reproduction number, population immunity and a splined effective reproduction number is used to model seasonal influenza dynamics in a given season. Across-season trends ('hyperparameters') in the SIR model's parameters are derived by wrapping it in an across-season Bayesian hierarchical model. Hyperparameters are used as priors when forecasting the current season. Disease model integrated in C++ and bound to Python with pybind11, Bayesian hierarchical posterior probability coded in raw Python and sampled using the ensemble sampler of Goodman and Weare available in `emcee` (motivation: computationally inefficient but amazingly robust). Workflow automatically pulls NHSN HRD data through a timed GH actions and deploys it on a local runner (Dell Optiplex 3050 Micro running Ubuntu Server). Average time from data pull to forecast ready: 3 hours."
+team_funding: "ACCIDDA"
