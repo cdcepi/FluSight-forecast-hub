@@ -45,4 +45,3 @@ website_url: "https://github.com/cdcgov/pyrenew-hew"
 repo_url: "https://github.com/cdcgov/pyrenew-hew"
 ensemble_of_models: false
 ensemble_of_hub_models: false
-designated_github_users: ["dylanhmorris", "damonbayer", "sbidari", "O957"]
