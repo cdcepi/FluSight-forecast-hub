@@ -14,6 +14,11 @@ model_contributors: [
     "email": "pventura@iu.edu",
   },
   {
+    "name": "Shreeya Mhade",
+    "affiliation": "Indiana University Bloomington",
+    "email": "smhade@iu.edu",
+  },
+  {
     "name": "Maria Litvinova",
     "affiliation": "Indiana University Bloomington",
     "email": "malitv@iu.edu",
@@ -27,13 +32,13 @@ model_contributors: [
     "name": "Alessandro Vespignani",
     "affiliation": "Northeastern University",
     "email": "a.vespignani@northeastern.edu",
-  }, 
+  } 
 ]
 license: "CC-BY-4.0"
 designated_model: true
 data_inputs: "Daily incident flu hospitalizations, queried through HealthData"
 methods: "A renewal equation method based on Bayesian estimation of Rt from hospitalization data."
-methods_long: "Model forecasts are obtained by using a renewal equation based on the estimated net reproduction number Rt. We apply a lowpass filter to the time series of daily hospitalizations, extracting the main trend. We then use MCMC Metropolis-Hastings sampling to estimate the posterior distribution of Rt based on the filtered data, considering an informed prior on Rt based on influenza literature. The estimated Rt in the last weeks of available data is used to forecast Rt in the upcoming weeks, with a drift term proportional to the current incidence.  Finally, we use the renewal equation with the posterior distribution and trend of the estimated Rt in the most recent weeks of influenza data."
+methods_long: "Model forecasts are obtained by using a renewal equation based on the estimated net reproduction number Rt. We apply a lowpass filter to the time series of daily hospitalizations, extracting the main trend. We then estimate the posterior distribution of Rt based on the filtered data, considering an informed prior on Rt based on influenza literature. The estimated Rt in the last weeks of available data is used to forecast Rt in the upcoming weeks, with a drift term proportional to the current incidence. Finally, we use the renewal equation with the posterior distribution and trend of the estimated Rt in the most recent weeks of influenza data."
 ensemble_of_models: false
 ensemble_of_hub_models: false
-website_url: https://publichealth.indiana.edu/about/directory/Marco-Ajelli-majelli.html
+website_url: https://github.com/CEPH-Lab
