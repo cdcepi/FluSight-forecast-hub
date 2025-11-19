@@ -37,7 +37,7 @@ model_contributors: [
 ]
 
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 methods: "Renewal model using the Pyrenew-HEW framework fit to emergency department visits."
 data_inputs: "Daily incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
 methods_long: "Renewal model fit to emergency department visits and used to forecast proportion of ed visits target (NSSP) signal."
