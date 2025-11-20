@@ -30,9 +30,9 @@ model_contributors: [
     "email": "srini@virginia.edu"
   },
   {
-    "name": "Brian Klahn",
+    "name": "Stephen Turner",
     "affiliation": "UVA",
-    "email": "briandk@virginia.edu"
+    "email": "turner@virginia.edu"
   }
 ]
 website_url: "https://biocomplexity.virginia.edu/"

@@ -1,0 +1,41 @@
+team_name: "Branching process collective at Northeastern Univerisity"
+team_abbr: "NU"
+model_name: "PGF influenza forecasting model"
+model_abbr: "PGF_FLUH"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Guillaume St-Onge",
+    "affiliation": "Northeastern University",
+    "email": "g.st-onge@northeastern.edu",
+    "orcid": "0000-0001-5415-3748"
+  },
+  {
+    "name": "Mariah Boudreau",
+    "affiliation": "Northeastern University",
+    "email": "mar.boudreau@northeastern.edu",
+    "orcid": "0009-0000-1172-6497"
+  },
+  {
+    "name": "Michael Johansson",
+    "affiliation": "Northeastern University",
+    "email": "m.johansson@northeastern.edu",
+    "orcid": "0000-0002-5090-7722"
+  },
+  {
+    "name": "Dimitri Lopez",
+    "affiliation": "Northeastern University",
+    "email": "lopez.di@northeastern.edu",
+    "orcid": "0000-0001-8330-0591"
+  }
+]
+website_url: "https://github.com/dimitri-lopez/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+citation: "not applicable"
+team_funding: "We acknowledge support from cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics."
+designated_model: true
+methods: "A branching process model based on an extended SLIR compartmental structure, analytically solved with probability generating functions (PGFs)."
+data_inputs: "Weekly incident flu hospitalizations"
+methods_long: "A branching process model analytically solved with probability generating functions (PGFs), enabling Bayesian inference of the time-varying reproduction number and mechanistic modeling of immunity. The branching process approximates the full stochastic evolution of a discrete-time, single-population, SLIR compartmental model, extended to evaluate weekly hospitalizations resulting from infections."
+ensemble_of_models: false
+ensemble_of_hub_models: false
