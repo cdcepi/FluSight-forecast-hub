@@ -119,7 +119,7 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
-write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
+#write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
 
 
 
@@ -292,7 +292,7 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
-write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
+#write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
 
 #' Generate the Truth Data file containing the most recent observed NHSN hospital admissions data.
 #' This script fetches the most recent observed influenza hospital admissions data for all regions 
@@ -382,5 +382,5 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
-write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
+#write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
 
