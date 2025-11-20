@@ -39,4 +39,3 @@ data_inputs: "Weekly incident flu hospitalizations"
 methods_long: "A branching process model analytically solved with probability generating functions (PGFs), enabling Bayesian inference of the time-varying reproduction number and mechanistic modeling of immunity. The branching process approximates the full stochastic evolution of a discrete-time, single-population, SLIR compartmental model, extended to evaluate weekly hospitalizations resulting from infections."
 ensemble_of_models: false
 ensemble_of_hub_models: false
-backfill_adjustment: false
