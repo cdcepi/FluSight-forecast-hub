@@ -1,7 +1,7 @@
-team_name: "FluSight-judgement_ensemble"
+team_name: "FluSight-judge_ensemble"
 team_abbr: "FluSight"
 model_name: "Ensemble models using selected FluSight forecast submissions"
-model_abbr: "judgement_ensemble"
+model_abbr: "judge_ensemble"
 model_version: "1.0"
 model_contributors: [
   {
