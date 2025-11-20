@@ -1,0 +1,32 @@
+team_name: "Predictive Science Inc."
+team_abbr: "PSI"
+model_name: "Package for Respiratory Disease Open-source Forecasting - Method of Analogs version"
+model_abbr: "PROF_MOA"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Michal Ben-Nun",
+    "affiliation": "Predictive Science Inc",
+    "email": "mbennun@predsci.com"
+  },
+  {
+    "name": "James Turtle",
+    "affiliation": "Predictive Science Inc",
+    "email": "jturtle@predsci.com"
+  },
+  {
+    "name": "Pete Riley",
+    "affiliation": "Predictive Science Inc",
+    "email": "pete@predsci.com"
+  }
+]
+website_url: "https://www.predsci.com/usa-flu-hosp/"
+license: "CC-BY-4.0"
+citation: "https://doi.org/10.1371/journal.pcbi.1010375"
+team_funding: "CSTE/CDC: Development of Forecasts and/or Scenario Projections for Influenza to Inform Public Health Decision Making (Cooperative Agreement number NU38OT000297)."
+designated_model: true
+methods: "This version of PROF uses a method of analogs to generate synthetic 'future' data for model fitting."
+data_inputs: "Daily and weekly incident flu hospitalizations from the HHS COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries. US Census population estimates. Previous season vaccination time-series from CDC/NCIRD."
+methods_long: "The PROF routines perform a deterministic fit of our compartmental SIR[H]2 (including vaccinated compartments for Susceptibles and Infectious) model to weekly hospitalization incidence profiles. The model includes a hospitalization compartment which is split into two sub-compartments. This split ensures that the model preserves the correct generation time (Tg) and that the ratio between cumulative recovered and hospitalized individuals is determined by the infection-hospitalization-ratio. The transmission-rate coefficient (Beta) is a time-dependent function of 2 or more arc-tangents.  The actual data is augmented with 'future' data from a Method Of Analogs (MOA).  The MOA data receives a reduced fitting-weight compared to actual data.  The model fit is inferred by an MCMC procedure. It is followed by stochastic simulations through the forecast time-window using the inferred parameter distributions and a daily cadence which is then aggregated to weekly incidence to produce the forecasts.  Where there is little-to-no epi signal in the data, a baseline statistical model is substituted for the mechanistic model."
+ensemble_of_models: false
+ensemble_of_hub_models: false

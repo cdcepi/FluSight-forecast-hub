@@ -1,0 +1,47 @@
+team_name: "Center for Forecasting and Outbreak Analytics (CFA/CDC) Pyrenew team"
+team_abbr: "CFA_Pyrenew"
+model_name: "Pyrenew_ED_Visits_Flu"
+model_abbr: "Pyrenew_E_Flu"
+model_version: "0.1.0"
+model_contributors: [
+  {
+    "name": "Damon M. Bayer",
+    "affiliation": "CFA/CDC",
+    "email": "xum8@cdc.gov"
+  },
+  {
+    "name": "George Vega Yon",
+    "affiliation": "CFA/CDC",
+    "email": "xrd4@cdc.gov"
+  },
+  {
+    "name": "Samuel Brand",
+    "affiliation": "CFA/CDC",
+    "email": "usi1@cdc.gov"
+  },
+  {
+    "name": "Subekshya Bidari",
+    "affiliation": "CFA/CDC",
+    "email": "zib2@cdc.gov"
+  },
+  {
+    "name": "Trevor Martin",
+    "affiliation": "CFA/CDC",
+    "email": "upx3@cdc.gov"
+  },
+  {
+    "name": "Dylan H. Morris",
+    "affiliation": "CFA/CDC",
+    "email": "dzl1@cdc.gov"
+  }
+]
+
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Renewal model using the Pyrenew-HEW framework fit to emergency department visits."
+data_inputs: "Daily incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
+methods_long: "Renewal model fit to emergency department visits and used to forecast proportion of ed visits target (NSSP) signal."
+website_url: "https://github.com/cdcgov/pyrenew-hew"
+repo_url: "https://github.com/cdcgov/pyrenew-hew"
+ensemble_of_models: false
+ensemble_of_hub_models: false

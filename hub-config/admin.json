@@ -1,5 +1,5 @@
 {
-    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v3.0.1/admin-schema.json",
+    "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v6.0.0/admin-schema.json",
     "name": "US CDC FluSight",
     "maintainer": "US CDC",
     "contact": {
@@ -9,11 +9,10 @@
     "repository": {
         "host": "github",
         "owner": "cdcepi",
-        "repository": "FluSight-forecast-hub"
+        "name": "FluSight-forecast-hub"
     },
     "file_format": ["csv", "parquet"],
     "timezone": "US/Eastern",
-    "model_output_dir": "model-output",
     "cloud": {
         "enabled": true,
         "host": {
