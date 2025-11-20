@@ -1,0 +1,63 @@
+team_name: "Northern Arizona University"
+team_abbr: "NAU"
+model_name: "epymorph compartmental model"
+model_abbr: "epymorph"
+model_version: "1.0"
+model_contributors: [
+        {
+            "name": "Jeffrey Moore Covington",
+            "affiliation": "Northern Arizona University",
+            "email": "Jeffrey.Covington@nau.edu",
+        },
+        {
+            "name": "Kelsey Elizabeth Banister",
+            "affiliation": "Nortern Arizona University",
+            "email": "Kelsey.Banister@nau.edu",
+        },
+        {
+            "name": "Syed Md Shamsul Alam",
+            "affiliation": "Nortern Arizona University",
+            "email": "ss5687@nau.edu",
+        },
+        {
+            "name": "Ye Chen",
+            "affiliation": "Northern Arizona University",
+            "email": "Ye.Chen@nau.edu",
+        },
+        {
+            "name": "Eck Doerry",
+            "affiliation": "Northern Arizona University",
+            "email": "Eck.Doerry@nau.edu",
+        },
+        {
+            "name": "Tyler R Coles",
+            "affiliation": "Northern Arizona University",
+            "email": "Tyler.Coles@nau.edu",
+        },
+        {
+            "name": "Kayode Isaac Oshinubi",
+            "affiliation": "Northern Arizona University",
+            "email": "Kayode-Isaac.Oshinubi@nau.edu",
+        },
+        {
+            "name": "Spencer J Fox",
+            "affiliation": "Northern Arizona University",
+            "email": "Spencer.Fox@nau.edu",
+        },
+        {
+            "name": "Joseph R Mihaljevic",
+            "affiliation": "Northern Arizona University",
+            "email": "Joseph.Mihaljevic@nau.edu",
+        }
+    ]
+website_url: "https://www.epimorph.org/"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "A compartmental model with Bayesian inference, uncertainty quantification and calibration."
+data_inputs: "State level weekly hospitalization data from NHSN."
+methods_long: "A compartmental model with a time-dependent transmission rate. Model state and parameters are fit using a particle filter."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+
+
+

@@ -1,0 +1,40 @@
+team_name: NAU
+team_abbr: NAU
+model_name: vulPES
+model_abbr: vulPES
+model_contributors: [
+  {
+    "name": "Spencer J. Fox",
+    "affiliation": "Northern Arizona University",
+    "email": "spencer.fox@nau.edu",
+    "orcid": "0000-0003-1969-3778"
+  },
+  {
+    "name": "Ehsan Suez",
+    "affiliation": "University of Georgia",
+    "email": "ehsan.suez@uga.edu",
+    "orcid": "0000-0001-9620-7994"
+  },
+  {
+    "name": "Bren Case",
+    "affiliation": "University of Georgia",
+    "email": "bcase@uga.edu",
+    "orcid": "1234-1234-1234-1234"
+  },
+  {
+    "name": "Mariah Salcedo",
+    "affiliation": "University of Georgia",
+    "email": "mariah.salcedo@uga.edu",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: NHSN, NSSP, HHS, ILIp, Fluserv, but only through the individual models
+methods: An ensemble of the fox lab forecast models.
+methods_long: Currently uses the average prediction across all models for each target and then rounds to create integers and normalizes for pdf functions to sum to 1.
+website_url: https://thefoxlab.wordpress.com/
+ensemble_of_models: true
+ensemble_of_hub_models: true
+team_funding: CSTE/CDC award NU38OT000297
+

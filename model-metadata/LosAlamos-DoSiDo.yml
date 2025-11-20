@@ -1,0 +1,56 @@
+team_name: "Los Alamos National Lab"
+team_abbr: "LosAlamos"
+model_name: "Synthetic method of analogues for emerging infectious disease forecasting"
+model_abbr: "DoSiDo"
+model_contributors: [
+  {
+    "name": "Alexander C Murph",
+    "affiliation": "Los Alamos National Labs",
+    "email": "murph@lanl.gov"
+  },
+  {
+    "name": "G Casey Gibson",
+    "affiliation": "Los Alamos National Labs",
+    "email": "gcgibson@lanl.gov"
+  },
+  {
+    "name": "Elizabeth B Amona",
+    "affiliation": "Los Alamos National Labs",
+    "email": "amonaeb@vcu.edu"
+  },
+  {
+    "name": "Lauren J Beesley",
+    "affiliation": "Los Alamos National Labs",
+    "email": "lvandervort@lanl.gov"
+  },
+  {
+    "name": "Lauren A Castro",
+    "affiliation": "Los Alamos National Labs",
+    "email": "lcastro@lanl.gov"
+  },
+  {
+    "name": "Sara Y Del Valle",
+    "affiliation": "Los Alamos National Labs",
+    "email": "sdelvall@lanl.gov"
+  },
+  {
+    "name": "Dave Osthus",
+    "affiliation": "Los Alamos National Labs",
+    "email": "dosthus@lanl.gov"
+  },
+  {
+    "name": "John Tipton",
+    "affiliation": "Los Alamos National Labs",
+    "email": "jtipton@lanl.gov"
+  },
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Hospitalization data, Emergency department data, Synthetic data generated from historical ILI data"
+methods: "Synthetic method of analogues"
+methods_long: "Comparison of data to nearest analogues of the trajectory. Uncertainty is generated through an ensemble of nearest analogues to the target data."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "1.0"
+website_url: "https://github.com/lanl/precog"
+team_funding: "Research presented was partially supported by the Laboratory Directed Research and Development program of Los Alamos National Laboratory under project number 20240066DR. Los Alamos National Laboratory is operated by Triad National Security, LLC, for the National Nuclear Security Administration of U.S. Department of Energy (Contract No. 89233218CNA000001). All authors received this funding. All authors except EB Amona receive a salary from Los Alamos National Laboratory. This research was partially funded by NIH/NIGMS under grant R01GM130668-01 awarded to Sara Y. Del Valle. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript."

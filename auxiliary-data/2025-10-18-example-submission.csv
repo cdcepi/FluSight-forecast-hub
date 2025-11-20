@@ -1,0 +1,1605 @@
+reference_date,horizon,target_end_date,location,target,output_type,output_type_id,value
+2025-10-18,0,2025-10-18,US,wk flu hosp rate change,pmf,large_decrease,0.4223503115200569
+2025-10-18,0,2025-10-18,US,wk flu hosp rate change,pmf,decrease,0.06095759589714473
+2025-10-18,0,2025-10-18,US,wk flu hosp rate change,pmf,stable,0.15416216316443832
+2025-10-18,0,2025-10-18,US,wk flu hosp rate change,pmf,increase,0.20189328173911658
+2025-10-18,0,2025-10-18,US,wk flu hosp rate change,pmf,large_increase,0.16063664767924354
+2025-10-18,0,2025-10-18,01,wk flu hosp rate change,pmf,large_decrease,0.06073037188873132
+2025-10-18,0,2025-10-18,01,wk flu hosp rate change,pmf,decrease,0.3061546746824147
+2025-10-18,0,2025-10-18,01,wk flu hosp rate change,pmf,stable,0.061430681633181376
+2025-10-18,0,2025-10-18,01,wk flu hosp rate change,pmf,increase,0.5082595099506667
+2025-10-18,0,2025-10-18,01,wk flu hosp rate change,pmf,large_increase,0.06342476184500591
+2025-10-18,1,2025-10-25,US,wk flu hosp rate change,pmf,large_decrease,0.23926881195594948
+2025-10-18,1,2025-10-25,US,wk flu hosp rate change,pmf,decrease,0.6386543563076931
+2025-10-18,1,2025-10-25,US,wk flu hosp rate change,pmf,stable,0.016181316929889295
+2025-10-18,1,2025-10-25,US,wk flu hosp rate change,pmf,increase,0.04910344695402993
+2025-10-18,1,2025-10-25,US,wk flu hosp rate change,pmf,large_increase,0.056792067852438205
+2025-10-18,1,2025-10-25,01,wk flu hosp rate change,pmf,large_decrease,0.28869705650770994
+2025-10-18,1,2025-10-25,01,wk flu hosp rate change,pmf,decrease,0.11502788433531949
+2025-10-18,1,2025-10-25,01,wk flu hosp rate change,pmf,stable,0.010729232996812124
+2025-10-18,1,2025-10-25,01,wk flu hosp rate change,pmf,increase,0.013315923361052653
+2025-10-18,1,2025-10-25,01,wk flu hosp rate change,pmf,large_increase,0.5722299027991058
+2025-10-18,2,2025-11-01,US,wk flu hosp rate change,pmf,large_decrease,0.0625278685145129
+2025-10-18,2,2025-11-01,US,wk flu hosp rate change,pmf,decrease,0.014309769898802893
+2025-10-18,2,2025-11-01,US,wk flu hosp rate change,pmf,stable,0.07154549863837367
+2025-10-18,2,2025-11-01,US,wk flu hosp rate change,pmf,increase,0.2862672018446858
+2025-10-18,2,2025-11-01,US,wk flu hosp rate change,pmf,large_increase,0.5653496611036247
+2025-10-18,2,2025-11-01,01,wk flu hosp rate change,pmf,large_decrease,0.17542789830059025
+2025-10-18,2,2025-11-01,01,wk flu hosp rate change,pmf,decrease,0.20860194601057852
+2025-10-18,2,2025-11-01,01,wk flu hosp rate change,pmf,stable,0.046271867776596864
+2025-10-18,2,2025-11-01,01,wk flu hosp rate change,pmf,increase,0.4274317425303743
+2025-10-18,2,2025-11-01,01,wk flu hosp rate change,pmf,large_increase,0.14226654538186012
+2025-10-18,3,2025-11-08,US,wk flu hosp rate change,pmf,large_decrease,0.18300431510911255
+2025-10-18,3,2025-11-08,US,wk flu hosp rate change,pmf,decrease,0.23483824227291755
+2025-10-18,3,2025-11-08,US,wk flu hosp rate change,pmf,stable,0.3267394718333781
+2025-10-18,3,2025-11-08,US,wk flu hosp rate change,pmf,increase,0.0631260318591953
+2025-10-18,3,2025-11-08,US,wk flu hosp rate change,pmf,large_increase,0.1922919389253965
+2025-10-18,3,2025-11-08,01,wk flu hosp rate change,pmf,large_decrease,0.08203963243307992
+2025-10-18,3,2025-11-08,01,wk flu hosp rate change,pmf,decrease,0.20846103130397808
+2025-10-18,3,2025-11-08,01,wk flu hosp rate change,pmf,stable,0.1950592849521598
+2025-10-18,3,2025-11-08,01,wk flu hosp rate change,pmf,increase,0.04085394877949647
+2025-10-18,3,2025-11-08,01,wk flu hosp rate change,pmf,large_increase,0.4735861025312857
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US00,1004
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US01,968
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US02,1012
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US03,1059
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US04,1000
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US05,1180
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US06,1012
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US07,1066
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US08,744
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US09,990
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US10,1114
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US11,1070
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US12,976
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US13,916
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US14,1139
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US15,916
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US16,1013
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US17,1046
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US18,908
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US19,901
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US20,913
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US21,1122
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US22,1089
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US23,905
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US24,859
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US25,1153
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US26,896
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US27,918
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US28,1083
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US29,1048
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US30,1059
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US31,892
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US32,857
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US33,852
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US34,881
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US35,1029
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US36,1014
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US37,882
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US38,1158
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US39,855
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US40,938
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US41,879
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US42,973
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US43,988
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US44,888
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US45,1105
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US46,945
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US47,928
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US48,1234
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US49,999
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US50,971
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US51,1043
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US52,1078
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US53,1011
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US54,1078
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US55,914
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US56,1006
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US57,1217
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US58,1124
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US59,1084
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US60,942
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US61,995
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US62,829
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US63,1054
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US64,1188
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US65,799
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US66,1163
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US67,1034
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US68,889
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US69,994
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US70,987
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US71,962
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US72,972
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US73,1176
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US74,999
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US75,990
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US76,983
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US77,922
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US78,982
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US79,719
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US80,989
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US81,978
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US82,1077
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US83,990
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US84,1034
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US85,868
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US86,862
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US87,913
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US88,1062
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US89,829
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US90,958
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US91,978
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US92,918
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US93,1024
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US94,929
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US95,857
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US96,1024
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US97,957
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US98,1108
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,sample,US99,856
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL00,938
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL01,986
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL02,1181
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL03,940
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL04,939
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL05,1064
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL06,989
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL07,861
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL08,936
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL09,963
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL10,888
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL11,1013
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL12,1000
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL13,1155
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL14,1045
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL15,1028
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL16,1113
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL17,973
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL18,944
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL19,984
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL20,916
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL21,1059
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL22,880
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL23,957
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL24,1032
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL25,1107
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL26,1038
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL27,902
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL28,969
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL29,1222
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL30,1000
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL31,1167
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL32,1067
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL33,955
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL34,985
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL35,1213
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL36,1035
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL37,946
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL38,1162
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL39,1017
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL40,876
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL41,973
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL42,936
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL43,880
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL44,981
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL45,1033
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL46,839
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL47,813
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL48,779
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL49,1036
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL50,705
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL51,915
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL52,982
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL53,819
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL54,1015
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL55,834
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL56,811
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL57,1031
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL58,1074
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL59,936
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL60,972
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL61,815
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL62,769
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL63,928
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL64,1164
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL65,980
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL66,851
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL67,1022
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL68,1001
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL69,1078
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL70,879
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL71,838
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL72,1052
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL73,1055
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL74,1129
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL75,902
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL76,985
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL77,1046
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL78,1055
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL79,895
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL80,934
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL81,1013
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL82,1090
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL83,874
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL84,930
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL85,1032
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL86,1149
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL87,1017
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL88,853
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL89,1009
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL90,1049
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL91,1091
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL92,905
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL93,1024
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL94,1009
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL95,987
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL96,990
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL97,823
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL98,1163
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,sample,AL99,892
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US00,803
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US01,1109
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US02,1073
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US03,872
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US04,1175
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US05,958
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US06,1130
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US07,941
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US08,1177
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US09,919
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US10,773
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US11,955
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US12,930
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US13,988
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US14,1035
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US15,958
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US16,1051
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US17,1145
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US18,804
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US19,994
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US20,1123
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US21,993
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US22,949
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US23,1113
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US24,955
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US25,1138
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US26,932
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US27,1023
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US28,1050
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US29,1102
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US30,1012
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US31,1023
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US32,1029
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US33,1161
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US34,925
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US35,894
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US36,950
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US37,1030
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US38,960
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US39,1034
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US40,1079
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US41,921
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US42,970
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US43,973
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US44,979
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US45,1100
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US46,1009
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US47,967
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US48,979
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US49,962
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US50,888
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US51,850
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US52,862
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US53,1102
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US54,964
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US55,1257
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US56,886
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US57,962
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US58,908
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US59,1037
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US60,911
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US61,933
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US62,976
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US63,982
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US64,976
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US65,1165
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US66,1096
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US67,994
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US68,996
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US69,1114
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US70,946
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US71,924
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US72,1010
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US73,942
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US74,985
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US75,906
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US76,1064
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US77,986
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US78,986
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US79,833
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US80,1029
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US81,1037
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US82,1133
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US83,1034
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US84,976
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US85,1056
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US86,1112
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US87,948
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US88,930
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US89,1052
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US90,1115
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US91,896
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US92,1273
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US93,872
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US94,943
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US95,900
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US96,1040
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US97,988
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US98,1034
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,sample,US99,973
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL00,1002
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL01,978
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL02,987
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL03,1146
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL04,845
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL05,947
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL06,942
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL07,919
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL08,990
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL09,913
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL10,927
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL11,967
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL12,1062
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL13,1008
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL14,895
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL15,765
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL16,923
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL17,961
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL18,1158
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL19,782
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL20,949
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL21,1105
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL22,1064
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL23,957
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL24,928
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL25,1001
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL26,818
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL27,842
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL28,853
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL29,906
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL30,888
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL31,978
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL32,952
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL33,1029
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL34,941
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL35,960
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL36,1012
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL37,1087
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL38,878
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL39,1082
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL40,987
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL41,725
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL42,958
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL43,1022
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL44,1142
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL45,1077
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL46,937
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL47,942
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL48,1205
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL49,1103
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL50,979
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL51,1135
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL52,1127
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL53,1092
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL54,1137
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL55,995
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL56,1085
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL57,956
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL58,1060
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL59,1097
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL60,1106
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL61,1148
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL62,1210
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL63,1162
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL64,1136
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL65,983
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL66,1126
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL67,1106
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL68,1031
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL69,979
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL70,1241
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL71,1072
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL72,1051
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL73,672
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL74,1077
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL75,958
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL76,1408
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL77,1127
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL78,916
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL79,1122
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL80,880
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL81,947
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL82,1106
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL83,863
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL84,1264
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL85,966
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL86,973
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL87,887
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL88,912
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL89,1014
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL90,910
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL91,924
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL92,1045
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL93,902
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL94,985
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL95,1053
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL96,967
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL97,1023
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL98,1013
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,sample,AL99,915
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US00,978
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US01,1071
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US02,1067
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US03,1131
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US04,987
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US05,1120
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US06,990
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US07,1092
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US08,895
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US09,957
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US10,908
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US11,1005
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US12,1028
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US13,994
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US14,921
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US15,785
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US16,895
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US17,1048
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US18,1073
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US19,1023
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US20,963
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US21,975
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US22,1033
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US23,959
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US24,885
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US25,1106
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US26,896
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US27,1177
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US28,1084
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US29,1116
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US30,959
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US31,1024
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US32,1058
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US33,1043
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US34,798
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US35,810
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US36,1008
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US37,1116
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US38,1169
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US39,952
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US40,902
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US41,1004
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US42,1280
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US43,1202
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US44,1189
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US45,1192
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US46,954
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US47,932
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US48,1002
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US49,910
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US50,1099
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US51,898
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US52,975
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US53,866
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US54,967
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US55,836
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US56,1100
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US57,1061
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US58,919
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US59,1142
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US60,896
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US61,1061
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US62,1010
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US63,1100
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US64,974
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US65,1062
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US66,1049
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US67,985
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US68,1047
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US69,1042
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US70,948
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US71,989
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US72,1010
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US73,1025
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US74,1007
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US75,1068
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US76,976
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US77,932
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US78,907
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US79,1151
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US80,1116
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US81,959
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US82,1154
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US83,956
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US84,896
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US85,1026
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US86,977
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US87,1086
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US88,766
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US89,816
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US90,1015
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US91,1049
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US92,973
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US93,1053
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US94,1028
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US95,854
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US96,1119
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US97,1068
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US98,1156
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,sample,US99,827
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL00,1026
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL01,784
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL02,968
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL03,937
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL04,1206
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL05,1017
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL06,891
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL07,1258
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL08,1063
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL09,863
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL10,813
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL11,1336
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL12,1154
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL13,839
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL14,892
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL15,1046
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL16,1128
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL17,1029
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL18,953
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL19,1064
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL20,1035
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL21,964
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL22,977
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL23,936
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL24,1119
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL25,978
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL26,1146
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL27,1022
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL28,946
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL29,887
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL30,1033
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL31,995
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL32,966
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL33,1073
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL34,905
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL35,1025
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL36,1060
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL37,1020
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL38,1004
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL39,856
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL40,1063
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL41,985
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL42,1079
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL43,862
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL44,1035
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL45,973
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL46,982
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL47,1098
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL48,814
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL49,764
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL50,943
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL51,967
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL52,1126
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL53,1003
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL54,1037
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL55,1070
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL56,910
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL57,879
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL58,999
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL59,998
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL60,970
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL61,964
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL62,1099
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL63,1202
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL64,906
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL65,938
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL66,1062
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL67,870
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL68,966
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL69,853
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL70,931
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL71,968
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL72,830
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL73,883
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL74,884
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL75,896
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL76,1117
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL77,1153
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL78,1030
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL79,923
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL80,1163
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL81,1070
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL82,940
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL83,843
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL84,1066
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL85,1080
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL86,949
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL87,1066
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL88,978
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL89,980
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL90,854
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL91,986
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL92,794
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL93,942
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL94,1101
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL95,1026
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL96,1004
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL97,952
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL98,1040
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,sample,AL99,1065
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US00,913
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US01,1042
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US02,1046
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US03,820
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US04,942
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US05,1074
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US06,975
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US07,1077
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US08,995
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US09,968
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US10,886
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US11,836
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US12,1095
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US13,924
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US14,987
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US15,1064
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US16,935
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US17,976
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US18,866
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US19,862
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US20,1002
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US21,819
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US22,1159
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US23,939
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US24,1083
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US25,935
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US26,848
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US27,973
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US28,998
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US29,1066
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US30,941
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US31,1118
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US32,1022
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US33,897
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US34,1206
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US35,979
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US36,990
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US37,1171
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US38,911
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US39,809
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US40,1027
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US41,985
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US42,1061
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US43,1048
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US44,1129
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US45,1051
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US46,817
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US47,974
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US48,1187
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US49,953
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US50,916
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US51,858
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US52,1009
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US53,973
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US54,1142
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US55,1039
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US56,1155
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US57,970
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US58,1114
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US59,1187
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US60,1130
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US61,1157
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US62,1093
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US63,1075
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US64,1034
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US65,1105
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US66,983
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US67,947
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US68,1083
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US69,925
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US70,1104
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US71,872
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US72,773
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US73,1243
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US74,1114
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US75,1034
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US76,830
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US77,1133
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US78,952
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US79,917
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US80,1102
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US81,964
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US82,1057
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US83,935
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US84,1097
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US85,1190
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US86,864
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US87,1206
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US88,827
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US89,922
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US90,880
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US91,1087
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US92,1225
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US93,958
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US94,897
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US95,1110
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US96,902
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US97,997
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US98,1080
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,sample,US99,1138
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL00,1088
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL01,789
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL02,997
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL03,988
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL04,1003
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL05,1124
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL06,998
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL07,866
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL08,897
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL09,1001
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL10,1194
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL11,1059
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL12,987
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL13,1030
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL14,1071
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL15,1191
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL16,887
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL17,1052
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL18,989
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL19,996
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL20,1134
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL21,1040
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL22,1097
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL23,981
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL24,1073
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL25,1011
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL26,900
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL27,1066
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL28,1109
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL29,988
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL30,937
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL31,1100
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL32,1024
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL33,1003
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL34,996
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL35,1030
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL36,892
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL37,979
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL38,898
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL39,1115
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL40,1180
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL41,1095
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL42,967
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL43,891
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL44,813
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL45,854
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL46,860
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL47,1157
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL48,1000
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL49,1075
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL50,1033
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL51,980
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL52,1141
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL53,896
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL54,955
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL55,972
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL56,914
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL57,883
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL58,1072
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL59,1076
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL60,939
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL61,902
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL62,1011
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL63,1095
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL64,1072
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL65,940
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL66,992
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL67,1257
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL68,1048
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL69,1188
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL70,1009
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL71,771
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL72,1001
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL73,981
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL74,945
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL75,1101
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL76,1112
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL77,971
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL78,998
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL79,984
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL80,1020
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL81,961
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL82,839
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL83,952
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL84,1010
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL85,938
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL86,1024
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL87,1161
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL88,962
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL89,893
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL90,1180
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL91,1173
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL92,1040
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL93,1112
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL94,994
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL95,1211
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL96,1065
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL97,1077
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL98,922
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,sample,AL99,889
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US00,989
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US01,956
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US02,963
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US03,887
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US04,919
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US05,1075
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US06,1036
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US07,985
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US08,874
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US09,930
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US10,1026
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US11,984
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US12,972
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US13,899
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US14,784
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US15,1006
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US16,1029
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US17,1061
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US18,1077
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US19,1024
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US20,958
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US21,869
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US22,1139
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US23,922
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US24,872
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US25,914
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US26,1118
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US27,827
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US28,1090
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US29,939
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US30,1085
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US31,970
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US32,981
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US33,968
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US34,1094
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US35,1010
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US36,981
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US37,1117
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US38,884
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US39,1138
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US40,1133
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US41,1021
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US42,1076
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US43,940
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US44,970
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US45,1189
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US46,1019
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US47,1009
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US48,1061
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US49,973
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US50,898
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US51,932
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US52,737
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US53,923
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US54,851
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US55,886
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US56,896
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US57,945
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US58,1219
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US59,845
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US60,862
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US61,1014
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US62,886
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US63,919
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US64,990
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US65,1148
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US66,1009
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US67,1182
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US68,945
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US69,1193
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US70,1032
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US71,1082
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US72,1032
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US73,871
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US74,962
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US75,1063
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US76,1075
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US77,1019
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US78,1041
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US79,987
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US80,1005
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US81,983
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US82,1010
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US83,908
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US84,1003
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US85,1070
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US86,1300
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US87,1113
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US88,1090
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US89,895
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US90,872
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US91,1040
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US92,1034
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US93,870
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US94,1145
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US95,1174
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US96,979
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US97,881
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US98,1075
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,sample,US99,989
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL00,986
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL01,956
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL02,948
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL03,965
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL04,1118
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL05,1124
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL06,1050
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL07,1018
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL08,852
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL09,822
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL10,1113
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL11,1004
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL12,767
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL13,964
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL14,961
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL15,938
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL16,1047
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL17,1103
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL18,1120
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL19,951
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL20,967
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL21,1136
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL22,947
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL23,960
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL24,1103
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL25,1044
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL26,956
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL27,1043
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL28,987
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL29,1059
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL30,907
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL31,982
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL32,1087
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL33,899
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL34,1168
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL35,763
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL36,911
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL37,875
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL38,1014
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL39,936
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL40,983
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL41,1050
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL42,931
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL43,1018
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL44,1045
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL45,977
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL46,1099
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL47,1091
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL48,1052
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL49,1182
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL50,962
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL51,992
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL52,1102
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL53,978
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL54,933
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL55,1073
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL56,1165
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL57,1021
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL58,1009
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL59,898
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL60,912
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL61,1177
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL62,1127
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL63,1048
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL64,1156
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL65,806
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL66,957
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL67,1050
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL68,783
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL69,1089
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL70,1079
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL71,891
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL72,976
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL73,759
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL74,1035
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL75,1264
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL76,939
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL77,922
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL78,996
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL79,928
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL80,930
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL81,967
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL82,1054
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL83,1062
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL84,1106
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL85,880
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL86,947
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL87,949
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL88,1014
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL89,1138
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL90,1137
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL91,1082
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL92,912
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL93,946
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL94,964
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL95,951
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL96,1085
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL97,917
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL98,1040
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,sample,AL99,930
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.01,768
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.025,794
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.05,814
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.1,838
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.15,875
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.2,891
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.25,912
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.3,935
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.35,939
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.4,960
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.45,976
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.5,985
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.55,994
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.6,1010
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.65,1018
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.7,1032
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.75,1039
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.8,1055
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.85,1074
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.9,1114
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.95,1163
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.975,1174
+2025-10-18,-1,2025-10-11,01,wk inc flu hosp,quantile,0.99,1213
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.01,743
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.025,813
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.05,850
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.1,858
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.15,881
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.2,900
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.25,913
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.3,920
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.35,943
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.4,969
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.45,978
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.5,988
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.55,994
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.6,1004
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.65,1013
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.7,1034
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.75,1055
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.8,1071
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.85,1084
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.9,1122
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.95,1163
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.975,1184
+2025-10-18,-1,2025-10-11,US,wk inc flu hosp,quantile,0.99,1217
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.01,724
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.025,773
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.05,840
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.1,879
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.15,905
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.2,915
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.25,927
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.3,945
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.35,956
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.4,964
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.45,978
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.5,986
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.55,1001
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.6,1017
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.65,1047
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.7,1066
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.75,1085
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.8,1105
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.85,1126
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.9,1137
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.95,1164
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.975,1226
+2025-10-18,0,2025-10-18,01,wk inc flu hosp,quantile,0.99,1265
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.01,802
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.025,817
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.05,861
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.1,893
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.15,910
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.2,929
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.25,941
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.3,949
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.35,959
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.4,968
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.45,976
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.5,985
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.55,993
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.6,1010
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.65,1029
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.7,1035
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.75,1051
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.8,1082
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.85,1109
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.9,1123
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.95,1161
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.975,1176
+2025-10-18,0,2025-10-18,US,wk inc flu hosp,quantile,0.99,1257
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.01,783
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.025,803
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.05,829
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.1,855
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.15,882
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.2,895
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.25,929
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.3,941
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.35,952
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.4,966
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.45,975
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.5,983
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.55,1000
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.6,1020
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.65,1029
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.7,1037
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.75,1063
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.8,1066
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.85,1082
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.9,1119
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.95,1154
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.975,1204
+2025-10-18,1,2025-10-25,01,wk inc flu hosp,quantile,0.99,1258
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.01,784
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.025,803
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.05,826
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.1,894
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.15,897
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.2,917
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.25,951
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.3,959
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.35,973
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.4,977
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.45,992
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.5,1007
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.55,1023
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.6,1030
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.65,1048
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.7,1061
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.75,1068
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.8,1093
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.85,1116
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.9,1132
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.95,1169
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.975,1190
+2025-10-18,1,2025-10-25,US,wk inc flu hosp,quantile,0.99,1202
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.01,788
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.025,825
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.05,859
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.1,890
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.15,897
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.2,934
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.25,950
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.3,969
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.35,981
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.4,988
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.45,996
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.5,1001
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.55,1010
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.6,1026
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.65,1042
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.7,1067
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.75,1075
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.8,1095
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.85,1112
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.9,1142
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.95,1180
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.975,1192
+2025-10-18,2,2025-11-01,01,wk inc flu hosp,quantile,0.99,1211
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.01,808
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.025,817
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.05,826
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.1,861
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.15,885
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.2,912
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.25,924
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.3,940
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.35,956
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.4,973
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.45,981
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.5,996
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.55,1024
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.6,1043
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.65,1062
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.7,1077
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.75,1093
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.8,1106
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.85,1129
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.9,1155
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.95,1187
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.975,1206
+2025-10-18,2,2025-11-01,US,wk inc flu hosp,quantile,0.99,1225
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.01,762
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.025,774
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.05,821
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.1,897
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.15,912
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.2,930
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.25,938
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.3,948
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.35,956
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.4,964
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.45,976
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.5,986
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.55,1011
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.6,1026
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.65,1045
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.7,1050
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.75,1074
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.8,1089
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.85,1103
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.9,1124
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.95,1156
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.975,1172
+2025-10-18,3,2025-11-08,01,wk inc flu hosp,quantile,0.99,1182
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.01,783
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.025,835
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.05,861
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.1,872
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.15,886
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.2,898
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.25,921
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.3,939
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.35,960
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.4,971
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.45,982
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.5,989
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.55,1007
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.6,1016
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.65,1027
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.7,1037
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.75,1064
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.8,1076
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.85,1090
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.9,1133
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.95,1174
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.975,1191
+2025-10-18,3,2025-11-08,US,wk inc flu hosp,quantile,0.99,1219
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.01,772
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.025,805
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.05,834
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.1,868
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.15,892
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.2,911
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.25,927
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.3,943
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.35,957
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.4,970
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.45,983
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.5,997
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.55,1010
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.6,1023
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.65,1037
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.7,1052
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.75,1069
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.8,1087
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.85,1109
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.9,1136
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.95,1178
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.975,1215
+2025-10-18,NA,NA,US,peak inc flu hosp,quantile,0.99,1259
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.01,38
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.025,45
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.05,52
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.1,60
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.15,66
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.2,72
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.25,76
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.3,80
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.35,85
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.4,89
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.45,92
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.5,97
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.55,101
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.6,105
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.65,110
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.7,115
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.75,120
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.8,126
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.85,134
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.9,144
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.95,160
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.975,174
+2025-10-18,NA,NA,01,peak inc flu hosp,quantile,0.99,192
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-10-18,0.9889040821505438
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-10-25,0.010985732025264254
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-11-01,1.092066009899178e-4
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-11-08,9.7143520121854e-7
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-11-15,7.732569654356562e-9
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-11-22,5.507809394624906e-11
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-11-29,3.5105811919130343e-13
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-12-06,2.0022771839559587e-15
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-12-13,1.021914197772219e-17
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-12-20,4.6671281397025e-20
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2025-12-27,1.9073485980987363e-22
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-01-03,6.975180998638598e-25
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-01-10,2.2825796772464128e-27
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-01-17,6.684077372278592e-30
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-01-24,1.7514673598742983e-32
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-01-31,4.106839076135743e-35
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-02-07,8.617045389642e-38
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-02-14,1.6179091571423367e-40
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-02-21,2.7182847152767095e-43
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-02-28,4.0867757786186986e-46
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-03-07,5.498088623583197e-49
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-03-14,6.618928941952029e-52
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-03-21,7.130315700829281e-55
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-03-28,6.873451252420875e-58
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-04-04,5.9290622815149264e-61
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-04-11,4.5765922984060444e-64
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-04-18,3.1611382952350723e-67
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-04-25,1.9538437238034608e-70
+2025-10-18,NA,NA,US,peak week inc flu hosp,pmf,2026-05-02,1.0806404253470769e-73
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-10-18,0.9301057701193209
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-10-25,0.0653036748419035
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-11-01,0.00430724423501293
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-11-08,2.668811931706357e-4
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-11-15,1.553434827581391e-5
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-11-22,8.494243365730863e-7
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-11-29,4.3632787252843516e-8
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-12-06,2.105512423193915e-9
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-12-13,9.54463345771586e-11
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-12-20,4.06459516623352e-12
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2025-12-27,1.626042650224431e-13
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-01-03,6.110871676502665e-15
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-01-10,2.1574015683330422e-16
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-01-17,7.155095111286969e-18
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-01-24,2.229237946173241e-19
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-01-31,6.524602193809872e-21
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-02-07,1.793941362708003e-22
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-02-14,4.63360537542968e-24
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-02-21,1.1243109474601135e-25
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-02-28,2.5627747105831406e-27
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-03-07,5.487708256965856e-29
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-03-14,1.1038960897597044e-30
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-03-21,2.0860368208120817e-32
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-03-28,3.7031588320209752e-34
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-04-04,6.175602075059735e-36
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-04-11,9.674819339127282e-38
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-04-18,1.4238459967293804e-39
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-04-25,1.9685197114048663e-41
+2025-10-18,NA,NA,01,peak week inc flu hosp,pmf,2026-05-02,2.556660796674774e-43
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.01,0.009024085134733467
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.025,0.024863124295370652
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.05,0.06168295167153701
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.1,0.09581243104767055
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.15,0.12987598878098655
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.2,0.20011344705708328
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.25,0.2477072110050358
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.3,0.30365432158578187
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.35,0.36725983073702084
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.4,0.4046466035302728
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.45,0.4430370473302901
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.5,0.4575068779522553
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.55,0.5188149674446323
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.6,0.561727439099923
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.65,0.5861439240863547
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.7,0.6520181148080157
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.75,0.720815366774332
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.8,0.7853121011052281
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.85,0.8322681202203969
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.9,0.9046009773854168
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.95,0.946041604783386
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.975,0.9625301833206321
+2025-10-18,-1,2025-10-11,01,wk inc flu prop ed visits,quantile,0.99,0.9740889614331537
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.01,0.011511768396012485
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.025,0.03137362170382403
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.05,0.08270895645255223
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.1,0.18387870541773738
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.15,0.25935673117637636
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.2,0.28806315413676203
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.25,0.336792116810102
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.3,0.3819361955625936
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.35,0.4054064384312369
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.4,0.4650015311315656
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.45,0.5193222611793317
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.5,0.5545993918785825
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.55,0.6004487170022912
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.6,0.6806063840631396
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.65,0.7177030067774468
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.7,0.7555053295101971
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.75,0.7773065004730598
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.8,0.8333440943621099
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.85,0.8886661243974232
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.9,0.9089654301293195
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.95,0.9557886640192008
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.975,0.9820960105920676
+2025-10-18,-1,2025-10-11,US,wk inc flu prop ed visits,quantile,0.99,0.9870916158938781
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.01,0.01414673051564023
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.025,0.03236649943282828
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.05,0.10576456829439851
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.1,0.20184368384070694
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.15,0.23788769714301455
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.2,0.2972769000101835
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.25,0.32086169841932133
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.3,0.33479626101907345
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.35,0.3833426399622114
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.4,0.43724613622762265
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.45,0.45536016330588613
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.5,0.514473052113317
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.55,0.5391067934571766
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.6,0.571088650636375
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.65,0.6557320526684636
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.7,0.7258996250573546
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.75,0.7548171299858953
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.8,0.8183656779117883
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.85,0.8385420263162815
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.9,0.8534965287195521
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.95,0.9356209116056562
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.975,0.9541306193976196
+2025-10-18,0,2025-10-18,01,wk inc flu prop ed visits,quantile,0.99,0.9652335237129591
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.01,0.009908215629402547
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.025,0.018426854792051018
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.05,0.02747459284728393
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.1,0.09642596158664674
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.15,0.13062361663905905
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.2,0.16577712586149573
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.25,0.2553807258955203
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.3,0.31254044196102765
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.35,0.3577000583172776
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.4,0.39932453613728286
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.45,0.5395141057553703
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.5,0.596829698421061
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.55,0.6332535695284605
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.6,0.6959376228507608
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.65,0.7432155569433234
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.7,0.77288544527255
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.75,0.798055520222988
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.8,0.8316014327574521
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.85,0.8810103503521531
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.9,0.9038151302374899
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.95,0.9691585871856659
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.975,0.9872241871955338
+2025-10-18,0,2025-10-18,US,wk inc flu prop ed visits,quantile,0.99,0.9927352476050146
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.01,0.037477240324951706
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.025,0.061678889463655656
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.05,0.08990954300388694
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.1,0.12691838010214268
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.15,0.16422819426516072
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.2,0.19706888739019632
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.25,0.21646898123435676
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.3,0.2843598031671718
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.35,0.33096103770658375
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.4,0.3768495616037399
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.45,0.4541352343047038
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.5,0.4749556843889877
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.55,0.5157241509994492
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.6,0.5468682515434922
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.65,0.5830796419992113
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.7,0.608415445475839
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.75,0.6311844337033108
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.8,0.6716105739120395
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.85,0.7385115321609194
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.9,0.8528790367301555
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.95,0.9276700331596658
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.975,0.9863056090776807
+2025-10-18,1,2025-10-25,01,wk inc flu prop ed visits,quantile,0.99,0.9878872562991455
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.01,0.008508417140692472
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.025,0.01251236540847458
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.05,0.03190672517521307
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.1,0.07133613037876785
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.15,0.12105952642159538
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.2,0.1569219053722918
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.25,0.2334850688930601
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.3,0.26395843175705525
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.35,0.3217336496687494
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.4,0.3537365891039371
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.45,0.4265938433469274
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.5,0.5046969340182841
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.55,0.582701569632627
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.6,0.625379272317514
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.65,0.6628719048108906
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.7,0.6931569694541395
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.75,0.749478631420061
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.8,0.7749118956271559
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.85,0.8449703712714837
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.9,0.9068198889261112
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.95,0.9230238620308227
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.975,0.9589544355520045
+2025-10-18,1,2025-10-25,US,wk inc flu prop ed visits,quantile,0.99,0.9769976375065744
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.01,0.0014899421483278274
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.025,0.017178726475685836
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.05,0.028281621832866224
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.1,0.07369590844027699
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.15,0.08157422987278551
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.2,0.10456951158121229
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.25,0.15140956634422764
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.3,0.1954902225639671
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.35,0.24155179009540018
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.4,0.2941445196047425
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.45,0.3851853199419566
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.5,0.41538393578957766
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.55,0.5000575787737035
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.6,0.5385566298384219
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.65,0.5744782614754513
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.7,0.5971877038711682
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.75,0.6345709383022041
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.8,0.7032859641127289
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.85,0.7784722389071249
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.9,0.8463263052515686
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.95,0.9495972538948991
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.975,0.9712637862772681
+2025-10-18,2,2025-11-01,01,wk inc flu prop ed visits,quantile,0.99,0.9759076448879205
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.01,0.01445463375421241
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.025,0.028683380881557245
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.05,0.05038845365634188
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.1,0.12372762975282968
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.15,0.14330588654847815
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.2,0.18731829323805868
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.25,0.2651025853701867
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.3,0.29232807431835683
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.35,0.33558434434235107
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.4,0.3810024020262063
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.45,0.44604610807728023
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.5,0.5557341899257153
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.55,0.6060290503781289
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.6,0.646887743845582
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.65,0.68500391257694
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.7,0.7518014227971436
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.75,0.8253324457327835
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.8,0.8496111438609659
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.85,0.8974075896316208
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.9,0.98089091230649506
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.95,0.9865266655106097
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.975,0.9957550391962287
+2025-10-18,2,2025-11-01,US,wk inc flu prop ed visits,quantile,0.99,0.9980025243409909
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.01,0.025697297658771275
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.025,0.06175644343602471
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.05,0.07291118199937045
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.1,0.12457943158224224
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.15,0.17734545120038095
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.2,0.19047424378804861
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.25,0.21159625321161002
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.3,0.24802474742755293
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.35,0.30182413918664686
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.4,0.33759239399805663
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.45,0.3693277934798971
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.5,0.4052220394369215
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.55,0.4601070675998926
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.6,0.5194847258273513
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.65,0.5639608364319428
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.7,0.603289371612482
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.75,0.7234018289600502
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.8,0.7601488912943751
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.85,0.7841592670883983
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.9,0.8316132531967018
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.95,0.8997000209055841
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.975,0.9479883210035039
+2025-10-18,3,2025-11-08,01,wk inc flu prop ed visits,quantile,0.99,0.9834757371689193
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.01,0.03761087033199146
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.025,0.04280687452410348
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.05,0.06389325254131109
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.1,0.12591951072681698
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.15,0.19935381960822274
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.2,0.25618798881769184
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.25,0.2987405497697182
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.3,0.31624702606350186
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.35,0.36839490167330957
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.4,0.410874292999506
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.45,0.4400037837447599
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.5,0.4658680709544569
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.55,0.5514522571815178
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.6,0.5824310435447843
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.65,0.6263593178009615
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.7,0.7076901866123083
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.75,0.774431544588879
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.8,0.8545233714859932
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.85,0.8925976827740669
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.9,0.9043029491091148
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.95,0.9560501840431244
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.975,0.9671332371013706
+2025-10-18,3,2025-11-08,US,wk inc flu prop ed visits,quantile,0.99,0.9766312368237414
