@@ -1,4 +1,188 @@
 output_type,output_type_id,value,reference_date,target,horizon,target_end_date,location
+quantile,0.01,49,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.025,58,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.05,66,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.1,73,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.15,77,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.2,82,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.25,85,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.3,88,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.35,92,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.4,96,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.45,99,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.5,103,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.55,106,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.6,110,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.65,115,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.7,120,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.75,126,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.8,132,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.85,140,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.9,151,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.95,172,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.975,201.02499999999986,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.99,230.01,2025-11-22,wk inc flu hosp,0,2025-11-22,13
+quantile,0.01,0.0049273798251208084,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.025,0.005374698439911324,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.05,0.005751176342145787,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.1,0.006267676402081951,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.15,0.006595930553087695,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.2,0.006883844514794624,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.25,0.007146154659072799,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.3,0.007413230605888569,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.35,0.007626616022314802,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.4,0.007829524093344257,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.45,0.008056801673572249,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.5,0.008328177054415794,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.55,0.008550901109599636,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.6,0.0088062612979015,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.65,0.009080393872533314,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.7,0.009341633880518256,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.75,0.009719053043360367,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.8,0.010093258831079406,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.85,0.010586567307442854,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.9,0.011148240221879354,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.95,0.012242061865235913,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.975,0.01342648673199097,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.99,0.014622107912179971,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,13
+quantile,0.01,73.99000000000001,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.025,83,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.05,93.95,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.1,108,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.15,120,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.2,129.8,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.25,138,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.3,146,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.35,154,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.4,163.60000000000002,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.45,173,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.5,182.5,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.55,194,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.6,206,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.65,216.35000000000014,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.7,230,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.75,249,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.8,268,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.85,297.14999999999986,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.9,337.2000000000003,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.95,419.04999999999995,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.975,534.0249999999999,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.99,676.03,2025-11-22,wk inc flu hosp,1,2025-11-29,13
+quantile,0.01,0.005404045939607165,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.025,0.006290399109522617,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.05,0.007139402460113265,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.1,0.008350638663253397,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.15,0.009402747733692715,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.2,0.010255589293487768,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.25,0.011055187153577563,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.3,0.011763307118136479,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.35,0.012621506787244628,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.4,0.013478686672367252,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.45,0.014227692575574744,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.5,0.015079594117321373,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.55,0.01610935825427337,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.6,0.017224190884576527,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.65,0.01834493832263092,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.7,0.0197129167641913,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.75,0.02135651343819674,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.8,0.023534484081911066,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.85,0.025634529700551585,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.9,0.029633179048914146,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.95,0.035564647863776506,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.975,0.042253152305301876,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.99,0.05045045218524696,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,13
+quantile,0.01,6,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.025,7,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.05,8,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.1,9,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.15,10,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.2,11,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.25,12,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.3,13,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.35,13,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.4,14,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.45,15,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.5,15,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.55,16,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.6,17,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.65,17,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.7,18,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.75,19,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.8,20,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.85,21,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.9,23,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.95,26,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.975,28.024999999999864,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.99,32,2025-11-22,wk inc flu hosp,0,2025-11-22,41
+quantile,0.01,0.001964582282913268,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.025,0.002226356877538894,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.05,0.002403769887256088,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.1,0.002628232391854017,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.15,0.002810542495968135,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.2,0.002926436078893982,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.25,0.0030316370014832465,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.3,0.0031362960288811963,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.35,0.0032404193165653412,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.4,0.003329690424442769,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.45,0.0034292267198655505,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.5,0.0035397723675292883,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.55,0.0036458583701376853,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.6,0.0037761745829080484,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.65,0.0038876116474156116,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.7,0.003994024826785777,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.75,0.00414977231633681,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.8,0.004299754157580052,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.85,0.0044787129454235625,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.9,0.004746986041814775,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.95,0.005255418428267975,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.975,0.005658770422651122,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.99,0.006132314880479213,2025-11-22,wk inc flu prop ed visits,0,2025-11-22,41
+quantile,0.01,7,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.025,9,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.05,11,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.1,13,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.15,14,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.2,15,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.25,16,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.3,17,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.35,18,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.4,19,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.45,20,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.5,21,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.55,22,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.6,23,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.65,24.350000000000136,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.7,25,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.75,27,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.8,28,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.85,31,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.9,34,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.95,40,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.975,47,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.99,57,2025-11-22,wk inc flu hosp,1,2025-11-29,41
+quantile,0.01,0.0017931965807427115,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.025,0.002192863700273374,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.05,0.0025017814788365475,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.1,0.0028968147461956523,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.15,0.003179000903538709,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.2,0.0034550575267139135,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.25,0.0036733761274153004,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.3,0.0038642082226439346,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.35,0.0040988283523409556,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.4,0.004355549372686642,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.45,0.0045479389817308985,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.5,0.004780180097342239,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.55,0.005015354213689644,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.6,0.0052596286931654215,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.65,0.005490497099256082,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.7,0.0057771876618142965,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.75,0.006142426843167883,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.8,0.006634815808641813,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.85,0.00723122534750557,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.9,0.00808961678099573,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.95,0.00978341450035087,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.975,0.011604555809525309,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
+quantile,0.99,0.013962677218141713,2025-11-22,wk inc flu prop ed visits,1,2025-11-29,41
 quantile,0.01,0,2025-11-22,wk inc flu hosp,0,2025-11-22,02
 quantile,0.025,0,2025-11-22,wk inc flu hosp,0,2025-11-22,02
 quantile,0.05,0,2025-11-22,wk inc flu hosp,0,2025-11-22,02
