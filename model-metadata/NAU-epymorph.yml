@@ -10,12 +10,12 @@ model_contributors: [
             "email": "Jeffrey.Covington@nau.edu",
         },
         {
-            "Kelsey Elizabeth Banister",
+            "name": "Kelsey Elizabeth Banister",
             "affiliation": "Nortern Arizona University",
             "email": "Kelsey.Banister@nau.edu",
         },
         {
-            "Syed Md Shamsul Alam",
+            "name": "Syed Md Shamsul Alam",
             "affiliation": "Nortern Arizona University",
             "email": "ss5687@nau.edu",
         },
@@ -58,5 +58,6 @@ data_inputs: "State level weekly hospitalization data from NHSN."
 methods_long: "A compartmental model with a time-dependent transmission rate. Model state and parameters are fit using a particle filter."
 ensemble_of_models: false
 ensemble_of_hub_models: false
+
 
 
