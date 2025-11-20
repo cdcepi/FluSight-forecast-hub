@@ -5,8 +5,8 @@ model_abbr: Copycat
 model_contributors: [
   {
     "name": "Spencer J. Fox",
-    "affiliation": "University of Georgia",
-    "email": "sjfox@uga.edu",
+    "affiliation": "Northern Arizona University",
+    "email": "spencer.fox@nau.edu",
     "orcid": "0000-0003-1969-3778"
   }
 ]
