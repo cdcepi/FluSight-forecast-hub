@@ -1,0 +1,28 @@
+team_name: NAU
+team_abbr: NAU
+model_name: Fourier Calendar Aware Transformer
+model_abbr: FourCAT
+model_contributors: [
+  {
+    "name": "Spencer J. Fox",
+    "affiliation": "Northern Arizona University",
+    "email": "spencer.fox@nau.edu",
+    "orcid": "0000-0003-1969-3778"
+  },
+{
+    "name": "Mariah Salcedo",
+    "affiliation": "University of Georgia",
+    "email": "mariah.salcedo@uga.edu",
+    "orcid": "1234-1234-1234-1234"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: HHS
+methods: A transformer using Fourier seasonaility.
+methods_long: A transformer incoporating Fourier features and multi-horizon quantile regression trained with a combined pinball and WIS objective.
+website_url: https://thefoxlab.wordpress.com/
+ensemble_of_models: false
+ensemble_of_hub_models: false
+team_funding: CSTE/CDC award NU38OT000297 
+
