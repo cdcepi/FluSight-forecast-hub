@@ -1,0 +1,30 @@
+team_name: "FluSight-judge_ensemble"
+team_abbr: "FluSight"
+model_name: "Ensemble models using selected FluSight forecast submissions"
+model_abbr: "judge_ensemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+    {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  },
+    {
+    "name": "Annabella Hines",
+    "affiliation": "CDC",
+    "email": "zoh1@cdc.gov"
+  }
+]
+website_url: "https://github.com/Infectious-Disease-Modeling-Hubs/hubEnsembles"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Median-based ensemble of selected quantile forecasts submissions."
+data_inputs: "Weekly incident flu hospitalizations from HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries."
+methods_long: "The Hubverse package hubEnsembles is used to generate the FluSight-human_ensemble forecast. A median of quantile outputs is used for a subset of quantile based forecasts selected weekly."
+ensemble_of_models: true
+ensemble_of_hub_models: true
