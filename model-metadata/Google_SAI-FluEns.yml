@@ -22,6 +22,10 @@ model_contributors:
     affiliation: Google
     email: mbrenner@google.com
     orcid: 0000-0002-5673-7947
+  - name: Nicholas Reich
+    affiliation: Google
+    email: reichn@xwf.google.com
+    orcid: 0000-0003-3503-9899
 license: CC-BY-4.0
 designated_model: true
 data_inputs: "Influenza Hospital Admissions data (NHSN), ILINet historical values, and Population data"
