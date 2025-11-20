@@ -29,7 +29,7 @@ model_contributors: [
     "orcid": "0000-0001-8330-0591"
   }
 ]
-website_url: "not applicable"
+website_url: "https://github.com/dimitri-lopez/FluSight-forecast-hub"
 license: "CC-BY-4.0"
 citation: "not applicable"
 team_funding: "We acknowledge support from cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics."
