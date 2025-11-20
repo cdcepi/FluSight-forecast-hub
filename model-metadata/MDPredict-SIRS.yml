@@ -5,12 +5,12 @@ model_abbr: "SIRS"
 model_contributors: [
   {
     "name": "Johnny Sheng",
-    "affiliation": "Richard Montgomery High School",
+    "affiliation": "Johns Hopkins University",
     "email": "johnnysheng0324@gmail.com"
   },
   {
     "name": "Ivan Zhang",
-    "affiliation": "Richard Montgomery High School",
+    "affiliation": "Carnegie Mellon University",
     "email": "ivanzhang0130@gmail.com"
   }
 ]

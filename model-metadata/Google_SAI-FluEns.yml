@@ -1,0 +1,33 @@
+team_name: Google Science AI
+team_abbr: Google_SAI
+model_name: FluEnsemble
+model_abbr: FluEns
+model_contributors:
+  - name: Zahra Shamsi
+    affiliation: Google
+    email: shamsiz@google.com
+    orcid: 0000-0002-9834-2978
+  - name: Sarah Martinson
+    affiliation: Google
+    email: martinsons@google.com
+  - name: Martyna Plomecka
+    affiliation: Google
+    email: mplomecka@google.com
+    orcid: 0000-0003-4297-4754
+  - name: Brian Williams
+    affiliation: Google
+    email: bpw@goole.com
+    orcid: 0000-0002-2839-0106
+  - name: Michael Brenner
+    affiliation: Google
+    email: mbrenner@google.com
+    orcid: 0000-0002-5673-7947
+license: CC-BY-4.0
+designated_model: true
+data_inputs: "Influenza Hospital Admissions data (NHSN), ILINet historical values, and Population data"
+methods: "An ensemble of different models."
+methods_long: "An esemble of a diverse set of models; ML, mechanistic, and statistical."
+website_url: "https://ai.google/applied-ai/science/"
+ensemble_of_models: true
+ensemble_of_hub_models: false
+model_version: "1.0"
