@@ -18,7 +18,7 @@
 #' To run:
 #' Rscript gen_forecast_data.R --reference_date 2024-11-23 --base_hub_path ../../
 
-ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
+ref_date <- as.Date("2025-11-22")#lubridate::ceiling_date(Sys.Date(), "week") - days(1)
 reference_date <- ref_date
 current_ref_date <- ref_date
 base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSight-forecast-hub")
@@ -35,6 +35,7 @@ current_forecasts <- hub_content |>
   dplyr::filter(
     reference_date == current_ref_date
   ) |> 
+  dplyr::filter(target!="wk inc flu prop ed visits")|>
   dplyr::collect() |>
   as_model_out_tbl() 
 
@@ -97,7 +98,12 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
   )
 
 
-all_forecasts_data <- all_forecasts_data[all_forecasts_data$model %in% eligible_models | grepl("FluSight", all_forecasts_data$model),]
+#all_forecasts_data <- all_forecasts_data[all_forecasts_data$model %in% eligible_models | grepl("FluSight", all_forecasts_data$model),]
+
+all_forecasts_data <- all_forecasts_data[
+  all_forecasts_data$model %in% eligible_models | 
+    all_forecasts_data$model %in% c("FluSight-baseline", "FluSight-ensemble", "FluSight-lop_norm"), 
+]
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
@@ -173,7 +179,7 @@ if (file.exists(ensemble_file_current)) {
 } else {
   stop("Ensemble file for reference date ", ref_date, " not found in the directory: ", ensemble_folder)
 }
-ensemble_data <- readr::read_csv(ensemble_file)
+ensemble_data <- readr::read_csv(ensemble_file) %>% filter(target!="wk inc flu prop ed visits")
 required_columns <- c("reference_date", "target_end_date", "value", "location", "target")
 missing_columns <- setdiff(required_columns, colnames(ensemble_data))
 if (length(missing_columns) > 0) {
