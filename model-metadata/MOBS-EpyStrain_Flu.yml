@@ -43,7 +43,7 @@ model_contributors: [
 website_url: "https://www.mobs-lab.org/"
 license: "CC-BY_SA-4.0"
 designated_model: true
-citation: "https://www.medrxiv.org/content/10.1101/2025.05.07.25327151v1"
+citation: "https://doi.org/10.1371/journal.pcbi.1013735"
 team_funding: "We acknowledge support from Cooperative Agreements NU38PW000005 from The Centers for Disease Control and Prevention (CDC) and CSTE and from CDC-RFA-FT-23-0069 from the CDC's Center for Forecasting and Outbreak Analytics."
 methods: "Age structured, extended SLIR model."
 data_inputs: "Weekly incident flu hospitalizations, queried through HHS"
