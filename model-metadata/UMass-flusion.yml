@@ -8,6 +8,11 @@ model_contributors: [
     "name": "Evan Ray",
     "affiliation": "UMass Amherst",
     "email": "elray@umass.edu"
+  },
+  {
+    "name": "Thomas Robacker",
+    "affiliation": "UMass Amherst",
+    "email": "trobacker@umass.edu"
   }
 ]
 website_url: "https://github.com/reichlab/idmodels"
