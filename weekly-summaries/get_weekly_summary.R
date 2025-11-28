@@ -18,7 +18,7 @@
 #' To run:
 #' Rscript gen_forecast_data.R --reference_date 2024-11-23 --base_hub_path ../../
 
-ref_date <- as.Date("2025-11-22")#lubridate::ceiling_date(Sys.Date(), "week") - days(1)
+ref_date <- lubridate::ceiling_date(Sys.Date(), "week") - days(1)
 reference_date <- ref_date
 current_ref_date <- ref_date
 base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSight-forecast-hub")
