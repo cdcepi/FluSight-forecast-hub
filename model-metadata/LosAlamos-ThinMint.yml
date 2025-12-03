@@ -1,0 +1,41 @@
+team_name: "Los Alamos National Lab"
+team_abbr: "LosAlamos"
+model_name: "Transformer-based forecasting"
+model_abbr: "ThinMint"
+model_contributors: [
+  {
+    "name": "Alexander C Murph",
+    "affiliation": "Los Alamos National Labs",
+    "email": "murph@lanl.gov"
+  },
+  {
+    "name": "Lauren A Castro",
+    "affiliation": "Los Alamos National Labs",
+    "email": "lcastro@lanl.gov"
+  },
+  {
+    "name": "Dave Osthus",
+    "affiliation": "Los Alamos National Labs",
+    "email": "dosthus@lanl.gov"
+  },
+  {
+    "name": "Michael D Kupperman",
+    "affiliation": "Los Alamos National Labs",
+    "email": "mkupperman@lanl.gov"
+  },
+  {
+    "name": "John Tipton",
+    "affiliation": "Los Alamos National Labs",
+    "email": "jtipton@lanl.gov"
+  },
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Hospitalization data, Emergency department data, Synthetic data generated from historical ILI data"
+methods: "Transformer"
+methods_long: "Transformer model using lagged context window"
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "1.0"
+website_url: "https://github.com/lanl/precog"
+team_funding: "Research presented was partially supported by the Laboratory Directed Research and Development program of Los Alamos National Laboratory under project number 20240066DR. Los Alamos National Laboratory is operated by Triad National Security, LLC, for the National Nuclear Security Administration of U.S. Department of Energy (Contract No. 89233218CNA000001). All authors received this funding. All authors receive a salary from Los Alamos National Laboratory. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript."

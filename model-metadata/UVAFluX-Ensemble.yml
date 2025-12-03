@@ -30,12 +30,12 @@ model_contributors: [
     "email": "srini@virginia.edu"
   },
   {
-    "name": "Brian Klahn",
+    "name": "Stephen Turner",
     "affiliation": "UVA",
-    "email": "briandk@virginia.edu"
+    "email": "turner@virginia.edu"
   }
 ]
-website_url: "https://biocomplexity.virginia.edu/institute/divisions/network-systems-science-and-advanced-computing"
+website_url: "https://biocomplexity.virginia.edu/"
 license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "funding"

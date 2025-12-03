@@ -2,22 +2,12 @@ team_name: "MIGHTE"
 team_abbr: "MIGHTE"
 model_name: "Time series ensemble"
 model_abbr: "Nsemble"
-model_version: "1.0"
+model_version: "2.0"
 model_contributors: [
   {
     "name": "Austin Meyer",
-    "affiliation": "Northeastern University",
+    "affiliation": "Baylor College of Medicine",
     "email": "austin.g.meyer@gmail.com"
-  },
-  {
-    "name": "Fred Lu",
-    "affiliation": "Northeastern University",
-    "email": "fredlu1618@gmail.com"
-  },
-  {
-    "name": "Leonardo Clemente",
-    "affiliation": "Northeastern University",
-    "email": "c.clementelopez@northeastern.edu"
   },
   {
     "name": "Mauricio Santillana",
@@ -30,8 +20,12 @@ license: "CC-BY-4.0"
 citation: "Meyer, A. G., Lu, F., Clemente, L., & Santillana, M. (2024). A prospective real-time transfer learning approach to estimate Influenza hospitalizations with limited data. medRxiv, 2024-07."
 team_funding: ""
 designated_model: true
-methods: "Weighted ensemble of time-series models including lightGBM and ARIMA"
-data_inputs: "Weekly incident flu hospitalizations, with imputation for unreported hospitalizations"
-methods_long: "Weighted ensemble of time-series models, including lightGBM with hyperparameters tuned over the previous season, lightGBM validated over the previous season and tuned on the season before, and ARIMA models."
+methods: "Weighted ensemble of time-series models including LightGBM, SVM, and ARIMA"
+data_inputs: "Weekly incident flu hospitalizations that is extended into the past via imputation from ILI to hospitalizations"
+methods_long: "We use an Adaptive Ensemble that combines probabilistic forecasts from three component model types: ARIMA, Support Vector Regression (SVM), and a two-stage LightGBM system. The ensemble weights are dynamically updated for each location and horizon based on the inverse Weighted Interval Score (WIS) of each component's performance over the most recent 4-week lookback window.                                                                                                  
+The component models are:                                                                                                               
+1. ARIMA: State univariate models are auto-tuned for each location. Uncertainty is modeled using empirical error distributions derived from rolling validation windows.                                                      
+2. SVM: Support Vector Regression models are trained using a targeted feature set. For each location, the model selects the top correlated peer states as spatial covariates and optimizes the number of autoregressive lags (typically 1-8 weeks) and seasonal lags (52 weeks). Point predictions are adjusted for median residual bias and blended with a persistence forecast (last observed value) to enhance accuracy. Uncertainty is derived from empirical residual distributions, which are by default calculated on a log(1+x) scale (`log1p`) to stabilize variance.                                                     
+3. LightGBM (Two-Stage): A gradient boosting approach that utilizes a rich set of engineered features. The first stage predicts the conditional mean and the second stage predicts the conditional scale/variance using a Gaussian likelihood (LightGBMLSS). Input features include dense lags (1-12 weeks), rolling statistics (means, std devs, min/max over 2-12 week windows), momentum indicators (differences, % change), and cyclical seasonal encodings (sine/cosine of week/month)."
 ensemble_of_models: true
 ensemble_of_hub_models: false

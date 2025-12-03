@@ -79,6 +79,16 @@ model_contributors: [
             "affiliation": "Northern Arizona University",
             "email": "ob244@nau.edu",
         },
+              {
+            "name": "Maya Baltz",
+            "affiliation": "Northern Arizona University",
+            "email": "msb438@nau.edu",
+        },
+              {
+            "name": "Adam Smart",
+            "affiliation": "Northern Arizona University",
+            "email": "acs849@nau.edu",
+        },
     ]
 website_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
 repo_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"

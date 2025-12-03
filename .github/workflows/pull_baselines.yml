@@ -10,8 +10,8 @@ on:
         type: boolean
         required: false
         default: true
-  schedule:
-    - cron: "10 17 * * 3"
+  #schedule:
+    #- cron: "10 17 * * 3"
 
 permissions:
     contents: write
