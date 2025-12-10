@@ -35,6 +35,7 @@ current_forecasts <- hub_content |>
   dplyr::filter(
     reference_date == current_ref_date
   ) |> 
+  dplyr::filter(target=="wk inc flu hosp")|>
   dplyr::collect() |>
   as_model_out_tbl() 
 
@@ -97,7 +98,12 @@ all_forecasts_data <- forecasttools::pivot_hubverse_quantiles_wider(
   )
 
 
-all_forecasts_data <- all_forecasts_data[all_forecasts_data$model %in% eligible_models | grepl("FluSight", all_forecasts_data$model),]
+#all_forecasts_data <- all_forecasts_data[all_forecasts_data$model %in% eligible_models | grepl("FluSight", all_forecasts_data$model),]
+
+all_forecasts_data <- all_forecasts_data[
+  all_forecasts_data$model %in% eligible_models | 
+    all_forecasts_data$model %in% c("FluSight-baseline", "FluSight-ensemble", "FluSight-lop_norm"), 
+]
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries", ref_date)
@@ -119,7 +125,7 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
-write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
+#write_csv(all_forecasts_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_forecasts_data.csv")
 
 
 
@@ -173,7 +179,7 @@ if (file.exists(ensemble_file_current)) {
 } else {
   stop("Ensemble file for reference date ", ref_date, " not found in the directory: ", ensemble_folder)
 }
-ensemble_data <- readr::read_csv(ensemble_file)
+ensemble_data <- readr::read_csv(ensemble_file) %>% filter(target=="wk inc flu hosp")
 required_columns <- c("reference_date", "target_end_date", "value", "location", "target")
 missing_columns <- setdiff(required_columns, colnames(ensemble_data))
 if (length(missing_columns) > 0) {
@@ -292,7 +298,7 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
-write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
+#write_csv(map_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_map_data.csv")
 
 #' Generate the Truth Data file containing the most recent observed NHSN hospital admissions data.
 #' This script fetches the most recent observed influenza hospital admissions data for all regions 
@@ -382,5 +388,5 @@ if (!fs::file_exists(output_filepath)) {
 }
 
 #file.remove("//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
-write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
+#write_csv(truth_data, "//cdc.gov/project/OADC_WCMS_VIZ_DATA/preview/CFA/Forecasts/flu/flu_target_hospital_admissions_data.csv")
 
