@@ -35,6 +35,6 @@ designated_model: false
 ensemble_of_models: false
 ensemble_of_hub_models: false
 data_inputs: "1) State specific weekly total number of hospitalized patients taken from the US Department of Health and Human Services, COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries (target data), 2) State specific weekly weighted influenza-like illness values downloaded from the CDC website"
-methods: "An anchored residual neural network that produces probabilistic influenza hospitalization forecasts using a Negative Binomial output distribution. predicts log-space changes relative to recent observations, using lag features, seasonal encodings, and growth indicators."
-methods_long: "TBD"
+methods: "An anchored residual neural network that produces probabilistic influenza hospitalization forecasts using a Negative Binomial output distribution."
+methods_long: "An anchored residual neural network that produces probabilistic influenza hospitalization forecasts using a Negative Binomial output distribution. Predicts log-space changes relative to recent observations, using lag features, seasonal encodings, and growth indicators."
 team_funding: "US NIH grant GM110748"
