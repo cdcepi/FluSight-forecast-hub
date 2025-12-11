@@ -1,0 +1,40 @@
+team_name: "Columbia University/University of Haifa"
+team_abbr: "CU"
+model_name: "Anchored Residual Negative Binomial Neural Network"
+model_abbr: "ARNB_Net"
+model_contributors: [
+  {
+    "name": "Rami Yaari",
+    "affiliation": "Columbia University",
+    "email": "ryaari@climate.columbia.edu",
+    "orcid": "0000-0002-8808-8937"
+  },
+  {
+    "name": "Jeffrey Shaman",
+    "affiliation": "Columbia University",
+    "email": "jls106@cumc.columbia.edu",
+    "orcid": "0000-0002-7216-7809"
+  },
+  {
+    "name": "David Shulman",
+    "affiliation": "University of Haifa",
+    "email": "dshulman@campus.haifa.ac.il",
+    "orcid": "0000-0002-4155-6895"
+  },
+  {
+    "name": "Itai Dattner",
+    "affiliation": "University of Haifa",
+    "email": "idattner@stat.haifa.ac.il",
+    "orcid": "0000-0001-5316-8964"
+  }
+]
+website_url: "https://TBD"
+repo_url: "https://TBD"
+license: "CC-BY-4.0"
+designated_model: false
+ensemble_of_models: false
+ensemble_of_hub_models: false
+data_inputs: "1) State specific weekly total number of hospitalized patients taken from the US Department of Health and Human Services, COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries (target data), 2) State specific weekly weighted influenza-like illness values downloaded from the CDC website"
+methods: "An anchored residual neural network that produces probabilistic influenza hospitalization forecasts using a Negative Binomial output distribution."
+methods_long: "An anchored residual neural network that produces probabilistic influenza hospitalization forecasts using a Negative Binomial output distribution. Predicts log-space changes relative to recent observations, using lag features, seasonal encodings, and growth indicators."
+team_funding: "US NIH grant GM110748"
