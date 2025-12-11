@@ -1,7 +1,7 @@
 team_name: "Columbia University/University of Haifa"
 team_abbr: "CU"
 model_name: "Anchored Residual Negative Binomial Neural Network"
-model_abbr: "ARNB-NN"
+model_abbr: "ARNB_Net"
 model_contributors: [
   {
     "name": "Rami Yaari",
