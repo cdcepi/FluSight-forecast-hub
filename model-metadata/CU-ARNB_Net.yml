@@ -28,8 +28,8 @@ model_contributors: [
     "orcid": "0000-0001-5316-8964"
   }
 ]
-website_url: TBD
-repo_url: TBD
+website_url: "https://TBD"
+repo_url: "https://TBD"
 license: "CC-BY-4.0"
 designated_model: false
 ensemble_of_models: false
