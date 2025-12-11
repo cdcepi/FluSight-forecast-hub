@@ -32,6 +32,18 @@ model_contributors: [
     "affiliation": "Columbia University",
     "email": "jls106@cumc.columbia.edu",
     "orcid": "0000-0002-7216-7809"
+  },
+  {
+    "name": "David Shulman",
+    "affiliation": "University of Haifa",
+    "email": "dshulman@campus.haifa.ac.il",
+    "orcid": "0000-0002-4155-6895"
+  },
+  {
+    "name": "Itai Dattner",
+    "affiliation": "University of Haifa",
+    "email": "idattner@stat.haifa.ac.il",
+    "orcid": "0000-0001-5316-8964"
   }
 ]
 website_url: "https://blogs.cuit.columbia.edu/jls106/"
