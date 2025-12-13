@@ -2,7 +2,7 @@ team_name: "MIGHTE"
 team_abbr: "MIGHTE"
 model_name: "Joint time series ensemble"
 model_abbr: "Joint"
-model_version: "0.1"
+model_version: "0.2"
 model_contributors: [
   {
     "name": "Austin Meyer",
@@ -13,11 +13,6 @@ model_contributors: [
     "name": "Fred Lu",
     "affiliation": "Northeastern University",
     "email": "fredlu1618@gmail.com"
-  },
-  {
-    "name": "Leonardo Clemente",
-    "affiliation": "Northeastern University",
-    "email": "c.clementelopez@northeastern.edu"
   },
   {
     "name": "Mauricio Santillana",
@@ -45,8 +40,8 @@ license: "CC-BY-4.0"
 citation: ""
 team_funding: ""
 designated_model: true
-methods: "Joint submission with GATech with weighted ensemble of time-series component models"
+methods: "Joint submission with MIGHT-Nsemble and GATech with weighted ensemble of time-series component models"
 data_inputs: "Weekly incident flu hospitalizations, with imputation for unreported hospitalizations, Google Trends data"
-methods_long: "Weighted ensemble of time-series models, including lightGBM, ARIMA models, autoregressive models (ARGO2)."
+methods_long: "Weighted ensemble of time-series models, including LightGBM, ARIMA models, autoregressive models (ARGO2)."
 ensemble_of_models: true
 ensemble_of_hub_models: false
