@@ -2,7 +2,7 @@ team_name: "UMass-Amherst"
 team_abbr: "UMass"
 model_name: "Ensemble of time series models"
 model_abbr: "flusion"
-model_version: "1.0"
+model_version: "1.1"
 model_contributors: [
   {
     "name": "Evan Ray",
@@ -20,20 +20,18 @@ license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "This work has been supported by the National Institutes of General Medical Sciences (R35GM119582) and the U.S. CDC(1U01IP001122). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS, the National Institutes of Health, or CDC."
 designated_model: true
-methods: "Ensemble of statistical and machine learning time series models."
+methods: "Ensemble of statistical and machine learning time series models with spatial correlation."
 data_inputs: "Weekly incident flu hospitalizations from NHSN, hospitalizations from FluSurv-NET, and outpatient ILI from ILINet."
 methods_long: "
+  2025/26 season (v1.1, implemented 2025-12-20):
+  Quantile average ensemble of three component models: 1) AR(6) pooled model with shared coefficients across locations and per-location variance; 2) GBQR 3-source spatial2 model for state-level forecasts incorporating spatial correlation; 3) GBQR 3-source model for US national forecasts. All components use NHSN, FluSurv-NET, and ILINet data. Categorical predictions derived via monotonic spline interpolation.
+
   2024/25 season:
-  A quantile average of two models:
-   1. Gradient boosting quantile regression, fit to NHSN, FluSurv-NET, and ILINet data
-   2. An AR(6) model fit to NHSN only, with AR coefficients shared across locations and per-location variance parameters.
-  As of 2024-11-23, these are equally weighted.
-  Categorical predictions are derived from the quantile predictions by fitting a monotonic spline to interpolate the quantiles.
-  
+  A quantile average of two models: 1) Gradient boosting quantile regression, fit to NHSN, FluSurv-NET, and ILINet data; 2) An AR(6) model fit to NHSN only, with AR coefficients shared across locations and per-location variance parameters. As of 2024-11-23, these are equally weighted. Categorical predictions are derived from the quantile predictions by fitting a monotonic spline to interpolate the quantiles.
   2024-11-30: Our model is not responding well to data anomalies in OH. We have dropped that state from this week's submission.
   2024-12-07: We dropped forecasts for PR. We have low confidence in forecasts from AZ, but are submitting them regardless.
   2025-01-02: For this week, we include only the GBQR model. The AR(6) model does not have any features that allow it to capture regular seasonal effects, and exploration of last season's forecasts showed that it underperformed in the weeks immediately following Christmas.
-  
+
   2023/24 season:
   2023-10-14: A linear pool of two sub-ensembles, one fit with all available data and one fit dropping the last data point which may be subject to revisions. Each sub-ensemble is an equally-weighted Vincent median ensemble of three components: 1) an AR(8) model fit only to HHS data on a fourth root scale; 2) a gradient boosting model fit to data from all three sources with uncertainty based on bootstrapping out-of-bag prediction errors; 3) a gradient boosting model fit to all three data sources with quantile regression separately for each quantile level, with predictions sorted to address quantile crossing.
   2023-10-21: Fit only to the data release including data up through the week of 2023-10-14. Dropped bootstrap method, so submission is a quantile averaged ensemble of AR(8) and the gradient boosting model with quantile regression for all quantiles.
