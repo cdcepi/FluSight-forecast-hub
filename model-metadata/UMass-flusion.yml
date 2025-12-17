@@ -13,6 +13,11 @@ model_contributors: [
     "name": "Thomas Robacker",
     "affiliation": "UMass Amherst",
     "email": "trobacker@umass.edu"
+  },
+    {
+    "name": "Nicholas Reich",
+    "affiliation": "UMass Amherst",
+    "email": "nick@umass.edu"
   }
 ]
 website_url: "https://github.com/reichlab/idmodels"
