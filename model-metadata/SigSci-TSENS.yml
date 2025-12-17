@@ -23,7 +23,7 @@ model_contributors: [
 website_url: "https://github.com/signaturescience/fiphde"
 license: "CC-BY-4.0"
 citation: ""
-team_funding: "CSTE subaward"
+team_funding: "CSTE subaward and internal funding"
 designated_model: true
 methods: "Ensemble of time series models."
 data_inputs: "Weekly Hospital Respiratory Data (HRD) Metrics by Jurisdiction, National Healthcare Safety Network (NHSN)."
