@@ -1,7 +1,7 @@
 team_name: "UVAFluX"
 team_abbr: "UVAFluX"
 model_name: "FluSight_OptimWISE: ensemble forecasting model that learns optimal weights for combining probabilistic forecasts from FluSight hub  models by minimizing a regularized Weighted Interval Score (WIS)."
-model_abbr: "FluSight_OptimWISE"
+model_abbr: "FS_OptimWISE"
 model_version: "1.0"
 model_contributors: [
   {
