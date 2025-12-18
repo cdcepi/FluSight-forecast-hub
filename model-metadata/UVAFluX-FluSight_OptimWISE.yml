@@ -1,0 +1,52 @@
+team_name: "UVAFluX"
+team_abbr: "UVAFluX"
+model_name: "FluSight_OptimWISE: ensemble forecasting model that learns optimal weights for combining probabilistic forecasts from FluSight hub  models by minimizing a regularized Weighted Interval Score (WIS)."
+model_abbr: "FluSight_OptimWISE"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Nibir Chandra Mandal",
+    "affiliation": "UVA",
+    "email": "wyr6fx@virginia.edu"
+  },
+  {
+    "name": "Gursharn Kaur",
+    "affiliation": "UVA",
+    "email": "gursharn@virginia.edu"
+  },
+  {
+    "name": "Aniruddha Adiga",
+    "affiliation": "UVA",
+    "email": "aniruddha@virginia.edu"
+  },
+  {
+    "name": "Bryan Lewis",
+    "affiliation": "UVA",
+    "email": "bl4zc@virginia.edu"
+  },
+  {
+    "name": "Madhav Marathe",
+    "affiliation": "UVA",
+    "email": "marathe@virginia.edu"
+  },
+  {
+    "name": "Srinivasan Venkatramanan",
+    "affiliation": "UVA",
+    "email": "srini@virginia.edu"
+  }
+  {
+    "name": "Stephen Turner",
+    "affiliation": "UVA",
+    "email": "turner@virginia.edu"
+  }
+]
+website_url: "https://biocomplexity.virginia.edu/"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "funding"
+designated_model: False
+methods: "Ensemble model aggregating forecasts from FluSight forecast hub models"
+data_inputs: "Weekly incident flu hospitalizations from HHS"
+methods_long: "Optim-WISE is an ensemble forecasting model that learns optimal weights for combining quantile forecasts from FluSight hub models by minimizing the Weighted Interval Score (WIS) over recent training weeks (upto 4 weeks). It uses optimization with regularization to ensure stable weights, producing a final probabilistic forecast tailored to each location and forecast horizon."
+ensemble_of_models: True
+ensemble_of_hub_models: True
