@@ -37,7 +37,7 @@ model_contributors: [
 ]
 website_url: "https://sites.google.com/site/mgcojocarumath/networks-and-dynamics-lab"
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 methods: "Composite of past epidemic curves"
 data_inputs: "target-hospital-admissions.csv"
 methods_long: "We produce a peak-aligned composite curve epidemic curves across past seasons and regions, normalizing the season for percent of cases each week, and then taking the median percentage across the resulting curves for each number of weeks from the peak, following the approach of Schanzer et al., Influenza and Other Respiratory Viruses 2010.   Then, for each state, we compute the normalized case count for the preceding four weeks, and compare against the normalized four week windows of the composite curve, following the approach of Morel et al. PLOS Computational Biology, 2023.  Revised from previous versions December 30, 2024.”
