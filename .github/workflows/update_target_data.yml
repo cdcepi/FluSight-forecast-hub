@@ -31,8 +31,8 @@ jobs:
         run: |
           install.packages(c("here", "cli", "tidyr", "readr", "dplyr", "lubridate", "devtools", "purrr", "jsonlite"))
         shell: Rscript {0}
-      #- name: Generate target csv files
-        #run:  Rscript target-data/get_target_data.R
+      - name: Generate target csv files
+        run:  Rscript target-data/get_target_data.R
       - name: Generate target csv files (with new hubverse flavor!)
         run:  Rscript target-data/get_target_data_hubverse.R
       - name: Commit changes and create PR 🚀
