@@ -1,0 +1,31 @@
+team_name: "LUcompUncertLab"
+team_abbr: "LUcompUncertLab"
+model_name: "puca"
+model_abbr: "puca"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "tom mcandrew",
+    "affiliation": "lehigh university",
+    "email": "mcandrew@lehigh.edu"
+  }
+]
+website_url: "https://compuncertlab.org/"
+license: "CC-BY-4.0"
+citation: "citation"
+team_funding: "None"
+methods: "Data-driven Reduced rank time series regression model"
+designated_model: true
+data_inputs: "Weekly flu hosps"
+methods_long: "Suppose you are given a TX(S-1) dataset Y of past incident flu hosps and a current, partially observed season y which when complete will be TX1. 
+Pre-process Y by smoothing with a Gaussian filter (sd =2). 
+Then, puca (poo-kah) is the following model
+Y = F @ P + U + errx
+y = (F @ Q + u )*s + c + erry 
+Where F is a TXL matrix of latent time series and L is strictly smaller than S-1.
+P is a LX(S-1) matrix and Q is a LX1 vector of weights for the columns in F. 
+U is a set of S-1 reverse random walks and u is a reverse random walk that are linked hierarchically.  
+errx is a N(0,sigma) and erry is a N(0,s*sigma) .
+"
+ensemble_of_models: false
+ensemble_of_hub_models: false
