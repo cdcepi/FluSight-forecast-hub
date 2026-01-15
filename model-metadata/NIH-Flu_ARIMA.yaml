@@ -6,8 +6,8 @@ model_version: "3.0"
 model_contributors: [
   {
     "name": "Amanda Perofsky",
-    "affiliation": "Fogarty International Center, National Institutes of Health",
-    "email": "amanda.perofsky@nih.gov"
+    "affiliation": "Northeastern University",
+    "email": "a.perofsky@northeastern.edu"
   },
   {
     "name": "Cécile Viboud",
