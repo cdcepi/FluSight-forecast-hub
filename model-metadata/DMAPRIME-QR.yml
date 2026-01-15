@@ -1,0 +1,21 @@
+team_name: "Center for Public Health Modeling and Response"
+team_abbr: "DMAPRIME"
+model_name: "Quantile Regression Nowcast-Forecast"
+model_abbr: "QR"
+model_contributors: [
+  {
+    "name": "Tanvir Ahammed",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "tahamme@g.clemson.edu"    }
+]
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: "CDC weekly flu hospital admissions (NHSN), EHR surveillance data (weekly flu test volumes, positive tests, inpatient hospitalizations)"
+methods: "Multi-quantile regression with recursive trend-based forecasting"
+methods_long: "A multi-quantile regression model that integrates real-time electronic health record (EHR) surveillance data with historical CDC hospitalization trends to generate probabilistic nowcasts and short-term forecasts. Key predictors include weekly flu test volumes, positive test counts, inpatient hospitalizations, and their week-over-week changes, alongside lagged CDC admission values and temporal features including seasonality indicators, holiday effects, and school break periods. For multi-week forecasts (0-3 weeks ahead), the model uses a recursive forecasting strategy where EHR predictors are projected forward based on recent 4-week trends, and previous predictions serve as lagged inputs for subsequent forecast horizons."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "1.0"
+website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
+team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
+backfill_adjustment: "false"
