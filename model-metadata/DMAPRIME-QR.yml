@@ -16,6 +16,6 @@ methods_long: "A multi-quantile regression model that integrates real-time elect
 ensemble_of_models: false
 ensemble_of_hub_models: false
 model_version: "1.0"
-website_url: ""  
+website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
-backfill_adjustment: false
+backfill_adjustment: "false"
