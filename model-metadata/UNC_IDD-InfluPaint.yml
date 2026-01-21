@@ -3,25 +3,27 @@ team_abbr: "UNC_IDD"
 model_name: "InfluPaint"
 model_abbr: "InfluPaint"
 model_version: "0.4"
-model_contributors: [
-  {
-    "name": "Joseph Lemaitre",
-    "affiliation": "University of North Carolina at Chapel Hill",
-    "email": "jo.lemaitresamra@gmail.com"
-  },
-  {
-    "name": "Justin Lessler",
-    "affiliation": "University of North Carolina at Chapel Hill",
-    "email": "jlessler@unc.edu"
-  },
-]
-website_url: "https://github.com/jcblemai/inpainting-idforecasts"
-repo_url: "https://github.com/jcblemai/inpainting-idforecasts"
+model_contributors:
+  [
+    {
+      "name": "Joseph Lemaitre",
+      "affiliation": "University of North Carolina at Chapel Hill",
+      "email": "jo.lemaitresamra@gmail.com",
+    },
+    {
+      "name": "Justin Lessler",
+      "affiliation": "University of North Carolina at Chapel Hill",
+      "email": "jlessler@unc.edu",
+    },
+  ]
+website_url: "https://github.com/ACCIDDA/influpaint"
+repo_url: "https://github.com/ACCIDDA/influpaint"
 license: "CC-BY_SA-4.0"
 designated_model: true
-team_funding: "J.L. and J.C.L. disclose support from the National Institutes of Health (NIH 5R01AI102939)."
+team_funding: "J.L. and J.C.L. disclose support from the National Institutes of Health (NIH 5R01AI102939) and the Insight Net cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics."
 methods: "A generative denoising diffusion probabilistic model of Influenza dynamics generates synthetic epidemic trajectories, conditioned on past ground-truth data using an inpainting algorithm."
-data_inputs: "inference on the target data only, but the machine learning model trained on Fluview and FlepiMoP projections for the US Flu Scenario modeling hub"
+data_inputs: "inference on the target data only, but the machine learning model trained on Fluview, FlepiMoP projections, and SMH projections for the US Flu Scenario modeling hub."
 methods_long: "We use a generative AI method, denoising diffusion probabilistic model (DDPMs), to generate epidemic trajectories (we treat influenza epidemic curves as images (axes are time and location, a pixel value is e.g incident hospitalization and stay close to the image generation literature). So our model account characterizes the uncertainty that exists in the space of possible flu trajectories. Spatial correlation is considered as all the features of the full images should be reproduced in our generated images. Then, we use the COPaint algorithm to inpaint the future from ground-truth data."
 ensemble_of_models: false
 ensemble_of_hub_models: false
+
