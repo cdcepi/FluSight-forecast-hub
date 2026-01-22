@@ -15,7 +15,7 @@ license: "CC-BY-4.0"
 citation: "citation"
 team_funding: "None"
 methods: "Mechmodel"
-designated_model: true
+designated_model: false
 data_inputs: "Weekly flu hosps, weekly ILI, weekly clinical labs, from FluView"
 methods_long: "2023-10-11: SEIRH model variant was fit bc KM27 model was not yet complete.
 2023-10-12: KM27 model is completed and ready for training/submission for the following week.
