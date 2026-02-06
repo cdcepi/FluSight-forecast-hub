@@ -1,0 +1,23 @@
+team_name: "CPHMR, Clemson University"
+team_abbr: "DMAPRIME"
+model_name: "Dynamic Linear Regression"
+model_abbr: "DLM"
+model_contributors: [
+  {
+    "name": "Md Sakhawat Hossain",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "mdsakhh@clemson.edu"    }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "CDC weekly flu hospital admissions (NHSN), Electronic Health Record (EHR) Data: Weekly positive tests, Weeklyinpatient hospitalizations"
+methods: "DLM Recursive Forecast Model with EHR Covariates"
+methods_long: "The Dynamic Linear Model (DLM) is a state-space time series model that captures evolving patterns through unobserved components including level, trend, and seasonality. Unlike static regression, DLM allows parameters to adapt over time via Kalman filtering, making it well-suited for modeling non-stationary disease dynamics. The model incorporates exogenous covariates such as lagged EHR positive tests, inpatient hospitalizations, and holiday indicators to enhance predictive accuracy for weekly influenza hospital admissions. EHR covariates from regional health systems serve as leading indicators. 
+The model employs a recursive multi-horizon forecasting strategy where a 1-step ahead model is iteratively applied to generate forecasts for h=0,1,2,3 (1-4 weeks ahead)."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "1.0"
+website_url: "https://github.com/mdsakhh/DMAPRIME_DLM_Forecast_Model_FluSight"  
+team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
+backfill_adjustment: "false"
+
