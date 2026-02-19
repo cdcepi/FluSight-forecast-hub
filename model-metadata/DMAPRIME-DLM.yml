@@ -6,7 +6,11 @@ model_contributors: [
   {
     "name": "Md Sakhawat Hossain",
     "affiliation": "Clemson University, South Carolina",
-    "email": "mdsakhh@clemson.edu"    }
+    "email": "mdsakhh@clemson.edu"    },
+    {
+    "name": "Amanda Bleichrodt",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "ambleic@clemson.edu"    }
 ]
 license: "CC-BY-4.0"
 designated_model: true
@@ -20,4 +24,6 @@ model_version: "1.0"
 website_url: "https://github.com/mdsakhh/DMAPRIME_DLM_Forecast_Model_FluSight"  
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
 backfill_adjustment: "false"
+
+
 
