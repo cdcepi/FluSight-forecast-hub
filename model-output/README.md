@@ -347,7 +347,7 @@ Every Thursday morning, we will generate a FluSight ensemble influenza hospital 
 In order to ensure that forecasting is done in real time, all forecasts are required to be submitted to this repository by 11PM ET on Wednesdays each week. We do not accept late forecasts.
 
 ## Evaluation criteria
-Forecasts will be evaluated using a variety of metrics, including weighted interval score (WIS) and its components and prediction interval coverage. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the COVID-19 Forecast Hub periodic [Forecast Evaluation Reports](https://covid19forecasthub.org/eval-reports/) provide examples of evaluations using these criteria.
+Forecasts will be evaluated using a variety of metrics, including weighted interval score (WIS) and its components and prediction interval coverage. The CMU [Delphi group's Forecast Evaluation Dashboard](https://delphi.cmu.edu/forecast-eval/) and the FluSight [Season Evaluations](https://www.cdc.gov/flu-forecasting/evaluation/index.html) provide examples of evaluations using these criteria. Models are eligible for inclusion in official end-of-season evaluations if they submit 75% of available targets for the hospital admission quantile forecasts (excluding the -1 horizon). Past evaluations have determined final rankings by calculating relative WIS using log-transformed data.
 
 Evaluation will use official data reported from data.cdc.gov as reported at the end or following the final forecast date (depending on data availability).
 
