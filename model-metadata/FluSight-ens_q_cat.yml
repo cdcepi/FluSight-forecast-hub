@@ -1,7 +1,7 @@
 team_name: "FluSight-ens_q_cat"
 team_abbr: "FluSight"
 model_name: "Reference model translating FluSight-ensemble quantile forecasts to pmf"
-model_abbr: "q_ens_cat"
+model_abbr: "ens_q_cat"
 model_version: "1.0"
 model_contributors: [
   {
