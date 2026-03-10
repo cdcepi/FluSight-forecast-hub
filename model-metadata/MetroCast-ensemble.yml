@@ -19,6 +19,7 @@ license: "CC-BY-4.0"
 designated_model: true
 data_inputs: "Using latest_data.csv from MetroCast Hub.  ILI NYC ED Visits, we exclude two seasons (20/21 and 21/22) and partial from the 19/20 season (removing data after March 2020)"
 methods: "An equally weighted mean ensemble that takes the mean at each quantile level of all eligible forecasts."
+methods_long: "An equally weighted mean ensemble that takes the mean at each quantile level of all eligible forecasts."
 ensemble_of_models: true
 ensemble_of_hub_models: true
 website_url: "https://hubverse-org.github.io/hubEnsembles/articles/hubEnsembles.html"
