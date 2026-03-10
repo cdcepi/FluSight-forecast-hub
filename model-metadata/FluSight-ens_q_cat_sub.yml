@@ -1,7 +1,7 @@
-team_name: "FluSight-ens_q_cat"
+team_name: "FluSight-ens_q_cat_sub"
 team_abbr: "FluSight"
-model_name: "Reference model translating FluSight-ensemble quantile forecasts to pmf"
-model_abbr: "ens_q_cat"
+model_name: "Reference model translating a subset of FluSight-ensemble quantile forecasts to pmf"
+model_abbr: "ens_q_cat_sub"
 model_version: "1.0"
 model_contributors: [
   {
@@ -23,14 +23,19 @@ model_contributors: [
     "name": "Evan Ray",
     "affiliation": "UMass Amherst",
     "email": "elray@umass.edu"
+  },
+    {
+    "name": "Annabella Hines",
+    "affiliation": "CDC",
+    "email": "zoh1@cdc.gov"
   }
 ]
 website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
 license: "CC-BY-4.0"
 designated_model: false
-methods: "Simple reference model translating FluSight ensemble quantile forecasts to pmf."
+methods: "Simple reference model translating a subset of quantile forecasts to pmf."
 data_inputs: "None"
-methods_long: "Simple reference model translating FluSight ensemble quantile forecasts to pmf using a customized version of a function to translate quantile forecasts to pmf forecasts."
+methods_long: "Categorical trend probabilities are determined from a quantile ensemble of forecasts for the subset of models that also submitted categorical targets."
 
 ensemble_of_models: false
 ensemble_of_hub_models: false
