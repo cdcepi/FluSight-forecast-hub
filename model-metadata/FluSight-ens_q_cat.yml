@@ -30,7 +30,7 @@ license: "CC-BY-4.0"
 designated_model: false
 methods: "Simple reference model translating FluSight ensemble quantile forecasts to pmf."
 data_inputs: "None"
-methods_long: "Simple reference model translating FluSight ensemble quantile forecasts to pmf using a customized version of a function to translate quantile forecasts to pmf forecasts."
+methods_long: "Categorical trend probabilities are determined from FluSight ensemble quantile forecasts."
 
 ensemble_of_models: false
 ensemble_of_hub_models: false
