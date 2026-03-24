@@ -1,0 +1,30 @@
+team_name: "FluSight-dist_cat"
+team_abbr: "FluSight"
+model_name: "Baseline model with fixed distribution probabilities for each rate-trend category"
+model_abbr: "dist_cat"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Rebecca Borchering",
+    "affiliation": "CDC",
+    "email": "xhq2@cdc.gov"
+  },
+    {
+    "name": "Sarabeth Mathis",
+    "affiliation": "CDC",
+    "email": "nqr2@cdc.gov"
+  },
+    {
+    "name": "Annabella Hines",
+    "affiliation": "CDC",
+    "email": "zoh1@cdc.gov"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Simple baseline model that assigns a fixed probability distribution to each rate-trend category for every jurisdiction and horizon."
+data_inputs: "None"
+methods_long: "Simple baseline model that assigns a fixed probability distribution to each rate-trend category for every jurisdiction and horizon, with probabilities remaining constant across weeks. Specifically, the model assigns probabilities of 0.05 (large decrease), 0.20 (decrease), 0.50 (stable), 0.20 (increase), and 0.05 (large increase)."
+ensemble_of_models: false
+ensemble_of_hub_models: false
