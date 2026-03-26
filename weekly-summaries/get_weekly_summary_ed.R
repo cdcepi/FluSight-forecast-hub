@@ -108,7 +108,7 @@ all_forecasts_data <- all_forecasts_data[
 
 # output folder and file paths for All Forecasts
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries/ED", ref_date)
-output_filename <- paste0(ref_date, "_flu_forecasts_data.csv")
+output_filename <- paste0(ref_date, "_flu_forecasts_data_ed.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -281,7 +281,7 @@ map_data <-forecasttools::pivot_hubverse_quantiles_wider(
 
 # output folder and file paths for Map Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries/ED", ref_date)
-output_filename <- paste0(ref_date, "_flu_map_data.csv")
+output_filename <- paste0(ref_date, "_flu_map_data_ed.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
@@ -335,7 +335,7 @@ truth_data <- flu_data |>
   )
 # output folder and file paths for Truth Data
 output_folder_path <- fs::path(base_hub_path, "weekly-summaries/ED", reference_date)
-output_filename <- paste0(reference_date, "_flu_target_visit_data.csv")
+output_filename <- paste0(reference_date, "_flu_target_ed_visit_data.csv")
 output_filepath <- fs::path(output_folder_path, output_filename)
 
 # determine if the output folder exists, 
