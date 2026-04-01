@@ -25,6 +25,7 @@ base_hub_path <- paste0("C:/Users/", Sys.info()["user"], "/Desktop/GitHub/FluSig
 eligible_models = read.csv(paste0("C:/Users/",Sys.info()["user"],"/Desktop/GitHub/Flusight-ensemble/Model Inclusion/models-to-include-in-ensemble-", ref_date, ".csv"), header = TRUE)
 #eligible_models = as.character(eligible_models$Model)
 eligible_models <- c(as.character(eligible_models$Model), "CFA_Pyrenew-Pyrenew_E_Flu")
+eligible_models <- eligible_models[eligible_models != "CFA_Pyrenew-Pyrenew_HE_Flu"]
 
 # create model metadata path
 model_metadata <- hubData::load_model_metadata(
