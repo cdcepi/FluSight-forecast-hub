@@ -45,6 +45,6 @@ data_inputs: "Daily and weekly incident flu hospitalizations from HHS"
 methods_long: "This is a US national and state-level multi-method model
   forecasting the new influenza hospitalizations. Multiple methods include
   ARIMA (optimized for length of observed data), exponential smoothing (optimized for length of observed data), LSTM model, Kalman filter, and
-  piecewise-linear approximation model for trend projection. The model forecasts are combined using Bayesian model averaging, mean-, or median-based ensembling strategies."
+  piecewise-linear approximation model for trend projection. The model forecasts are combined using OptimWISE, mean-, or median-based ensembling strategies. The models are trained using backfilled influenza hospitalization data." 
 ensemble_of_models: true
 ensemble_of_hub_models: false
