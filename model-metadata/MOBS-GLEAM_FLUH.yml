@@ -30,7 +30,7 @@ model_contributors: [
       "email": "lewinter.r@northeastern.edu"
     },
 ]
-website_url: "https://www.mobs-lab.org/"
+website_url: "https://www.mobslab.org/"
 license: "CC-BY_SA-4.0"
 designated_model: true
 citation: "https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf"

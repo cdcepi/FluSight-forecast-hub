@@ -40,7 +40,7 @@ model_contributors: [
     "email": "moghaddas.n@northeastern.edu"
   },
 ]
-website_url: "https://www.mobs-lab.org/"
+website_url: "https://www.mobslab.org/"
 license: "CC-BY_SA-4.0"
 designated_model: true
 citation: "https://doi.org/10.1371/journal.pcbi.1013735"

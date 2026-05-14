@@ -43,7 +43,7 @@ model_contributors: [
 ]
 
 
-website_url: "https://www.mobs-lab.org/"  
+website_url: "https://www.mobslab.org/"  
 license: "CC-BY_SA-4.0"
 designated_model: true
 citation: " "  

@@ -1,0 +1,27 @@
+team_name: "CPHMR, Clemson University"
+team_abbr: "DMAPRIME"
+model_name: "Hybrid CNN-LSTM"
+model_abbr: "HYB"
+model_contributors: [
+  {
+    "name": "Jiande Wu",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "jiandew@clemson.edu"
+  },
+  {
+  "name": "Amanda Bleichrodt",
+  "affiliation": "Clemson University, South Carolina",
+  "email": "ambleic@clemson.edu"    
+  }
+]
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: "CDC weekly flu hospital admissions (NHSN), Prisma Health EHR surveillance data (weekly positive tests, weekly inpatient hospitalizations, total encounters)"
+methods: "Hybrid Parallel CNN-LSTM with Multi-Head Temporal Attention"
+methods_long: "A hybrid deep learning architecture designed for probabilistic 1-4 week ahead influenza forecasting in South Carolina. The model features a parallel Inception-style Convolutional Neural Network (CNN) with multi-scale kernels (sizes 3 and 5) to capture both short-term weekly jitter and longer-term monthly trends. These spatial-temporal features are processed by a Bidirectional Long Short-Term Memory (Bi-LSTM) network to model complex temporal dependencies. The architecture incorporates dual Multi-Head Temporal Attention mechanisms—specifically focusing on magnitude and phase alignment—to minimize temporal lag and accurately anticipate surges. To handle the right-skewed nature of influenza surges, the model employs log-transformed target variables and optimized probabilistic quantile decoding. Training is robustly regularized using Gaussian noise augmentation, AdamW optimization with weight decay, and a custom Phase-Alignment Loss that penalizes directional forecasting errors. Forecasts are generated for 23 quantiles to provide a complete probabilistic distribution across a 4-week horizon."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+model_version: "2.0"
+website_url: "https://github.com/DMA-PRIME/FluSight-HYB"
+team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."
+backfill_adjustment: "false"
