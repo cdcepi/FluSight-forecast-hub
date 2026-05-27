@@ -13,7 +13,7 @@ jobs:
   validate-submission:
     runs-on: ubuntu-22.04
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ github.token }}
 
     steps:
       - uses: actions/checkout@v4
