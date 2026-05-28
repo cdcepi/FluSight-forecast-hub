@@ -1,5 +1,5 @@
 reference_date,target,horizon,location,output_type,output_type_id,value,target_end_date
-2026-05-30,wk inc flu hosp,-1,US,quantile,0.01,707,2026-05-23
+2026-05-30,wk inc flu hosp,-1,US,quantile,0.01,708,2026-05-23
 2026-05-30,wk inc flu hosp,-1,US,quantile,0.025,770,2026-05-23
 2026-05-30,wk inc flu hosp,-1,US,quantile,0.05,826,2026-05-23
 2026-05-30,wk inc flu hosp,-1,US,quantile,0.1,888,2026-05-23
