@@ -34,6 +34,7 @@ jobs:
           packages: |
            any::hubValidations
            any::sessioninfo
+           github::r-lib/gh
            
       - name: Run validations
         env:
