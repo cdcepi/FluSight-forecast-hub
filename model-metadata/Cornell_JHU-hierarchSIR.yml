@@ -34,13 +34,13 @@ model_contributors: [
     "orcid": "0000-0001-8851-4329"
   }  
 ]
-website_url: "https://github.com/twallema"
+website_url: "https://doi.org/10.64898/2026.05.19.26353597"
 repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-hierarchSIR"
 license: "CC-BY_SA-4.0"
-designated_model: true
+designated_model: false
 ensemble_of_models: false
 ensemble_of_hub_models: false
-data_inputs: "NHSN HRD dataset new Influenza hospitalisations. Trained on: 2023-2024, 2024-2025. No ED visits data were used."
+data_inputs: "NHSN HRD dataset new Influenza hospitalisations (since 2023-2024). No ED visits data were used."
 backfill_adjustment: "A generalized Dirichlet—multinomial reporting model formulated as a sequential beta-binomial survival process. Reporting completeness was estimated from a four-week rolling window of past revisions to reduce noise while allowing for gradual reporting regime shifts. We formulated posterior means in closed form by exploiting prior conjugacy, therein avoiding sampling to improve operational robustness."
 methods: "A mechanistic SIR model with a splined transmission coefficient wrapped in a Bayesian hierarchical (across-season) statistical model."
 methods_long: "A single-strain SIR model with unknown R0, case ascertainment, immunity and a splined transmission coefficient is used to model the dynamics of influenza. Across-season trends ('hyperparameters') in the SIR parameters are derived by wrapping it in an across-season Bayesian hierarchical model. Hyperparameters are used as priors when forecasting the current season. Disease model integrated in C++ and bound to Python with pybind11, Bayesian hierarchical posterior probability coded in raw Python and sampled using the ensemble sampler of Goodman and Weare available in `emcee` (motivation: robust due to affine invariance). Workflow automatically pulls NHSN HRD data through a timed GH actions and deploys it on a local runner (Dell Optiplex 3050 Micro running Ubuntu Server). Average time from data pull to forecast ready: 3 hours."
