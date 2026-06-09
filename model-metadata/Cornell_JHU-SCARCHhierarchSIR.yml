@@ -1,0 +1,29 @@
+team_name: "Cornell_JHU"
+team_abbr: "Cornell_JHU"
+model_name: "SCARCHhierarchSIR"
+model_abbr: "SCARCHhierarchSIR"
+model_contributors: [
+  {
+    "name": "Tijs W. Alleman",
+    "affiliation": "Cornell University, Ghent University (former JHU)",
+    "email": "twa27@cornell.edu",
+    "orcid": "0000-0002-1751-3801"
+  },
+  {
+    "name": "Ana I. Bento",
+    "affiliation": "Cornell University",
+    "email": "arb24@cornell.edu",
+    "orcid": "0000-0001-8851-4329"
+  }  
+]
+website_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarchSIR/blob/main/model_description.pdf"
+repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarchSIR"
+license: "CC-BY_SA-4.0"
+designated_model: true
+ensemble_of_models: false
+ensemble_of_hub_models: false
+data_inputs: "NHSN HRD dataset new Influenza hospitalisations (since 2023-2024). No ED visits data were used."
+backfill_adjustment: "A generalized Dirichlet—multinomial reporting model formulated as a sequential beta-binomial survival process. Reporting completeness was estimated from a four-week rolling window of past revisions to reduce noise while allowing for gradual reporting regime shifts. We formulated posterior means in closed form by exploiting prior conjugacy, therein avoiding sampling to improve operational robustness."
+methods: "A mechanistic SIR model with a spatially-correlated (SC), autogressive (AR), conditionally heteroskedastic (CH) transmission coefficient wrapped in a Bayesian hierarchical (across-season) statistical model."
+methods_long: "A single-strain SIR model with unknown case ascertainment, immunity and a spatially-correlated (SC), autogressive (AR), conditionally heteroskedastic (CH) transmission coefficient is used to simulate the dynamics of influenza. Across-season trends ('hyperparameters') in the SIR model's parameters are derived by wrapping it in an across-season Bayesian hierarchical model. Hyperparameters are used as priors when forecasting the current season. Disease model integrated in jax (diffrax), Bayesian hierarchical posterior probability coded in pyMC v6 and sampled using the No U-Turn Sampler (NUTS). Workflow automatically starts on a cron by pulling NHSN HRD data, backfilling it, and then deploying the forecasting algorithm on a local runner."
+team_funding: "MIDAS Coordination Center (NIGMS grant R24GM15392)"
