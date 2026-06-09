@@ -1,7 +1,7 @@
 team_name: "Cornell_JHU"
 team_abbr: "Cornell_JHU"
-model_name: "SCARCHhierarchSIR"
-model_abbr: "SCARCHhierarchSIR"
+model_name: "SCARCHhierarSIR"
+model_abbr: "SCARCHhierarSIR"
 model_contributors: [
   {
     "name": "Tijs W. Alleman",
@@ -16,8 +16,8 @@ model_contributors: [
     "orcid": "0000-0001-8851-4329"
   }  
 ]
-website_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarchSIR/blob/main/model_description.pdf"
-repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarchSIR"
+website_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarSIR/blob/main/model_description.pdf"
+repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarSIR"
 license: "CC-BY_SA-4.0"
 designated_model: true
 ensemble_of_models: false
