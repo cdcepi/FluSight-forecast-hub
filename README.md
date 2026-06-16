@@ -1,7 +1,8 @@
 # FluSight 2025-2026
 This repository is designed to collect forecast data for the 2025-2026 FluSight collaborative exercise run by the US CDC. This project collects forecasts for weekly new hospital admissions and proportion of emergency department visits due to confirmed influenza. Anyone interested in using these data for additional research or publications is requested to contact flusight@cdc.gov for information regarding attribution of the source forecasts.
 
-**Note for retrospective forecasters**: the performance on finalized data (or data as it appears after the season is over), is significantly better than performance on versioned data as it was at the time, up to 15% in some tests. You should restrict your training set for a forecast to data as it was on that report date. See [below](#accessing-flusight-data-on-the-cloud) for how to obtain historical releases.
+> [!WARNING]
+> **Note for retrospective forecasters**: the performance on finalized data (or data as it appears after the season is over), is significantly better than performance on versioned data as it was at the time, up to 15% in some tests. You should restrict your training set for a forecast to data as it was on that report date. See [below](#accessing-flusight-data-on-the-cloud) for how to obtain historical releases.
 
 ## Nowcasts and Forecasts of Confirmed Influenza Hospital Admissions During the 2025-2026 Influenza Season
 
