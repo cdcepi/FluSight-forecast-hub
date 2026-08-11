@@ -5,7 +5,8 @@ on:
     paths:
       - '.github/workflows/cache-deps.yaml'
   schedule:
-    - cron: "10 16 * * *"
+    - cron: "10 12 * * *"
+      timezone: "America/New_York"
 
 jobs:
   build-deps-cache-on-main:
