@@ -12,3 +12,18 @@ default:
         args:
           targets: !expr list(target = 'wk inc flu hosp')
           popn_file_path: "auxiliary-data/locations.csv"
+      max_prop_ed_visits:
+        fn: "cstm_check_tbl_value_max"
+        source: "src/validations/R/cstm_check_tbl_value_max.R"
+        args:
+          targets: !expr list(target = 'wk inc flu prop ed visits')
+          output_types: !expr c('quantile')
+          max_value: 0.25
+      max_hosp_popn_frac:
+        fn: "cstm_check_tbl_value_max_popn_frac"
+        source: "src/validations/R/cstm_check_tbl_value_max.R"
+        args:
+          targets: !expr list(target = 'wk inc flu hosp')
+          output_types: !expr c('quantile')
+          popn_frac: 0.3
+          popn_file_path: "auxiliary-data/locations.csv"
