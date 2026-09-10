@@ -56,7 +56,7 @@ Details on how data target data are defined can be found in the
 
 ## Data formatting 
 
-The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting. For the 2025-2026 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 3.0.1 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
+The automatic checks in place for forecast files submitted to this repository validates both the filename and file contents to ensure the file can be used in the visualization and ensemble forecasting. For the 2026-2027 FluSight Collaboration, minor modifications to previous file formatting procedures will be made to align submissions with Hubverse protocols being developed by the Consortium of Infectious Disease Modeling Hubs version 6.0.0 (see https://github.com/hubverse-org and https://hubverse.io/en/latest/ for additional information). The required formatting is described in detail below.
 
 ### Subdirectory
 
@@ -85,9 +85,9 @@ The metadata file will be saved within the model-metdata directory in the Hub's 
       team-model.yml
 
 Details on the content and formatting of metadata files are provdided in the [model-metadata README](https://github.com/cdcepi/FluSight-forecast-hub/blob/master/model-metadata/README.md).
-Note that returning teams should update the metadata file provided during the 2024-2025 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
+Note that returning teams should update the metadata file provided during the 2025-2026 season to document any changes that have been made to their model as well as to match updated content requirements. In general, teams may designate up to two models for inclusion in the ensemble provided that they differ substantially in methodology and do not differ in parameter values alone. Please send an email to flusight@cdc.gov if you would like to submit more than two methodologically distinct models for inclusion in the ensemble. This email should provide evidence of out of sample performance assessment and/or a statement of differences between the proposed forecast models to justify inclusion in the ensemble.
 
-Updates to the metadata files for the 2025-2026 season include the addition  of an optional “backfill adjustment” field. Teams should include this field if their model has a specific method to account for subsequent updates to the observed data. 
+Updates to the metadata files for the 2026-2027 season include the addition of the two optional fields. The baseline_model field specifies whether a model is a baseline model (TRUE or FALSE). Models with baseline_model = TRUE should not be designated for inclusion in the ensemble. The other optional field added this season is “designated_targets”. Teams can use this field to specify the target(s) for which a designated model should be considered for inclusion in the ensemble. By default, if designated_model is TRUE, the model’s forecasts will be considered for inclusion in the ensemble for all targets submitted by that model. For example, to limit inclusion consideration to weekly incident hospital admissions and ED visit percentages: designated_targets: [“wk inc flu hosp”, “wk inc flu prop ed visits”]. 
 
 ### Forecasts
 
@@ -150,7 +150,7 @@ the following specific targets:
 -   `peak week inc flu hosp`
 -   `peak inc flu hosp`
   
-For samples, this should be `wk inc flu hosp`. 
+For samples, this should be `wk inc flu hosp` or `wk inc flu prop ed visits`.
 
 
 ### `horizon`
@@ -181,7 +181,7 @@ Values in the `output_type` column are either
 -   `pmf`
 -   `sample`
 
-This value indicates whether that row corresponds to a quantile forecast for incident hospital admissions, proportion of emergency department visits, or peak hospital admissions, a probability mass function (pmf) for categorical rate-trend forecasts or peak week, or a sample for incident hospital admission trajectories. Quantile forecasts are used in visualizations and to construct the primary FluSight ensemble. 
+This value indicates whether that row corresponds to a quantile forecast for incident hospital admissions, proportion of emergency department visits, or peak hospital admissions, a probability mass function (pmf) for categorical rate-trend forecasts or peak week, or a sample for incident hospital admission or ED visit trajectories. Quantile forecasts are used in visualizations and to construct the primary FluSight ensemble. 
 
 ### `output_type_id`
 Values in the `output_type_id` column specify identifying information for the output type.
@@ -211,50 +211,50 @@ np.append(np.append([0.01,0.025],np.arange(0.05,0.95+0.05,0.05)),
 For rate change forecasts, the output_type_id indicates the category that the predicted probability of occurrence should be associated with. Teams should provide the following categories:
 "large_increase", "increase", "stable", "decrease" and "large_decrease". Please see Appendix 1: rate-trend forecast specifications for details on how each category is defined. Note that thresholds between categories differ from those used in the 2023-2024 season and that new threshold values have been added.
 
-For the peak week target, the `output_type_id` should specify the last Saturday of each epidemic week in the season (2025-11-22 to 2026-05-23) in ISO format: YYYY-MM-DD.
+For the peak week target, the `output_type_id` should specify the last Saturday of each epidemic week in the season (2026-10-10 to 2026-05-29) in ISO format: YYYY-MM-DD.
 
 #### sample output
 
-For sample forecasts (trajectories), the output_type_id indicates which sample a set of predictions should be considered a part of. Please see related [Hubverse documentation](https://hubverse.io/en/latest/user-guide/sample-output-type.html) for examples. Here, a sample is a draw from a joint distribution for flu hospital admissions across multiple prediction horizons, showing the possible value of hospital admissions on each target date. The values for a single sample will be included in different rows of a submission file, corresponding to the different prediction horizons and target dates; the shared output_type_id across those rows allows us to link those values into a single sample trajectory.
+For sample forecasts (trajectories), the output_type_id indicates which sample a set of predictions should be considered a part of. Please see related [Hubverse documentation](https://hubverse.io/en/latest/user-guide/sample-output-type.html) for examples. Here, a sample is a draw from a joint distribution for flu hospital admissions or ED visit percentages across multiple prediction horizons, showing the possible value of hospital admissions or ED visit percentages on each target date. The values for a single sample will be included in different rows of a submission file, corresponding to the different prediction horizons and target dates; the shared output_type_id across those rows allows us to link those values into a single sample trajectory.
 
 For sample trajectories that are generated separately for each location, one valid way to set up output_type_id values would be to concatenate the two letter code for the location of the sample (e.g., MA) ad a two digit number identifying the sample index within that location. Since 100 samples are being collected for each trajectory, these numeric indices will be “00”, “01, … “99”, resulting in output_type_ids of MA00, MA01, …, MA 99. Each of those output_type_id values would appear across a set of rows in the submission file corresponding to different prediction horizons for MA. Similarly, for Florida forecasts, `output_type_id` values could be specified as FL00, … FL99. 
 
-As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a sample are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will only collect samples for the `wk inc flu hosp` target.
+As indicated in the [FluSight-forecast-hub/hub-config/tasks.json](https://github.com/cdcepi/FluSight-forecast-hub/blob/main/hub-config/tasks.json) file, the components defining a sample are the “reference_date”, “location”, and “target”. Within each sample, these row elements will be repeated and then there will be a value associated with each horizon (-1, 0, 1, 2, 3) corresponding to a single run/connected trajectory.  We will collect samples for the `wk inc flu hosp` and `wk inc flu prop ed visits` targets.
 
 National forecasts can be provided as samples with the output_type_id values of US00, US01, … US99. National-level samples should only be provided if these forecasts are either jointly determined across all states, capturing dependence across locations, or if the national target is modeled directly, i.e., is not the sum of separately generated state-level forecasts.  
 
 ### `value`
 
-Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2025-2026 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts(`wk flu hosp rate change`) and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For the emergency department visit proportion target (`wk inc flu prop ed visits`), values should be between 0 and 1 (inclusive). For samples, this will be an integer value corresponding to a particular sample for a hospital admission forecast. Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. Values for samples should be integers greater than equal to 0.
+Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2026-2027 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts(`wk flu hosp rate change`) and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For the emergency department visit proportion target (`wk inc flu prop ed visits`), values should be between 0 and 1 (inclusive). For samples, each value will correspond to a particular sample for either a hospital admission or ED visit forecast. Sample values for hospital admissions should be integers greater than or equal to 0, while sample values for the ED visit proportion target should be between 0 and 1 (inclusive). Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. 
 
 ### Example tables
 
 **Table 1:** the reference date, target end dates, and the dates
 included in the predicted EW for an example of the weekly hospital
-admissions target with a reference date of Saturday, October 18, 2025.
+admissions target with a reference date of Saturday, October 17, 2026.
 
 | reference_date | horizon | target_end_date | target EW | target EW dates covered  |
 |:---------------|:--------|:----------------|:----------|:-------------------------|
-| 2025-10-18     | -1      | 2025-10-11      | 41        | 2025-10-05 to 2025-10-11 |
-| 2025-10-18     | 0       | 2025-10-18      | 42        | 2025-10-12 to 2025-10-18 |
-| 2025-10-18     | 1       | 2025-10-25      | 43        | 2025-10-19 to 2025-10-25 |
-| 2025-10-18     | 2       | 2025-11-01      | 44        | 2025-10-26 to 2025-11-01 |
-| 2025-10-18     | 3       | 2025-11-08      | 45        | 2025-11-02 to 2025-11-08 |
+| 2026-10-17     | -1      | 2026-10-10      | 40        | 2026-10-04 to 2026-10-10 |
+| 2026-10-17     | 0       | 2026-10-17      | 41        | 2026-10-11 to 2026-10-17 |
+| 2026-10-17     | 1       | 2026-10-24      | 42        | 2026-10-18 to 2026-10-24 |
+| 2026-10-17     | 2       | 2026-10-31      | 43        | 2026-10-25 to 2026-10-31 |
+| 2026-10-17     | 3       | 2026-11-07      | 44        | 2026-11-01 to 2026-11-07 |
 
 
 **Table 2:** the reference date, target end dates, and the dates
 included in the predicted EW for an example of the rate trend target
-with a reference date of Saturday, October 18, 2025. The rate trend
+with a reference date of Saturday, October 17, 2026. The rate trend
 target describes differences in the hospital admission rate between the
 baseline EW (one week prior to the EW of the reference date) and the
 target EW.
 
 | reference_date | horizon | target_end_date | target EW | target EW dates covered  | baseline EW | baseline EW dates covered |
 |:---------------|:--------|:----------------|:----------|:-------------------------|:------------|:--------------------------|
-| 2025-10-18     | 0       | 2025-10-18      | 42        | 2025-10-12 to 2025-10-18 | 41          | 2025-10-05 to 2025-10-11  |
-| 2025-10-18     | 1       | 2025-10-25      | 43        | 2025-10-19 to 2025-10-25 | 41          | 2025-10-05 to 2025-10-11  |
-| 2025-10-18     | 2       | 2025-11-01      | 44        | 2025-10-26 to 2025-11-01 | 41          | 2025-10-05 to 2025-10-11  |
-| 2025-10-18     | 3       | 2025-11-08      | 45        | 2025-11-02 to 2025-11-08 | 41          | 2025-10-05 to 2025-10-11  |
+| 2026-10-17     | 0       | 2026-10-17      | 41        | 2026-10-11 to 2026-10-17 | 40          | 2026-10-04 to 2026-10-10  |
+| 2026-10-17     | 1       | 2026-10-24      | 42        | 2026-10-18 to 2026-10-24 | 40          | 2026-10-04 to 2026-10-10  |
+| 2026-10-17     | 2       | 2026-10-31      | 43        | 2026-10-25 to 2026-10-31 | 40          | 2026-10-04 to 2026-10-10  |
+| 2026-10-17     | 3       | 2026-11-07      | 44        | 2026-11-01 to 2026-11-07 | 40          | 2026-10-04 to 2026-10-10  |
 
 
 ## Forecast validation 
@@ -270,6 +270,8 @@ present in [the hubValidations
 package](https://github.com/Infectious-Disease-Modeling-Hubs/hubValidations). The
 intent for these tests are to validate the requirements above. Please
 [let us know](https://github.com/cdcepi/FluSight-forecast-hub/issues) if you are facing issues while running the tests.
+
+New forecast plausibility checks have been included in pull request validations. The quantile forecasts will now be checked against target-specific upper bounds of 30% of the jurisdiction population for hospital admissions and 25% for ED visit percentages. Validation errors will be displayed as a comment on the PR, and additional plausibility checks may be added throughout the season. These are meant to check for unreasonable forecasts, but can be overridden at the discretion of the FluSight team.
 
 ### Local forecast validation
 
