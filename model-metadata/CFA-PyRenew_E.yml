@@ -1,7 +1,7 @@
-team_name: "Center for Forecasting and Outbreak Analytics (CFA/CDC) Pyrenew team"
-team_abbr: "CFA_Pyrenew"
-model_name: "Pyrenew_Hospital_Admissions_ED_Visits_Influenza"
-model_abbr: "Pyrenew_HE_Flu"
+team_name: "Center for Forecasting and Outbreak Analytics (CDC/CFA)"
+team_abbr: "CFA"
+model_name: "PyRenew-E"
+model_abbr: "PyRenew_E"
 model_version: "0.1.0"
 model_contributors: [
   {
@@ -37,10 +37,10 @@ model_contributors: [
 ]
 
 license: "CC-BY-4.0"
-designated_model: true
-methods: "Renewal model using the Pyrenew-HEW framework fit jointly to two epidemiological signals: hospital admissions and emergency department visits."
-data_inputs: "Epiweekly incident Influenza hospital admissions from NHSN HRD via data.cdc.gov. Daily incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
-methods_long: "Renewal model fit to two signals and used to forecast the target (NHSN HRD) signal."
+designated_model: false
+methods: "Renewal model using the PyRenew-HEW framework fit to emergency department visits."
+data_inputs: "Daily incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
+methods_long: "Renewal model fit to emergency department visits and used to forecast proportion of ed visits target (NSSP) signal."
 website_url: "https://github.com/cdcgov/pyrenew-hew"
 repo_url: "https://github.com/cdcgov/pyrenew-hew"
 ensemble_of_models: false
