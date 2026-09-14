@@ -6,32 +6,32 @@ model_version: "0.1.0"
 model_contributors: [
   {
     "name": "Damon M. Bayer",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "xum8@cdc.gov"
   },
   {
     "name": "George Vega Yon",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "xrd4@cdc.gov"
   },
   {
     "name": "Samuel Brand",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "usi1@cdc.gov"
   },
   {
     "name": "Subekshya Bidari",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "zib2@cdc.gov"
   },
   {
     "name": "Trevor Martin",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "upx3@cdc.gov"
   },
   {
     "name": "Dylan H. Morris",
-    "affiliation": "CFA/CDC",
+    "affiliation": "CDC/CFA",
     "email": "dzl1@cdc.gov"
   }
 ]
