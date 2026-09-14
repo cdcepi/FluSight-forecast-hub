@@ -41,7 +41,7 @@ designated_model: false
 methods: "Basic renewal model using the PyRenew-HEW framework."
 data_inputs: "Epiweekly incident influenza hospital admissions from NHSN HRD via data.cdc.gov."
 methods_long: "Simple renewal model fit only to the target signal. Used to benchmark related multi-signal models the same framework with additional observables. This is the renamed successor to model ID `CFA_Pyrenew-Pyrenew_H_Flu`; historical submissions retain that identifier."
-website_url: "https://github.com/cdcgov/pyrenew-hew"
-repo_url: "https://github.com/cdcgov/pyrenew-hew"
+website_url: "https://github.com/CDCgov/pyrenew-multisignal"
+repo_url: "https://github.com/CDCgov/pyrenew-multisignal"
 ensemble_of_models: false
 ensemble_of_hub_models: false

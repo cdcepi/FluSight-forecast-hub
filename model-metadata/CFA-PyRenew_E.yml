@@ -41,7 +41,7 @@ designated_model: false
 methods: "Renewal model using the PyRenew-HEW framework fit to emergency department visits."
 data_inputs: "Daily incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
 methods_long: "Renewal model fit to emergency department visits and used to forecast proportion of ed visits target (NSSP) signal. This is the renamed successor to model ID `CFA_Pyrenew-Pyrenew_E_Flu`; historical submissions retain that identifier."
-website_url: "https://github.com/cdcgov/pyrenew-hew"
-repo_url: "https://github.com/cdcgov/pyrenew-hew"
+website_url: "https://github.com/CDCgov/pyrenew-multisignal"
+repo_url: "https://github.com/CDCgov/pyrenew-multisignal"
 ensemble_of_models: false
 ensemble_of_hub_models: false
