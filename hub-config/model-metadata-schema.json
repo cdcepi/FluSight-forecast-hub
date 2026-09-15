@@ -113,7 +113,27 @@
         "backfill_adjustment": {
             "description": "A description of any adjustments made to the real time data to account for potential changes due to backfill",
             "type": "string"
-        }
+        },
+        "baseline_model": {
+            "description": "Indicator for whether this model is a baseline model",
+            "type": "boolean"
+        },
+        "designated_targets": {
+             "description": "Optional list of target names for which this model is designated. When present, 'designated_model=true' applies only to listed targets. When absent, a designated model is eligible for every target it submits.",
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "wk inc flu hosp",
+                      "wk inc flu prop ed visits",
+                      "wk flu hosp rate change",
+                      "peak week inc flu hosp",
+                      "peak inc flu hosp"  
+                    ]
+                  },
+                "minItems": 1,
+                "uniqueItems": true
+             }
     },
     "additionalProperties": false,
     "required": [
