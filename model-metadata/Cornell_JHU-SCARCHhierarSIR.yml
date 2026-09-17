@@ -10,11 +10,23 @@ model_contributors: [
     "orcid": "0000-0002-1751-3801"
   },
   {
+    "name": "Neha Shanker",
+    "affiliation": "North Carolina Department of Health and Human Services, Division of Public Health",
+    "email": "neha.shanker@dhhs.nc.gov",
+    "orcid": "0009-0008-6935-5199"
+  },    
+  {
     "name": "Ana I. Bento",
     "affiliation": "Cornell University",
     "email": "arb24@cornell.edu",
     "orcid": "0000-0001-8851-4329"
-  }  
+  },  
+  {
+    "name": "Alison L. Hill",
+    "affiliation": "University of Toronto (former JHU)",
+    "email": "alison.hill@utoronto.ca",
+    "orcid": "0000-0002-6583-3623"
+  },
 ]
 website_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarSIR/blob/main/model_description.pdf"
 repo_url: "https://github.com/BentoLab-DiseaseDynamics/Cornell_JHU-SCARCHhierarSIR"
