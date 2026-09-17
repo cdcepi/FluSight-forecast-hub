@@ -16,6 +16,12 @@ model_contributors: [
     "orcid": "0000-0002-2105-8805"
   },
   {
+    "name": "Neha Shanker",
+    "affiliation": "North Carolina Department of Health and Human Services, Division of Public Health",
+    "email": "neha.shanker@dhhs.nc.gov",
+    "orcid": "0009-0008-6935-5199"
+  },   
+  {
     "name": "Shaun Truelove",
     "affiliation": "Johns Hopkins Bloomberg School of Public Health",
     "email": "shauntruelove@jhu.edu",
