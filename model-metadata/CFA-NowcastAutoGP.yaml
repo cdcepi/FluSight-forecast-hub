@@ -35,7 +35,7 @@ license: "CC-BY-4.0"
 designated_model: true
 methods: "Ensemble of Gaussian processes."
 data_inputs: "Epiweekly incident influenza hospital admissions from NHSN HRD via data.cdc.gov. Epiweekly incident influenza emergency department visits via the National Syndromic Surveillance Program (NSSP)."
-methods_long: "Ensemble of Gaussian processes, with most recent week nowcasting, implemented using NowcastAutoGP.jl."
+methods_long: "Ensemble of Gaussian processes, with most recent week nowcasting, implemented using NowcastAutoGP.jl. For additional information on the pipeline that produces these forecasts, see https://github.com/CDCgov/cfa-stf-routine-forecasting."
 website_url: "https://github.com/CDCgov/NowcastAutoGP"
 repo_url: "https://github.com/CDCgov/NowcastAutoGP"
 ensemble_of_models: true
