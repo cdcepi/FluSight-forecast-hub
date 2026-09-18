@@ -1,7 +1,7 @@
 team_name: "Center for Forecasting and Outbreak Analytics (CDC/CFA)"
 team_abbr: "CFA"
-model_name: "EpiAutoGP"
-model_abbr: "EpiAutoGP"
+model_name: "NowcastAutoGP"
+model_abbr: "NowcastAutoGP"
 model_version: "0.1.0"
 model_contributors: [
   {
