@@ -1,0 +1,25 @@
+team_name: "Carnegie Mellon Delphi Group"
+team_abbr: "CMU"
+model_name: "AR ensemble with auxiliary data, online-calibrated"
+model_abbr: "TimeSeries_Cal"
+model_version: "1.0"
+model_contributors:
+  [
+    { "name": "Logan Brooks", "affiliation": "UC Berkeley", "email": "lcbrooks@berkeley.edu" },
+    { "name": "Dmitry Shemetov", "affiliation": "Carnegie Mellon University", "email": "dshemeto@andrew.cmu.edu" },
+    { "name": "Nat DeFries", "affiliation": "Carnegie Mellon University", "email": "ndefries@andrew.cmu.edu" },
+    { "name": "David Weber", "affiliation": "Carnegie Mellon University", "email": "davidweb@andrew.cmu.edu" },
+    { "name": "Daniel McDonald", "affiliation": "University of British Columbia", "email": "daniel@stat.ubc.ca" },
+    { "name": "Ryan Tibshirani", "affiliation": "UC Berkeley", "email": "ryantibs@berkeley.edu" },
+  ]
+website_url: "https://github.com/cmu-delphi/exploration-tooling/"
+repo_url: "https://github.com/cmu-delphi/exploration-tooling/"
+license: "CC-BY-4.0"
+designated_model: false
+team_funding: "Centers for Disease Control and Prevention Awards: U011P001121, 75D30123C15907, NU38FT000005"
+methods: "Online quantile calibration (MultiQT) applied post-hoc to the CMU-TimeSeries ensemble."
+data_inputs: "Weekly incident flu hospitalizations and historical flusurv and ILI data, queried through Delphi Epidata API."
+methods_long: "The CMU-TimeSeries ensemble (see CMU-TimeSeries.yml) with online quantile calibration applied via the MultiQT algorithm (Ding, Gibbs & Tibshirani 2025). Per (location, horizon) series, an additive offset over the 23 hub quantile levels is updated each round by online gradient descent on pinball loss, with an adaptive learning rate and isotonic projection. The tracker runs in sqrt-transformed space (lr_mult=0.03, lr_window=20) and carries a slow persistent term (lr_slow_mult=0.003)."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+designated_github_users: ["dshemetov", "dsweber2", "cmu-delphi-deploy-machine"]
