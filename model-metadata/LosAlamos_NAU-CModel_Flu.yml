@@ -93,7 +93,7 @@ model_contributors: [
 website_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
 repo_url: "https://github.com/ye-chen-netsci/FluSight-forecast-hub-2023"
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 methods: "A compartmental model with Bayesian inference, uncertainty quantification and calibration."
 data_inputs: "State level weekly hospitalization data from NHSN."
 methods_long: "We employed a compartmental model that features a time-dependent transmission rate as the base model. Using Bayesian inference, we parametrize the transmission rate from hospitalization data using pyBNF. Subsequent steps involved uncertainty quantification and model calibration."
