@@ -1,0 +1,20 @@
+team_name: "China CDC Infectious Disease Forecasting Team"
+team_abbr: "ChinaCDC"
+model_name: "Seasonal Autoregressive Baseline"
+model_abbr: "seasAR"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Chenxi Lu",
+    "affiliation": "Chinese Center for Disease Control and Prevention",
+    "email": "lcx8125@163.com"
+  }
+]
+website_url: "https://github.com/lcx777-afk/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly incident influenza hospital admissions from NHSN (target-data/target-hospital-admissions.csv)."
+methods: "Seasonal autoregressive time series baseline (auto.arima, weekly seasonality) with normal-approximation quantiles."
+methods_long: "For each location, a seasonal autoregressive integrated moving average model (auto.arima with weekly seasonal frequency 52) is fit to the historical weekly incident influenza hospital admissions series. Point forecasts for horizons 0-3 are obtained from the fitted model; predictive quantiles (0.01-0.99) are derived from a normal approximation to the forecast distribution, using the 95% forecast interval to estimate the forecast standard error, then rounded to non-negative integers. The horizon -1 nowcast of the previous week is generated from the most recently observed count with Poisson uncertainty. No spatial correlation between locations is currently modeled."
+ensemble_of_models: false
+ensemble_of_hub_models: false
