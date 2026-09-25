@@ -1,0 +1,32 @@
+team_name: MIGHTE
+team_abbr: MIGHTE
+model_name: Distributional LightGBM
+model_abbr: Base
+model_version: '1.0'
+model_contributors:
+- name: Austin Meyer
+  affiliation: Baylor College of Medicine
+  email: austin.g.meyer@gmail.com
+- name: Mauricio Santillana
+  affiliation: Northeastern University
+  email: m.santillana@northeastern.edu
+website_url: https://github.com/ausmeyer/flusight_2026
+repo_url: https://github.com/ausmeyer/flusight_2026
+license: CC-BY-4.0
+designated_model: true
+data_inputs: Weekly NHSN influenza hospital admissions; historical ILINet/FluSurv-derived hospitalization
+  proxies; seasonality. National WastewaterSCAN influenza A and NSSP influenza ED surveillance.
+methods: Pooled two-stage LightGBM for forecast median and spread, using target history, seasonality
+  and national wastewater; hospitalization forecasts also use national NSSP ED signals.
+methods_long: A pooled two-stage distributional LightGBM model fits log-scale changes using target
+  history, seasonal features and national WastewaterSCAN influenza A with recent lags. The hospitalization
+  model also uses national NSSP influenza ED level and recent lags. The first stage estimates the
+  conditional center and the second estimates Gaussian spread by conditional negative log-likelihood
+  using rolling out-of-fold center predictions. States share a fit with location indicators and national
+  hospitalization summaries. An analogous separately fitted ED model uses ED history and wastewater;
+  forecasts are converted to proportions. No peak targets are submitted.
+ensemble_of_models: false
+ensemble_of_hub_models: false
+backfill_adjustment: Complete observed histories are refreshed before every weekly fit using current
+  hub and CDC releases. Revised observations replace earlier values; no blanket nowcast inflation
+  is applied. Forecasts and input snapshots remain frozen.

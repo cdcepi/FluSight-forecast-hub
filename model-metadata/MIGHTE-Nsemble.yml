@@ -1,31 +1,32 @@
-team_name: "MIGHTE"
-team_abbr: "MIGHTE"
-model_name: "Time series ensemble"
-model_abbr: "Nsemble"
-model_version: "2.0"
-model_contributors: [
-  {
-    "name": "Austin Meyer",
-    "affiliation": "Baylor College of Medicine",
-    "email": "austin.g.meyer@gmail.com"
-  },
-  {
-    "name": "Mauricio Santillana",
-    "affiliation": "Northeastern University",
-    "email": "m.santillana@northeastern.edu"
-  }
-]
-website_url: "https://github.com/MIGHTE-lab/"
-license: "CC-BY-4.0"
-citation: "Meyer, A. G., Lu, F., Clemente, L., & Santillana, M. (2024). A prospective real-time transfer learning approach to estimate Influenza hospitalizations with limited data. medRxiv, 2024-07."
-team_funding: ""
+team_name: MIGHTE
+team_abbr: MIGHTE
+model_name: Fixed equal-weight time series ensemble
+model_abbr: Nsemble
+model_version: '3.0'
+model_contributors:
+- name: Austin Meyer
+  affiliation: Baylor College of Medicine
+  email: austin.g.meyer@gmail.com
+- name: Mauricio Santillana
+  affiliation: Northeastern University
+  email: m.santillana@northeastern.edu
+website_url: https://github.com/ausmeyer/flusight_2026
+repo_url: https://github.com/ausmeyer/flusight_2026
+license: CC-BY-4.0
 designated_model: true
-methods: "Weighted ensemble of time-series models including LightGBM, SVM, and ARIMA"
-data_inputs: "Weekly incident flu hospitalizations that is extended into the past via imputation from ILI to hospitalizations"
-methods_long: "We use an Adaptive Ensemble that combines probabilistic forecasts from three component model types: ARIMA, several two-stage LightGBMLSS models, and an ensemble of LightGBM point models. The ensemble weights are dynamically updated for each location and horizon based on the inverse Weighted Interval Score (WIS) of each component's performance over the most recent 4-week lookback window.                                                                                                  
-The component models are:                                                                                                               
-1. ARIMA: State univariate models are auto-tuned for each location. Uncertainty is modeled using empirical error distributions derived from rolling validation windows.                                                      
-2. LightGBM (Two-Stage): A gradient boosting approach that utilizes a rich set of engineered features. The first stage predicts the conditional mean and the second stage predicts the conditional scale/variance using a Gaussian likelihood (LightGBMLSS). Input features include dense lags (1-12 weeks), rolling statistics (means, std devs, min/max over 2-12 week windows), momentum indicators (differences, % change), and cyclical seasonal encodings (sine/cosine of week/month).
-3. LightGBM (Point): A an averaged ensemble of multiple LightGBM point models that use lags of self and other states as covariates, and generates quantiles from the errors of out of sample seasons."
+data_inputs: Weekly NHSN influenza hospital admissions; historical ILINet/FluSurv-derived hospitalization
+  proxies; seasonality. National WastewaterSCAN influenza A and NSSP influenza ED surveillance.
+methods: Fixed equal-weight quantile average of wastewater-only and NSSP-only two-stage distributional
+  LightGBM hospitalization models and partially pooled distributional autoregression.
+methods_long: 'For 2026–27, MIGHTE-Nsemble is a fixed equal-weight average of forecast quantiles
+  from three hospitalization models: a pooled two-stage distributional LightGBM with national WastewaterSCAN
+  influenza A level and recent lags; the same model using national NSSP influenza ED level and recent
+  lags; and MIGHTE-Linear, a partially pooled distributional autoregression. Each component receives
+  one-third weight. Weights do not change with recent forecast performance. This replaces the previous
+  adaptive ensemble. MIGHTE-Linear is separately submitted to this hub; the other component forecasts
+  are internal.'
 ensemble_of_models: true
-ensemble_of_hub_models: false
+ensemble_of_hub_models: true
+backfill_adjustment: Complete observed histories are refreshed before every weekly fit using current
+  hub and CDC releases. Revised observations replace earlier values; no blanket nowcast inflation
+  is applied. Forecasts and input snapshots remain frozen.

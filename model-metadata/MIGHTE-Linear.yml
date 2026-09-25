@@ -1,0 +1,30 @@
+team_name: MIGHTE
+team_abbr: MIGHTE
+model_name: Partially pooled autoregression
+model_abbr: Linear
+model_version: '1.0'
+model_contributors:
+- name: Austin Meyer
+  affiliation: Baylor College of Medicine
+  email: austin.g.meyer@gmail.com
+- name: Mauricio Santillana
+  affiliation: Northeastern University
+  email: m.santillana@northeastern.edu
+website_url: https://github.com/ausmeyer/flusight_2026
+repo_url: https://github.com/ausmeyer/flusight_2026
+license: CC-BY-4.0
+designated_model: false
+data_inputs: Weekly NHSN influenza hospital admissions; historical ILINet/FluSurv-derived hospitalization
+  proxies; seasonality.
+methods: Partially pooled distributional autoregression of hospitalization history and seasonality,
+  with regularized state differences and jointly estimated log-scale mean and uncertainty.
+methods_long: Direct multi-horizon Gaussian autoregression predicts changes in log1p hospitalizations.
+  Shared autoregressive and seasonal effects, location intercepts, horizon interactions, and ridge-regularized
+  state slope differences provide partial pooling. Penalized Gaussian likelihood jointly estimates
+  the conditional mean and linear log-scale uncertainty. Inputs include hospitalization history and
+  cross-state hospitalization summaries; no wastewater or NSSP predictors are used.
+ensemble_of_models: false
+ensemble_of_hub_models: false
+backfill_adjustment: Complete observed histories are refreshed before every weekly fit using current
+  hub and CDC releases. Revised observations replace earlier values; no blanket nowcast inflation
+  is applied. Forecasts and input snapshots remain frozen.
