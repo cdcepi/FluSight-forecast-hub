@@ -1,0 +1,24 @@
+team_name: MIGHTE
+team_abbr: MIGHTE
+model_name: Partially pooled autoregression
+model_abbr: Linear
+model_version: '1.0'
+model_contributors:
+- name: Austin Meyer
+  affiliation: Baylor College of Medicine
+  email: austin.g.meyer@gmail.com
+- name: Mauricio Santillana
+  affiliation: Northeastern University
+  email: m.santillana@northeastern.edu
+website_url: https://www.meyerlab.io/flusight_2026/
+repo_url: https://github.com/ausmeyer/flusight_2026
+license: CC-BY-4.0
+designated_model: false
+data_inputs: NHSN hospital admissions and historical ILINet/FluSurv-NET data.
+methods: Partially pooled autoregression using hospitalization history and seasonality,
+  with jointly estimated mean and uncertainty.
+methods_long: A Gaussian model estimates hospitalization trajectories and uncertainty on a log
+  scale. Partial pooling shares information across locations without explicit spatial covariance.
+ensemble_of_models: false
+ensemble_of_hub_models: false
+backfill_adjustment: Models are refit weekly using the latest revised observations.
