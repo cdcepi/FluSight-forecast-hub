@@ -2,7 +2,7 @@ team_name: MIGHTE
 team_abbr: MIGHTE
 model_name: Distributional LightGBM
 model_abbr: Base
-model_version: '1.1'
+model_version: '1.2'
 model_contributors:
 - name: Austin Meyer
   affiliation: Baylor College of Medicine
@@ -16,11 +16,11 @@ license: CC-BY-4.0
 designated_model: true
 data_inputs: NHSN hospital admissions, NSSP influenza ED visits, national WastewaterSCAN influenza A,
   and historical ILINet/FluSurv-NET data.
-methods: Two-stage LightGBM estimates forecast median and spread using surveillance history,
-  seasonality, wastewater and emergency-department signals.
+methods: Two-stage LightGBM forecasts hospitalizations and ED visits; multiclass LightGBM
+  predicts trends using surveillance history, seasonality, wastewater and ED signals.
 methods_long: Separate pooled fits forecast hospitalizations and ED proportions, with Gaussian
   uncertainty on transformed scales. Models share information across locations without explicit
-  spatial covariance.
+  spatial covariance. A separate multiclass LightGBM fit predicts hospitalization trend probabilities.
 ensemble_of_models: false
 ensemble_of_hub_models: false
 backfill_adjustment: Models are refit weekly using the latest revised observations.

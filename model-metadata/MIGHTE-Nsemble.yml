@@ -21,5 +21,5 @@ methods_long: For 2026–27, fixed weights replace adaptive weighting. Component
   uncertainty and share information across locations without explicit spatial covariance.
   Components include MIGHTE-Linear.
 ensemble_of_models: true
-ensemble_of_hub_models: true
+ensemble_of_hub_models: false
 backfill_adjustment: Models are refit weekly using the latest revised observations.
