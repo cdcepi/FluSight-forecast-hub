@@ -1,0 +1,14 @@
+team_name: "docxology"
+team_abbr: "docxology"
+model_name: "docxology panelqr"
+model_abbr: "panelqr"
+model_contributors: [{"name": "Daniel Ari Friedman", "affiliation": "Private Investigator", "email": "danielarifriedman@gmail.com"}]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Retained weekly wk inc flu hosp target observations from the cdcepi/FluSight-forecast-hub hub/NHSN. No other submitted hub forecasts are model inputs."
+methods: "Direct pooled quantile autoregression over a seven-week seasonal target window: fourth-root target histories are robustly whitened per location, seven conditional quantile knots are fitted by..."
+methods_long: "Proposed candidate docxology-panelqr; implementation hum_disease.forecasting, model ID hum-window-quantile-panel, version 1.0.0. Direct pooled quantile autoregression over a seven-week seasonal target window: fourth-root target histories are robustly whitened per location, seven conditional quantile knots are fitted by ridge-stabilized IRLS, and a frozen log-location-scale transform maps them onto the FluSight grid. Histories are pooled across declared locations, sharing fitted quantile coefficients. No explicit geographic covariance model or jointly coherent sample trajectories are claimed. Target: wk inc flu hosp. Requested forecast horizons: [0, 1, 2, 3]. Submission value policy: integer; the submission adapter enforces nonnegative monotone quantiles. Each future submission must retain its actual input vintage, source/config identities and local validation. This draft does not assert scientific superiority, prospective selection/freeze, organizer registration or acceptance. Development-based configuration choices do not establish performance on this disease. Registered model identity: fd59c3eacdec7abe586031c69aa211806abf302c300b9ffbfb24c9ffb06e2276. Canonical configuration: {\"development_seasons\": [\"2023/24\", \"2024/25\"], \"input_scope\": \"target histories for all declared protocol locations\", \"lags\": 4, \"log_centre_shift\": 0.05, \"log_spread_scale\": 1.5, \"optimizer\": \"eight-step-ridge-stabilized-IRLS\", \"quantile_knots\": [0.01, 0.1, 0.25, 0.5, 0.75, 0.9, 0.99], \"ridge_scale\": 0.0001, \"seasonal_target_window_weeks\": 7, \"selection_objective\": \"minimize-worst-full-location-development-season-grid ratio\", \"selection_receipt\": \"output/model-development/revision-aware-window-qr-development-screen.json\", \"selection_receipt_digest\": \"00bd6eff0e61f85b388956502ed093d652dec150b51d74f52e65b4cb1ff8f14d\", \"training_vintage_policy\": \"latest_target_git_blob_by_submission_deadline\", \"transform\": \"fourth-root\", \"uncertainty\": \"direct-pooled-conditional-quantile-regression\"}"
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: "https://github.com/docxology"
+model_version: "1.0.0"
