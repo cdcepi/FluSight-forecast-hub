@@ -12,3 +12,4 @@ ensemble_of_models: false
 ensemble_of_hub_models: false
 website_url: "https://github.com/docxology"
 model_version: "1.0.0"
+designated_targets: ["wk inc flu hosp"]
