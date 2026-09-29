@@ -1,5 +1,17 @@
 name: Hub Submission Validation (R)
 
+# Runs the checks on the pull request and saves the result. It cannot post that
+# result itself: most submissions come from forks, and a `pull_request` workflow
+# triggered from a fork gets a read-only GITHUB_TOKEN.
+#
+# The companion workflow posts it, running once this one finishes. Add both:
+#
+#   hubCI::use_hub_github_action("validate-submission")
+#   hubCI::use_hub_github_action("validate-submission-comment")
+#
+# The companion matches this workflow by the `name:` above. If you change it,
+# change it there too, or results will quietly stop being posted.
+
 on:
   workflow_dispatch:
   pull_request:
@@ -9,42 +21,32 @@ on:
       - 'model-metadata/*'
       - '!**README**'
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
+  # Hubs put this job's name in their branch protection rules, so renaming it
+  # silently stops their required check from ever reporting.
   validate-submission:
-    runs-on: ubuntu-22.04
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
+    # Skip on forks of the hub. A submitter working in their own fork would
+    # otherwise see this run — and sometimes fail — against their copy, which is
+    # confusing and tells them nothing: the validation that decides whether their
+    # submission is accepted is the one that runs here, on their pull request.
+    # Delete this line if your hub does want forks to validate their own copies.
+    if: github.event.repository.fork != true
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: r-lib/actions/setup-r@v2
+      - uses: hubverse-org/hubverse-actions/validate-submission@main
         with:
-          install-r: false
-          use-public-rspm: true
-          extra-repositories: 'https://hubverse-org.r-universe.dev'
-
-      - name: Update R
-        run: |
-          sudo apt-get update
-
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          pak-version: "devel" #Delete this line or comment it out when pak is fixed; added 2025-05-08.
-          packages: |
-           any::hubValidations
-           any::sessioninfo
-           github::r-lib/gh
-           
-      - name: Run validations
-        env:
-          PR_NUMBER: ${{ github.event.number }}
-        run: |
-          library("hubValidations")
-          v <- hubValidations::validate_pr(
-              gh_repo = Sys.getenv("GITHUB_REPOSITORY"),
-              pr_number = Sys.getenv("PR_NUMBER"),
-              skip_submit_window_check = FALSE
-          )
-          hubValidations::check_for_errors(v, verbose = TRUE)
-        shell: Rscript {0}
+          # Report the result on the pull request. Set to false to keep the
+          # result in the workflow log only.
+          summary: true
+          # Customise validation with further inputs, e.g. to skip the submission
+          # window check or install extra packages for custom checks. See the
+          # action README for the full list.
+          # skip_submit_window_check: true
+          # extra_packages: |
+          #   any::mycustompkg

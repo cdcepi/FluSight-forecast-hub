@@ -1,0 +1,51 @@
+team_name: "Northern Arizona University and Los Alamos National Lab"
+team_abbr: "NAU_PyBNF"
+model_name: "Oracle SIHRS"
+model_abbr: "OracleSIHRS"
+model_version: "1.1"
+model_contributors: [
+        {
+            "name": "Ely Finn Miller",
+            "affiliation": "Northern Arizona University",
+            "email": "efm46@nau.edu",
+        },
+        {
+            "name": "Richard Posner",
+            "affiliation": "Northern Arizona University",
+            "email": "Richard.Posner@nau.edu",
+        },
+        {
+            "name": "William Scott Hlavacek",
+            "affiliation": "Los Alamos National Lab",
+            "email": "hlavacek@lanl.gov",
+        },
+        {
+            "name": "Yen Ting Lin",
+            "affiliation": "Los Alamos National Lab",
+            "email": "yentingl@lanl.gov",
+        },
+        {
+            "name": "Ye Chen",
+            "affiliation": "Northern Arizona University",
+            "email": "Ye.Chen@nau.edu",
+        },
+        {
+            "name": "Amir Aman Gill",
+            "affiliation": "Northern Arizona University",
+            "email": "aag674@nau.edu",
+        },
+        {
+            "name": "Adam Smart",
+            "affiliation": "Northern Arizona University",
+            "email": "acs849@nau.edu",
+        },
+    ]
+website_url: "https://github.com/elyfmiller/flubnf"
+repo_url: "https://github.com/elyfmiller/flubnf"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "SIHRS compartment model fitted weekly by a particle filter; each forecast path's growth is blended 50/50 with an NHSN or FluSurv-NET donor growth path from an earlier season at the same calendar week."
+data_inputs: "Weekly state-level laboratory-confirmed influenza hospital admissions from NHSN, read from the hub's dated vintage archive, both for the weekly fit and for half of the donor growth paths of earlier seasons; weekly FluSurv-NET laboratory-confirmed influenza hospitalization rates (Delphi epidata), from a committed, digest-checked bank, for the other half."
+methods_long: "The SIHRS compartment model (BNGL, with an annual harmonic on transmission) is fitted each week by a particle filter (a PyBNF fork on bngsim) to each jurisdiction's NHSN admissions from the season start (August 1): 10,000 candidate epidemics, a fitted negative-binomial observation model and five parameters per jurisdiction. The Oracle step then replaces each forecast sample path's growth by the geometric mean, at weight one half, of the filter's growth and one donor growth path from strictly earlier seasons at the same calendar week (within two epiweeks of the forecast date), propagated from the filter's own state. The donor bank is the Groundhog's own: past-season NHSN admission growth, rebuilt each week from the hub's dated vintage archive, and FluSurv-NET hospitalization-rate growth from a committed, digest-checked bank, mixed half and half per sample path. Each path draws from either stream with probability one half; an admissions donor needs at least 10 admissions, and a stream needs two donor seasons and 30 paths, else the filter is used unchanged. Uncertainty: the quantiles are empirical quantiles of the blended samples, carrying the filter's spread and the donors'. Spatial correlation: none; jurisdictions are fitted independently and share only the donor pool. Frozen pre-registration sha256 67c9fa49a195908312f34ca783b21d85377759309df14461f86fbfd54d30c56f; five seeds are logged and the first is submitted. On 9,279 cells of 2024-25 and 2025-26 the step lowered relative WIS against the FluSight baseline from 0.813 to 0.731 (a ratio of WIS sums, self-scored). This is a frozen-specification replication, and the 2026-27 season is its prospective test. Replaces this team's earlier LosAlamos_NAU-CModel_Flu entry."
+ensemble_of_models: false
+ensemble_of_hub_models: false

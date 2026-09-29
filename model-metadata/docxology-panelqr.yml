@@ -1,0 +1,15 @@
+team_name: "docxology"
+team_abbr: "docxology"
+model_name: "docxology panelqr"
+model_abbr: "panelqr"
+model_contributors: [{"name": "Daniel Ari Friedman", "affiliation": "Private Investigator", "email": "danielarifriedman@gmail.com"}]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Retained weekly wk inc flu hosp target observations from the cdcepi/FluSight-forecast-hub hub/NHSN. No other submitted hub forecasts are model inputs."
+methods: "Direct pooled quantile autoregression over a seven-week seasonal target window: fourth-root target histories are robustly whitened per location, seven conditional quantile knots are fitted by..."
+methods_long: "Proposed candidate docxology-panelqr, version 1.0.0. Direct pooled quantile autoregression over a seven-week seasonal target window: fourth-root target histories are robustly whitened per location, seven conditional quantile knots are fitted by ridge-stabilized IRLS, and a frozen log-location-scale transform maps them onto the FluSight grid. Histories are pooled across declared locations, sharing fitted quantile coefficients. No explicit geographic covariance model or jointly coherent sample trajectories are claimed. Target: wk inc flu hosp. Requested forecast horizons: [0, 1, 2, 3]. Submission value policy: integer; the submission adapter enforces nonnegative monotone quantiles. Each future submission must retain its actual input vintage, source/config identities and local validation. This draft does not assert scientific superiority, prospective selection/freeze, organizer registration or acceptance. Development-based configuration choices do not establish performance on this disease. The implementation, fitted-state records and detailed configuration are retained privately. This methods description does not grant a source-code license."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: "https://github.com/docxology"
+model_version: "1.0.0"
+designated_targets: ["wk inc flu hosp"]
