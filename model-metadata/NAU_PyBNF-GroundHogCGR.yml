@@ -2,7 +2,7 @@ team_name: "Northern Arizona University and Los Alamos National Lab"
 team_abbr: "NAU_PyBNF"
 model_name: "Groundhog: calendar-conditional growth ratios"
 model_abbr: "GroundHogCGR"
-model_version: "1.0"
+model_version: "1.1"
 model_contributors: [
         {
             "name": "Ely Finn Miller",
@@ -44,8 +44,9 @@ website_url: "https://github.com/elyfmiller/flubnf"
 repo_url: "https://github.com/elyfmiller/flubnf"
 license: "CC-BY-4.0"
 designated_model: true
+designated_targets: ["wk inc flu hosp"]
 methods: "Last observed admissions scaled by empirical quantiles of growth ratios seen at the same epiweek in strictly earlier seasons, pooled across jurisdictions and with FluSurv-NET donors."
 data_inputs: "Weekly state-level laboratory-confirmed influenza hospital admissions from NHSN, read from the hub's dated vintage archive, and weekly FluSurv-NET hospitalization rates from CDC via the Delphi Epidata API as an auxiliary donor stream."
-methods_long: "The most recent reported admissions count for each jurisdiction, multiplied by empirical quantiles of the growth ratios y[t+h]/y[t] seen at calendar weeks within two MMWR epiweeks of the forecast origin in strictly earlier seasons, pooled across jurisdictions, per horizon. A second donor pool built the same way from FluSurv-NET hospitalization rates, shrunk to the admissions scale by a factor fitted on earlier seasons, is averaged in at fixed equal weight. Both donor banks are committed and digest-checked; the partial 2021-22 season is excluded (pre-registered). Uncertainty: the spread of the donor ratios; no coverage guarantee is claimed. Spatial correlation: none beyond the shared donor pool. On vintage replays of 2023-24 to 2025-26 the pooled relative WIS against the FluSight baseline is 0.666 (15,340 cells, a ratio of WIS sums, self-scored), with 50 and 90 percent coverage of 0.51 and 0.95. Replaces the empirical half of this team's earlier LosAlamos_NAU-CModel_Flu entry."
+methods_long: "The most recent reported admissions count for each jurisdiction, multiplied by empirical quantiles of the growth ratios y[t+h]/y[t] seen at calendar weeks within two MMWR epiweeks of the forecast origin in strictly earlier seasons, pooled across jurisdictions, per horizon. A second donor pool built the same way from FluSurv-NET hospitalization rates, shrunk to the admissions scale by a factor fitted on earlier seasons, is averaged in at fixed equal weight. Both donor banks are committed and digest-checked; the partial 2021-22 season is excluded (pre-registered). Uncertainty: the spread of the donor ratios; no coverage guarantee is claimed. Spatial correlation: none beyond the shared donor pool. On vintage replays of 2023-24 to 2025-26 the pooled relative WIS against the FluSight baseline is 0.666 (15,340 cells, a ratio of WIS sums, self-scored), with 50 and 90 percent coverage of 0.51 and 0.95. When a jurisdiction's newest week reads 0 the forecaster chooses, per jurisdiction and recorded with the run, whether the Groundhog abstains, anchors on the mean of the last four weeks, carries the last positive week forward, or blends the two; the forecaster may also set aside a jurisdiction's newest one or two weeks when they read 0 or collapse, and the forecast then starts from the week before. Replaces the empirical half of this team's earlier LosAlamos_NAU-CModel_Flu entry."
 ensemble_of_models: false
 ensemble_of_hub_models: false
