@@ -225,7 +225,7 @@ National forecasts can be provided as samples with the output_type_id values of 
 
 ### `value`
 
-Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2026-2027 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts(`wk flu hosp rate change`) and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For the emergency department visit proportion target (`wk inc flu prop ed visits`), values should be between 0 and 1 (inclusive). For samples, each value will correspond to a particular sample for either a hospital admission or ED visit forecast. Sample values for hospital admissions should be integers greater than or equal to 0, while sample values for the ED visit proportion target should be between 0 and 1 (inclusive). Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. 
+Values in the value column are non-negative numbers indicating the `quantile` or `pmf` prediction for this row. For a `quantile` prediction, value is the inverse of the cumulative distribution function (CDF) for the target, location, and quantile associated with that row. For example, the 2.5 and 97.5 quantiles for a given target and location should capture 95% of the predicted values and correspond to the central 95% Prediction Interval. For the 2025-2026 season, we are requiring that teams submit integer values for the weekly incidence (`wk inc flu hosp`) and peak week intensity (`peak inc flu hosp`) targets.  For rate change forecasts(`wk flu hosp rate change`) and peak week forecasts (`peak week inc flu hosp`), values are required to sum to 1 across all output_type_ids for each target and location (as specified in the [hubverse documentation](https://hubverse.io/en/latest/user-guide/model-output.html)). For the emergency department visit proportion target (`wk inc flu prop ed visits`), values should be between 0 and 1 (inclusive). Quantile forecasts for hospital admsisions and emergency department visits are also subject to [plausibility bounds](#plausibility-bounds-on-predicted-values). Forecasts that exceed these bounds will trigger a validation warning and may require additional review or justification from the submitting team. For samples, this will be an integer value corresponding to a particular sample for a hospital admission forecast. Each `reference_date`, `location`, and `target` grouping should have 100 sets of paired values, where each set consists of a value for each `horizon`. Values for samples should be integers greater than equal to 0.
 
 ### Example tables
 
@@ -261,6 +261,32 @@ target EW.
 
 To ensure proper data formatting, pull requests for new data in
 `model-output/` will be automatically run. Optionally, you may also run these validations locally.
+
+### Plausibility bounds on predicted values
+
+To catch gross scale and unit errors before they reach the ensemble and the
+visualizations, quantile predictions are validated against loose upper bounds on
+what could plausibly be observed. A submission file will produce a vaidation error if:
+
+-   any `wk inc flu prop ed visits` quantile value is greater than **0.25**,
+    i.e. more than 25% of emergency department visits in a jurisdiction are
+    predicted to be attributable to influenza. For reference, the highest
+    proportion observed in the target data through the 2025-2026 season is 0.175;
+    or
+-   any `wk inc flu hosp` quantile value is greater than **30% of the population
+    of the location being predicted**. Population sizes are those in
+    [auxiliary-data/locations.csv](../auxiliary-data/locations.csv). For
+    reference, the highest weekly admission count observed in the target data
+    corresponds to less than 0.04% of a jurisdiction's population.
+
+Both bounds are inclusive, so a value exactly equal to the bound passes. These
+are deliberately generous plausibility checks rather than requirements that forecasts remain below these values.
+Teams recieving a validation error should check the units and scale of their predictions. If the forecast is intentional, the submission may still be accepted following review by the FluSight team.
+
+The checks are implemented in
+[src/validations/R/cstm_check_tbl_value_max.R](../src/validations/R/cstm_check_tbl_value_max.R)
+and configured in
+[hub-config/validations.yml](../hub-config/validations.yml).
 
 ### Pull request forecast validation
 
