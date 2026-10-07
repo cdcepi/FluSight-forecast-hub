@@ -1,0 +1,62 @@
+# 2026-09-30 -- designated model. TO CONFIRM before the PR: team_funding line, website/repo URL (public repo of
+# this pipeline or the paper repo).
+# Schema: hub-config/model-metadata-schema.json. File name must be <team_abbr>-<model_abbr>.yml and match
+# model-output/<team_abbr>-<model_abbr>/. team_abbr/model_abbr: ^[a-zA-Z0-9_+]+$, <=16 chars.
+# `designated_targets` omitted on purpose (R's yaml reader collapses a one-element list; default = all submitted targets).
+team_name: "Columbia University - Pei Lab (STS-Residual)"
+team_abbr: "CUSTS"
+model_name: "STS-Residual corrected multi-model ensemble"
+model_abbr: "STS_Residual"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Yuchen Qin",
+    "affiliation": "Columbia University, Mailman School of Public Health",
+    "email": "yq2474@cumc.columbia.edu",
+    "orcid": "0009-0004-3498-5538"
+  },
+  {
+    "name": "Rodrigo Zepeda-Tello",
+    "affiliation": "Columbia University",
+    "email": "rodrigo.zepeda@columbia.edu",
+    "orcid": "0000-0003-4471-5270"
+  },
+  {
+    "name": "Teresa Yamana",
+    "affiliation": "Columbia University",
+    "email": "tyamana@climate.columbia.edu",
+    "orcid": "0000-0001-8349-3151"
+  },
+  {
+    "name": "Hongru Du",
+    "affiliation": "University of Virginia, Department of Systems and Information Engineering",
+    "email": "hongrudu@virginia.edu"
+  },
+  {
+    "name": "Jeffrey Shaman",
+    "affiliation": "Columbia University",
+    "email": "jls106@cumc.columbia.edu",
+    "orcid": "0000-0002-7216-7809"
+  },
+  {
+    "name": "Sen Pei",
+    "affiliation": "Columbia University, Mailman School of Public Health",
+    "email": "sp3449@cumc.columbia.edu",
+    "orcid": "0000-0002-7072-2995"
+  }
+]
+website_url: "https://senpei-cu.github.io/"
+repo_url: "https://github.com/Jensen6667/sts-residual"
+citation: "Qin Y, Du H, Pei S. Learning shared forecast-error structure to improve ensemble forecasts of seasonal respiratory outbreaks. medRxiv 2026. doi:10.64898/2026.07.20.26358508"
+team_funding: "National Institute of General Medical Sciences R35GM156799; CSTE/CDC NU38PW000005"
+license: "CC-BY-4.0"
+designated_model: true
+baseline_model: false
+ensemble_of_models: true
+ensemble_of_hub_models: false
+data_inputs: "Weekly laboratory-confirmed influenza hospital admissions (NHSN, via the FluSight hub target-data with as-of snapshots, or the NHSN public API when the hub snapshot is not yet available); outpatient ILI from ILINet (via Delphi Epidata) as auxiliary pre-2022 history for the statistical components; specific humidity climatology for the mechanistic component; state population from the hub locations file."
+methods: "Equal-weight quantile ensemble of six mechanistic, statistical, ML and foundation-model forecasts, shifted by a learned correction of its systematic residual (STS-Residual)."
+methods_long: "
+  Two stages. (1) Base ensemble: quantile-wise weighted average of five component forecasts for weekly incident influenza hospital admissions at the national and jurisdiction level: a humidity-driven SIR model with ensemble adjustment Kalman filter (SIR-EAKF); a seasonal-drift model using epiweek-matched historical trajectories with post-peak reversion; a SARIMAX model with epiweek-climatology and Fourier regressors; a pooled LightGBM quantile-regression model on per-capita log growth refit weekly; and the Chronos-2 and TimesFM-3.0 time-series foundation models used zero-shot on the NHSN history of all jurisdictions jointly. Equal weights were chosen over fitted weights because, once the residual correction is applied, learned weights gave no gain on the hub's log-scale evaluation metric in three seasons of vintage-honest hindcasts. (2) STS-Residual correction (Qin, Du & Pei 2026): the ensemble's systematic residual is learned from vintage-honest hindcasts of the same ensemble over the 2023-24, 2024-25 and 2025-26 seasons with three branches: a seasonal branch (mean normalized residual at the same epiweek and horizon, blended with the ensemble's recent nowcast error in the same jurisdiction, mixing weight and window chosen per horizon by leave-one-season-out cross-validation); a temporal branch (LSTM over the last four weeks of the components' residuals); and a spatial branch (LSTM + graph attention over neighbouring jurisdictions). Branch corrections are blended with weights chosen by cross-validation, bounded to one per-capita scale unit and added uniformly to all 23 quantiles, which are then truncated at zero, made monotone and rounded to integers. Peak-week and peak-incidence targets, when submitted, are derived from full-season sample trajectories whose first four weeks are quantile-mapped onto the corrected ensemble.
+"
+backfill_adjustment: "All training and hindcasting uses the as-of snapshots of the hub target data available on each forecast Wednesday (first-release counts for the latest week), so component models, the residual features and the recent-error term are fit to provisional counts while the correction targets the finalized counts; no explicit revision model is applied."
