@@ -1,0 +1,16 @@
+"team_name": "CPHMR, Clemson University"
+"team_abbr": "DMAPRIME"
+"model_name": "Random Forest"
+"model_abbr": "RF"
+"model_contributors":
+  - "name": "Gaurob Saha"
+    "affiliation": "Clemson University"
+    "email": "GSAHA@CLEMSON.EDU"
+"website_url": "https://github.com/GaurobSaha/DMA-PRIME-FluSight"
+"license": "CC-BY-4.0"
+"designated_model": false
+"data_inputs": "CDC Data, PRISMA Data , MUSC Data"
+"methods": "Horizon-specific Random Forest models for SC influenza admissions, with lagged clinical indicators, MI/VIF selection, causal ratio adjustment and empirical forecast-error quantiles."
+"methods_long": "This model forecasts weekly influenza hospital admissions in South Carolina using CDC NHSN admission counts and local MUSC and PRISMA clinical indicators. Separate Random Forest regressors predict one through four weeks after the latest common observation week.\n\nMutual information ranking and variance inflation factor pruning select predictors before constructing lagged features, trailing averages, changes, ratios and seasonal terms. Optuna tunes hyperparameters using time-series cross-validation with horizon-specific gaps. Feature selection and tuning precede chronological calibration. Historical refits use labels with target weeks no later than each forecast origin; final models use all available labeled observations.\n\nPoint forecasts receive a multiplicative correction based on the latest matured observed-to-predicted ratio and a fixed 0.99 factor. Uncertainty is estimated separately by horizon using empirical quantiles of historical log1p-scale forecast errors. These errors are applied to the adjusted forecast, back-transformed, clipped at zero and rounded to produce 23 nonnegative integer quantiles.\n\n"
+"ensemble_of_models": false
+"ensemble_of_hub_models": false
