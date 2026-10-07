@@ -10,15 +10,9 @@ model_contributors: [
     "orcid": "0000-0003-1969-3778"
   },
   {
-    "name": "Ehsan Suez",
-    "affiliation": "University of Georgia",
-    "email": "ehsan.suez@uga.edu",
-    "orcid": "0000-0001-9620-7994"
-  },
-  {
-    "name": "Bren Case",
-    "affiliation": "University of Georgia",
-    "email": "bcase@uga.edu",
+    "name": "Brynn Case",
+    "affiliation": "Northern Arizona University",
+    "email": "brynn.case@nau.edu",
     "orcid": "1234-1234-1234-1234"
   },
   {
@@ -29,9 +23,9 @@ model_contributors: [
   }
 ]
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 data_inputs: NHSN, NSSP, HHS, ILIp, Fluserv, but only through the individual models
-methods: An ensemble of the fox lab forecast models.
+methods: An ensemble of the NAU forecast models.
 methods_long: Currently uses the average prediction across all models for each target and then rounds to create integers and normalizes for pdf functions to sum to 1.
 website_url: https://thefoxlab.wordpress.com/
 ensemble_of_models: true
