@@ -2,7 +2,7 @@ team_name: "UMass-Amherst"
 team_abbr: "UMass"
 model_name: "Ensemble of time series models"
 model_abbr: "flusion"
-model_version: "1.1"
+model_version: "1.2"
 model_contributors: [
   {
     "name": "Evan Ray",
@@ -18,6 +18,11 @@ model_contributors: [
     "name": "Nicholas Reich",
     "affiliation": "UMass Amherst",
     "email": "nick@umass.edu"
+  },
+  {
+    "name": "Li Shandross",
+    "affiliation": "UMass Amherst",
+    "email": "lshandross@umass.edu"
   }
 ]
 website_url: "https://github.com/reichlab/idmodels"
@@ -28,6 +33,9 @@ designated_model: true
 methods: "Ensemble of statistical and machine learning time series models with spatial correlation."
 data_inputs: "Weekly incident flu hospitalizations from NHSN, hospitalizations from FluSurv-NET, and outpatient ILI from ILINet."
 methods_long: "
+  2026/27 season (v1.2, implemented 2026-10-10):
+  Quantile average ensemble of three component models: 1) AR(6) pooled model with shared coefficients across locations and per-location variance; 2) GBQR 3-source spatial2 model for state-level forecasts incorporating spatial correlation; 3) GBQR 3-source model for US national forecasts. All components use NHSN, FluSurv-NET, and ILINet data. Categorical predictions derived via monotonic spline interpolation. We also use gradient boosting quantile regression, with NSSP emergency department visit data as the main source. NHSN hospitalizations, ILINet outpatient illness percentages, and FluSurv-NET hospitalization rates are included as supplementary training sources.
+
   2025/26 season (v1.1, implemented 2025-12-20):
   Quantile average ensemble of three component models: 1) AR(6) pooled model with shared coefficients across locations and per-location variance; 2) GBQR 3-source spatial2 model for state-level forecasts incorporating spatial correlation; 3) GBQR 3-source model for US national forecasts. All components use NHSN, FluSurv-NET, and ILINet data. Categorical predictions derived via monotonic spline interpolation.
 
