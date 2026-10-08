@@ -1,0 +1,59 @@
+team_name: "Georgia Tech VIP Responsible AI - Influencers"
+team_abbr: "GT_Influencers"
+model_name: "Influencers ensemble"
+model_abbr: "ensemble"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Jake Reinhart",
+    "affiliation": "Georgia Institute of Technology",
+    "email": "jreinhart7@gatech.edu"
+  },
+  {
+    "name": "Mustafa Aljumayli",
+    "affiliation": "Georgia Institute of Technology",
+    "email": "maljumayli3@gatech.edu"
+  },
+  {
+    "name": "Refate Tayier",
+    "affiliation": "Georgia Institute of Technology",
+    "email": "rtayier3@gatech.edu"
+  }
+]
+website_url: "https://github.com/VIP-RAI-Influencers/flusight"
+repo_url: "https://github.com/VIP-RAI-Influencers/flusight"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly NHSN influenza hospital admissions and NSSP emergency department flu visit share (FluSight target data); state populations from the hub's locations file. For training only: ILINet percent ILI from 2010/11 (Delphi Epidata), rescaled to each state's admissions."
+methods: "Average of log quantiles from four models (hierarchical Bayesian regression, regime-switching particle filter, pooled LightGBM, linear regressions), all using ED; intervals widened."
+methods_long: "Four models each forecast all 23 quantiles of log(admissions + 1);
+  the ensemble takes the plain average of each quantile, then stretches each
+  forecast around its median by 1.1, 1.2, 1.2 and 1.2 at horizons 0-3. The
+  national forecast averages models 1, 2 and 4 only.
+  (1) Per-horizon linear regressions of the log change on log incidence per
+  100,000, position against the season's peak so far, national and own
+  two-week ED growth, own three-week hospital growth and Christmas and New
+  Year flags, with each state's coefficients shrunk toward the pooled ones by
+  empirical Bayes, fitted by inverse-variance weighted least squares;
+  quantiles from standardized past errors scaled for count size. (2) A
+  particle filter over each state's log expected admissions, growth rate and
+  regime (persistent growth, braking as per-capita incidence rises, or
+  reversion to zero, with a small weekly switching chance), weighted by a
+  negative binomial likelihood of the counts and normal likelihoods of own,
+  national and HHS-regional (leave-self-out) ED growth; forecasts by
+  simulating the particles forward. (3) Pooled LightGBM quantile regression,
+  one model per quantile, on five weekly lags of log admissions, their
+  rolling mean and spread, one- and four-week changes, time of year, ED share
+  lags and change, the 52-week lag, log population, location and horizon;
+  ILINet seasons rescaled to each state's admissions are added as extra
+  training locations. (4) The average of two pooled linear regressions on
+  log admissions, after raising the newest three weeks by their typical
+  later revision: a one-week momentum regression (velocity, acceleration,
+  distance below the location's typical peak, time of year) run forward as
+  1,000 simulated futures with errors drawn from past weeks at a similar
+  level and recent direction, and one regression per week ahead that adds
+  ED-share velocity and acceleration. Members and widths were chosen on
+  2022/23-2025/26 backtests that use the data as published at each
+  deadline. Models are refit before each submission."
+ensemble_of_models: true
+ensemble_of_hub_models: false
