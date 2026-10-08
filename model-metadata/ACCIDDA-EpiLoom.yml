@@ -32,6 +32,6 @@ methods_long: EpiLoom combines two multilayer-perceptron forecasting recipes tra
   the saved models use surveillance data available at the forecast date; the admissions correction
   trees are applied to reported inputs. Submitted forecasts cover horizons 0 through 3 relative
   to the Hub reference date.
-ensemble_of_models: true
+ensemble_of_models: false
 ensemble_of_hub_models: false
 repo_url: https://github.com/ACCIDDA/tapestry
