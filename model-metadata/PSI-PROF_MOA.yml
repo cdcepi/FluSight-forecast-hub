@@ -4,21 +4,24 @@ model_name: "Package for Respiratory Disease Open-source Forecasting - Method of
 model_abbr: "PROF_MOA"
 model_version: "1.0"
 model_contributors: [
-  {
-    "name": "Michal Ben-Nun",
-    "affiliation": "Predictive Science Inc",
-    "email": "mbennun@predsci.com"
-  },
-  {
-    "name": "James Turtle",
-    "affiliation": "Predictive Science Inc",
-    "email": "jturtle@predsci.com"
-  },
-  {
-    "name": "Pete Riley",
-    "affiliation": "Predictive Science Inc",
-    "email": "pete@predsci.com"
-  }
+    {
+        name: "Michal Ben-Nun",
+        affiliation: "Predictive Science Inc",
+        email: "mbennun@predsci.com",
+        orcid: "0000-0002-9164-0008"
+    },
+    {
+        name: "James Turtle",
+        affiliation: "Predictive Science Inc",
+        email: "jturtle@predsci.com",
+        orcid: "0000-0003-0735-7769"
+    },
+    {
+        name: "Pete Riley",
+        affiliation: "Predictive Science Inc",
+        email: "pete@predsci.com",
+        orcid: "0000-0002-1859-456X"
+    }
 ]
 website_url: "https://www.predsci.com/usa-flu-hosp/"
 license: "CC-BY-4.0"
@@ -30,3 +33,5 @@ data_inputs: "Daily and weekly incident flu hospitalizations from the HHS COVID-
 methods_long: "The PROF routines perform a deterministic fit of our compartmental SIR[H]2 (including vaccinated compartments for Susceptibles and Infectious) model to weekly hospitalization incidence profiles. The model includes a hospitalization compartment which is split into two sub-compartments. This split ensures that the model preserves the correct generation time (Tg) and that the ratio between cumulative recovered and hospitalized individuals is determined by the infection-hospitalization-ratio. The transmission-rate coefficient (Beta) is a time-dependent function of 2 or more arc-tangents.  The actual data is augmented with 'future' data from a Method Of Analogs (MOA).  The MOA data receives a reduced fitting-weight compared to actual data.  The model fit is inferred by an MCMC procedure. It is followed by stochastic simulations through the forecast time-window using the inferred parameter distributions and a daily cadence which is then aggregated to weekly incidence to produce the forecasts.  Where there is little-to-no epi signal in the data, a baseline statistical model is substituted for the mechanistic model."
 ensemble_of_models: false
 ensemble_of_hub_models: false
+baseline_model: false
+designated_targets: ["wk inc flu hosp", "peak week inc flu hosp", "peak inc flu hosp"]

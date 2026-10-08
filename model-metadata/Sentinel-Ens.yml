@@ -1,0 +1,25 @@
+team_name: "Sentinel"
+team_abbr: "Sentinel"
+model_name: "Sentinel ensemble"
+model_abbr: "Ens"
+model_version: "2"
+model_contributors: [
+  {
+    "name": "Ziyad Wahabi",
+    "affiliation": "Independent",
+    "email": "ziyadwahabi09@gmail.com"
+  }
+]
+website_url: "https://github.com/xairu23/sentinel"
+repo_url: "https://github.com/xairu23/sentinel"
+license: "CC-BY-4.0"
+designated_model: true
+designated_targets: ["wk inc flu hosp", "wk flu hosp rate change"]
+baseline_model: false
+team_funding: "None"
+data_inputs: "NHSN weekly influenza hospital admissions and their archived weekly versions (hub target data); NSSP share of ED visits for influenza (hub target data); CDC NWSS influenza A wastewater; Open-Meteo daily temperature and humidity; historical FluSurv-NET rates and ILINet x WHO/NREVSS ILI+ (2010-2022, via the UMass flusion repository)."
+methods: "Quantile blend of pooled log-growth regressions with ED, wastewater and weather signals (two thirds) and history-trained gradient-boosted quantile trees (one third)."
+methods_long: "(1) Eight pooled least-squares regressions (every combination of three signals: NSSP ED-visit share, NWSS wastewater, cold/dry weather anomaly) predict the k-week-ahead change in log admissions from recent weekly log changes, time of year, level relative to the location's usual level, peak-dampening terms and cumulative admissions this season per 100k; recent weeks weighted more; intervals from empirical residual quantiles scaled toward each location's own error level. (2) Gradient-boosted quantile trees (LightGBM, after UMass flusion) trained on NHSN plus FluSurv-NET and ILI+ history on a fourth-root scale, bagged over seasons. Quantiles are blended with weight 0.33 on the trees. Rate-change probabilities are derived from the same 23 quantiles. The newest reported week is corrected for typical upward revisions learned from the hub's archived data versions. Evaluated in a real-time replay of the 2023-24 to 2025-26 seasons. Code: https://github.com/xairu23/sentinel"
+backfill_adjustment: "Yes: the newest reported week is scaled by its typical later revision, learned from the hub's archived versions published before the forecast date."
+ensemble_of_models: true
+ensemble_of_hub_models: false
