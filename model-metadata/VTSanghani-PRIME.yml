@@ -2,7 +2,7 @@ team_name: "VTSanghani"
 team_abbr: "VTSanghani"
 model_name: "PRIME"
 model_abbr: "PRIME"
-model_version: "2.0"
+model_version: "3.0"
 model_contributors: [
   {
     "name": "Yiqi Su",
