@@ -1,9 +1,8 @@
-# 2026-09-30 -- companion (uncorrected) model; NOT designated so it never enters the hub ensemble, but it is
-# still scored publicly, giving a live A/B against CUSTS-STS_Residual. Same TO-CONFIRM items as STS_Residual (funding, URLs).
-team_name: "Columbia University - Pei Lab (STS-Residual)"
-team_abbr: "CUSTS"
-model_name: "Uncorrected multi-model ensemble (companion to STS_Residual)"
-model_abbr: "Ens_base"
+# 2026-10-08: moved from team CUSTS to CU at CDC's request (same team prefix for designation purposes).
+team_name: "Columbia University"
+team_abbr: "CU"
+model_name: "Uncorrected base ensemble of CU-STS_Residual"
+model_abbr: "STS_base"
 model_version: "1.0"
 model_contributors: [
   {
@@ -52,8 +51,8 @@ baseline_model: false
 ensemble_of_models: true
 ensemble_of_hub_models: false
 data_inputs: "Weekly laboratory-confirmed influenza hospital admissions (NHSN, via the FluSight hub target-data with as-of snapshots, or the NHSN public API when the hub snapshot is not yet available); outpatient ILI from ILINet (via Delphi Epidata) as auxiliary pre-2022 history for the statistical components; specific humidity climatology for the mechanistic component; state population from the hub locations file."
-methods: "Equal-weight quantile ensemble of six mechanistic, statistical, ML and foundation-model forecasts, without the STS-Residual correction (companion to CUSTS-STS_Residual)."
+methods: "Equal-weight quantile ensemble of six mechanistic, statistical, ML and foundation-model forecasts, without the STS-Residual correction (companion to CU-STS_Residual)."
 methods_long: "
-  Quantile-wise average (equal weights) of six component forecasts for weekly incident influenza hospital admissions at the national and jurisdiction level: a humidity-driven SIR model with ensemble adjustment Kalman filter (SIR-EAKF); a seasonal-drift model using epiweek-matched historical trajectories with post-peak reversion; a SARIMAX model with epiweek-climatology and Fourier regressors; a pooled LightGBM quantile-regression model on per-capita log growth refit weekly; and the Chronos-2 and TimesFM-3.0 time-series foundation models used zero-shot on the NHSN history of all jurisdictions jointly. Equal weights were chosen over fitted weights because, once the residual correction is applied, learned weights gave no gain on the hub's log-scale evaluation metric in three seasons of vintage-honest hindcasts. Quantiles are truncated at zero, made monotone and rounded to integers. This is the uncorrected base of CUSTS-STS_Residual, submitted (not designated) to measure the effect of the residual correction in real time.
+  Quantile-wise average (equal weights) of six component forecasts for weekly incident influenza hospital admissions at the national and jurisdiction level: a humidity-driven SIR model with ensemble adjustment Kalman filter (SIR-EAKF); a seasonal-drift model using epiweek-matched historical trajectories with post-peak reversion; a SARIMAX model with epiweek-climatology and Fourier regressors; a pooled LightGBM quantile-regression model on per-capita log growth refit weekly; and the Chronos-2 and TimesFM-3.0 time-series foundation models used zero-shot on the NHSN history of all jurisdictions jointly. Equal weights were chosen over fitted weights because, once the residual correction is applied, learned weights gave no gain on the hub's log-scale evaluation metric in three seasons of vintage-honest hindcasts. Quantiles are truncated at zero, made monotone and rounded to integers. This is the uncorrected base of CU-STS_Residual, submitted (not designated) to measure the effect of the residual correction in real time.
 "
 backfill_adjustment: "All component models are fit to the as-of snapshots of the hub target data available on each forecast Wednesday (first-release counts for the latest week); no explicit revision model is applied."
