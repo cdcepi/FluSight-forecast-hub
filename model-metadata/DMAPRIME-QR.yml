@@ -10,13 +10,13 @@ model_contributors: [
 ]
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "CDC weekly flu hospital admissions (NHSN), EHR surveillance data (weekly flu test volumes, positive tests, inpatient hospitalizations)"
+data_inputs: "CDC NHSN weekly influenza hospital admissions for all US states and the US national total; Prisma Health EHR surveillance data (weekly flu tests, positive tests, inpatient hospitalizations), used for South Carolina only"
 
-methods: "Parametric Asymmetric Quantile Regression with recursive trend-based forecasting"
-methods_long: "A hybrid direct horizon-specific quantile regression and decline-aware analog forecasting model integrating real-time EHR surveillance data with historical CDC trends. Predictors include Prisma Health testing volumes, positive tests, hospitalizations, lagged CDC admissions, trend, acceleration, post-peak decline, and seasonal indicators. Forecasts are generated for horizons 0–3 weeks ahead. Median forecasts combine quantile regression predictions with weighted historical analog trajectories, with tuning of analog neighborhood size, bandwidth, and QR–analog blending through rolling validation. Phase-aware classification is used to identify surge, plateau, and post-peak decline states. Uncertainty is estimated from a blend of analog forecast errors and phase-conditioned QR residuals, with quantile monotonicity enforced via isotonic regression. Forecasts are constrained to be non-negative. Model updated May 27, 2026: added decline-aware analog correction, rolling-validation tuning, and software implementation/evaluation file generation."
+methods: "Recursive quantile regression with analogs, EHR and cross-state signals, and multi-state pooling"
+methods_long: "Recursive one-week-ahead quantile regression blended with phase-aware historical analogs, forecasting 0-3 weeks ahead by feeding each prediction back into the features. Predictors include lagged admissions, trend, seasonality, the share of US states with rising admissions, and for South Carolina, Prisma Health EHR data. A second quantile regression trained on all US states is blended in, and forecast growth is capped at a damped version of recently observed growth, with weights and damping tuned by rolling validation. The US national forecast uses the same approach without EHR inputs. Uncertainty comes from analog errors and model residuals. Updated October 2026"
 ensemble_of_models: false
 ensemble_of_hub_models: false
-model_version: "1.7"
+model_version: "2.0"
 website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
 backfill_adjustment: "false"
