@@ -1,0 +1,37 @@
+team_name: Atlantic Coast Center for Infectious Disease Dynamics and Analytics
+team_abbr: ACCIDDA
+model_name: EpiLoom
+model_abbr: EpiLoom
+model_version: '0.1'
+model_contributors:
+- name: Joseph Lemaitre
+  affiliation: University of North Carolina at Chapel Hill
+  email: jo.lemaitresamra@gmail.com
+- name: Justin Lessler
+  affiliation: University of North Carolina at Chapel Hill
+  email: jlessler@unc.edu
+website_url: https://github.com/ACCIDDA/tapestry
+license: CC-BY-4.0
+designated_model: true
+team_funding: J.L. and J.C.L. disclose support from the Insight Net cooperative agreement
+  CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics.
+methods: Ensemble of neural networks forecasting flu admissions and ED visit proportions,
+  with reporting-revision-aware training, information shared across locations, and averaged
+  predictive quantiles.
+data_inputs: NHSN flu hospital admissions and NSSP flu ED visit share as reported at the forecast
+  date (revision archives from Delphi Epidata), Kinsa smart-thermometer ILI (PopHIVE).
+methods_long: EpiLoom combines two multilayer-perceptron forecasting recipes trained on the
+  2022-23 through 2025-26 seasons to predict finalized weekly influenza hospital admissions
+  and influenza ED visit proportions. The first recipe generates predictive samples and uses
+  Kinsa covariates; its training histories are artificially degraded and then corrected using
+  trees fitted to historical reported-to-final data pairs. The second recipe predicts quantiles
+  directly and exchanges information between neighboring locations. Both recipes learn across
+  locations. Each recipe has five independently seeded fits. Forecast quantiles are averaged
+  with equal weight per recipe and equal weight per seed within each recipe. Predictive samples
+  and directly estimated quantiles represent uncertainty. For prospective forecasts in 2026-27,
+  the saved models use surveillance data available at the forecast date; the admissions correction
+  trees are applied to reported inputs. Submitted forecasts cover horizons 0 through 3 relative
+  to the Hub reference date.
+ensemble_of_models: true
+ensemble_of_hub_models: false
+repo_url: https://github.com/ACCIDDA/tapestry
