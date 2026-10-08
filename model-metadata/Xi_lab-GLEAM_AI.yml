@@ -1,0 +1,39 @@
+team_name: "Complex Intelligence Lab"
+team_abbr: "Xi_lab"
+model_name: "GLEAM-AI"
+model_abbr: "GLEAM_AI"
+model_version: "2026-27 live v1"
+model_contributors:
+  - name: "Matteo Chinazzi"
+    affiliation: "Complex Intelligence Lab, Network Science Institute, The Roux Institute, Northeastern University"
+    email: "m.chinazzi@northeastern.edu"
+website_url: "https://www.matteochinazzi.com"
+license: "CC-BY-4.0"
+designated_model: true
+baseline_model: false
+data_inputs: >-
+  NHSN weekly laboratory-confirmed influenza hospital admissions (Hospital Respiratory Data, data.cdc.gov
+  mpgq-jmmr), as-of vintages only, cross-checked against the hub target data and Delphi Epidata; hub
+  population file. The surrogate was trained on GLEAM simulations (census population, human mobility).
+methods: "Deep-learning surrogate of the GLEAM metapopulation flu model, ABC-calibrated weekly to as-of NHSN data."
+methods_long: >-
+  GLEAM-AI is a deep-learning surrogate (emulator) of GLEAM, a stochastic, spatially structured
+  metapopulation influenza transmission model. Each week a cached pool of 12,000 surrogate trajectories,
+  drawn from broad priors over epidemic start date, basic reproduction number R0, seasonal forcing,
+  initial immune and latent fractions, and reporting rate, is calibrated to the as-of NHSN admissions
+  history by Approximate Bayesian Computation (ABC), separately for each state and for the nation: members
+  are scored by a recency-weighted distance to the observed weeks, accepted under a quality threshold and
+  kernel-weighted. The ABC posterior of each location is then refined by two rounds of population Monte
+  Carlo ABC: in each round 2,000 new parameter sets per location are proposed
+  around the accepted ones (Gaussian steps for R0, the reporting rate and the start date; on-grid moves
+  for the initial-condition levels), run through the surrogate, accepted if their distance is at most the
+  median distance of the previous round, and importance-weighted (prior density divided by proposal
+  density).
+ensemble_of_models: false
+ensemble_of_hub_models: false
+backfill_adjustment: >-
+  NHSN admissions for the most recent reported week are usually incomplete in real time. Before
+  calibration that week is completed to its estimated eventual value by a chain-ladder
+  (reporting-completeness) nowcast: the partial count divided by the historical fraction of the eventual
+  count reported at the same delay, estimated from past as-of vintages only. Earlier weeks are used as
+  reported.
