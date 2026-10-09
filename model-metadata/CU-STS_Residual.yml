@@ -1,10 +1,9 @@
-# 2026-09-30 -- designated model. TO CONFIRM before the PR: team_funding line, website/repo URL (public repo of
-# this pipeline or the paper repo).
+# 2026-10-08: moved from team CUSTS to CU at CDC's request (same team prefix for designation purposes).
 # Schema: hub-config/model-metadata-schema.json. File name must be <team_abbr>-<model_abbr>.yml and match
 # model-output/<team_abbr>-<model_abbr>/. team_abbr/model_abbr: ^[a-zA-Z0-9_+]+$, <=16 chars.
 # `designated_targets` omitted on purpose (R's yaml reader collapses a one-element list; default = all submitted targets).
-team_name: "Columbia University - Pei Lab (STS-Residual)"
-team_abbr: "CUSTS"
+team_name: "Columbia University"
+team_abbr: "CU"
 model_name: "STS-Residual corrected multi-model ensemble"
 model_abbr: "STS_Residual"
 model_version: "1.0"
