@@ -12,7 +12,7 @@ model_contributors: [
 ]
 website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
 license: "CC-BY-4.0"
-designated_model: true
+designated_model: false
 methods: "Equal-weight quantile average of five forecasters pooled across locations: a flat model, gradient-boosted trees and a small neural net on NHSN, and two tree models that also learn from ILINet."
 data_inputs: "Weekly incident flu hospital admissions from NHSN (the hub's target data and its dated versions) and outpatient ILI percentages from ILINet for the US and HHS regions (via the Delphi Epidata API)."
 methods_long: "Forecasts are made on the scale z = log(admissions per 100,000 + 0.1) as quantiles of the change from
