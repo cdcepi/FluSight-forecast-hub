@@ -44,4 +44,4 @@ team_funding: "CSTE/CDC: Development of Forecasts and/or Scenario Projections fo
 backfill_adjustment: "The latest weekly admission count is multiplied by (1 + max_report / latest_report) / 2, where max_report is 
   the maximum reporting percentage within the current season and latest_report is the latest available reporting percentage."
 baseline_model: false
-designated_targets: "wk flu hosp rate change"
+designated_targets: [wk flu hosp rate change]
