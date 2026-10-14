@@ -1,7 +1,7 @@
 team_name: "MOBS Lab at Northeastern University"
 team_abbr: "MOBS"
 model_name: "GLEAM Flu Neural Contextual Bandit Forecasting Model"
-model_abbr: "GLEAM_NCB_FLUH"
+model_abbr: "GLEAM_BANDIT"
 model_version: "1.0"
 model_contributors: [
   {
