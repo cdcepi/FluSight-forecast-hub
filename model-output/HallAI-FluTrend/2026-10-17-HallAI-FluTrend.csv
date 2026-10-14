@@ -104,7 +104,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,decrease,0.081337
 2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,stable,0.536427
-2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,increase,0.371756
+2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,increase,0.371757
 2026-10-17,wk flu hosp rate change,2,2026-10-31,US,pmf,large_increase,0.008483
 2026-10-17,wk inc flu hosp,3,2026-11-07,US,quantile,0.01,451
 2026-10-17,wk inc flu hosp,3,2026-11-07,US,quantile,0.025,572
@@ -183,7 +183,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,decrease,0.089321
 2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,stable,0.541916
-2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,increase,0.346307
+2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,increase,0.346308
 2026-10-17,wk flu hosp rate change,0,2026-10-17,01,pmf,large_increase,0.020459
 2026-10-17,wk inc flu hosp,1,2026-10-24,01,quantile,0.01,21
 2026-10-17,wk inc flu hosp,1,2026-10-24,01,quantile,0.025,27
@@ -453,7 +453,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,decrease,0.066866
 2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,stable,0.563373
-2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,increase,0.358283
+2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,increase,0.358284
 2026-10-17,wk flu hosp rate change,0,2026-10-17,04,pmf,large_increase,0.009481
 2026-10-17,wk inc flu hosp,1,2026-10-24,04,quantile,0.01,19
 2026-10-17,wk inc flu hosp,1,2026-10-24,04,quantile,0.025,28
@@ -508,7 +508,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,2,2026-10-31,04,quantile,0.99,645
 2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,decrease,0.005988
-2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,stable,0.372754
+2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,stable,0.372755
 2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,increase,0.538423
 2026-10-17,wk flu hosp rate change,2,2026-10-31,04,pmf,large_increase,0.080838
 2026-10-17,wk inc flu hosp,3,2026-11-07,04,quantile,0.01,9
@@ -616,7 +616,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,decrease,0.010978
 2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,stable,0.612774
-2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,increase,0.366766
+2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,increase,0.366767
 2026-10-17,wk flu hosp rate change,1,2026-10-24,05,pmf,large_increase,0.007485
 2026-10-17,wk inc flu hosp,2,2026-10-31,05,quantile,0.01,6
 2026-10-17,wk inc flu hosp,2,2026-10-31,05,quantile,0.025,7
@@ -671,7 +671,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,05,quantile,0.99,336
 2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,stable,0.460657
+2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,stable,0.460658
 2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,increase,0.460159
 2026-10-17,wk flu hosp rate change,3,2026-11-07,05,pmf,large_increase,0.075199
 2026-10-17,wk inc flu hosp,-1,2026-10-10,06,quantile,0.01,478
@@ -857,7 +857,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,08,quantile,0.99,95
 2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,decrease,0.024900
-2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,stable,0.778884
+2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,stable,0.778885
 2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,increase,0.192231
 2026-10-17,wk flu hosp rate change,0,2026-10-17,08,pmf,large_increase,0.001992
 2026-10-17,wk inc flu hosp,1,2026-10-24,08,quantile,0.01,4
@@ -941,7 +941,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,08,quantile,0.99,388
 2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,stable,0.710657
+2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,stable,0.710658
 2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,increase,0.269422
 2026-10-17,wk flu hosp rate change,3,2026-11-07,08,pmf,large_increase,0.015936
 2026-10-17,wk inc flu hosp,-1,2026-10-10,09,quantile,0.01,16
@@ -1346,7 +1346,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,11,quantile,0.99,155
 2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,stable,0.589143
+2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,stable,0.589144
 2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,increase,0.256972
 2026-10-17,wk flu hosp rate change,3,2026-11-07,11,pmf,large_increase,0.149900
 2026-10-17,wk inc flu hosp,-1,2026-10-10,12,quantile,0.01,527
@@ -1480,7 +1480,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,12,quantile,0.975,4185
 2026-10-17,wk inc flu hosp,3,2026-11-07,12,quantile,0.99,5804
 2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,decrease,0.129242
+2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,decrease,0.129241
 2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,stable,0.251996
 2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,increase,0.408184
 2026-10-17,wk flu hosp rate change,3,2026-11-07,12,pmf,large_increase,0.208583
@@ -1752,7 +1752,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,large_decrease,0.001997
 2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,decrease,0.049426
 2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,stable,0.070894
-2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,increase,0.122317
+2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,increase,0.122316
 2026-10-17,wk flu hosp rate change,3,2026-11-07,15,pmf,large_increase,0.755367
 2026-10-17,wk inc flu hosp,-1,2026-10-10,16,quantile,0.01,5
 2026-10-17,wk inc flu hosp,-1,2026-10-10,16,quantile,0.025,5
@@ -1802,7 +1802,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,16,quantile,0.99,58
 2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,stable,0.841135
+2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,stable,0.841136
 2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,increase,0.129482
 2026-10-17,wk flu hosp rate change,0,2026-10-17,16,pmf,large_increase,0.025398
 2026-10-17,wk inc flu hosp,1,2026-10-24,16,quantile,0.01,1
@@ -1938,7 +1938,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,decrease,0.067365
 2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,stable,0.240020
-2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,increase,0.602295
+2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,increase,0.602296
 2026-10-17,wk flu hosp rate change,0,2026-10-17,17,pmf,large_increase,0.088323
 2026-10-17,wk inc flu hosp,1,2026-10-24,17,quantile,0.01,62
 2026-10-17,wk inc flu hosp,1,2026-10-24,17,quantile,0.025,110
@@ -1993,7 +1993,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,2,2026-10-31,17,quantile,0.99,1996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,decrease,0.026447
-2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,stable,0.118762
+2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,stable,0.118763
 2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,increase,0.508982
 2026-10-17,wk flu hosp rate change,2,2026-10-31,17,pmf,large_increase,0.343812
 2026-10-17,wk inc flu hosp,3,2026-11-07,17,quantile,0.01,58
@@ -2021,7 +2021,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,17,quantile,0.99,3382
 2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,decrease,0.015968
-2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,stable,0.136727
+2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,stable,0.136726
 2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,increase,0.393713
 2026-10-17,wk flu hosp rate change,3,2026-11-07,17,pmf,large_increase,0.451597
 2026-10-17,wk inc flu hosp,-1,2026-10-10,18,quantile,0.01,55
@@ -2072,7 +2072,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,18,quantile,0.99,170
 2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,decrease,0.069361
-2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,stable,0.618263
+2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,stable,0.618264
 2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,increase,0.302395
 2026-10-17,wk flu hosp rate change,0,2026-10-17,18,pmf,large_increase,0.007984
 2026-10-17,wk inc flu hosp,1,2026-10-24,18,quantile,0.01,19
@@ -2265,7 +2265,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,19,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,19,pmf,stable,0.579183
 2026-10-17,wk flu hosp rate change,2,2026-10-31,19,pmf,increase,0.387948
-2026-10-17,wk flu hosp rate change,2,2026-10-31,19,pmf,large_increase,0.028884
+2026-10-17,wk flu hosp rate change,2,2026-10-31,19,pmf,large_increase,0.028885
 2026-10-17,wk inc flu hosp,3,2026-11-07,19,quantile,0.01,5
 2026-10-17,wk inc flu hosp,3,2026-11-07,19,quantile,0.025,7
 2026-10-17,wk inc flu hosp,3,2026-11-07,19,quantile,0.05,11
@@ -2428,7 +2428,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,20,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,20,pmf,stable,0.634462
 2026-10-17,wk flu hosp rate change,3,2026-11-07,20,pmf,increase,0.331175
-2026-10-17,wk flu hosp rate change,3,2026-11-07,20,pmf,large_increase,0.030378
+2026-10-17,wk flu hosp rate change,3,2026-11-07,20,pmf,large_increase,0.030379
 2026-10-17,wk inc flu hosp,-1,2026-10-10,21,quantile,0.01,44
 2026-10-17,wk inc flu hosp,-1,2026-10-10,21,quantile,0.025,45
 2026-10-17,wk inc flu hosp,-1,2026-10-10,21,quantile,0.05,45
@@ -2506,7 +2506,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,decrease,0.037924
 2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,stable,0.318862
-2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,increase,0.575848
+2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,increase,0.575849
 2026-10-17,wk flu hosp rate change,1,2026-10-24,21,pmf,large_increase,0.065369
 2026-10-17,wk inc flu hosp,2,2026-10-31,21,quantile,0.01,16
 2026-10-17,wk inc flu hosp,2,2026-10-31,21,quantile,0.025,22
@@ -2669,7 +2669,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,decrease,0.031437
 2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,stable,0.075848
-2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,increase,0.357285
+2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,increase,0.357286
 2026-10-17,wk flu hosp rate change,2,2026-10-31,22,pmf,large_increase,0.533433
 2026-10-17,wk inc flu hosp,3,2026-11-07,22,quantile,0.01,33
 2026-10-17,wk inc flu hosp,3,2026-11-07,22,quantile,0.025,87
@@ -2698,7 +2698,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,22,pmf,decrease,0.019960
 2026-10-17,wk flu hosp rate change,3,2026-11-07,22,pmf,stable,0.077844
 2026-10-17,wk flu hosp rate change,3,2026-11-07,22,pmf,increase,0.300399
-2026-10-17,wk flu hosp rate change,3,2026-11-07,22,pmf,large_increase,0.599800
+2026-10-17,wk flu hosp rate change,3,2026-11-07,22,pmf,large_increase,0.599801
 2026-10-17,wk inc flu hosp,-1,2026-10-10,23,quantile,0.01,14
 2026-10-17,wk inc flu hosp,-1,2026-10-10,23,quantile,0.025,14
 2026-10-17,wk inc flu hosp,-1,2026-10-10,23,quantile,0.05,14
@@ -2776,7 +2776,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,decrease,0.043912
 2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,stable,0.517964
-2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,increase,0.364770
+2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,increase,0.364771
 2026-10-17,wk flu hosp rate change,1,2026-10-24,23,pmf,large_increase,0.071357
 2026-10-17,wk inc flu hosp,2,2026-10-31,23,quantile,0.01,1
 2026-10-17,wk inc flu hosp,2,2026-10-31,23,quantile,0.025,2
@@ -3045,7 +3045,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,1,2026-10-24,25,quantile,0.99,136
 2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,stable,0.841135
+2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,stable,0.841136
 2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,increase,0.149900
 2026-10-17,wk flu hosp rate change,1,2026-10-24,25,pmf,large_increase,0.004980
 2026-10-17,wk inc flu hosp,2,2026-10-31,25,quantile,0.01,5
@@ -3101,7 +3101,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,25,quantile,0.99,477
 2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,stable,0.654382
+2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,stable,0.654383
 2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,increase,0.323705
 2026-10-17,wk flu hosp rate change,3,2026-11-07,25,pmf,large_increase,0.017928
 2026-10-17,wk inc flu hosp,-1,2026-10-10,26,quantile,0.01,55
@@ -3316,7 +3316,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,large_decrease,0.001988
 2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,decrease,0.001988
 2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,stable,0.843936
-2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,increase,0.150099
+2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,increase,0.150100
 2026-10-17,wk flu hosp rate change,1,2026-10-24,27,pmf,large_increase,0.001988
 2026-10-17,wk inc flu hosp,2,2026-10-31,27,quantile,0.01,4
 2026-10-17,wk inc flu hosp,2,2026-10-31,27,quantile,0.025,6
@@ -3423,7 +3423,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,decrease,0.108283
 2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,stable,0.487026
-2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,increase,0.373253
+2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,increase,0.373254
 2026-10-17,wk flu hosp rate change,0,2026-10-17,28,pmf,large_increase,0.029441
 2026-10-17,wk inc flu hosp,1,2026-10-24,28,quantile,0.01,9
 2026-10-17,wk inc flu hosp,1,2026-10-24,28,quantile,0.025,17
@@ -3480,7 +3480,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,28,pmf,decrease,0.023952
 2026-10-17,wk flu hosp rate change,2,2026-10-31,28,pmf,stable,0.348303
 2026-10-17,wk flu hosp rate change,2,2026-10-31,28,pmf,increase,0.508982
-2026-10-17,wk flu hosp rate change,2,2026-10-31,28,pmf,large_increase,0.116766
+2026-10-17,wk flu hosp rate change,2,2026-10-31,28,pmf,large_increase,0.116767
 2026-10-17,wk inc flu hosp,3,2026-11-07,28,quantile,0.01,3
 2026-10-17,wk inc flu hosp,3,2026-11-07,28,quantile,0.025,13
 2026-10-17,wk inc flu hosp,3,2026-11-07,28,quantile,0.05,19
@@ -3749,7 +3749,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,decrease,0.079341
 2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,stable,0.353792
-2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,increase,0.374750
+2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,increase,0.374751
 2026-10-17,wk flu hosp rate change,2,2026-10-31,30,pmf,large_increase,0.190120
 2026-10-17,wk inc flu hosp,3,2026-11-07,30,quantile,0.01,6
 2026-10-17,wk inc flu hosp,3,2026-11-07,30,quantile,0.025,11
@@ -3777,7 +3777,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,decrease,0.051896
 2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,stable,0.315868
-2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,increase,0.333832
+2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,increase,0.333833
 2026-10-17,wk flu hosp rate change,3,2026-11-07,30,pmf,large_increase,0.296407
 2026-10-17,wk inc flu hosp,-1,2026-10-10,31,quantile,0.01,12
 2026-10-17,wk inc flu hosp,-1,2026-10-10,31,quantile,0.025,12
@@ -3913,7 +3913,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,31,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,31,pmf,stable,0.394422
 2026-10-17,wk flu hosp rate change,3,2026-11-07,31,pmf,increase,0.456673
-2026-10-17,wk flu hosp rate change,3,2026-11-07,31,pmf,large_increase,0.144920
+2026-10-17,wk flu hosp rate change,3,2026-11-07,31,pmf,large_increase,0.144921
 2026-10-17,wk inc flu hosp,-1,2026-10-10,32,quantile,0.01,40
 2026-10-17,wk inc flu hosp,-1,2026-10-10,32,quantile,0.025,41
 2026-10-17,wk inc flu hosp,-1,2026-10-10,32,quantile,0.05,41
@@ -3963,7 +3963,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,decrease,0.164671
 2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,stable,0.402196
-2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,increase,0.387226
+2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,increase,0.387225
 2026-10-17,wk flu hosp rate change,0,2026-10-17,32,pmf,large_increase,0.043912
 2026-10-17,wk inc flu hosp,1,2026-10-24,32,quantile,0.01,13
 2026-10-17,wk inc flu hosp,1,2026-10-24,32,quantile,0.025,20
@@ -4047,7 +4047,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,decrease,0.006986
 2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,stable,0.414172
-2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,increase,0.394212
+2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,increase,0.394211
 2026-10-17,wk flu hosp rate change,3,2026-11-07,32,pmf,large_increase,0.182635
 2026-10-17,wk inc flu hosp,-1,2026-10-10,33,quantile,0.01,5
 2026-10-17,wk inc flu hosp,-1,2026-10-10,33,quantile,0.025,5
@@ -4155,7 +4155,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,33,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,33,pmf,stable,0.722112
 2026-10-17,wk flu hosp rate change,2,2026-10-31,33,pmf,increase,0.240040
-2026-10-17,wk flu hosp rate change,2,2026-10-31,33,pmf,large_increase,0.033865
+2026-10-17,wk flu hosp rate change,2,2026-10-31,33,pmf,large_increase,0.033864
 2026-10-17,wk inc flu hosp,3,2026-11-07,33,quantile,0.01,0
 2026-10-17,wk inc flu hosp,3,2026-11-07,33,quantile,0.025,1
 2026-10-17,wk inc flu hosp,3,2026-11-07,33,quantile,0.05,1
@@ -4318,7 +4318,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,34,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,34,pmf,stable,0.642928
 2026-10-17,wk flu hosp rate change,3,2026-11-07,34,pmf,increase,0.332669
-2026-10-17,wk flu hosp rate change,3,2026-11-07,34,pmf,large_increase,0.020418
+2026-10-17,wk flu hosp rate change,3,2026-11-07,34,pmf,large_increase,0.020419
 2026-10-17,wk inc flu hosp,-1,2026-10-10,35,quantile,0.01,9
 2026-10-17,wk inc flu hosp,-1,2026-10-10,35,quantile,0.025,9
 2026-10-17,wk inc flu hosp,-1,2026-10-10,35,quantile,0.05,9
@@ -4367,7 +4367,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,35,quantile,0.99,39
 2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,large_decrease,0.001990
 2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,decrease,0.001990
-2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,stable,0.878109
+2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,stable,0.878110
 2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,increase,0.115920
 2026-10-17,wk flu hosp rate change,0,2026-10-17,35,pmf,large_increase,0.001990
 2026-10-17,wk inc flu hosp,1,2026-10-24,35,quantile,0.01,2
@@ -4502,7 +4502,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,36,quantile,0.99,433
 2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,decrease,0.037924
-2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,stable,0.606786
+2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,stable,0.606787
 2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,increase,0.351297
 2026-10-17,wk flu hosp rate change,0,2026-10-17,36,pmf,large_increase,0.001996
 2026-10-17,wk inc flu hosp,1,2026-10-24,36,quantile,0.01,68
@@ -4695,7 +4695,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,37,pmf,decrease,0.001995
 2026-10-17,wk flu hosp rate change,2,2026-10-31,37,pmf,stable,0.510224
 2026-10-17,wk flu hosp rate change,2,2026-10-31,37,pmf,increase,0.446384
-2026-10-17,wk flu hosp rate change,2,2026-10-31,37,pmf,large_increase,0.039401
+2026-10-17,wk flu hosp rate change,2,2026-10-31,37,pmf,large_increase,0.039402
 2026-10-17,wk inc flu hosp,3,2026-11-07,37,quantile,0.01,13
 2026-10-17,wk inc flu hosp,3,2026-11-07,37,quantile,0.025,38
 2026-10-17,wk inc flu hosp,3,2026-11-07,37,quantile,0.05,61
@@ -4721,7 +4721,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,3,2026-11-07,37,quantile,0.99,1155
 2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,decrease,0.001992
-2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,stable,0.463147
+2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,stable,0.463148
 2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,increase,0.447211
 2026-10-17,wk flu hosp rate change,3,2026-11-07,37,pmf,large_increase,0.085657
 2026-10-17,wk inc flu hosp,-1,2026-10-10,38,quantile,0.01,2
@@ -5100,7 +5100,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,40,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,40,pmf,stable,0.513446
 2026-10-17,wk flu hosp rate change,2,2026-10-31,40,pmf,increase,0.454183
-2026-10-17,wk flu hosp rate change,2,2026-10-31,40,pmf,large_increase,0.028386
+2026-10-17,wk flu hosp rate change,2,2026-10-31,40,pmf,large_increase,0.028387
 2026-10-17,wk inc flu hosp,3,2026-11-07,40,quantile,0.01,7
 2026-10-17,wk inc flu hosp,3,2026-11-07,40,quantile,0.025,11
 2026-10-17,wk inc flu hosp,3,2026-11-07,40,quantile,0.05,15
@@ -5311,7 +5311,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,42,quantile,0.975,465
 2026-10-17,wk inc flu hosp,0,2026-10-17,42,quantile,0.99,573
 2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,decrease,0.100299
+2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,decrease,0.100300
 2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,stable,0.344311
 2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,increase,0.522954
 2026-10-17,wk flu hosp rate change,0,2026-10-17,42,pmf,large_increase,0.030439
@@ -5341,7 +5341,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,decrease,0.048403
 2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,stable,0.273952
-2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,increase,0.597305
+2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,increase,0.597306
 2026-10-17,wk flu hosp rate change,1,2026-10-24,42,pmf,large_increase,0.078343
 2026-10-17,wk inc flu hosp,2,2026-10-31,42,quantile,0.01,72
 2026-10-17,wk inc flu hosp,2,2026-10-31,42,quantile,0.025,107
@@ -5477,7 +5477,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,44,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,44,pmf,stable,0.838147
 2026-10-17,wk flu hosp rate change,1,2026-10-24,44,pmf,increase,0.127490
-2026-10-17,wk flu hosp rate change,1,2026-10-24,44,pmf,large_increase,0.030378
+2026-10-17,wk flu hosp rate change,1,2026-10-24,44,pmf,large_increase,0.030379
 2026-10-17,wk inc flu hosp,2,2026-10-31,44,quantile,0.01,0
 2026-10-17,wk inc flu hosp,2,2026-10-31,44,quantile,0.025,0
 2026-10-17,wk inc flu hosp,2,2026-10-31,44,quantile,0.05,1
@@ -5581,7 +5581,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,45,quantile,0.975,123
 2026-10-17,wk inc flu hosp,0,2026-10-17,45,quantile,0.99,149
 2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,decrease,0.093313
+2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,decrease,0.093314
 2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,stable,0.559381
 2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,increase,0.333333
 2026-10-17,wk flu hosp rate change,0,2026-10-17,45,pmf,large_increase,0.011976
@@ -5718,7 +5718,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,stable,0.950697
-2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,increase,0.025398
+2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,increase,0.025399
 2026-10-17,wk flu hosp rate change,0,2026-10-17,46,pmf,large_increase,0.019920
 2026-10-17,wk inc flu hosp,1,2026-10-24,46,quantile,0.01,0
 2026-10-17,wk inc flu hosp,1,2026-10-24,46,quantile,0.025,0
@@ -5775,7 +5775,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,46,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,46,pmf,stable,0.759960
 2026-10-17,wk flu hosp rate change,2,2026-10-31,46,pmf,increase,0.209163
-2026-10-17,wk flu hosp rate change,2,2026-10-31,46,pmf,large_increase,0.026892
+2026-10-17,wk flu hosp rate change,2,2026-10-31,46,pmf,large_increase,0.026893
 2026-10-17,wk inc flu hosp,3,2026-11-07,46,quantile,0.01,0
 2026-10-17,wk inc flu hosp,3,2026-11-07,46,quantile,0.025,1
 2026-10-17,wk inc flu hosp,3,2026-11-07,46,quantile,0.05,1
@@ -5851,7 +5851,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,47,quantile,0.975,163
 2026-10-17,wk inc flu hosp,0,2026-10-17,47,quantile,0.99,182
 2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,decrease,0.086327
+2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,decrease,0.086328
 2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,stable,0.584830
 2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,increase,0.321357
 2026-10-17,wk flu hosp rate change,0,2026-10-17,47,pmf,large_increase,0.005489
@@ -5881,7 +5881,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,decrease,0.031437
 2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,stable,0.586826
-2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,increase,0.358283
+2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,increase,0.358284
 2026-10-17,wk flu hosp rate change,1,2026-10-24,47,pmf,large_increase,0.021457
 2026-10-17,wk inc flu hosp,2,2026-10-31,47,quantile,0.01,20
 2026-10-17,wk inc flu hosp,2,2026-10-31,47,quantile,0.025,25
@@ -6015,7 +6015,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,1,2026-10-24,48,quantile,0.99,1544
 2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,decrease,0.040918
-2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,stable,0.363273
+2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,stable,0.363274
 2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,increase,0.560878
 2026-10-17,wk flu hosp rate change,1,2026-10-24,48,pmf,large_increase,0.032934
 2026-10-17,wk inc flu hosp,2,2026-10-31,48,quantile,0.01,121
@@ -6043,7 +6043,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,2,2026-10-31,48,quantile,0.99,2668
 2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,decrease,0.036926
-2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,stable,0.335828
+2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,stable,0.335829
 2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,increase,0.566367
 2026-10-17,wk flu hosp rate change,2,2026-10-31,48,pmf,large_increase,0.058882
 2026-10-17,wk inc flu hosp,3,2026-11-07,48,quantile,0.01,68
@@ -6121,7 +6121,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,49,quantile,0.975,81
 2026-10-17,wk inc flu hosp,0,2026-10-17,49,quantile,0.99,103
 2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,decrease,0.097804
+2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,decrease,0.097805
 2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,stable,0.579341
 2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,increase,0.304391
 2026-10-17,wk flu hosp rate change,0,2026-10-17,49,pmf,large_increase,0.016467
@@ -6286,7 +6286,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,stable,0.839143
-2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,increase,0.091633
+2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,increase,0.091634
 2026-10-17,wk flu hosp rate change,1,2026-10-24,50,pmf,large_increase,0.065239
 2026-10-17,wk inc flu hosp,2,2026-10-31,50,quantile,0.01,0
 2026-10-17,wk inc flu hosp,2,2026-10-31,50,quantile,0.025,1
@@ -6393,7 +6393,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,decrease,0.008466
 2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,stable,0.833665
-2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,increase,0.153884
+2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,increase,0.153885
 2026-10-17,wk flu hosp rate change,0,2026-10-17,51,pmf,large_increase,0.001992
 2026-10-17,wk inc flu hosp,1,2026-10-24,51,quantile,0.01,7
 2026-10-17,wk inc flu hosp,1,2026-10-24,51,quantile,0.025,12
@@ -6449,7 +6449,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,stable,0.776892
-2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,increase,0.215139
+2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,increase,0.215140
 2026-10-17,wk flu hosp rate change,2,2026-10-31,51,pmf,large_increase,0.003984
 2026-10-17,wk inc flu hosp,3,2026-11-07,51,quantile,0.01,9
 2026-10-17,wk inc flu hosp,3,2026-11-07,51,quantile,0.025,16
@@ -6526,7 +6526,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,53,quantile,0.975,256
 2026-10-17,wk inc flu hosp,0,2026-10-17,53,quantile,0.99,304
 2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,large_decrease,0.001996
-2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,decrease,0.139222
+2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,decrease,0.139221
 2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,stable,0.418663
 2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,increase,0.414671
 2026-10-17,wk flu hosp rate change,0,2026-10-17,53,pmf,large_increase,0.025449
@@ -6612,7 +6612,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,large_decrease,0.001996
 2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,decrease,0.013473
 2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,stable,0.412675
-2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,increase,0.401697
+2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,increase,0.401696
 2026-10-17,wk flu hosp rate change,3,2026-11-07,53,pmf,large_increase,0.170160
 2026-10-17,wk inc flu hosp,-1,2026-10-10,54,quantile,0.01,5
 2026-10-17,wk inc flu hosp,-1,2026-10-10,54,quantile,0.025,5
@@ -6691,7 +6691,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,large_decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,decrease,0.001992
 2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,stable,0.834661
-2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,increase,0.151394
+2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,increase,0.151395
 2026-10-17,wk flu hosp rate change,1,2026-10-24,54,pmf,large_increase,0.009960
 2026-10-17,wk inc flu hosp,2,2026-10-31,54,quantile,0.01,1
 2026-10-17,wk inc flu hosp,2,2026-10-31,54,quantile,0.025,1
@@ -6796,7 +6796,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-10-17,wk inc flu hosp,0,2026-10-17,55,quantile,0.975,82
 2026-10-17,wk inc flu hosp,0,2026-10-17,55,quantile,0.99,93
 2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,large_decrease,0.001992
-2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,decrease,0.039841
+2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,decrease,0.039840
 2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,stable,0.728088
 2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,increase,0.228088
 2026-10-17,wk flu hosp rate change,0,2026-10-17,55,pmf,large_increase,0.001992
