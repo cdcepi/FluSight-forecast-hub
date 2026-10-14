@@ -23,12 +23,12 @@ model_contributors: [
   }
 ]
 license: "CC-BY-4.0" 
-designated_model: true
+designated_model: false
 data_inputs: Weekly incident flu hospitalizations reported to NHSN.
 methods: An random walk model assumes that the next few weeks of any time series of indicators will have the same spread as the last few weeks and will be centered on the last observation.
 methods_long: Steps in the random walk have an expected value of zero and the standard devation of the last few data points determines the variation around zero in the step size. Steps in the walk are determined by sampling from a normal distribution. If the walk drifts below zero, it is considered to be at zero for the purpose of predicting the indicator. By simulating these walks repeatedly, a distribution of future values of incident cases and deaths are obtained.
 website_url: https://github.com/CEIDatUGA/CEID-Walk_2024-2025
 ensemble_of_models: false
 ensemble_of_hub_models: false
-
+baseline_model: true
 
