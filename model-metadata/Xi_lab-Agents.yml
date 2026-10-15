@@ -1,0 +1,22 @@
+team_name: "Complex Intelligence Lab"
+team_abbr: "Xi_lab"
+model_name: "Ensemble of AI forecasting agents"
+model_abbr: "Agents"
+model_version: "1.0"
+model_contributors:
+  - name: "Matteo Chinazzi"
+    affiliation: "Complex Intelligence Lab, Network Science Institute, The Roux Institute, Northeastern University"
+    email: "m.chinazzi@northeastern.edu"
+website_url: "https://www.matteochinazzi.com"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: false
+data_inputs: "Weekly laboratory-confirmed influenza hospital admissions (NHSN / data.cdc.gov) and public epidemiological surveillance signals."
+methods: "Median-based ensemble of quantile forecasts from AI agents; mean ensemble for categorical rate-trend and peak-week PMF forecasts."
+methods_long: >-
+  The Hubverse package hubEnsembles is used to generate the Xi_lab-Agents forecast from a suite of
+  independent AI forecasting agents. A median of quantile outputs is used for all eligible
+  quantile-based forecasts. The mean is used to ensemble probabilities from eligible categorical
+  rate-trend and peak-week PMF forecasts.
+ensemble_of_models: true
+ensemble_of_hub_models: false
