@@ -1,0 +1,29 @@
+team_name: Jeremy Gracey
+team_abbr: JGracey
+model_name: Prime Radiant GBQR
+model_abbr: prime_radiant
+model_version: 0.1.0
+model_contributors:
+- name: Jeremy Gracey
+  affiliation: Independent
+  email: jeremy.a.gracey@gmail.com
+website_url: https://github.com/JeremyGracey-AI/prime-radiant
+repo_url: https://github.com/JeremyGracey-AI/prime-radiant
+license: CC-BY-4.0
+designated_model: true
+methods: Pooled LightGBM quantile regression on 4th-root transformed admission rates with
+  lag/seasonal features, ensembled with a replica of FluSight-baseline.
+data_inputs: NHSN weekly confirmed influenza hospital admissions via the FluSight hub target
+  data; hub auxiliary-data location populations.
+methods_long: One LightGBM booster per quantile level (23), trained jointly across all locations
+  with horizon as a feature, predicting the change in 4th-root per-100k admission rates; per-location
+  scale/center statistics are fitted per forecast origin from as-of data only. Post-processing
+  sorts quantiles in transformed space, inverts, clips at zero, and rounds at the submission
+  boundary. Forecasts are ensembled (per-quantile median) with a validated replica of FluSight-baseline
+  (cross-validated to relative WIS 0.99999 on fingerprint-matched vintages). Backtested rolling-origin
+  on hub git-history vintages across 2023-24, 2024-25 and 2025-26 with leakage invariants
+  enforced as property tests. Development was agent-assisted using Claude Code, with every
+  phase adversarially verified by independent refuter agents; the full methodology and honest
+  league tables (wins and losses) are published in the repository.
+ensemble_of_models: true
+ensemble_of_hub_models: false

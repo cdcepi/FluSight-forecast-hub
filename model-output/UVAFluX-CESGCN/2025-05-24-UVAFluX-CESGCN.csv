@@ -57,7 +57,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2025-05-24,wk inc flu hosp,-1,2025-05-17,15,quantile,0.01,1.8033715486526491
 2025-05-24,wk inc flu hosp,0,2025-05-24,15,quantile,0.01,0.07783169865608215
 2025-05-24,wk inc flu hosp,1,2025-05-31,15,quantile,0.01,2.571289882659912
-2025-05-24,wk inc flu hosp,2,2025-06-07,15,quantile,0.01,-0.236403439193964
+2025-05-24,wk inc flu hosp,2,2025-06-07,15,quantile,0.01,0
 2025-05-24,wk inc flu hosp,3,2025-06-14,15,quantile,0.01,3.696379132270813
 2025-05-24,wk inc flu hosp,-1,2025-05-17,16,quantile,0.01,4.804182052612305
 2025-05-24,wk inc flu hosp,0,2025-05-24,16,quantile,0.01,4.7180139827728285

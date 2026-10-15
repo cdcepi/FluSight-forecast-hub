@@ -1,0 +1,27 @@
+{
+  "team_name": "bayvaxbio",
+  "team_abbr": "bayvaxbio",
+  "model_name": "BayVax CountCast",
+  "model_abbr": "CountCast",
+  "model_contributors": [
+    {
+      "name": "Jiahao Ma",
+      "affiliation": "The University of Hong Kong",
+      "email": "jiahao.ma@connect.hku.hk"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "designated_model": true,
+  "data_inputs": "CDC FluSight target-hospital-admissions.csv (weekly NHSN laboratory-confirmed influenza hospital admissions) and auxiliary-data/locations.csv (population and jurisdiction identifiers). Only public data are used.",
+  "methods": "Pooled ridge regression and damped growth on log1p hospital counts, with seasonality, jurisdiction effects, national trends, and rolling pooled/local residual quantiles.",
+  "methods_long": "Version 1.0.0, prepared 2026-10-09. Direct horizon-specific ridge regressions predict changes in log1p weekly hospital counts. Predictors are current log1p counts and per-capita counts, 1-, 2-, 4-, and 8-week log growth, recent growth volatility, national 1- and 4-week growth, annual first and second harmonics, and jurisdiction indicators. Training pools the US, 50 states, District of Columbia, and Puerto Rico. Earlier observations receive exponential time weights with a 104-week half-life. Ridge penalty 30 was selected from two penalties (30 and 100), their blends, persistence, and damped growth, using rolling-origin diagnostics from October 2023 through May 2025. Later 2025-2026 diagnostics were not used to select the model. The deployed point forecast blends 80% ridge and 20% damped growth in log1p space; damped growth uses the past four weeks and damping 0.8. Only completed labels available at each issue origin enter training. Hyperparameters and the selected blend are frozen for weekly deployment; coefficients are refitted as data arrive. Each horizon uses the last 156 issue weeks of realized log1p forecast residuals, with a 78-week half-life. Empirical quantiles combine equal total weight from pooled and jurisdiction-specific residuals when at least 20 local residuals exist; otherwise only pooled residuals are used. Residual spread is multiplied by 1.15 around its median. Forecasts are transformed to nonnegative integer hospital counts and reported at the 23 required quantiles, horizons 0-3. Missing historical predictor values are forward-filled using past values only; missing labels are excluded. The latest 12 weeks must be complete before automatic submission. Cross-jurisdiction information is shared through pooled training and national predictors, but explicit spatial residual covariance and coherent joint national/state trajectories are not modeled. Historical diagnostics use one revised snapshot, not archived publication vintages, so they do not establish prospective performance or guaranteed interval coverage. Source snapshots, issue timestamps, model versions, and submission receipts are retained. Implementation and automation were developed with AI assistance under the contributor's direction.",
+  "ensemble_of_models": true,
+  "ensemble_of_hub_models": false,
+  "website_url": "https://github.com/Ascaris-Equi/FluSight-forecast-hub/blob/codex/flusight-registration/model-metadata/bayvaxbio-CountCast.yml",
+  "model_version": "1.0.0",
+  "backfill_adjustment": "No explicit reporting-delay or backfill correction. Each issue uses an archived current official data snapshot, which may contain revisions to earlier counts.",
+  "baseline_model": false,
+  "designated_targets": [
+    "wk inc flu hosp"
+  ]
+}

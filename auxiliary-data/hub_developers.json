@@ -1,0 +1,46 @@
+[
+  {
+    "name": "FluSight Reports",
+    "designated_contacts": [
+      {
+        "contact_name": "Rebecca Borchering",
+        "contact_email": "xhq2@cdc.gov"
+      },
+      {
+        "contact_name": "Annabella Hines",
+        "contact_email": "zoh1@cdc.gov"
+      }
+    ],
+    "organization": "CDC",
+    "url": "https://www.cdc.gov/flu-forecasting/index.html",
+    "description": "Weekly FluSight forecasts"
+  },
+  {
+    "name": "Delphi Epidata",
+    "designated_contacts": [
+      {
+        "contact_name": "Adam Johns et al.",
+        "contact_email": "delphi-production@andrew.cmu.edu"
+      }
+    ],
+    "organization": "Delphi",
+    "url": "https://delphi.cmu.edu/",
+    "description": "Mirror and archive datasets"
+  },
+  {
+    "name": "RespiLens",
+    "designated_contacts": [
+      {
+        "contact_name": "Emily Przykucki",
+        "contact_email": "emily.przykucki@gmail.com"
+      },
+      {
+        "contact_name": "Joseph Lemaitre",
+        "contact_email": "jo.lemaitresamra@gmail.com"
+      }
+    ],
+    "organization": "ACCIDDA",
+    "url": "https://github.com/ACCIDDA/RespiLens",
+    "description": "RespiLens is a responsive web app to visualize respiratory disease forecasts in the US, focused on accessibility for state health departments and the general public."
+  }
+]

@@ -40,7 +40,7 @@ Percent of Emergency Department visits with a specified pathogen (COVID-19, Infl
 Other data sources
 ------------ 
 
-Additional historical influenza surveillance data from other surveillance systems are available at [https://www.cdc.gov/flu/weekly/fluviewinteractive.htm](https://www.cdc.gov/flu/weekly/fluviewinteractive.htm). These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Additional potential data sources are available in Carnegie Mellon University's [Epidata API](https://delphi.cmu.edu/).
+Additional historical influenza surveillance data from other surveillance systems are available at [https://www.cdc.gov/flu/weekly/fluviewinteractive.htm](https://www.cdc.gov/flu/weekly/fluviewinteractive.htm). These data are updated every Friday at noon Eastern Time. The "cdcfluview" R package can be used to retrieve these data. Version history of some of these data and additional potential data sources are available in Carnegie Mellon University's [Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/v5_signals.html).
 
 
 ### Data processing
@@ -80,19 +80,11 @@ Additional CSV files are available in Hubverse formatted data, including a time 
 
 ### Resources for Accessing Hospitalization Data
 
-Version history of NHSN hospitalization data can be accessed through the [COVID-19 Reported Patient Impact ad Hospital Capacity by State Timeseries Archive Repository](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/qqte-vkut/about_data).Our collaborators at the [Delphi Group at
-CMU](https://delphi.cmu.edu/) have provided resources to make these data (as well as archived versions) available through their [Delphi Epidata
-API](https://cmu-delphi.github.io/delphi-epidata/). State-level hospitalization time series data prepared from the old reporting form, as well as prior versions of this time series, are available under the ["covidcast" endpoint of the API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) with the ["hhs" data source name](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html) and `confirmed_admissions_influenza_1d` signal name.
+Version history of NHSN hospitalization data can be accessed through [GitHub](https://github.com/cdcepi/FluSight-forecast-hub/tree/main/target-data).  Our collaborators at the [Delphi Group at
+CMU](https://delphi.cmu.edu/) have provided resources to make these data (as well as archived versions) available through [Delphi Epidata
+API v5](https://cmu-delphi.github.io/delphi-epidata/api/v5_signals.html) under the [`"nhsn"` source](https://cmu-delphi.github.io/delphi-epidata/api/v5-signals/nhsn.html)'s `"confirmed_admissions_flu_ew"` signal and [`"nssp"` source](https://cmu-delphi.github.io/delphi-epidata/api/v5-signals/nssp.html)'s `"pct_ed_visits_influenza"` signal. State-level hospitalization time series data prepared from the old reporting form, as well as prior versions of this time series, are available under the ["covidcast" endpoint of the v4 API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) with the ["hhs" data source name](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html) and `confirmed_admissions_influenza_1d` signal name.
 
 **Note:** The covidcast "hhs" data source shifts dates so that the time_values reflect date of admissions, not the date after admissions for the time period when data was reported using the previous_day_admission_influenza_confirmed field.
 
-Various other data sets and their version histories, including data sets not available elsewhere, are available and continue to be added to the Epidata API.  For influenza this season, these include:
-
-- [National Syndromic Surveillance Program data](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nssp.html)
-- [Google Symptoms data](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/google-symptoms.html)
-- [Additional fields for state-level HHS&NHSN hospitalization reporting (old form)](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html) 
-- [Facility-level hospitalization reporting (old form)](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility.html) 
-- [Facility lookup](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp_facility_lookup.html)
-
-Other data available in the API are listed in the [API documentation](https://cmu-delphi.github.io/delphi-epidata/) and also available via a web-based indicator discovery tool, [Delphi EpiPortal](https://delphi.cmu.edu/epiportal/). To access these data programmatically, teams can utilize the [epidatr R package](https://cmu-delphi.github.io/epidatr/) or [epidatpy Python package](https://cmu-delphi.github.io/epidatpy/). Some basic examples of pulling old influenza data are available [here](https://github.com/cmu-delphi/flusight-helper-snippets).
+Various other data sets and their version histories, including data sets not available elsewhere, are available and continue to be added to the Epidata API.  A list of ongoing sources in the API is available [here](https://cmu-delphi.github.io/delphi-epidata/api/v5_signals.html).  A larger list of Delphi-hosted and other indicators is available on [Delphi EpiPortal](https://delphi.cmu.edu/epiportal/) (see [this filter selection](https://delphi.cmu.edu/epiportal/?pathogens=104&pathogens=96&pathogens=94&pathogens=95&temporal_scope_end=Ongoing&hosted_by_delphi=on) for ongoing influenza indicators in the API).  Data can be downloaded from the API via EpiPortal, the [epidatr R package](https://cmu-delphi.github.io/epidatr/), or [epidatpy Python package](https://cmu-delphi.github.io/epidatpy/). Some basic examples of pulling influenza data are available [here](https://github.com/cmu-delphi/flusight-helper-snippets).
 

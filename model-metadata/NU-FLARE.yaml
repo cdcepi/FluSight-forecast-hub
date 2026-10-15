@@ -1,0 +1,27 @@
+team_name: "Northeastern University"
+team_abbr: "NU"
+model_name: "TS-FLARE: ARIMA model with flu-related covariates"
+model_abbr: "FLARE"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Amanda Perofsky",
+    "affiliation": "Northeastern University",
+    "email": "a.perofsky@northeastern.edu"
+  },
+    {
+    "name": "Cécile Viboud",
+    "affiliation": "Fogarty International Center, National Institutes of Health",
+    "email": "viboudc@mail.nih.gov"
+  }
+]
+website_url: "https://aperofsky.github.io/"
+license: "CC-BY-4.0"
+citation: " "
+team_funding: "We acknowledge support from Cooperative Agreements NU38PW000005 from The Centers for Disease Control and Prevention (CDC)."
+designated_model: true
+methods: "Seasonal ARIMA model with exogenous covariates for vaccination coverage, vaccine effectiveness, weekly A/H3N2 virus circulation, and influenza transmission rates."
+data_inputs: "Weekly incident HHS influenza admissions, weekly CDC FluSurv-NET hospitalization rates, weekly syndromic and virologic surveillance data from CDC FluView, vaccination coverage estimates from the National Center for Immunization and Respiratory Diseases, and seasonal vaccine effectiveness estimates from published literature and the CDC."
+methods_long: "We model flu hospitalizations in each location using dynamic harmonic regression with ARMA errors and exogenous covariates for vaccination, flu virus subtype circulation, and influenza transmission rates. To calibrate models, we use 7 years of historical data, including influenza-coded hospitalizations, influenza-like illness rates, IAV subtype circulation, estimates of flu virus transmissibility, and vaccine coverage and effectiveness. To estimate weekly Rt, we fit semi-mechanistic Bayesian epidemic models to observed ILI+ (ILI x % positive) rates in each season. This modeling framework is a continuation of the NIH-Flu_ARIMA model submitted in prior seasons."
+ensemble_of_models: false
+ensemble_of_hub_models: false

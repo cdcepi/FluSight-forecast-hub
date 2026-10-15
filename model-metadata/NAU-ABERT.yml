@@ -1,0 +1,28 @@
+team_name: NAU
+team_abbr: NAU
+model_name: ABERT
+model_abbr: ABERT
+model_contributors: [
+  {
+    "name": "Spencer J. Fox",
+    "affiliation": "Northern Arizona University",
+    "email": "spencer.fox@nau.edu",
+    "orcid": "0000-0003-1969-3778"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: NHSN admissions, NSSP ED visits, ILINet and clinical-lab ILI+, FluSurv-NET, CDC public health and clinical lab subtype and percent positive data (Delphi Epidata archives), NASA POWER specific humidity and temperature
+methods: Pooled gradient-boosted quantile regression (LightGBM) with subtype, lab and humidity covariates, backfill-corrected inputs and growth-phase recalibration.
+methods_long: >-
+  One set of LightGBM quantile models (23 quantiles, bagged over seasons) is trained each week on NHSN admissions,
+  NSSP ED visit proportions, historical ILI+ and FluSurv-NET series pooled across locations, on a fourth-root
+  scale divided by each series' 95th percentile. Features describe each series' recent shape and season to date,
+  the other target and regional growth, national and state subtype shares and percent positive as published each
+  week, and specific humidity and temperature at each state's center of population. The latest two weeks of
+  admissions are corrected for backfill with a chain-ladder method before fitting. Admissions quantiles are
+  recalibrated by horizon and growth phase from the model's own earlier forecasts.
+website_url: https://thefoxlab.wordpress.com/
+ensemble_of_models: false
+ensemble_of_hub_models: false
+team_funding: CSTE/CDC award NU38OT000297

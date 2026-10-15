@@ -1,0 +1,35 @@
+team_name: "Schnitzels"
+team_abbr: "Schnitzels"
+model_name: "Average of five pooled quantile forecasters"
+model_abbr: "stack5"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Daniel Slevin",
+    "affiliation": "Independent",
+    "email": "danielslevink@gmail.com"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+methods: "Equal-weight quantile average of five forecasters pooled across locations: a flat model, gradient-boosted trees and a small neural net on NHSN, and two tree models that also learn from ILINet."
+data_inputs: "Weekly incident flu hospital admissions from NHSN (the hub's target data and its dated versions) and outpatient ILI percentages from ILINet for the US and HHS regions (via the Delphi Epidata API)."
+methods_long: "Forecasts are made on the scale z = log(admissions per 100,000 + 0.1) as quantiles of the change from
+  the latest reported week, for horizons 0 to 3, with all locations pooled in every component. Five components:
+  (1) a flat forecast whose spread comes from past h-week changes in z; (2) gradient-boosted quantile trees and (3) a
+  small feed-forward network, both fitted on NHSN admissions only, with inputs describing recent changes, time of
+  season, distance from the season's peak so far, the location's level relative to the US, and the change over the
+  same weeks a year earlier; (4) gradient-boosted quantile trees fitted on ILINet weighted ILI (US and HHS regions,
+  2003 onward) using only scale-free inputs, with ILI movements rescaled to the size of admission movements; (5)
+  gradient-boosted quantile trees fitted on the admissions rows and the rescaled ILI rows together. Components are
+  refitted every four weeks using only data available at the time. The submitted forecast is the equal-weight average
+  of the five components' quantiles, with its ranges stretched about the median by a per-horizon factor chosen on
+  recent past forecasts, converted to counts and rounded. No spatial correlation between locations is modelled beyond
+  pooling and inputs relative to the national level. Uncertainty comes from the quantile regression itself. The model
+  was developed and back-tested on the 2023/24 season and evaluated once on 2024/25 and 2025/26 before the season.
+  The model code was written with the assistance of an AI coding assistant."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: "The two most recent weeks are multiplied up by the median revision observed for those report lags in the eight most recent dated versions of the target data that are at least four weeks old."
+baseline_model: false

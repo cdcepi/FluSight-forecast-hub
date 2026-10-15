@@ -10,13 +10,13 @@ model_contributors: [
 ]
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "CDC weekly flu hospital admissions (NHSN), EHR surveillance data (weekly flu test volumes, positive tests, inpatient hospitalizations)"
+data_inputs: "CDC NHSN weekly influenza hospital admissions for all US states and the US national total; Prisma Health EHR surveillance data (weekly flu tests, positive tests, inpatient hospitalizations), used for South Carolina only"
 
-methods: "Parametric Asymmetric Quantile Regression with recursive trend-based forecasting"
-methods_long: "A parametric asymmetric quantile regression model integrating real-time EHR surveillance data with historical CDC trends. Predictors include Prisma Health testing volumes, positive tests, hospitalizations, lagged CDC admissions, and seasonal indicators. Forecasts are generated recursively (nowcast to 3-week ahead). A post-hoc log-scale trend adjustment based on recent CDC dynamics is applied, with phase-aware classification (e.g., surge, peak, decline) and adaptive bounds learned from recent data, rather than fixed caps. Trend effects are dynamically damped across horizons using phase-specific schedules. Uncertainty increases with horizon and is further refined using phase-dependent asymmetric interval compression. Forecasts are constrained to be non-negative, and quantile monotonicity is enforced via isotonic regression. Model updated March 21, 2026: added phase-aware trend detection, adaptive bounds, and dynamic damping."
+methods: "Recursive quantile regression with analogs, EHR and cross-state signals, and multi-state pooling"
+methods_long: "Recursive one-week-ahead quantile regression blended with phase-aware historical analogs, forecasting 0-3 weeks ahead by feeding each prediction back into the features. Predictors include lagged admissions, trend, seasonality, the share of US states with rising admissions, and for South Carolina, Prisma Health EHR data. A second quantile regression trained on all US states is blended in, and forecast growth is capped at a damped version of recently observed growth, with weights and damping tuned by rolling validation. The US national forecast uses the same approach without EHR inputs. Uncertainty comes from analog errors and model residuals. Updated October 2026"
 ensemble_of_models: false
 ensemble_of_hub_models: false
-model_version: "1.7"
+model_version: "2.0"
 website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
 backfill_adjustment: "false"

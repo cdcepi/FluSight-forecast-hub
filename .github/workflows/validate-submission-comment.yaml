@@ -1,0 +1,36 @@
+name: Post Submission Validation Result
+
+# Companion to Hub Submission Validation (R). That workflow runs the checks and
+# saves the result, but a `pull_request` workflow triggered from a fork gets a
+# read-only GITHUB_TOKEN, so it cannot comment. This one runs once it finishes,
+# in the hub's own context, and posts what it saved.
+#
+# A workflow cannot listen to itself, which is why this is a second file rather
+# than another job in the first.
+#
+# `workflows:` below must match the validation workflow's `name:`. If you rename
+# that workflow, rename it here too, or results will quietly stop being posted.
+#
+# The steps live in hubverse-actions rather than here, so that fixes to them
+# reach you without you having to add a new copy of this file.
+
+on:
+  workflow_run:
+    workflows: ["Hub Submission Validation (R)"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  comment:
+    # Skipped on forks of the hub, matching the validation workflow. Stated here
+    # rather than relying on that workflow being skipped, because a run whose
+    # only job was skipped does not reliably report a conclusion this one treats
+    # as "nothing to do".
+    if: github.event.repository.fork != true
+    uses: hubverse-org/hubverse-actions/.github/workflows/post-validation-comment.yaml@main
+    permissions:
+      contents: read
+      actions: read
+      pull-requests: write

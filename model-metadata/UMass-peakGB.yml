@@ -1,0 +1,42 @@
+team_name: "UMass-Amherst"
+team_abbr: "UMass"
+model_name: "Gradient-boosted models of the seasonal peak"
+model_abbr: "peakGB"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Nicholas Reich",
+    "affiliation": "UMass Amherst",
+    "email": "nick@umass.edu"
+  }
+]
+website_url: "https://github.com/reichlab/idmodels"
+license: "CC-BY-4.0"
+team_funding: "This work has been supported by the National Institutes of General Medical Sciences (R35GM119582) and the U.S. CDC(NU38IP000906 & NU38FT000008). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS, the National Institutes of Health, or CDC."
+designated_model: true
+designated_targets:
+  - "peak week inc flu hosp"
+  - "peak inc flu hosp"
+methods: "Gradient-boosted forecasts of peak week and peak size. Trained on NHSN, ILINet and FluSurv-NET data. Backfill adjusted. Model directly predicts peak targets rather than from week-ahead targets."
+data_inputs: "NHSN weekly laboratory-confirmed influenza hospital admissions, including past data releases (vintages) for the revision model; ILINet weighted ILI x WHO/NREVSS percent positive (national, HHS regions and states); FluSurv-NET hospitalization rates. ILINet and FluSurv-NET are used for training only."
+methods_long: "
+  The UMass-peakGB model forecasts only the seasonal targets (peak week inc flu hosp and peak inc flu hosp). It does so by modeling each outcome directly rather than inferring them from predictions of weekly trajectories. For each location and forecast date the season so far is summarized by features of the data through the latest reported week, and two distinct gradient boosting models predict (1) the timing of the peak and (2) how much the running maximum will still grow.
+
+  We have three feature sets (others were considered but did not perform as well in preseason cross-validation):
+   1. Core features: season week, latest value relative to the running maximum, weeks since the maximum, 1-week and 3-week log growth, 3-week mean and cumulative incidence relative to the maximum, the running maximum relative to the location's typical historical peak, the same running-maximum and growth features for the national series, and data source.
+   2. Synchrony and burden features: how far other locations are along in the same season, e.g. the median level relative to their maxima and the fraction that appear past their peak, and cumulative incidence to date relative to the location's earlier seasons.
+   3. Holiday-week features: indicators for Christmas and New Year weeks.
+
+  Peak size is predicted by modeling the outcome z = log((peak + eps) / (M + eps)), the remaining log growth of the running maximum M of the season to date (eps is a small source-specific constant). This parameterization makes the model scale-free, allowing it to be trained on several data sources together. For this model, we run LightGBM quantile regressions (pinball loss) for quantiles of z. The model for peak size uses the core and synchrony/burden features.
+  
+  Peak timing is modeled as a class: already peaked, peak in 1, 2, ..., 12 weeks, or later. The 'later' probability is spread over the remaining window weeks in proportion to the historical (kernel-smoothed) distribution of peak weeks, and the 'already peaked' probability goes to the week of the current maximum. For this model, we run a LightGBM multiclass classifier. The model for peak timing uses the core and holiday features. Every peak-week probability is floored at 1e-4.
+
+  Training data rows are created by replaying every historical season week by week for each location: NHSN (states and US), ILINet (states, HHS regions, national) and FluSurv-NET, using only seasons before the forecast season. Pandemic seasons are excluded.
+
+  Spatial correlation is not modeled explicitly. Locations share one model for each target, and the national and synchrony features carry information from other locations into each location's forecast.
+
+  Code: idmodels (Python), module idmodels.peak, https://github.com/reichlab/idmodels."
+backfill_adjustment: "The 10 most recent weeks of NHSN data are revised by simulation. Revision vectors (the ratios final / as-published for the 10 newest weeks of a past release, kept together for each release and location) are estimated from all NHSN releases available on the forecast date, grouped by the size of the newest reported count, and resampled 200 times for each location. The models are applied to these 200 plausible final versions of the current season, peak-week probabilities are averaged over them and peak-size quantiles are taken from the pooled samples."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+repo_url: https://github.com/reichlab/idmodels/tree/peak-models

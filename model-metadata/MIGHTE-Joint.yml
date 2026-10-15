@@ -39,7 +39,7 @@ website_url: "https://github.com/MIGHTE-lab/"
 license: "CC-BY-4.0"
 citation: ""
 team_funding: ""
-designated_model: true
+designated_model: false
 methods: "Joint submission with MIGHT-Nsemble and GATech with weighted ensemble of time-series component models"
 data_inputs: "Weekly incident flu hospitalizations, with imputation for unreported hospitalizations, Google Trends data"
 methods_long: "Weighted ensemble of time-series models, including LightGBM, ARIMA models, autoregressive models (ARGO2)."

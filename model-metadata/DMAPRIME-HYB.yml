@@ -9,19 +9,20 @@ model_contributors: [
     "email": "jiandew@clemson.edu"
   },
   {
-  "name": "Amanda Bleichrodt",
-  "affiliation": "Clemson University, South Carolina",
-  "email": "ambleic@clemson.edu"    
+    "name": "Amanda Bleichrodt",
+    "affiliation": "Clemson University, South Carolina",
+    "email": "ambleic@clemson.edu"    
   }
 ]
 license: "CC-BY-4.0"
-designated_model: false
-data_inputs: "CDC weekly flu hospital admissions (NHSN), Prisma Health EHR surveillance data (weekly positive tests, weekly inpatient hospitalizations, total encounters)"
-methods: "Hybrid Parallel CNN-LSTM with Multi-Head Temporal Attention"
-methods_long: "A hybrid deep learning architecture designed for probabilistic 1-4 week ahead influenza forecasting in South Carolina. The model features a parallel Inception-style Convolutional Neural Network (CNN) with multi-scale kernels (sizes 3 and 5) to capture both short-term weekly jitter and longer-term monthly trends. These spatial-temporal features are processed by a Bidirectional Long Short-Term Memory (Bi-LSTM) network to model complex temporal dependencies. The architecture incorporates dual Multi-Head Temporal Attention mechanisms—specifically focusing on magnitude and phase alignment—to minimize temporal lag and accurately anticipate surges. To handle the right-skewed nature of influenza surges, the model employs log-transformed target variables and optimized probabilistic quantile decoding. Training is robustly regularized using Gaussian noise augmentation, AdamW optimization with weight decay, and a custom Phase-Alignment Loss that penalizes directional forecasting errors. Forecasts are generated for 23 quantiles to provide a complete probabilistic distribution across a 4-week horizon."
+designated_model: true
+data_inputs: "Public FluSight target data only: NHSN weekly confirmed influenza hospital admissions and NSSP weekly proportion of ED visits due to influenza, for all states, DC, PR and the US. No EHR or other private data."
+methods: "Pooled hybrid CNN-LSTM trained on all U.S. jurisdictions; forecasts quantiles of the log change from the last observed week; 3-seed ensemble with per-horizon calibration."
+methods_long: "Since the 2026-27 season (model_version 3.0), one hybrid CNN-LSTM per target is trained jointly on all locations (50 states, DC, PR, US), using only public FluSight target data. Each series is transformed to z = log1p(value), with the ED proportion expressed in percent. Inputs are a 10-week window of: z relative to the last observed week, weekly change, and level standardized by the location's own history, for both targets; the national z and its weekly change; and seasonal sin/cos terms. The network uses parallel 1-D convolutions (kernels 3 and 5), a 2-layer bidirectional LSTM and attention pooling, and outputs the 23 quantiles of the change in z from the last observed week for horizons 0-3, trained with pinball loss. Spatial correlation is not modeled explicitly; locations share parameters and see national dynamics as inputs. Uncertainty comes from the quantile outputs, averaged over three random seeds, and the spread around the median is scaled by per-target, per-horizon calibration factors chosen to minimize WIS on past out-of-sample forecasts. Upper quantiles are capped at the hub plausibility limits. The model is retrained every week on the latest data. Previous versions (through 2.0) were a South Carolina-only model using Prisma Health EHR data."
 ensemble_of_models: false
 ensemble_of_hub_models: false
-model_version: "2.0"
+model_version: "3.0"
 website_url: "https://github.com/DMA-PRIME/FluSight-HYB"
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."
-backfill_adjustment: "false"
+backfill_adjustment: "None. Forecasts start from the latest reported value without adjusting for expected backfill."
+baseline_model: false

@@ -1,0 +1,33 @@
+team_name: "BYFlu"
+team_abbr: "BYFlu"
+model_name: "Spatio-temporal Multi-group Gaussian Process"
+model_abbr: "STMGGP"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Spencer Wadsworth",
+    "affiliation": "Brigham Young University",
+    "email": "wadsworth@stat.byu.edu"
+  },
+  {
+    "name": "Carson Ordyna",
+    "affiliation": "Brigham Young University",
+    "email": "crodyna@student.byu.edu"
+  },
+  {
+    "name": "Mary Lai Salvana",
+    "affiliation": "University of Connecticut",
+    "email": "marylai.salvana@uconn.edu"
+  }
+]
+website_url: "https://statistics.byu.edu/directory/spencer-wadsworth"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Gaussian process model with temporal, spatial, and unstructured season correlation components"
+data_inputs: "weekly incident flu hospitalizations from HHS"
+methods_long: "A Gaussian process model with a temporal component to capture covariance between weeks, 
+               a spatial component to capture correlation between states, and a group prior to capture 
+               unstructured correlation between seasons. Prior distributions are assigned to each 
+               parameter and fitting is done via MCMC sampling."
+ensemble_of_models: false
+ensemble_of_hub_models: false

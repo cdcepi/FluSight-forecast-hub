@@ -6,7 +6,8 @@ on:
         description: 'Archive target data'
         required: false
   schedule:
-    - cron: "20 17 * * 3"
+    - cron: "30 16 * * 3"
+      timezone: "America/New_York"
 
 jobs:
   archive_target_data:

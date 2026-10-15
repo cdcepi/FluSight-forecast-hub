@@ -1,0 +1,37 @@
+team_name: "Complex Intelligence Lab"
+team_abbr: "Xi_lab"
+model_name: "GLEAM-AI hybrid"
+model_abbr: "GLEAM_AI_hybrid"
+model_version: "2026-27 live v1"
+model_contributors:
+  - name: "Matteo Chinazzi"
+    affiliation: "Complex Intelligence Lab, Network Science Institute, The Roux Institute, Northeastern University"
+    email: "m.chinazzi@northeastern.edu"
+website_url: "https://www.matteochinazzi.com"
+license: "CC-BY-4.0"
+designated_model: true
+baseline_model: false
+data_inputs: >-
+  NHSN weekly laboratory-confirmed influenza hospital admissions (Hospital Respiratory Data, data.cdc.gov
+  mpgq-jmmr), as-of vintages only, cross-checked against the hub target data and Delphi Epidata; hub
+  population file. The surrogate was trained on GLEAM simulations (census population, human mobility).
+  Plus pretrained TimesFM 2.0-500m and TimesFM 3.0 weights at pinned pre-season revisions.
+methods: "Hybrid forecast combining the GLEAM-AI surrogate with pretrained time-series foundation models (e.g. TimesFM)."
+methods_long: >-
+  A hybrid model that combines two complementary forecasting approaches: a mechanistic, transmission-based model
+  and purely data-driven forecasters. The first component is GLEAM-AI, a deep-learning surrogate (emulator) of GLEAM,
+  a stochastic, spatially structured metapopulation influenza transmission model, calibrated each week to the as-of
+  NHSN admissions history of each state and of the nation (described in the metadata of Xi_lab-GLEAM_AI). The second
+  component is a set of time-series foundation models (TSFM), such as TimesFM: large neural networks pretrained on
+  many time series that forecast a series directly from its own history. They are applied to each location's as-of
+  admissions without being trained or fine-tuned on the season being forecast. The hybrid combines the predictive
+  distributions of the two components into a single probabilistic forecast for each location and horizon. Forecasts
+  use only data available as of the reference date.
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: >-
+  NHSN admissions for the most recent reported week are usually incomplete in real time. Before
+  calibration that week is completed to its estimated eventual value by a chain-ladder
+  (reporting-completeness) nowcast: the partial count divided by the historical fraction of the eventual
+  count reported at the same delay, estimated from past as-of vintages only. Earlier weeks are used as
+  reported.

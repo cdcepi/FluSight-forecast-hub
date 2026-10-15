@@ -115,6 +115,18 @@ Any information about funding source(s) for the team or members of the team that
 
 A description of any adjustments made to the real time data to account for potential changes due to backfill
 
+### baseline_model
+
+A boolean value (`true` or `false`) that indicates whether a model is a baseline model.  Models with baseline_model = TRUE should not be designated for inclusion in the ensemble.
+
+### designated_targets
+
+A list of target names for which the model is designated. When present, it narrows the effect of designated_model = true to only the listed targets. When absent or empty, a designated model is eligible for every target it submits. 
+Example:
+```
+designated_targets: ["wk inc flu hosp", "wk inc flu prop ed visits"]
+```
+
 # Data validation
 
 Optionally, you may validate a model metadata file locally before submitting it to the hub in a pull request. Note that this is not required, since the validations will also run on the pull request. To run the validations locally, follow these steps:

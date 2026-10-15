@@ -1,0 +1,44 @@
+team_name: "Branching Process Collective at Northeastern University"
+team_abbr: "NU"
+model_name: "EMBERS-FLU: Ensemble of Moments from Branching-processes for Epidemic Real-time State-estimation"
+model_abbr: "EMBERS"
+model_version: "1.0"
+model_contributors: [
+ {
+    "name": "Dimitri Lopez",
+    "affiliation": "Northeastern University",
+    "email": "lopez.di@northeastern.edu",
+    "orcid": "0000-0001-8330-0591"
+  },
+  {
+    "name": "Guillaume St-Onge",
+    "affiliation": "Northeastern University",
+    "email": "g.st-onge@northeastern.edu",
+    "orcid": "0000-0001-5415-3748"
+  },
+  {
+    "name": "Mariah Boudreau",
+    "affiliation": "Northeastern University",
+    "email": "mar.boudreau@northeastern.edu",
+    "orcid": "0009-0000-1172-6497"
+  },
+  {
+    "name": "Michael Johansson",
+    "affiliation": "Northeastern University",
+    "email": "m.johansson@northeastern.edu",
+    "orcid": "0000-0002-5090-7722"
+  }
+]
+website_url: "https://github.com/cdcepi/FluSight-forecast-hub/tree/main/model-output/NU-EMBERS"
+license: "CC-BY-4.0"
+citation: "not applicable"
+team_funding: "We acknowledge support from cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics, and support from the National Science Foundation, Grant No. 2619828."
+designated_model: true
+designated_targets: ["wk inc flu hosp"]
+baseline_model: false
+methods: "An extended SLIR compartmental model defined as a branching process model with sequentially calibrated state estimation."
+data_inputs: "Weekly confirmed influenza hospital admissions and the number of hospitals reporting in each jurisdiction."
+methods_long: "EMBERS is a mechanistic and statistically interpretable model for inference of the effective reproduction number and population immunity. The epidemic is modelled as a branching process formulation of an extended SLIR compartmental model, calibrated with a marginal particle filter. A forecast is decomposed into two tasks: recovering the latent state of the epidemic, and propagating it forward under the dynamics. The forecast prior for future transmission is learned on past seasons while intrinsically incorporating susceptibility-depletion effects in transmission. Jurisdictions, including the US, are calibrated independently, however their forecasts are informed by other jurisdictions recovered latent state. \"Ensemble\" refers to the ensemble of particles, each carrying the moments of the epidemic state."
+backfill_adjustment: "A reporting model fitted on historical NHSN data releases. For each jurisdiction, preliminary published counts are modeled jointly across recent weeks to capture correlated reporting delays, with jurisdiction-specific reporting completeness adjusted toward the national pattern. The model accommodates upward, downward, and flat revisions, and adjusts the most recent week for the proportion of hospitals reporting relative to each jurisdiction's seasonal median. It outputs a likelihood distribution over each week's final count, which the filter assimilates in place of raw counts."
+ensemble_of_models: false
+ensemble_of_hub_models: false
