@@ -2,7 +2,7 @@ team_name: "UMass-Amherst"
 team_abbr: "UMass"
 model_name: "Ensemble of time series models"
 model_abbr: "flusion"
-model_version: "1.2"
+model_version: "1.3"
 model_contributors: [
   {
     "name": "Evan Ray",
@@ -31,8 +31,26 @@ citation: "citation"
 team_funding: "This work has been supported by the National Institutes of General Medical Sciences (R35GM119582) and the U.S. CDC(1U01IP001122). The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS, the National Institutes of Health, or CDC."
 designated_model: true
 methods: "Ensemble of statistical and machine learning time series models with spatial correlation."
-data_inputs: "Weekly incident flu hospitalizations from NHSN, hospitalizations from FluSurv-NET, and outpatient ILI from ILINet."
+data_inputs: "Weekly incident flu hospitalizations from NHSN, hospitalizations from FluSurv-NET, outpatient ILI from ILINet, and emergency department visits from NSSP."
 methods_long: "
+  2026/27 season (v1.3, implemented 2026-10-17; corrects v1.2's description, no methods change
+  from v1.2):
+  Two independently produced forecasts, row-bound into one submission file, each target handled
+  separately:
+   1. wk inc flu hosp: an equally weighted quantile average of three component models: GBQR
+      3-source spatial model (state-level forecasts, directional wave spatial features) with GBQR
+      3-source (no spatial features) substituted for the US-level forecast, and
+      WISAR6_fourthroot_adaptive_t, a from-scratch PyMC AR(6) + Fourier model fit with a WIS-loss
+      Gibbs posterior objective instead of a likelihood (covering both state and US levels). All
+      components use NHSN as the main source, with FluSurv-NET and ILINet as supplementary.
+   2. wk inc flu prop ed visits: a standalone gradient boosting quantile regression model (not
+      blended with anything) with NSSP emergency department visit data as the main source, and
+      NHSN, ILINet, and FluSurv-NET as supplementary sources. Only valid from the 2025/26 season
+      onward; when unavailable for a reference date, the submission contains the hosp-target
+      forecast alone.
+  Produced end-to-end (all four component fits plus the row-bind) by a single pipeline; see
+  reichlab/forecast-sandbox-2025-2026's src/gbqr_3src_spatial_wisar.
+
   2026/27 season (v1.2, implemented 2026-10-10):
   Quantile average ensemble of three component models: 1) AR(6) pooled model with shared coefficients across locations and per-location variance; 2) GBQR 3-source spatial2 model for state-level forecasts incorporating spatial correlation; 3) GBQR 3-source model for US national forecasts. All components use NHSN, FluSurv-NET, and ILINet data. Categorical predictions derived via monotonic spline interpolation. We also use gradient boosting quantile regression, with NSSP emergency department visit data as the main source. NHSN hospitalizations, ILINet outpatient illness percentages, and FluSurv-NET hospitalization rates are included as supplementary training sources.
 

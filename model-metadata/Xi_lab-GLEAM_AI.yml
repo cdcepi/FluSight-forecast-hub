@@ -7,6 +7,12 @@ model_contributors:
   - name: "Matteo Chinazzi"
     affiliation: "Complex Intelligence Lab, Network Science Institute, The Roux Institute, Northeastern University"
     email: "m.chinazzi@northeastern.edu"
+  - name: "Alessandro Vespignani"
+    affiliation: "MOBS Lab, Northeastern University"
+    email: "alexves@gmail.com"
+  - name: "Jessica T. Davis"
+    affiliation: "MOBS Lab, Northeastern University"
+    email: "jes.davis@northeastern.edu"    
 website_url: "https://www.matteochinazzi.com"
 license: "CC-BY-4.0"
 designated_model: true
@@ -37,3 +43,4 @@ backfill_adjustment: >-
   (reporting-completeness) nowcast: the partial count divided by the historical fraction of the eventual
   count reported at the same delay, estimated from past as-of vintages only. Earlier weeks are used as
   reported.
+team_funding: "We acknowledge support from cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics."
