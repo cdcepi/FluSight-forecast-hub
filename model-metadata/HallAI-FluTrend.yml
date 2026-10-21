@@ -12,7 +12,7 @@ model_contributors: [
 ]
 website_url: "https://hallai.net"
 license: "CC-BY-4.0"
-designated_model: false
+designated_model: true
 data_inputs: "NHSN Weekly Hospital Respiratory Data: weekly laboratory-confirmed influenza hospital admissions (totalconfflunewadm), via the FluSight target-data file and data.cdc.gov."
 methods: "Damped log-scale trend per location with uncertainty from resampled historical forecast-error paths matched on growth rate, level and time of year."
 methods_long: "Each location (states, DC, PR and the US total) is modeled separately on the log(1 + weekly admissions) scale; the national series is modeled directly rather than summed from states. The point path extends the average weekly log change over the last three weeks with a damping factor of 0.8 per week, with the slope capped at +/-0.5. Uncertainty comes from the method's own past forecast errors: for every location and past week, the 1-4 week ahead errors of the same procedure are stored as error paths, using only data observed before the forecast date. For the current forecast, the 400 historical situations most similar in recent growth rate, current level and time of year are selected and their whole error paths are resampled (2,000 trajectories), which keeps trajectories coherent across horizons. A small multiplicative noise term (SD 0.04 on the log scale) covers revisions to the most recent reported week. Quantiles are taken from the trajectories and rounded to integers; rate-trend category probabilities are computed from the same trajectories using the FluSight thresholds. Spatial correlation between locations is not modeled explicitly."
