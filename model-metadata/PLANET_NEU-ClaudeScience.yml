@@ -10,7 +10,7 @@ model_contributors: [
     "email": "aji.srivastava@northeastern.edu"
   }
 ]
-website_url: "ajitesh-srivastava.com"
+website_url: "https://ajitesh-srivastava.com"
 license: "CC-BY-4.0"
 designated_model: false
 data_inputs: "NHSN weekly confirmed influenza hospital admissions (FluSight target-data, including as-of vintages in time-series.csv) and NSSP influenza ED-visit proportions (FluSight target-data)."
