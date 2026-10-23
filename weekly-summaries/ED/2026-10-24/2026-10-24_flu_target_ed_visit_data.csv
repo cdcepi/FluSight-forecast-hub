@@ -1,8 +1,5 @@
 week_ending_date,location,location_name,value
-2026-10-17,10,Delaware,NA
 2026-10-17,12,Florida,0.0226
-2026-10-17,13,Georgia,NA
-2026-10-17,19,Iowa,NA
 2026-10-17,31,Nebraska,0.0038
 2026-10-17,33,New Hampshire,0.005
 2026-10-17,35,New Mexico,0.005
@@ -73,7 +70,6 @@ week_ending_date,location,location_name,value
 2026-10-10,01,Alabama,0.0124
 2026-10-10,05,Arkansas,0.0057
 2026-10-10,11,District of Columbia,0.0032
-2026-10-10,19,Iowa,NA
 2026-10-10,21,Kentucky,0.0064
 2026-10-10,25,Massachusetts,0.0037
 2026-10-10,27,Minnesota,0.0031
@@ -121,7 +117,6 @@ week_ending_date,location,location_name,value
 2026-10-03,56,Wyoming,0.0091
 2026-10-03,06,California,0.009
 2026-10-03,11,District of Columbia,0.0022
-2026-10-03,19,Iowa,NA
 2026-10-03,21,Kentucky,0.0051
 2026-10-03,30,Montana,0.0048
 2026-10-03,34,New Jersey,0.0036
@@ -157,7 +152,6 @@ week_ending_date,location,location_name,value
 2026-10-03,53,Washington,0.0138
 2026-09-26,13,Georgia,0.003
 2026-09-26,18,Indiana,0.0023
-2026-09-26,19,Iowa,NA
 2026-09-26,20,Kansas,0.0019
 2026-09-26,25,Massachusetts,0.002
 2026-09-26,30,Montana,0.0029
@@ -250,7 +244,6 @@ week_ending_date,location,location_name,value
 2026-09-19,12,Florida,0.0066
 2026-09-19,17,Illinois,0.0018
 2026-09-19,18,Indiana,0.0012
-2026-09-19,19,Iowa,NA
 2026-09-19,20,Kansas,0.001
 2026-09-19,31,Nebraska,5e-4
 2026-09-19,37,North Carolina,0.0084
@@ -261,7 +254,6 @@ week_ending_date,location,location_name,value
 2026-09-19,50,Vermont,3e-4
 2026-09-12,04,Arizona,0.0018
 2026-09-12,06,California,0.0037
-2026-09-12,19,Iowa,NA
 2026-09-12,25,Massachusetts,0.001
 2026-09-12,27,Minnesota,0.0017
 2026-09-12,33,New Hampshire,0.0011
@@ -316,7 +308,6 @@ week_ending_date,location,location_name,value
 2026-09-05,09,Connecticut,8e-4
 2026-09-05,10,Delaware,0.0011
 2026-09-05,17,Illinois,0.0013
-2026-09-05,19,Iowa,NA
 2026-09-05,25,Massachusetts,6e-4
 2026-09-05,28,Mississippi,0.0018
 2026-09-05,30,Montana,7e-4
@@ -408,7 +399,6 @@ week_ending_date,location,location_name,value
 2026-08-29,04,Arizona,0.001
 2026-08-29,15,Hawaii,0.0053
 2026-08-29,17,Illinois,7e-4
-2026-08-29,19,Iowa,NA
 2026-08-29,20,Kansas,9e-4
 2026-08-29,23,Maine,7e-4
 2026-08-29,26,Michigan,7e-4
@@ -449,7 +439,6 @@ week_ending_date,location,location_name,value
 2026-08-22,37,North Carolina,0.0044
 2026-08-22,50,Vermont,3e-4
 2026-08-22,53,Washington,0.0014
-2026-08-22,19,Iowa,NA
 2026-08-22,27,Minnesota,5e-4
 2026-08-22,29,Missouri,5e-4
 2026-08-22,31,Nebraska,3e-4
@@ -472,7 +461,6 @@ week_ending_date,location,location_name,value
 2026-08-15,06,California,0.0013
 2026-08-15,08,Colorado,5e-4
 2026-08-15,10,Delaware,7e-4
-2026-08-15,19,Iowa,NA
 2026-08-15,20,Kansas,3e-4
 2026-08-15,23,Maine,6e-4
 2026-08-15,26,Michigan,3e-4
@@ -556,7 +544,6 @@ week_ending_date,location,location_name,value
 2026-08-08,01,Alabama,0.001
 2026-08-08,05,Arkansas,4e-4
 2026-08-08,12,Florida,0.002
-2026-08-08,19,Iowa,NA
 2026-08-08,23,Maine,4e-4
 2026-08-08,26,Michigan,5e-4
 2026-08-08,27,Minnesota,5e-4
@@ -606,7 +593,6 @@ week_ending_date,location,location_name,value
 2026-08-01,09,Connecticut,2e-4
 2026-08-01,11,District of Columbia,6e-4
 2026-08-01,18,Indiana,1e-4
-2026-08-01,19,Iowa,NA
 2026-08-01,22,Louisiana,7e-4
 2026-08-01,26,Michigan,1e-4
 2026-08-01,29,Missouri,6e-4
@@ -668,7 +654,6 @@ week_ending_date,location,location_name,value
 2026-07-25,02,Alaska,0.0025
 2026-07-25,04,Arizona,0.001
 2026-07-25,09,Connecticut,3e-4
-2026-07-25,19,Iowa,NA
 2026-07-25,23,Maine,5e-4
 2026-07-25,31,Nebraska,2e-4
 2026-07-25,39,Ohio,1e-4
@@ -712,7 +697,6 @@ week_ending_date,location,location_name,value
 2026-07-18,05,Arkansas,3e-4
 2026-07-18,12,Florida,0.002
 2026-07-18,16,Idaho,9e-4
-2026-07-18,19,Iowa,NA
 2026-07-18,20,Kansas,2e-4
 2026-07-18,21,Kentucky,4e-4
 2026-07-18,22,Louisiana,7e-4
@@ -733,7 +717,6 @@ week_ending_date,location,location_name,value
 2026-07-11,11,District of Columbia,7e-4
 2026-07-11,13,Georgia,3e-4
 2026-07-11,15,Hawaii,0.0038
-2026-07-11,19,Iowa,NA
 2026-07-11,24,Maryland,6e-4
 2026-07-11,25,Massachusetts,3e-4
 2026-07-11,26,Michigan,3e-4
@@ -824,7 +807,6 @@ week_ending_date,location,location_name,value
 2026-07-04,08,Colorado,4e-4
 2026-07-04,09,Connecticut,3e-4
 2026-07-04,18,Indiana,4e-4
-2026-07-04,19,Iowa,NA
 2026-07-04,29,Missouri,4e-4
 2026-07-04,31,Nebraska,1e-4
 2026-07-04,32,Nevada,0.0018
