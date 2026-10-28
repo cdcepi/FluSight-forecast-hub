@@ -1,0 +1,22 @@
+team_name: "Bernard Frimpong (independent)"
+team_abbr: "BFrimpong"
+model_name: "Damped log-linear growth"
+model_abbr: "trend"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Bernard Frimpong",
+    "affiliation": "Independent researcher (M.S. Applied Mathematics, University of Akron)",
+    "email": "bernardfrimpong040@gmail.com"
+  }
+]
+website_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+repo_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: false
+data_inputs: "NHSN weekly laboratory-confirmed influenza hospital admissions (FluSight target data)"
+methods: "Damped growth: 3-week least-squares slope of log admissions, carried forward with damping 0.4 per week; quantiles from in-season weekly log changes scaled by sqrt(weeks ahead)."
+methods_long: "For each location, z = log(admissions + 1). The current growth rate r is the least-squares slope of z over the last 3 weeks (set to 0 if any of those weeks is missing). The median k weeks after the last observation is z_last + r * (phi + phi^2 + ... + phi^k) with phi = 0.4. Uncertainty is identical to the team's baseline model: the empirical distribution of symmetrized in-season (October-May) week-to-week changes in z over the previous 156 weeks, multiplied by sqrt(k) and added to the median on the log scale, then back-transformed and rounded. Window and damping were chosen by minimum mean relative WIS (versus the baseline) over retrospective forecasts for the 2023-24, 2024-25 and 2025-26 seasons. Locations are modelled independently (no spatial correlation). No backfill adjustment."
+ensemble_of_models: false
+ensemble_of_hub_models: false
