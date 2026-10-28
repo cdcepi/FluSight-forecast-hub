@@ -5,7 +5,7 @@ model_abbr: "gbqr"
 model_version: "0.1"
 model_contributors: [
   {
-    "name": "Vaidehi Gupta",
+    "name": "Suman Krishna",
     "affiliation": "Georgia Tech",
     "email": "skrishna67@gatech.edu"
   }
