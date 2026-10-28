@@ -1,0 +1,59 @@
+team_name: FluCast
+team_abbr: FluCast
+model_name: Seasonal Ridge regression with empirical uncertainty
+model_abbr: SeasonalRidge
+model_version: 1.0.0
+
+model_contributors:
+  - name: McKade Picken
+    affiliation: Georgia Institute of Technology
+    email: mpicken3@gatech.edu
+  - name: Toye Salami
+    affiliation: Georgia Institute of Technology
+    email: tsalami6@gatech.edu
+  - name: Wenwi Xu
+    affiliation: Georgia Institute of Technology
+    email: wxu380@gatech.edu
+  - name: Omar Alshamsi
+    affiliation: Georgia Institute of Technology
+    email: oalshamsi3@gatech.edu
+  - name: Sila Kenha
+    affiliation: Georgia Institute of Technology
+    email: skeha3@gatech.edu
+
+license: CC-BY-4.0
+designated_model: true
+
+data_inputs: CDC FluSight weekly influenza hospital-admission data; U.S. national observations.
+
+methods: Seasonal Ridge regression using lagged hospital admissions, weekly changes, annual seasonal features, and horizon-specific empirical uncertainty calibration.
+
+methods_long: >-
+  Fit separate Ridge regression models for each forecast lead using
+  historical weekly influenza hospital admissions. Each model uses
+  four recent hospitalization observations, the latest weekly change,
+  and annual sine and cosine seasonal features. Standardize predictors
+  and apply L2 regularization with alpha=10. Train using observations
+  available through the Saturday preceding the forecast reference date.
+  Generate point forecasts for FluSight horizons 0 through 3 using
+  model leads 1 through 4, respectively. Construct 23 quantile
+  forecasts using horizon-specific historical rolling-origin prediction
+  errors and the empirical uncertainty calibration procedure.
+  Clip quantile forecasts at zero and round to nonnegative integers.
+  Horizon -1 reports the latest observed hospitalization count as
+  a diagnostic forecast. Historical calibration does not reconstruct
+  every Wednesday release vintage, so fully real-time probabilistic
+  performance has not yet been established.
+
+ensemble_of_models: false
+ensemble_of_hub_models: false
+
+website_url: https://github.com/OmarAlshamsi14/VIP-RAI-FluCast
+repo_url: https://github.com/OmarAlshamsi14/VIP-RAI-FluCast
+
+backfill_adjustment: No explicit backfill correction. Historical calibration uses mature rolling-origin errors without complete reconstruction of historical release vintages.
+
+baseline_model: false
+
+designated_targets:
+  - wk inc flu hosp
