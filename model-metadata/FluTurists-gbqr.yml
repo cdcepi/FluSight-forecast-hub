@@ -1,0 +1,24 @@
+team_name: "FluTurists"
+team_abbr: "FluTurists"
+model_name: "LightGBM quantile regression with ED-visit features"
+model_abbr: "gbqr"
+model_version: "0.1"
+model_contributors: [
+  {
+    "name": "Suman Krishna",
+    "affiliation": "Georgia Tech",
+    "email": "skrishna67@gatech.edu"
+  }
+]
+website_url: "https://github.com/vidhigupta413/vip-rai-group4"
+repo_url: "https://github.com/vidhigupta413/vip-rai-group4"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "NHSN weekly confirmed influenza hospital admissions and NSSP influenza share of emergency department visits."
+methods: "Pooled LightGBM pinball regression on log hospital admission rates with lags, seasonality, region, and lagged NSSP influenza ED-visit share."
+methods_long: "Direct quantile LightGBM (pinball loss) fit jointly across US jurisdictions for FluSight horizons -1 to 3. Features include lags of the hospital admission rate, week-over-week growth, lag-52, Fourier seasonality, holidays, log population, HHS regional rate, and lagged NSSP influenza share of ED visits (LOCF within location; missingness flagged, never filled with 0). Quantiles are generated on log1p(rate), mapped back to integer counts, clipped at 0, and sorted to be monotone. Horizon -1 uses a historical revision-ratio nowcast of the latest published week when that week is already in the as-of snapshot. This submission uses the GBQR component only, because it had lower WIS than the AR component and than an equal-weight AR+GBQR mix on a 2025-26 holdout smoke test."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+baseline_model: false
+designated_targets: ["wk inc flu hosp"]
+backfill_adjustment: "The two newest observed weeks are scaled by historical final/as-published count ratios estimated only from older vintages."
