@@ -25,5 +25,5 @@ default:
         args:
           targets: !expr list(target = 'wk inc flu hosp')
           output_types: !expr c('quantile')
-          popn_frac: 0.3
+          popn_frac: 0.001
           popn_file_path: "auxiliary-data/locations.csv"
