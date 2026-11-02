@@ -18,7 +18,7 @@ model_contributors: [
 website_url: "https://aperofsky.github.io/"
 license: "CC-BY-4.0"
 citation: " "
-team_funding: "We acknowledge support from Cooperative Agreements NU38PW000005 from The Centers for Disease Control and Prevention (CDC)."
+team_funding: "We acknowledge support from cooperative agreement CDC-RFA-FT-23-0069 from the CDC’s Center for Forecasting and Outbreak Analytics."
 designated_model: true
 methods: "Seasonal ARIMA model with exogenous covariates for vaccination coverage, vaccine effectiveness, weekly A/H3N2 virus circulation, and influenza transmission rates."
 data_inputs: "Weekly incident HHS influenza admissions, weekly CDC FluSurv-NET hospitalization rates, weekly syndromic and virologic surveillance data from CDC FluView, vaccination coverage estimates from the National Center for Immunization and Respiratory Diseases, and seasonal vaccine effectiveness estimates from published literature and the CDC."
