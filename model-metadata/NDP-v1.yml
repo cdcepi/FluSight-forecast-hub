@@ -1,0 +1,15 @@
+team_name: "NDP (Nicolás Díaz Pareja)"
+team_abbr: "NDP"
+model_name: "NDP statistical model"
+model_abbr: "v1"
+model_version: "1.0"
+model_contributors: [{"name": "Nicolás Díaz Pareja", "affiliation": "Universidad Autónoma de Madrid (undergraduate student)", "email": "nicodp2005@gmail.com"}]
+website_url: "https://github.com/nicodiaaz"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Hub target data only (influenza hospital admissions and ED visit proportions), as available each week."
+methods: "Proprietary statistical model fitted to past seasons of hub target data."
+methods_long: "Proprietary statistical model trained only on publicly available hub target data from past seasons, refitted each week on the data available at the forecast date. Method details are not disclosed. AI-use disclosure: an AI assistant (Claude, by Anthropic) helped with code and documentation. No AI is used to produce the forecasts. The author is solely responsible for the model."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+designated_targets: ["wk inc flu hosp", "wk flu hosp rate change", "peak week inc flu hosp", "peak inc flu hosp", "wk inc flu prop ed visits"]
