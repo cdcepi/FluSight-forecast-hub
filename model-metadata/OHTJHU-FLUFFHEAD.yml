@@ -1,0 +1,21 @@
+team_name: "One Health Trust - Johns Hopkins University"
+team_abbr: "OHTJHU"
+model_name: "FLUFFHEAD network agent-based model"
+model_abbr: "FLUFFHEAD"
+model_version: "6.0"
+model_contributors: [
+  {
+    "name": "Eili Klein",
+    "affiliation": "Johns Hopkins University",
+    "email": "eklein@jhu.edu"
+  }
+]
+website_url: "https://github.com/CDDEP-DC/FLUFFHEAD"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "NHSN confirmed influenza hospital admissions (FluSight target data, with past versions used to model revisions); NSSP influenza emergency department visits by health service area; California and Pennsylvania state health department data; CDC influenza vaccination coverage by state, age and month (2025-26 until 2026-27 data are available); absolute humidity from IEM ASOS station dew points and the NWS 7-day forecast; air travel, commuting and workplace data for importation (FAA enplanements, LODES); synthetic populations built with GREASYPOP-CO."
+methods: "Network agent-based model of 116 US metro regions on synthetic populations, fitted by adaptive importance sampling to admissions, with humidity seasonality, vaccination and national importation."
+methods_long: "Each of 116 regions (265 million people, about 81% of the US population) is simulated as a synthetic population of individual agents built with GREASYPOP-CO, with event-driven transmission over household, school, work and community contacts, thinned by weekends, school calendars, a daily absolute-humidity factor (Shaman et al. 2010), prior immunity and vaccination. One influenza strain is simulated. Each region is fitted to its share of its states' weekly admissions, with shares reweighted by NSSP emergency department visits where sub-state data exist, using adaptive importance sampling over 600 draws in three rounds. The score is a negative binomial likelihood with a 4-week half-life on past weeks, plus a term matching the model's growth over the last four weeks and a log-normal prior on per-state admission multipliers. Fitted parameters are the effective reproduction number at the cutoff (prior 0.8-1.5), a multiplier of 0.5-1.5 on age-specific prior immunity (25%, 30%, 40%, 35% and 30% at ages 0-4, 5-17, 18-49, 50-64 and 65+), the vaccine effect on infection (30-65%), the travel share of infection risk (1-4%) and the humidity floor (0.4-0.6). The likelihood is tempered if needed to keep at least 20 effective draws. The last two reported weeks are nowcast for backfill using a revision model learned from past versions of the hub target data, and horizon -1 is submitted from the nowcast. Kept draws are continued to the end of the season with weather uncertainty from historical anomalies, and the part of each region in each state is then rescaled so its trajectories start from the latest week's nowcast (one factor for all trajectories, so their spread is kept). Forecasting runs in two passes: in the first, imports after the cutoff follow each region's own incidence; in the second, regional forecasts are summed into a national curve and every region is re-run with imports following it. Regional trajectories are joined by a Gaussian copula into 2,000 joint samples, so spatial correlation comes from this shared factor and from the national import curve. Regions are scaled to states by their share of each state's influenza activity; states with little coverage are scaled from another region's per-capita curve, levelled to recent reported weeks. Quantiles, rate-change categories and peak targets are computed from these samples. Made with Claude."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+baseline_model: false
