@@ -1,0 +1,24 @@
+team_name: "FluTurists"
+team_abbr: "FluTurists"
+model_name: "Rolling-weighted ensemble of autoregression, LightGBM quantiles, and a temporal fusion transformer"
+model_abbr: "ensemble"
+model_version: "2.0"
+model_contributors: [
+  {
+    "name": "Om Patil",
+    "affiliation": "Georgia Tech",
+    "email": "opatil34@gatech.edu"
+  }
+]
+website_url: "https://github.com/vidhigupta413/vip-rai-group4"
+repo_url: "https://github.com/vidhigupta413/vip-rai-group4"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "NHSN weekly confirmed influenza hospital admissions and NSSP influenza share of emergency department visits, both as published on the submission date."
+methods: "Quantile average of autoregression, LightGBM quantile regression, and a temporal fusion transformer, with weights refit weekly by inverse WIS on this season's scored forecasts."
+methods_long: "Three components fit jointly across US jurisdictions on the NHSN archive released on the Wednesday submission date: (1) a pooled direct autoregression on the fourth root of the admission rate with location-specific residual scale; (2) LightGBM pinball regression on log1p admission rates with rate lags, growth, lag-52, Fourier seasonality, holidays, log population, HHS regional rate, and lagged NSSP influenza ED-visit share as published that week; (3) a small temporal fusion transformer (variable selection, LSTM encoder-decoder, interpretable attention, pinball loss). The two newest weeks are scaled by historical revision ratios estimated only from older vintages, and the AR and LightGBM fits are averaged with a fit that drops the newest week. Horizon -1 uses the empirical revision distribution around the published count. Component quantiles are averaged with weights proportional to 1/WIS, refit every week from this season's earlier forecasts whose target weeks have been reported (equal weights until three such weeks exist). The national median is pulled toward the sum of jurisdiction medians when they disagree by more than 15%. In a 2025-26 backtest this ensemble had 12% lower WIS than our v1 LightGBM-only submission, with 92% empirical coverage of 95% intervals."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+baseline_model: false
+designated_targets: ["wk inc flu hosp"]
+backfill_adjustment: "The two newest observed weeks are scaled by historical final/as-published count ratios estimated only from older vintages."
