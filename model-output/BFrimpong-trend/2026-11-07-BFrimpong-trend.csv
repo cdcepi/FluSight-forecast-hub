@@ -803,7 +803,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,2,2026-11-21,10,quantile,0.9,325
 2026-11-07,wk inc flu hosp,2,2026-11-21,10,quantile,0.95,441
 2026-11-07,wk inc flu hosp,2,2026-11-21,10,quantile,0.975,899
-2026-11-07,wk inc flu hosp,2,2026-11-21,10,quantile,0.99,1324
+2026-11-07,wk inc flu hosp,2,2026-11-21,10,quantile,0.99,1051
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.01,2
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.025,4
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.05,11
@@ -825,8 +825,8 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.85,265
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.9,410
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.95,584
-2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.975,1329
-2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.99,2076
+2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.975,1051
+2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.99,1051
 2026-11-07,wk inc flu hosp,0,2026-11-07,11,quantile,0.01,2
 2026-11-07,wk inc flu hosp,0,2026-11-07,11,quantile,0.025,3
 2026-11-07,wk inc flu hosp,0,2026-11-07,11,quantile,0.05,3
@@ -2275,7 +2275,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,2,2026-11-21,27,quantile,0.9,201
 2026-11-07,wk inc flu hosp,2,2026-11-21,27,quantile,0.95,313
 2026-11-07,wk inc flu hosp,2,2026-11-21,27,quantile,0.975,632
-2026-11-07,wk inc flu hosp,2,2026-11-21,27,quantile,0.99,9896
+2026-11-07,wk inc flu hosp,2,2026-11-21,27,quantile,0.99,5793
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.01,0
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.025,2
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.05,7
@@ -2298,7 +2298,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.9,249
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.95,414
 2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.975,931
-2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.99,22313
+2026-11-07,wk inc flu hosp,3,2026-11-28,27,quantile,0.99,5793
 2026-11-07,wk inc flu hosp,0,2026-11-07,28,quantile,0.01,19
 2026-11-07,wk inc flu hosp,0,2026-11-07,28,quantile,0.025,46
 2026-11-07,wk inc flu hosp,0,2026-11-07,28,quantile,0.05,54
@@ -2574,7 +2574,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,30,quantile,0.9,178
 2026-11-07,wk inc flu hosp,3,2026-11-28,30,quantile,0.95,321
 2026-11-07,wk inc flu hosp,3,2026-11-28,30,quantile,0.975,491
-2026-11-07,wk inc flu hosp,3,2026-11-28,30,quantile,0.99,1456
+2026-11-07,wk inc flu hosp,3,2026-11-28,30,quantile,0.99,1137
 2026-11-07,wk inc flu hosp,0,2026-11-07,31,quantile,0.01,4
 2026-11-07,wk inc flu hosp,0,2026-11-07,31,quantile,0.025,5
 2026-11-07,wk inc flu hosp,0,2026-11-07,31,quantile,0.05,7
@@ -4782,7 +4782,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,56,quantile,0.9,97
 2026-11-07,wk inc flu hosp,3,2026-11-28,56,quantile,0.95,153
 2026-11-07,wk inc flu hosp,3,2026-11-28,56,quantile,0.975,416
-2026-11-07,wk inc flu hosp,3,2026-11-28,56,quantile,0.99,613
+2026-11-07,wk inc flu hosp,3,2026-11-28,56,quantile,0.99,587
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.01,119
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.025,152
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.05,181
