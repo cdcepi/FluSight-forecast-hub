@@ -21,7 +21,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,-1,2026-10-31,01,quantile,0.9,216
 2026-11-07,wk inc flu hosp,-1,2026-10-31,01,quantile,0.95,262
 2026-11-07,wk inc flu hosp,-1,2026-10-31,01,quantile,0.975,3178
-2026-11-07,wk inc flu hosp,-1,2026-10-31,01,quantile,0.99,6500
+2026-11-07,wk inc flu hosp,-1,2026-10-31,01,quantile,0.99,5157
 2026-11-07,wk inc flu hosp,0,2026-11-07,01,quantile,0.01,80
 2026-11-07,wk inc flu hosp,0,2026-11-07,01,quantile,0.025,101
 2026-11-07,wk inc flu hosp,0,2026-11-07,01,quantile,0.05,114
@@ -918,7 +918,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.9,454
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.95,622
 2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.975,819
-2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.99,1222
+2026-11-07,wk inc flu hosp,3,2026-11-28,10,quantile,0.99,1051
 2026-11-07,wk inc flu hosp,-1,2026-10-31,11,quantile,0.01,7
 2026-11-07,wk inc flu hosp,-1,2026-10-31,11,quantile,0.025,8
 2026-11-07,wk inc flu hosp,-1,2026-10-31,11,quantile,0.05,9
@@ -5884,9 +5884,9 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.8,361
 2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.85,396
 2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.9,484
-2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.95,4698
-2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.975,8179
-2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.99,13023
+2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.95,3203
+2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.975,3203
+2026-11-07,wk inc flu hosp,-1,2026-10-31,72,quantile,0.99,3203
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.01,116
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.025,156
 2026-11-07,wk inc flu hosp,0,2026-11-07,72,quantile,0.05,178
@@ -5978,7 +5978,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk inc flu hosp,3,2026-11-28,72,quantile,0.9,1902
 2026-11-07,wk inc flu hosp,3,2026-11-28,72,quantile,0.95,2530
 2026-11-07,wk inc flu hosp,3,2026-11-28,72,quantile,0.975,3136
-2026-11-07,wk inc flu hosp,3,2026-11-28,72,quantile,0.99,4194
+2026-11-07,wk inc flu hosp,3,2026-11-28,72,quantile,0.99,3203
 2026-11-07,wk inc flu hosp,-1,2026-10-31,US,quantile,0.01,7516
 2026-11-07,wk inc flu hosp,-1,2026-10-31,US,quantile,0.025,8568
 2026-11-07,wk inc flu hosp,-1,2026-10-31,US,quantile,0.05,8780
@@ -12994,9 +12994,9 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,wk flu hosp rate change,2,2026-11-21,72,pmf,stable,0.0587
 2026-11-07,wk flu hosp rate change,2,2026-11-21,72,pmf,increase,0.1476
 2026-11-07,wk flu hosp rate change,2,2026-11-21,72,pmf,large_increase,0.511
-2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,large_decrease,0.1202
+2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,large_decrease,0.1184
 2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,decrease,0.1269
-2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,stable,0.0665
+2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,stable,0.0683
 2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,increase,0.1312
 2026-11-07,wk flu hosp rate change,3,2026-11-28,72,pmf,large_increase,0.5552
 2026-11-07,wk flu hosp rate change,0,2026-11-07,US,pmf,large_decrease,0.0002
@@ -13041,7 +13041,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,peak inc flu hosp,,,01,quantile,0.9,1431
 2026-11-07,peak inc flu hosp,,,01,quantile,0.95,1811
 2026-11-07,peak inc flu hosp,,,01,quantile,0.975,3178
-2026-11-07,peak inc flu hosp,,,01,quantile,0.99,6500
+2026-11-07,peak inc flu hosp,,,01,quantile,0.99,5157
 2026-11-07,peak week inc flu hosp,,,01,pmf,2026-10-10,0
 2026-11-07,peak week inc flu hosp,,,01,pmf,2026-10-17,0
 2026-11-07,peak week inc flu hosp,,,01,pmf,2026-10-24,0
@@ -13440,7 +13440,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,peak inc flu hosp,,,10,quantile,0.9,526
 2026-11-07,peak inc flu hosp,,,10,quantile,0.95,648
 2026-11-07,peak inc flu hosp,,,10,quantile,0.975,823
-2026-11-07,peak inc flu hosp,,,10,quantile,0.99,1222
+2026-11-07,peak inc flu hosp,,,10,quantile,0.99,1051
 2026-11-07,peak week inc flu hosp,,,10,pmf,2026-10-10,0
 2026-11-07,peak week inc flu hosp,,,10,pmf,2026-10-17,0
 2026-11-07,peak week inc flu hosp,,,10,pmf,2026-10-24,0
@@ -15946,13 +15946,13 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,peak inc flu hosp,,,72,quantile,0.8,2029
 2026-11-07,peak inc flu hosp,,,72,quantile,0.85,2371
 2026-11-07,peak inc flu hosp,,,72,quantile,0.9,2978
-2026-11-07,peak inc flu hosp,,,72,quantile,0.95,4861
-2026-11-07,peak inc flu hosp,,,72,quantile,0.975,8179
-2026-11-07,peak inc flu hosp,,,72,quantile,0.99,13023
+2026-11-07,peak inc flu hosp,,,72,quantile,0.95,3203
+2026-11-07,peak inc flu hosp,,,72,quantile,0.975,3203
+2026-11-07,peak inc flu hosp,,,72,quantile,0.99,3203
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-10-10,0
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-10-17,0
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-10-24,0
-2026-11-07,peak week inc flu hosp,,,72,pmf,2026-10-31,0.1526
+2026-11-07,peak week inc flu hosp,,,72,pmf,2026-10-31,0.1525
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-11-07,0.0243
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-11-14,0.0324
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-11-21,0.0848
@@ -15960,7 +15960,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-12-05,0.0007
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-12-12,0.0111
 2026-11-07,peak week inc flu hosp,,,72,pmf,2026-12-19,0.0408
-2026-11-07,peak week inc flu hosp,,,72,pmf,2026-12-26,0.0372
+2026-11-07,peak week inc flu hosp,,,72,pmf,2026-12-26,0.0373
 2026-11-07,peak week inc flu hosp,,,72,pmf,2027-01-02,0.0404
 2026-11-07,peak week inc flu hosp,,,72,pmf,2027-01-09,0.0396
 2026-11-07,peak week inc flu hosp,,,72,pmf,2027-01-16,0.0414
