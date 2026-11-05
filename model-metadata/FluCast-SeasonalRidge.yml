@@ -2,7 +2,7 @@ team_name: FluCast
 team_abbr: FluCast
 model_name: Seasonal Ridge regression with empirical uncertainty
 model_abbr: SeasonalRidge
-model_version: 1.0.0
+model_version: 1.1.0
 
 model_contributors:
   - name: McKade Picken
@@ -38,7 +38,11 @@ methods_long: >-
   Generate point forecasts for FluSight horizons 0 through 3 using
   model leads 1 through 4, respectively. Construct 23 quantile
   forecasts using horizon-specific historical rolling-origin prediction
-  errors and the empirical uncertainty calibration procedure.
+  errors scaled by sqrt(max(1, last observed admissions)) at each
+  historical origin. Use up to 104 errors per horizon with targets at
+  least four weeks old and at least 20 errors. Add empirical residual
+  quantiles multiplied by the current observation-based scale to the
+  current point prediction. This replaces log-residual calibration.
   Clip quantile forecasts at zero and round to nonnegative integers.
   Horizon -1 reports the latest observed hospitalization count as
   a diagnostic forecast. Historical calibration does not reconstruct
