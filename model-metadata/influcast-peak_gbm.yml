@@ -1,0 +1,57 @@
+team_name: "Georgia Tech Influcast"
+team_abbr: "influcast"
+
+model_name: "Peak-Aware LightGBM Influenza Hospitalization Forecast"
+model_abbr: "peak_gbm"
+model_version: "1.0"
+
+model_contributors:
+  - name: "David Izadi"
+    affiliation: "Georgia Institute of Technology"
+    email: "dizadi6@gatech.edu"
+  - name: "Jonathan Zhang"
+    affiliation: "Georgia Institute of Technology"
+    email: "jzhang3342@gatech.edu"
+  - name: "Will Patton"
+    affiliation: "Georgia Institute of Technology"
+    email: "wpatton31@gatech.edu"
+  - name: "Kairav Parikh"
+    affiliation: "Georgia Institute of Technology"
+    email: "kparikh60@gatech.edu"
+  - name: "Jaisen Soundar"
+    affiliation: "Georgia Institute of Technology"
+    email: "jsoundar3@gatech.edu"
+
+website_url: "https://github.com/Kairavparikh/VIP_RAI_Influcast"
+license: "CC-BY-4.0"
+
+designated_model: false
+
+methods: >-
+  LightGBM quantile regression using historical influenza hospitalizations,
+  recent case trends, and seasonal peak features to forecast weekly admissions.
+
+data_inputs: >-
+  Historical weekly influenza hospital admissions from the CDC FluSight
+  Forecast Hub target data.
+
+methods_long: >-
+  The Peak GBM model uses LightGBM gradient-boosted decision trees to
+  generate probabilistic predictions of weekly influenza hospital
+  admissions at national and jurisdictional levels.
+
+  The model incorporates features derived from historical influenza
+  hospitalization counts, recent temporal trends, and seasonal
+  progression and peak indicators.
+
+  Quantile forecasts are generated for the current epidemiological week
+  and the following three weeks. The predictive distributions are
+  represented using the quantile levels required by the CDC FluSight
+  Forecast Hub.
+
+  Historical rolling-origin backtesting is used to evaluate model
+  performance, including weighted interval score, point forecast
+  accuracy, and prediction interval coverage.
+
+ensemble_of_models: false
+ensemble_of_hub_models: false
