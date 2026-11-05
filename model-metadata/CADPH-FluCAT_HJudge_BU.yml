@@ -19,6 +19,7 @@ website_url: "https://calcat.cdph.ca.gov/"
 license: "CC-BY-4.0"
 designated_model: false
 methods: "Median-based ensemble of selected quantile forecasts submissions (bottom up approach)."
+data_inputs: "NHSN weekly incident flu hospitalizations, whichever other data inputs inform constituent models."
 methods_long: "A median of quantile outputs is used for a subset of quantile based forecasts selected weekly. The top 10 performing forecasts based on WIS for the last 4 weeks are used as an initial ensemble, and then selected additional forecasts are eliminated based on human judgment and internal heuristics."
 ensemble_of_models: true
 ensemble_of_hub_models: true
