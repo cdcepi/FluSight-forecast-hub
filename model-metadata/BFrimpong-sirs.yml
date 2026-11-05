@@ -1,0 +1,22 @@
+team_name: "Bernard Frimpong (independent)"
+team_abbr: "BFrimpong"
+model_name: "SIRS with susceptible depletion"
+model_abbr: "sirs"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Bernard Frimpong",
+    "affiliation": "Independent researcher (M.S. Applied Mathematics, University of Akron)",
+    "email": "bernardfrimpong040@gmail.com"
+  }
+]
+website_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+repo_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: false
+data_inputs: "NHSN weekly laboratory-confirmed influenza hospital admissions (FluSight target data)"
+methods: "SIRS model solved with RK4; R_t from the 3-week growth rate, susceptibles depleted by this season's admissions relative to a typical past season; baseline-style quantile spread."
+methods_long: "For each location an SIRS model (gamma = 1/3 per day, omega = 1/365 per day) is solved forward four weeks with the 4th-order Runge-Kutta method (step 0.5 day), starting at the middle of the last observed week. The reproduction number R_t = 1 + (r/7)/gamma is re-estimated every week from r, the least-squares slope of log(admissions + 1) over the last 3 weeks, so transmission varies in time. The susceptible fraction (relative to the start of the season) is s = 1 - kappa * H / H_typ, where H is cumulative admissions since 1 August and H_typ is the mean total of the location's complete past seasons; kappa = 0.4 is the share of season-start susceptibles a typical season uses, chosen by minimum mean relative WIS (versus the team's baseline) over retrospective forecasts for 2023-24, 2024-25 and 2025-26. The infectious fraction is set to reproduce the latest weekly admission rate. Medians are weekly admissions from the simulation; quantiles add the baseline model's spread (symmetrized in-season weekly log changes over 156 weeks, scaled by sqrt(weeks ahead)). Locations are modelled independently; no backfill adjustment."
+ensemble_of_models: false
+ensemble_of_hub_models: false
