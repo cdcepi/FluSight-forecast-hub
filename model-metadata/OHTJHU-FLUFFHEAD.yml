@@ -1,6 +1,6 @@
 team_name: "One Health Trust - Johns Hopkins University"
 team_abbr: "OHTJHU"
-model_name: "FLUFFHEAD network agent-based model"
+model_name: "FLUFFHEAD: FLU Forecasting Framework for Heterogeneous Edge-Activated Dynamics"
 model_abbr: "FLUFFHEAD"
 model_version: "6.0"
 model_contributors: [
