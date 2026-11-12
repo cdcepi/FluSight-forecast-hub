@@ -1,0 +1,21 @@
+team_name: "One Health Trust - Johns Hopkins University"
+team_abbr: "OHTJHU"
+model_name: "Timeseries Foundation Model Ensemble (bare minimum)"
+model_abbr: "BM"
+model_contributors: [
+  {
+    "name": "Eili Klein",
+    "affiliation": "Johns Hopkins University",
+    "email": "eklein@jhu.edu"
+  }
+]
+license: "CC0-1.0"
+designated_model: false
+data_inputs: "FluSight target data only: NHSN confirmed influenza hospital admissions and the ED visit proportion target data."
+methods: "Median quantile ensemble of zero-shot time-series foundation models: Chronos-2, TimesFM 2.5, Moirai 2.0 and Timestral."
+methods_long: "Each location's weekly NHSN admissions series, and separately its ED visit proportion series, is forecast independently and zero-shot (no fine-tuning) by four pretrained time-series foundation models: Amazon Chronos-2, Google TimesFM 2.5, Salesforce Moirai 2.0-R-small and Mistral Timestral-209M. Each model's native quantiles are mapped to the 23 FluSight levels by interpolation in normal-score space, with linear tail extrapolation for models that only output the 0.1-0.9 quantiles. The ensemble takes the median across models at each quantile level. Spatial correlation is not modeled. Before forecasting, the two most recent reported weeks are nowcast for expected backfill, using a revision model learned from every past version of the hub target data. For hospital admissions, the expected log revision at each lag is a robust linear function of the report's log size and its week-over-week change, plus a location effect shrunk toward zero; the revision s.d. is a power law in the report's size. ED visit reports are not shifted. The nowcast is combined by precision weighting with our previous week's forecast for that week. The models are run on the nowcast-adjusted series, and horizon -1 is submitted from the nowcast distribution. Rate-change category probabilities come from the ensemble quantile function, using the hub's count thresholds. For the peak targets, admissions are forecast to the end of the season and 2,000 trajectories are sampled from the weekly ensemble quantiles, joined by a Gaussian copula with AR(1) correlation 0.9 between weeks and appended to the weeks of the season already observed. Peak week probabilities and peak size quantiles are taken from these trajectories. Built by Claude."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+website_url: "https://github.com/CDDEP-DC/flusight-fm"
+model_version: "1.0"
+baseline_model: false

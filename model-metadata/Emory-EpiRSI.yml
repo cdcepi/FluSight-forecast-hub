@@ -1,0 +1,27 @@
+team_name: "Emory University Melody Lab"
+team_abbr: "Emory"
+model_name: "EpiRSI recursive self-improvement forecaster"
+model_abbr: "EpiRSI"
+model_version: "v15g"
+model_contributors:
+  - name: "Bohan Wang"
+    affiliation: "Emory University"
+    email: "bohan.wang2@emory.edu"
+  - name: "Zhengxu Tang"
+    affiliation: "Emory University"
+    email: "zhengxu.tang@emory.edu"
+  - name: "Zewen Liu"
+    affiliation: "Emory University"
+    email: "zewen.liu@emory.edu"
+  - name: "Wei Jin"
+    affiliation: "Emory University"
+    email: "wei.jin@emory.edu"
+website_url: "https://www.cs.emory.edu/~wjin30/lab/"
+license: "CC-BY-4.0"
+designated_model: true
+ensemble_of_models: true
+ensemble_of_hub_models: false
+methods: "EpiRSI: an LLM agent writes data skills for frozen time-series foundation models and boosted trees, verified on past seasons; fixed greedy ensemble selection of the experts, no LLM at forecast time."
+data_inputs: "NHSN weekly influenza admissions (hub target data as available at the deadline); ILINet, clinical laboratory percent positive (CDC FluView) and NSSP percent of emergency-department visits with influenza (Delphi Epidata, versions as of the deadline); outpatient claims share (Delphi Epidata, versions as of the deadline); US holiday calendar."
+methods_long: "Experts run every week on the data available at the deadline: Chronos-2, TimesFM-3 and Toto-2 whose inputs are built by an agent-written skill (cross-jurisdiction spatial-diffusion and growth-acceleration features from the targets and, when available, from the auxiliary signals; pooled multi-way target scaling; holiday-aware phase velocity; the newest three reported weeks raised by the reporting revisions estimated at the deadline; national burden indicators), further foundation models used as is (TiRex-2, t0-gamma), pooled LightGBM quantile regression on lagged features (also with ILINet as a joint series and with outpatient-claims covariates), a LightGBM quantile regression whose training table is built by an agent-written skill (history back-extended with clinical positivity and ILINet, scale-invariant cross-jurisdiction features, simulated reporting backfill, multiscale growth features), and two simple mechanistic models. Skills were proposed by an LLM agent (Gemini 3.1 Pro) and accepted only if they improved the score in at least two thirds of 12 to 14 past seasons rebuilt with the data as of each deadline (NHSN 2023-24 and 2024-25, HHS Protect 2021-22 and 2022-23, ILINet 2010-2023). The forecast is a fixed weighted average of the experts in log space: members and weights were chosen once by greedy forward ensemble selection with replacement (Caruana et al. 2004) on the 14 past seasons - the skill-built LightGBM 0.33, TimesFM-3 with the skill inputs 0.33, Chronos-2 with the skill inputs 0.22, the log-space mean of the three foundation models 0.11. During the season the members change only when a new expert passes the same multi-season test and the change is pre-registered before its first use (model_version names the deployed version); no manual adjustment; the LLM is not called at forecast time."
+backfill_adjustment: "The input skill raises the newest three reported weeks by the reporting revisions estimated at the deadline from the season's earlier releases (pooled over jurisdictions)."

@@ -1,0 +1,18 @@
+team_name: DiseaseX-RSI
+team_abbr: DXRSI
+model_name: Program search with a fixed improver
+model_abbr: fixed_improver
+model_version: A2-0
+model_contributors:
+- name: Boyuan Wang
+  affiliation: Center for Medical AI Technology Innovation, Zhuhai Fudan Innovation Research Institute, Zhuhai, China
+  email: boyuanwang@um.edu.mo
+website_url: https://github.com/neallydare-svg
+license: CC-BY-4.0
+designated_model: false
+data_inputs: 'FluSight target data only: weekly NHSN laboratory-confirmed influenza hospital admissions (target-data/target-hospital-admissions.csv), weekly NSSP proportion of ED visits due to influenza (target-data/target-ed-visits-prop.csv) and their versioned releases (target-data/time-series.csv).'
+methods: Program from LLM-driven code search with a fixed improver. Identical to the team's T0 forecast until its first own program; an output gate falls back to T0.
+methods_long: 'Arm of a prospective study of automated forecast-program improvement. A fixed improver (a large language model with a fixed prompt and search procedure that is itself never modified) proposes changes to a Python forecasting program; candidate programs are scored by weighted interval score on rolling-origin backtests that only use data available before each forecast date, and the best program so far is used for the weekly submission, re-fitted on the latest hub target data. Inputs are only the hub''s weekly target series. Before the arm has a program of its own (version A2-0), the submitted forecast is identical, row by row, to the forecast of this team''s T0 model, the initial program of the study. Afterwards the structure of the submitted program can change between weeks; every change gets a new model_version and an entry in the version history below, and every submitted program is archived with its SHA-256 hash. Spatial correlation and the treatment of uncertainty depend on the program version; uncertainty is always represented by the 23 predictive quantiles, and the horizon -1 week is nowcast from the first released value with empirical revision ratios. An automatic output gate checks this model''s forecast every week for each target and location and replaces it by the team''s T0 model forecast for that location (for the whole target if the program fails or is not a registered version) when the program leaves a horizon unforecast, a quantile at or below the median exceeds the hub''s upper bound, a median exceeds 2 times the location''s highest observed value, or the median changes more than 5-fold from one week to the next (tolerance 10 admissions or 0.1 percentage point of ED visits). Replacements are logged, and the program''s own forecasts are archived. Version history: from 2026-11-21: A2-0, no program of its own yet; the submission is a copy of this team''s T0 forecast.'
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: Horizon -1 quantiles are the first released value shifted by empirical quantiles of the change from first released to latest value on the log(1+y) scale, from versioned target data, using weeks whose first release appeared within 10 days of the week's end.

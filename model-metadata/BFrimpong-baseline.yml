@@ -1,0 +1,22 @@
+team_name: "Bernard Frimpong (independent)"
+team_abbr: "BFrimpong"
+model_name: "Flat log-scale baseline"
+model_abbr: "baseline"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Bernard Frimpong",
+    "affiliation": "Independent researcher (M.S. Applied Mathematics, University of Akron)",
+    "email": "bernardfrimpong040@gmail.com"
+  }
+]
+website_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+repo_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: true
+data_inputs: "NHSN weekly laboratory-confirmed influenza hospital admissions (FluSight target data)"
+methods: "Flat forecast at the last observed value; quantiles from symmetrized in-season week-to-week log changes over the past 3 years, widened by sqrt(weeks ahead)."
+methods_long: "Median equals the most recent observed weekly admissions. Uncertainty comes from the empirical distribution of week-to-week changes in log(admissions + 1) for the same location, using in-season weeks (October-May) from the previous 156 weeks; each change is also included with its sign flipped so the distribution is symmetric. For a target k weeks after the last observation, the change quantiles are multiplied by sqrt(k) (random-walk scaling), added to log(last + 1), transformed back and rounded to integers. Locations are modelled independently (no spatial correlation). No backfill adjustment. This is a reference model for comparison with later mechanistic (SIRS) models from the same team."
+ensemble_of_models: false
+ensemble_of_hub_models: false

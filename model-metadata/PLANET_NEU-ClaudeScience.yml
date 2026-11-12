@@ -1,0 +1,21 @@
+team_name: "PLANET_NEU"
+team_abbr: "PLANET_NEU"
+model_name: "AI-generated Gradient-boosted quantile regression ensemble"
+model_abbr: "ClaudeScience"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Ajitesh Srivastava",
+    "affiliation": "Northeastern University",
+    "email": "aji.srivastava@northeastern.edu"
+  }
+]
+website_url: "https://ajitesh-srivastava.com"
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: "NHSN weekly confirmed influenza hospital admissions (FluSight target-data, including as-of vintages in time-series.csv) and NSSP influenza ED-visit proportions (FluSight target-data)."
+methods: "[AI-generated, no human direction] LightGBM quantile regression on log-rate changes pooled across jurisdictions, with backfill correction, interval recalibration, and analog-based peak simulation."
+methods_long: "Direct multi-horizon (1-4 week) quantile regression with LightGBM, trained on all jurisdictions pooled. Target is the change in log(admissions+1 per 100k). Features: current log rate, last four weekly log changes, national level and growth, ED-visit proportion level and changes, log population, and (in half of the ensemble members) season week and the previous season peak. Six members (3 seeds x 2 feature sets) are averaged by quantile (Vincentization), then intervals are widened about the median by 1.25 (hospital) or 1.4 (ED), calibrated by rolling-origin backtests on 2023-24 to 2025-26 using real-time data vintages. Latest-week reporting backfill is corrected using per-jurisdiction median revisions from the 2024-26 NHSN seasons, scaled by 0.7 because early 2026-27 revisions have been smaller. Rate-trend probabilities come from Gaussian-copula sample paths. Peak targets: the US peak rate is drawn from a lognormal prior fit to 2022-26 peaks and conditioned on the sampled 4-week paths. Time to peak is drawn from historical analogs matched on current/peak ratio and growth rate. State peaks are set hierarchically from historical state/US peak ratios and timing offsets, half of draws using the state's own analog timing."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: "Yes: multiplicative correction of the two most recent weeks using historical vintage revisions."
