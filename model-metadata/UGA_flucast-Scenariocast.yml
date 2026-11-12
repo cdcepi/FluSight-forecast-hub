@@ -18,9 +18,17 @@ model_contributors: [
 ]
 license: "CC-BY-4.0"
 designated_model: false
-data_inputs: NHSN, Scenario Modeling Hub (SMH)
-methods: A pattern matching model that matches growth rate trends to scenario modeling hub projections growth rate curves.
-methods_long: Matches seasonal growth rate trends against scenario modeling hub projections growth rate curves to identify the closest matches. Makes forecasts based on nearest neighbor trajectories.
+data_inputs: NHSN, NSSP, Flu Scenario Modeling Hub (SMH) projections
+methods: Matches recent growth rates to the growth curves of the season's Flu Scenario Modeling Hub projected trajectories (nearest-neighbour weights with level matching).
+methods_long: >-
+  Each Flu Scenario Modeling Hub model's projections for the current season's latest round (one sampled trajectory per
+  model, scenario, location and age group) give a database of weekly growth-rate curves aligned with the calendar. Each
+  week, the last 20 weeks of observed log growth rates of a location (admissions, or the influenza share of ED visits)
+  are compared with every curve, also shifted by up to two weeks. Matches are resampled with kernel weights
+  exp(-mse / h), also matching the location's current level relative to its typical season peak against the curve's
+  level relative to its own peak. Each sampled curve's following growth is applied to the latest observation;
+  admissions get negative binomial observation noise. Quantiles, the season peak and the peak week come from 1,000
+  trajectories.
 website_url: https://thefoxlab.wordpress.com/
 ensemble_of_models: false
 ensemble_of_hub_models: false
