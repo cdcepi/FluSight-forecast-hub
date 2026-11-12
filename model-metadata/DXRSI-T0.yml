@@ -1,0 +1,18 @@
+team_name: DiseaseX-RSI
+team_abbr: DXRSI
+model_name: T0 frozen forecasting program
+model_abbr: T0
+model_version: t0_ensemble-1
+model_contributors:
+- name: Boyuan Wang
+  affiliation: Center for Medical AI Technology Innovation, Zhuhai Fudan Innovation Research Institute, Zhuhai, China
+  email: boyuanwang@um.edu.mo
+website_url: https://github.com/neallydare-svg
+license: CC-BY-4.0
+designated_model: false
+data_inputs: 'FluSight target data only: weekly NHSN laboratory-confirmed influenza hospital admissions (target-data/target-hospital-admissions.csv), weekly NSSP proportion of ED visits due to influenza (target-data/target-ed-visits-prop.csv) and their versioned releases (target-data/time-series.csv).'
+methods: 'Median of 3 quantile forecasters: seasonal naive with empirical errors, persistence with pooled log-change quantiles, LightGBM quantile regression. Parameters fitted once, then frozen.'
+methods_long: 'Statistical/machine-learning forecasting program used as the frozen initial program (T0) arm of a prospective study of automated forecast-program improvement. Inputs are only the hub''s weekly target series. Three component forecasters produce the 23 quantiles for each location and horizon: (A) seasonal naive (the value 52 weeks before the target week) plus empirical quantiles of the location''s own 52-week differences over the last three years; (B) persistence of the last observation plus quantiles of symmetrised log(1+y) changes pooled across locations within size terciles; (C) LightGBM quantile regression (one model per quantile level) pooled across locations and horizons, using recent log levels, differences, seasonal lags and week of year. The component quantiles are combined by their median at each level and sorted. Locations are modelled independently apart from pooling of parameters; there is no explicit spatial correlation. Uncertainty comes from the empirical error and change distributions and the quantile regressions. In this model all fitted parameters (error quantiles, change quantiles, LightGBM models) are estimated once on the data available for the first submission and then frozen; later forecasts only update the input data. The horizon -1 week is nowcast from the first released value times empirical first-release-to-latest revision ratios. Version history: from 2026-11-21: t0_ensemble-1 (program sha256 63af89d98876), program t0_ensemble.py; parameters fitted once on the data of the first submission week, then frozen.'
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: Horizon -1 quantiles are the first released value shifted by empirical quantiles of the change from first released to latest value on the log(1+y) scale, from versioned target data, using weeks whose first release appeared within 10 days of the week's end. No other backfill adjustment.

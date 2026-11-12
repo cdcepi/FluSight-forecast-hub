@@ -1,6 +1,6 @@
 team_name: "ACCIDDA"
 team_abbr: "ACCIDDA"
-model_name: "insight.cast CV-selected ensemble"
+model_name: "insight.cast.flu"
 model_abbr: "insightcast"
 model_version: "0.1"
 model_contributors: [
@@ -18,7 +18,7 @@ model_contributors: [
 website_url: "https://accidda.github.io/insight.cast/"
 repo_url: "https://github.com/ACCIDDA/insight.cast"
 license: "CC-BY-4.0"
-designated_model: false
+designated_model: true
 data_inputs: "NHSN weekly confirmed influenza hospital admissions (FluSight hub target data, vintage available at the forecast deadline)."
 methods: "Per-location equal-weight linear pool of the 5 insight.cast candidate models with the lowest cross-validated WIS over 9 seasonally aligned origins."
 methods_long: "Forecasts are produced with the insight.cast R package. For each location, candidate models (random walk, ETS, theta, ARIMA variants, NNETAR, endemic-epidemic HHH4 models and pretrained time-series foundation models (Chronos, TimesFM, Sundial)) are cross-validated at 9 origins: the reference date shifted back 52, 104 and 156 weeks and the two following weeks, scoring 4-week-ahead forecasts by weighted interval score. The five lowest-WIS candidates are refit on the latest data and combined with an equal-weight linear pool. Rate-change category probabilities are derived from the ensemble's predictive distribution relative to the most recently reported week."

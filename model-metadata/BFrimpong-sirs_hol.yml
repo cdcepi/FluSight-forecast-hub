@@ -1,0 +1,22 @@
+team_name: "Bernard Frimpong (independent)"
+team_abbr: "BFrimpong"
+model_name: "SIRS with school-holiday transmission and post-break rebound"
+model_abbr: "sirs_hol"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Bernard Frimpong",
+    "affiliation": "Independent researcher (M.S. Applied Mathematics, University of Akron)",
+    "email": "bernardfrimpong040@gmail.com"
+  }
+]
+website_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+repo_url: "https://github.com/bernardfrimpong040-pixel/flu-forecasting-sirs"
+license: "CC-BY-4.0"
+designated_model: true
+baseline_model: false
+data_inputs: "NHSN weekly laboratory-confirmed influenza hospital admissions (FluSight target data); a fixed typical US K-12 school-holiday calendar (Thanksgiving, winter break)"
+methods: "SIRS model (RK4) with 20% lower transmission in Thanksgiving and winter school breaks, 90% after the winter break, a 7-day admission lag and susceptible depletion; baseline-style spread."
+methods_long: "For each location an SIRS model (gamma = 1/3 per day, omega = 1/365 per day) is solved forward with the 4th-order Runge-Kutta method (step 0.5 day). Transmission is beta(t) = beta_school * f(t), with f = 0.8 on school-holiday days (Wednesday-Sunday of Thanksgiving week; December 21 - January 3), f = 0.9 from January 4 to July 31 (transmission only partly returns after the winter break), and 1 otherwise. Admissions lag infections by 7 days. The reproduction number R_t = 1 + (r/7)/gamma comes from r, the least-squares slope of log(admissions + 1) over the last 3 weeks; it is divided by the mean of f over the infection days behind those weeks to give term-time transmission. The susceptible fraction is s = 1 - kappa * H / H_typ (H: cumulative admissions since 1 August; H_typ: mean total of complete past seasons), with kappa = 0.3. kappa, the holiday factor and the post-break factor were chosen jointly by minimum mean relative WIS (versus the team's baseline) over retrospective forecasts for 2023-24 and 2024-25, and the same values are also best over 2023-24 to 2025-26; on the held-out 2025-26 season the relative WIS was 0.656. Quantiles add the baseline model's spread (symmetrized in-season weekly log changes over 156 weeks, scaled by sqrt(weeks ahead)). Locations are modelled independently; no backfill adjustment."
+ensemble_of_models: false
+ensemble_of_hub_models: false

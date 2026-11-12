@@ -1,6 +1,6 @@
 team_name: "CPHMR, Clemson University"
 team_abbr: "DMAPRIME"
-model_name: "Quantile Regression"
+model_name: "Gradient-Boosted Quantile Regression"
 model_abbr: "QR"
 model_contributors: [
   {
@@ -10,13 +10,13 @@ model_contributors: [
 ]
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "CDC NHSN weekly influenza hospital admissions for all US states and the US national total; Prisma Health EHR surveillance data (weekly flu tests, positive tests, inpatient hospitalizations), used for South Carolina only"
+data_inputs: "CDC NHSN weekly influenza hospital admissions for all US states and the US national total; NSSP weekly percent of emergency department visits due to influenza (FluSight hub target data); Prisma Health EHR surveillance data (weekly diagnoses, inpatient hospitalizations, ED visits, outpatient visits, tests, positive tests, vaccine counts and encounters), used for South Carolina only"
 
-methods: "Recursive quantile regression with analogs, EHR and cross-state signals, and multi-state pooling"
-methods_long: "Recursive one-week-ahead quantile regression blended with phase-aware historical analogs, forecasting 0-3 weeks ahead by feeding each prediction back into the features. Predictors include lagged admissions, trend, seasonality, the share of US states with rising admissions, and for South Carolina, Prisma Health EHR data. A second quantile regression trained on all US states is blended in, and forecast growth is capped at a damped version of recently observed growth, with weights and damping tuned by rolling validation. The US national forecast uses the same approach without EHR inputs. Uncertainty comes from analog errors and model residuals. Updated October 2026"
+methods: "Gradient-boosted quantile regression (LightGBM) pooled across all US locations, forecasting each horizon directly"
+methods_long: "Quantile regression with gradient-boosted trees (LightGBM, quantile objective), one model per horizon (0-3 weeks) and quantile (23), trained jointly on all US states, DC, Puerto Rico and the national total. Each model predicts the change in log weekly admissions from the last observed week to the target week directly, without recursion. Inputs: admission growth over 1-4 weeks, admissions per 100,000, distance below the past-year peak, the NSSP influenza ED-visit share (level, 1- and 2-week growth, distance below its past-year peak, ED growth minus admission growth), national admission and ED growth, season timing and population. For South Carolina only, the Prisma Health EHR weekly counts for the latest week and the week before are added; the US national forecast does not use Prisma data. Models are trained once per season on all weeks from October 2022 up to August 1. Prediction intervals are widened per horizon by factors learned from the previous season's real-time errors, and quantiles are sorted to prevent crossing. Updated November 2026"
 ensemble_of_models: false
 ensemble_of_hub_models: false
-model_version: "2.0"
+model_version: "3.0"
 website_url: "https://github.com/Ahammed-Tanvir/FluSight"  
 team_funding: "Center for Forecasting and Outbreak Analytics of the Centers for Disease Control and Prevention (CDC) under award number NU38FT000011 and National Library of Medicine of the National Institutes of Health (NIH) under award number R01LM014193."  
 backfill_adjustment: "false"
