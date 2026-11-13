@@ -1,0 +1,30 @@
+team_name: "UMass-Amherst"
+team_abbr: "UMass"
+model_name: "Axial transformer r2"
+model_abbr: "axial_r2"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Nikhil Lebaka",
+    "affiliation": "UMass Amherst",
+    "email": "nrlebaka@umass.edu"
+  },
+  {
+    "name": "Evan Ray",
+    "affiliation": "UMass Amherst",
+    "email": "elray@umass.edu"
+  },
+  {
+    "name": "Nick Reich",
+    "affiliation": "UMass Amherst",
+    "email": "nick@umass.edu"
+  }
+]
+website_url: "https://github.com/nikhillebaka/axial"
+license: "CC-BY-4.0"
+designated_model: true
+methods: "Small transformer pretrained on simulated flu seasons and fine-tuned on past real seasons; reads all locations jointly. Ensemble of seeds."
+methods_long: "A small transformer forecasts all locations together from their recent history. It is pretrained on simulated epidemics and fine-tuned on historical surveillance data. Forecasts average several trained networks. ED-visit and peak targets come from the same model."
+data_inputs: "NHSN influenza hospital admissions and NSSP ED visits, as available at each forecast date; ILINet and FluSurv-NET history for training."
+ensemble_of_models: true
+ensemble_of_hub_models: false

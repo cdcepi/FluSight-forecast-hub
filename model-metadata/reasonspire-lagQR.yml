@@ -1,0 +1,20 @@
+team_name: "reasonspire research"
+team_abbr: "reasonspire"
+model_name: "Lagged quantile regression"
+model_abbr: "lagQR"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Fred T. Ranger",
+    "affiliation": "Independent",
+    "email": "flusight@reasonspire.ai"
+  }
+]
+website_url: "https://reasonspire.ai"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "NHSN weekly confirmed influenza hospital admissions (the hub's target data) and the same series from HealthData.gov for February 2022 to mid-2023. For training only: CDC ILINet, clinical laboratory and FluSurv-NET surveillance data for 2010 to 2020, obtained through the Delphi Epidata API."
+methods: "LightGBM quantile regression on the change in log weekly admissions from the last reported week, pooled over locations, using each location's and the nation's recent history. One model per horizon."
+methods_long: "For each horizon (0 to 3 weeks ahead) the model forecasts the change in log(admissions + 1) from the latest week reported in the hub's target data at the time of the forecast. The inputs are on the log scale and are read as the data stood on the forecast day. They summarise the location's own series (among them its latest level, its change, mean and minimum over the last 1, 2, 4 and 6 weeks and its slope over the last 2, 4 and 6 weeks) and, for horizons 1 to 3, the national series (among them its latest level, its change and minimum over the last 1, 2 and 4 weeks and its slope over the last 2 and 4 weeks). One gradient-boosted quantile regression (LightGBM, quantile objective) is fit for each of the 23 required levels, pooled over the 53 locations. The predicted quantiles of the change are added to the latest reported value, sorted, floored at zero and rounded to whole admissions. Training rows come from the weekly admissions from February 2022 on, with each input as it was known on its forecast day and each outcome as last revised when the model is fit, and, for the seasons 2010-11 to 2019-20, from a proxy for admissions built from CDC's outpatient (ILINet), clinical laboratory and FluSurv-NET surveillance data as published by 30 June 2023 and scaled to admissions; the proxy is used for training only. The models were chosen on the 2023-24 and 2024-25 seasons and tested once on 2025-26, refit every four weeks on the data known by then; during the season the forecasting models are refit every four weeks in the same way. The weeks of voluntary reporting in 2024 are left out. The nation is forecast directly, not as a sum of states."
+ensemble_of_models: false
+ensemble_of_hub_models: false

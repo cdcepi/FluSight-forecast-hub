@@ -12,16 +12,18 @@ model_contributors: [
 ]
 license: "CC-BY-4.0"
 designated_model: false
-data_inputs: NHSN admissions, NSSP ED visits, ILINet and clinical-lab ILI+, FluSurv-NET, CDC public health and clinical lab subtype and percent positive data (Delphi Epidata archives), NASA POWER specific humidity and temperature
-methods: Pooled gradient-boosted quantile regression (LightGBM) with subtype, lab and humidity covariates, backfill-corrected inputs and growth-phase recalibration.
+data_inputs: NHSN admissions, NSSP ED visits, ILINet and clinical-lab ILI+, CDC public health and clinical lab subtype and percent positive data (Delphi Epidata archives), NASA POWER specific humidity and temperature
+methods: Pooled gradient-boosted quantile regression (LightGBM) with subtype, lab, humidity, expected-weather, holiday and interstate-connectivity covariates on backfill-corrected inputs.
 methods_long: >-
-  One set of LightGBM quantile models (23 quantiles, bagged over seasons) is trained each week on NHSN admissions,
-  NSSP ED visit proportions, historical ILI+ and FluSurv-NET series pooled across locations, on a fourth-root
+  One set of LightGBM quantile models (23 quantiles, 40 bags over seasons) is trained each week on NHSN admissions,
+  NSSP ED visit proportions and historical ILI+ series pooled across locations, on a fourth-root
   scale divided by each series' 95th percentile. Features describe each series' recent shape and season to date,
   the other target and regional growth, national and state subtype shares and percent positive as published each
-  week, and specific humidity and temperature at each state's center of population. The latest two weeks of
-  admissions are corrected for backfill with a chain-ladder method before fitting. Admissions quantiles are
-  recalibrated by horizon and growth phase from the model's own earlier forecasts.
+  week, specific humidity and temperature at each state's center of population and their 1997-2019 averages for the
+  target week, and the timing of Thanksgiving,
+  Christmas and New Year relative to the forecast and target weeks. The latest two weeks of admissions are
+  corrected for backfill with a chain-ladder method before fitting. Each state also sees the recent growth and level
+  of the other states, weighted by a combined commuting (Census ACS) and air-travel (BTS DB1B) connectivity graph.
 website_url: https://thefoxlab.wordpress.com/
 ensemble_of_models: false
 ensemble_of_hub_models: false
