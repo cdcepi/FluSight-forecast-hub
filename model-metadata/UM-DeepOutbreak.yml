@@ -2,7 +2,7 @@ team_name: "University of Michigan, Computer Science and Engineering"
 team_abbr: "UM"
 model_name: "DeepOutbreak"
 model_abbr: "DeepOutbreak"
-model_version: "1.0"
+model_version: "2.0"
 model_contributors:
   [
     {
@@ -30,10 +30,10 @@ model_contributors:
 website_url: "https://alrodri.engin.umich.edu/"
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "Flu hospitalization data from NHSN, Google's symptom search data, and CDC's ILI and WHO/NREVSS data"
-methods: "Deep neural network model with conformal predictions."
-methods_long: "Deep neural network model with conformal predictions. The neural network architecture is a sequence-to-sequence model based on recurrent units and self-attention modules. It is trained in a multi-task setting where each region is considered a task. The uncertainty quantification is conducted post hoc with conformal predictions that follows adaptive conformal inference to adapt to distribution shifts. Spatial correlation is not considered."
-citation: "Rodriguez, A., Tabassum, A., Cui, J., Xie, J., Ho, J., Agarwal, P., Adhikari, B. and Prakash, B.A., 2021, May. Deepcovid: An operational deep learning-driven framework for explainable real-time covid-19 forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 15393-15400). https://ojs.aaai.org/index.php/AAAI/article/view/17808"
+data_inputs: "Weekly influenza hospital admissions, influenza inpatient and ICU patient counts from NHSN (via Delphi Epidata), and percent ILI from CDC ILINet."
+methods: "Ensemble of a guided time-series diffusion model and a transformer (M-SPICE TS), calibrated with Neural Conformal Control."
+methods_long: "Ensemble of two deep learning forecasters whose forecasts are averaged, followed by post hoc conformal calibration. (1) A diffusion model specifically designed for time-series modeling, which applies classifier guidance based on time-series features to make effective, data-driven corrections to the forecast horizon, thereby achieving reliable predictions. (2) M-SPICE TS, a transformer-based forecasting model that leverages historical respiratory disease surveillance time-series data to predict influenza hospitalizations. The model uses temporal self-attention to capture patterns and dependencies across multiple surveillance indicators and generate multi-week-ahead forecasts. Uncertainty quantification is conducted post hoc with Neural Conformal Control (NCC), which takes the ensemble's point forecasts and uses a neural network, trained jointly across locations, to learn prediction intervals for each target error rate that keep their coverage over time under distribution shifts. Spatial correlation is not considered."
+citation: "Rodriguez, A., Tabassum, A., Cui, J., Xie, J., Ho, J., Agarwal, P., Adhikari, B. and Prakash, B.A., 2021, May. Deepcovid: An operational deep learning-driven framework for explainable real-time covid-19 forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 15393-15400). https://ojs.aaai.org/index.php/AAAI/article/view/17808; Gomez, D.G., Wu, C., Wang, Z., Shen, L. and Rodríguez, A., 2026. Beyond Time Series: Spatial Reasoning for Epidemic Forecasting via Multimodal Learning. In Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26). https://doi.org/10.1145/3770855.3819015; Mu, W., Cao, Z., Uludag, M. and Rodríguez, A., 2025. Counterfactual probabilistic diffusion with expert models. arXiv preprint arXiv:2508.13355. https://arxiv.org/abs/2508.13355; Li, R. and Rodríguez, A., 2025. Neural Conformal Control for Time Series Forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39). https://arxiv.org/abs/2412.18144"
 ensemble_of_models: true
 ensemble_of_hub_models: false
 team_funding: "Start-up funds from the University of Michigan."
