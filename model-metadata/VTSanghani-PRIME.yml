@@ -2,7 +2,7 @@ team_name: "VTSanghani"
 team_abbr: "VTSanghani"
 model_name: "PRIME"
 model_abbr: "PRIME"
-model_version: "3.0"
+model_version: "3.1"
 model_contributors: [
   {
     "name": "Yiqi Su",
@@ -21,9 +21,8 @@ website_url: "https://sanghani.cs.vt.edu/"
 license: "CC-BY-4.0"
 team_funding: "NSF awards CCF-1918770, DBI-2412389"
 designated_model: true
-methods: "Integration of model-based and time series forecasting methods."
-data_inputs: "National and jurisdictional weekly incident influenza like illness (ILI) case counts, hospitalization admissions and ED visits."
-methods_long: "Develop deep learning methods for short-term forecasting of US national- and state-level influenza hospitalizations, 
-leveraging machine learning models designed to capture complex temporal and spatial dependencies." 
-ensemble_of_models: false
+methods: "Fixed 50/50 quantile ensemble of growth-aware pooled ridge forecasts and direct AR6; historical residual calibration, with national ED retaining the growth-aware component."
+data_inputs: "NHSN weekly influenza hospital admissions; NSSP weekly influenza ED visit proportions; archived hub releases for historical reporting uncertainty; jurisdiction populations. Inputs frozen as available at the forecast cutoff."
+methods_long: "Operational method description updated November 18, 2026 for the November 21 reference date; the established October 24 ensemble policy is retained. Hospital admissions and eligible jurisdiction ED quantiles average two internal components equally: a transformed-scale pooled ridge model with local and national growth and seasonal harmonics, including a growth floor during sustained onset, and pooled direct autoregression using six lagged changes, level, population and seasonal harmonics. National ED retains the first component. Component weights and interval multipliers are fixed from the earlier model policy. Historical forecast residuals and archived release revisions describe predictive uncertainty; retrospective tests using revised observations are labeled separately from tests using historical vintages. Delayed ED locations fall back to the first component when AR6 lacks all four leads, and very stale ED series are omitted. Hospital rate-change probabilities use joint trajectories whose ranks come from the first component and whose marginal quantiles match the ensemble. Seasonal peak magnitude and timing use historical seasonal analogs linked to the short-term draws; these seasonal outputs have not been independently validated. These are internal statistical models, not an ensemble of other hub teams. No ILI covariates or deep-learning component are used in this operational pipeline."
+ensemble_of_models: true
 ensemble_of_hub_models: false
