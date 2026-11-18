@@ -7450,7 +7450,7 @@ reference_date,target,horizon,target_end_date,location,output_type,output_type_i
 2026-11-21,wk inc flu prop ed visits,3,2026-12-12,37,quantile,0.9,0.1905879974365234
 2026-11-21,wk inc flu prop ed visits,3,2026-12-12,37,quantile,0.95,0.2221760004758834
 2026-11-21,wk inc flu prop ed visits,3,2026-12-12,37,quantile,0.975,0.2401960045099258
-2026-11-21,wk inc flu prop ed visits,3,2026-12-12,37,quantile,0.99,0.2530940699577324
+2026-11-21,wk inc flu prop ed visits,3,2026-12-12,37,quantile,0.99,0.2499
 2026-11-21,wk inc flu prop ed visits,0,2026-11-21,38,quantile,0.01,0.00179999996908
 2026-11-21,wk inc flu prop ed visits,0,2026-11-21,38,quantile,0.025,0.0023999998811632
 2026-11-21,wk inc flu prop ed visits,0,2026-11-21,38,quantile,0.05,0.0029999997932463
