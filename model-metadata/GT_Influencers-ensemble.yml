@@ -18,22 +18,41 @@ model_contributors: [
     "name": "Refate Tayier",
     "affiliation": "Georgia Institute of Technology",
     "email": "rtayier3@gatech.edu"
+  },
+  {
+    "name": "Yuming Pan",
+    "affiliation": "Georgia Institute of Technology",
+    "email": "ypan414@gatech.edu"
   }
 ]
 website_url: "https://github.com/VIP-RAI-Influencers/flusight"
 repo_url: "https://github.com/VIP-RAI-Influencers/flusight"
 license: "CC-BY-4.0"
 designated_model: true
-data_inputs: "Weekly NHSN influenza hospital admissions and NSSP emergency department flu visit share (FluSight target data); state populations from the hub's locations file. For training only: ILINet percent ILI from 2010/11 (Delphi Epidata), rescaled to each state's admissions."
-methods: "Average of log quantiles from four models (hierarchical Bayesian regression, regime-switching particle filter, pooled LightGBM, linear regressions), all using ED; intervals widened."
-methods_long: "Four models each forecast all 23 quantiles of log(admissions + 1);
+data_inputs: "Weekly NHSN influenza hospital admissions and NSSP emergency department flu visit share (FluSight target data); national clinical-laboratory influenza percent positive (Delphi Epidata, as published at each deadline); state populations from the hub's locations file. For training only: ILINet percent ILI from 2010/11 (Delphi Epidata), rescaled to each state's admissions."
+methods: "Mean of log quantiles from 7 models (Bayesian regression, particle filter, 2 LightGBMs, 2 linear regressions, a CNN), all using ED; widened per horizon; state medians growth-shifted; own US bands."
+methods_long: "Seven models each forecast all 23 quantiles of log(admissions + 1);
   the ensemble takes the plain average of each quantile, then stretches each
-  forecast around its median by 1.1, 1.2, 1.2 and 1.2 at horizons 0-3. The
-  national forecast averages models 1, 2 and 4 only.
+  forecast around its median by 1.1, 1.2, 1.2 and 1.2 at horizons 0-3, and
+  narrows forecasts whose median exceeds about 244 admissions (by up to 0.85
+  from 664). Each state and DC forecast is then shifted: on the log scale its
+  median moves further in the direction it already points by 0.15, 0.23,
+  0.24 and 0.29 of its distance from the newest published count at horizons
+  0-3, and its spread is scaled by 0.96, 0.94, 0.98 and 0.99 (fitted on
+  2023/24-2025/26). The national forecast is the average of models 1, 4 and
+  5, stretched by 0.8, 0.9, 1.0 and 0.9 at horizons 0-3, then its lower half
+  by 0.9 and its upper half by 1.2; its tails are drawn in toward the median
+  (to 0.6-1.0 of their width by horizon), the whole band is scaled by a
+  factor between 0.5 and 1.6 that tracks our recent national horizon-0
+  errors, and in a fast rise (newest two weeks up more than 25% on the log
+  scale) its lower half is scaled by 0.8 and its upper half by 1.2. Two
+  guards run on every member's forecast (quantiles held within a wide cap of
+  the location's newest count; a location a member skipped is averaged over
+  the others).
   (1) Per-horizon linear regressions of the log change on log incidence per
   100,000, position against the season's peak so far, national and own
-  two-week ED growth, own three-week hospital growth and Christmas and New
-  Year flags, with each state's coefficients shrunk toward the pooled ones by
+  two-week ED growth, own three-week hospital growth, time of year (sine and
+  cosine of the MMWR week) and Christmas and New Year flags, with each state's coefficients shrunk toward the pooled ones by
   empirical Bayes, fitted by inverse-variance weighted least squares;
   quantiles from standardized past errors scaled for count size. (2) A
   particle filter over each state's log expected admissions, growth rate and
@@ -52,8 +71,17 @@ methods_long: "Four models each forecast all 23 quantiles of log(admissions + 1)
   distance below the location's typical peak, time of year) run forward as
   1,000 simulated futures with errors drawn from past weeks at a similar
   level and recent direction, and one regression per week ahead that adds
-  ED-share velocity and acceleration. Members and widths were chosen on
-  2022/23-2025/26 backtests that use the data as published at each
-  deadline. Models are refit before each submission."
+  ED-share velocity and acceleration, national ED and lab-positivity growth
+  and holiday weeks. (5) Pooled LightGBM quantile models of the change in
+  log admissions per 100,000 over 1-4 weeks, on the level, its recent
+  changes, ED share and its changes, national ED, time of year, horizon and
+  log population, all locations and weeks together with a 52-week recency
+  weight, refit every round. (6) One pooled linear regression per week
+  ahead with ED (states only). (7) A small convolutional network over the
+  last 12 weeks of own, national and HHS-region admissions and ED share,
+  trained on all locations with pinball loss on all quantiles, refit every
+  round (states only). Members and widths were chosen on 2022/23-2025/26
+  backtests that use the data as published at each deadline, ranked against
+  the hub's models. Models are refit before each submission."
 ensemble_of_models: true
 ensemble_of_hub_models: false
