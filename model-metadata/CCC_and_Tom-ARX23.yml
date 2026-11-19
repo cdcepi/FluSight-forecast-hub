@@ -1,8 +1,8 @@
 team_name: "CCC and Tom"
 team_abbr: "CCC_and_Tom"
-model_name: "Average of two pooled quantile autoregressions"
+model_name: "Average of ARX23 and selected-input quantile ARs"
 model_abbr: "ARX23"
-model_version: "1.0"
+model_version: "2.0"
 model_contributors: [
   {
     "name": "Tom Mitchell",
@@ -15,33 +15,58 @@ repo_url: "https://github.com/tommmitchell/fl-hosp-forecasting"
 license: "CC-BY-4.0"
 designated_model: true
 designated_targets: ["wk inc flu hosp"]
-data_inputs: "Weekly confirmed influenza hospital admissions (NHSN), outpatient influenza-like-illness percentage (ILINet, two-week lag) and weekly confirmed COVID-19 hospital admissions (NHSN), all retrieved as published through the Delphi Epidata API."
-methods: "Average of two quantile autoregressions on whitened admissions, one with ILI (lagged two weeks) and COVID admissions as inputs and one with COVID admissions only, pooled across locations."
+data_inputs: "Weekly confirmed influenza hospital admissions (NHSN, the target); percent of emergency department visits with influenza (NSSP), in the location and averaged over adjacent states; Sleep Cycle nightly cough data (percent of users with 10 or more coughs in the night; published by the Delphi group under CC BY-NC 4.0); COVID-19 share of outpatient insurance claims; weekly confirmed COVID-19 hospital admissions (NHSN); outpatient influenza-like-illness percentage (ILINet). All retrieved as published at forecast time through the Delphi Epidata API."
+methods: "Half-and-half quantile average of (a) our earlier ARX23 forecast and (b) per-location pooled quantile autoregressions with inputs chosen by forward selection (ED visits, cough, claims)."
 methods_long: "
-  The submission is the quantile-by-quantile average of two models of the same
-  form. Each is a direct quantile regression for every horizon (0 to 3 weeks
-  after the reference date) and each of the 23 required quantile levels. For
-  every location the inputs are first transformed (fourth root, then centered
-  and scaled by the location's own seasonal history) so that one set of
-  coefficients is shared across all locations; fitted quantiles are
-  transformed back to admission counts. Model A uses the two most recent
-  weeks of confirmed flu admissions, of ILINet percent ILI as of two weeks
-  before the newest admissions week, and of confirmed COVID-19 admissions;
-  it is pooled over the 44 states with a state ILINet series. Model B uses
-  flu and COVID-19 admissions only and is pooled over all 53 locations
-  (50 states, DC, Puerto Rico and the national total). Lags are extended by
-  each input's reporting delay at forecast time, so only published values are
-  used. Both models are refit every week on a seasonal training window: the
-  same weeks of the season in all prior seasons with data (2022/23 onward)
-  plus the current season to date. Where both models exist (44 states) the
-  submitted quantiles are their average; elsewhere Model B alone. The three
-  inputs of Model A were chosen by forward selection from 13 candidates on
-  2022/23-2024/25 with 2025/26 held out; on the held-out season the average
-  of A and B scored better than either alone (see the repository's
-  flusight/REHEARSAL_2025_26.md). Quantiles are sorted, truncated at zero and
-  rounded to whole admissions. Spatial correlation is not modeled explicitly;
-  uncertainty comes from the quantile regression over the pooled training
-  window. Horizon -1 is not submitted.
+  MODIFIED 2026-11-21 (version 2.0). From the forecast with this reference date
+  on, the submission is the average, half each, of two forecasts, taken
+  separately for every location, horizon and quantile level: (a) the version
+  1.0 forecast and (b) a forecast in which each location is forecast by one
+  of four pooled quantile autoregressions, according to which inputs the
+  location has. The weights are fixed; nothing about them is fitted. The
+  model name ARX23 is kept for continuity of the record.
+  The version 1.0 method (forecast (a); submitted alone until then) is the quantile-by-quantile
+  average of two pooled quantile autoregressions on fourth-root admissions,
+  one with ILINet percent ILI (lagged two weeks) and COVID-19 admissions as
+  inputs and one with COVID-19 admissions only.
+  Forecast (b):
+  Every component is a direct quantile regression for each horizon (0 to 3
+  weeks after the reference date) and each of the 23 required quantile levels,
+  with one set of coefficients shared by all the locations it is trained on.
+  Admissions are modeled as log(admissions + 1) and the other inputs as fourth
+  roots; every series is centered and scaled by the location's own seasonal
+  history, and fitted quantiles are transformed back to admission counts. The
+  predictors are the two most recent published weeks of admissions and of each
+  other input; lags are extended by each input's reporting delay, so only
+  values published by the forecast date are used. Models are refit every week
+  on a seasonal training window: the same weeks of the season in all prior
+  seasons for which every input exists, plus the current season to date.
+  Model 1 (40 states and DC) adds five inputs to past flu admissions: the
+  mean NSSP flu share of emergency visits over adjacent states; the NSSP flu
+  share in the location itself; the COVID-19 share of outpatient insurance
+  claims; the week-over-week change in the Sleep Cycle share of users with 10
+  or more coughs in the night; and that share on the Tuesday before the
+  forecast. Model 2 (MO, MS, MT, ND, SD, VT, WV, WY, which lack one of those
+  inputs) adds the adjacent-state NSSP flu share, COVID-19 admissions, and the
+  median admissions at the same week of the season in prior seasons. Model 3
+  (AK, HI) adds the location's NSSP flu share. Model 4 (PR) adds ILINet
+  percent ILI as of two weeks before the newest admissions week. Models 1 to 4
+  are trained on every location that has their inputs (41, 49, 49 and 45
+  locations). The inputs were chosen by forward selection from about two dozen
+  candidates, scored with the hub's own measure (weighted interval score of
+  log(admissions + 1)) on forecasts made from the data as they stood on each
+  forecast date from 2024/25 through early 2026/27.
+  In forecast (b), a location whose model cannot produce a complete
+  forecast in a given week (an input missing or late), or whose median is more
+  than 5 times above or below the version 1.0 median, takes the version 1.0
+  forecast that week. The national total always takes the version 1.0
+  forecast. In those cases (a) and
+  (b) coincide, so the submission equals the version 1.0 forecast.
+  Quantiles are sorted, truncated at zero and rounded to whole admissions.
+  Spatial correlation is not modeled explicitly, apart from the adjacent-state
+  input and the pooling of coefficients across locations; uncertainty comes
+  from the quantile regression over the pooled training window. Horizon -1 is
+  not submitted.
   "
 ensemble_of_models: true
 ensemble_of_hub_models: false
