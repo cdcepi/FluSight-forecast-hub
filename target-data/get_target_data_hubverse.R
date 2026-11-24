@@ -28,6 +28,8 @@ library(readr)
 library(tidyr)
 
 options(readr.show_col_types = FALSE)
+# avoid scientific notation (e.g. 8e-04) when writing CSVs, matching existing target data files
+options(scipen = 999)
 
 #' @description
 #' `get_location_data` returns supplemental information about locations used in
