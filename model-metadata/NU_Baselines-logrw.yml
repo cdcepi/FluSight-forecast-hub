@@ -1,0 +1,48 @@
+team_name: "Northeastern University Baselines"
+team_abbr: "NU_Baselines"
+model_name: "Log-scale random walk baseline"
+model_abbr: "logrw"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Clara Bay",
+    "affiliation": "Northeastern University",
+    "email": "bay.c@northeastern.edu"
+  },
+  {
+    "name": "Nima R. Moghaddas",
+    "affiliation": "Northeastern University",
+    "email": "moghaddas.n@northeastern.edu"
+  },
+  {
+    "name": "Jessica T. Davis",
+    "affiliation": "Northeastern University",
+    "email": "jes.davis@northeastern.edu"
+  },
+  {
+    "name": "Alessandro Vespignani",
+    "affiliation": "Northeastern University",
+    "email": "A.Vespignani@northeastern.edu"
+  },
+  {
+    "name": "Michael A. Johansson",
+    "affiliation": "Northeastern University",
+    "email": "m.johansson@northeastern.edu"
+  }
+]
+website_url: "https://www.medrxiv.org/content/10.64898/2026.09.29.26364307v1"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: true
+methods: "Random walk on log(admissions + 1) from the last observed week, with symmetrized week-to-week differences."
+data_inputs: "Weekly confirmed influenza hospital admissions from the NHSN Hospital Respiratory Data."
+methods_long: "A log-scale version of the FluSight-baseline random walk. For each
+  location, weekly admissions beginning with the week ending 2022-08-06 (excluding reporting weeks 2024-05-04 to 2024-11-02) are collected, 
+  transformed to log(x + 1), and differenced between consecutive weeks.
+  Each horizon (0 to 3) adds resampled differences to the last
+  observed week, and the result is back-transformed with exp() - 1. The median is
+  set to the last observed value at every horizon and the distribution is floored
+  at 0. Locations are modelled independently. Developed as a
+  benchmark for forecast skill scores (https://www.medrxiv.org/content/10.64898/2026.09.29.26364307v1)."
+ensemble_of_models: false
+ensemble_of_hub_models: false
