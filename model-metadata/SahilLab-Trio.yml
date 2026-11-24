@@ -1,0 +1,21 @@
+team_name: "Sahil Lab"
+team_abbr: "SahilLab"
+model_name: "Trio: Bayesian, gradient boosting and neural network ensemble"
+model_abbr: "Trio"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Sahil",
+    "affiliation": "Johns Hopkins University",
+    "email": "sfnu1@jh.edu"
+  }
+]
+website_url: "https://github.com/sahiljangra12/flu-forecast"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Weekly laboratory confirmed influenza hospital admissions from the NHSN Hospital Respiratory Dataset (the FluSight target data). No other data sources."
+methods: "Equal-weight quantile average of a Bayesian hierarchical AR model, LightGBM quantile regression and a GRU quantile network, each fit jointly across locations."
+methods_long: "Equal-weight average, quantile by quantile, of three models fit to the fourth root of weekly admission rates per 100k for all locations jointly (states, DC, Puerto Rico and the US as its own series). (1) Bayesian hierarchical model fit with NUTS in NumPyro: weekly changes follow an AR(2) with location-specific coefficients, a location-specific loading on the previous national change, a seasonal drift shared across locations and a shared weekly shock, with Student-t noise whose scale varies by location and level; location parameters are partially pooled. Forecasts are simulated from every posterior draw, so they carry parameter and process uncertainty. (2) LightGBM quantile regression, one model per quantile level, on lagged weekly changes, lagged national changes, level, time of year, population, distance below the season peak and horizon. (3) GRU recurrent network over the last eight weekly changes plus the same static inputs, trained with pinball loss, with a non-crossing quantile output; five random initialisations are averaged. Spatial correlation enters only through the lagged national series and the shared shock; state forecasts are not constrained to sum to the national forecast. No adjustment is made for backfill of the most recent week. Out-of-sample testing on archived data snapshots for 2023-24 to 2025-26 gave WIS close to the FluSight ensemble with prediction intervals that were somewhat too narrow (about 44% and 88% coverage for nominal 50% and 95% intervals). First submitted for reference date 2026-11-28."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: "none"
