@@ -1,0 +1,23 @@
+team_name: "JPAT"
+team_abbr: "JPAT"
+model_name: "Multi-library gradient-boosted quantile regression ensemble"
+model_abbr: "FluGBM"
+model_version: "1.0"
+model_contributors: [
+  {
+    "name": "Juhong Park",
+    "affiliation": "Massachusetts Institute of Technology",
+    "email": "juhongp@mit.edu",
+    "orcid": "0000-0002-7554-0891"
+  }
+]
+website_url: "https://github.com/JuhongPark"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "NHSN weekly confirmed influenza hospital admissions and NSSP weekly percent of emergency department visits due to influenza, both from the hub target data and including the archived real-time versions in time-series.csv, and jurisdiction populations from auxiliary-data/locations.csv. No other data sources."
+methods: "Equal-weight quantile average of four gradient-boosting libraries (HistGB, XGBoost, LightGBM, CatBoost) on log admissions and flu ED-visit share, recalibrated per horizon on real-time backtests."
+methods_long: "The model is refit each week on all NHSN admissions since February 2022 for the 50 states, DC, Puerto Rico and the US. Counts are modeled on the log1p scale, and each horizon predicts the change from the last reported week. For each horizon, four gradient-boosted quantile regressions are fit, pooled across jurisdictions: scikit-learn HistGradientBoosting and LightGBM (one model per quantile), and XGBoost and CatBoost (one multi-quantile model each). Features are the last four weeks' level and changes, national level and trend, per-capita level relative to national, 8-week volatility, 52-week mean and maximum, last season's change over the same weeks, week-of-year terms, log population, and the NSSP percent of ED visits due to influenza in the last reported week (level, one- and two-week changes, and the national level and change; missing before October 2022). The four quantile sets are each sorted, averaged with equal weights (Vincentization) and sorted again. Each quantile is then shifted on the log scale by a horizon-specific constant, chosen to minimize the count-scale quantile loss (equivalent to WIS) of backtest forecasts for the 2023-24 to 2025-26 seasons made from the data versions available in real time (archived ED-visit versions exist only from December 2025, so earlier rounds use final ED values). The median's shift is then subtracted from every quantile, so the recalibration adjusts spread and skew but not location: the median offset mainly reflected later upward revisions of the latest reported week, which varied between seasons (about 1% to 15%), and it over-forecast the start of the 2026-27 season. Quantiles are back-transformed and rounded to integers. Rate-trend probabilities are derived from the count quantiles (linear interpolation of the quantile function) relative to the last reported week, using the hub's thresholds. Jurisdictions are forecast separately; spatial correlation enters only through national features. Uncertainty comes from the quantile regressions and the recalibration. The equal-weight ensemble was chosen over each library alone, an added ExtraTrees quantile forest, and a mix with empirical quantiles of past changes by leave-one-season-out and walk-forward backtesting; shifts fitted only on earlier seasons also improved the next season. Bayesian hyperparameter search (Optuna TPE) for each library, and for a quantile neural network, Kumo and TabPFN, improved the 2023-24 and 2024-25 tuning seasons but not a held-out 2025-26 season, so the original settings are kept. No manual adjustment is applied. The model code was written with the help of an AI coding assistant (Claude)."
+ensemble_of_models: true
+ensemble_of_hub_models: false
+backfill_adjustment: "No explicit backfill model. Forecasts start from the latest reported week as released. The quantile recalibration on real-time backtests widens the intervals but does not move the median, because the size of later revisions varied between seasons."
+designated_targets: ["wk inc flu hosp", "wk flu hosp rate change"]
