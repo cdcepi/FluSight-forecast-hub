@@ -1,0 +1,18 @@
+team_name: "Matthew Tsim"
+team_abbr: "MTsim"
+model_name: "FluCast"
+model_abbr: "FluCast"
+model_version: "0.1"
+model_contributors:
+  - name: "Matthew Tsim"
+    affiliation: "Independent"
+    email: "mtsim.forecasts@gmail.com"
+website_url: "https://github.com/matthewtsim/FluSight-forecast-hub/tree/codex/ny-flusight-pilot"
+repo_url: "https://github.com/matthewtsim/FluSight-forecast-hub"
+license: "CC-BY-4.0"
+designated_model: false
+data_inputs: "Weekly New York influenza hospital admissions and the share of emergency department visits due to influenza from the FluSight hub."
+methods: "Prophet with admissions momentum and an emergency department influenza adjustment."
+methods_long: "Prophet fits annual seasonality to log-transformed New York admissions. Recent admissions growth is blended with the seasonal forecast, then the weekly change in emergency department influenza share adjusts the point estimate. Forecast quantiles use lead-specific, median-centered log forecast errors from 2024-25. The model forecasts New York only and does not model spatial correlation."
+ensemble_of_models: false
+ensemble_of_hub_models: false
