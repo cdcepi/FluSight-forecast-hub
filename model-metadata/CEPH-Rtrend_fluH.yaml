@@ -4,25 +4,41 @@ model_name: "Rtrend FluH"
 model_abbr: "Rtrend_fluH"
 model_contributors: [
   {
-    "name": "Marco Ajelli",
+    "name": "Claudio Ascione",
     "affiliation": "Indiana University Bloomington",
-    "email": "majelli@iu.edu",
+    "email": "cascione@iu.edu",
+    "orcid": "0009-0004-5796-8693"
   },
   {
-    "name": "Paulo C. Ventura",
+    "name": "Pablo Valgañón",
     "affiliation": "Indiana University Bloomington",
-    "email": "pventura@iu.edu",
+    "email": "pavalga@iu.edu",
+    "orcid": "0000-0003-2547-4547"
   },
   {
     "name": "Shreeya Mhade",
     "affiliation": "Indiana University Bloomington",
     "email": "smhade@iu.edu",
+    "orcid": "0000-0002-3050-802X"
+  },
+  {
+    "name": "Cheng Cheng",
+    "affiliation": "Indiana University Bloomington",
+    "email": "cc158@iu.edu",
+    "orcid": "0009-0006-5499-8453"
   },
   {
     "name": "Maria Litvinova",
     "affiliation": "Indiana University Bloomington",
     "email": "malitv@iu.edu",
+    "orcid": "0000-0001-6393-1943"
   },
+  {
+    "name": "Marco Ajelli",
+    "affiliation": "Indiana University Bloomington",
+    "email": "majelli@iu.edu",
+    "orcid": "0000-0003-1753-4749"
+  }
 ]
 license: "CC-BY-4.0"
 designated_model: true
