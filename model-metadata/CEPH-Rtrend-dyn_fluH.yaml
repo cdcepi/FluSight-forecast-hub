@@ -1,0 +1,51 @@
+team_name: "CEPH Lab at Indiana University"
+team_abbr: "CEPH"
+model_name: "Rtrend-dyn FluH"
+model_abbr: "Rtrend-dyn_fluH"
+model_contributors: [
+  {
+    "name": "Claudio Ascione",
+    "affiliation": "Indiana University Bloomington",
+    "email": "cascione@iu.edu",
+    "orcid": "0009-0004-5796-8693"
+  },
+  {
+    "name": "Pablo Valgañón",
+    "affiliation": "Indiana University Bloomington",
+    "email": "pavalga@iu.edu",
+    "orcid": "0000-0003-2547-4547"
+  },
+  {
+    "name": "Shreeya Mhade",
+    "affiliation": "Indiana University Bloomington",
+    "email": "smhade@iu.edu",
+    "orcid": "0000-0002-3050-802X"
+  },
+  {
+    "name": "Cheng Cheng",
+    "affiliation": "Indiana University Bloomington",
+    "email": "cc158@iu.edu",
+    "orcid": "0009-0006-5499-8453"
+  },
+  {
+    "name": "Maria Litvinova",
+    "affiliation": "Indiana University Bloomington",
+    "email": "malitv@iu.edu",
+    "orcid": "0000-0001-6393-1943"
+  },
+  {
+    "name": "Marco Ajelli",
+    "affiliation": "Indiana University Bloomington",
+    "email": "majelli@iu.edu",
+    "orcid": "0000-0003-1753-4749"
+  }
+]
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "XXX - all three datasets Cheng is using"
+methods: "A renewal equation method based on Bayesian estimation of Rt from hospitalization data."
+methods_long: ""
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: https://ceph-lab.github.io/
+team_funding: "XXX ADD FLUSCOPE DETAILS -We acknowledge support from the CDC-RFA-FT-23-0069 cooperative agreement from the CDC's Center for Forecasting and Outbreak Analytics."
