@@ -3,35 +3,37 @@ team_abbr: Google_SAI
 model_name: FluEnsemble
 model_abbr: FluEns
 model_contributors:
-  - name: Zahra Shamsi
-    affiliation: Google
-    email: shamsiz@google.com
-    orcid: 0000-0002-9834-2978
   - name: Sarah Martinson
+    affiliation: Harvard University
+    email: sarahmartinson@g.harvard.edu
+  - name: Michael Brenner
     affiliation: Google
-    email: martinsons@google.com
+    email: mbrenner@google.com
+    orcid: 0000-0002-5673-7947
   - name: Martyna Plomecka
     affiliation: Google
     email: mplomecka@google.com
     orcid: 0000-0003-4297-4754
   - name: Brian Williams
     affiliation: Google
-    email: bpw@goole.com
+    email: bpw@google.com
     orcid: 0000-0002-2839-0106
-  - name: Michael Brenner
-    affiliation: Google
-    email: mbrenner@google.com
-    orcid: 0000-0002-5673-7947
   - name: Nicholas Reich
     affiliation: Google
     email: reichn@xwf.google.com
     orcid: 0000-0003-3503-9899
+  - name: Zahra Shamsi
+    affiliation: Google
+    email: shamsiz@google.com
+    orcid: 0000-0002-9834-2978
 license: CC-BY-4.0
 designated_model: true
-data_inputs: "Influenza Hospital Admissions data (NHSN), ILINet historical values, and Population data"
-methods: "An ensemble of different models."
-methods_long: "An esemble of a diverse set of models; ML, mechanistic, and statistical."
-website_url: "https://ai.google/applied-ai/science/"
+data_inputs: "Weekly confirmed influenza hospital admissions from NHSN (preliminary weekly release, data.cdc.gov dataset mpgq-jmmr); historical ILINet data from before October 2022 (Delphi Epidata API); jurisdiction populations from the hub's auxiliary-data/locations.csv."
+methods: "Equal-weight quantile-mean ensemble of a diverse set of models (ML, mechanistic, and statistical) generated autonomously by LLM-guided tree search (ERA)."
+methods_long: "An equal-weight ensemble of a diverse set of influenza forecasting models (ML, mechanistic, and statistical) generated autonomously by Empirical Research Assistance (ERA), a system that uses LLM-guided tree search to write and optimise executable forecasting code (Aygün et al. 2026,Nature 654, 909–916). The component model code is published at https://github.com/google-research/google-research/tree/master/epi_forecasts. Each week every component is refitted on the latest data and produces the 23 hub quantiles of weekly incident influenza hospital admissions for horizons 0 to 3 in 52 jurisdictions (50 states, DC and Puerto Rico; no national forecast is submitted). The ensemble is the unweighted mean of the component values at each quantile level, computed separately for every location and horizon. Components are chosen by greedy forward selection on log WIS over the 2025-26 component forecasts, with separate component sets for the rising and declining phases of the season."
 ensemble_of_models: true
 ensemble_of_hub_models: false
-model_version: "1.0"
+website_url: "https://ai.google/applied-ai/science/"
+model_version: "2.0"
+repo_url: "https://github.com/sarahmart/googlesai-resubmits"
+citation: "Martinson S, Brenner MP, Plomecka M, Williams BP, Reich NG, Shamsi Z. Prospective multi-pathogen disease forecasting using autonomous LLM-guided tree search. arXiv. 2026. https://arxiv.org/abs/2605.16238"
