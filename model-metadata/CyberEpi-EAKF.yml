@@ -1,0 +1,20 @@
+team_name: CyberEpi
+team_abbr: CyberEpi
+model_name: CyberEpi EAKF
+model_abbr: EAKF
+model_contributors: [
+  {
+    "name": "Student",
+    "affiliation": "Independent",
+    "email": "avianthonf@protonmail.com"
+  }
+]
+license: CC-BY-4.0
+designated_model: true
+data_inputs: "NHSN weekly confirmed influenza hospital admissions (target data); NSSP emergency department influenza visit fraction."
+methods: "SEIHDR mechanistic model, ensemble square-root filter assimilation, stochastic transmission and observation noise."
+methods_long: "Age-aggregated SEIHDR compartmental influenza model per location; weekly incident admissions and NSSP ED ILI fraction assimilated with an ensemble square-root (EnSRF/EAKF) filter jointly estimating log-beta, log hospitalization ratio, and an ILI scaling factor as random-walk states; 300-member ensemble with multiplicative inflation; quantile forecasts from forward-integrated ensemble with per-day log-beta dispersion and multiplicative observation jitter; no spatial coupling — each location is filtered independently from its own observations."
+ensemble_of_models: false
+ensemble_of_hub_models: false
+website_url: https://github.com/avianthonf/CyberEpi
+repo_url: https://github.com/avianthonf/CyberEpi
