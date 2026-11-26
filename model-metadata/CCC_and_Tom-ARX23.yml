@@ -2,7 +2,7 @@ team_name: "CCC and Tom"
 team_abbr: "CCC_and_Tom"
 model_name: "Average of ARX23 and selected-input quantile ARs"
 model_abbr: "ARX23"
-model_version: "2.0"
+model_version: "2.1"
 model_contributors: [
   {
     "name": "Tom Mitchell",
@@ -16,8 +16,14 @@ license: "CC-BY-4.0"
 designated_model: true
 designated_targets: ["wk inc flu hosp"]
 data_inputs: "Weekly confirmed influenza hospital admissions (NHSN, the target); percent of emergency department visits with influenza (NSSP), in the location and averaged over adjacent states; Sleep Cycle nightly cough data (percent of users with 10 or more coughs in the night; published by the Delphi group under CC BY-NC 4.0); COVID-19 share of outpatient insurance claims; weekly confirmed COVID-19 hospital admissions (NHSN); outpatient influenza-like-illness percentage (ILINet). All retrieved as published at forecast time through the Delphi Epidata API."
-methods: "Half-and-half quantile average of (a) our earlier ARX23 forecast and (b) per-location pooled quantile autoregressions with inputs chosen by forward selection (ED visits, cough, claims)."
+methods: "States: quantile average, half each, of our earlier ARX23 forecast and pooled quantile ARs with selected inputs (ED visits, cough, claims). National: sum of the state quantiles."
 methods_long: "
+  MODIFIED 2026-11-28 (version 2.1). From the forecast with this reference
+  date on, the national forecast is the sum of the submitted forecasts for the
+  50 states, DC and Puerto Rico, taken separately at each horizon and quantile
+  level. (Summing quantiles treats the locations as rising and falling
+  together; it is exact only under that assumption and otherwise gives a
+  somewhat wider national interval.) The state forecasts are unchanged.
   MODIFIED 2026-11-21 (version 2.0). From the forecast with this reference date
   on, the submission is the average, half each, of two forecasts, taken
   separately for every location, horizon and quantile level: (a) the version
@@ -59,9 +65,11 @@ methods_long: "
   In forecast (b), a location whose model cannot produce a complete
   forecast in a given week (an input missing or late), or whose median is more
   than 5 times above or below the version 1.0 median, takes the version 1.0
-  forecast that week. The national total always takes the version 1.0
-  forecast. In those cases (a) and
-  (b) coincide, so the submission equals the version 1.0 forecast.
+  forecast that week. In those cases (a) and
+  (b) coincide, so the submission equals the version 1.0 forecast for that
+  location. The national total is not forecast by (b); from version 2.1 it is
+  the sum of the submitted location forecasts (see above), and in version 2.0
+  it was the version 1.0 national forecast.
   Quantiles are sorted, truncated at zero and rounded to whole admissions.
   Spatial correlation is not modeled explicitly, apart from the adjacent-state
   input and the pooling of coefficients across locations; uncertainty comes
