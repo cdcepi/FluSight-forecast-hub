@@ -1,0 +1,19 @@
+team_name: "Complex Intelligence Lab"
+team_abbr: "Xi_lab"
+model_name: "Adaptive AI agent ensemble"
+model_abbr: "Agents_Adapt"
+model_version: "1.0"
+model_contributors:
+  - name: "Matteo Chinazzi"
+    affiliation: "Complex Intelligence Lab, Network Science Institute, The Roux Institute, Northeastern University"
+    email: "m.chinazzi@northeastern.edu"
+website_url: "https://www.matteochinazzi.com"
+license: "CC-BY-4.0"
+designated_model: false
+baseline_model: false
+data_inputs: "Weekly laboratory-confirmed influenza hospital admissions (NHSN / data.cdc.gov) and public epidemiological surveillance signals."
+methods: "Adaptive location-specific median quantile and mean PMF ensemble of AI forecasting agents selected by recency-weighted log(x+1) WIS."
+methods_long: >-
+  The Hubverse package hubEnsembles is used to generate the Xi_lab-Agents_Adapt forecast from a selected set of independent AI forecasting agents.
+ensemble_of_models: true
+ensemble_of_hub_models: false
